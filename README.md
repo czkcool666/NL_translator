@@ -240,18 +240,3 @@ The benchmark uses **16 C projects** from the [Crown](https://github.com/nicovan
 | rgba | Image color processing |
 | urlparser | URL parsing |
 
-## 📝 License
-
-This project is for research purposes.
-
-## 📖 Citation
-
-If you use PtrTrans in your research, please cite our paper:
-
-```bibtex
-@article{ptrtrans2025,
-  title={PtrTrans: Pointer-Aware C-to-Rust Translation via Knowledge Graph and Static Analysis},
-  author={...},
-  year={2025}
-}
-```
