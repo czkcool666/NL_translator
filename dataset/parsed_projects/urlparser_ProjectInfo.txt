@@ -1,0 +1,56 @@
+urlparser
+└── test.c [Contain *main* Function]
+H_FILE_LIST
+url.h
+
+SPLIT_TAG
+
+url_data#url.h#466
+URL_SCHEMES#url.h#463
+url_parse#url.h#557 -> get_part#url.h#535, strdup#url.h#512, url_data#url.h#466, url_is_ssh#url.h#641, strff#url.h#519, url_get_protocol#url.h#650
+url_get_protocol#url.h#650 -> url_is_protocol#url.h#631
+url_get_auth#url.h#658 -> url_get_protocol#url.h#650, get_part#url.h#535
+url_get_hostname#url.h#665 -> get_part#url.h#535, url_is_ssh#url.h#641, strdup#url.h#512, url_get_auth#url.h#658, url_get_protocol#url.h#650
+url_get_host#url.h#680 -> url_get_hostname#url.h#665
+url_get_pathname#url.h#689 -> url_get_path#url.h#699
+url_get_path#url.h#699 -> url_get_protocol#url.h#650, url_is_ssh#url.h#641, get_part#url.h#535, url_get_auth#url.h#658, url_get_hostname#url.h#665
+url_get_search#url.h#720 -> strff#url.h#519, url_get_pathname#url.h#689, url_get_path#url.h#699, strrwd#url.h#527
+url_get_query#url.h#734 -> url_get_search#url.h#720
+url_get_hash#url.h#743 -> strrwd#url.h#527, url_get_pathname#url.h#689, url_get_path#url.h#699, strff#url.h#519, url_get_search#url.h#720
+url_get_port#url.h#764 -> url_get_hostname#url.h#665, strff#url.h#519, url_get_host#url.h#680
+url_free#url.h#795 -> url_data#url.h#466
+url_is_protocol#url.h#631 -> URL_SCHEMES#url.h#463
+url_is_ssh#url.h#641 -> strdup#url.h#512
+url_inspect#url.h#776 -> url_parse#url.h#557, url_data_inspect#url.h#780
+url_data_inspect#url.h#780 -> url_parse#url.h#557, url_data#url.h#466
+strdup#url.h#512
+strff#url.h#519 -> strdup#url.h#512
+strrwd#url.h#527 -> strdup#url.h#512
+get_part#url.h#535 -> strdup#url.h#512, strff#url.h#519, strrwd#url.h#527
+main#test.c#814 -> url_get_path#url.h#699, url_get_hostname#url.h#665, url_data#url.h#466, url_data_inspect#url.h#780, url_get_pathname#url.h#689, url_get_protocol#url.h#650, url_get_search#url.h#720, url_parse#url.h#557, url_get_port#url.h#764, url_is_protocol#url.h#631, url_get_host#url.h#680, url_get_query#url.h#734, url_free#url.h#795, url_get_hash#url.h#743, url_get_auth#url.h#658
+
+SPLIT_TAG
+
+strdup#url.h#512
+URL_SCHEMES#url.h#463
+url_data#url.h#466
+url_is_ssh#url.h#641
+strff#url.h#519
+strrwd#url.h#527
+url_is_protocol#url.h#631
+url_free#url.h#795
+get_part#url.h#535
+url_get_protocol#url.h#650
+url_parse#url.h#557
+url_get_auth#url.h#658
+url_data_inspect#url.h#780
+url_get_hostname#url.h#665
+url_inspect#url.h#776
+url_get_host#url.h#680
+url_get_path#url.h#699
+url_get_port#url.h#764
+url_get_pathname#url.h#689
+url_get_search#url.h#720
+url_get_query#url.h#734
+url_get_hash#url.h#743
+main#test.c#814

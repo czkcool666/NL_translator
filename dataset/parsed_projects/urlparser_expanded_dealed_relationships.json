@@ -1,0 +1,1710 @@
+[
+  {
+    "source": "test_8c_1a57b8df4484e05cf13f92e11ab8f88e23",
+    "target": "test_8c_1a68923d617be29fd06c614647c52bc65a",
+    "source_unique_name": "__assert_fail#assert.h#808",
+    "target_unique_name": "url_get_search#url.h#720",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ac9e47c346a25e2e7edd2c9b4ca5d0262",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "stderr#stdio.h#307",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a5fd3f374b67077398f884c5c0f7f866d",
+    "target": "test_8c_1afb8699abb1f51d920a176e695ff3be8a",
+    "source_unique_name": "url_get_port#url.h#764",
+    "target_unique_name": "free#stdlib.h#63",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a68923d617be29fd06c614647c52bc65a",
+    "target": "test_8c_1a8098d7ef28f95ddd4366a43d6d6ff5f5",
+    "source_unique_name": "url_get_search#url.h#720",
+    "target_unique_name": "strff#url.h#519",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a840291bc02cba5474a4cb46a9b9566fe",
+    "target": "test_8c_1a3eefe6ded25ef3448515ce23cb558de1",
+    "source_unique_name": "main#test.c#814",
+    "target_unique_name": "url_get_path#url.h#699",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1aca906e125b2875c0ea36a718d3b0c676",
+    "target": "test_8c_1af9bb422417cb6143567407850f384cb5",
+    "source_unique_name": "url_get_hostname#url.h#665",
+    "target_unique_name": "get_part#url.h#535",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a57b8df4484e05cf13f92e11ab8f88e23",
+    "target": "test_8c_1a7358f2db0a1ec299bdfb0a9220043196",
+    "source_unique_name": "__assert_fail#assert.h#808",
+    "target_unique_name": "url_get_auth#url.h#658",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a57b8df4484e05cf13f92e11ab8f88e23",
+    "target": "test_8c_1a220950e3934d9a00d5cbca90dcea77b6",
+    "source_unique_name": "__assert_fail#assert.h#808",
+    "target_unique_name": "url_get_host#url.h#680",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a57b8df4484e05cf13f92e11ab8f88e23",
+    "target": "structurl__data#structurl__data_1ae060d5708030468e7616e58261f4f9ee#structurl__data_1a8cf56d6cb35bc3d6a8e959b0d8164480#structurl__data_1a3a6758c3bfe5804e8c2a070c6388a22a#structurl__data_1a15ef209fc207b24fadb69dac20471773#structurl__data_1adf2e8e2cc64a34720b540da0164a10b5#structurl__data_1aa766bbb71a5adbe51c5857e04b20cd0d#structurl__data_1a1a6a6620b215b266eaa705a407aab537#structurl__data_1aa3ae16f775544e3e6d4bbb78d0bfa2a1#structurl__data_1aed07b18e7446fc9e38cd928f006cc7bd#structurl__data_1aa621007a20590b86e6aad330508c99ec#structurl__data_1a516d656f2d7064a5c2f41bef4a299110#test_8c_1a18097df21d52cbef9825b0e886d2c5f8",
+    "source_unique_name": "__assert_fail#assert.h#808",
+    "target_unique_name": "url_data#url.h#466",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a68923d617be29fd06c614647c52bc65a",
+    "target": "test_8c_1af850a727a4a73ac35561aba4b6222f0b",
+    "source_unique_name": "url_get_search#url.h#720",
+    "target_unique_name": "url_get_pathname#url.h#689",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ab4ec7d807affa8753468478de8a9dee4",
+    "target": "test_8c_1af9bb422417cb6143567407850f384cb5",
+    "source_unique_name": "url_parse#url.h#557",
+    "target_unique_name": "get_part#url.h#535",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1af850a727a4a73ac35561aba4b6222f0b",
+    "target": "test_8c_1a3eefe6ded25ef3448515ce23cb558de1",
+    "source_unique_name": "url_get_pathname#url.h#689",
+    "target_unique_name": "url_get_path#url.h#699",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a47b00053272d6443c9befdb1304002cb",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "feof#stdio.h#407",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a2a3c2e9ef2d275dd8caaad644163ad51",
+    "target": "test_8c_1aca906e125b2875c0ea36a718d3b0c676",
+    "source_unique_name": "strcmp#string.h#435",
+    "target_unique_name": "url_get_hostname#url.h#665",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1aca906e125b2875c0ea36a718d3b0c676",
+    "target": "test_8c_1aea092f6d290537d549ca766819e68632",
+    "source_unique_name": "url_get_hostname#url.h#665",
+    "target_unique_name": "strlen#string.h#459",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ab4ec7d807affa8753468478de8a9dee4",
+    "target": "test_8c_1a2ad2a30abc5615c271e2fb2bd90f84a3",
+    "source_unique_name": "url_parse#url.h#557",
+    "target_unique_name": "sprintf#stdio.h#333",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a2c4f14c424a31db9c57fd046c3b9f0df",
+    "target": "test_8c_1ab280d6183a1d89083b19b0c57d8308d5",
+    "source_unique_name": "strdup#url.h#512",
+    "target_unique_name": "strcpy#string.h#427",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a12f30bdc3bab93519424652d3d18c973",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "putc#stdio.h#377",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ad7ce08c05c71c0248169fb99e5b62b55",
+    "target": "test_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "strcspn#string.h#447",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "struct__G__fpos64__t#struct__G__fpos64__t_1a5e289da2680acfd68c15e8f96524a091#struct__G__fpos64__t_1ac06ed638762dc499046cf91403aa58bb#test_8c_1a23daff2310b869be43403bb53d22aa50",
+    "target": "test_8c_1aca82290b875f93eb9451679fc04b0c9d",
+    "source_unique_name": "_G_fpos64_t#__fpos64_t.h#246",
+    "target_unique_name": "__off64_t#types.h#173",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a7b7ce486b9e2831488f815b7a7893828",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "fsetpos#stdio.h#403",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "struct__G__fpos64__t#struct__G__fpos64__t_1a5e289da2680acfd68c15e8f96524a091#struct__G__fpos64__t_1ac06ed638762dc499046cf91403aa58bb#test_8c_1a23daff2310b869be43403bb53d22aa50",
+    "target": "struct____mbstate__t#struct____mbstate__t_1a076c784a64f56f06c9f6719b3fa8cad2#struct____mbstate__t_1a2846742e945d802237a2fd2608d2c40e#struct____mbstate__t_1a2c9631f54d97686f7c3715b6c44bd5f3#struct____mbstate__t_1ac4523855a8ed73d69f2f6d89860cf4a6",
+    "source_unique_name": "_G_fpos64_t#__fpos64_t.h#246",
+    "target_unique_name": "__mbstate_t#__mbstate_t.h#233",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ac135ffa2a30b6dead4f92ece7f5b4911",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "setbuf#stdio.h#325",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a8098d7ef28f95ddd4366a43d6d6ff5f5",
+    "target": "test_8c_1aea092f6d290537d549ca766819e68632",
+    "source_unique_name": "strff#url.h#519",
+    "target_unique_name": "strlen#string.h#459",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1aa7ab42964c5300bb7145068513d46adf",
+    "target": "test_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "memcmp#string.h#423",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a47f03a0b5ba8cd8727b398b8bcb23e40",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "__uflow#stdio.h#413",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a840291bc02cba5474a4cb46a9b9566fe",
+    "target": "test_8c_1aca906e125b2875c0ea36a718d3b0c676",
+    "source_unique_name": "main#test.c#814",
+    "target_unique_name": "url_get_hostname#url.h#665",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a3eefe6ded25ef3448515ce23cb558de1",
+    "target": "test_8c_1a53be1c0772595828bd30f5544572dadb",
+    "source_unique_name": "url_get_path#url.h#699",
+    "target_unique_name": "url_get_protocol#url.h#650",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1afb8699abb1f51d920a176e695ff3be8a",
+    "target": "structurl__data#structurl__data_1ae060d5708030468e7616e58261f4f9ee#structurl__data_1a8cf56d6cb35bc3d6a8e959b0d8164480#structurl__data_1a3a6758c3bfe5804e8c2a070c6388a22a#structurl__data_1a15ef209fc207b24fadb69dac20471773#structurl__data_1adf2e8e2cc64a34720b540da0164a10b5#structurl__data_1aa766bbb71a5adbe51c5857e04b20cd0d#structurl__data_1a1a6a6620b215b266eaa705a407aab537#structurl__data_1aa3ae16f775544e3e6d4bbb78d0bfa2a1#structurl__data_1aed07b18e7446fc9e38cd928f006cc7bd#structurl__data_1aa621007a20590b86e6aad330508c99ec#structurl__data_1a516d656f2d7064a5c2f41bef4a299110#test_8c_1a18097df21d52cbef9825b0e886d2c5f8",
+    "source_unique_name": "free#stdlib.h#63",
+    "target_unique_name": "url_data#url.h#466",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a62a624c1b25ede12002d8b68304e410c",
+    "target": "test_8c_1ab4ec7d807affa8753468478de8a9dee4",
+    "source_unique_name": "url_data_inspect#url.h#780",
+    "target_unique_name": "url_parse#url.h#557",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1aa415204f66d1e605f41738e448208467",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "tmpfile#stdio.h#313",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a2c4f14c424a31db9c57fd046c3b9f0df",
+    "target": "test_8c_1ae91b3dc6530d8a443eb7f01137f5aeff",
+    "source_unique_name": "strdup#url.h#512",
+    "target_unique_name": "malloc#stdlib.h#57",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a2a3c2e9ef2d275dd8caaad644163ad51",
+    "target": "test_8c_1a3eefe6ded25ef3448515ce23cb558de1",
+    "source_unique_name": "strcmp#string.h#435",
+    "target_unique_name": "url_get_path#url.h#699",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ab4ec7d807affa8753468478de8a9dee4",
+    "target": "test_8c_1a2c4f14c424a31db9c57fd046c3b9f0df",
+    "source_unique_name": "url_parse#url.h#557",
+    "target_unique_name": "strdup#url.h#512",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ae269e97a81615c0562a281f2c2ca1d0f",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "fseek#stdio.h#395",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a7b7ce486b9e2831488f815b7a7893828",
+    "target": "test_8c_1aa5448edeef110a12e24d9bf124e21adb",
+    "source_unique_name": "fsetpos#stdio.h#403",
+    "target_unique_name": "fpos_t#stdio.h#301",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a840291bc02cba5474a4cb46a9b9566fe",
+    "target": "structurl__data#structurl__data_1ae060d5708030468e7616e58261f4f9ee#structurl__data_1a8cf56d6cb35bc3d6a8e959b0d8164480#structurl__data_1a3a6758c3bfe5804e8c2a070c6388a22a#structurl__data_1a15ef209fc207b24fadb69dac20471773#structurl__data_1adf2e8e2cc64a34720b540da0164a10b5#structurl__data_1aa766bbb71a5adbe51c5857e04b20cd0d#structurl__data_1a1a6a6620b215b266eaa705a407aab537#structurl__data_1aa3ae16f775544e3e6d4bbb78d0bfa2a1#structurl__data_1aed07b18e7446fc9e38cd928f006cc7bd#structurl__data_1aa621007a20590b86e6aad330508c99ec#structurl__data_1a516d656f2d7064a5c2f41bef4a299110#test_8c_1a18097df21d52cbef9825b0e886d2c5f8",
+    "source_unique_name": "main#test.c#814",
+    "target_unique_name": "url_data#url.h#466",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a7b7ce486b9e2831488f815b7a7893828",
+    "target": "struct__G__fpos__t#struct__G__fpos__t_1a1f3f051dff02b13553766b90e703ac1a#struct__G__fpos__t_1a7bedfe55beff20f064b4cefa4f65e81d#test_8c_1ac317bd1c7e67036e8a2db38b80d8b64d",
+    "source_unique_name": "fsetpos#stdio.h#403",
+    "target_unique_name": "_G_fpos_t#__fpos_t.h#241",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a5fd3f374b67077398f884c5c0f7f866d",
+    "target": "test_8c_1aca906e125b2875c0ea36a718d3b0c676",
+    "source_unique_name": "url_get_port#url.h#764",
+    "target_unique_name": "url_get_hostname#url.h#665",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ad928d3e6f8e720c0db34328b6bc3942b",
+    "target": "test_8c_1a2c4f14c424a31db9c57fd046c3b9f0df",
+    "source_unique_name": "url_is_ssh#url.h#641",
+    "target_unique_name": "strdup#url.h#512",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a840291bc02cba5474a4cb46a9b9566fe",
+    "target": "test_8c_1a57b8df4484e05cf13f92e11ab8f88e23",
+    "source_unique_name": "main#test.c#814",
+    "target_unique_name": "__assert_fail#assert.h#808",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ab50d5f550c21b9344d6526c03233ede7",
+    "target": "test_8c_1a562f3559e6193429a09afe30e6856ca9",
+    "source_unique_name": "vfprintf#stdio.h#335",
+    "target_unique_name": "__gnuc_va_list#stdarg.h#107",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a2a3c2e9ef2d275dd8caaad644163ad51",
+    "target": "test_8c_1a66759279a565877413cc1c9777dd4fac",
+    "source_unique_name": "strcmp#string.h#435",
+    "target_unique_name": "url_get_hash#url.h#743",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1af9bb422417cb6143567407850f384cb5",
+    "target": "test_8c_1ab280d6183a1d89083b19b0c57d8308d5",
+    "source_unique_name": "get_part#url.h#535",
+    "target_unique_name": "strcpy#string.h#427",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ad338cc7d33d82a581125cec28cd63031",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "fgetpos#stdio.h#401",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a43f6ed0954420f75d09c06224a53c228",
+    "target": "test_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "mbtowc#stdlib.h#97",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ab4ec7d807affa8753468478de8a9dee4",
+    "target": "test_8c_1afb8699abb1f51d920a176e695ff3be8a",
+    "source_unique_name": "url_parse#url.h#557",
+    "target_unique_name": "free#stdlib.h#63",
+    "type": "reference"
+  },
+  {
+    "source": "struct__G__fpos__t#struct__G__fpos__t_1a1f3f051dff02b13553766b90e703ac1a#struct__G__fpos__t_1a7bedfe55beff20f064b4cefa4f65e81d#test_8c_1ac317bd1c7e67036e8a2db38b80d8b64d",
+    "target": "struct____mbstate__t#struct____mbstate__t_1a076c784a64f56f06c9f6719b3fa8cad2#struct____mbstate__t_1a2846742e945d802237a2fd2608d2c40e#struct____mbstate__t_1a2c9631f54d97686f7c3715b6c44bd5f3#struct____mbstate__t_1ac4523855a8ed73d69f2f6d89860cf4a6",
+    "source_unique_name": "_G_fpos_t#__fpos_t.h#241",
+    "target_unique_name": "__mbstate_t#__mbstate_t.h#233",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a7358f2db0a1ec299bdfb0a9220043196",
+    "target": "test_8c_1aea092f6d290537d549ca766819e68632",
+    "source_unique_name": "url_get_auth#url.h#658",
+    "target_unique_name": "strlen#string.h#459",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a143c8ba891d2f2a00ab84da63d1de5cf",
+    "target": "test_8c_1a2a3c2e9ef2d275dd8caaad644163ad51",
+    "source_unique_name": "url_is_protocol#url.h#631",
+    "target_unique_name": "strcmp#string.h#435",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a57b8df4484e05cf13f92e11ab8f88e23",
+    "target": "test_8c_1a66759279a565877413cc1c9777dd4fac",
+    "source_unique_name": "__assert_fail#assert.h#808",
+    "target_unique_name": "url_get_hash#url.h#743",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ac07ccab33adfcba21a77694182b354e0",
+    "target": "test_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "fwrite#stdio.h#393",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a13c06cb9050d1bccdf42e891814fb17a",
+    "target": "test_8c_1aca82290b875f93eb9451679fc04b0c9d",
+    "source_unique_name": "__loff_t#types.h#223",
+    "target_unique_name": "__off64_t#types.h#173",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1af850a727a4a73ac35561aba4b6222f0b",
+    "target": "test_8c_1a19240bf661b68f1f489a63ab89ae48db",
+    "source_unique_name": "url_get_pathname#url.h#689",
+    "target_unique_name": "strcat#string.h#431",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a840291bc02cba5474a4cb46a9b9566fe",
+    "target": "test_8c_1a62a624c1b25ede12002d8b68304e410c",
+    "source_unique_name": "main#test.c#814",
+    "target_unique_name": "url_data_inspect#url.h#780",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1aa20f8bd13671958e88092ca75e00bbde",
+    "target": "test_8c_1a562f3559e6193429a09afe30e6856ca9",
+    "source_unique_name": "vsscanf#stdio.h#361",
+    "target_unique_name": "__gnuc_va_list#stdarg.h#107",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ad07e672009b2f1590f705caa78cc9942",
+    "target": "test_8c_1ab4ec7d807affa8753468478de8a9dee4",
+    "source_unique_name": "url_inspect#url.h#776",
+    "target_unique_name": "url_parse#url.h#557",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ae91b3dc6530d8a443eb7f01137f5aeff",
+    "target": "test_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "malloc#stdlib.h#57",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1acd5bbbd9a050088e4eaa774a2e8cd03b",
+    "target": "test_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "strxfrm#string.h#441",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ac80f4484175bf6c48d7b7ca4e9897ae6",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "stdout#stdio.h#305",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a70fadea61e64a0039c7e41fc511169da",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "ftell#stdio.h#397",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "target": "test_8c_1aca82290b875f93eb9451679fc04b0c9d",
+    "source_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "target_unique_name": "__off64_t#types.h#173",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1aba4346b5d847e71494032ca95f239e3e",
+    "target": "structurl__data#structurl__data_1ae060d5708030468e7616e58261f4f9ee#structurl__data_1a8cf56d6cb35bc3d6a8e959b0d8164480#structurl__data_1a3a6758c3bfe5804e8c2a070c6388a22a#structurl__data_1a15ef209fc207b24fadb69dac20471773#structurl__data_1adf2e8e2cc64a34720b540da0164a10b5#structurl__data_1aa766bbb71a5adbe51c5857e04b20cd0d#structurl__data_1a1a6a6620b215b266eaa705a407aab537#structurl__data_1aa3ae16f775544e3e6d4bbb78d0bfa2a1#structurl__data_1aed07b18e7446fc9e38cd928f006cc7bd#structurl__data_1aa621007a20590b86e6aad330508c99ec#structurl__data_1a516d656f2d7064a5c2f41bef4a299110#test_8c_1a18097df21d52cbef9825b0e886d2c5f8",
+    "source_unique_name": "printf#stdio.h#331",
+    "target_unique_name": "url_data#url.h#466",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1aca906e125b2875c0ea36a718d3b0c676",
+    "target": "test_8c_1ad928d3e6f8e720c0db34328b6bc3942b",
+    "source_unique_name": "url_get_hostname#url.h#665",
+    "target_unique_name": "url_is_ssh#url.h#641",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a840291bc02cba5474a4cb46a9b9566fe",
+    "target": "test_8c_1af850a727a4a73ac35561aba4b6222f0b",
+    "source_unique_name": "main#test.c#814",
+    "target_unique_name": "url_get_pathname#url.h#689",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ab4ec7d807affa8753468478de8a9dee4",
+    "target": "structurl__data#structurl__data_1ae060d5708030468e7616e58261f4f9ee#structurl__data_1a8cf56d6cb35bc3d6a8e959b0d8164480#structurl__data_1a3a6758c3bfe5804e8c2a070c6388a22a#structurl__data_1a15ef209fc207b24fadb69dac20471773#structurl__data_1adf2e8e2cc64a34720b540da0164a10b5#structurl__data_1aa766bbb71a5adbe51c5857e04b20cd0d#structurl__data_1a1a6a6620b215b266eaa705a407aab537#structurl__data_1aa3ae16f775544e3e6d4bbb78d0bfa2a1#structurl__data_1aed07b18e7446fc9e38cd928f006cc7bd#structurl__data_1aa621007a20590b86e6aad330508c99ec#structurl__data_1a516d656f2d7064a5c2f41bef4a299110#test_8c_1a18097df21d52cbef9825b0e886d2c5f8",
+    "source_unique_name": "url_parse#url.h#557",
+    "target_unique_name": "url_data#url.h#466",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a8098d7ef28f95ddd4366a43d6d6ff5f5",
+    "target": "test_8c_1a2c4f14c424a31db9c57fd046c3b9f0df",
+    "source_unique_name": "strff#url.h#519",
+    "target_unique_name": "strdup#url.h#512",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a840291bc02cba5474a4cb46a9b9566fe",
+    "target": "test_8c_1a53be1c0772595828bd30f5544572dadb",
+    "source_unique_name": "main#test.c#814",
+    "target_unique_name": "url_get_protocol#url.h#650",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a944b71e747174d578ffd3ed0a0cfba8e",
+    "target": "test_8c_1a9c277a3fd853029cc853c877bcd32e8e",
+    "source_unique_name": "mbstowcs#stdlib.h#101",
+    "target_unique_name": "wchar_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1af9bb422417cb6143567407850f384cb5",
+    "target": "test_8c_1afb8699abb1f51d920a176e695ff3be8a",
+    "source_unique_name": "get_part#url.h#535",
+    "target_unique_name": "free#stdlib.h#63",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a220950e3934d9a00d5cbca90dcea77b6",
+    "target": "test_8c_1ac8c52d097db307ed556d06c2d67155dc",
+    "source_unique_name": "url_get_host#url.h#680",
+    "target_unique_name": "sscanf#stdio.h#349",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a3eefe6ded25ef3448515ce23cb558de1",
+    "target": "test_8c_1aea092f6d290537d549ca766819e68632",
+    "source_unique_name": "url_get_path#url.h#699",
+    "target_unique_name": "strlen#string.h#459",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a8b3ac2dc06d725ce061c1c102fde07f0",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "fflush#stdio.h#319",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a68923d617be29fd06c614647c52bc65a",
+    "target": "test_8c_1a3eefe6ded25ef3448515ce23cb558de1",
+    "source_unique_name": "url_get_search#url.h#720",
+    "target_unique_name": "url_get_path#url.h#699",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1afebdddc23932f14b2d236d37f4ba2e13",
+    "target": "test_8c_1a68923d617be29fd06c614647c52bc65a",
+    "source_unique_name": "url_get_query#url.h#734",
+    "target_unique_name": "url_get_search#url.h#720",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a66759279a565877413cc1c9777dd4fac",
+    "target": "test_8c_1afb8699abb1f51d920a176e695ff3be8a",
+    "source_unique_name": "url_get_hash#url.h#743",
+    "target_unique_name": "free#stdlib.h#63",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a57b8df4484e05cf13f92e11ab8f88e23",
+    "target": "test_8c_1afebdddc23932f14b2d236d37f4ba2e13",
+    "source_unique_name": "__assert_fail#assert.h#808",
+    "target_unique_name": "url_get_query#url.h#734",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a2c4f14c424a31db9c57fd046c3b9f0df",
+    "target": "test_8c_1aea092f6d290537d549ca766819e68632",
+    "source_unique_name": "strdup#url.h#512",
+    "target_unique_name": "strlen#string.h#459",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a840291bc02cba5474a4cb46a9b9566fe",
+    "target": "test_8c_1a68923d617be29fd06c614647c52bc65a",
+    "source_unique_name": "main#test.c#814",
+    "target_unique_name": "url_get_search#url.h#720",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a2a3c2e9ef2d275dd8caaad644163ad51",
+    "target": "test_8c_1a68923d617be29fd06c614647c52bc65a",
+    "source_unique_name": "strcmp#string.h#435",
+    "target_unique_name": "url_get_search#url.h#720",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a57b8df4484e05cf13f92e11ab8f88e23",
+    "target": "test_8c_1aca906e125b2875c0ea36a718d3b0c676",
+    "source_unique_name": "__assert_fail#assert.h#808",
+    "target_unique_name": "url_get_hostname#url.h#665",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a840291bc02cba5474a4cb46a9b9566fe",
+    "target": "test_8c_1ab4ec7d807affa8753468478de8a9dee4",
+    "source_unique_name": "main#test.c#814",
+    "target_unique_name": "url_parse#url.h#557",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a68923d617be29fd06c614647c52bc65a",
+    "target": "test_8c_1ae91b3dc6530d8a443eb7f01137f5aeff",
+    "source_unique_name": "url_get_search#url.h#720",
+    "target_unique_name": "malloc#stdlib.h#57",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a2a3c2e9ef2d275dd8caaad644163ad51",
+    "target": "test_8c_1a7358f2db0a1ec299bdfb0a9220043196",
+    "source_unique_name": "strcmp#string.h#435",
+    "target_unique_name": "url_get_auth#url.h#658",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a220950e3934d9a00d5cbca90dcea77b6",
+    "target": "test_8c_1aca906e125b2875c0ea36a718d3b0c676",
+    "source_unique_name": "url_get_host#url.h#680",
+    "target_unique_name": "url_get_hostname#url.h#665",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a66759279a565877413cc1c9777dd4fac",
+    "target": "test_8c_1af8e0d33430fe3279489e0b6e8b65b1f0",
+    "source_unique_name": "url_get_hash#url.h#743",
+    "target_unique_name": "strrwd#url.h#527",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a840291bc02cba5474a4cb46a9b9566fe",
+    "target": "test_8c_1a5fd3f374b67077398f884c5c0f7f866d",
+    "source_unique_name": "main#test.c#814",
+    "target_unique_name": "url_get_port#url.h#764",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1aca906e125b2875c0ea36a718d3b0c676",
+    "target": "test_8c_1a2c4f14c424a31db9c57fd046c3b9f0df",
+    "source_unique_name": "url_get_hostname#url.h#665",
+    "target_unique_name": "strdup#url.h#512",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1afd4bf2faec43342e7ad3d2ab37bac1fe",
+    "target": "test_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "qsort#stdlib.h#81",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1adb911090594ec81312ce45b30afd50a4",
+    "target": "test_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "snprintf#stdio.h#341",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a62a624c1b25ede12002d8b68304e410c",
+    "target": "test_8c_1aba4346b5d847e71494032ca95f239e3e",
+    "source_unique_name": "url_data_inspect#url.h#780",
+    "target_unique_name": "printf#stdio.h#331",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a43f6ed0954420f75d09c06224a53c228",
+    "target": "test_8c_1a9c277a3fd853029cc853c877bcd32e8e",
+    "source_unique_name": "mbtowc#stdlib.h#97",
+    "target_unique_name": "wchar_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1acd4a13e01187e4e81211cf55743ba4f5",
+    "target": "test_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "__ctype_get_mb_cur_max#stdlib.h#29",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1aa116521ddd43232580e31f7227666ba9",
+    "target": "test_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "fread#stdio.h#391",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a840291bc02cba5474a4cb46a9b9566fe",
+    "target": "test_8c_1a143c8ba891d2f2a00ab84da63d1de5cf",
+    "source_unique_name": "main#test.c#814",
+    "target_unique_name": "url_is_protocol#url.h#631",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a57b8df4484e05cf13f92e11ab8f88e23",
+    "target": "test_8c_1a143c8ba891d2f2a00ab84da63d1de5cf",
+    "source_unique_name": "__assert_fail#assert.h#808",
+    "target_unique_name": "url_is_protocol#url.h#631",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a66759279a565877413cc1c9777dd4fac",
+    "target": "test_8c_1ac8c52d097db307ed556d06c2d67155dc",
+    "source_unique_name": "url_get_hash#url.h#743",
+    "target_unique_name": "sscanf#stdio.h#349",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a66759279a565877413cc1c9777dd4fac",
+    "target": "test_8c_1aea092f6d290537d549ca766819e68632",
+    "source_unique_name": "url_get_hash#url.h#743",
+    "target_unique_name": "strlen#string.h#459",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1aca906e125b2875c0ea36a718d3b0c676",
+    "target": "test_8c_1afb8699abb1f51d920a176e695ff3be8a",
+    "source_unique_name": "url_get_hostname#url.h#665",
+    "target_unique_name": "free#stdlib.h#63",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a840291bc02cba5474a4cb46a9b9566fe",
+    "target": "test_8c_1a220950e3934d9a00d5cbca90dcea77b6",
+    "source_unique_name": "main#test.c#814",
+    "target_unique_name": "url_get_host#url.h#680",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a196a42e0974275e188e1976d1fd2981e",
+    "target": "test_8c_1a91332b87f3597b3ecb7ad353bcda944c",
+    "source_unique_name": "__int_least16_t#types.h#137",
+    "target_unique_name": "__int16_t#types.h#121",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ae9ef27456f65643c7f70491925950c26",
+    "target": "test_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "strncpy#string.h#429",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a2a3c2e9ef2d275dd8caaad644163ad51",
+    "target": "test_8c_1af850a727a4a73ac35561aba4b6222f0b",
+    "source_unique_name": "strcmp#string.h#435",
+    "target_unique_name": "url_get_pathname#url.h#689",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a39c7b3743fd8e5b00e8e112f6928ab53",
+    "target": "test_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "memcpy#string.h#417",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ab4ec7d807affa8753468478de8a9dee4",
+    "target": "test_8c_1aea092f6d290537d549ca766819e68632",
+    "source_unique_name": "url_parse#url.h#557",
+    "target_unique_name": "strlen#string.h#459",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a68923d617be29fd06c614647c52bc65a",
+    "target": "test_8c_1af8e0d33430fe3279489e0b6e8b65b1f0",
+    "source_unique_name": "url_get_search#url.h#720",
+    "target_unique_name": "strrwd#url.h#527",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1af9bb422417cb6143567407850f384cb5",
+    "target": "test_8c_1a2c4f14c424a31db9c57fd046c3b9f0df",
+    "source_unique_name": "get_part#url.h#535",
+    "target_unique_name": "strdup#url.h#512",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a962256f0ccb26adfecb13c6170ee4b72",
+    "target": "test_8c_1ad354a21de2c1a620441cb09b93f96031",
+    "source_unique_name": "__int_least8_t#types.h#133",
+    "target_unique_name": "__int8_t#types.h#117",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a840291bc02cba5474a4cb46a9b9566fe",
+    "target": "test_8c_1afebdddc23932f14b2d236d37f4ba2e13",
+    "source_unique_name": "main#test.c#814",
+    "target_unique_name": "url_get_query#url.h#734",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1af8e0d33430fe3279489e0b6e8b65b1f0",
+    "target": "test_8c_1aea092f6d290537d549ca766819e68632",
+    "source_unique_name": "strrwd#url.h#527",
+    "target_unique_name": "strlen#string.h#459",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1aa89248dd55efb5f59a96e82976c97758",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "ferror#stdio.h#409",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1af9bb422417cb6143567407850f384cb5",
+    "target": "test_8c_1a8098d7ef28f95ddd4366a43d6d6ff5f5",
+    "source_unique_name": "get_part#url.h#535",
+    "target_unique_name": "strff#url.h#519",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1afebdddc23932f14b2d236d37f4ba2e13",
+    "target": "test_8c_1ae91b3dc6530d8a443eb7f01137f5aeff",
+    "source_unique_name": "url_get_query#url.h#734",
+    "target_unique_name": "malloc#stdlib.h#57",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1aca906e125b2875c0ea36a718d3b0c676",
+    "target": "test_8c_1a7358f2db0a1ec299bdfb0a9220043196",
+    "source_unique_name": "url_get_hostname#url.h#665",
+    "target_unique_name": "url_get_auth#url.h#658",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a5fd3f374b67077398f884c5c0f7f866d",
+    "target": "test_8c_1a8098d7ef28f95ddd4366a43d6d6ff5f5",
+    "source_unique_name": "url_get_port#url.h#764",
+    "target_unique_name": "strff#url.h#519",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1aac8aa124bf46de9c4cd664738ad4f202",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "vfscanf#stdio.h#357",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a62a624c1b25ede12002d8b68304e410c",
+    "target": "structurl__data#structurl__data_1ae060d5708030468e7616e58261f4f9ee#structurl__data_1a8cf56d6cb35bc3d6a8e959b0d8164480#structurl__data_1a3a6758c3bfe5804e8c2a070c6388a22a#structurl__data_1a15ef209fc207b24fadb69dac20471773#structurl__data_1adf2e8e2cc64a34720b540da0164a10b5#structurl__data_1aa766bbb71a5adbe51c5857e04b20cd0d#structurl__data_1a1a6a6620b215b266eaa705a407aab537#structurl__data_1aa3ae16f775544e3e6d4bbb78d0bfa2a1#structurl__data_1aed07b18e7446fc9e38cd928f006cc7bd#structurl__data_1aa621007a20590b86e6aad330508c99ec#structurl__data_1a516d656f2d7064a5c2f41bef4a299110#test_8c_1a18097df21d52cbef9825b0e886d2c5f8",
+    "source_unique_name": "url_data_inspect#url.h#780",
+    "target_unique_name": "url_data#url.h#466",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a248bc66a623eb27ec373cd3a75e22a5b",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "rewind#stdio.h#399",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1af72fca979079552bcd2e77021ce8e344",
+    "target": "test_8c_1a562f3559e6193429a09afe30e6856ca9",
+    "source_unique_name": "vsprintf#stdio.h#339",
+    "target_unique_name": "__gnuc_va_list#stdarg.h#107",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a5fd3f374b67077398f884c5c0f7f866d",
+    "target": "test_8c_1ae91b3dc6530d8a443eb7f01137f5aeff",
+    "source_unique_name": "url_get_port#url.h#764",
+    "target_unique_name": "malloc#stdlib.h#57",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a57b8df4484e05cf13f92e11ab8f88e23",
+    "target": "test_8c_1a53be1c0772595828bd30f5544572dadb",
+    "source_unique_name": "__assert_fail#assert.h#808",
+    "target_unique_name": "url_get_protocol#url.h#650",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1af16dbff0a88146dd3b7fda1cd57b247c",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "setvbuf#stdio.h#327",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1af9bb422417cb6143567407850f384cb5",
+    "target": "test_8c_1ae91b3dc6530d8a443eb7f01137f5aeff",
+    "source_unique_name": "get_part#url.h#535",
+    "target_unique_name": "malloc#stdlib.h#57",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a2a3c2e9ef2d275dd8caaad644163ad51",
+    "target": "test_8c_1a87622c1418dff558ce465500efba901e",
+    "source_unique_name": "strcmp#string.h#435",
+    "target_unique_name": "URL_SCHEMES#url.h#463",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1aadd2e1a74f39deac5ca4747995d7b866",
+    "target": "test_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "calloc#stdlib.h#59",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a57b8df4484e05cf13f92e11ab8f88e23",
+    "target": "test_8c_1a3eefe6ded25ef3448515ce23cb558de1",
+    "source_unique_name": "__assert_fail#assert.h#808",
+    "target_unique_name": "url_get_path#url.h#699",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ab4ec7d807affa8753468478de8a9dee4",
+    "target": "test_8c_1ae91b3dc6530d8a443eb7f01137f5aeff",
+    "source_unique_name": "url_parse#url.h#557",
+    "target_unique_name": "malloc#stdlib.h#57",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a216ba12163dfecf647733f723fa2b3ad",
+    "target": "structlldiv__t#structlldiv__t_1aa2c189bf2a4ebe0f680463e4ce32b72f#structlldiv__t_1adc99c61028a27673c373ab2815f90a79",
+    "source_unique_name": "lldiv#stdlib.h#93",
+    "target_unique_name": "lldiv_t#stdlib.h#24",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1af16dbff0a88146dd3b7fda1cd57b247c",
+    "target": "test_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "setvbuf#stdio.h#327",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a33debf6d647ea353b11a1ac95ae55f6b",
+    "target": "test_8c_1a35e28bfcc8d641e0eebd66f4dc559a3f",
+    "source_unique_name": "bsearch#stdlib.h#79",
+    "target_unique_name": "__compar_fn_t#stdlib.h#77",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a1fe45496d82bd1392bbce69da26b893b",
+    "target": "structdiv__t#structdiv__t_1a0b9dda2884048daa68ca4aaa12b17b9a#structdiv__t_1ac64389de252de53eda8b4f8dbb7c623f",
+    "source_unique_name": "div#stdlib.h#89",
+    "target_unique_name": "div_t#stdlib.h#14",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ae1aaee71cf6ce8eb7ce0a17788df791e",
+    "target": "test_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "strspn#string.h#449",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a8820fb7f298744706454aa0d3bbabc1e",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "freopen#stdio.h#323",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a57b8df4484e05cf13f92e11ab8f88e23",
+    "target": "test_8c_1a2a3c2e9ef2d275dd8caaad644163ad51",
+    "source_unique_name": "__assert_fail#assert.h#808",
+    "target_unique_name": "strcmp#string.h#435",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ab7d5961034ac12b88541de598ba984d7",
+    "target": "test_8c_1ae191cf54b09af0e7f674cb7c599167e9",
+    "source_unique_name": "__uint_least16_t#types.h#139",
+    "target_unique_name": "__uint16_t#types.h#123",
+    "type": "reference"
+  },
+  {
+    "source": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "target": "test_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a96d63a56835c80ae953c50eaac0b8483",
+    "target": "test_8c_1a9c277a3fd853029cc853c877bcd32e8e",
+    "source_unique_name": "wcstombs#stdlib.h#103",
+    "target_unique_name": "wchar_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ab4ec7d807affa8753468478de8a9dee4",
+    "target": "test_8c_1a19240bf661b68f1f489a63ab89ae48db",
+    "source_unique_name": "url_parse#url.h#557",
+    "target_unique_name": "strcat#string.h#431",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ab4ec7d807affa8753468478de8a9dee4",
+    "target": "test_8c_1a8ac000c65348c9d1ab109f6b87eed16e",
+    "source_unique_name": "url_parse#url.h#557",
+    "target_unique_name": "strstr#string.h#453",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a220950e3934d9a00d5cbca90dcea77b6",
+    "target": "test_8c_1ae91b3dc6530d8a443eb7f01137f5aeff",
+    "source_unique_name": "url_get_host#url.h#680",
+    "target_unique_name": "malloc#stdlib.h#57",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ab4f9b130166e5811519513d6178c1ae3",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "ungetc#stdio.h#389",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a052e725c916c5f7c8f176b23c7cd632a",
+    "target": "test_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "mblen#stdlib.h#95",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1af3387285b3eb0ce4e0e7ca3ccaed9014",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "fputc#stdio.h#375",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ab50d5f550c21b9344d6526c03233ede7",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "vfprintf#stdio.h#335",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a96d63a56835c80ae953c50eaac0b8483",
+    "target": "test_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "wcstombs#stdlib.h#103",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1afebdddc23932f14b2d236d37f4ba2e13",
+    "target": "test_8c_1ac8c52d097db307ed556d06c2d67155dc",
+    "source_unique_name": "url_get_query#url.h#734",
+    "target_unique_name": "sscanf#stdio.h#349",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ad07e672009b2f1590f705caa78cc9942",
+    "target": "test_8c_1a62a624c1b25ede12002d8b68304e410c",
+    "source_unique_name": "url_inspect#url.h#776",
+    "target_unique_name": "url_data_inspect#url.h#780",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a143c8ba891d2f2a00ab84da63d1de5cf",
+    "target": "test_8c_1a87622c1418dff558ce465500efba901e",
+    "source_unique_name": "url_is_protocol#url.h#631",
+    "target_unique_name": "URL_SCHEMES#url.h#463",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a53be1c0772595828bd30f5544572dadb",
+    "target": "test_8c_1a143c8ba891d2f2a00ab84da63d1de5cf",
+    "source_unique_name": "url_get_protocol#url.h#650",
+    "target_unique_name": "url_is_protocol#url.h#631",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ad8c24fe43fe5e42b9651c50acd91c706",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "fscanf#stdio.h#345",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a68923d617be29fd06c614647c52bc65a",
+    "target": "test_8c_1aea092f6d290537d549ca766819e68632",
+    "source_unique_name": "url_get_search#url.h#720",
+    "target_unique_name": "strlen#string.h#459",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1afd4bf2faec43342e7ad3d2ab37bac1fe",
+    "target": "test_8c_1a35e28bfcc8d641e0eebd66f4dc559a3f",
+    "source_unique_name": "qsort#stdlib.h#81",
+    "target_unique_name": "__compar_fn_t#stdlib.h#77",
+    "type": "reference"
+  },
+  {
+    "source": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "target": "test_8c_1a677e9cddd4b515944f4f72e0c9c357a7",
+    "source_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "target_unique_name": "_IO_lock_t#struct_FILE.h#267",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ad928d3e6f8e720c0db34328b6bc3942b",
+    "target": "test_8c_1a2a3c2e9ef2d275dd8caaad644163ad51",
+    "source_unique_name": "url_is_ssh#url.h#641",
+    "target_unique_name": "strcmp#string.h#435",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a3eefe6ded25ef3448515ce23cb558de1",
+    "target": "test_8c_1ad928d3e6f8e720c0db34328b6bc3942b",
+    "source_unique_name": "url_get_path#url.h#699",
+    "target_unique_name": "url_is_ssh#url.h#641",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ad338cc7d33d82a581125cec28cd63031",
+    "target": "test_8c_1aa5448edeef110a12e24d9bf124e21adb",
+    "source_unique_name": "fgetpos#stdio.h#401",
+    "target_unique_name": "fpos_t#stdio.h#301",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1af9bb422417cb6143567407850f384cb5",
+    "target": "test_8c_1ac8c52d097db307ed556d06c2d67155dc",
+    "source_unique_name": "get_part#url.h#535",
+    "target_unique_name": "sscanf#stdio.h#349",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a7358f2db0a1ec299bdfb0a9220043196",
+    "target": "test_8c_1a53be1c0772595828bd30f5544572dadb",
+    "source_unique_name": "url_get_auth#url.h#658",
+    "target_unique_name": "url_get_protocol#url.h#650",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a63b5595dcccc6b7edfdc3463d6b173a2",
+    "target": "test_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "memchr#string.h#425",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a3eefe6ded25ef3448515ce23cb558de1",
+    "target": "test_8c_1af9bb422417cb6143567407850f384cb5",
+    "source_unique_name": "url_get_path#url.h#699",
+    "target_unique_name": "get_part#url.h#535",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a1b31beb7dc68da348820bc9653202dce",
+    "target": "structurl__data#structurl__data_1ae060d5708030468e7616e58261f4f9ee#structurl__data_1a8cf56d6cb35bc3d6a8e959b0d8164480#structurl__data_1a3a6758c3bfe5804e8c2a070c6388a22a#structurl__data_1a15ef209fc207b24fadb69dac20471773#structurl__data_1adf2e8e2cc64a34720b540da0164a10b5#structurl__data_1aa766bbb71a5adbe51c5857e04b20cd0d#structurl__data_1a1a6a6620b215b266eaa705a407aab537#structurl__data_1aa3ae16f775544e3e6d4bbb78d0bfa2a1#structurl__data_1aed07b18e7446fc9e38cd928f006cc7bd#structurl__data_1aa621007a20590b86e6aad330508c99ec#structurl__data_1a516d656f2d7064a5c2f41bef4a299110#test_8c_1a18097df21d52cbef9825b0e886d2c5f8",
+    "source_unique_name": "url_free#url.h#795",
+    "target_unique_name": "url_data#url.h#466",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a18de3043b15b8aa305d9b5b2a682bb40",
+    "target": "test_8c_1aeb10a021f8f3b5aaae942fe6b104abb2",
+    "source_unique_name": "__int_least64_t#types.h#145",
+    "target_unique_name": "__int64_t#types.h#129",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1aea092f6d290537d549ca766819e68632",
+    "target": "test_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "strlen#string.h#459",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ab4ec7d807affa8753468478de8a9dee4",
+    "target": "test_8c_1ad928d3e6f8e720c0db34328b6bc3942b",
+    "source_unique_name": "url_parse#url.h#557",
+    "target_unique_name": "url_is_ssh#url.h#641",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a66759279a565877413cc1c9777dd4fac",
+    "target": "test_8c_1af850a727a4a73ac35561aba4b6222f0b",
+    "source_unique_name": "url_get_hash#url.h#743",
+    "target_unique_name": "url_get_pathname#url.h#689",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a67f3288c3cd64de8d38ebc03618720ce",
+    "target": "test_8c_1ad81dd3c6092f614cc96a1bb25914e653",
+    "source_unique_name": "__int_least32_t#types.h#141",
+    "target_unique_name": "__int32_t#types.h#125",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a9d198886aad18d4bb0b569e4b4760edd",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "fgets#stdio.h#381",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a3eefe6ded25ef3448515ce23cb558de1",
+    "target": "test_8c_1a2ad2a30abc5615c271e2fb2bd90f84a3",
+    "source_unique_name": "url_get_path#url.h#699",
+    "target_unique_name": "sprintf#stdio.h#333",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a840291bc02cba5474a4cb46a9b9566fe",
+    "target": "test_8c_1a1b31beb7dc68da348820bc9653202dce",
+    "source_unique_name": "main#test.c#814",
+    "target_unique_name": "url_free#url.h#795",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ac07ccab33adfcba21a77694182b354e0",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "fwrite#stdio.h#393",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a78647033129748856cb0c24eedf33e63",
+    "target": "test_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "memset#string.h#421",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ad928d3e6f8e720c0db34328b6bc3942b",
+    "target": "test_8c_1afb8699abb1f51d920a176e695ff3be8a",
+    "source_unique_name": "url_is_ssh#url.h#641",
+    "target_unique_name": "free#stdlib.h#63",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a57b8df4484e05cf13f92e11ab8f88e23",
+    "target": "test_8c_1af850a727a4a73ac35561aba4b6222f0b",
+    "source_unique_name": "__assert_fail#assert.h#808",
+    "target_unique_name": "url_get_pathname#url.h#689",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1aa5448edeef110a12e24d9bf124e21adb",
+    "target": "struct__G__fpos__t#struct__G__fpos__t_1a1f3f051dff02b13553766b90e703ac1a#struct__G__fpos__t_1a7bedfe55beff20f064b4cefa4f65e81d#test_8c_1ac317bd1c7e67036e8a2db38b80d8b64d",
+    "source_unique_name": "fpos_t#stdio.h#301",
+    "target_unique_name": "_G_fpos_t#__fpos_t.h#241",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a8ac8fec9da004985e4c920ffc13aabda",
+    "target": "test_8c_1a562f3559e6193429a09afe30e6856ca9",
+    "source_unique_name": "vprintf#stdio.h#337",
+    "target_unique_name": "__gnuc_va_list#stdarg.h#107",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ab4ec7d807affa8753468478de8a9dee4",
+    "target": "test_8c_1a8098d7ef28f95ddd4366a43d6d6ff5f5",
+    "source_unique_name": "url_parse#url.h#557",
+    "target_unique_name": "strff#url.h#519",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1aca906e125b2875c0ea36a718d3b0c676",
+    "target": "test_8c_1a53be1c0772595828bd30f5544572dadb",
+    "source_unique_name": "url_get_hostname#url.h#665",
+    "target_unique_name": "url_get_protocol#url.h#650",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a840291bc02cba5474a4cb46a9b9566fe",
+    "target": "test_8c_1a66759279a565877413cc1c9777dd4fac",
+    "source_unique_name": "main#test.c#814",
+    "target_unique_name": "url_get_hash#url.h#743",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a818d63019adc9d518a13f9c36ed04f35",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "fgetc#stdio.h#369",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1af850a727a4a73ac35561aba4b6222f0b",
+    "target": "test_8c_1afb8699abb1f51d920a176e695ff3be8a",
+    "source_unique_name": "url_get_pathname#url.h#689",
+    "target_unique_name": "free#stdlib.h#63",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1aac8aa124bf46de9c4cd664738ad4f202",
+    "target": "test_8c_1a562f3559e6193429a09afe30e6856ca9",
+    "source_unique_name": "vfscanf#stdio.h#357",
+    "target_unique_name": "__gnuc_va_list#stdarg.h#107",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1aaa6d255675688c736c99ebd32f2a7214",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "clearerr#stdio.h#405",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ab4ec7d807affa8753468478de8a9dee4",
+    "target": "test_8c_1a53be1c0772595828bd30f5544572dadb",
+    "source_unique_name": "url_parse#url.h#557",
+    "target_unique_name": "url_get_protocol#url.h#650",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ada1021d5744a593bf7cf57366d564951",
+    "target": "test_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "strncat#string.h#433",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a68923d617be29fd06c614647c52bc65a",
+    "target": "test_8c_1afb8699abb1f51d920a176e695ff3be8a",
+    "source_unique_name": "url_get_search#url.h#720",
+    "target_unique_name": "free#stdlib.h#63",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a2a3c2e9ef2d275dd8caaad644163ad51",
+    "target": "test_8c_1a53be1c0772595828bd30f5544572dadb",
+    "source_unique_name": "strcmp#string.h#435",
+    "target_unique_name": "url_get_protocol#url.h#650",
+    "type": "reference"
+  },
+  {
+    "source": "struct__G__fpos__t#struct__G__fpos__t_1a1f3f051dff02b13553766b90e703ac1a#struct__G__fpos__t_1a7bedfe55beff20f064b4cefa4f65e81d#test_8c_1ac317bd1c7e67036e8a2db38b80d8b64d",
+    "target": "test_8c_1a152a2238409780eca0c972b79cefdbcb",
+    "source_unique_name": "_G_fpos_t#__fpos_t.h#241",
+    "target_unique_name": "__off_t#types.h#171",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1aa116521ddd43232580e31f7227666ba9",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "fread#stdio.h#391",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ae91b3dc6530d8a443eb7f01137f5aeff",
+    "target": "structurl__data#structurl__data_1ae060d5708030468e7616e58261f4f9ee#structurl__data_1a8cf56d6cb35bc3d6a8e959b0d8164480#structurl__data_1a3a6758c3bfe5804e8c2a070c6388a22a#structurl__data_1a15ef209fc207b24fadb69dac20471773#structurl__data_1adf2e8e2cc64a34720b540da0164a10b5#structurl__data_1aa766bbb71a5adbe51c5857e04b20cd0d#structurl__data_1a1a6a6620b215b266eaa705a407aab537#structurl__data_1aa3ae16f775544e3e6d4bbb78d0bfa2a1#structurl__data_1aed07b18e7446fc9e38cd928f006cc7bd#structurl__data_1aa621007a20590b86e6aad330508c99ec#structurl__data_1a516d656f2d7064a5c2f41bef4a299110#test_8c_1a18097df21d52cbef9825b0e886d2c5f8",
+    "source_unique_name": "malloc#stdlib.h#57",
+    "target_unique_name": "url_data#url.h#466",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a68923d617be29fd06c614647c52bc65a",
+    "target": "test_8c_1a19240bf661b68f1f489a63ab89ae48db",
+    "source_unique_name": "url_get_search#url.h#720",
+    "target_unique_name": "strcat#string.h#431",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a53be1c0772595828bd30f5544572dadb",
+    "target": "test_8c_1ac8c52d097db307ed556d06c2d67155dc",
+    "source_unique_name": "url_get_protocol#url.h#650",
+    "target_unique_name": "sscanf#stdio.h#349",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a3eefe6ded25ef3448515ce23cb558de1",
+    "target": "test_8c_1ae91b3dc6530d8a443eb7f01137f5aeff",
+    "source_unique_name": "url_get_path#url.h#699",
+    "target_unique_name": "malloc#stdlib.h#57",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a2a3c2e9ef2d275dd8caaad644163ad51",
+    "target": "test_8c_1afebdddc23932f14b2d236d37f4ba2e13",
+    "source_unique_name": "strcmp#string.h#435",
+    "target_unique_name": "url_get_query#url.h#734",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a5fd3f374b67077398f884c5c0f7f866d",
+    "target": "test_8c_1aea092f6d290537d549ca766819e68632",
+    "source_unique_name": "url_get_port#url.h#764",
+    "target_unique_name": "strlen#string.h#459",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a1dcbc7b06e2d1540b8a1e022445fecb7",
+    "target": "structldiv__t#structldiv__t_1ac56cf5939abb521a3a0c48f422b72271#structldiv__t_1a66737a893b8872671393a49aaf568cb1",
+    "source_unique_name": "ldiv#stdlib.h#91",
+    "target_unique_name": "ldiv_t#stdlib.h#19",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1aa95a56cf5cf0dfa3fbc7e7efa6dc9831",
+    "target": "test_8c_1a9c277a3fd853029cc853c877bcd32e8e",
+    "source_unique_name": "wctomb#stdlib.h#99",
+    "target_unique_name": "wchar_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a3eefe6ded25ef3448515ce23cb558de1",
+    "target": "test_8c_1afb8699abb1f51d920a176e695ff3be8a",
+    "source_unique_name": "url_get_path#url.h#699",
+    "target_unique_name": "free#stdlib.h#63",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a840291bc02cba5474a4cb46a9b9566fe",
+    "target": "test_8c_1a7358f2db0a1ec299bdfb0a9220043196",
+    "source_unique_name": "main#test.c#814",
+    "target_unique_name": "url_get_auth#url.h#658",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1af850a727a4a73ac35561aba4b6222f0b",
+    "target": "test_8c_1ae91b3dc6530d8a443eb7f01137f5aeff",
+    "source_unique_name": "url_get_pathname#url.h#689",
+    "target_unique_name": "malloc#stdlib.h#57",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a64b5e67a497c69d9bd73b675d62d1ac3",
+    "target": "test_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "strncmp#string.h#437",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a944b71e747174d578ffd3ed0a0cfba8e",
+    "target": "test_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "mbstowcs#stdlib.h#101",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a5fd3f374b67077398f884c5c0f7f866d",
+    "target": "test_8c_1ac8c52d097db307ed556d06c2d67155dc",
+    "source_unique_name": "url_get_port#url.h#764",
+    "target_unique_name": "sscanf#stdio.h#349",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a66759279a565877413cc1c9777dd4fac",
+    "target": "test_8c_1a3eefe6ded25ef3448515ce23cb558de1",
+    "source_unique_name": "url_get_hash#url.h#743",
+    "target_unique_name": "url_get_path#url.h#699",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ad63c455064e70e2d29abe291420d0a5c",
+    "target": "test_8c_1a562f3559e6193429a09afe30e6856ca9",
+    "source_unique_name": "vscanf#stdio.h#359",
+    "target_unique_name": "__gnuc_va_list#stdarg.h#107",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a57b8df4484e05cf13f92e11ab8f88e23",
+    "target": "test_8c_1a5fd3f374b67077398f884c5c0f7f866d",
+    "source_unique_name": "__assert_fail#assert.h#808",
+    "target_unique_name": "url_get_port#url.h#764",
+    "type": "reference"
+  },
+  {
+    "source": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "target": "test_8c_1a152a2238409780eca0c972b79cefdbcb",
+    "source_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "target_unique_name": "__off_t#types.h#171",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1acc1d792bec30704329dd0d2865775ae7",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "__overflow#stdio.h#415",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ad338cc7d33d82a581125cec28cd63031",
+    "target": "struct__G__fpos__t#struct__G__fpos__t_1a1f3f051dff02b13553766b90e703ac1a#struct__G__fpos__t_1a7bedfe55beff20f064b4cefa4f65e81d#test_8c_1ac317bd1c7e67036e8a2db38b80d8b64d",
+    "source_unique_name": "fgetpos#stdio.h#401",
+    "target_unique_name": "_G_fpos_t#__fpos_t.h#241",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1acab9c1fe2a80b10e01858bda28a04244",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "stdin#stdio.h#303",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a8dfcdf0f629261c1e7e032535fd5d21a",
+    "target": "test_8c_1a25875528640a3eee1a026956baa82249",
+    "source_unique_name": "__uint_least8_t#types.h#135",
+    "target_unique_name": "__uint8_t#types.h#119",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ad3d27a6dcc225237171196dd0739bb10",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "fclose#stdio.h#317",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a68923d617be29fd06c614647c52bc65a",
+    "target": "test_8c_1ac8c52d097db307ed556d06c2d67155dc",
+    "source_unique_name": "url_get_search#url.h#720",
+    "target_unique_name": "sscanf#stdio.h#349",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1aa4bc2830255aaf659e61879b9db97ef6",
+    "target": "test_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "vsnprintf#stdio.h#343",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a1b31beb7dc68da348820bc9653202dce",
+    "target": "test_8c_1afb8699abb1f51d920a176e695ff3be8a",
+    "source_unique_name": "url_free#url.h#795",
+    "target_unique_name": "free#stdlib.h#63",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a220950e3934d9a00d5cbca90dcea77b6",
+    "target": "test_8c_1afb8699abb1f51d920a176e695ff3be8a",
+    "source_unique_name": "url_get_host#url.h#680",
+    "target_unique_name": "free#stdlib.h#63",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1af8e0d33430fe3279489e0b6e8b65b1f0",
+    "target": "test_8c_1a2c4f14c424a31db9c57fd046c3b9f0df",
+    "source_unique_name": "strrwd#url.h#527",
+    "target_unique_name": "strdup#url.h#512",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ae91b3dc6530d8a443eb7f01137f5aeff",
+    "target": "test_8c_1aea092f6d290537d549ca766819e68632",
+    "source_unique_name": "malloc#stdlib.h#57",
+    "target_unique_name": "strlen#string.h#459",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a2a3c2e9ef2d275dd8caaad644163ad51",
+    "target": "test_8c_1a220950e3934d9a00d5cbca90dcea77b6",
+    "source_unique_name": "strcmp#string.h#435",
+    "target_unique_name": "url_get_host#url.h#680",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1af9bb422417cb6143567407850f384cb5",
+    "target": "test_8c_1af8e0d33430fe3279489e0b6e8b65b1f0",
+    "source_unique_name": "get_part#url.h#535",
+    "target_unique_name": "strrwd#url.h#527",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a66759279a565877413cc1c9777dd4fac",
+    "target": "test_8c_1a8098d7ef28f95ddd4366a43d6d6ff5f5",
+    "source_unique_name": "url_get_hash#url.h#743",
+    "target_unique_name": "strff#url.h#519",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1aa9c3031ce6f50d5c2127107c998b3b6c",
+    "target": "test_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "memmove#string.h#419",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a53be1c0772595828bd30f5544572dadb",
+    "target": "test_8c_1ae91b3dc6530d8a443eb7f01137f5aeff",
+    "source_unique_name": "url_get_protocol#url.h#650",
+    "target_unique_name": "malloc#stdlib.h#57",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a63ed7073e1bd288b25277b3186050ff0",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "getc#stdio.h#371",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a3eefe6ded25ef3448515ce23cb558de1",
+    "target": "test_8c_1a7358f2db0a1ec299bdfb0a9220043196",
+    "source_unique_name": "url_get_path#url.h#699",
+    "target_unique_name": "url_get_auth#url.h#658",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1aa4bc2830255aaf659e61879b9db97ef6",
+    "target": "test_8c_1a562f3559e6193429a09afe30e6856ca9",
+    "source_unique_name": "vsnprintf#stdio.h#343",
+    "target_unique_name": "__gnuc_va_list#stdarg.h#107",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a112d70ecf56acf33326598878e96cc0f",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "fputs#stdio.h#385",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a2a3c2e9ef2d275dd8caaad644163ad51",
+    "target": "test_8c_1a5fd3f374b67077398f884c5c0f7f866d",
+    "source_unique_name": "strcmp#string.h#435",
+    "target_unique_name": "url_get_port#url.h#764",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a66759279a565877413cc1c9777dd4fac",
+    "target": "test_8c_1ae91b3dc6530d8a443eb7f01137f5aeff",
+    "source_unique_name": "url_get_hash#url.h#743",
+    "target_unique_name": "malloc#stdlib.h#57",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1af9bb422417cb6143567407850f384cb5",
+    "target": "test_8c_1a2a3c2e9ef2d275dd8caaad644163ad51",
+    "source_unique_name": "get_part#url.h#535",
+    "target_unique_name": "strcmp#string.h#435",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1adc9aeb6aaa44bab28ec76099e72a7279",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "fopen#stdio.h#321",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a8c4b70b5451d9f70268f9215b0f1477a",
+    "target": "test_8c_1ada0d1deb69253bd55d01fa22cce9f19d",
+    "source_unique_name": "__uint_least64_t#types.h#147",
+    "target_unique_name": "__uint64_t#types.h#131",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a5fd3f374b67077398f884c5c0f7f866d",
+    "target": "test_8c_1a220950e3934d9a00d5cbca90dcea77b6",
+    "source_unique_name": "url_get_port#url.h#764",
+    "target_unique_name": "url_get_host#url.h#680",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1ab4ec7d807affa8753468478de8a9dee4",
+    "target": "test_8c_1ac8c52d097db307ed556d06c2d67155dc",
+    "source_unique_name": "url_parse#url.h#557",
+    "target_unique_name": "sscanf#stdio.h#349",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a66759279a565877413cc1c9777dd4fac",
+    "target": "test_8c_1a68923d617be29fd06c614647c52bc65a",
+    "source_unique_name": "url_get_hash#url.h#743",
+    "target_unique_name": "url_get_search#url.h#720",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1af850a727a4a73ac35561aba4b6222f0b",
+    "target": "test_8c_1ac8c52d097db307ed556d06c2d67155dc",
+    "source_unique_name": "url_get_pathname#url.h#689",
+    "target_unique_name": "sscanf#stdio.h#349",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a3eefe6ded25ef3448515ce23cb558de1",
+    "target": "test_8c_1aca906e125b2875c0ea36a718d3b0c676",
+    "source_unique_name": "url_get_path#url.h#699",
+    "target_unique_name": "url_get_hostname#url.h#665",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a0d86e7cff98afe51af86ef1fe7e3e74c",
+    "target": "test_8c_1acaa96aed3d7fddac490800f166c2af02",
+    "source_unique_name": "__uint_least32_t#types.h#143",
+    "target_unique_name": "__uint32_t#types.h#127",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a7358f2db0a1ec299bdfb0a9220043196",
+    "target": "test_8c_1af9bb422417cb6143567407850f384cb5",
+    "source_unique_name": "url_get_auth#url.h#658",
+    "target_unique_name": "get_part#url.h#535",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a66759279a565877413cc1c9777dd4fac",
+    "target": "test_8c_1a19240bf661b68f1f489a63ab89ae48db",
+    "source_unique_name": "url_get_hash#url.h#743",
+    "target_unique_name": "strcat#string.h#431",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a33debf6d647ea353b11a1ac95ae55f6b",
+    "target": "test_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "bsearch#stdlib.h#79",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a74ee6f2b7c00947ecb7c0ee04a88fd92",
+    "target": "struct__IO__FILE#struct__IO__FILE_1a364ce3577f2cdb788df3a2a54909f45a#struct__IO__FILE_1a1c2f65148a6f2e35c478af0fc144fded#struct__IO__FILE_1a6994a0f73699af311e4669b4baa0e26b#struct__IO__FILE_1a2a449978f6e6aa2172f7f82ed1d42f37#struct__IO__FILE_1a6631dc1b00cd5a378280606c9333f40a#struct__IO__FILE_1ab746b60c0613c28d3451b13afdd703b5#struct__IO__FILE_1ad68f27b22fb43ab7a50bdaa50dc7d725#struct__IO__FILE_1a2bf5a30fdc43564cf2e46d2cce8e82dd#struct__IO__FILE_1ac9fa3b261e95a246dac19dc35045be42#struct__IO__FILE_1a3ef98bd6be88c72459cf4a670a5ba35c#struct__IO__FILE_1a8e6f38619f990a207a598132f4e6e661#struct__IO__FILE_1a48102d534ea93a120fc025b1bead08cb#struct__IO__FILE_1a301622bd790c688312565f4cf3b4ede4#struct__IO__FILE_1a148f6239f490808c7875a5d43f13e645#struct__IO__FILE_1a1883574299ff3f4ac644796985ca0a1d#struct__IO__FILE_1a21074da2ffe8235f8777db10ce09b21e#struct__IO__FILE_1a06993119321415a42d87a60117971bb5#struct__IO__FILE_1a77d71fc90c3f2323b0757b2bdb6414d8#struct__IO__FILE_1ac503f09304dc1fa00d54b97ffcf77afa#struct__IO__FILE_1af16f2000a0ea3b992b41066e55d74950#struct__IO__FILE_1a378991c1b521f52b72fc9d46a78c2033#struct__IO__FILE_1a6984cd80575532a12da307fd776cbe21#struct__IO__FILE_1ac41d1683b09637037d1f38b877f6558d#struct__IO__FILE_1a637ac4d5cba6fac0b3915d58340f3f72#struct__IO__FILE_1a4b411ec848750bf130c8f964268eaffc#struct__IO__FILE_1a3313fee3b760e8abf5bde2262691b211#struct__IO__FILE_1a79b0d0bccbf23ce37069f9a8ca6297fd#struct__IO__FILE_1a5fcae29efb49dd2d3ea1fcd920daacfd#struct__IO__FILE_1a2b4483a981eefa999b636f5cc3f13299#test_8c_1abe89c9289d8af0c30992c195be90f95e#test_8c_1a912af5ab9f8a52ddd387b7defc0b49f1",
+    "source_unique_name": "fprintf#stdio.h#329",
+    "target_unique_name": "_IO_FILE#struct_FILE.h#269",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a840291bc02cba5474a4cb46a9b9566fe",
+    "target": "test_8c_1a2a3c2e9ef2d275dd8caaad644163ad51",
+    "source_unique_name": "main#test.c#814",
+    "target_unique_name": "strcmp#string.h#435",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1afebdddc23932f14b2d236d37f4ba2e13",
+    "target": "test_8c_1afb8699abb1f51d920a176e695ff3be8a",
+    "source_unique_name": "url_get_query#url.h#734",
+    "target_unique_name": "free#stdlib.h#63",
+    "type": "reference"
+  },
+  {
+    "source": "test_8c_1a80a3b5e487d44b9dbf24d778b3f2c3a3",
+    "target": "test_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "realloc#stdlib.h#61",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  }
+]

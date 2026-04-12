@@ -1,0 +1,296 @@
+lil
+├── lil.c
+├── main.c [Contain *main* Function]
+└── svf_analysis_output
+H_FILE_LIST
+lil.h
+
+SPLIT_TAG
+
+_expreval_t#lil.c#1121 -> lilint_t#lil.h#947
+_lil_env_t#lil.c#1074 -> _lil_var_t#lil.c#1068, _lil_value_t#lil.c#1063, _lil_func_t#lil.c#1090
+_lil_func_t#lil.c#1090 -> _lil_value_t#lil.c#1063, lil_func_proc_t#lil.h#961, _lil_list_t#lil.c#1085
+_lil_list_t#lil.c#1085 -> _lil_value_t#lil.c#1063
+_lil_t#lil.c#1097 -> _lil_env_t#lil.c#1074, _lil_func_t#lil.c#1090, _lil_value_t#lil.c#1063, lil_callback_proc_t#lil.h#979
+_lil_value_t#lil.c#1063
+_lil_var_t#lil.c#1068 -> _lil_env_t#lil.c#1074, _lil_value_t#lil.c#1063
+lilint_t#lil.h#947
+lil_func_proc_t#lil.h#961 -> _lil_value_t#lil.c#1063, _lil_t#lil.c#1097
+lil_exit_callback_proc_t#lil.h#963 -> _lil_t#lil.c#1097, _lil_value_t#lil.c#1063
+lil_write_callback_proc_t#lil.h#965 -> _lil_t#lil.c#1097
+lil_read_callback_proc_t#lil.h#967 -> _lil_t#lil.c#1097
+lil_source_callback_proc_t#lil.h#969 -> _lil_t#lil.c#1097
+lil_store_callback_proc_t#lil.h#971 -> _lil_t#lil.c#1097
+lil_error_callback_proc_t#lil.h#973 -> _lil_t#lil.c#1097
+lil_setvar_callback_proc_t#lil.h#975 -> _lil_t#lil.c#1097, _lil_value_t#lil.c#1063
+lil_getvar_callback_proc_t#lil.h#977 -> _lil_value_t#lil.c#1063, _lil_t#lil.c#1097
+lil_callback_proc_t#lil.h#979
+lil_new#lil.c#1403 -> register_stdcmds#lil.c#3500, lil_alloc_env#lil.c#1266, _lil_t#lil.c#1097, alloc_value#lil.c#1142, strclone#lil.c#1134
+lil_free#lil.c#2543 -> lil_free_value#lil.c#1210, _lil_func_t#lil.c#1090, _lil_env_t#lil.c#1074, lil_free_env#lil.c#1272, lil_free_list#lil.c#1223, _lil_t#lil.c#1097
+lil_register#lil.c#1331 -> fnc_split#lil.c#3392, fnc_while#lil.c#3199, fnc_try#lil.c#3420, fnc_jaileval#lil.c#2899, fnc_codeat#lil.c#3261, fnc_char#lil.c#3240, fnc_upeval#lil.c#2817, fnc_error#lil.c#3434, fnc_func#lil.c#2676, fnc_rand#lil.c#3485, fnc_topeval#lil.c#2805, fnc_result#lil.c#3094, fnc_for#lil.c#3221, fnc_list#lil.c#3028, fnc_repstr#lil.c#3357, fnc_if#lil.c#3180, add_func#lil.c#1314, fnc_readline#main.c#1561, fnc_inc#lil.c#3128, fnc_downeval#lil.c#2830, fnc_source#lil.c#3447, fnc_streq#lil.c#3352, lil_func_proc_t#lil.h#961, fnc_rtrim#lil.c#3342, fnc_index#lil.c#2932, fnc_concat#lil.c#3043, fnc_trim#lil.c#3332, fnc_length#lil.c#3303, fnc_system#main.c#1544, _lil_func_t#lil.c#1090, fnc_slice#lil.c#2981, fnc_substr#lil.c#3271, fnc_unusedname#lil.c#2723, fnc_set#lil.c#2739, fnc_dec#lil.c#3133, fnc_reflect#lil.c#2573, fnc_strcmp#lil.c#3347, fnc_expr#lil.c#3103, fnc_return#lil.c#3086, _lil_t#lil.c#1097, fnc_strpos#lil.c#3288, fnc_print#lil.c#2780, fnc_indexof#lil.c#2945, fnc_lmap#lil.c#3475, fnc_quote#lil.c#2727, fnc_count#lil.c#2922, fnc_write#lil.c#2765, fnc_filter#lil.c#3002, fnc_local#lil.c#2756, fnc_append#lil.c#2959, fnc_subst#lil.c#3038, fnc_exit#lil.c#3439, fnc_writechar#main.c#1538, fnc_charat#lil.c#3248, fnc_enveval#lil.c#2843, fnc_rename#lil.c#2701, fnc_read#lil.c#3138, fnc_catcher#lil.c#3489, fnc_ltrim#lil.c#3337, fnc_store#lil.c#3163, fnc_eval#lil.c#2789, fnc_foreach#lil.c#3059
+lil_parse#lil.c#1580 -> lil_list_to_value#lil.c#1253, lil_error_callback_proc_t#lil.h#973, lil_to_string#lil.c#2501, alloc_value#lil.c#1142, lil_set_var#lil.c#1338, lil_set_error_at#lil.c#1700, lil_push_env#lil.c#1389, ateol#lil.c#1416, _lil_list_t#lil.c#1085, _lil_env_t#lil.c#1074, _lil_value_t#lil.c#1063, lil_parse_value#lil.c#1682, skip_spaces#lil.c#1420, lil_pop_env#lil.c#1395, lil_free_value#lil.c#1210, lil_free_list#lil.c#1223, _lil_t#lil.c#1097, _lil_func_t#lil.c#1090, substitute#lil.c#1530, find_cmd#lil.c#1302
+lil_parse_value#lil.c#1682 -> lil_parse#lil.c#1580, alloc_value#lil.c#1142, _lil_value_t#lil.c#1063, _lil_func_t#lil.c#1090, _lil_t#lil.c#1097
+lil_callback#lil.c#1687 -> do_exit#main.c#1495, _lil_t#lil.c#1097, lil_callback_proc_t#lil.h#979
+lil_set_error#lil.c#1692 -> _lil_t#lil.c#1097, lil_to_string#lil.c#2501, strclone#lil.c#1134
+lil_set_error_at#lil.c#1700 -> _lil_t#lil.c#1097, strclone#lil.c#1134
+lil_error#lil.c#1708 -> _lil_t#lil.c#1097
+lil_to_string#lil.c#2501 -> _expreval_t#lil.c#1121, lil_list_get#lil.c#1242, _lil_func_t#lil.c#1090, _lil_t#lil.c#1097, _lil_value_t#lil.c#1063, _lil_list_t#lil.c#1085
+lil_to_double#lil.c#2505 -> _lil_value_t#lil.c#1063, lil_to_string#lil.c#2501
+lil_to_integer#lil.c#2509 -> lil_to_string#lil.c#2501, lilint_t#lil.h#947, _lil_value_t#lil.c#1063
+lil_to_boolean#lil.c#2513 -> _lil_value_t#lil.c#1063, lil_to_string#lil.c#2501
+lil_alloc_string#lil.c#2527 -> alloc_value#lil.c#1142, _lil_var_t#lil.c#1068, _lil_func_t#lil.c#1090, _lil_t#lil.c#1097, _lil_value_t#lil.c#1063, _lil_env_t#lil.c#1074
+lil_alloc_double#lil.c#2531 -> _expreval_t#lil.c#1121, alloc_value#lil.c#1142, _lil_value_t#lil.c#1063
+lil_alloc_integer#lil.c#2537 -> alloc_value#lil.c#1142, lilint_t#lil.h#947, lil_to_string#lil.c#2501, _expreval_t#lil.c#1121, _lil_value_t#lil.c#1063, lil_to_integer#lil.c#2509, _lil_t#lil.c#1097
+lil_free_value#lil.c#1210 -> _lil_t#lil.c#1097, _lil_func_t#lil.c#1090, _lil_var_t#lil.c#1068, _lil_list_t#lil.c#1085, lil_parse_value#lil.c#1682, _lil_value_t#lil.c#1063, _lil_env_t#lil.c#1074
+lil_clone_value#lil.c#1160 -> lil_get_var#lil.c#1374, _lil_value_t#lil.c#1063, _lil_func_t#lil.c#1090, _lil_t#lil.c#1097, lil_list_get#lil.c#1242, _lil_list_t#lil.c#1085, _lil_env_t#lil.c#1074, lil_to_string#lil.c#2501, _lil_var_t#lil.c#1068
+lil_append_char#lil.c#1177 -> _lil_t#lil.c#1097, _lil_value_t#lil.c#1063
+lil_append_string#lil.c#1186 -> _lil_value_t#lil.c#1063
+lil_append_val#lil.c#1199 -> _lil_list_t#lil.c#1085, _lil_value_t#lil.c#1063
+lil_alloc_list#lil.c#1216 -> _lil_list_t#lil.c#1085
+lil_free_list#lil.c#1223 -> _lil_list_t#lil.c#1085, lil_free_value#lil.c#1210, _lil_func_t#lil.c#1090, _lil_t#lil.c#1097
+lil_list_append#lil.c#1231 -> _lil_value_t#lil.c#1063, _lil_t#lil.c#1097, _lil_list_t#lil.c#1085, lil_alloc_string#lil.c#2527, _lil_env_t#lil.c#1074, _lil_func_t#lil.c#1090, lil_clone_value#lil.c#1160, _lil_var_t#lil.c#1068
+lil_list_size#lil.c#1238 -> _lil_list_t#lil.c#1085
+lil_list_get#lil.c#1242 -> _lil_list_t#lil.c#1085, _lil_value_t#lil.c#1063
+lil_list_to_value#lil.c#1253 -> needs_escape#lil.c#1246, _lil_list_t#lil.c#1085, lil_to_string#lil.c#2501, alloc_value#lil.c#1142, lil_append_val#lil.c#1199, _lil_value_t#lil.c#1063, _lil_func_t#lil.c#1090, lil_append_char#lil.c#1177
+lil_subst_to_list#lil.c#1553 -> _lil_list_t#lil.c#1085, lil_to_string#lil.c#2501, lil_get_var#lil.c#1374, substitute#lil.c#1530, _lil_value_t#lil.c#1063, _lil_t#lil.c#1097
+lil_subst_to_value#lil.c#1571 -> lil_subst_to_list#lil.c#1553, lil_clone_value#lil.c#1160, _lil_list_t#lil.c#1085, lil_free_list#lil.c#1223, _lil_value_t#lil.c#1063, _lil_t#lil.c#1097, lil_list_to_value#lil.c#1253
+lil_alloc_env#lil.c#1266 -> _lil_t#lil.c#1097, _lil_env_t#lil.c#1074
+lil_free_env#lil.c#1272 -> _lil_var_t#lil.c#1068, _lil_env_t#lil.c#1074, _lil_t#lil.c#1097, lil_free_value#lil.c#1210
+lil_push_env#lil.c#1389 -> _lil_env_t#lil.c#1074, lil_alloc_env#lil.c#1266, _lil_t#lil.c#1097
+lil_pop_env#lil.c#1395 -> lil_free_env#lil.c#1272, _lil_env_t#lil.c#1074, _lil_t#lil.c#1097
+lil_set_var#lil.c#1338 -> _lil_list_t#lil.c#1085, _lil_var_t#lil.c#1068, lil_list_get#lil.c#1242, lil_free_value#lil.c#1210, lil_clone_value#lil.c#1160, _lil_env_t#lil.c#1074, strclone#lil.c#1134, lil_to_string#lil.c#2501, _lil_value_t#lil.c#1063, lil_find_var#lil.c#1297, lil_setvar_callback_proc_t#lil.h#975, _lil_t#lil.c#1097, _lil_func_t#lil.c#1090
+lil_get_var#lil.c#1374 -> lil_list_get#lil.c#1242, _lil_t#lil.c#1097, lil_get_var_or#lil.c#1378, _lil_value_t#lil.c#1063, lil_to_string#lil.c#2501
+lil_get_var_or#lil.c#1378 -> _lil_var_t#lil.c#1068, _lil_t#lil.c#1097, lil_getvar_callback_proc_t#lil.h#977, lil_find_var#lil.c#1297, _lil_value_t#lil.c#1063
+lil_eval_expr#lil.c#2450 -> lil_alloc_integer#lil.c#2537, ee_expr#lil.c#2442, _lil_t#lil.c#1097, lil_subst_to_value#lil.c#1571, lil_to_string#lil.c#2501, lil_free_value#lil.c#1210, _lil_value_t#lil.c#1063, _expreval_t#lil.c#1121, lil_alloc_double#lil.c#2531, lil_set_error#lil.c#1692
+lil_unused_name#lil.c#2482 -> lil_find_var#lil.c#1297, lil_alloc_string#lil.c#2527, _lil_value_t#lil.c#1063, lil_to_string#lil.c#2501, find_cmd#lil.c#1302, _lil_t#lil.c#1097
+lil_arg#lil.c#2497 -> _lil_value_t#lil.c#1063
+lil_set_data#lil.c#2565 -> _lil_t#lil.c#1097
+lil_get_data#lil.c#2569 -> _lil_t#lil.c#1097
+next_word#lil.c#1465 -> alloc_value#lil.c#1142, _lil_value_t#lil.c#1063, lil_append_val#lil.c#1199, get_bracketpart#lil.c#1431, lil_free_value#lil.c#1210, _lil_t#lil.c#1097, lil_append_char#lil.c#1177, skip_spaces#lil.c#1420, islilspecial#lil.c#1412, get_dollarpart#lil.c#1453
+register_stdcmds#lil.c#3500 -> fnc_jaileval#lil.c#2899, fnc_unusedname#lil.c#2723, fnc_foreach#lil.c#3059, fnc_quote#lil.c#2727, fnc_exit#lil.c#3439, fnc_list#lil.c#3028, fnc_charat#lil.c#3248, fnc_concat#lil.c#3043, fnc_ltrim#lil.c#3337, fnc_catcher#lil.c#3489, fnc_streq#lil.c#3352, fnc_split#lil.c#3392, fnc_subst#lil.c#3038, fnc_enveval#lil.c#2843, fnc_strcmp#lil.c#3347, fnc_downeval#lil.c#2830, fnc_write#lil.c#2765, fnc_rtrim#lil.c#3342, fnc_try#lil.c#3420, fnc_error#lil.c#3434, fnc_trim#lil.c#3332, fnc_func#lil.c#2676, fnc_codeat#lil.c#3261, fnc_char#lil.c#3240, fnc_expr#lil.c#3103, fnc_if#lil.c#3180, fnc_eval#lil.c#2789, fnc_lmap#lil.c#3475, fnc_index#lil.c#2932, fnc_local#lil.c#2756, fnc_return#lil.c#3086, fnc_store#lil.c#3163, fnc_indexof#lil.c#2945, fnc_repstr#lil.c#3357, fnc_filter#lil.c#3002, fnc_count#lil.c#2922, fnc_substr#lil.c#3271, fnc_while#lil.c#3199, fnc_read#lil.c#3138, fnc_append#lil.c#2959, fnc_rename#lil.c#2701, lil_register#lil.c#1331, fnc_print#lil.c#2780, fnc_source#lil.c#3447, fnc_dec#lil.c#3133, fnc_length#lil.c#3303, fnc_topeval#lil.c#2805, fnc_set#lil.c#2739, fnc_for#lil.c#3221, fnc_slice#lil.c#2981, fnc_reflect#lil.c#2573, fnc_result#lil.c#3094, fnc_rand#lil.c#3485, _lil_t#lil.c#1097, fnc_strpos#lil.c#3288, fnc_upeval#lil.c#2817, fnc_inc#lil.c#3128
+strclone#lil.c#1134 -> lil_to_string#lil.c#2501, _lil_var_t#lil.c#1068, _lil_func_t#lil.c#1090, _lil_t#lil.c#1097
+alloc_value#lil.c#1142 -> _lil_value_t#lil.c#1063, _lil_t#lil.c#1097
+needs_escape#lil.c#1246 -> _lil_list_t#lil.c#1085, lil_to_string#lil.c#2501
+lil_find_local_var#lil.c#1285 -> _lil_var_t#lil.c#1068, _lil_env_t#lil.c#1074, _lil_t#lil.c#1097
+lil_find_var#lil.c#1297 -> _lil_env_t#lil.c#1074, lil_find_local_var#lil.c#1285, _lil_var_t#lil.c#1068, _lil_t#lil.c#1097
+find_cmd#lil.c#1302 -> lil_to_string#lil.c#2501, _lil_list_t#lil.c#1085, _lil_func_t#lil.c#1090, _lil_t#lil.c#1097
+add_func#lil.c#1314 -> lil_to_string#lil.c#2501, _lil_func_t#lil.c#1090, strclone#lil.c#1134, _lil_t#lil.c#1097, find_cmd#lil.c#1302
+islilspecial#lil.c#1412 -> _lil_t#lil.c#1097
+ateol#lil.c#1416 -> _lil_t#lil.c#1097
+skip_spaces#lil.c#1420 -> _lil_t#lil.c#1097, ateol#lil.c#1416
+get_bracketpart#lil.c#1431 -> lil_parse_value#lil.c#1682, alloc_value#lil.c#1142, lil_append_char#lil.c#1177, lil_free_value#lil.c#1210, _lil_value_t#lil.c#1063, _lil_t#lil.c#1097
+get_dollarpart#lil.c#1453 -> _lil_value_t#lil.c#1063, lil_append_val#lil.c#1199, _lil_t#lil.c#1097, lil_free_value#lil.c#1210, next_word#lil.c#1465, alloc_value#lil.c#1142, lil_parse_value#lil.c#1682
+substitute#lil.c#1530 -> _lil_t#lil.c#1097, _lil_list_t#lil.c#1085, lil_free_value#lil.c#1210, lil_free_list#lil.c#1223, _lil_value_t#lil.c#1063, lil_append_val#lil.c#1199, ateol#lil.c#1416, alloc_value#lil.c#1142, skip_spaces#lil.c#1420, lil_list_append#lil.c#1231, lil_alloc_list#lil.c#1216, next_word#lil.c#1465
+ee_expr#lil.c#2442 -> ee_logor#lil.c#2406, _expreval_t#lil.c#1121
+ee_skip_spaces#lil.c#1718 -> _expreval_t#lil.c#1121
+ee_numeric_element#lil.c#1722 -> _expreval_t#lil.c#1121, ee_skip_spaces#lil.c#1718, lilint_t#lil.h#947
+ee_element#lil.c#1744 -> ee_numeric_element#lil.c#1722, _expreval_t#lil.c#1121
+ee_paren#lil.c#1754 -> ee_element#lil.c#1744, ee_skip_spaces#lil.c#1718, ee_expr#lil.c#2442, _expreval_t#lil.c#1121
+ee_unary#lil.c#1765 -> _expreval_t#lil.c#1121, lilint_t#lil.h#947, ee_skip_spaces#lil.c#1718, ee_paren#lil.c#1754
+ee_muldiv#lil.c#1804 -> ee_unary#lil.c#1765, lilint_t#lil.h#947, ee_skip_spaces#lil.c#1718, _expreval_t#lil.c#1121
+ee_addsub#lil.c#1974 -> ee_skip_spaces#lil.c#1718, ee_muldiv#lil.c#1804, _expreval_t#lil.c#1121, lilint_t#lil.h#947
+ee_shift#lil.c#2042 -> lilint_t#lil.h#947, _expreval_t#lil.c#1121, ee_addsub#lil.c#1974, ee_skip_spaces#lil.c#1718
+ee_compare#lil.c#2111 -> ee_shift#lil.c#2042, lilint_t#lil.h#947, ee_skip_spaces#lil.c#1718, _expreval_t#lil.c#1121
+ee_equals#lil.c#2232 -> ee_skip_spaces#lil.c#1718, lilint_t#lil.h#947, ee_compare#lil.c#2111, _expreval_t#lil.c#1121
+ee_bitand#lil.c#2298 -> ee_skip_spaces#lil.c#1718, _expreval_t#lil.c#1121, ee_equals#lil.c#2232, lilint_t#lil.h#947
+ee_bitor#lil.c#2334 -> _expreval_t#lil.c#1121, ee_skip_spaces#lil.c#1718, ee_bitand#lil.c#2298, lilint_t#lil.h#947
+ee_logand#lil.c#2370 -> lilint_t#lil.h#947, ee_skip_spaces#lil.c#1718, _expreval_t#lil.c#1121, ee_bitor#lil.c#2334
+ee_logor#lil.c#2406 -> ee_logand#lil.c#2370, ee_skip_spaces#lil.c#1718, _expreval_t#lil.c#1121, lilint_t#lil.h#947
+fnc_reflect#lil.c#2573 -> _lil_value_t#lil.c#1063, lil_list_to_value#lil.c#1253, lil_free_list#lil.c#1223, _lil_var_t#lil.c#1068, _lil_list_t#lil.c#1085, lil_alloc_string#lil.c#2527, find_cmd#lil.c#1302, lil_alloc_integer#lil.c#2537, lil_list_append#lil.c#1231, lil_alloc_list#lil.c#1216, lil_to_string#lil.c#2501, _lil_env_t#lil.c#1074, strclone#lil.c#1134, lil_clone_value#lil.c#1160, _lil_t#lil.c#1097, _lil_func_t#lil.c#1090
+fnc_func#lil.c#2676 -> add_func#lil.c#1314, lil_alloc_string#lil.c#2527, lil_clone_value#lil.c#1160, _lil_t#lil.c#1097, lil_to_string#lil.c#2501, _lil_value_t#lil.c#1063, _lil_func_t#lil.c#1090, lil_subst_to_list#lil.c#1553, lil_unused_name#lil.c#2482, lil_free_value#lil.c#1210
+fnc_rename#lil.c#2701 -> _lil_value_t#lil.c#1063, lil_set_error_at#lil.c#1700, _lil_func_t#lil.c#1090, lil_alloc_string#lil.c#2527, strclone#lil.c#1134, _lil_t#lil.c#1097, lil_to_string#lil.c#2501, find_cmd#lil.c#1302
+fnc_unusedname#lil.c#2723 -> lil_to_string#lil.c#2501, lil_unused_name#lil.c#2482, _lil_value_t#lil.c#1063, _lil_t#lil.c#1097
+fnc_quote#lil.c#2727 -> _lil_t#lil.c#1097, alloc_value#lil.c#1142, lil_append_val#lil.c#1199, lil_append_char#lil.c#1177, _lil_value_t#lil.c#1063
+fnc_set#lil.c#2739 -> _lil_var_t#lil.c#1068, lil_to_string#lil.c#2501, _lil_t#lil.c#1097, lil_get_var#lil.c#1374, lil_clone_value#lil.c#1160, lil_set_var#lil.c#1338, _lil_value_t#lil.c#1063
+fnc_local#lil.c#2756 -> _lil_value_t#lil.c#1063, lil_find_local_var#lil.c#1285, _lil_t#lil.c#1097, lil_to_string#lil.c#2501, lil_set_var#lil.c#1338
+fnc_write#lil.c#2765 -> lil_to_string#lil.c#2501, lil_append_char#lil.c#1177, lil_append_val#lil.c#1199, _lil_value_t#lil.c#1063, lil_free_value#lil.c#1210, lil_alloc_string#lil.c#2527, _lil_t#lil.c#1097, lil_write_callback_proc_t#lil.h#965
+fnc_print#lil.c#2780 -> _lil_t#lil.c#1097, fnc_write#lil.c#2765, _lil_value_t#lil.c#1063, lil_write_callback_proc_t#lil.h#965
+fnc_eval#lil.c#2789 -> lil_append_val#lil.c#1199, alloc_value#lil.c#1142, lil_append_char#lil.c#1177, lil_free_value#lil.c#1210, _lil_value_t#lil.c#1063, _lil_t#lil.c#1097, lil_parse_value#lil.c#1682
+fnc_topeval#lil.c#2805 -> _lil_value_t#lil.c#1063, _lil_env_t#lil.c#1074, _lil_t#lil.c#1097, fnc_eval#lil.c#2789
+fnc_upeval#lil.c#2817 -> fnc_eval#lil.c#2789, _lil_t#lil.c#1097, _lil_value_t#lil.c#1063, _lil_env_t#lil.c#1074
+fnc_downeval#lil.c#2830 -> _lil_t#lil.c#1097, _lil_env_t#lil.c#1074, _lil_value_t#lil.c#1063, fnc_eval#lil.c#2789
+fnc_enveval#lil.c#2843 -> lil_subst_to_list#lil.c#1553, lil_to_string#lil.c#2501, _lil_list_t#lil.c#1085, lil_free_value#lil.c#1210, lil_set_var#lil.c#1338, lil_push_env#lil.c#1389, lil_list_get#lil.c#1242, lil_clone_value#lil.c#1160, lil_list_size#lil.c#1238, _lil_value_t#lil.c#1063, lil_free_list#lil.c#1223, _lil_t#lil.c#1097, lil_get_var#lil.c#1374, lil_parse_value#lil.c#1682, lil_pop_env#lil.c#1395
+fnc_jaileval#lil.c#2899 -> lil_parse_value#lil.c#1682, lil_free#lil.c#2543, _lil_func_t#lil.c#1090, lil_register#lil.c#1331, _lil_t#lil.c#1097, lil_new#lil.c#1403, _lil_value_t#lil.c#1063, lil_to_string#lil.c#2501
+fnc_count#lil.c#2922 -> alloc_value#lil.c#1142, _lil_list_t#lil.c#1085, lil_free_list#lil.c#1223, _lil_value_t#lil.c#1063, _lil_t#lil.c#1097, lil_subst_to_list#lil.c#1553
+fnc_index#lil.c#2932 -> _lil_t#lil.c#1097, lil_subst_to_list#lil.c#1553, lil_clone_value#lil.c#1160, lil_to_integer#lil.c#2509, _lil_list_t#lil.c#1085, _lil_value_t#lil.c#1063, lil_free_list#lil.c#1223
+fnc_indexof#lil.c#2945 -> _lil_list_t#lil.c#1085, lil_free_list#lil.c#1223, _lil_value_t#lil.c#1063, lil_subst_to_list#lil.c#1553, lil_to_string#lil.c#2501, _lil_t#lil.c#1097, lil_alloc_integer#lil.c#2537
+fnc_append#lil.c#2959 -> lil_subst_to_list#lil.c#1553, lil_free_list#lil.c#1223, _lil_t#lil.c#1097, lil_list_append#lil.c#1231, lil_set_var#lil.c#1338, lil_clone_value#lil.c#1160, lil_list_to_value#lil.c#1253, _lil_list_t#lil.c#1085, _lil_value_t#lil.c#1063, lil_get_var#lil.c#1374, lil_to_string#lil.c#2501
+fnc_slice#lil.c#2981 -> lil_list_to_value#lil.c#1253, lil_free_list#lil.c#1223, _lil_value_t#lil.c#1063, lil_list_append#lil.c#1231, _lil_t#lil.c#1097, lilint_t#lil.h#947, lil_subst_to_list#lil.c#1553, lil_clone_value#lil.c#1160, lil_to_integer#lil.c#2509, _lil_list_t#lil.c#1085, lil_alloc_list#lil.c#1216
+fnc_filter#lil.c#3002 -> lil_eval_expr#lil.c#2450, lil_alloc_list#lil.c#1216, lil_to_string#lil.c#2501, lil_list_to_value#lil.c#1253, lil_clone_value#lil.c#1160, _lil_list_t#lil.c#1085, lil_free_value#lil.c#1210, _lil_t#lil.c#1097, lil_set_var#lil.c#1338, lil_list_append#lil.c#1231, lil_subst_to_list#lil.c#1553, lil_free_list#lil.c#1223, lil_to_boolean#lil.c#2513, _lil_env_t#lil.c#1074, _lil_value_t#lil.c#1063
+fnc_list#lil.c#3028 -> lil_list_append#lil.c#1231, _lil_t#lil.c#1097, lil_clone_value#lil.c#1160, lil_list_to_value#lil.c#1253, lil_alloc_list#lil.c#1216, _lil_list_t#lil.c#1085, lil_free_list#lil.c#1223, _lil_value_t#lil.c#1063
+fnc_subst#lil.c#3038 -> _lil_t#lil.c#1097, lil_subst_to_value#lil.c#1571, _lil_value_t#lil.c#1063
+fnc_concat#lil.c#3043 -> lil_list_to_value#lil.c#1253, _lil_value_t#lil.c#1063, lil_free_list#lil.c#1223, lil_append_val#lil.c#1199, _lil_list_t#lil.c#1085, lil_alloc_string#lil.c#2527, _lil_t#lil.c#1097, lil_subst_to_list#lil.c#1553, lil_free_value#lil.c#1210
+fnc_foreach#lil.c#3059 -> lil_list_append#lil.c#1231, lil_alloc_list#lil.c#1216, lil_to_string#lil.c#2501, lil_free_value#lil.c#1210, lil_set_var#lil.c#1338, _lil_list_t#lil.c#1085, lil_parse_value#lil.c#1682, _lil_value_t#lil.c#1063, lil_list_to_value#lil.c#1253, lil_free_list#lil.c#1223, _lil_t#lil.c#1097, lil_subst_to_list#lil.c#1553, _lil_env_t#lil.c#1074
+fnc_return#lil.c#3086 -> _lil_t#lil.c#1097, lil_free_value#lil.c#1210, _lil_value_t#lil.c#1063, _lil_env_t#lil.c#1074, lil_clone_value#lil.c#1160
+fnc_result#lil.c#3094 -> lil_clone_value#lil.c#1160, _lil_t#lil.c#1097, _lil_value_t#lil.c#1063, lil_free_value#lil.c#1210, _lil_env_t#lil.c#1074
+fnc_expr#lil.c#3103 -> _lil_value_t#lil.c#1063, lil_eval_expr#lil.c#2450, lil_free_value#lil.c#1210, lil_append_val#lil.c#1199, _lil_t#lil.c#1097, alloc_value#lil.c#1142, lil_append_char#lil.c#1177
+real_inc#lil.c#3119 -> lil_set_var#lil.c#1338, lil_alloc_integer#lil.c#2537, lil_get_var#lil.c#1374, lil_to_double#lil.c#2505, lil_alloc_double#lil.c#2531, lil_to_string#lil.c#2501, _lil_t#lil.c#1097, lil_to_integer#lil.c#2509, _lil_value_t#lil.c#1063
+fnc_inc#lil.c#3128 -> _lil_value_t#lil.c#1063, _lil_t#lil.c#1097, lil_to_string#lil.c#2501, real_inc#lil.c#3119, lil_to_double#lil.c#2505
+fnc_dec#lil.c#3133 -> lil_to_string#lil.c#2501, lil_to_double#lil.c#2505, _lil_t#lil.c#1097, _lil_value_t#lil.c#1063, real_inc#lil.c#3119
+fnc_read#lil.c#3138 -> _lil_t#lil.c#1097, lil_read_callback_proc_t#lil.h#967, lil_alloc_string#lil.c#2527, lil_to_string#lil.c#2501, _lil_value_t#lil.c#1063
+fnc_store#lil.c#3163 -> lil_to_string#lil.c#2501, _lil_t#lil.c#1097, lil_clone_value#lil.c#1160, _lil_value_t#lil.c#1063, lil_store_callback_proc_t#lil.h#971
+fnc_if#lil.c#3180 -> _lil_value_t#lil.c#1063, lil_eval_expr#lil.c#2450, _lil_t#lil.c#1097, lil_free_value#lil.c#1210, lil_to_boolean#lil.c#2513, lil_parse_value#lil.c#1682, lil_to_string#lil.c#2501
+fnc_while#lil.c#3199 -> lil_to_string#lil.c#2501, lil_eval_expr#lil.c#2450, lil_free_value#lil.c#1210, lil_parse_value#lil.c#1682, lil_to_boolean#lil.c#2513, _lil_t#lil.c#1097, _lil_value_t#lil.c#1063, _lil_env_t#lil.c#1074
+fnc_for#lil.c#3221 -> _lil_env_t#lil.c#1074, _lil_value_t#lil.c#1063, _lil_t#lil.c#1097, lil_eval_expr#lil.c#2450, lil_parse_value#lil.c#1682, lil_free_value#lil.c#1210, lil_to_boolean#lil.c#2513
+fnc_char#lil.c#3240 -> lil_to_integer#lil.c#2509, _lil_t#lil.c#1097, lil_alloc_string#lil.c#2527, _lil_value_t#lil.c#1063
+fnc_charat#lil.c#3248 -> lil_alloc_string#lil.c#2527, lil_to_string#lil.c#2501, _lil_t#lil.c#1097, _lil_value_t#lil.c#1063, lil_to_integer#lil.c#2509
+fnc_codeat#lil.c#3261 -> lil_alloc_integer#lil.c#2537, lil_to_string#lil.c#2501, lil_to_integer#lil.c#2509, _lil_value_t#lil.c#1063, _lil_t#lil.c#1097
+fnc_substr#lil.c#3271 -> _lil_value_t#lil.c#1063, lil_to_string#lil.c#2501, _lil_t#lil.c#1097, lil_alloc_string#lil.c#2527, lil_append_char#lil.c#1177
+fnc_strpos#lil.c#3288 -> lil_alloc_integer#lil.c#2537, lil_to_string#lil.c#2501, _lil_value_t#lil.c#1063, _lil_t#lil.c#1097
+fnc_length#lil.c#3303 -> lil_alloc_integer#lil.c#2537, _lil_t#lil.c#1097, _lil_value_t#lil.c#1063, lilint_t#lil.h#947, lil_to_string#lil.c#2501
+real_trim#lil.c#3312 -> lil_alloc_string#lil.c#2527, strclone#lil.c#1134, lil_to_string#lil.c#2501, _lil_value_t#lil.c#1063
+fnc_trim#lil.c#3332 -> _lil_t#lil.c#1097, _lil_value_t#lil.c#1063, lil_to_string#lil.c#2501, real_trim#lil.c#3312
+fnc_ltrim#lil.c#3337 -> _lil_value_t#lil.c#1063, _lil_t#lil.c#1097, lil_to_string#lil.c#2501, real_trim#lil.c#3312
+fnc_rtrim#lil.c#3342 -> real_trim#lil.c#3312, _lil_t#lil.c#1097, lil_to_string#lil.c#2501, _lil_value_t#lil.c#1063
+fnc_strcmp#lil.c#3347 -> _lil_t#lil.c#1097, lil_alloc_integer#lil.c#2537, lil_to_string#lil.c#2501, _lil_value_t#lil.c#1063
+fnc_streq#lil.c#3352 -> lil_to_string#lil.c#2501, _lil_t#lil.c#1097, lil_alloc_integer#lil.c#2537, _lil_value_t#lil.c#1063
+fnc_repstr#lil.c#3357 -> strclone#lil.c#1134, lil_alloc_string#lil.c#2527, lil_to_string#lil.c#2501, _lil_value_t#lil.c#1063, lil_clone_value#lil.c#1160, _lil_t#lil.c#1097
+fnc_split#lil.c#3392 -> _lil_value_t#lil.c#1063, lil_list_to_value#lil.c#1253, lil_free_list#lil.c#1223, lil_clone_value#lil.c#1160, _lil_t#lil.c#1097, _lil_list_t#lil.c#1085, lil_alloc_list#lil.c#1216, lil_alloc_string#lil.c#2527, lil_list_append#lil.c#1231, lil_to_string#lil.c#2501, lil_append_char#lil.c#1177
+fnc_try#lil.c#3420 -> _lil_t#lil.c#1097, _lil_value_t#lil.c#1063, lil_free_value#lil.c#1210, lil_parse_value#lil.c#1682
+fnc_error#lil.c#3434 -> _lil_value_t#lil.c#1063, lil_set_error#lil.c#1692, _lil_t#lil.c#1097, lil_to_string#lil.c#2501
+fnc_exit#lil.c#3439 -> lil_exit_callback_proc_t#lil.h#963, _lil_value_t#lil.c#1063, _lil_t#lil.c#1097
+fnc_source#lil.c#3447 -> lil_parse#lil.c#1580, _lil_t#lil.c#1097, lil_to_string#lil.c#2501, lil_read_callback_proc_t#lil.h#967, lil_source_callback_proc_t#lil.h#969, _lil_value_t#lil.c#1063
+fnc_lmap#lil.c#3475 -> lil_subst_to_list#lil.c#1553, lil_free_list#lil.c#1223, _lil_value_t#lil.c#1063, _lil_t#lil.c#1097, lil_to_string#lil.c#2501, lil_list_get#lil.c#1242, _lil_list_t#lil.c#1085, lil_set_var#lil.c#1338
+fnc_rand#lil.c#3485 -> _lil_value_t#lil.c#1063, lil_alloc_double#lil.c#2531, _lil_t#lil.c#1097
+fnc_catcher#lil.c#3489 -> _lil_t#lil.c#1097, lil_to_string#lil.c#2501, lil_alloc_string#lil.c#2527, _lil_value_t#lil.c#1063, strclone#lil.c#1134
+running#main.c#1491
+exit_code#main.c#1493
+do_exit#main.c#1495 -> running#main.c#1491, _lil_value_t#lil.c#1063, lil_to_integer#lil.c#2509, _lil_t#lil.c#1097, exit_code#main.c#1493
+do_system#main.c#1500 -> _lil_t#lil.c#1097
+fnc_writechar#main.c#1538 -> _lil_t#lil.c#1097, _lil_value_t#lil.c#1063, lil_to_integer#lil.c#2509
+fnc_system#main.c#1544 -> _lil_t#lil.c#1097, lil_alloc_string#lil.c#2527, lil_to_string#lil.c#2501, do_system#main.c#1500, _lil_value_t#lil.c#1063
+fnc_readline#main.c#1561 -> _lil_t#lil.c#1097, lil_alloc_string#lil.c#2527, _lil_value_t#lil.c#1063
+repl#main.c#1584 -> running#main.c#1491, lil_callback_proc_t#lil.h#979, lil_free#lil.c#2543, lil_new#lil.c#1403, lil_parse#lil.c#1580, fnc_system#main.c#1544, do_exit#main.c#1495, lil_error#lil.c#1708, _lil_t#lil.c#1097, _lil_value_t#lil.c#1063, fnc_readline#main.c#1561, lil_callback#lil.c#1687, lil_register#lil.c#1331, exit_code#main.c#1493, lil_free_value#lil.c#1210, fnc_writechar#main.c#1538, lil_to_string#lil.c#2501
+nonint#main.c#1612 -> lil_parse#lil.c#1580, lil_free_list#lil.c#1223, lil_alloc_list#lil.c#1216, exit_code#main.c#1493, _lil_t#lil.c#1097, _lil_value_t#lil.c#1063, lil_alloc_string#lil.c#2527, fnc_writechar#main.c#1538, lil_set_var#lil.c#1338, lil_register#lil.c#1331, lil_list_to_value#lil.c#1253, _lil_list_t#lil.c#1085, lil_free_value#lil.c#1210, lil_error#lil.c#1708, lil_list_append#lil.c#1231, lil_free#lil.c#2543, fnc_system#main.c#1544, lil_new#lil.c#1403
+main#main.c#1642 -> nonint#main.c#1612, repl#main.c#1584
+
+SPLIT_TAG
+
+exit_code#main.c#1493
+running#main.c#1491
+lil_callback_proc_t#lil.h#979
+_lil_value_t#lil.c#1063
+lilint_t#lil.h#947
+_lil_list_t#lil.c#1085
+lil_append_string#lil.c#1186
+lil_arg#lil.c#2497
+_expreval_t#lil.c#1121
+_lil_env_t#lil.c#1074 <-> _lil_t#lil.c#1097 <-> lil_func_proc_t#lil.h#961 <-> _lil_func_t#lil.c#1090 <-> _lil_var_t#lil.c#1068
+lil_append_val#lil.c#1199
+lil_alloc_list#lil.c#1216
+lil_list_size#lil.c#1238
+lil_list_get#lil.c#1242
+ee_skip_spaces#lil.c#1718
+lil_exit_callback_proc_t#lil.h#963
+lil_write_callback_proc_t#lil.h#965
+lil_read_callback_proc_t#lil.h#967
+lil_source_callback_proc_t#lil.h#969
+lil_store_callback_proc_t#lil.h#971
+lil_error_callback_proc_t#lil.h#973
+lil_setvar_callback_proc_t#lil.h#975
+lil_getvar_callback_proc_t#lil.h#977
+lil_error#lil.c#1708
+lil_append_char#lil.c#1177
+lil_alloc_env#lil.c#1266
+lil_set_data#lil.c#2565
+lil_get_data#lil.c#2569
+alloc_value#lil.c#1142
+lil_find_local_var#lil.c#1285
+islilspecial#lil.c#1412
+ateol#lil.c#1416
+do_system#main.c#1500
+lil_to_string#lil.c#2501
+ee_numeric_element#lil.c#1722
+fnc_exit#lil.c#3439
+lil_push_env#lil.c#1389
+lil_alloc_string#lil.c#2527
+lil_alloc_double#lil.c#2531
+fnc_quote#lil.c#2727
+lil_find_var#lil.c#1297
+skip_spaces#lil.c#1420
+lil_to_double#lil.c#2505
+lil_to_integer#lil.c#2509
+lil_to_boolean#lil.c#2513
+strclone#lil.c#1134
+needs_escape#lil.c#1246
+find_cmd#lil.c#1302
+ee_element#lil.c#1744
+fnc_read#lil.c#3138
+fnc_substr#lil.c#3271
+fnc_system#main.c#1544
+fnc_readline#main.c#1561
+fnc_rand#lil.c#3485
+lil_get_var_or#lil.c#1378
+lil_alloc_integer#lil.c#2537
+fnc_char#lil.c#3240
+fnc_charat#lil.c#3248
+do_exit#main.c#1495
+fnc_writechar#main.c#1538
+lil_set_error#lil.c#1692
+lil_set_error_at#lil.c#1700
+real_trim#lil.c#3312
+fnc_catcher#lil.c#3489
+lil_list_to_value#lil.c#1253
+lil_unused_name#lil.c#2482
+add_func#lil.c#1314
+ee_expr#lil.c#2442 <-> ee_paren#lil.c#1754 <-> ee_unary#lil.c#1765 <-> ee_muldiv#lil.c#1804 <-> ee_addsub#lil.c#1974 <-> ee_shift#lil.c#2042 <-> ee_compare#lil.c#2111 <-> ee_equals#lil.c#2232 <-> ee_bitand#lil.c#2298 <-> ee_bitor#lil.c#2334 <-> ee_logand#lil.c#2370 <-> ee_logor#lil.c#2406
+lil_get_var#lil.c#1374
+fnc_codeat#lil.c#3261
+fnc_strpos#lil.c#3288
+fnc_length#lil.c#3303
+fnc_strcmp#lil.c#3347
+fnc_streq#lil.c#3352
+lil_callback#lil.c#1687
+fnc_error#lil.c#3434
+fnc_rename#lil.c#2701
+fnc_trim#lil.c#3332
+fnc_ltrim#lil.c#3337
+fnc_rtrim#lil.c#3342
+fnc_unusedname#lil.c#2723
+lil_clone_value#lil.c#1160
+lil_list_append#lil.c#1231
+fnc_store#lil.c#3163
+fnc_repstr#lil.c#3357
+lil_parse_value#lil.c#1682 <-> lil_parse#lil.c#1580 <-> lil_free_value#lil.c#1210 <-> lil_free_list#lil.c#1223 <-> substitute#lil.c#1530 <-> lil_free_env#lil.c#1272 <-> lil_pop_env#lil.c#1395 <-> lil_set_var#lil.c#1338 <-> next_word#lil.c#1465 <-> get_dollarpart#lil.c#1453 <-> get_bracketpart#lil.c#1431
+lil_free#lil.c#2543
+lil_subst_to_list#lil.c#1553
+fnc_reflect#lil.c#2573
+fnc_set#lil.c#2739
+fnc_local#lil.c#2756
+fnc_write#lil.c#2765
+fnc_eval#lil.c#2789
+fnc_list#lil.c#3028
+fnc_return#lil.c#3086
+fnc_result#lil.c#3094
+real_inc#lil.c#3119
+fnc_split#lil.c#3392
+fnc_try#lil.c#3420
+fnc_source#lil.c#3447
+lil_subst_to_value#lil.c#1571
+fnc_func#lil.c#2676
+fnc_enveval#lil.c#2843
+fnc_count#lil.c#2922
+fnc_index#lil.c#2932
+fnc_indexof#lil.c#2945
+fnc_append#lil.c#2959
+fnc_slice#lil.c#2981
+fnc_concat#lil.c#3043
+fnc_foreach#lil.c#3059
+fnc_lmap#lil.c#3475
+fnc_print#lil.c#2780
+fnc_topeval#lil.c#2805
+fnc_upeval#lil.c#2817
+fnc_downeval#lil.c#2830
+fnc_inc#lil.c#3128
+fnc_dec#lil.c#3133
+lil_eval_expr#lil.c#2450
+fnc_subst#lil.c#3038
+fnc_filter#lil.c#3002
+fnc_expr#lil.c#3103
+fnc_if#lil.c#3180
+fnc_while#lil.c#3199
+fnc_for#lil.c#3221
+lil_new#lil.c#1403 <-> fnc_jaileval#lil.c#2899 <-> lil_register#lil.c#1331 <-> register_stdcmds#lil.c#3500
+repl#main.c#1584
+nonint#main.c#1612
+main#main.c#1642

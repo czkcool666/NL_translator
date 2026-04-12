@@ -1,0 +1,146 @@
+[
+{
+  "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/build",
+  "command": "/usr/bin/cc  -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/include -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/. -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/OpenMP::OpenMP_CXX  -o CMakeFiles/heman.dir/src/color.c.o -c /home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/src/color.c",
+  "file": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/src/color.c",
+  "output": "CMakeFiles/heman.dir/src/color.c.o"
+},
+{
+  "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/build",
+  "command": "/usr/bin/cc  -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/include -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/. -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/OpenMP::OpenMP_CXX  -o CMakeFiles/heman.dir/src/distance.c.o -c /home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/src/distance.c",
+  "file": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/src/distance.c",
+  "output": "CMakeFiles/heman.dir/src/distance.c.o"
+},
+{
+  "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/build",
+  "command": "/usr/bin/cc  -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/include -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/. -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/OpenMP::OpenMP_CXX  -o CMakeFiles/heman.dir/src/draw.c.o -c /home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/src/draw.c",
+  "file": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/src/draw.c",
+  "output": "CMakeFiles/heman.dir/src/draw.c.o"
+},
+{
+  "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/build",
+  "command": "/usr/bin/cc  -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/include -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/. -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/OpenMP::OpenMP_CXX  -o CMakeFiles/heman.dir/src/export.c.o -c /home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/src/export.c",
+  "file": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/src/export.c",
+  "output": "CMakeFiles/heman.dir/src/export.c.o"
+},
+{
+  "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/build",
+  "command": "/usr/bin/cc  -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/include -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/. -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/OpenMP::OpenMP_CXX  -o CMakeFiles/heman.dir/src/gaussian.c.o -c /home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/src/gaussian.c",
+  "file": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/src/gaussian.c",
+  "output": "CMakeFiles/heman.dir/src/gaussian.c.o"
+},
+{
+  "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/build",
+  "command": "/usr/bin/cc  -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/include -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/. -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/OpenMP::OpenMP_CXX  -o CMakeFiles/heman.dir/src/generate.c.o -c /home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/src/generate.c",
+  "file": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/src/generate.c",
+  "output": "CMakeFiles/heman.dir/src/generate.c.o"
+},
+{
+  "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/build",
+  "command": "/usr/bin/cc  -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/include -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/. -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/OpenMP::OpenMP_CXX  -o CMakeFiles/heman.dir/src/image.c.o -c /home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/src/image.c",
+  "file": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/src/image.c",
+  "output": "CMakeFiles/heman.dir/src/image.c.o"
+},
+{
+  "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/build",
+  "command": "/usr/bin/cc  -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/include -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/. -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/OpenMP::OpenMP_CXX  -o CMakeFiles/heman.dir/src/import.c.o -c /home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/src/import.c",
+  "file": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/src/import.c",
+  "output": "CMakeFiles/heman.dir/src/import.c.o"
+},
+{
+  "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/build",
+  "command": "/usr/bin/cc  -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/include -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/. -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/OpenMP::OpenMP_CXX  -o CMakeFiles/heman.dir/src/lighting.c.o -c /home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/src/lighting.c",
+  "file": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/src/lighting.c",
+  "output": "CMakeFiles/heman.dir/src/lighting.c.o"
+},
+{
+  "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/build",
+  "command": "/usr/bin/cc  -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/include -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/. -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/OpenMP::OpenMP_CXX  -o CMakeFiles/heman.dir/src/noise.c.o -c /home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/src/noise.c",
+  "file": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/src/noise.c",
+  "output": "CMakeFiles/heman.dir/src/noise.c.o"
+},
+{
+  "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/build",
+  "command": "/usr/bin/cc  -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/include -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/. -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/OpenMP::OpenMP_CXX  -o CMakeFiles/heman.dir/src/ops.c.o -c /home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/src/ops.c",
+  "file": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/src/ops.c",
+  "output": "CMakeFiles/heman.dir/src/ops.c.o"
+},
+{
+  "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/build",
+  "command": "/usr/bin/cc  -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/include -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/. -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/OpenMP::OpenMP_CXX  -o CMakeFiles/heman.dir/src/points.c.o -c /home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/src/points.c",
+  "file": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/src/points.c",
+  "output": "CMakeFiles/heman.dir/src/points.c.o"
+},
+{
+  "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/build",
+  "command": "/usr/bin/cc  -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/include -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/. -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/OpenMP::OpenMP_CXX  -o CMakeFiles/heman.dir/kazmath/aabb2.c.o -c /home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/kazmath/aabb2.c",
+  "file": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/kazmath/aabb2.c",
+  "output": "CMakeFiles/heman.dir/kazmath/aabb2.c.o"
+},
+{
+  "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/build",
+  "command": "/usr/bin/cc  -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/include -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/. -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/OpenMP::OpenMP_CXX  -o CMakeFiles/heman.dir/kazmath/aabb3.c.o -c /home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/kazmath/aabb3.c",
+  "file": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/kazmath/aabb3.c",
+  "output": "CMakeFiles/heman.dir/kazmath/aabb3.c.o"
+},
+{
+  "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/build",
+  "command": "/usr/bin/cc  -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/include -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/. -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/OpenMP::OpenMP_CXX  -o CMakeFiles/heman.dir/kazmath/mat3.c.o -c /home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/kazmath/mat3.c",
+  "file": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/kazmath/mat3.c",
+  "output": "CMakeFiles/heman.dir/kazmath/mat3.c.o"
+},
+{
+  "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/build",
+  "command": "/usr/bin/cc  -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/include -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/. -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/OpenMP::OpenMP_CXX  -o CMakeFiles/heman.dir/kazmath/mat4.c.o -c /home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/kazmath/mat4.c",
+  "file": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/kazmath/mat4.c",
+  "output": "CMakeFiles/heman.dir/kazmath/mat4.c.o"
+},
+{
+  "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/build",
+  "command": "/usr/bin/cc  -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/include -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/. -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/OpenMP::OpenMP_CXX  -o CMakeFiles/heman.dir/kazmath/plane.c.o -c /home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/kazmath/plane.c",
+  "file": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/kazmath/plane.c",
+  "output": "CMakeFiles/heman.dir/kazmath/plane.c.o"
+},
+{
+  "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/build",
+  "command": "/usr/bin/cc  -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/include -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/. -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/OpenMP::OpenMP_CXX  -o CMakeFiles/heman.dir/kazmath/quaternion.c.o -c /home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/kazmath/quaternion.c",
+  "file": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/kazmath/quaternion.c",
+  "output": "CMakeFiles/heman.dir/kazmath/quaternion.c.o"
+},
+{
+  "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/build",
+  "command": "/usr/bin/cc  -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/include -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/. -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/OpenMP::OpenMP_CXX  -o CMakeFiles/heman.dir/kazmath/ray2.c.o -c /home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/kazmath/ray2.c",
+  "file": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/kazmath/ray2.c",
+  "output": "CMakeFiles/heman.dir/kazmath/ray2.c.o"
+},
+{
+  "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/build",
+  "command": "/usr/bin/cc  -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/include -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/. -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/OpenMP::OpenMP_CXX  -o CMakeFiles/heman.dir/kazmath/ray3.c.o -c /home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/kazmath/ray3.c",
+  "file": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/kazmath/ray3.c",
+  "output": "CMakeFiles/heman.dir/kazmath/ray3.c.o"
+},
+{
+  "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/build",
+  "command": "/usr/bin/cc  -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/include -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/. -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/OpenMP::OpenMP_CXX  -o CMakeFiles/heman.dir/kazmath/utility.c.o -c /home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/kazmath/utility.c",
+  "file": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/kazmath/utility.c",
+  "output": "CMakeFiles/heman.dir/kazmath/utility.c.o"
+},
+{
+  "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/build",
+  "command": "/usr/bin/cc  -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/include -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/. -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/OpenMP::OpenMP_CXX  -o CMakeFiles/heman.dir/kazmath/vec2.c.o -c /home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/kazmath/vec2.c",
+  "file": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/kazmath/vec2.c",
+  "output": "CMakeFiles/heman.dir/kazmath/vec2.c.o"
+},
+{
+  "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/build",
+  "command": "/usr/bin/cc  -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/include -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/. -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/OpenMP::OpenMP_CXX  -o CMakeFiles/heman.dir/kazmath/vec3.c.o -c /home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/kazmath/vec3.c",
+  "file": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/kazmath/vec3.c",
+  "output": "CMakeFiles/heman.dir/kazmath/vec3.c.o"
+},
+{
+  "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/build",
+  "command": "/usr/bin/cc  -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/include -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/. -I/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/OpenMP::OpenMP_CXX  -o CMakeFiles/heman.dir/kazmath/vec4.c.o -c /home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/kazmath/vec4.c",
+  "file": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/heman/kazmath/vec4.c",
+  "output": "CMakeFiles/heman.dir/kazmath/vec4.c.o"
+}
+]

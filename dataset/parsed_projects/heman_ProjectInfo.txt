@@ -1,0 +1,785 @@
+heman
+├── aabb2.c
+├── aabb3.c
+├── color.c
+├── distance.c
+├── draw.c
+├── export.c
+├── gaussian.c
+├── generate.c
+├── image.c
+├── import.c
+├── lighting.c
+├── mat3.c
+├── mat4.c
+├── noise.c
+├── ops.c
+├── plane.c
+├── points.c
+├── quaternion.c
+├── ray2.c
+├── ray3.c
+├── utility.c
+├── vec2.c
+├── vec3.c
+└── vec4.c
+H_FILE_LIST
+vec3.h
+aabb3.h
+mat4.h
+plane.h
+ray3.h
+image.h
+aabb2.h
+quaternion.h
+mat3.h
+ray2.h
+heman.h
+vec4.h
+vec2.h
+
+SPLIT_TAG
+
+heman_image_s#image.h#136
+kmAABB2#aabb2.h#686 -> kmVec2#vec2.h#629
+kmAABB3#aabb3.h#711 -> kmVec3#vec3.h#639
+kmMat3#mat3.h#1320
+kmMat4#mat4.h#1382
+kmPlane#plane.h#1523
+kmQuaternion#quaternion.h#1448
+kmRay2#ray2.h#964 -> kmVec2#vec2.h#629
+kmRay3#ray3.h#750 -> kmVec3#vec3.h#639
+kmVec2#vec2.h#629
+kmVec3#vec3.h#639
+kmVec4#vec4.h#1202
+osn_context#noise.c#1278
+kmVec2Transform#vec2.h#656 -> kmMat3#mat3.h#1320, kmVec2#vec2.h#629
+kmVec2TransformCoord#vec2.h#658 -> kmVec2#vec2.h#629, kmMat3#mat3.h#1320
+kmAABB2Initialize#aabb2.c#715 -> kmVec2Fill#vec2.c#1251, kmAABB2#aabb2.h#686, kmVec2#vec2.h#629
+kmAABB2Sanitize#aabb2.c#727 -> kmVec2#vec2.h#629, kmAABB2#aabb2.h#686
+kmAABB2ContainsPoint#aabb2.c#745 -> kmAABB2#aabb2.h#686, kmVec2#vec2.h#629
+kmAABB2Assign#aabb2.c#752 -> kmVec2Assign#vec2.c#1340, kmAABB2#aabb2.h#686
+kmAABB2Translate#aabb2.c#758 -> kmVec2Add#vec2.c#1282, kmVec2#vec2.h#629, kmAABB2#aabb2.h#686
+kmAABB2Scale#aabb2.c#764 -> kmVec2Scale#vec2.c#1330, kmAABB2#aabb2.h#686
+kmAABB2ScaleWithPivot#aabb2.c#770 -> kmAABB2Scale#aabb2.c#764, kmAABB2Translate#aabb2.c#758, kmAABB2#aabb2.h#686, kmVec2#vec2.h#629
+kmAABB2ContainsAABB#aabb2.c#780 -> kmAABB2#aabb2.h#686, kmAABB2ContainsPoint#aabb2.c#745, kmVec2#vec2.h#629, kmVec2Fill#vec2.c#1251
+kmAABB2DiameterX#aabb2.c#796 -> kmAABB2#aabb2.h#686, kmVec2#vec2.h#629
+kmAABB2DiameterY#aabb2.c#800 -> kmVec2#vec2.h#629, kmAABB2#aabb2.h#686
+kmAABB2Centre#aabb2.c#804 -> kmVec2Scale#vec2.c#1330, kmAABB2#aabb2.h#686, kmVec2#vec2.h#629, kmVec2Add#vec2.c#1282
+kmAABB2ExpandToContain#aabb2.c#810 -> kmVec2#vec2.h#629, kmAABB2#aabb2.h#686, kmAABB2Assign#aabb2.c#752
+kmVec3MultiplyMat3#vec3.h#667 -> kmVec3#vec3.h#639, kmMat3#mat3.h#1320
+kmVec3MultiplyMat4#vec3.h#669 -> kmVec3#vec3.h#639, kmMat4#mat4.h#1382
+kmVec3Transform#vec3.h#671 -> kmVec3#vec3.h#639, kmMat4#mat4.h#1382
+kmVec3TransformNormal#vec3.h#673 -> kmVec3#vec3.h#639, kmMat4#mat4.h#1382
+kmVec3TransformCoord#vec3.h#675 -> kmVec3#vec3.h#639, kmMat4#mat4.h#1382
+kmVec3InverseTransform#vec3.h#681 -> kmMat4#mat4.h#1382, kmVec3#vec3.h#639
+kmVec3InverseTransformNormal#vec3.h#683 -> kmVec3#vec3.h#639, kmMat4#mat4.h#1382
+kmAABB3Initialize#aabb3.c#740 -> kmVec3#vec3.h#639, kmVec3Zero#vec3.c#1247, kmAABB3#aabb3.h#711
+kmAABB3ContainsPoint#aabb3.c#754 -> kmAABB3#aabb3.h#711, kmVec3#vec3.h#639
+kmAABB3Assign#aabb3.c#761 -> kmAABB3#aabb3.h#711, kmVec3Assign#vec3.c#1237
+kmAABB3Scale#aabb3.c#767 -> kmAABB3#aabb3.h#711
+kmAABB3IntersectsTriangle#aabb3.c#772 -> kmAABB3#aabb3.h#711, kmVec3#vec3.h#639
+kmAABB3IntersectsAABB#aabb3.c#777 -> kmAABB3ContainsAABB#aabb3.c#781, kmAABB3#aabb3.h#711
+kmAABB3ContainsAABB#aabb3.c#781 -> kmAABB3ContainsPoint#aabb3.c#754, kmVec3#vec3.h#639, kmVec3Fill#vec3.c#1062, kmAABB3#aabb3.h#711
+kmAABB3DiameterX#aabb3.c#809 -> kmAABB3#aabb3.h#711, kmVec3#vec3.h#639
+kmAABB3DiameterY#aabb3.c#813 -> kmAABB3#aabb3.h#711, kmVec3#vec3.h#639
+kmAABB3DiameterZ#aabb3.c#817 -> kmVec3#vec3.h#639, kmAABB3#aabb3.h#711
+kmAABB3Centre#aabb3.c#821 -> kmVec3#vec3.h#639, kmVec3Scale#vec3.c#1223, kmVec3Add#vec3.c#1112, kmAABB3#aabb3.h#711
+kmAABB3ExpandToContain#aabb3.c#827 -> kmVec3#vec3.h#639, kmAABB3#aabb3.h#711, kmAABB3Assign#aabb3.c#761
+heman_color#heman.h#6
+heman_byte#heman.h#8
+_gamma#color.c#1259
+heman_color_create_gradient#color.c#1263 -> heman_image_s#image.h#136, _gamma#color.c#1259, heman_image_create#image.c#1276, heman_color#heman.h#6
+heman_color_set_gamma#color.c#1261 -> _gamma#color.c#1259
+heman_color_apply_gradient#color.c#1317 -> heman_image_create#image.c#1276, heman_image_s#image.h#136, heman_image_sample#image.c#1290
+heman_color_from_grayscale#color.c#1335 -> heman_image_s#image.h#136, heman_image_create#image.c#1276
+heman_color_to_grayscale#color.c#1352 -> heman_image_create#image.c#1276, heman_image_s#image.h#136
+heman_color_from_cpcf#color.c#1387 -> heman_image_s#image.h#136, heman_image_create#image.c#1276, heman_image_texel#image.c#1272, heman_internal_rg#color.c#1369
+smoothstep#image.h#145
+heman_internal_rg#color.c#1369 -> heman_image_create#image.c#1276, heman_image_s#image.h#136
+INF#distance.c#1307
+heman_distance_create_sdf#distance.c#1465 -> heman_image_destroy#image.c#1285, transform_to_distance#distance.c#1361, heman_image_create#image.c#1276, heman_image_s#image.h#136, INF#distance.c#1307
+heman_distance_create_df#distance.c#1489 -> heman_image_create#image.c#1276, transform_to_distance#distance.c#1361, INF#distance.c#1307, heman_image_s#image.h#136
+heman_distance_create_cpcf#distance.c#1519 -> transform_to_coordfield#distance.c#1405, heman_image_destroy#image.c#1285, INF#distance.c#1307, heman_distance_identity_cpcf#distance.c#1507, heman_image_s#image.h#136, heman_image_create#image.c#1276
+heman_distance_from_cpcf#distance.c#1537 -> heman_image_s#image.h#136, heman_image_create#image.c#1276
+heman_distance_identity_cpcf#distance.c#1507 -> heman_image_create#image.c#1276, heman_image_s#image.h#136
+edt#distance.c#1309 -> INF#distance.c#1307
+edt_with_payload#distance.c#1334 -> INF#distance.c#1307
+transform_to_distance#distance.c#1361 -> edt#distance.c#1309, heman_image_s#image.h#136
+transform_to_coordfield#distance.c#1405 -> edt_with_payload#distance.c#1334, heman_image_s#image.h#136
+heman_draw_points#draw.c#782 -> heman_image_s#image.h#136, heman_image_texel#image.c#1272
+heman_draw_colored_points#draw.c#800 -> heman_color#heman.h#6, heman_image_s#image.h#136, heman_image_texel#image.c#1272
+heman_draw_colored_circles#draw.c#824 -> heman_image_texel#image.c#1272, heman_color#heman.h#6, heman_image_s#image.h#136
+heman_draw_splats#draw.c#855 -> heman_image_texel#image.c#1272, generate_gaussian_splat#gaussian.c#802, heman_image_s#image.h#136
+heman_draw_contour_from_points#draw.c#886 -> heman_internal_draw_seeds#generate.c#1742, heman_image_texel#image.c#1272, heman_image_s#image.h#136, heman_points_destroy#points.c#1471, heman_image_clear#image.c#1299, heman_image_create#image.c#1276, heman_color#heman.h#6
+heman_export_ply#export.c#1048 -> heman_image_s#image.h#136, heman_image_texel#image.c#1272
+heman_export_with_colors_ply#export.c#1082 -> heman_image_texel#image.c#1272, heman_byte#heman.h#8, heman_image_s#image.h#136, heman_export_u8#export.c#1128
+heman_export_u8#export.c#1128 -> heman_byte#heman.h#8, heman_image_s#image.h#136
+generate_gaussian_row#gaussian.c#782
+generate_gaussian_splat#gaussian.c#802 -> generate_gaussian_row#gaussian.c#782
+SEALEVEL#generate.c#1529
+DEFAULT_STRENGTH#generate.c#1531
+heman_generate_island_heightmap#generate.c#1582 -> SEALEVEL#generate.c#1529, heman_image_create#image.c#1276, heman_image_destroy#image.c#1285, heman_image_sample#image.c#1290, heman_distance_create_sdf#distance.c#1465, heman_internal_generate_island_noise#generate.c#1533, heman_image_s#image.h#136
+heman_generate_rock_heightmap#generate.c#1638 -> heman_image_destroy#image.c#1285, heman_image_sample#image.c#1290, heman_image_s#image.h#136, heman_internal_generate_rock_noise#generate.c#1559, heman_image_create#image.c#1276
+heman_generate_planet_heightmap#generate.c#1705 -> open_simplex_noise3#noise.c#1474, osn_context#noise.c#1278, heman_image_s#image.h#136, heman_image_create#image.c#1276, sphere#generate.c#1699, open_simplex_noise#noise.c#1340, kmVec3#vec3.h#639, open_simplex_noise_free#noise.c#1372
+heman_generate_archipelago_heightmap#generate.c#1776 -> heman_image_create#image.c#1276, heman_image_clear#image.c#1299, heman_distance_create_sdf#distance.c#1465, heman_internal_generate_island_noise#generate.c#1533, SEALEVEL#generate.c#1529, heman_image_sample#image.c#1290, heman_image_s#image.h#136, heman_internal_draw_seeds#generate.c#1742, heman_image_destroy#image.c#1285
+heman_generate_archipelago_political#generate.c#1919 -> heman_generate_archipelago_political_2#generate.c#1848, heman_color#heman.h#6, heman_generate_archipelago_political_3#generate.c#1883, heman_image_s#image.h#136, heman_generate_archipelago_political_1#generate.c#1834
+heman_generate_simplex_fbm#generate.c#1671 -> heman_image_s#image.h#136, open_simplex_noise2#noise.c#1385, open_simplex_noise_free#noise.c#1372, open_simplex_noise#noise.c#1340, osn_context#noise.c#1278, heman_image_create#image.c#1276
+heman_internal_generate_island_noise#generate.c#1533 -> heman_image_create#image.c#1276, open_simplex_noise#noise.c#1340, open_simplex_noise2#noise.c#1385, osn_context#noise.c#1278, open_simplex_noise_free#noise.c#1372, heman_image_s#image.h#136
+heman_internal_generate_rock_noise#generate.c#1559 -> open_simplex_noise#noise.c#1340, heman_image_create#image.c#1276, open_simplex_noise2#noise.c#1385, heman_image_s#image.h#136, osn_context#noise.c#1278, open_simplex_noise_free#noise.c#1372
+sphere#generate.c#1699 -> kmVec3#vec3.h#639
+heman_internal_draw_seeds#generate.c#1742 -> heman_image_texel#image.c#1272, SEALEVEL#generate.c#1529, heman_image_s#image.h#136, DEFAULT_STRENGTH#generate.c#1531
+heman_generate_archipelago_political_1#generate.c#1834 -> heman_image_s#image.h#136, heman_ops_warp#ops.c#2065, heman_draw_colored_points#draw.c#800, heman_draw_contour_from_points#draw.c#886, heman_image_create#image.c#1276, heman_color_from_cpcf#color.c#1387, heman_image_destroy#image.c#1285, heman_image_clear#image.c#1299, heman_color#heman.h#6, heman_distance_create_cpcf#distance.c#1519
+heman_generate_archipelago_political_2#generate.c#1848 -> heman_image_s#image.h#136, heman_image_sample#image.c#1290, heman_image_destroy#image.c#1285, heman_image_create#image.c#1276, heman_ops_extract_mask#ops.c#2069, heman_distance_create_sdf#distance.c#1465, heman_color#heman.h#6, heman_internal_generate_island_noise#generate.c#1533
+heman_generate_archipelago_political_3#generate.c#1883 -> heman_image_create#image.c#1276, heman_image_clear#image.c#1299, heman_generate_archipelago_political_2#generate.c#1848, heman_color#heman.h#6, heman_image_s#image.h#136, heman_image_destroy#image.c#1285
+heman_image_create#image.c#1276 -> heman_image_s#image.h#136
+heman_image_info#image.c#1266 -> heman_image_s#image.h#136
+heman_image_data#image.c#1259 -> heman_image_s#image.h#136
+heman_image_array#image.c#1261 -> heman_image_s#image.h#136
+heman_image_texel#image.c#1272 -> heman_image_s#image.h#136
+heman_image_sample#image.c#1290 -> heman_image_s#image.h#136, heman_image_texel#image.c#1272
+heman_image_clear#image.c#1299 -> heman_image_s#image.h#136
+heman_image_destroy#image.c#1285 -> heman_image_s#image.h#136
+heman_image_extract_alpha#image.c#1307 -> heman_image_s#image.h#136, heman_image_create#image.c#1276
+heman_image_extract_rgb#image.c#1320 -> heman_image_create#image.c#1276, heman_image_s#image.h#136
+heman_import_u8#import.c#155 -> heman_byte#heman.h#8, heman_image_create#image.c#1276, heman_image_s#image.h#136
+_occlusion_scale#lighting.c#1467
+heman_lighting_apply#lighting.c#1514 -> kmVec3Lerp#vec3.c#1077, _gamma#color.c#1259, kmVec3Normalize#vec3.c#1084, KM_VEC3_POS_Z#vec3.c#1048, kmClamp#utility.c#651, kmVec3Dot#vec3.c#1108, heman_lighting_compute_normals#lighting.c#1473, heman_image_destroy#image.c#1285, kmVec3Scale#vec3.c#1223, kmVec3#vec3.h#639, heman_lighting_compute_occlusion#lighting.c#1645, heman_image_create#image.c#1276, heman_image_texel#image.c#1272, heman_image_s#image.h#136
+heman_lighting_compute_normals#lighting.c#1473 -> heman_image_create#image.c#1276, heman_image_texel#image.c#1272, heman_image_s#image.h#136, kmVec3#vec3.h#639, kmVec3Subtract#vec3.c#1123, kmVec3Normalize#vec3.c#1084, kmVec3Cross#vec3.c#1097
+heman_lighting_compute_occlusion#lighting.c#1645 -> heman_image_s#image.h#136, heman_image_create#image.c#1276, kmMax#utility.c#643, horizon_scan#lighting.c#1581
+heman_lighting_set_occlusion_scale#lighting.c#1469 -> _occlusion_scale#lighting.c#1467
+azimuth_slope#lighting.c#1565 -> kmVec3#vec3.h#639, kmVec3Length#vec3.c#1069, kmVec3Subtract#vec3.c#1123
+compute_occlusion#lighting.c#1573 -> KM_VEC3_POS_Z#vec3.c#1048, kmVec3Normalize#vec3.c#1084, kmVec3Subtract#vec3.c#1123, kmVec3#vec3.h#639, kmVec3Dot#vec3.c#1108
+horizon_scan#lighting.c#1581 -> heman_image_texel#image.c#1272, _occlusion_scale#lighting.c#1467, azimuth_slope#lighting.c#1565, heman_image_s#image.h#136, compute_occlusion#lighting.c#1573, kmVec3#vec3.h#639
+kmMat3Fill#mat3.c#1517 -> kmMat3#mat3.h#1320
+kmMat3Adjugate#mat3.c#1535 -> kmMat3#mat3.h#1320
+kmMat3Identity#mat3.c#1522 -> kmMat3#mat3.h#1320
+kmMat3Inverse#mat3.c#1548 -> kmMat3ScalarMultiply#mat3.c#1597, kmMat3#mat3.h#1320, kmMat3Adjugate#mat3.c#1535, kmMat3Determinant#mat3.c#1528
+kmMat3IsIdentity#mat3.c#1561 -> kmMat3#mat3.h#1320
+kmMat3Transpose#mat3.c#1566 -> kmMat3#mat3.h#1320
+kmMat3Determinant#mat3.c#1528 -> kmMat3#mat3.h#1320
+kmMat3Multiply#mat3.c#1581 -> kmMat3#mat3.h#1320
+kmMat3ScalarMultiply#mat3.c#1597 -> kmMat3#mat3.h#1320
+kmMat3Assign#mat3.c#1607 -> kmMat3#mat3.h#1320
+kmMat3AssignMat4#mat3.h#1344 -> kmMat4#mat4.h#1382, kmMat3#mat3.h#1320
+kmMat3AreEqual#mat3.c#1626 -> kmMat3#mat3.h#1320
+kmMat3GetUpVec3#mat3.c#1743 -> kmMat3#mat3.h#1320, kmVec3#vec3.h#639, kmVec3Normalize#vec3.c#1084
+kmMat3GetRightVec3#mat3.c#1751 -> kmVec3#vec3.h#639, kmVec3Normalize#vec3.c#1084, kmMat3#mat3.h#1320
+kmMat3GetForwardVec3#mat3.c#1759 -> kmVec3Normalize#vec3.c#1084, kmVec3#vec3.h#639, kmMat3#mat3.h#1320
+kmMat3RotationX#mat3.c#1704 -> kmMat3#mat3.h#1320
+kmMat3RotationY#mat3.c#1717 -> kmMat3#mat3.h#1320
+kmMat3RotationZ#mat3.c#1730 -> kmMat3#mat3.h#1320
+kmMat3Rotation#mat3.c#1639 -> kmMat3#mat3.h#1320
+kmMat3Scaling#mat3.c#1652 -> kmMat3#mat3.h#1320, kmMat3Identity#mat3.c#1522, kmVec3#vec3.h#639
+kmMat3Translation#mat3.c#1659 -> kmMat3Identity#mat3.c#1522, kmMat3#mat3.h#1320, kmVec3#vec3.h#639
+kmMat3RotationQuaternion#mat3.h#1366 -> kmMat3#mat3.h#1320, kmQuaternion#quaternion.h#1448
+kmMat3RotationAxisAngle#mat3.c#1682 -> kmVec3#vec3.h#639, kmMat3#mat3.h#1320
+kmMat3RotationToAxisAngle#mat3.c#1697 -> kmQuaternionRotationMatrix#quaternion.h#1481, kmQuaternionToAxisAngle#quaternion.c#1232, kmMat3#mat3.h#1320, kmQuaternion#quaternion.h#1448, kmVec3#vec3.h#639
+kmMat3LookAt#mat3.h#1372 -> kmVec3#vec3.h#639, kmMat3#mat3.h#1320
+kmMat4AssignMat3#mat4.h#1400 -> kmMat3#mat3.h#1320, kmMat4#mat4.h#1382
+kmMat4RotationQuaternion#mat4.h#1412 -> kmMat4#mat4.h#1382, kmQuaternion#quaternion.h#1448
+kmMat4RotationTranslation#mat4.h#1414 -> kmVec3#vec3.h#639, kmMat4#mat4.h#1382, kmMat3#mat3.h#1320
+kmMat4LookAt#mat4.h#1432 -> kmMat4#mat4.h#1382, kmVec3#vec3.h#639
+kmMat4RotationAxisAngle#mat4.h#1434 -> kmVec3#vec3.h#639, kmMat4#mat4.h#1382
+kmQuaternionRotationAxisAngle#quaternion.h#1479 -> kmQuaternion#quaternion.h#1448, kmVec3#vec3.h#639
+kmQuaternionRotationMatrix#quaternion.h#1481 -> kmMat3#mat3.h#1320, kmQuaternion#quaternion.h#1448
+kmQuaternionRotationBetweenVec3#quaternion.h#1497 -> kmQuaternion#quaternion.h#1448, kmVec3#vec3.h#639
+kmQuaternionMultiplyVec3#quaternion.h#1499 -> kmVec3#vec3.h#639, kmQuaternion#quaternion.h#1448
+kmMat3AssignMat4#mat3.c#1613 -> kmMat4#mat4.h#1382, kmMat3AssignMat4#mat3.h#1344, kmMat3#mat3.h#1320
+kmMat3RotationQuaternion#mat3.c#1666 -> kmMat3RotationQuaternion#mat3.h#1366, kmMat3#mat3.h#1320, kmQuaternion#quaternion.h#1448
+kmMat3LookAt#mat3.c#1767 -> kmVec3#vec3.h#639, kmVec3Cross#vec3.c#1097, kmVec3Assign#vec3.c#1237, kmVec3Subtract#vec3.c#1123, kmMat3#mat3.h#1320, kmVec3Normalize#vec3.c#1084, kmMat3LookAt#mat3.h#1372
+KM_POINT_CLASSIFICATION#plane.h#1527
+kmMat4Fill#mat4.c#1556 -> kmMat4#mat4.h#1382
+kmMat4Identity#mat4.c#1561 -> kmMat4#mat4.h#1382
+kmMat4Inverse#mat4.c#1567 -> kmMat4#mat4.h#1382
+kmMat4IsIdentity#mat4.c#1598 -> kmMat4#mat4.h#1382
+kmMat4Transpose#mat4.c#1603 -> kmVec3#vec3.h#639, kmMat4#mat4.h#1382
+kmMat4Multiply#mat4.c#1613 -> kmMat4#mat4.h#1382
+kmMat4Assign#mat4.c#1636 -> kmMat4#mat4.h#1382
+kmMat4AreEqual#mat4.c#1659 -> kmMat4#mat4.h#1382
+kmMat4RotationX#mat4.c#1677 -> kmMat4#mat4.h#1382
+kmMat4RotationY#mat4.c#1697 -> kmMat4#mat4.h#1382
+kmMat4RotationZ#mat4.c#1717 -> kmMat4#mat4.h#1382
+kmMat4RotationYawPitchRoll#mat4.c#1737 -> kmMat4#mat4.h#1382, kmMat4Multiply#mat4.c#1613, kmMat4RotationY#mat4.c#1697, kmMat4RotationZ#mat4.c#1717, kmMat4RotationX#mat4.c#1677
+kmMat4Scaling#mat4.c#1778 -> kmVec3#vec3.h#639, kmMat4#mat4.h#1382
+kmMat4Translation#mat4.c#1787 -> kmMat4#mat4.h#1382, kmVec3#vec3.h#639
+kmMat4GetUpVec3#mat4.c#1799 -> kmMat4#mat4.h#1382, KM_VEC3_POS_Y#vec3.c#1052, kmVec3#vec3.h#639, kmVec3Normalize#vec3.c#1084, kmVec3MultiplyMat4#vec3.h#669
+kmMat4GetRightVec3#mat4.c#1805 -> kmMat4#mat4.h#1382, kmVec3#vec3.h#639, kmVec3MultiplyMat4#vec3.h#669, kmVec3Normalize#vec3.c#1084, KM_VEC3_POS_X#vec3.c#1058
+kmMat4GetForwardVec3RH#mat4.c#1811 -> KM_VEC3_NEG_Z#vec3.c#1050, kmMat4#mat4.h#1382, kmVec3MultiplyMat4#vec3.h#669, kmVec3Normalize#vec3.c#1084, kmVec3#vec3.h#639
+kmMat4GetForwardVec3LH#mat4.c#1817 -> kmVec3#vec3.h#639, kmVec3MultiplyMat4#vec3.h#669, KM_VEC3_POS_Z#vec3.c#1048, kmVec3Normalize#vec3.c#1084, kmMat4#mat4.h#1382
+kmMat4PerspectiveProjection#mat4.c#1823 -> kmDegreesToRadians#utility.c#631, kmMat4#mat4.h#1382, kmMat4Identity#mat4.c#1561
+kmMat4OrthographicProjection#mat4.c#1842 -> kmMat4Identity#mat4.c#1561, kmMat4#mat4.h#1382
+kmMat4ExtractRotation#mat4.c#1882 -> kmMat3#mat3.h#1320, kmMat4#mat4.h#1382
+kmMat4ExtractPlane#mat4.c#1924 -> kmPlane#plane.h#1523, kmMat4#mat4.h#1382
+kmMat4RotationToAxisAngle#mat4.c#1895 -> kmQuaternionToAxisAngle#quaternion.c#1232, kmQuaternionRotationMatrix#quaternion.h#1481, kmQuaternion#quaternion.h#1448, kmMat4ExtractRotation#mat4.c#1882, kmVec3#vec3.h#639, kmMat4#mat4.h#1382, kmMat3#mat3.h#1320
+kmPlaneDot#plane.h#1532 -> kmPlane#plane.h#1523, kmVec4#vec4.h#1202
+kmPlaneDotCoord#plane.h#1534 -> kmVec3#vec3.h#639, kmPlane#plane.h#1523
+kmPlaneDotNormal#plane.h#1536 -> kmPlane#plane.h#1523, kmVec3#vec3.h#639
+kmPlaneFromPointAndNormal#plane.h#1540 -> kmPlane#plane.h#1523, kmVec3#vec3.h#639
+kmPlaneFromPoints#plane.h#1542 -> kmPlane#plane.h#1523, kmVec3#vec3.h#639
+kmPlaneIntersectLine#plane.h#1544 -> kmPlane#plane.h#1523, kmVec3#vec3.h#639
+kmPlaneClassifyPoint#plane.h#1550 -> kmPlane#plane.h#1523, kmVec3#vec3.h#639, KM_POINT_CLASSIFICATION#plane.h#1527
+kmMat4AssignMat3#mat4.c#1642 -> kmMat4AssignMat3#mat4.h#1400, kmMat3#mat3.h#1320, kmMat4Identity#mat4.c#1561, kmMat4#mat4.h#1382
+kmMat4RotationAxisAngle#mat4.c#1670 -> kmMat4RotationQuaternion#mat4.h#1412, kmVec3#vec3.h#639, kmQuaternionRotationAxisAngle#quaternion.h#1479, kmMat4RotationAxisAngle#mat4.h#1434, kmMat4#mat4.h#1382, kmQuaternion#quaternion.h#1448
+kmMat4RotationQuaternion#mat4.c#1749 -> kmMat4#mat4.h#1382, kmQuaternion#quaternion.h#1448, kmMat4RotationQuaternion#mat4.h#1412
+kmMat4LookAt#mat4.c#1856 -> kmMat4Identity#mat4.c#1561, kmVec3#vec3.h#639, kmVec3Assign#vec3.c#1237, kmMat4LookAt#mat4.h#1432, kmMat4Multiply#mat4.c#1613, kmVec3Cross#vec3.c#1097, kmVec3Subtract#vec3.c#1123, kmMat4Translation#mat4.c#1787, kmMat4#mat4.h#1382, kmVec3Normalize#vec3.c#1084
+kmMat4RotationTranslation#mat4.c#1904 -> kmMat3#mat3.h#1320, kmVec3#vec3.h#639, kmMat4RotationTranslation#mat4.h#1414, kmMat4#mat4.h#1382
+gradients2D#noise.c#1283
+gradients3D#noise.c#1286
+gradients4D#noise.c#1289
+open_simplex_noise#noise.c#1340 -> osn_context#noise.c#1278, allocate_perm#noise.c#1316, gradients3D#noise.c#1286
+open_simplex_noise_free#noise.c#1372 -> osn_context#noise.c#1278
+open_simplex_noise_init_perm#noise.c#1329 -> allocate_perm#noise.c#1316, osn_context#noise.c#1278, gradients3D#noise.c#1286
+open_simplex_noise2#noise.c#1385 -> fastFloor#noise.c#1311, extrapolate2#noise.c#1292, osn_context#noise.c#1278
+open_simplex_noise3#noise.c#1474 -> fastFloor#noise.c#1311, osn_context#noise.c#1278, extrapolate3#noise.c#1298
+open_simplex_noise4#noise.c#1942 -> extrapolate4#noise.c#1305, osn_context#noise.c#1278, fastFloor#noise.c#1311
+extrapolate2#noise.c#1292 -> gradients2D#noise.c#1283, osn_context#noise.c#1278
+extrapolate3#noise.c#1298 -> osn_context#noise.c#1278, gradients3D#noise.c#1286
+extrapolate4#noise.c#1305 -> osn_context#noise.c#1278, gradients4D#noise.c#1289
+fastFloor#noise.c#1311
+allocate_perm#noise.c#1316 -> osn_context#noise.c#1278
+heman_ops_stitch_horizontal#ops.c#1852 -> heman_image_create#image.c#1276, copy_row#ops.c#1832, heman_image_s#image.h#136
+heman_ops_stitch_vertical#ops.c#1873 -> heman_image_s#image.h#136, heman_image_create#image.c#1276
+heman_ops_normalize_f32#ops.c#1893 -> heman_image_s#image.h#136, heman_image_create#image.c#1276
+heman_ops_max#ops.c#1801 -> heman_image_s#image.h#136, heman_image_create#image.c#1276
+heman_ops_step#ops.c#1789 -> heman_image_create#image.c#1276, heman_image_s#image.h#136
+heman_ops_stairstep#ops.c#2196 -> _match#ops.c#2127, heman_image_s#image.h#136, heman_color#heman.h#6
+heman_ops_percentiles#ops.c#2152 -> qselect#ops.c#2139, heman_color#heman.h#6, heman_image_s#image.h#136, _match#ops.c#2127
+heman_ops_sweep#ops.c#1816 -> heman_image_create#image.c#1276, heman_image_s#image.h#136
+heman_ops_laplacian#ops.c#1906 -> heman_image_create#image.c#1276, heman_image_s#image.h#136, heman_image_texel#image.c#1272
+heman_ops_sobel#ops.c#1941 -> heman_color_to_grayscale#color.c#1352, heman_image_destroy#image.c#1285, heman_color#heman.h#6, heman_image_create#image.c#1276, heman_image_texel#image.c#1272, kmVec3#vec3.h#639, heman_image_s#image.h#136, kmVec3Lerp#vec3.c#1077
+heman_ops_accumulate#ops.c#1929 -> heman_image_s#image.h#136
+heman_ops_warp#ops.c#2065 -> heman_ops_warp_core#ops.c#1980, heman_image_s#image.h#136
+heman_ops_warp_points#ops.c#2043 -> heman_image_destroy#image.c#1285, heman_image_s#image.h#136, heman_image_texel#image.c#1272, heman_distance_identity_cpcf#distance.c#1507, heman_ops_warp_core#ops.c#1980
+heman_ops_extract_mask#ops.c#2069 -> heman_color#heman.h#6, heman_image_create#image.c#1276, heman_image_s#image.h#136
+heman_ops_replace_color#ops.c#2094 -> heman_color#heman.h#6, heman_image_s#image.h#136, heman_image_create#image.c#1276
+heman_ops_merge_political#ops.c#2223 -> heman_color#heman.h#6, heman_image_create#image.c#1276, heman_image_s#image.h#136
+heman_ops_emboss#ops.c#2258 -> open_simplex_noise2#noise.c#1385, heman_image_s#image.h#136, open_simplex_noise#noise.c#1340, heman_image_create#image.c#1276, heman_image_texel#image.c#1272, open_simplex_noise_free#noise.c#1372, osn_context#noise.c#1278
+heman_get_num_threads#ops.c#1787
+copy_row#ops.c#1832 -> heman_image_s#image.h#136, heman_image_texel#image.c#1272
+heman_ops_warp_core#ops.c#1980 -> open_simplex_noise2#noise.c#1385, open_simplex_noise_free#noise.c#1372, heman_image_create#image.c#1276, osn_context#noise.c#1278, open_simplex_noise#noise.c#1340, heman_image_s#image.h#136, heman_image_texel#image.c#1272
+_match#ops.c#2127 -> heman_image_s#image.h#136, heman_color#heman.h#6
+qselect#ops.c#2139
+kmVec4Transform#vec4.h#1233 -> kmVec4#vec4.h#1202, kmMat4#mat4.h#1382
+kmVec4TransformArray#vec4.h#1235 -> kmVec4#vec4.h#1202, kmMat4#mat4.h#1382
+kmPlaneFill#plane.c#1478 -> kmPlane#plane.h#1523
+kmPlaneFromNormalAndDistance#plane.c#1360 -> kmPlane#plane.h#1523, kmVec3#vec3.h#639
+kmPlaneNormalize#plane.c#1410 -> kmVec3Normalize#vec3.c#1084, kmVec3#vec3.h#639, kmVec3Length#vec3.c#1069, kmPlane#plane.h#1523
+kmPlaneScale#plane.c#1432 -> kmPlane#plane.h#1523
+kmPlaneExtractFromMat4#plane.c#1444 -> kmMat4#mat4.h#1382, kmPlaneNormalize#plane.c#1410, kmPlane#plane.h#1523
+kmPlaneGetIntersection#plane.c#1454 -> kmVec3Cross#vec3.c#1097, kmVec3Dot#vec3.c#1108, kmVec3Scale#vec3.c#1223, kmVec3Fill#vec3.c#1062, kmVec3Subtract#vec3.c#1123, kmVec3#vec3.h#639, kmPlane#plane.h#1523, kmAlmostEqual#utility.c#647
+kmPlaneDot#plane.c#1348 -> kmPlane#plane.h#1523, kmPlaneDot#plane.h#1532, kmVec4#vec4.h#1202
+kmPlaneDotCoord#plane.c#1352 -> kmVec3#vec3.h#639, kmPlane#plane.h#1523, kmPlaneDotCoord#plane.h#1534
+kmPlaneDotNormal#plane.c#1356 -> kmPlaneDotNormal#plane.h#1536, kmVec3#vec3.h#639, kmPlane#plane.h#1523
+kmPlaneFromPointAndNormal#plane.c#1368 -> kmVec3Dot#vec3.c#1108, kmPlane#plane.h#1523, kmPlaneFromPointAndNormal#plane.h#1540, kmVec3#vec3.h#639
+kmPlaneFromPoints#plane.c#1376 -> kmVec3Scale#vec3.c#1223, kmVec3Normalize#vec3.c#1084, kmVec3Subtract#vec3.c#1123, kmVec3Dot#vec3.c#1108, kmVec3#vec3.h#639, kmVec3Cross#vec3.c#1097, kmPlane#plane.h#1523, kmPlaneFromPoints#plane.h#1542
+kmPlaneIntersectLine#plane.c#1389 -> kmPlane#plane.h#1523, kmPlaneIntersectLine#plane.h#1544, kmVec3Normalize#vec3.c#1084, kmVec3Subtract#vec3.c#1123, kmVec3#vec3.h#639
+kmPlaneClassifyPoint#plane.c#1437 -> KM_POINT_CLASSIFICATION#plane.h#1527, kmPlane#plane.h#1523, kmVec3#vec3.h#639, kmPlaneClassifyPoint#plane.h#1550
+heman_points_create#points.c#1460 -> heman_image_s#image.h#136
+heman_points_destroy#points.c#1471 -> heman_image_s#image.h#136
+heman_points_from_grid#points.c#1476 -> heman_image_create#image.c#1276, heman_image_s#image.h#136
+heman_points_from_poisson#points.c#1517 -> heman_image_create#image.c#1276, heman_image_s#image.h#136, kmVec2LengthSq#vec2.c#1261, kmVec2Subtract#vec2.c#1296, kmVec2#vec2.h#629, sample_annulus#points.c#1499, randhash#points.c#1448, randhashf#points.c#1456, kmVec2Scale#vec2.c#1330, kmVec2Add#vec2.c#1282
+heman_points_from_density#points.c#1598 -> kmVec2LengthSq#vec2.c#1261, sample_annulus#points.c#1499, heman_image_s#image.h#136, kmVec2Subtract#vec2.c#1296, heman_image_sample#image.c#1290, randhash#points.c#1448, kmVec2#vec2.h#629, randhashf#points.c#1456, kmVec2Add#vec2.c#1282, heman_image_create#image.c#1276, kmVec2Scale#vec2.c#1330
+randhash#points.c#1448
+randhashf#points.c#1456 -> randhash#points.c#1448
+sample_annulus#points.c#1499 -> kmVec2Scale#vec2.c#1330, randhash#points.c#1448, kmVec2Add#vec2.c#1282, kmVec2#vec2.h#629, kmVec2LengthSq#vec2.c#1261
+kmQuaternionAreEqual#quaternion.c#1030 -> kmQuaternion#quaternion.h#1448
+kmQuaternionFill#quaternion.c#1037 -> kmQuaternion#quaternion.h#1448, kmVec3#vec3.h#639
+kmQuaternionDot#quaternion.c#1045 -> kmQuaternion#quaternion.h#1448
+kmQuaternionExp#quaternion.c#1049 -> kmQuaternion#quaternion.h#1448
+kmQuaternionIdentity#quaternion.c#1054 -> kmQuaternion#quaternion.h#1448
+kmQuaternionInverse#quaternion.c#1062 -> kmQuaternionLength#quaternion.c#1082, kmQuaternion#quaternion.h#1448
+kmQuaternionIsIdentity#quaternion.c#1078 -> kmQuaternion#quaternion.h#1448
+kmQuaternionLength#quaternion.c#1082 -> kmQuaternionLengthSq#quaternion.c#1086, kmQuaternion#quaternion.h#1448
+kmQuaternionLengthSq#quaternion.c#1086 -> kmQuaternion#quaternion.h#1448
+kmQuaternionLn#quaternion.c#1090 -> kmQuaternion#quaternion.h#1448
+kmQuaternionMultiply#quaternion.c#1095 -> kmQuaternionAssign#quaternion.c#1260, kmQuaternion#quaternion.h#1448
+kmQuaternionNormalize#quaternion.c#1108 -> kmQuaternionFill#quaternion.c#1037, kmQuaternion#quaternion.h#1448, kmQuaternionLength#quaternion.c#1082
+kmQuaternionRotationPitchYawRoll#quaternion.c#1190 -> kmQuaternion#quaternion.h#1448
+kmQuaternionSlerp#quaternion.c#1207 -> kmClamp#utility.c#651, kmQuaternion#quaternion.h#1448, kmQuaternionScale#quaternion.c#1252, kmQuaternionDot#quaternion.c#1045, kmQuaternionAdd#quaternion.c#1273, kmQuaternionNormalize#quaternion.c#1108, kmQuaternionSubtract#quaternion.c#1265
+kmQuaternionToAxisAngle#quaternion.c#1232 -> kmSQR#utility.c#627, kmVec3#vec3.h#639, kmVec3Normalize#vec3.c#1084, kmQuaternion#quaternion.h#1448
+kmQuaternionScale#quaternion.c#1252 -> kmQuaternion#quaternion.h#1448
+kmQuaternionAssign#quaternion.c#1260 -> kmQuaternion#quaternion.h#1448
+kmQuaternionAdd#quaternion.c#1273 -> kmQuaternion#quaternion.h#1448
+kmQuaternionSubtract#quaternion.c#1265 -> kmQuaternion#quaternion.h#1448
+kmQuaternionGetUpVec3#quaternion.c#1341 -> KM_VEC3_POS_Y#vec3.c#1052, kmVec3#vec3.h#639, kmQuaternionMultiplyVec3#quaternion.h#1499, kmQuaternion#quaternion.h#1448
+kmQuaternionGetRightVec3#quaternion.c#1345 -> KM_VEC3_POS_X#vec3.c#1058, kmQuaternion#quaternion.h#1448, kmVec3#vec3.h#639, kmQuaternionMultiplyVec3#quaternion.h#1499
+kmQuaternionGetForwardVec3RH#quaternion.c#1349 -> kmQuaternionMultiplyVec3#quaternion.h#1499, kmQuaternion#quaternion.h#1448, KM_VEC3_NEG_Z#vec3.c#1050, kmVec3#vec3.h#639
+kmQuaternionGetForwardVec3LH#quaternion.c#1353 -> kmQuaternionMultiplyVec3#quaternion.h#1499, KM_VEC3_POS_Z#vec3.c#1048, kmQuaternion#quaternion.h#1448, kmVec3#vec3.h#639
+kmQuaternionGetPitch#quaternion.c#1357 -> kmQuaternion#quaternion.h#1448
+kmQuaternionGetYaw#quaternion.c#1362 -> kmQuaternion#quaternion.h#1448
+kmQuaternionGetRoll#quaternion.c#1367 -> kmQuaternion#quaternion.h#1448
+kmQuaternionLookRotation#quaternion.c#1372 -> kmVec3#vec3.h#639, kmMat3LookAt#mat3.h#1372, kmQuaternion#quaternion.h#1448, KM_VEC3_ZERO#vec3.c#1060, kmMat3#mat3.h#1320, kmQuaternionRotationMatrix#quaternion.h#1481, kmQuaternionNormalize#quaternion.c#1108
+kmQuaternionRotationAxisAngle#quaternion.c#1121 -> kmQuaternionRotationAxisAngle#quaternion.h#1479, kmVec3#vec3.h#639, kmQuaternionNormalize#quaternion.c#1108, kmQuaternion#quaternion.h#1448
+kmQuaternionRotationMatrix#quaternion.c#1132 -> kmMat3#mat3.h#1320, kmVec3#vec3.h#639, kmQuaternionRotationMatrix#quaternion.h#1481, kmQuaternion#quaternion.h#1448
+kmQuaternionRotationBetweenVec3#quaternion.c#1281 -> kmQuaternion#quaternion.h#1448, kmVec3#vec3.h#639, kmQuaternionRotationAxisAngle#quaternion.h#1479, kmVec3Cross#vec3.c#1097, kmQuaternionRotationBetweenVec3#quaternion.h#1497, kmVec3Dot#vec3.c#1108, kmQuaternionIdentity#quaternion.c#1054, kmVec3Normalize#vec3.c#1084, kmVec3Assign#vec3.c#1237, kmVec3LengthSq#vec3.c#1073, kmQuaternionNormalize#quaternion.c#1108
+kmQuaternionMultiplyVec3#quaternion.c#1327 -> kmQuaternionMultiplyVec3#quaternion.h#1499, kmVec3Scale#vec3.c#1223, kmVec3#vec3.h#639, kmQuaternion#quaternion.h#1448, kmVec3Add#vec3.c#1112, kmVec3Cross#vec3.c#1097
+kmRay2Fill#ray2.c#985 -> kmVec2#vec2.h#629, kmRay2#ray2.h#964
+kmRay2FillWithEndpoints#ray2.c#992 -> kmRay2#ray2.h#964, kmVec2#vec2.h#629
+kmLine2WithLineIntersection#ray2.c#999 -> kmVec2#vec2.h#629
+kmSegment2WithSegmentIntersection#ray2.c#1029 -> kmVec2#vec2.h#629, kmLine2WithLineIntersection#ray2.c#999, kmRay2#ray2.h#964
+kmRay2IntersectLineSegment#ray2.c#1041 -> kmLine2WithLineIntersection#ray2.c#999, kmRay2FillWithEndpoints#ray2.c#992, kmVec2#vec2.h#629, kmRay2#ray2.h#964
+kmRay2IntersectTriangle#ray2.c#1074 -> kmVec2Subtract#vec2.c#1296, kmVec2Assign#vec2.c#1340, calculate_line_normal#ray2.c#1055, kmVec2#vec2.h#629, kmRay2IntersectLineSegment#ray2.c#1041, kmVec2Length#vec2.c#1257, kmRay2#ray2.h#964, kmVec2Dot#vec2.c#1288
+kmRay2IntersectBox#ray2.c#1133 -> calculate_line_normal#ray2.c#1055, kmVec2Assign#vec2.c#1340, kmVec2Subtract#vec2.c#1296, kmRay2IntersectLineSegment#ray2.c#1041, kmVec2Length#vec2.c#1257, kmVec2#vec2.h#629, kmVec2Dot#vec2.c#1288, kmRay2#ray2.h#964
+kmRay2IntersectCircle#ray2.c#1171 -> kmRay2#ray2.h#964, kmVec2#vec2.h#629
+calculate_line_normal#ray2.c#1055 -> kmVec2Normalize#vec2.c#1271, kmVec2Subtract#vec2.c#1296, kmVec2#vec2.h#629, kmVec2Dot#vec2.c#1288
+kmRay3Fill#ray3.c#763 -> kmRay3#ray3.h#750, kmVec3#vec3.h#639
+kmRay3FromPointAndDirection#ray3.c#773 -> kmRay3#ray3.h#750, kmVec3#vec3.h#639, kmVec3Assign#vec3.c#1237
+kmRay3IntersectPlane#ray3.h#761 -> kmRay3#ray3.h#750, kmPlane#plane.h#1523, kmVec3#vec3.h#639
+kmRay3IntersectPlane#ray3.c#779 -> kmVec3Scale#vec3.c#1223, kmVec3Add#vec3.c#1112, kmRay3#ray3.h#750, kmPlane#plane.h#1523, kmVec3#vec3.h#639, kmRay3IntersectPlane#ray3.h#761
+kmSQR#utility.c#627
+kmDegreesToRadians#utility.c#631
+kmRadiansToDegrees#utility.c#635
+kmMin#utility.c#639
+kmMax#utility.c#643
+kmAlmostEqual#utility.c#647
+kmClamp#utility.c#651
+kmLerp#utility.c#655
+KM_VEC2_POS_Y#vec2.c#1241 -> kmVec2#vec2.h#629
+KM_VEC2_NEG_Y#vec2.c#1243 -> kmVec2#vec2.h#629
+KM_VEC2_NEG_X#vec2.c#1245 -> kmVec2#vec2.h#629
+KM_VEC2_POS_X#vec2.c#1247 -> kmVec2#vec2.h#629
+KM_VEC2_ZERO#vec2.c#1249 -> kmVec2#vec2.h#629
+kmVec2Fill#vec2.c#1251 -> kmVec2#vec2.h#629
+kmVec2Length#vec2.c#1257 -> kmSQR#utility.c#627, kmVec2#vec2.h#629
+kmVec2LengthSq#vec2.c#1261 -> kmSQR#utility.c#627, kmVec2#vec2.h#629
+kmVec2Normalize#vec2.c#1271 -> kmVec2Assign#vec2.c#1340, kmVec2Length#vec2.c#1257, kmVec2#vec2.h#629
+kmVec2Lerp#vec2.c#1265 -> kmVec2#vec2.h#629
+kmVec2Add#vec2.c#1282 -> kmVec2#vec2.h#629
+kmVec2Dot#vec2.c#1288 -> kmVec2#vec2.h#629
+kmVec2Cross#vec2.c#1292 -> kmVec2#vec2.h#629
+kmVec2Subtract#vec2.c#1296 -> kmVec2#vec2.h#629
+kmVec2Mul#vec2.c#1302 -> kmVec2#vec2.h#629
+kmVec2Div#vec2.c#1308 -> kmVec2#vec2.h#629
+kmVec2Scale#vec2.c#1330 -> kmVec2#vec2.h#629
+kmVec2AreEqual#vec2.c#1336 -> kmVec2#vec2.h#629
+kmVec2Assign#vec2.c#1340 -> kmVec2#vec2.h#629
+kmVec2RotateBy#vec2.c#1349 -> kmVec2#vec2.h#629, kmDegreesToRadians#utility.c#631
+kmVec2DegreesBetween#vec2.c#1362 -> kmVec2AreEqual#vec2.c#1336, kmVec2Dot#vec2.c#1288, kmVec2Normalize#vec2.c#1271, kmVec2#vec2.h#629, kmVec2Cross#vec2.c#1292, kmRadiansToDegrees#utility.c#635
+kmVec2DistanceBetween#vec2.c#1376 -> kmVec2#vec2.h#629, kmVec2Length#vec2.c#1257, kmVec2Subtract#vec2.c#1296
+kmVec2MidPointBetween#vec2.c#1382 -> kmVec2Add#vec2.c#1282, kmVec2#vec2.h#629
+kmVec2Reflect#vec2.c#1390 -> kmVec2Scale#vec2.c#1330, kmVec2#vec2.h#629, kmVec2Dot#vec2.c#1288, kmVec2Subtract#vec2.c#1296
+kmVec2Transform#vec2.c#1316 -> kmVec2Transform#vec2.h#656, kmMat3#mat3.h#1320, kmVec2#vec2.h#629
+kmVec2TransformCoord#vec2.c#1325 -> kmVec2TransformCoord#vec2.h#658, kmVec2#vec2.h#629, kmMat3#mat3.h#1320
+KM_VEC3_NEG_Z#vec3.c#1050 -> kmVec3#vec3.h#639
+KM_VEC3_POS_Z#vec3.c#1048 -> kmVec3#vec3.h#639
+KM_VEC3_POS_Y#vec3.c#1052 -> kmVec3#vec3.h#639
+KM_VEC3_NEG_Y#vec3.c#1054 -> kmVec3#vec3.h#639
+KM_VEC3_NEG_X#vec3.c#1056 -> kmVec3#vec3.h#639
+KM_VEC3_POS_X#vec3.c#1058 -> kmVec3#vec3.h#639
+KM_VEC3_ZERO#vec3.c#1060 -> kmVec3#vec3.h#639
+kmVec3Fill#vec3.c#1062 -> kmVec3#vec3.h#639
+kmVec3Length#vec3.c#1069 -> kmVec3#vec3.h#639, kmSQR#utility.c#627
+kmVec3LengthSq#vec3.c#1073 -> kmSQR#utility.c#627, kmVec3#vec3.h#639
+kmVec3Lerp#vec3.c#1077 -> kmVec3#vec3.h#639
+kmVec3Normalize#vec3.c#1084 -> kmVec3Assign#vec3.c#1237, kmVec3#vec3.h#639, kmVec3Length#vec3.c#1069
+kmVec3Cross#vec3.c#1097 -> kmVec3#vec3.h#639
+kmVec3Dot#vec3.c#1108 -> kmVec3#vec3.h#639
+kmVec3Add#vec3.c#1112 -> kmVec3#vec3.h#639
+kmVec3Subtract#vec3.c#1123 -> kmVec3#vec3.h#639
+kmVec3Mul#vec3.c#1134 -> kmVec3#vec3.h#639
+kmVec3Div#vec3.c#1141 -> kmVec3#vec3.h#639
+kmVec3Scale#vec3.c#1223 -> kmVec3#vec3.h#639
+kmVec3AreEqual#vec3.c#1230 -> kmVec3#vec3.h#639
+kmVec3Assign#vec3.c#1237 -> kmVec3#vec3.h#639
+kmVec3Zero#vec3.c#1247 -> kmVec3#vec3.h#639
+kmVec3GetHorizontalAngle#vec3.c#1254 -> kmRadiansToDegrees#utility.c#635, kmVec3#vec3.h#639
+kmVec3RotationToDirection#vec3.c#1265 -> kmVec3#vec3.h#639, kmDegreesToRadians#utility.c#631
+kmVec3ProjectOnToPlane#vec3.c#1282 -> kmRay3IntersectPlane#ray3.h#761, kmVec3Assign#vec3.c#1237, kmPlane#plane.h#1523, kmVec3#vec3.h#639, kmRay3#ray3.h#750
+kmVec3Reflect#vec3.c#1292 -> kmVec3Subtract#vec3.c#1123, kmVec3Scale#vec3.c#1223, kmVec3Dot#vec3.c#1108, kmVec3#vec3.h#639
+kmVec3MultiplyMat3#vec3.c#1150 -> kmVec3MultiplyMat3#vec3.h#667, kmVec3#vec3.h#639, kmMat3#mat3.h#1320
+kmVec3MultiplyMat4#vec3.c#1161 -> kmVec3MultiplyMat4#vec3.h#669, kmVec3#vec3.h#639, kmMat4#mat4.h#1382
+kmVec3Transform#vec3.c#1172 -> kmVec3MultiplyMat4#vec3.h#669, kmVec3Transform#vec3.h#671, kmMat4#mat4.h#1382, kmVec3#vec3.h#639
+kmVec3InverseTransform#vec3.c#1176 -> kmMat4#mat4.h#1382, kmVec3InverseTransform#vec3.h#681, kmVec3#vec3.h#639
+kmVec3InverseTransformNormal#vec3.c#1190 -> kmVec3InverseTransformNormal#vec3.h#683, kmVec3#vec3.h#639, kmMat4#mat4.h#1382
+kmVec3TransformCoord#vec3.c#1201 -> kmMat4#mat4.h#1382, kmVec4Fill#vec4.c#858, kmVec4Transform#vec4.h#1233, kmVec3#vec3.h#639, kmVec4#vec4.h#1202, kmVec3TransformCoord#vec3.h#675
+kmVec3TransformNormal#vec3.c#1212 -> kmVec3TransformNormal#vec3.h#673, kmMat4#mat4.h#1382, kmVec3#vec3.h#639
+kmVec4Fill#vec4.c#858 -> kmVec4#vec4.h#1202, kmVec3#vec3.h#639
+kmVec4Add#vec4.c#866 -> kmVec4#vec4.h#1202
+kmVec4Dot#vec4.c#874 -> kmVec4#vec4.h#1202
+kmVec4Length#vec4.c#878 -> kmSQR#utility.c#627, kmVec4#vec4.h#1202
+kmVec4LengthSq#vec4.c#882 -> kmSQR#utility.c#627, kmVec4#vec4.h#1202
+kmVec4Lerp#vec4.c#886 -> kmVec4#vec4.h#1202
+kmVec4Normalize#vec4.c#894 -> kmVec4#vec4.h#1202, kmVec4Length#vec4.c#878, kmVec4Assign#vec4.c#968
+kmVec4Scale#vec4.c#906 -> kmVec4Normalize#vec4.c#894, kmVec4#vec4.h#1202
+kmVec4Subtract#vec4.c#915 -> kmVec4#vec4.h#1202
+kmVec4Mul#vec4.c#923 -> kmVec4#vec4.h#1202
+kmVec4Div#vec4.c#931 -> kmVec4#vec4.h#1202
+kmVec4MultiplyMat4#vec4.c#941 -> kmMat4#mat4.h#1382, kmVec4#vec4.h#1202
+kmVec4AreEqual#vec4.c#964 -> kmVec4#vec4.h#1202
+kmVec4Assign#vec4.c#968 -> kmVec4#vec4.h#1202
+kmVec4Transform#vec4.c#949 -> kmVec4#vec4.h#1202, kmVec4Transform#vec4.h#1233, kmMat4#mat4.h#1382, kmVec4MultiplyMat4#vec4.c#941
+kmVec4TransformArray#vec4.c#953 -> kmVec4Transform#vec4.h#1233, kmVec4TransformArray#vec4.h#1235, kmVec4#vec4.h#1202, kmMat4#mat4.h#1382
+
+SPLIT_TAG
+
+kmLerp#utility.c#655
+kmMin#utility.c#639
+kmRadiansToDegrees#utility.c#635
+randhash#points.c#1448
+kmAlmostEqual#utility.c#647
+heman_get_num_threads#ops.c#1787
+qselect#ops.c#2139
+gradients4D#noise.c#1289
+kmDegreesToRadians#utility.c#631
+KM_POINT_CLASSIFICATION#plane.h#1527
+kmMax#utility.c#643
+kmClamp#utility.c#651
+kmSQR#utility.c#627
+_occlusion_scale#lighting.c#1467
+gradients2D#noise.c#1283
+fastFloor#noise.c#1311
+gradients3D#noise.c#1286
+DEFAULT_STRENGTH#generate.c#1531
+SEALEVEL#generate.c#1529
+generate_gaussian_row#gaussian.c#782
+INF#distance.c#1307
+smoothstep#image.h#145
+_gamma#color.c#1259
+heman_byte#heman.h#8
+heman_color#heman.h#6
+osn_context#noise.c#1278
+kmVec4#vec4.h#1202
+kmQuaternion#quaternion.h#1448
+kmPlane#plane.h#1523
+kmMat4#mat4.h#1382
+kmMat3#mat3.h#1320
+kmVec3#vec3.h#639
+kmVec2#vec2.h#629
+heman_image_s#image.h#136
+randhashf#points.c#1456
+heman_lighting_set_occlusion_scale#lighting.c#1469
+generate_gaussian_splat#gaussian.c#802
+edt#distance.c#1309
+edt_with_payload#distance.c#1334
+heman_color_set_gamma#color.c#1261
+open_simplex_noise_free#noise.c#1372
+extrapolate2#noise.c#1292
+extrapolate3#noise.c#1298
+extrapolate4#noise.c#1305
+allocate_perm#noise.c#1316
+kmVec4Add#vec4.c#866
+kmVec4Dot#vec4.c#874
+kmVec4Length#vec4.c#878
+kmVec4LengthSq#vec4.c#882
+kmVec4Lerp#vec4.c#886
+kmVec4Subtract#vec4.c#915
+kmVec4Mul#vec4.c#923
+kmVec4Div#vec4.c#931
+kmVec4AreEqual#vec4.c#964
+kmVec4Assign#vec4.c#968
+kmQuaternionAreEqual#quaternion.c#1030
+kmQuaternionDot#quaternion.c#1045
+kmQuaternionExp#quaternion.c#1049
+kmQuaternionIdentity#quaternion.c#1054
+kmQuaternionIsIdentity#quaternion.c#1078
+kmQuaternionLengthSq#quaternion.c#1086
+kmQuaternionLn#quaternion.c#1090
+kmQuaternionRotationPitchYawRoll#quaternion.c#1190
+kmQuaternionScale#quaternion.c#1252
+kmQuaternionAssign#quaternion.c#1260
+kmQuaternionAdd#quaternion.c#1273
+kmQuaternionSubtract#quaternion.c#1265
+kmQuaternionGetPitch#quaternion.c#1357
+kmQuaternionGetYaw#quaternion.c#1362
+kmQuaternionGetRoll#quaternion.c#1367
+kmPlaneDot#plane.h#1532
+kmPlaneFill#plane.c#1478
+kmPlaneScale#plane.c#1432
+kmMat4RotationQuaternion#mat4.h#1412
+kmMat4Fill#mat4.c#1556
+kmMat4Identity#mat4.c#1561
+kmMat4Inverse#mat4.c#1567
+kmMat4IsIdentity#mat4.c#1598
+kmMat4Multiply#mat4.c#1613
+kmMat4Assign#mat4.c#1636
+kmMat4AreEqual#mat4.c#1659
+kmMat4RotationX#mat4.c#1677
+kmMat4RotationY#mat4.c#1697
+kmMat4RotationZ#mat4.c#1717
+kmMat4ExtractPlane#mat4.c#1924
+kmVec4Transform#vec4.h#1233
+kmVec4TransformArray#vec4.h#1235
+kmVec4MultiplyMat4#vec4.c#941
+kmMat3Fill#mat3.c#1517
+kmMat3Adjugate#mat3.c#1535
+kmMat3Identity#mat3.c#1522
+kmMat3IsIdentity#mat3.c#1561
+kmMat3Transpose#mat3.c#1566
+kmMat3Determinant#mat3.c#1528
+kmMat3Multiply#mat3.c#1581
+kmMat3ScalarMultiply#mat3.c#1597
+kmMat3Assign#mat3.c#1607
+kmMat3AssignMat4#mat3.h#1344
+kmMat3AreEqual#mat3.c#1626
+kmMat3RotationX#mat3.c#1704
+kmMat3RotationY#mat3.c#1717
+kmMat3RotationZ#mat3.c#1730
+kmMat3Rotation#mat3.c#1639
+kmMat3RotationQuaternion#mat3.h#1366
+kmMat4AssignMat3#mat4.h#1400
+kmQuaternionRotationMatrix#quaternion.h#1481
+kmMat4ExtractRotation#mat4.c#1882
+kmAABB3#aabb3.h#711
+kmRay3#ray3.h#750
+kmVec3MultiplyMat3#vec3.h#667
+kmVec3MultiplyMat4#vec3.h#669
+kmVec3Transform#vec3.h#671
+kmVec3TransformNormal#vec3.h#673
+kmVec3TransformCoord#vec3.h#675
+kmVec3InverseTransform#vec3.h#681
+kmVec3InverseTransformNormal#vec3.h#683
+sphere#generate.c#1699
+kmMat3RotationAxisAngle#mat3.c#1682
+kmMat3LookAt#mat3.h#1372
+kmMat4RotationTranslation#mat4.h#1414
+kmMat4LookAt#mat4.h#1432
+kmMat4RotationAxisAngle#mat4.h#1434
+kmQuaternionRotationAxisAngle#quaternion.h#1479
+kmQuaternionRotationBetweenVec3#quaternion.h#1497
+kmQuaternionMultiplyVec3#quaternion.h#1499
+kmMat4Transpose#mat4.c#1603
+kmMat4Scaling#mat4.c#1778
+kmMat4Translation#mat4.c#1787
+kmPlaneDotCoord#plane.h#1534
+kmPlaneDotNormal#plane.h#1536
+kmPlaneFromPointAndNormal#plane.h#1540
+kmPlaneFromPoints#plane.h#1542
+kmPlaneIntersectLine#plane.h#1544
+kmPlaneClassifyPoint#plane.h#1550
+kmPlaneFromNormalAndDistance#plane.c#1360
+kmQuaternionFill#quaternion.c#1037
+KM_VEC3_NEG_Z#vec3.c#1050
+KM_VEC3_POS_Z#vec3.c#1048
+KM_VEC3_POS_Y#vec3.c#1052
+KM_VEC3_NEG_Y#vec3.c#1054
+KM_VEC3_NEG_X#vec3.c#1056
+KM_VEC3_POS_X#vec3.c#1058
+KM_VEC3_ZERO#vec3.c#1060
+kmVec3Fill#vec3.c#1062
+kmVec3Length#vec3.c#1069
+kmVec3LengthSq#vec3.c#1073
+kmVec3Lerp#vec3.c#1077
+kmVec3Cross#vec3.c#1097
+kmVec3Dot#vec3.c#1108
+kmVec3Add#vec3.c#1112
+kmVec3Subtract#vec3.c#1123
+kmVec3Mul#vec3.c#1134
+kmVec3Div#vec3.c#1141
+kmVec3Scale#vec3.c#1223
+kmVec3AreEqual#vec3.c#1230
+kmVec3Assign#vec3.c#1237
+kmVec3Zero#vec3.c#1247
+kmVec3GetHorizontalAngle#vec3.c#1254
+kmVec3RotationToDirection#vec3.c#1265
+kmVec4Fill#vec4.c#858
+kmAABB2#aabb2.h#686
+kmRay2#ray2.h#964
+kmVec2Transform#vec2.h#656
+kmVec2TransformCoord#vec2.h#658
+kmLine2WithLineIntersection#ray2.c#999
+KM_VEC2_POS_Y#vec2.c#1241
+KM_VEC2_NEG_Y#vec2.c#1243
+KM_VEC2_NEG_X#vec2.c#1245
+KM_VEC2_POS_X#vec2.c#1247
+KM_VEC2_ZERO#vec2.c#1249
+kmVec2Fill#vec2.c#1251
+kmVec2Length#vec2.c#1257
+kmVec2LengthSq#vec2.c#1261
+kmVec2Lerp#vec2.c#1265
+kmVec2Add#vec2.c#1282
+kmVec2Dot#vec2.c#1288
+kmVec2Cross#vec2.c#1292
+kmVec2Subtract#vec2.c#1296
+kmVec2Mul#vec2.c#1302
+kmVec2Div#vec2.c#1308
+kmVec2Scale#vec2.c#1330
+kmVec2AreEqual#vec2.c#1336
+kmVec2Assign#vec2.c#1340
+kmVec2RotateBy#vec2.c#1349
+heman_export_u8#export.c#1128
+heman_image_create#image.c#1276
+heman_image_info#image.c#1266
+heman_image_data#image.c#1259
+heman_image_array#image.c#1261
+heman_image_texel#image.c#1272
+heman_image_clear#image.c#1299
+heman_image_destroy#image.c#1285
+heman_ops_accumulate#ops.c#1929
+_match#ops.c#2127
+heman_points_create#points.c#1460
+heman_points_destroy#points.c#1471
+transform_to_distance#distance.c#1361
+transform_to_coordfield#distance.c#1405
+open_simplex_noise2#noise.c#1385
+open_simplex_noise3#noise.c#1474
+open_simplex_noise4#noise.c#1942
+open_simplex_noise#noise.c#1340
+open_simplex_noise_init_perm#noise.c#1329
+kmVec4Normalize#vec4.c#894
+kmQuaternionLength#quaternion.c#1082
+kmQuaternionMultiply#quaternion.c#1095
+kmPlaneDot#plane.c#1348
+kmMat4RotationQuaternion#mat4.c#1749
+kmMat4PerspectiveProjection#mat4.c#1823
+kmMat4OrthographicProjection#mat4.c#1842
+kmMat4RotationYawPitchRoll#mat4.c#1737
+kmVec4TransformArray#vec4.c#953
+kmVec4Transform#vec4.c#949
+kmMat3Scaling#mat3.c#1652
+kmMat3Translation#mat3.c#1659
+kmMat3Inverse#mat3.c#1548
+kmMat3AssignMat4#mat3.c#1613
+kmMat3RotationQuaternion#mat3.c#1666
+kmMat4AssignMat3#mat4.c#1642
+kmQuaternionRotationMatrix#quaternion.c#1132
+kmAABB3ContainsPoint#aabb3.c#754
+kmAABB3Scale#aabb3.c#767
+kmAABB3IntersectsTriangle#aabb3.c#772
+kmAABB3DiameterX#aabb3.c#809
+kmAABB3DiameterY#aabb3.c#813
+kmAABB3DiameterZ#aabb3.c#817
+kmRay3Fill#ray3.c#763
+kmRay3IntersectPlane#ray3.h#761
+kmVec3MultiplyMat3#vec3.c#1150
+kmVec3MultiplyMat4#vec3.c#1161
+kmVec3Transform#vec3.c#1172
+kmVec3TransformNormal#vec3.c#1212
+kmVec3InverseTransform#vec3.c#1176
+kmVec3InverseTransformNormal#vec3.c#1190
+kmMat4RotationTranslation#mat4.c#1904
+kmMat4RotationAxisAngle#mat4.c#1670
+kmPlaneDotCoord#plane.c#1352
+kmPlaneDotNormal#plane.c#1356
+kmPlaneClassifyPoint#plane.c#1437
+kmQuaternionGetForwardVec3RH#quaternion.c#1349
+kmQuaternionGetForwardVec3LH#quaternion.c#1353
+kmQuaternionGetUpVec3#quaternion.c#1341
+kmQuaternionGetRightVec3#quaternion.c#1345
+kmPlaneFromPointAndNormal#plane.c#1368
+azimuth_slope#lighting.c#1565
+kmAABB3Centre#aabb3.c#821
+kmPlaneGetIntersection#plane.c#1454
+kmQuaternionMultiplyVec3#quaternion.c#1327
+kmVec3Reflect#vec3.c#1292
+kmAABB3Assign#aabb3.c#761
+kmRay3FromPointAndDirection#ray3.c#773
+kmVec3Normalize#vec3.c#1084
+kmAABB3Initialize#aabb3.c#740
+kmVec3TransformCoord#vec3.c#1201
+kmAABB2Sanitize#aabb2.c#727
+kmAABB2ContainsPoint#aabb2.c#745
+kmAABB2DiameterX#aabb2.c#796
+kmAABB2DiameterY#aabb2.c#800
+kmRay2Fill#ray2.c#985
+kmRay2FillWithEndpoints#ray2.c#992
+kmRay2IntersectCircle#ray2.c#1171
+kmVec2Transform#vec2.c#1316
+kmVec2TransformCoord#vec2.c#1325
+kmSegment2WithSegmentIntersection#ray2.c#1029
+kmAABB2Initialize#aabb2.c#715
+kmAABB2Translate#aabb2.c#758
+kmVec2MidPointBetween#vec2.c#1382
+kmVec2DistanceBetween#vec2.c#1376
+kmAABB2Scale#aabb2.c#764
+kmAABB2Centre#aabb2.c#804
+sample_annulus#points.c#1499
+kmVec2Reflect#vec2.c#1390
+kmAABB2Assign#aabb2.c#752
+kmVec2Normalize#vec2.c#1271
+heman_color_create_gradient#color.c#1263
+heman_color_from_grayscale#color.c#1335
+heman_color_to_grayscale#color.c#1352
+heman_internal_rg#color.c#1369
+heman_distance_from_cpcf#distance.c#1537
+heman_distance_identity_cpcf#distance.c#1507
+heman_image_extract_alpha#image.c#1307
+heman_image_extract_rgb#image.c#1320
+heman_import_u8#import.c#155
+heman_ops_stitch_vertical#ops.c#1873
+heman_ops_normalize_f32#ops.c#1893
+heman_ops_max#ops.c#1801
+heman_ops_step#ops.c#1789
+heman_ops_sweep#ops.c#1816
+heman_ops_extract_mask#ops.c#2069
+heman_ops_replace_color#ops.c#2094
+heman_ops_merge_political#ops.c#2223
+heman_points_from_grid#points.c#1476
+heman_draw_points#draw.c#782
+heman_draw_colored_points#draw.c#800
+heman_draw_colored_circles#draw.c#824
+heman_draw_splats#draw.c#855
+heman_export_ply#export.c#1048
+heman_export_with_colors_ply#export.c#1082
+heman_internal_draw_seeds#generate.c#1742
+heman_image_sample#image.c#1290
+heman_ops_laplacian#ops.c#1906
+copy_row#ops.c#1832
+heman_ops_stairstep#ops.c#2196
+heman_ops_percentiles#ops.c#2152
+heman_distance_create_sdf#distance.c#1465
+heman_distance_create_df#distance.c#1489
+heman_generate_planet_heightmap#generate.c#1705
+heman_generate_simplex_fbm#generate.c#1671
+heman_internal_generate_island_noise#generate.c#1533
+heman_internal_generate_rock_noise#generate.c#1559
+heman_ops_emboss#ops.c#2258
+heman_ops_warp_core#ops.c#1980
+kmVec4Scale#vec4.c#906
+kmQuaternionInverse#quaternion.c#1062
+kmQuaternionNormalize#quaternion.c#1108
+kmAABB3ContainsAABB#aabb3.c#781
+kmRay3IntersectPlane#ray3.c#779
+kmVec3ProjectOnToPlane#vec3.c#1282
+kmAABB3ExpandToContain#aabb3.c#827
+heman_lighting_compute_normals#lighting.c#1473
+compute_occlusion#lighting.c#1573
+kmMat3GetUpVec3#mat3.c#1743
+kmMat3GetRightVec3#mat3.c#1751
+kmMat3GetForwardVec3#mat3.c#1759
+kmMat3LookAt#mat3.c#1767
+kmMat4GetUpVec3#mat4.c#1799
+kmMat4GetRightVec3#mat4.c#1805
+kmMat4GetForwardVec3RH#mat4.c#1811
+kmMat4GetForwardVec3LH#mat4.c#1817
+kmMat4LookAt#mat4.c#1856
+kmPlaneNormalize#plane.c#1410
+kmPlaneFromPoints#plane.c#1376
+kmPlaneIntersectLine#plane.c#1389
+kmQuaternionToAxisAngle#quaternion.c#1232
+kmAABB2ContainsAABB#aabb2.c#780
+kmRay2IntersectLineSegment#ray2.c#1041
+kmAABB2ScaleWithPivot#aabb2.c#770
+heman_points_from_poisson#points.c#1517
+kmAABB2ExpandToContain#aabb2.c#810
+calculate_line_normal#ray2.c#1055
+kmVec2DegreesBetween#vec2.c#1362
+heman_ops_sobel#ops.c#1941
+heman_color_from_cpcf#color.c#1387
+heman_distance_create_cpcf#distance.c#1519
+heman_draw_contour_from_points#draw.c#886
+heman_color_apply_gradient#color.c#1317
+heman_points_from_density#points.c#1598
+heman_ops_stitch_horizontal#ops.c#1852
+heman_generate_island_heightmap#generate.c#1582
+heman_generate_archipelago_heightmap#generate.c#1776
+heman_generate_archipelago_political_2#generate.c#1848
+heman_generate_rock_heightmap#generate.c#1638
+heman_ops_warp#ops.c#2065
+heman_ops_warp_points#ops.c#2043
+kmQuaternionSlerp#quaternion.c#1207
+kmQuaternionLookRotation#quaternion.c#1372
+kmQuaternionRotationAxisAngle#quaternion.c#1121
+kmQuaternionRotationBetweenVec3#quaternion.c#1281
+kmAABB3IntersectsAABB#aabb3.c#777
+horizon_scan#lighting.c#1581
+kmPlaneExtractFromMat4#plane.c#1444
+kmMat3RotationToAxisAngle#mat3.c#1697
+kmMat4RotationToAxisAngle#mat4.c#1895
+kmRay2IntersectTriangle#ray2.c#1074
+kmRay2IntersectBox#ray2.c#1133
+heman_generate_archipelago_political_3#generate.c#1883
+heman_generate_archipelago_political_1#generate.c#1834
+heman_lighting_compute_occlusion#lighting.c#1645
+heman_generate_archipelago_political#generate.c#1919
+heman_lighting_apply#lighting.c#1514

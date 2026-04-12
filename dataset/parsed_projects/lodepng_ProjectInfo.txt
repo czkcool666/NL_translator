@@ -1,0 +1,552 @@
+lodepng
+└── lodepng.c
+H_FILE_LIST
+lodepng.h
+
+SPLIT_TAG
+
+BPMLists#lodepng.c#1249 -> BPMNode#lodepng.c#1242
+BPMNode#lodepng.c#1242
+ColorTree#lodepng.c#2844
+Hash#lodepng.c#1708
+HuffmanTree#lodepng.c#1097
+LodePNGBitReader#lodepng.c#984
+LodePNGBitWriter#lodepng.c#956 -> ucvector#lodepng.c#852
+LodePNGColorMode#lodepng.h#114 -> LodePNGColorType#lodepng.h#52
+LodePNGColorStats#lodepng.h#248
+LodePNGCompressSettings#lodepng.h#98
+LodePNGDecoderSettings#lodepng.h#231 -> LodePNGDecompressSettings#lodepng.h#83
+LodePNGDecompressSettings#lodepng.h#83
+LodePNGEncoderSettings#lodepng.h#267 -> LodePNGFilterStrategy#lodepng.h#245, LodePNGCompressSettings#lodepng.h#98
+LodePNGInfo#lodepng.h#162 -> LodePNGTime#lodepng.h#153, LodePNGColorMode#lodepng.h#114
+LodePNGState#lodepng.h#280 -> LodePNGColorMode#lodepng.h#114, LodePNGDecoderSettings#lodepng.h#231, LodePNGInfo#lodepng.h#162, LodePNGEncoderSettings#lodepng.h#267
+LodePNGTime#lodepng.h#153
+ucvector#lodepng.c#852
+uivector#lodepng.c#814
+LodePNGColorType#lodepng.h#52
+LodePNGFilterStrategy#lodepng.h#245
+LODEPNG_VERSION_STRING#lodepng.c#767
+lodepng_default_decompress_settings#lodepng.c#2288 -> LodePNGDecompressSettings#lodepng.h#83
+lodepng_default_compress_settings#lodepng.c#2277 -> LodePNGCompressSettings#lodepng.h#98
+LENGTHBASE#lodepng.c#1087
+LENGTHEXTRA#lodepng.c#1089
+DISTANCEBASE#lodepng.c#1091
+DISTANCEEXTRA#lodepng.c#1093
+CLCL_ORDER#lodepng.c#1095
+MAX_SUPPORTED_DEFLATE_LENGTH#lodepng.c#1675
+HASH_NUM_VALUES#lodepng.c#1704
+HASH_BIT_MASK#lodepng.c#1706
+lodepng_crc32_table#lodepng.c#2290
+ADAM7_IX#lodepng.c#3554
+ADAM7_IY#lodepng.c#3556
+ADAM7_DX#lodepng.c#3558
+ADAM7_DY#lodepng.c#3560
+lodepng_decode_memory#lodepng.c#4312 -> lodepng_state_init#lodepng.c#4365, LodePNGColorMode#lodepng.h#114, LodePNGColorType#lodepng.h#52, LodePNGDecoderSettings#lodepng.h#231, LodePNGState#lodepng.h#280, lodepng_state_cleanup#lodepng.c#4373, lodepng_decode#lodepng.c#4286
+lodepng_decode32#lodepng.c#4325 -> lodepng_decode_memory#lodepng.c#4312, LodePNGColorType#lodepng.h#52
+lodepng_decode24#lodepng.c#4329 -> lodepng_decode_memory#lodepng.c#4312, LodePNGColorType#lodepng.h#52
+lodepng_decode_file#lodepng.c#4333 -> lodepng_decode_memory#lodepng.c#4312, lodepng_free#lodepng.c#777, lodepng_load_file#lodepng.c#938, LodePNGColorType#lodepng.h#52
+lodepng_decode32_file#lodepng.c#4345 -> LodePNGColorType#lodepng.h#52, lodepng_decode_file#lodepng.c#4333
+lodepng_decode24_file#lodepng.c#4349 -> LodePNGColorType#lodepng.h#52, lodepng_decode_file#lodepng.c#4333
+lodepng_encode_memory#lodepng.c#5217 -> lodepng_state_init#lodepng.c#4365, lodepng_encode#lodepng.c#4986, LodePNGColorType#lodepng.h#52, LodePNGColorMode#lodepng.h#114, LodePNGState#lodepng.h#280, LodePNGInfo#lodepng.h#162, lodepng_state_cleanup#lodepng.c#4373
+lodepng_encode32#lodepng.c#5231 -> lodepng_encode_memory#lodepng.c#5217, LodePNGColorType#lodepng.h#52
+lodepng_encode24#lodepng.c#5235 -> LodePNGColorType#lodepng.h#52, lodepng_encode_memory#lodepng.c#5217
+lodepng_encode_file#lodepng.c#5239 -> lodepng_free#lodepng.c#777, lodepng_encode_memory#lodepng.c#5217, LodePNGColorType#lodepng.h#52, lodepng_save_file#lodepng.c#947
+lodepng_encode32_file#lodepng.c#5248 -> LodePNGColorType#lodepng.h#52, lodepng_encode_file#lodepng.c#5239
+lodepng_encode24_file#lodepng.c#5252 -> LodePNGColorType#lodepng.h#52, lodepng_encode_file#lodepng.c#5239
+lodepng_error_text#lodepng.c#5267
+lodepng_decompress_settings_init#lodepng.c#2279 -> LodePNGDecompressSettings#lodepng.h#83
+lodepng_compress_settings_init#lodepng.c#2265 -> LodePNGCompressSettings#lodepng.h#98
+lodepng_color_mode_init#lodepng.c#2486 -> LodePNGColorMode#lodepng.h#114, LodePNGColorType#lodepng.h#52
+lodepng_color_mode_cleanup#lodepng.c#2507 -> LodePNGColorMode#lodepng.h#114, lodepng_palette_clear#lodepng.c#2547
+lodepng_color_mode_copy#lodepng.c#2511 -> LodePNGColorMode#lodepng.h#114, lodepng_memcpy#lodepng.c#781, lodepng_color_mode_cleanup#lodepng.c#2507, lodepng_malloc#lodepng.c#769
+lodepng_color_mode_make#lodepng.c#2522 -> LodePNGColorType#lodepng.h#52, LodePNGColorMode#lodepng.h#114, lodepng_color_mode_init#lodepng.c#2486
+lodepng_palette_clear#lodepng.c#2547 -> LodePNGColorMode#lodepng.h#114, lodepng_free#lodepng.c#777
+lodepng_palette_add#lodepng.c#2553 -> lodepng_color_mode_alloc_palette#lodepng.c#2495, LodePNGColorMode#lodepng.h#114
+lodepng_get_bpp#lodepng.c#2569 -> LodePNGColorMode#lodepng.h#114, lodepng_get_bpp_lct#lodepng.c#2482
+lodepng_get_channels#lodepng.c#2573 -> getNumColorChannels#lodepng.c#2470, LodePNGColorMode#lodepng.h#114
+lodepng_is_greyscale_type#lodepng.c#2577 -> LodePNGColorType#lodepng.h#52, LodePNGColorMode#lodepng.h#114
+lodepng_is_alpha_type#lodepng.c#2581 -> LodePNGColorMode#lodepng.h#114
+lodepng_is_palette_type#lodepng.c#2585 -> LodePNGColorMode#lodepng.h#114, LodePNGColorType#lodepng.h#52
+lodepng_has_palette_alpha#lodepng.c#2589 -> LodePNGColorMode#lodepng.h#114
+lodepng_can_have_alpha#lodepng.c#2597 -> LodePNGColorMode#lodepng.h#114, lodepng_is_alpha_type#lodepng.c#2581, lodepng_has_palette_alpha#lodepng.c#2589
+lodepng_get_raw_size#lodepng.c#2607 -> lodepng_get_raw_size_lct#lodepng.c#2601, LodePNGColorMode#lodepng.h#114
+lodepng_info_init#lodepng.c#2788 -> lodepng_color_mode_init#lodepng.c#2486, LodePNGInfo#lodepng.h#162, LodePNGText_init#lodepng.c#2655, LodePNGUnknownChunks_init#lodepng.c#2629, LodePNGIText_init#lodepng.c#2703
+lodepng_info_cleanup#lodepng.c#2810 -> LodePNGUnknownChunks_cleanup#lodepng.c#2635, lodepng_clear_icc#lodepng.c#2780, LodePNGInfo#lodepng.h#162, LodePNGIText_cleanup#lodepng.c#2711, LodePNGText_cleanup#lodepng.c#2661, lodepng_color_mode_cleanup#lodepng.c#2507
+lodepng_info_copy#lodepng.c#2818 -> LodePNGIText_copy#lodepng.c#2725, lodepng_color_mode_copy#lodepng.c#2511, lodepng_memcpy#lodepng.c#781, lodepng_assign_icc#lodepng.c#2764, lodepng_info_cleanup#lodepng.c#2810, lodepng_color_mode_init#lodepng.c#2486, LodePNGInfo#lodepng.h#162, LodePNGUnknownChunks_init#lodepng.c#2629, LodePNGUnknownChunks_copy#lodepng.c#2640, LodePNGText_copy#lodepng.c#2671
+lodepng_add_text#lodepng.c#2695 -> lodepng_strlen#lodepng.c#791, lodepng_add_text_sized#lodepng.c#2682, LodePNGInfo#lodepng.h#162
+lodepng_clear_text#lodepng.c#2699 -> LodePNGText_cleanup#lodepng.c#2661, LodePNGInfo#lodepng.h#162
+lodepng_add_itext#lodepng.c#2760 -> lodepng_strlen#lodepng.c#791, lodepng_add_itext_sized#lodepng.c#2742, LodePNGInfo#lodepng.h#162
+lodepng_clear_itext#lodepng.c#2738 -> LodePNGIText_cleanup#lodepng.c#2711, LodePNGInfo#lodepng.h#162
+lodepng_set_icc#lodepng.c#2774 -> LodePNGInfo#lodepng.h#162, lodepng_clear_icc#lodepng.c#2780, lodepng_assign_icc#lodepng.c#2764
+lodepng_clear_icc#lodepng.c#2780 -> lodepng_free#lodepng.c#777, LodePNGInfo#lodepng.h#162, string_cleanup#lodepng.c#883
+lodepng_convert#lodepng.c#3214 -> getPixelColorRGBA16#lodepng.c#3192, color_tree_add#lodepng.c#2878, getPixelColorRGBA8#lodepng.c#2972, LodePNGColorType#lodepng.h#52, lodepng_get_raw_size#lodepng.c#2607, color_tree_cleanup#lodepng.c#2854, rgba8ToPixel#lodepng.c#2893, color_tree_init#lodepng.c#2849, rgba16ToPixel#lodepng.c#2942, ColorTree#lodepng.c#2844, lodepng_memcpy#lodepng.c#781, LodePNGColorMode#lodepng.h#114, lodepng_color_mode_equal#lodepng.c#2530, getPixelColorsRGBA8#lodepng.c#3036, getPixelColorsRGB8#lodepng.c#3124
+lodepng_decoder_settings_init#lodepng.c#4353 -> LodePNGDecoderSettings#lodepng.h#231, lodepng_decompress_settings_init#lodepng.c#2279
+lodepng_color_stats_init#lodepng.c#3315 -> LodePNGColorStats#lodepng.h#248
+lodepng_compute_color_stats#lodepng.c#3333 -> ColorTree#lodepng.c#2844, lodepng_get_bpp#lodepng.c#2569, LodePNGColorMode#lodepng.h#114, lodepng_is_greyscale_type#lodepng.c#2577, color_tree_has#lodepng.c#2874, getPixelColorRGBA16#lodepng.c#3192, color_tree_cleanup#lodepng.c#2854, color_tree_init#lodepng.c#2849, LodePNGColorStats#lodepng.h#248, lodepng_can_have_alpha#lodepng.c#2597, getValueRequiredBits#lodepng.c#3327, getPixelColorRGBA8#lodepng.c#2972, color_tree_add#lodepng.c#2878
+lodepng_encoder_settings_init#lodepng.c#5256 -> LodePNGEncoderSettings#lodepng.h#267, lodepng_compress_settings_init#lodepng.c#2265, LodePNGFilterStrategy#lodepng.h#245
+lodepng_state_init#lodepng.c#4365 -> lodepng_decoder_settings_init#lodepng.c#4353, lodepng_encoder_settings_init#lodepng.c#5256, LodePNGState#lodepng.h#280, lodepng_color_mode_init#lodepng.c#2486, lodepng_info_init#lodepng.c#2788
+lodepng_state_cleanup#lodepng.c#4373 -> lodepng_color_mode_cleanup#lodepng.c#2507, LodePNGState#lodepng.h#280, lodepng_info_cleanup#lodepng.c#2810
+lodepng_state_copy#lodepng.c#4378 -> lodepng_info_init#lodepng.c#2788, lodepng_info_copy#lodepng.c#2818, lodepng_color_mode_init#lodepng.c#2486, LodePNGState#lodepng.h#280, lodepng_state_cleanup#lodepng.c#4373, lodepng_color_mode_copy#lodepng.c#2511
+lodepng_decode#lodepng.c#4286 -> lodepng_color_mode_equal#lodepng.c#2530, lodepng_convert#lodepng.c#3214, lodepng_malloc#lodepng.c#769, LodePNGColorMode#lodepng.h#114, LodePNGState#lodepng.h#280, LodePNGColorType#lodepng.h#52, LodePNGInfo#lodepng.h#162, LodePNGDecoderSettings#lodepng.h#231, lodepng_color_mode_copy#lodepng.c#2511, lodepng_get_raw_size#lodepng.c#2607, decodeGeneric#lodepng.c#4144, lodepng_free#lodepng.c#777
+lodepng_inspect#lodepng.c#3578 -> lodepng_read32bitInt#lodepng.c#901, lodepng_chunk_type_equals#lodepng.c#2334, lodepng_chunk_length#lodepng.c#2324, LodePNGDecoderSettings#lodepng.h#231, LodePNGInfo#lodepng.h#162, LodePNGState#lodepng.h#280, lodepng_info_init#lodepng.c#2788, LodePNGColorMode#lodepng.h#114, lodepng_crc32#lodepng.c#2293, lodepng_info_cleanup#lodepng.c#2810, LodePNGColorType#lodepng.h#52, checkColorValidity#lodepng.c#2457
+lodepng_inspect_chunk#lodepng.c#4098 -> readChunk_tEXt#lodepng.c#3878, lodepng_chunk_type_equals#lodepng.c#2334, lodepng_chunk_check_crc#lodepng.c#2359, readChunk_pHYs#lodepng.c#3999, LodePNGDecoderSettings#lodepng.h#231, LodePNGState#lodepng.h#280, readChunk_sBIT#lodepng.c#4063, readChunk_bKGD#lodepng.c#3858, readChunk_cHRM#lodepng.c#4015, readChunk_tIME#lodepng.c#3987, readChunk_iTXt#lodepng.c#3935, readChunk_tRNS#lodepng.c#3838, readChunk_sRGB#lodepng.c#4029, readChunk_zTXt#lodepng.c#3904, lodepng_chunk_data_const#lodepng.c#2355, readChunk_iCCP#lodepng.c#4036, readChunk_PLTE#lodepng.c#3820, LodePNGInfo#lodepng.h#162, readChunk_gAMA#lodepng.c#4008, lodepng_chunk_length#lodepng.c#2324
+lodepng_encode#lodepng.c#4986 -> lodepng_color_mode_equal#lodepng.c#2530, preProcessScanlines#lodepng.c#4915, lodepng_color_mode_copy#lodepng.c#2511, LodePNGEncoderSettings#lodepng.h#267, addChunk_iCCP#lodepng.c#4625, addChunk_tRNS#lodepng.c#4426, lodepng_color_mode_init#lodepng.c#2486, lodepng_color_mode_make#lodepng.c#2522, addUnknownChunks#lodepng.c#4966, checkColorValidity#lodepng.c#2457, addChunk_tEXt#lodepng.c#4475, ucvector#lodepng.c#852, lodepng_info_cleanup#lodepng.c#2810, LodePNGColorType#lodepng.h#52, LodePNGColorStats#lodepng.h#248, addChunk_sRGB#lodepng.c#4620, addChunk_cHRM#lodepng.c#4605, addChunk_iTXt#lodepng.c#4512, lodepng_info_copy#lodepng.c#2818, lodepng_convert_rgb#lodepng.c#3274, addChunk_IHDR#lodepng.c#4395, lodepng_color_stats_add#lodepng.c#3481, addChunk_zTXt#lodepng.c#4488, addChunk_tIME#lodepng.c#4573, lodepng_color_mode_cleanup#lodepng.c#2507, addChunk_sBIT#lodepng.c#4648, lodepng_color_stats_init#lodepng.c#3315, addChunk_IDAT#lodepng.c#4459, addChunk_IEND#lodepng.c#4471, LODEPNG_VERSION_STRING#lodepng.c#767, addChunk_bKGD#lodepng.c#4551, lodepng_compute_color_stats#lodepng.c#3333, lodepng_malloc#lodepng.c#769, lodepng_free#lodepng.c#777, writeSignature#lodepng.c#4387, isGrayICCProfile#lodepng.c#4976, LodePNGColorMode#lodepng.h#114, LodePNGInfo#lodepng.h#162, LodePNGState#lodepng.h#280, addChunk_PLTE#lodepng.c#4410, addChunk_pHYs#lodepng.c#4587, addChunk_gAMA#lodepng.c#4597, lodepng_convert#lodepng.c#3214, ucvector_init#lodepng.c#876, lodepng_strlen#lodepng.c#791, LodePNGCompressSettings#lodepng.h#98, lodepng_info_init#lodepng.c#2788, auto_choose_color#lodepng.c#3495, isRGBICCProfile#lodepng.c#4981, lodepng_get_bpp#lodepng.c#2569
+lodepng_chunk_length#lodepng.c#2324 -> lodepng_read32bitInt#lodepng.c#901
+lodepng_chunk_type#lodepng.c#2328
+lodepng_chunk_type_equals#lodepng.c#2334 -> lodepng_strlen#lodepng.c#791
+lodepng_chunk_ancillary#lodepng.c#2339
+lodepng_chunk_private#lodepng.c#2343
+lodepng_chunk_safetocopy#lodepng.c#2347
+lodepng_chunk_data#lodepng.c#2351
+lodepng_chunk_data_const#lodepng.c#2355
+lodepng_chunk_check_crc#lodepng.c#2359 -> lodepng_chunk_length#lodepng.c#2324, lodepng_read32bitInt#lodepng.c#901, lodepng_crc32#lodepng.c#2293
+lodepng_chunk_generate_crc#lodepng.c#2367 -> lodepng_crc32#lodepng.c#2293, lodepng_chunk_length#lodepng.c#2324, lodepng_set32bitInt#lodepng.c#905
+lodepng_chunk_next#lodepng.c#2373 -> lodepng_chunk_length#lodepng.c#2324, lodepng_addofl#lodepng.c#798
+lodepng_chunk_next_const#lodepng.c#2386 -> lodepng_addofl#lodepng.c#798, lodepng_chunk_length#lodepng.c#2324
+lodepng_chunk_find#lodepng.c#2399 -> lodepng_chunk_next#lodepng.c#2373, lodepng_chunk_type_equals#lodepng.c#2334
+lodepng_chunk_find_const#lodepng.c#2407 -> lodepng_chunk_type_equals#lodepng.c#2334, lodepng_chunk_next_const#lodepng.c#2386
+lodepng_chunk_append#lodepng.c#2415 -> lodepng_chunk_length#lodepng.c#2324, lodepng_realloc#lodepng.c#773, lodepng_addofl#lodepng.c#798
+lodepng_chunk_create#lodepng.c#2449 -> lodepng_chunk_createv#lodepng.c#2441, ucvector#lodepng.c#852, ucvector_init#lodepng.c#876
+lodepng_crc32#lodepng.c#2293 -> lodepng_crc32_table#lodepng.c#2290
+lodepng_inflate#lodepng.c#1653 -> LodePNGDecompressSettings#lodepng.h#83, ucvector_init#lodepng.c#876, lodepng_inflatev#lodepng.c#1633, ucvector#lodepng.c#852
+lodepng_zlib_decompress#lodepng.c#2197 -> ucvector_init#lodepng.c#876, ucvector#lodepng.c#852, LodePNGDecompressSettings#lodepng.h#83, lodepng_zlib_decompressv#lodepng.c#2171
+lodepng_zlib_compress#lodepng.c#2226 -> lodepng_malloc#lodepng.c#769, LodePNGCompressSettings#lodepng.h#98, adler32#lodepng.c#2167, lodepng_free#lodepng.c#777, deflate#lodepng.c#2141, lodepng_set32bitInt#lodepng.c#905
+lodepng_huffman_code_lengths#lodepng.c#1326 -> bpmnode_sort#lodepng.c#1283, lodepng_malloc#lodepng.c#769, lodepng_memset#lodepng.c#786, bpmnode_create#lodepng.c#1260, BPMNode#lodepng.c#1242, lodepng_free#lodepng.c#777, boundaryPM#lodepng.c#1305, BPMLists#lodepng.c#1249
+lodepng_deflate#lodepng.c#2133 -> lodepng_deflatev#lodepng.c#2102, ucvector#lodepng.c#852, LodePNGCompressSettings#lodepng.h#98, ucvector_init#lodepng.c#876
+lodepng_load_file#lodepng.c#938 -> lodepng_malloc#lodepng.c#769, lodepng_filesize#lodepng.c#912, lodepng_buffer_file#lodepng.c#927
+lodepng_save_file#lodepng.c#947
+lodepng_malloc#lodepng.c#769
+lodepng_realloc#lodepng.c#773
+lodepng_free#lodepng.c#777
+lodepng_memcpy#lodepng.c#781
+lodepng_memset#lodepng.c#786
+lodepng_strlen#lodepng.c#791
+lodepng_addofl#lodepng.c#798
+lodepng_mulofl#lodepng.c#803
+lodepng_gtofl#lodepng.c#808 -> lodepng_addofl#lodepng.c#798
+uivector_cleanup#lodepng.c#820 -> lodepng_free#lodepng.c#777, uivector#lodepng.c#814
+uivector_resize#lodepng.c#826 -> uivector#lodepng.c#814, lodepng_realloc#lodepng.c#773
+uivector_init#lodepng.c#841 -> uivector#lodepng.c#814
+uivector_push_back#lodepng.c#846 -> uivector_resize#lodepng.c#826, uivector#lodepng.c#814
+ucvector_reserve#lodepng.c#858 -> lodepng_realloc#lodepng.c#773, ucvector#lodepng.c#852
+ucvector_resize#lodepng.c#871 -> ucvector#lodepng.c#852, ucvector_reserve#lodepng.c#858
+ucvector_init#lodepng.c#876 -> ucvector#lodepng.c#852
+string_cleanup#lodepng.c#883 -> lodepng_free#lodepng.c#777
+alloc_string_sized#lodepng.c#888 -> lodepng_malloc#lodepng.c#769, lodepng_memcpy#lodepng.c#781
+alloc_string#lodepng.c#897 -> alloc_string_sized#lodepng.c#888, lodepng_strlen#lodepng.c#791
+lodepng_read32bitInt#lodepng.c#901
+lodepng_set32bitInt#lodepng.c#905
+lodepng_filesize#lodepng.c#912
+lodepng_buffer_file#lodepng.c#927
+LodePNGBitWriter_init#lodepng.c#961 -> ucvector#lodepng.c#852, LodePNGBitWriter#lodepng.c#956
+writeBits#lodepng.c#966 -> ucvector#lodepng.c#852, LodePNGBitWriter#lodepng.c#956, ucvector_resize#lodepng.c#871
+writeBitsReversed#lodepng.c#977 -> ucvector_resize#lodepng.c#871, ucvector#lodepng.c#852, LodePNGBitWriter#lodepng.c#956
+LodePNGBitReader_init#lodepng.c#992 -> lodepng_addofl#lodepng.c#798, LodePNGBitReader#lodepng.c#984, lodepng_mulofl#lodepng.c#803
+ensureBits9#lodepng.c#1003 -> LodePNGBitReader#lodepng.c#984
+ensureBits17#lodepng.c#1017 -> LodePNGBitReader#lodepng.c#984
+ensureBits25#lodepng.c#1032 -> LodePNGBitReader#lodepng.c#984
+ensureBits32#lodepng.c#1048 -> LodePNGBitReader#lodepng.c#984
+peekBits#lodepng.c#1066 -> LodePNGBitReader#lodepng.c#984
+advanceBits#lodepng.c#1070 -> LodePNGBitReader#lodepng.c#984
+readBits#lodepng.c#1075 -> LodePNGBitReader#lodepng.c#984, advanceBits#lodepng.c#1070, peekBits#lodepng.c#1066
+reverseBits#lodepng.c#1081
+HuffmanTree_init#lodepng.c#1106 -> HuffmanTree#lodepng.c#1097
+HuffmanTree_cleanup#lodepng.c#1113 -> HuffmanTree#lodepng.c#1097, lodepng_free#lodepng.c#777
+HuffmanTree_makeTable#lodepng.c#1120 -> lodepng_memset#lodepng.c#786, lodepng_free#lodepng.c#777, lodepng_malloc#lodepng.c#769, HuffmanTree#lodepng.c#1097, reverseBits#lodepng.c#1081
+HuffmanTree_makeFromLengths2#lodepng.c#1204 -> lodepng_malloc#lodepng.c#769, HuffmanTree#lodepng.c#1097, HuffmanTree_makeTable#lodepng.c#1120, lodepng_free#lodepng.c#777
+HuffmanTree_makeFromLengths#lodepng.c#1232 -> HuffmanTree#lodepng.c#1097, lodepng_malloc#lodepng.c#769, HuffmanTree_makeFromLengths2#lodepng.c#1204
+bpmnode_create#lodepng.c#1260 -> BPMNode#lodepng.c#1242, BPMLists#lodepng.c#1249
+bpmnode_sort#lodepng.c#1283 -> lodepng_malloc#lodepng.c#769, lodepng_free#lodepng.c#777, BPMNode#lodepng.c#1242, lodepng_memcpy#lodepng.c#781
+boundaryPM#lodepng.c#1305 -> BPMNode#lodepng.c#1242, BPMLists#lodepng.c#1249, bpmnode_create#lodepng.c#1260
+HuffmanTree_makeFromFrequencies#lodepng.c#1383 -> lodepng_malloc#lodepng.c#769, lodepng_huffman_code_lengths#lodepng.c#1326, HuffmanTree#lodepng.c#1097, HuffmanTree_makeFromLengths2#lodepng.c#1204
+generateFixedLitLenTree#lodepng.c#1395 -> lodepng_malloc#lodepng.c#769, lodepng_free#lodepng.c#777, HuffmanTree#lodepng.c#1097, HuffmanTree_makeFromLengths#lodepng.c#1232
+generateFixedDistanceTree#lodepng.c#1408 -> lodepng_free#lodepng.c#777, HuffmanTree#lodepng.c#1097, lodepng_malloc#lodepng.c#769, HuffmanTree_makeFromLengths#lodepng.c#1232
+huffmanDecodeSymbol#lodepng.c#1418 -> advanceBits#lodepng.c#1070, HuffmanTree#lodepng.c#1097, LodePNGBitReader#lodepng.c#984, peekBits#lodepng.c#1066
+getTreeInflateFixed#lodepng.c#1433 -> HuffmanTree#lodepng.c#1097, generateFixedLitLenTree#lodepng.c#1395, generateFixedDistanceTree#lodepng.c#1408
+getTreeInflateDynamic#lodepng.c#1439 -> lodepng_free#lodepng.c#777, HuffmanTree_makeFromLengths#lodepng.c#1232, lodepng_memset#lodepng.c#786, ensureBits9#lodepng.c#1003, lodepng_gtofl#lodepng.c#808, HuffmanTree_cleanup#lodepng.c#1113, ensureBits25#lodepng.c#1032, huffmanDecodeSymbol#lodepng.c#1418, LodePNGBitReader#lodepng.c#984, HuffmanTree_init#lodepng.c#1106, HuffmanTree#lodepng.c#1097, readBits#lodepng.c#1075, lodepng_malloc#lodepng.c#769, CLCL_ORDER#lodepng.c#1095, ensureBits17#lodepng.c#1017
+inflateHuffmanBlock#lodepng.c#1533 -> LodePNGBitReader#lodepng.c#984, HuffmanTree_cleanup#lodepng.c#1113, DISTANCEEXTRA#lodepng.c#1093, DISTANCEBASE#lodepng.c#1091, readBits#lodepng.c#1075, huffmanDecodeSymbol#lodepng.c#1418, HuffmanTree_init#lodepng.c#1106, getTreeInflateDynamic#lodepng.c#1439, lodepng_memcpy#lodepng.c#781, ucvector#lodepng.c#852, getTreeInflateFixed#lodepng.c#1433, ucvector_reserve#lodepng.c#858, LENGTHEXTRA#lodepng.c#1089, LENGTHBASE#lodepng.c#1087, ensureBits32#lodepng.c#1048, ensureBits25#lodepng.c#1032, HuffmanTree#lodepng.c#1097
+inflateNoCompression#lodepng.c#1612 -> LodePNGBitReader#lodepng.c#984, ucvector_resize#lodepng.c#871, ucvector#lodepng.c#852, LodePNGDecompressSettings#lodepng.h#83, lodepng_memcpy#lodepng.c#781
+lodepng_inflatev#lodepng.c#1633 -> ucvector#lodepng.c#852, ensureBits9#lodepng.c#1003, inflateNoCompression#lodepng.c#1612, LodePNGBitReader#lodepng.c#984, readBits#lodepng.c#1075, inflateHuffmanBlock#lodepng.c#1533, LodePNGBitReader_init#lodepng.c#992, LodePNGDecompressSettings#lodepng.h#83
+inflatev#lodepng.c#1661 -> lodepng_inflatev#lodepng.c#1633, ucvector#lodepng.c#852, LodePNGDecompressSettings#lodepng.h#83
+searchCodeIndex#lodepng.c#1677
+addLengthDistance#lodepng.c#1689 -> DISTANCEBASE#lodepng.c#1091, searchCodeIndex#lodepng.c#1677, LENGTHBASE#lodepng.c#1087, uivector_resize#lodepng.c#826, uivector#lodepng.c#814
+hash_init#lodepng.c#1717 -> Hash#lodepng.c#1708, HASH_NUM_VALUES#lodepng.c#1704, MAX_SUPPORTED_DEFLATE_LENGTH#lodepng.c#1675, lodepng_malloc#lodepng.c#769
+hash_cleanup#lodepng.c#1736 -> lodepng_free#lodepng.c#777, Hash#lodepng.c#1708
+getHash#lodepng.c#1745 -> HASH_BIT_MASK#lodepng.c#1706
+countZeros#lodepng.c#1760 -> MAX_SUPPORTED_DEFLATE_LENGTH#lodepng.c#1675
+updateHashChain#lodepng.c#1769 -> Hash#lodepng.c#1708
+encodeLZ77#lodepng.c#1778 -> addLengthDistance#lodepng.c#1689, uivector_push_back#lodepng.c#846, getHash#lodepng.c#1745, countZeros#lodepng.c#1760, updateHashChain#lodepng.c#1769, Hash#lodepng.c#1708, MAX_SUPPORTED_DEFLATE_LENGTH#lodepng.c#1675, uivector#lodepng.c#814
+deflateNoCompression#lodepng.c#1892 -> ucvector_resize#lodepng.c#871, lodepng_memcpy#lodepng.c#781, ucvector#lodepng.c#852
+writeLZ77data#lodepng.c#1917 -> LodePNGBitWriter#lodepng.c#956, uivector#lodepng.c#814, DISTANCEEXTRA#lodepng.c#1093, HuffmanTree#lodepng.c#1097, writeBits#lodepng.c#966, LENGTHEXTRA#lodepng.c#1089, writeBitsReversed#lodepng.c#977
+deflateDynamic#lodepng.c#1937 -> HuffmanTree_cleanup#lodepng.c#1113, HuffmanTree#lodepng.c#1097, LodePNGCompressSettings#lodepng.h#98, uivector_init#lodepng.c#841, writeBits#lodepng.c#966, HuffmanTree_makeFromFrequencies#lodepng.c#1383, encodeLZ77#lodepng.c#1778, uivector_resize#lodepng.c#826, writeBitsReversed#lodepng.c#977, Hash#lodepng.c#1708, CLCL_ORDER#lodepng.c#1095, uivector#lodepng.c#814, LodePNGBitWriter#lodepng.c#956, lodepng_memset#lodepng.c#786, HuffmanTree_init#lodepng.c#1106, uivector_cleanup#lodepng.c#820, writeLZ77data#lodepng.c#1917, lodepng_malloc#lodepng.c#769, lodepng_free#lodepng.c#777
+deflateFixed#lodepng.c#2070 -> uivector#lodepng.c#814, uivector_cleanup#lodepng.c#820, uivector_init#lodepng.c#841, HuffmanTree_init#lodepng.c#1106, LodePNGCompressSettings#lodepng.h#98, writeLZ77data#lodepng.c#1917, generateFixedDistanceTree#lodepng.c#1408, HuffmanTree#lodepng.c#1097, writeBitsReversed#lodepng.c#977, encodeLZ77#lodepng.c#1778, Hash#lodepng.c#1708, HuffmanTree_cleanup#lodepng.c#1113, generateFixedLitLenTree#lodepng.c#1395, writeBits#lodepng.c#966, LodePNGBitWriter#lodepng.c#956
+lodepng_deflatev#lodepng.c#2102 -> LodePNGCompressSettings#lodepng.h#98, LodePNGBitWriter#lodepng.c#956, hash_init#lodepng.c#1717, ucvector#lodepng.c#852, deflateFixed#lodepng.c#2070, LodePNGBitWriter_init#lodepng.c#961, hash_cleanup#lodepng.c#1736, Hash#lodepng.c#1708, deflateDynamic#lodepng.c#1937, deflateNoCompression#lodepng.c#1892
+deflate#lodepng.c#2141 -> lodepng_deflate#lodepng.c#2133, LodePNGCompressSettings#lodepng.h#98
+update_adler32#lodepng.c#2150
+adler32#lodepng.c#2167 -> update_adler32#lodepng.c#2150
+lodepng_zlib_decompressv#lodepng.c#2171 -> ucvector#lodepng.c#852, LodePNGDecompressSettings#lodepng.h#83, adler32#lodepng.c#2167, inflatev#lodepng.c#1661, lodepng_read32bitInt#lodepng.c#901
+zlib_decompress#lodepng.c#2205 -> ucvector_resize#lodepng.c#871, ucvector#lodepng.c#852, ucvector_init#lodepng.c#876, LodePNGDecompressSettings#lodepng.h#83, lodepng_zlib_decompressv#lodepng.c#2171
+zlib_compress#lodepng.c#2256 -> lodepng_zlib_compress#lodepng.c#2226, LodePNGCompressSettings#lodepng.h#98
+readBitFromReversedStream#lodepng.c#2302
+readBitsFromReversedStream#lodepng.c#2308 -> readBitFromReversedStream#lodepng.c#2302
+setBitOfReversedStream#lodepng.c#2318
+lodepng_chunk_init#lodepng.c#2430 -> lodepng_memcpy#lodepng.c#781, lodepng_addofl#lodepng.c#798, lodepng_set32bitInt#lodepng.c#905, ucvector#lodepng.c#852, ucvector_resize#lodepng.c#871
+lodepng_chunk_createv#lodepng.c#2441 -> lodepng_chunk_init#lodepng.c#2430, lodepng_memcpy#lodepng.c#781, ucvector#lodepng.c#852, lodepng_chunk_generate_crc#lodepng.c#2367
+checkColorValidity#lodepng.c#2457 -> LodePNGColorType#lodepng.h#52
+getNumColorChannels#lodepng.c#2470 -> LodePNGColorType#lodepng.h#52
+lodepng_get_bpp_lct#lodepng.c#2482 -> getNumColorChannels#lodepng.c#2470, LodePNGColorType#lodepng.h#52
+lodepng_color_mode_alloc_palette#lodepng.c#2495 -> lodepng_malloc#lodepng.c#769, LodePNGColorMode#lodepng.h#114
+lodepng_color_mode_equal#lodepng.c#2530 -> LodePNGColorMode#lodepng.h#114
+lodepng_get_raw_size_lct#lodepng.c#2601 -> lodepng_get_bpp_lct#lodepng.c#2482, LodePNGColorType#lodepng.h#52
+lodepng_get_raw_size_idat#lodepng.c#2611
+lodepng_pixel_overflow#lodepng.c#2616 -> LodePNGColorMode#lodepng.h#114, lodepng_mulofl#lodepng.c#803, lodepng_get_bpp#lodepng.c#2569, lodepng_addofl#lodepng.c#798
+LodePNGUnknownChunks_init#lodepng.c#2629 -> LodePNGInfo#lodepng.h#162
+LodePNGUnknownChunks_cleanup#lodepng.c#2635 -> LodePNGInfo#lodepng.h#162, lodepng_free#lodepng.c#777
+LodePNGUnknownChunks_copy#lodepng.c#2640 -> lodepng_malloc#lodepng.c#769, LodePNGInfo#lodepng.h#162, LodePNGUnknownChunks_cleanup#lodepng.c#2635
+LodePNGText_init#lodepng.c#2655 -> LodePNGInfo#lodepng.h#162
+LodePNGText_cleanup#lodepng.c#2661 -> lodepng_free#lodepng.c#777, LodePNGInfo#lodepng.h#162, string_cleanup#lodepng.c#883
+LodePNGText_copy#lodepng.c#2671 -> lodepng_add_text#lodepng.c#2695, LodePNGInfo#lodepng.h#162
+lodepng_add_text_sized#lodepng.c#2682 -> alloc_string#lodepng.c#897, alloc_string_sized#lodepng.c#888, lodepng_realloc#lodepng.c#773, LodePNGInfo#lodepng.h#162
+LodePNGIText_init#lodepng.c#2703 -> LodePNGInfo#lodepng.h#162
+LodePNGIText_cleanup#lodepng.c#2711 -> lodepng_free#lodepng.c#777, LodePNGInfo#lodepng.h#162, string_cleanup#lodepng.c#883
+LodePNGIText_copy#lodepng.c#2725 -> LodePNGInfo#lodepng.h#162, lodepng_add_itext#lodepng.c#2760
+lodepng_add_itext_sized#lodepng.c#2742 -> LodePNGInfo#lodepng.h#162, lodepng_realloc#lodepng.c#773, alloc_string#lodepng.c#897, alloc_string_sized#lodepng.c#888
+lodepng_assign_icc#lodepng.c#2764 -> lodepng_memcpy#lodepng.c#781, lodepng_malloc#lodepng.c#769, LodePNGInfo#lodepng.h#162, alloc_string#lodepng.c#897
+addColorBits#lodepng.c#2833
+color_tree_init#lodepng.c#2849 -> ColorTree#lodepng.c#2844, lodepng_memset#lodepng.c#786
+color_tree_cleanup#lodepng.c#2854 -> ColorTree#lodepng.c#2844, lodepng_free#lodepng.c#777
+color_tree_get#lodepng.c#2864 -> ColorTree#lodepng.c#2844
+color_tree_has#lodepng.c#2874 -> color_tree_get#lodepng.c#2864, ColorTree#lodepng.c#2844
+color_tree_add#lodepng.c#2878 -> ColorTree#lodepng.c#2844, color_tree_init#lodepng.c#2849, lodepng_malloc#lodepng.c#769
+rgba8ToPixel#lodepng.c#2893 -> LodePNGColorMode#lodepng.h#114, LodePNGColorType#lodepng.h#52, addColorBits#lodepng.c#2833, ColorTree#lodepng.c#2844, color_tree_get#lodepng.c#2864
+rgba16ToPixel#lodepng.c#2942 -> LodePNGColorType#lodepng.h#52, LodePNGColorMode#lodepng.h#114
+getPixelColorRGBA8#lodepng.c#2972 -> readBitsFromReversedStream#lodepng.c#2308, LodePNGColorMode#lodepng.h#114, LodePNGColorType#lodepng.h#52
+getPixelColorsRGBA8#lodepng.c#3036 -> LodePNGColorMode#lodepng.h#114, LodePNGColorType#lodepng.h#52, readBitsFromReversedStream#lodepng.c#2308, lodepng_memcpy#lodepng.c#781
+getPixelColorsRGB8#lodepng.c#3124 -> lodepng_memcpy#lodepng.c#781, LodePNGColorMode#lodepng.h#114, readBitsFromReversedStream#lodepng.c#2308, LodePNGColorType#lodepng.h#52
+getPixelColorRGBA16#lodepng.c#3192 -> LodePNGColorMode#lodepng.h#114, LodePNGColorType#lodepng.h#52
+lodepng_convert_rgb#lodepng.c#3274 -> LodePNGColorMode#lodepng.h#114, LodePNGColorType#lodepng.h#52
+getValueRequiredBits#lodepng.c#3327
+lodepng_color_stats_add#lodepng.c#3481 -> LodePNGColorType#lodepng.h#52, LodePNGColorStats#lodepng.h#248, lodepng_color_mode_cleanup#lodepng.c#2507, lodepng_compute_color_stats#lodepng.c#3333, lodepng_color_mode_init#lodepng.c#2486, LodePNGColorMode#lodepng.h#114
+auto_choose_color#lodepng.c#3495 -> LodePNGColorType#lodepng.h#52, LodePNGColorStats#lodepng.h#248, lodepng_palette_clear#lodepng.c#2547, lodepng_color_mode_cleanup#lodepng.c#2507, lodepng_color_mode_copy#lodepng.c#2511, lodepng_palette_add#lodepng.c#2553, LodePNGColorMode#lodepng.h#114
+paethPredictor#lodepng.c#3546
+Adam7_getpassvalues#lodepng.c#3562 -> ADAM7_DX#lodepng.c#3558, ADAM7_DY#lodepng.c#3560, ADAM7_IX#lodepng.c#3554, ADAM7_IY#lodepng.c#3556
+unfilterScanline#lodepng.c#3623 -> paethPredictor#lodepng.c#3546
+unfilter#lodepng.c#3732 -> lodepng_get_raw_size_idat#lodepng.c#2611, unfilterScanline#lodepng.c#3623
+Adam7_deinterlace#lodepng.c#3747 -> readBitFromReversedStream#lodepng.c#2302, Adam7_getpassvalues#lodepng.c#3562, ADAM7_DX#lodepng.c#3558, ADAM7_IX#lodepng.c#3554, setBitOfReversedStream#lodepng.c#2318, ADAM7_IY#lodepng.c#3556, ADAM7_DY#lodepng.c#3560
+removePaddingBits#lodepng.c#3782 -> setBitOfReversedStream#lodepng.c#2318, readBitFromReversedStream#lodepng.c#2302
+postProcessScanlines#lodepng.c#3796 -> Adam7_getpassvalues#lodepng.c#3562, removePaddingBits#lodepng.c#3782, Adam7_deinterlace#lodepng.c#3747, lodepng_get_bpp#lodepng.c#2569, LodePNGInfo#lodepng.h#162, unfilter#lodepng.c#3732
+readChunk_PLTE#lodepng.c#3820 -> lodepng_color_mode_alloc_palette#lodepng.c#2495, LodePNGColorMode#lodepng.h#114
+readChunk_tRNS#lodepng.c#3838 -> LodePNGColorMode#lodepng.h#114, LodePNGColorType#lodepng.h#52
+readChunk_bKGD#lodepng.c#3858 -> LodePNGInfo#lodepng.h#162, LodePNGColorMode#lodepng.h#114, LodePNGColorType#lodepng.h#52
+readChunk_tEXt#lodepng.c#3878 -> lodepng_add_text#lodepng.c#2695, lodepng_free#lodepng.c#777, lodepng_malloc#lodepng.c#769, LodePNGInfo#lodepng.h#162, lodepng_memcpy#lodepng.c#781
+readChunk_zTXt#lodepng.c#3904 -> LodePNGDecoderSettings#lodepng.h#231, lodepng_memcpy#lodepng.c#781, lodepng_malloc#lodepng.c#769, lodepng_add_text_sized#lodepng.c#2682, LodePNGDecompressSettings#lodepng.h#83, zlib_decompress#lodepng.c#2205, LodePNGInfo#lodepng.h#162, lodepng_free#lodepng.c#777
+readChunk_iTXt#lodepng.c#3935 -> LodePNGDecompressSettings#lodepng.h#83, lodepng_free#lodepng.c#777, LodePNGInfo#lodepng.h#162, lodepng_memcpy#lodepng.c#781, LodePNGDecoderSettings#lodepng.h#231, lodepng_add_itext_sized#lodepng.c#2742, zlib_decompress#lodepng.c#2205, lodepng_malloc#lodepng.c#769
+readChunk_tIME#lodepng.c#3987 -> LodePNGTime#lodepng.h#153, LodePNGInfo#lodepng.h#162
+readChunk_pHYs#lodepng.c#3999 -> LodePNGInfo#lodepng.h#162
+readChunk_gAMA#lodepng.c#4008 -> LodePNGInfo#lodepng.h#162
+readChunk_cHRM#lodepng.c#4015 -> LodePNGInfo#lodepng.h#162
+readChunk_sRGB#lodepng.c#4029 -> LodePNGInfo#lodepng.h#162
+readChunk_iCCP#lodepng.c#4036 -> LodePNGInfo#lodepng.h#162, zlib_decompress#lodepng.c#2205, lodepng_malloc#lodepng.c#769, LodePNGDecompressSettings#lodepng.h#83, LodePNGDecoderSettings#lodepng.h#231, lodepng_clear_icc#lodepng.c#2780
+readChunk_sBIT#lodepng.c#4063 -> LodePNGColorType#lodepng.h#52, LodePNGInfo#lodepng.h#162, LodePNGColorMode#lodepng.h#114
+decodeGeneric#lodepng.c#4144 -> readChunk_zTXt#lodepng.c#3904, LodePNGInfo#lodepng.h#162, lodepng_chunk_length#lodepng.c#2324, LodePNGColorType#lodepng.h#52, readChunk_cHRM#lodepng.c#4015, lodepng_free#lodepng.c#777, readChunk_pHYs#lodepng.c#3999, zlib_decompress#lodepng.c#2205, LodePNGState#lodepng.h#280, lodepng_malloc#lodepng.c#769, lodepng_addofl#lodepng.c#798, readChunk_sRGB#lodepng.c#4029, lodepng_pixel_overflow#lodepng.c#2616, lodepng_chunk_next_const#lodepng.c#2386, readChunk_bKGD#lodepng.c#3858, lodepng_get_bpp#lodepng.c#2569, readChunk_iTXt#lodepng.c#3935, readChunk_tRNS#lodepng.c#3838, lodepng_chunk_type_equals#lodepng.c#2334, lodepng_chunk_ancillary#lodepng.c#2339, LodePNGColorMode#lodepng.h#114, postProcessScanlines#lodepng.c#3796, readChunk_sBIT#lodepng.c#4063, lodepng_chunk_data_const#lodepng.c#2355, lodepng_get_raw_size_idat#lodepng.c#2611, lodepng_inspect#lodepng.c#3578, readChunk_iCCP#lodepng.c#4036, LodePNGDecoderSettings#lodepng.h#231, readChunk_gAMA#lodepng.c#4008, lodepng_memset#lodepng.c#786, readChunk_PLTE#lodepng.c#3820, lodepng_memcpy#lodepng.c#781, readChunk_tEXt#lodepng.c#3878, lodepng_get_raw_size#lodepng.c#2607, readChunk_tIME#lodepng.c#3987, lodepng_chunk_check_crc#lodepng.c#2359, lodepng_chunk_append#lodepng.c#2415
+writeSignature#lodepng.c#4387 -> ucvector_resize#lodepng.c#871, ucvector#lodepng.c#852, lodepng_memcpy#lodepng.c#781
+addChunk_IHDR#lodepng.c#4395 -> ucvector#lodepng.c#852, lodepng_chunk_init#lodepng.c#2430, lodepng_set32bitInt#lodepng.c#905, lodepng_chunk_generate_crc#lodepng.c#2367, LodePNGColorType#lodepng.h#52
+addChunk_PLTE#lodepng.c#4410 -> ucvector#lodepng.c#852, LodePNGColorMode#lodepng.h#114, lodepng_chunk_init#lodepng.c#2430, lodepng_chunk_generate_crc#lodepng.c#2367
+addChunk_tRNS#lodepng.c#4426 -> lodepng_chunk_init#lodepng.c#2430, ucvector#lodepng.c#852, LodePNGColorMode#lodepng.h#114, lodepng_chunk_generate_crc#lodepng.c#2367, LodePNGColorType#lodepng.h#52
+addChunk_IDAT#lodepng.c#4459 -> lodepng_free#lodepng.c#777, lodepng_chunk_createv#lodepng.c#2441, zlib_compress#lodepng.c#2256, ucvector#lodepng.c#852, LodePNGCompressSettings#lodepng.h#98
+addChunk_IEND#lodepng.c#4471 -> ucvector#lodepng.c#852, lodepng_chunk_createv#lodepng.c#2441
+addChunk_tEXt#lodepng.c#4475 -> lodepng_memcpy#lodepng.c#781, lodepng_chunk_generate_crc#lodepng.c#2367, lodepng_strlen#lodepng.c#791, ucvector#lodepng.c#852, lodepng_chunk_init#lodepng.c#2430
+addChunk_zTXt#lodepng.c#4488 -> LodePNGCompressSettings#lodepng.h#98, lodepng_free#lodepng.c#777, lodepng_strlen#lodepng.c#791, lodepng_chunk_init#lodepng.c#2430, lodepng_chunk_generate_crc#lodepng.c#2367, lodepng_memcpy#lodepng.c#781, ucvector#lodepng.c#852, zlib_compress#lodepng.c#2256
+addChunk_iTXt#lodepng.c#4512 -> lodepng_chunk_init#lodepng.c#2430, LodePNGCompressSettings#lodepng.h#98, lodepng_chunk_generate_crc#lodepng.c#2367, lodepng_strlen#lodepng.c#791, lodepng_memcpy#lodepng.c#781, lodepng_free#lodepng.c#777, zlib_compress#lodepng.c#2256, ucvector#lodepng.c#852
+addChunk_bKGD#lodepng.c#4551 -> lodepng_chunk_init#lodepng.c#2430, LodePNGColorMode#lodepng.h#114, lodepng_chunk_generate_crc#lodepng.c#2367, LodePNGColorType#lodepng.h#52, ucvector#lodepng.c#852, LodePNGInfo#lodepng.h#162
+addChunk_tIME#lodepng.c#4573 -> lodepng_chunk_init#lodepng.c#2430, ucvector#lodepng.c#852, LodePNGTime#lodepng.h#153, lodepng_chunk_generate_crc#lodepng.c#2367
+addChunk_pHYs#lodepng.c#4587 -> lodepng_chunk_init#lodepng.c#2430, lodepng_set32bitInt#lodepng.c#905, LodePNGInfo#lodepng.h#162, ucvector#lodepng.c#852, lodepng_chunk_generate_crc#lodepng.c#2367
+addChunk_gAMA#lodepng.c#4597 -> lodepng_chunk_generate_crc#lodepng.c#2367, lodepng_chunk_init#lodepng.c#2430, LodePNGInfo#lodepng.h#162, lodepng_set32bitInt#lodepng.c#905, ucvector#lodepng.c#852
+addChunk_cHRM#lodepng.c#4605 -> LodePNGInfo#lodepng.h#162, lodepng_chunk_generate_crc#lodepng.c#2367, ucvector#lodepng.c#852, lodepng_chunk_init#lodepng.c#2430, lodepng_set32bitInt#lodepng.c#905
+addChunk_sRGB#lodepng.c#4620 -> ucvector#lodepng.c#852, lodepng_chunk_createv#lodepng.c#2441, LodePNGInfo#lodepng.h#162
+addChunk_iCCP#lodepng.c#4625 -> LodePNGCompressSettings#lodepng.h#98, lodepng_free#lodepng.c#777, lodepng_strlen#lodepng.c#791, lodepng_chunk_generate_crc#lodepng.c#2367, ucvector#lodepng.c#852, lodepng_memcpy#lodepng.c#781, zlib_compress#lodepng.c#2256, lodepng_chunk_init#lodepng.c#2430, LodePNGInfo#lodepng.h#162
+addChunk_sBIT#lodepng.c#4648 -> lodepng_chunk_generate_crc#lodepng.c#2367, LodePNGColorType#lodepng.h#52, LodePNGColorMode#lodepng.h#114, lodepng_chunk_init#lodepng.c#2430, ucvector#lodepng.c#852, LodePNGInfo#lodepng.h#162
+filterScanline#lodepng.c#4682 -> paethPredictor#lodepng.c#3546
+ilog2#lodepng.c#4718
+ilog2i#lodepng.c#4728 -> ilog2#lodepng.c#4718
+filter#lodepng.c#4735 -> lodepng_memcpy#lodepng.c#781, zlib_compress#lodepng.c#2256, LodePNGColorMode#lodepng.h#114, LodePNGFilterStrategy#lodepng.h#245, LodePNGColorType#lodepng.h#52, LodePNGEncoderSettings#lodepng.h#267, lodepng_free#lodepng.c#777, lodepng_get_raw_size_idat#lodepng.c#2611, lodepng_memset#lodepng.c#786, lodepng_malloc#lodepng.c#769, ilog2i#lodepng.c#4728, LodePNGCompressSettings#lodepng.h#98, filterScanline#lodepng.c#4682, lodepng_get_bpp#lodepng.c#2569
+addPaddingBits#lodepng.c#4866 -> readBitFromReversedStream#lodepng.c#2302, setBitOfReversedStream#lodepng.c#2318
+Adam7_interlace#lodepng.c#4880 -> ADAM7_IX#lodepng.c#3554, Adam7_getpassvalues#lodepng.c#3562, ADAM7_DX#lodepng.c#3558, setBitOfReversedStream#lodepng.c#2318, readBitFromReversedStream#lodepng.c#2302, ADAM7_DY#lodepng.c#3560, ADAM7_IY#lodepng.c#3556
+preProcessScanlines#lodepng.c#4915 -> Adam7_getpassvalues#lodepng.c#3562, LodePNGEncoderSettings#lodepng.h#267, Adam7_interlace#lodepng.c#4880, LodePNGInfo#lodepng.h#162, lodepng_free#lodepng.c#777, filter#lodepng.c#4735, addPaddingBits#lodepng.c#4866, lodepng_malloc#lodepng.c#769, lodepng_get_bpp#lodepng.c#2569
+addUnknownChunks#lodepng.c#4966 -> ucvector#lodepng.c#852, lodepng_chunk_next#lodepng.c#2373, lodepng_chunk_append#lodepng.c#2415
+isGrayICCProfile#lodepng.c#4976
+isRGBICCProfile#lodepng.c#4981
+
+SPLIT_TAG
+
+lodepng_chunk_data#lodepng.c#2351
+lodepng_chunk_safetocopy#lodepng.c#2347
+lodepng_chunk_private#lodepng.c#2343
+lodepng_chunk_type#lodepng.c#2328
+lodepng_error_text#lodepng.c#5267
+lodepng_save_file#lodepng.c#947
+isRGBICCProfile#lodepng.c#4981
+isGrayICCProfile#lodepng.c#4976
+getValueRequiredBits#lodepng.c#3327
+ilog2#lodepng.c#4718
+lodepng_set32bitInt#lodepng.c#905
+searchCodeIndex#lodepng.c#1677
+lodepng_buffer_file#lodepng.c#927
+lodepng_filesize#lodepng.c#912
+lodepng_chunk_data_const#lodepng.c#2355
+paethPredictor#lodepng.c#3546
+lodepng_get_raw_size_idat#lodepng.c#2611
+setBitOfReversedStream#lodepng.c#2318
+lodepng_chunk_ancillary#lodepng.c#2339
+lodepng_read32bitInt#lodepng.c#901
+lodepng_mulofl#lodepng.c#803
+lodepng_addofl#lodepng.c#798
+reverseBits#lodepng.c#1081
+update_adler32#lodepng.c#2150
+lodepng_realloc#lodepng.c#773
+lodepng_strlen#lodepng.c#791
+lodepng_memcpy#lodepng.c#781
+addColorBits#lodepng.c#2833
+readBitFromReversedStream#lodepng.c#2302
+lodepng_malloc#lodepng.c#769
+lodepng_memset#lodepng.c#786
+lodepng_free#lodepng.c#777
+ADAM7_DY#lodepng.c#3560
+ADAM7_DX#lodepng.c#3558
+ADAM7_IY#lodepng.c#3556
+ADAM7_IX#lodepng.c#3554
+lodepng_crc32_table#lodepng.c#2290
+HASH_BIT_MASK#lodepng.c#1706
+HASH_NUM_VALUES#lodepng.c#1704
+MAX_SUPPORTED_DEFLATE_LENGTH#lodepng.c#1675
+CLCL_ORDER#lodepng.c#1095
+DISTANCEEXTRA#lodepng.c#1093
+DISTANCEBASE#lodepng.c#1091
+LENGTHEXTRA#lodepng.c#1089
+LENGTHBASE#lodepng.c#1087
+LODEPNG_VERSION_STRING#lodepng.c#767
+uivector#lodepng.c#814
+LodePNGTime#lodepng.h#153
+LodePNGFilterStrategy#lodepng.h#245
+LodePNGDecompressSettings#lodepng.h#83
+LodePNGCompressSettings#lodepng.h#98
+LodePNGColorStats#lodepng.h#248
+LodePNGColorType#lodepng.h#52
+ucvector#lodepng.c#852
+LodePNGBitReader#lodepng.c#984
+HuffmanTree#lodepng.c#1097
+Hash#lodepng.c#1708
+ColorTree#lodepng.c#2844
+BPMNode#lodepng.c#1242
+ilog2i#lodepng.c#4728
+unfilterScanline#lodepng.c#3623
+filterScanline#lodepng.c#4682
+lodepng_chunk_length#lodepng.c#2324
+lodepng_gtofl#lodepng.c#808
+adler32#lodepng.c#2167
+lodepng_chunk_type_equals#lodepng.c#2334
+readBitsFromReversedStream#lodepng.c#2308
+removePaddingBits#lodepng.c#3782
+addPaddingBits#lodepng.c#4866
+lodepng_load_file#lodepng.c#938
+alloc_string_sized#lodepng.c#888
+string_cleanup#lodepng.c#883
+Adam7_getpassvalues#lodepng.c#3562
+lodepng_crc32#lodepng.c#2293
+getHash#lodepng.c#1745
+countZeros#lodepng.c#1760
+uivector_cleanup#lodepng.c#820
+uivector_resize#lodepng.c#826
+uivector_init#lodepng.c#841
+LodePNGDecoderSettings#lodepng.h#231
+lodepng_default_decompress_settings#lodepng.c#2288
+lodepng_decompress_settings_init#lodepng.c#2279
+LodePNGEncoderSettings#lodepng.h#267
+lodepng_default_compress_settings#lodepng.c#2277
+lodepng_compress_settings_init#lodepng.c#2265
+lodepng_color_stats_init#lodepng.c#3315
+LodePNGColorMode#lodepng.h#114
+checkColorValidity#lodepng.c#2457
+getNumColorChannels#lodepng.c#2470
+LodePNGBitWriter#lodepng.c#956
+ucvector_reserve#lodepng.c#858
+ucvector_init#lodepng.c#876
+LodePNGBitReader_init#lodepng.c#992
+ensureBits9#lodepng.c#1003
+ensureBits17#lodepng.c#1017
+ensureBits25#lodepng.c#1032
+ensureBits32#lodepng.c#1048
+peekBits#lodepng.c#1066
+advanceBits#lodepng.c#1070
+HuffmanTree_init#lodepng.c#1106
+HuffmanTree_cleanup#lodepng.c#1113
+HuffmanTree_makeTable#lodepng.c#1120
+hash_init#lodepng.c#1717
+hash_cleanup#lodepng.c#1736
+updateHashChain#lodepng.c#1769
+color_tree_init#lodepng.c#2849
+color_tree_cleanup#lodepng.c#2854
+color_tree_get#lodepng.c#2864
+BPMLists#lodepng.c#1249
+bpmnode_sort#lodepng.c#1283
+unfilter#lodepng.c#3732
+lodepng_chunk_next#lodepng.c#2373
+lodepng_chunk_next_const#lodepng.c#2386
+lodepng_chunk_append#lodepng.c#2415
+alloc_string#lodepng.c#897
+Adam7_deinterlace#lodepng.c#3747
+Adam7_interlace#lodepng.c#4880
+lodepng_chunk_check_crc#lodepng.c#2359
+lodepng_chunk_generate_crc#lodepng.c#2367
+uivector_push_back#lodepng.c#846
+addLengthDistance#lodepng.c#1689
+lodepng_decoder_settings_init#lodepng.c#4353
+lodepng_encoder_settings_init#lodepng.c#5256
+LodePNGInfo#lodepng.h#162
+lodepng_color_mode_init#lodepng.c#2486
+lodepng_palette_clear#lodepng.c#2547
+lodepng_is_greyscale_type#lodepng.c#2577
+lodepng_is_alpha_type#lodepng.c#2581
+lodepng_is_palette_type#lodepng.c#2585
+lodepng_has_palette_alpha#lodepng.c#2589
+lodepng_color_mode_alloc_palette#lodepng.c#2495
+lodepng_color_mode_equal#lodepng.c#2530
+rgba16ToPixel#lodepng.c#2942
+getPixelColorRGBA8#lodepng.c#2972
+getPixelColorsRGBA8#lodepng.c#3036
+getPixelColorsRGB8#lodepng.c#3124
+getPixelColorRGBA16#lodepng.c#3192
+lodepng_convert_rgb#lodepng.c#3274
+readChunk_tRNS#lodepng.c#3838
+lodepng_get_channels#lodepng.c#2573
+lodepng_get_bpp_lct#lodepng.c#2482
+LodePNGBitWriter_init#lodepng.c#961
+ucvector_resize#lodepng.c#871
+readBits#lodepng.c#1075
+huffmanDecodeSymbol#lodepng.c#1418
+HuffmanTree_makeFromLengths2#lodepng.c#1204
+color_tree_add#lodepng.c#2878
+color_tree_has#lodepng.c#2874
+rgba8ToPixel#lodepng.c#2893
+bpmnode_create#lodepng.c#1260
+lodepng_chunk_find#lodepng.c#2399
+lodepng_chunk_find_const#lodepng.c#2407
+addUnknownChunks#lodepng.c#4966
+encodeLZ77#lodepng.c#1778
+LodePNGState#lodepng.h#280
+lodepng_clear_icc#lodepng.c#2780
+LodePNGUnknownChunks_init#lodepng.c#2629
+LodePNGUnknownChunks_cleanup#lodepng.c#2635
+LodePNGText_init#lodepng.c#2655
+LodePNGText_cleanup#lodepng.c#2661
+lodepng_add_text_sized#lodepng.c#2682
+LodePNGIText_init#lodepng.c#2703
+LodePNGIText_cleanup#lodepng.c#2711
+lodepng_add_itext_sized#lodepng.c#2742
+lodepng_assign_icc#lodepng.c#2764
+readChunk_bKGD#lodepng.c#3858
+readChunk_tIME#lodepng.c#3987
+readChunk_pHYs#lodepng.c#3999
+readChunk_gAMA#lodepng.c#4008
+readChunk_cHRM#lodepng.c#4015
+readChunk_sRGB#lodepng.c#4029
+readChunk_sBIT#lodepng.c#4063
+lodepng_color_mode_make#lodepng.c#2522
+lodepng_color_mode_cleanup#lodepng.c#2507
+lodepng_can_have_alpha#lodepng.c#2597
+lodepng_palette_add#lodepng.c#2553
+readChunk_PLTE#lodepng.c#3820
+lodepng_get_bpp#lodepng.c#2569
+lodepng_get_raw_size_lct#lodepng.c#2601
+writeBits#lodepng.c#966
+writeBitsReversed#lodepng.c#977
+inflateNoCompression#lodepng.c#1612
+deflateNoCompression#lodepng.c#1892
+lodepng_chunk_init#lodepng.c#2430
+writeSignature#lodepng.c#4387
+HuffmanTree_makeFromLengths#lodepng.c#1232
+boundaryPM#lodepng.c#1305
+LodePNGUnknownChunks_copy#lodepng.c#2640
+lodepng_clear_text#lodepng.c#2699
+lodepng_add_text#lodepng.c#2695
+lodepng_info_init#lodepng.c#2788
+lodepng_clear_itext#lodepng.c#2738
+lodepng_add_itext#lodepng.c#2760
+lodepng_set_icc#lodepng.c#2774
+lodepng_color_mode_copy#lodepng.c#2511
+lodepng_info_cleanup#lodepng.c#2810
+lodepng_compute_color_stats#lodepng.c#3333
+lodepng_pixel_overflow#lodepng.c#2616
+postProcessScanlines#lodepng.c#3796
+lodepng_get_raw_size#lodepng.c#2607
+writeLZ77data#lodepng.c#1917
+lodepng_chunk_createv#lodepng.c#2441
+addChunk_IHDR#lodepng.c#4395
+addChunk_PLTE#lodepng.c#4410
+addChunk_tRNS#lodepng.c#4426
+addChunk_tEXt#lodepng.c#4475
+addChunk_bKGD#lodepng.c#4551
+addChunk_tIME#lodepng.c#4573
+addChunk_pHYs#lodepng.c#4587
+addChunk_gAMA#lodepng.c#4597
+addChunk_cHRM#lodepng.c#4605
+addChunk_sBIT#lodepng.c#4648
+generateFixedLitLenTree#lodepng.c#1395
+generateFixedDistanceTree#lodepng.c#1408
+getTreeInflateDynamic#lodepng.c#1439
+lodepng_huffman_code_lengths#lodepng.c#1326
+LodePNGText_copy#lodepng.c#2671
+readChunk_tEXt#lodepng.c#3878
+lodepng_state_init#lodepng.c#4365
+LodePNGIText_copy#lodepng.c#2725
+auto_choose_color#lodepng.c#3495
+lodepng_state_cleanup#lodepng.c#4373
+lodepng_inspect#lodepng.c#3578
+lodepng_color_stats_add#lodepng.c#3481
+lodepng_convert#lodepng.c#3214
+lodepng_chunk_create#lodepng.c#2449
+addChunk_IEND#lodepng.c#4471
+addChunk_sRGB#lodepng.c#4620
+getTreeInflateFixed#lodepng.c#1433
+deflateFixed#lodepng.c#2070
+HuffmanTree_makeFromFrequencies#lodepng.c#1383
+lodepng_info_copy#lodepng.c#2818
+inflateHuffmanBlock#lodepng.c#1533
+deflateDynamic#lodepng.c#1937
+lodepng_state_copy#lodepng.c#4378
+lodepng_inflatev#lodepng.c#1633
+lodepng_deflatev#lodepng.c#2102
+lodepng_inflate#lodepng.c#1653
+inflatev#lodepng.c#1661
+lodepng_deflate#lodepng.c#2133
+lodepng_zlib_decompressv#lodepng.c#2171
+deflate#lodepng.c#2141
+lodepng_zlib_decompress#lodepng.c#2197
+zlib_decompress#lodepng.c#2205
+lodepng_zlib_compress#lodepng.c#2226
+readChunk_zTXt#lodepng.c#3904
+readChunk_iTXt#lodepng.c#3935
+readChunk_iCCP#lodepng.c#4036
+zlib_compress#lodepng.c#2256
+lodepng_inspect_chunk#lodepng.c#4098
+decodeGeneric#lodepng.c#4144
+addChunk_IDAT#lodepng.c#4459
+addChunk_zTXt#lodepng.c#4488
+addChunk_iTXt#lodepng.c#4512
+addChunk_iCCP#lodepng.c#4625
+filter#lodepng.c#4735
+lodepng_decode#lodepng.c#4286
+preProcessScanlines#lodepng.c#4915
+lodepng_decode_memory#lodepng.c#4312
+lodepng_encode#lodepng.c#4986
+lodepng_decode32#lodepng.c#4325
+lodepng_decode24#lodepng.c#4329
+lodepng_decode_file#lodepng.c#4333
+lodepng_encode_memory#lodepng.c#5217
+lodepng_decode32_file#lodepng.c#4345
+lodepng_decode24_file#lodepng.c#4349
+lodepng_encode32#lodepng.c#5231
+lodepng_encode24#lodepng.c#5235
+lodepng_encode_file#lodepng.c#5239
+lodepng_encode32_file#lodepng.c#5248
+lodepng_encode24_file#lodepng.c#5252

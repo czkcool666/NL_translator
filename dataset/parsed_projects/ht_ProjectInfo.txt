@@ -1,0 +1,37 @@
+ht
+├── ht.c
+└── svf_analysis_output
+H_FILE_LIST
+ht.h
+
+SPLIT_TAG
+
+ht#ht.c#367 -> ht_entry#ht.c#362
+ht_entry#ht.c#362
+hti#ht.h#20 -> ht#ht.c#367
+ht_create#ht.c#373 -> ht#ht.c#367, ht_entry#ht.c#362
+ht_destroy#ht.c#388 -> ht_entry#ht.c#362, ht#ht.c#367
+ht_get#ht.c#405 -> ht_entry#ht.c#362, ht#ht.c#367, hash_key#ht.c#396
+ht_set#ht.c#466 -> ht_set_entry#ht.c#420, ht#ht.c#367, ht_expand#ht.c#445
+ht_length#ht.c#479 -> ht#ht.c#367
+ht_iterator#ht.c#483 -> hti#ht.h#20, ht#ht.c#367
+ht_next#ht.c#490 -> ht#ht.c#367, ht_entry#ht.c#362, hti#ht.h#20
+hash_key#ht.c#396
+ht_set_entry#ht.c#420 -> hash_key#ht.c#396, ht_entry#ht.c#362, ht#ht.c#367
+ht_expand#ht.c#445 -> ht_entry#ht.c#362, ht#ht.c#367, ht_set_entry#ht.c#420
+
+SPLIT_TAG
+
+hash_key#ht.c#396
+ht_entry#ht.c#362
+ht#ht.c#367
+hti#ht.h#20
+ht_create#ht.c#373
+ht_destroy#ht.c#388
+ht_get#ht.c#405
+ht_length#ht.c#479
+ht_set_entry#ht.c#420
+ht_iterator#ht.c#483
+ht_next#ht.c#490
+ht_expand#ht.c#445
+ht_set#ht.c#466

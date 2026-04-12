@@ -1,0 +1,35 @@
+avl
+├── avl.c [Contain *main* Function]
+└── svf_analysis_output
+H_FILE_LIST
+
+
+SPLIT_TAG
+
+Node#avl.c#417
+max#avl.c#431 -> Node#avl.c#417, height#avl.c#426
+height#avl.c#426 -> Node#avl.c#417
+newNode#avl.c#435 -> Node#avl.c#417
+rightRotate#avl.c#444 -> height#avl.c#426, Node#avl.c#417, max#avl.c#431
+leftRotate#avl.c#454 -> Node#avl.c#417, height#avl.c#426, max#avl.c#431
+getBalance#avl.c#464 -> Node#avl.c#417, height#avl.c#426
+insert#avl.c#469 -> height#avl.c#426, getBalance#avl.c#464, max#avl.c#431, Node#avl.c#417, rightRotate#avl.c#444, leftRotate#avl.c#454, newNode#avl.c#435
+minValueNode#avl.c#489 -> Node#avl.c#417
+deleteNode#avl.c#495 -> height#avl.c#426, leftRotate#avl.c#454, getBalance#avl.c#464, rightRotate#avl.c#444, minValueNode#avl.c#489, max#avl.c#431, Node#avl.c#417
+preOrder#avl.c#531 -> Node#avl.c#417
+main#avl.c#539 -> deleteNode#avl.c#495, preOrder#avl.c#531, insert#avl.c#469, Node#avl.c#417
+
+SPLIT_TAG
+
+Node#avl.c#417
+height#avl.c#426
+newNode#avl.c#435
+minValueNode#avl.c#489
+preOrder#avl.c#531
+max#avl.c#431
+getBalance#avl.c#464
+rightRotate#avl.c#444
+leftRotate#avl.c#454
+insert#avl.c#469
+deleteNode#avl.c#495
+main#avl.c#539

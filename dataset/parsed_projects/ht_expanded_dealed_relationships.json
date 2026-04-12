@@ -1,0 +1,744 @@
+[
+  {
+    "source": "ht_8c_1a65f585d9f589b762669b51ba8b390426",
+    "target": "ht_8c_1a57b8df4484e05cf13f92e11ab8f88e23",
+    "source_unique_name": "ht_set#ht.c#466",
+    "target_unique_name": "__assert_fail#assert.h#31",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a96d63a56835c80ae953c50eaac0b8483",
+    "target": "ht_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "wcstombs#stdlib.h#314",
+    "target_unique_name": "size_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a67f3288c3cd64de8d38ebc03618720ce",
+    "target": "ht_8c_1ad81dd3c6092f614cc96a1bb25914e653",
+    "source_unique_name": "__int_least32_t#types.h#69",
+    "target_unique_name": "__int32_t#types.h#53",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1ae4d3dafe950d7e5258802f4571dae6c5",
+    "target": "ht_8c_1afb8699abb1f51d920a176e695ff3be8a",
+    "source_unique_name": "ht_create#ht.c#373",
+    "target_unique_name": "free#stdlib.h#274",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a1678a426d76a145fc8372a8bbf9d4b62",
+    "target": "ht_8c_1afb8699abb1f51d920a176e695ff3be8a",
+    "source_unique_name": "ht_destroy#ht.c#388",
+    "target_unique_name": "free#stdlib.h#274",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a7868b403fda2fe99a5ae1201b978425f",
+    "target": "ht_8c_1afb8699abb1f51d920a176e695ff3be8a",
+    "source_unique_name": "ht_expand#ht.c#445",
+    "target_unique_name": "free#stdlib.h#274",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1ae4d3dafe950d7e5258802f4571dae6c5",
+    "target": "ht_8c_1ae91b3dc6530d8a443eb7f01137f5aeff",
+    "source_unique_name": "ht_create#ht.c#373",
+    "target_unique_name": "malloc#stdlib.h#268",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a8bfd0b580c26043993a5758b9950386b",
+    "target": "ht_8c_1a747748dd98cf1e2e89eb8b1fa37113df",
+    "source_unique_name": "ht_get#ht.c#405",
+    "target_unique_name": "uint64_t#stdint-uintn.h#175",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a7868b403fda2fe99a5ae1201b978425f",
+    "target": "structht__entry#structht__entry_1af856485a6afe14c21d1ad79291274940#structht__entry_1ae552d0e6c3243eb8eeccc944c0c4dbdf",
+    "source_unique_name": "ht_expand#ht.c#445",
+    "target_unique_name": "ht_entry#ht.c#362",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a96de12e6a4884c21d9583757bd2c6c07",
+    "target": "ht_8c_1ab7d5961034ac12b88541de598ba984d7",
+    "source_unique_name": "uint_least16_t#stdint.h#187",
+    "target_unique_name": "__uint_least16_t#types.h#67",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a7868b403fda2fe99a5ae1201b978425f",
+    "target": "structht#structht_1ad23eaf0bd1771a5525c24ce824d6e948#structht_1add19a213a628f3d97caf3bedc703b50b#structht_1a1ba86e910ea0dc225fe41ac49454dbf7#ht_8c_1a0776ba755fd28e911e77152a2c78911b",
+    "source_unique_name": "ht_expand#ht.c#445",
+    "target_unique_name": "ht#ht.c#367",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1afd4bf2faec43342e7ad3d2ab37bac1fe",
+    "target": "ht_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "qsort#stdlib.h#292",
+    "target_unique_name": "size_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a1678a426d76a145fc8372a8bbf9d4b62",
+    "target": "structht__entry#structht__entry_1af856485a6afe14c21d1ad79291274940#structht__entry_1ae552d0e6c3243eb8eeccc944c0c4dbdf",
+    "source_unique_name": "ht_destroy#ht.c#388",
+    "target_unique_name": "ht_entry#ht.c#362",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1ae1aaee71cf6ce8eb7ce0a17788df791e",
+    "target": "ht_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "strspn#string.h#348",
+    "target_unique_name": "size_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a2a3c2e9ef2d275dd8caaad644163ad51",
+    "target": "structht#structht_1ad23eaf0bd1771a5525c24ce824d6e948#structht_1add19a213a628f3d97caf3bedc703b50b#structht_1a1ba86e910ea0dc225fe41ac49454dbf7#ht_8c_1a0776ba755fd28e911e77152a2c78911b",
+    "source_unique_name": "strcmp#string.h#334",
+    "target_unique_name": "ht#ht.c#367",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1aa9c3031ce6f50d5c2127107c998b3b6c",
+    "target": "ht_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "memmove#string.h#318",
+    "target_unique_name": "size_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "structhti#structhti_1afbc37e17371af5594acdfbaa58594d7f#structhti_1a33bb9084634d02cadb035b876437a22f#structhti_1a13420fe2871fa81143acfffc7722eafa#structhti_1a54510e96a00f3e39853138edb10d0742",
+    "target": "structht#structht_1ad23eaf0bd1771a5525c24ce824d6e948#structht_1add19a213a628f3d97caf3bedc703b50b#structht_1a1ba86e910ea0dc225fe41ac49454dbf7#ht_8c_1a0776ba755fd28e911e77152a2c78911b",
+    "source_unique_name": "hti#ht.h#20",
+    "target_unique_name": "ht#ht.c#367",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a1ae8b6e10bab08bc6e3ee6cc91f33fd5",
+    "target": "ht_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "ht_length#ht.c#479",
+    "target_unique_name": "size_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1afd4bf2faec43342e7ad3d2ab37bac1fe",
+    "target": "ht_8c_1a35e28bfcc8d641e0eebd66f4dc559a3f",
+    "source_unique_name": "qsort#stdlib.h#292",
+    "target_unique_name": "__compar_fn_t#stdlib.h#288",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a80a3b5e487d44b9dbf24d778b3f2c3a3",
+    "target": "ht_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "realloc#stdlib.h#272",
+    "target_unique_name": "size_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "structhti#structhti_1afbc37e17371af5594acdfbaa58594d7f#structhti_1a33bb9084634d02cadb035b876437a22f#structhti_1a13420fe2871fa81143acfffc7722eafa#structhti_1a54510e96a00f3e39853138edb10d0742",
+    "target": "ht_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "hti#ht.h#20",
+    "target_unique_name": "size_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a8bfd0b580c26043993a5758b9950386b",
+    "target": "structht__entry#structht__entry_1af856485a6afe14c21d1ad79291274940#structht__entry_1ae552d0e6c3243eb8eeccc944c0c4dbdf",
+    "source_unique_name": "ht_get#ht.c#405",
+    "target_unique_name": "ht_entry#ht.c#362",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a962256f0ccb26adfecb13c6170ee4b72",
+    "target": "ht_8c_1ad354a21de2c1a620441cb09b93f96031",
+    "source_unique_name": "__int_least8_t#types.h#61",
+    "target_unique_name": "__int8_t#types.h#45",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a06ffba8acf5d133104191f183e67ac8c",
+    "target": "ht_8c_1ad354a21de2c1a620441cb09b93f96031",
+    "source_unique_name": "int8_t#stdint-intn.h#161",
+    "target_unique_name": "__int8_t#types.h#45",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1ad7ce08c05c71c0248169fb99e5b62b55",
+    "target": "ht_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "strcspn#string.h#346",
+    "target_unique_name": "size_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1aad4ab11e10d4c4dd3308c457ecdee73d",
+    "target": "structht#structht_1ad23eaf0bd1771a5525c24ce824d6e948#structht_1add19a213a628f3d97caf3bedc703b50b#structht_1a1ba86e910ea0dc225fe41ac49454dbf7#ht_8c_1a0776ba755fd28e911e77152a2c78911b",
+    "source_unique_name": "ht_next#ht.c#490",
+    "target_unique_name": "ht#ht.c#367",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a8bfd0b580c26043993a5758b9950386b",
+    "target": "structht#structht_1ad23eaf0bd1771a5525c24ce824d6e948#structht_1add19a213a628f3d97caf3bedc703b50b#structht_1a1ba86e910ea0dc225fe41ac49454dbf7#ht_8c_1a0776ba755fd28e911e77152a2c78911b",
+    "source_unique_name": "ht_get#ht.c#405",
+    "target_unique_name": "ht#ht.c#367",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1aad4ab11e10d4c4dd3308c457ecdee73d",
+    "target": "structht__entry#structht__entry_1af856485a6afe14c21d1ad79291274940#structht__entry_1ae552d0e6c3243eb8eeccc944c0c4dbdf",
+    "source_unique_name": "ht_next#ht.c#490",
+    "target_unique_name": "ht_entry#ht.c#362",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a43f6ed0954420f75d09c06224a53c228",
+    "target": "ht_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "mbtowc#stdlib.h#308",
+    "target_unique_name": "size_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a944b71e747174d578ffd3ed0a0cfba8e",
+    "target": "ht_8c_1a9c277a3fd853029cc853c877bcd32e8e",
+    "source_unique_name": "mbstowcs#stdlib.h#312",
+    "target_unique_name": "wchar_t#stddef.h#6",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a43f6ed0954420f75d09c06224a53c228",
+    "target": "ht_8c_1a9c277a3fd853029cc853c877bcd32e8e",
+    "source_unique_name": "mbtowc#stdlib.h#308",
+    "target_unique_name": "wchar_t#stddef.h#6",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a69efa8aadf058a4ae207529c1e7b9c9d",
+    "target": "ht_8c_1a8c4b70b5451d9f70268f9215b0f1477a",
+    "source_unique_name": "uint_least64_t#stdint.h#191",
+    "target_unique_name": "__uint_least64_t#types.h#75",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a78647033129748856cb0c24eedf33e63",
+    "target": "ht_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "memset#string.h#320",
+    "target_unique_name": "size_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1ab61aaacec4d6edd141448bc5f0eb620f",
+    "target": "structhti#structhti_1afbc37e17371af5594acdfbaa58594d7f#structhti_1a33bb9084634d02cadb035b876437a22f#structhti_1a13420fe2871fa81143acfffc7722eafa#structhti_1a54510e96a00f3e39853138edb10d0742",
+    "source_unique_name": "ht_iterator#ht.c#483",
+    "target_unique_name": "hti#ht.h#20",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a65f585d9f589b762669b51ba8b390426",
+    "target": "ht_8c_1aad3eb8cd71646f9600cccdebbcef2bfd",
+    "source_unique_name": "ht_set#ht.c#466",
+    "target_unique_name": "ht_set_entry#ht.c#420",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1aad3eb8cd71646f9600cccdebbcef2bfd",
+    "target": "ht_8c_1a747748dd98cf1e2e89eb8b1fa37113df",
+    "source_unique_name": "ht_set_entry#ht.c#420",
+    "target_unique_name": "uint64_t#stdint-uintn.h#175",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a0238af00180b6d9278fa1c6aa790fdf4",
+    "target": "ht_8c_1acaa96aed3d7fddac490800f166c2af02",
+    "source_unique_name": "uint32_t#stdint-uintn.h#173",
+    "target_unique_name": "__uint32_t#types.h#55",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a96411d49619f50e635418ee57651b95d",
+    "target": "ht_8c_1aeb10a021f8f3b5aaae942fe6b104abb2",
+    "source_unique_name": "int64_t#stdint-intn.h#167",
+    "target_unique_name": "__int64_t#types.h#57",
+    "type": "reference"
+  },
+  {
+    "source": "structht#structht_1ad23eaf0bd1771a5525c24ce824d6e948#structht_1add19a213a628f3d97caf3bedc703b50b#structht_1a1ba86e910ea0dc225fe41ac49454dbf7#ht_8c_1a0776ba755fd28e911e77152a2c78911b",
+    "target": "structht__entry#structht__entry_1af856485a6afe14c21d1ad79291274940#structht__entry_1ae552d0e6c3243eb8eeccc944c0c4dbdf",
+    "source_unique_name": "ht#ht.c#367",
+    "target_unique_name": "ht_entry#ht.c#362",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a18de3043b15b8aa305d9b5b2a682bb40",
+    "target": "ht_8c_1aeb10a021f8f3b5aaae942fe6b104abb2",
+    "source_unique_name": "__int_least64_t#types.h#73",
+    "target_unique_name": "__int64_t#types.h#57",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a7fe2ca557d8fe15b727d7e51da91a59c",
+    "target": "ht_8c_1a05fb5910f0f0ab105e734bf69ddfdb83",
+    "source_unique_name": "intmax_t#stdint.h#213",
+    "target_unique_name": "__intmax_t#types.h#81",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1aadd2e1a74f39deac5ca4747995d7b866",
+    "target": "structht#structht_1ad23eaf0bd1771a5525c24ce824d6e948#structht_1add19a213a628f3d97caf3bedc703b50b#structht_1a1ba86e910ea0dc225fe41ac49454dbf7#ht_8c_1a0776ba755fd28e911e77152a2c78911b",
+    "source_unique_name": "calloc#stdlib.h#270",
+    "target_unique_name": "ht#ht.c#367",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a216ba12163dfecf647733f723fa2b3ad",
+    "target": "structlldiv__t#structlldiv__t_1aa2c189bf2a4ebe0f680463e4ce32b72f#structlldiv__t_1adc99c61028a27673c373ab2815f90a79",
+    "source_unique_name": "lldiv#stdlib.h#304",
+    "target_unique_name": "lldiv_t#stdlib.h#235",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a65f585d9f589b762669b51ba8b390426",
+    "target": "structht#structht_1ad23eaf0bd1771a5525c24ce824d6e948#structht_1add19a213a628f3d97caf3bedc703b50b#structht_1a1ba86e910ea0dc225fe41ac49454dbf7#ht_8c_1a0776ba755fd28e911e77152a2c78911b",
+    "source_unique_name": "ht_set#ht.c#466",
+    "target_unique_name": "ht#ht.c#367",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1ae4d3dafe950d7e5258802f4571dae6c5",
+    "target": "structht#structht_1ad23eaf0bd1771a5525c24ce824d6e948#structht_1add19a213a628f3d97caf3bedc703b50b#structht_1a1ba86e910ea0dc225fe41ac49454dbf7#ht_8c_1a0776ba755fd28e911e77152a2c78911b",
+    "source_unique_name": "ht_create#ht.c#373",
+    "target_unique_name": "ht#ht.c#367",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a1678a426d76a145fc8372a8bbf9d4b62",
+    "target": "structht#structht_1ad23eaf0bd1771a5525c24ce824d6e948#structht_1add19a213a628f3d97caf3bedc703b50b#structht_1a1ba86e910ea0dc225fe41ac49454dbf7#ht_8c_1a0776ba755fd28e911e77152a2c78911b",
+    "source_unique_name": "ht_destroy#ht.c#388",
+    "target_unique_name": "ht#ht.c#367",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1aadd2e1a74f39deac5ca4747995d7b866",
+    "target": "ht_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "calloc#stdlib.h#270",
+    "target_unique_name": "size_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a63b5595dcccc6b7edfdc3463d6b173a2",
+    "target": "ht_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "memchr#string.h#324",
+    "target_unique_name": "size_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a65f585d9f589b762669b51ba8b390426",
+    "target": "ht_8c_1a7868b403fda2fe99a5ae1201b978425f",
+    "source_unique_name": "ht_set#ht.c#466",
+    "target_unique_name": "ht_expand#ht.c#445",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a8bfd0b580c26043993a5758b9950386b",
+    "target": "ht_8c_1a8f2fb093008e0ce0f0d34578b1e62000",
+    "source_unique_name": "ht_get#ht.c#405",
+    "target_unique_name": "hash_key#ht.c#396",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1afb8699abb1f51d920a176e695ff3be8a",
+    "target": "structht__entry#structht__entry_1af856485a6afe14c21d1ad79291274940#structht__entry_1ae552d0e6c3243eb8eeccc944c0c4dbdf",
+    "source_unique_name": "free#stdlib.h#274",
+    "target_unique_name": "ht_entry#ht.c#362",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a8dfcdf0f629261c1e7e032535fd5d21a",
+    "target": "ht_8c_1a25875528640a3eee1a026956baa82249",
+    "source_unique_name": "__uint_least8_t#types.h#63",
+    "target_unique_name": "__uint8_t#types.h#47",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1afb8699abb1f51d920a176e695ff3be8a",
+    "target": "structht#structht_1ad23eaf0bd1771a5525c24ce824d6e948#structht_1add19a213a628f3d97caf3bedc703b50b#structht_1a1ba86e910ea0dc225fe41ac49454dbf7#ht_8c_1a0776ba755fd28e911e77152a2c78911b",
+    "source_unique_name": "free#stdlib.h#274",
+    "target_unique_name": "ht#ht.c#367",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1ae91b3dc6530d8a443eb7f01137f5aeff",
+    "target": "ht_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "malloc#stdlib.h#268",
+    "target_unique_name": "size_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a281b4b5562236420969a830503b0ba19",
+    "target": "ht_8c_1ae191cf54b09af0e7f674cb7c599167e9",
+    "source_unique_name": "uint16_t#stdint-uintn.h#171",
+    "target_unique_name": "__uint16_t#types.h#51",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a85c9c930cb2a5b658f98f2d2710d341d",
+    "target": "ht_8c_1a962256f0ccb26adfecb13c6170ee4b72",
+    "source_unique_name": "int_least8_t#stdint.h#177",
+    "target_unique_name": "__int_least8_t#types.h#61",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a3542c6a0490e65fc4fc407273126e64f",
+    "target": "ht_8c_1a91332b87f3597b3ecb7ad353bcda944c",
+    "source_unique_name": "int16_t#stdint-intn.h#163",
+    "target_unique_name": "__int16_t#types.h#49",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a1fe45496d82bd1392bbce69da26b893b",
+    "target": "structdiv__t#structdiv__t_1a0b9dda2884048daa68ca4aaa12b17b9a#structdiv__t_1ac64389de252de53eda8b4f8dbb7c623f",
+    "source_unique_name": "div#stdlib.h#300",
+    "target_unique_name": "div_t#stdlib.h#225",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1acd5bbbd9a050088e4eaa774a2e8cd03b",
+    "target": "ht_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "strxfrm#string.h#340",
+    "target_unique_name": "size_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a8f2fb093008e0ce0f0d34578b1e62000",
+    "target": "ht_8c_1a747748dd98cf1e2e89eb8b1fa37113df",
+    "source_unique_name": "hash_key#ht.c#396",
+    "target_unique_name": "uint64_t#stdint-uintn.h#175",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1aad3eb8cd71646f9600cccdebbcef2bfd",
+    "target": "ht_8c_1a2a3c2e9ef2d275dd8caaad644163ad51",
+    "source_unique_name": "ht_set_entry#ht.c#420",
+    "target_unique_name": "strcmp#string.h#334",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a33debf6d647ea353b11a1ac95ae55f6b",
+    "target": "ht_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "bsearch#stdlib.h#290",
+    "target_unique_name": "size_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1aad3eb8cd71646f9600cccdebbcef2bfd",
+    "target": "ht_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "ht_set_entry#ht.c#420",
+    "target_unique_name": "size_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a0d86e7cff98afe51af86ef1fe7e3e74c",
+    "target": "ht_8c_1acaa96aed3d7fddac490800f166c2af02",
+    "source_unique_name": "__uint_least32_t#types.h#71",
+    "target_unique_name": "__uint32_t#types.h#55",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a7868b403fda2fe99a5ae1201b978425f",
+    "target": "ht_8c_1aadd2e1a74f39deac5ca4747995d7b866",
+    "source_unique_name": "ht_expand#ht.c#445",
+    "target_unique_name": "calloc#stdlib.h#270",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a7868b403fda2fe99a5ae1201b978425f",
+    "target": "ht_8c_1aad3eb8cd71646f9600cccdebbcef2bfd",
+    "source_unique_name": "ht_expand#ht.c#445",
+    "target_unique_name": "ht_set_entry#ht.c#420",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1ab61aaacec4d6edd141448bc5f0eb620f",
+    "target": "structht#structht_1ad23eaf0bd1771a5525c24ce824d6e948#structht_1add19a213a628f3d97caf3bedc703b50b#structht_1a1ba86e910ea0dc225fe41ac49454dbf7#ht_8c_1a0776ba755fd28e911e77152a2c78911b",
+    "source_unique_name": "ht_iterator#ht.c#483",
+    "target_unique_name": "ht#ht.c#367",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a96d63a56835c80ae953c50eaac0b8483",
+    "target": "ht_8c_1a9c277a3fd853029cc853c877bcd32e8e",
+    "source_unique_name": "wcstombs#stdlib.h#314",
+    "target_unique_name": "wchar_t#stddef.h#6",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a747748dd98cf1e2e89eb8b1fa37113df",
+    "target": "ht_8c_1ada0d1deb69253bd55d01fa22cce9f19d",
+    "source_unique_name": "uint64_t#stdint-uintn.h#175",
+    "target_unique_name": "__uint64_t#types.h#59",
+    "type": "reference"
+  },
+  {
+    "source": "structht#structht_1ad23eaf0bd1771a5525c24ce824d6e948#structht_1add19a213a628f3d97caf3bedc703b50b#structht_1a1ba86e910ea0dc225fe41ac49454dbf7#ht_8c_1a0776ba755fd28e911e77152a2c78911b",
+    "target": "ht_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "ht#ht.c#367",
+    "target_unique_name": "size_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a2aff71146ab4942b2b38860c749c4074",
+    "target": "ht_8c_1a25875528640a3eee1a026956baa82249",
+    "source_unique_name": "uint8_t#stdint-uintn.h#169",
+    "target_unique_name": "__uint8_t#types.h#47",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a8bfd0b580c26043993a5758b9950386b",
+    "target": "ht_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "ht_get#ht.c#405",
+    "target_unique_name": "size_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a196a42e0974275e188e1976d1fd2981e",
+    "target": "ht_8c_1a91332b87f3597b3ecb7ad353bcda944c",
+    "source_unique_name": "__int_least16_t#types.h#65",
+    "target_unique_name": "__int16_t#types.h#49",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a5e8ae12e36d4d30190dc1e3458c2252c",
+    "target": "ht_8c_1a6b3286e280e2efb86915de290c64736e",
+    "source_unique_name": "uintmax_t#stdint.h#215",
+    "target_unique_name": "__uintmax_t#types.h#83",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1aad4ab11e10d4c4dd3308c457ecdee73d",
+    "target": "structhti#structhti_1afbc37e17371af5594acdfbaa58594d7f#structhti_1a33bb9084634d02cadb035b876437a22f#structhti_1a13420fe2871fa81143acfffc7722eafa#structhti_1a54510e96a00f3e39853138edb10d0742",
+    "source_unique_name": "ht_next#ht.c#490",
+    "target_unique_name": "hti#ht.h#20",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1ae4d3dafe950d7e5258802f4571dae6c5",
+    "target": "structht__entry#structht__entry_1af856485a6afe14c21d1ad79291274940#structht__entry_1ae552d0e6c3243eb8eeccc944c0c4dbdf",
+    "source_unique_name": "ht_create#ht.c#373",
+    "target_unique_name": "ht_entry#ht.c#362",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1aad3eb8cd71646f9600cccdebbcef2bfd",
+    "target": "ht_8c_1a8f2fb093008e0ce0f0d34578b1e62000",
+    "source_unique_name": "ht_set_entry#ht.c#420",
+    "target_unique_name": "hash_key#ht.c#396",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a566ba00edaa860ed55d9b523435da61f",
+    "target": "ht_8c_1a18de3043b15b8aa305d9b5b2a682bb40",
+    "source_unique_name": "int_least64_t#stdint.h#183",
+    "target_unique_name": "__int_least64_t#types.h#73",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a64b5e67a497c69d9bd73b675d62d1ac3",
+    "target": "ht_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "strncmp#string.h#336",
+    "target_unique_name": "size_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a944b71e747174d578ffd3ed0a0cfba8e",
+    "target": "ht_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "mbstowcs#stdlib.h#312",
+    "target_unique_name": "size_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1aa95a56cf5cf0dfa3fbc7e7efa6dc9831",
+    "target": "ht_8c_1a9c277a3fd853029cc853c877bcd32e8e",
+    "source_unique_name": "wctomb#stdlib.h#310",
+    "target_unique_name": "wchar_t#stddef.h#6",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1aadd2e1a74f39deac5ca4747995d7b866",
+    "target": "structht__entry#structht__entry_1af856485a6afe14c21d1ad79291274940#structht__entry_1ae552d0e6c3243eb8eeccc944c0c4dbdf",
+    "source_unique_name": "calloc#stdlib.h#270",
+    "target_unique_name": "ht_entry#ht.c#362",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1ae9ef27456f65643c7f70491925950c26",
+    "target": "ht_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "strncpy#string.h#328",
+    "target_unique_name": "size_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1ab7d5961034ac12b88541de598ba984d7",
+    "target": "ht_8c_1ae191cf54b09af0e7f674cb7c599167e9",
+    "source_unique_name": "__uint_least16_t#types.h#67",
+    "target_unique_name": "__uint16_t#types.h#51",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1acd4a13e01187e4e81211cf55743ba4f5",
+    "target": "ht_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "__ctype_get_mb_cur_max#stdlib.h#240",
+    "target_unique_name": "size_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a6f6221103820f185abcc62b874665a93",
+    "target": "ht_8c_1ad81dd3c6092f614cc96a1bb25914e653",
+    "source_unique_name": "int32_t#stdint-intn.h#165",
+    "target_unique_name": "__int32_t#types.h#53",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1ad018b90d664a268b5b93f00dcb1d074a",
+    "target": "ht_8c_1a8dfcdf0f629261c1e7e032535fd5d21a",
+    "source_unique_name": "uint_least8_t#stdint.h#185",
+    "target_unique_name": "__uint_least8_t#types.h#63",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a515c764d6fb47681a262672873a5fd5b",
+    "target": "ht_8c_1a67f3288c3cd64de8d38ebc03618720ce",
+    "source_unique_name": "int_least32_t#stdint.h#181",
+    "target_unique_name": "__int_least32_t#types.h#69",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1ae91b3dc6530d8a443eb7f01137f5aeff",
+    "target": "structht#structht_1ad23eaf0bd1771a5525c24ce824d6e948#structht_1add19a213a628f3d97caf3bedc703b50b#structht_1a1ba86e910ea0dc225fe41ac49454dbf7#ht_8c_1a0776ba755fd28e911e77152a2c78911b",
+    "source_unique_name": "malloc#stdlib.h#268",
+    "target_unique_name": "ht#ht.c#367",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a2a3c2e9ef2d275dd8caaad644163ad51",
+    "target": "structht__entry#structht__entry_1af856485a6afe14c21d1ad79291274940#structht__entry_1ae552d0e6c3243eb8eeccc944c0c4dbdf",
+    "source_unique_name": "strcmp#string.h#334",
+    "target_unique_name": "ht_entry#ht.c#362",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1aea092f6d290537d549ca766819e68632",
+    "target": "ht_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "strlen#string.h#358",
+    "target_unique_name": "size_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a39c7b3743fd8e5b00e8e112f6928ab53",
+    "target": "ht_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "memcpy#string.h#316",
+    "target_unique_name": "size_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a8c4b70b5451d9f70268f9215b0f1477a",
+    "target": "ht_8c_1ada0d1deb69253bd55d01fa22cce9f19d",
+    "source_unique_name": "__uint_least64_t#types.h#75",
+    "target_unique_name": "__uint64_t#types.h#59",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a8bfd0b580c26043993a5758b9950386b",
+    "target": "ht_8c_1a2a3c2e9ef2d275dd8caaad644163ad51",
+    "source_unique_name": "ht_get#ht.c#405",
+    "target_unique_name": "strcmp#string.h#334",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1ac26f7d77fcb3a65493f38bdd34475a99",
+    "target": "ht_8c_1a196a42e0974275e188e1976d1fd2981e",
+    "source_unique_name": "int_least16_t#stdint.h#179",
+    "target_unique_name": "__int_least16_t#types.h#65",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a13c06cb9050d1bccdf42e891814fb17a",
+    "target": "ht_8c_1aca82290b875f93eb9451679fc04b0c9d",
+    "source_unique_name": "__loff_t#types.h#151",
+    "target_unique_name": "__off64_t#types.h#101",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a1dcbc7b06e2d1540b8a1e022445fecb7",
+    "target": "structldiv__t#structldiv__t_1ac56cf5939abb521a3a0c48f422b72271#structldiv__t_1a66737a893b8872671393a49aaf568cb1",
+    "source_unique_name": "ldiv#stdlib.h#302",
+    "target_unique_name": "ldiv_t#stdlib.h#230",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1aad3eb8cd71646f9600cccdebbcef2bfd",
+    "target": "structht__entry#structht__entry_1af856485a6afe14c21d1ad79291274940#structht__entry_1ae552d0e6c3243eb8eeccc944c0c4dbdf",
+    "source_unique_name": "ht_set_entry#ht.c#420",
+    "target_unique_name": "ht_entry#ht.c#362",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1ae4d3dafe950d7e5258802f4571dae6c5",
+    "target": "ht_8c_1aadd2e1a74f39deac5ca4747995d7b866",
+    "source_unique_name": "ht_create#ht.c#373",
+    "target_unique_name": "calloc#stdlib.h#270",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1ac4e2fef29af2d614428279a9e859b484",
+    "target": "ht_8c_1a0d86e7cff98afe51af86ef1fe7e3e74c",
+    "source_unique_name": "uint_least32_t#stdint.h#189",
+    "target_unique_name": "__uint_least32_t#types.h#71",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a33debf6d647ea353b11a1ac95ae55f6b",
+    "target": "ht_8c_1a35e28bfcc8d641e0eebd66f4dc559a3f",
+    "source_unique_name": "bsearch#stdlib.h#290",
+    "target_unique_name": "__compar_fn_t#stdlib.h#288",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1aad3eb8cd71646f9600cccdebbcef2bfd",
+    "target": "structht#structht_1ad23eaf0bd1771a5525c24ce824d6e948#structht_1add19a213a628f3d97caf3bedc703b50b#structht_1a1ba86e910ea0dc225fe41ac49454dbf7#ht_8c_1a0776ba755fd28e911e77152a2c78911b",
+    "source_unique_name": "ht_set_entry#ht.c#420",
+    "target_unique_name": "ht#ht.c#367",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a052e725c916c5f7c8f176b23c7cd632a",
+    "target": "ht_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "mblen#stdlib.h#306",
+    "target_unique_name": "size_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1ada1021d5744a593bf7cf57366d564951",
+    "target": "ht_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "strncat#string.h#332",
+    "target_unique_name": "size_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1a1ae8b6e10bab08bc6e3ee6cc91f33fd5",
+    "target": "structht#structht_1ad23eaf0bd1771a5525c24ce824d6e948#structht_1add19a213a628f3d97caf3bedc703b50b#structht_1a1ba86e910ea0dc225fe41ac49454dbf7#ht_8c_1a0776ba755fd28e911e77152a2c78911b",
+    "source_unique_name": "ht_length#ht.c#479",
+    "target_unique_name": "ht#ht.c#367",
+    "type": "reference"
+  },
+  {
+    "source": "ht_8c_1aa7ab42964c5300bb7145068513d46adf",
+    "target": "ht_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "memcmp#string.h#322",
+    "target_unique_name": "size_t#stddef.h#4",
+    "type": "reference"
+  }
+]

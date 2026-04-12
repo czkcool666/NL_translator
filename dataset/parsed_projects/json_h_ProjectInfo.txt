@@ -1,0 +1,130 @@
+json_h
+├── svf_analysis_output
+└── test_json.c [Contain *main* Function]
+H_FILE_LIST
+json.h
+
+SPLIT_TAG
+
+json_array_element_s#json.h#430 -> json_value_s#json.h#440
+json_array_s#json.h#435 -> json_array_element_s#json.h#430
+json_extract_result_s#json.h#1742
+json_extract_state_s#json.h#1825
+json_number_s#json.h#414
+json_object_element_s#json.h#419 -> json_string_s#json.h#402, json_value_s#json.h#440
+json_object_s#json.h#425 -> json_object_element_s#json.h#419
+json_parse_result_s#json.h#455
+json_parse_state_s#json.h#636
+json_string_ex_s#json.h#407 -> json_string_s#json.h#402
+json_string_s#json.h#402
+json_value_ex_s#json.h#445 -> json_value_s#json.h#440
+json_value_s#json.h#440
+json_parse_flags_e#json.h#370
+json_type_e#json.h#399
+json_parse_error_e#json.h#452
+json_parse#json.h#1738 -> json_value_s#json.h#440, json_parse_flags_e#json.h#370, json_parse_ex#json.h#1662
+json_extract_value#json.h#1747 -> json_value_s#json.h#440, json_array_s#json.h#435, json_extract_value_ex#json.h#1913, json_number_s#json.h#414, json_type_e#json.h#399, json_string_s#json.h#402, json_object_s#json.h#425, json_object_element_s#json.h#419, json_array_element_s#json.h#430, json_extract_result_s#json.h#1742
+json_extract_value_ex#json.h#1913 -> json_extract_result_s#json.h#1742, json_extract_state_s#json.h#1825, json_extract_value#json.h#1747, json_extract_copy_value#json.h#1832, json_value_s#json.h#440
+json_write_minified#json.h#2345 -> json_write_minified_get_value_size#json.h#2108, json_write_minified_value#json.h#2319, json_object_element_s#json.h#419, json_value_s#json.h#440
+json_write_pretty#json.h#2559 -> json_object_element_s#json.h#419, json_write_pretty_get_value_size#json.h#2424, json_value_s#json.h#440, json_write_pretty_value#json.h#2533
+json_value_as_string#json.h#1934 -> json_type_e#json.h#399, json_string_s#json.h#402, json_value_s#json.h#440
+json_value_as_number#json.h#1941 -> json_type_e#json.h#399, json_value_s#json.h#440, json_number_s#json.h#414
+json_value_as_object#json.h#1948 -> json_type_e#json.h#399, json_value_s#json.h#440, json_object_s#json.h#425
+json_value_as_array#json.h#1955 -> json_array_s#json.h#435, json_value_s#json.h#440, json_type_e#json.h#399
+json_value_is_true#json.h#1962 -> json_value_s#json.h#440, json_type_e#json.h#399
+json_value_is_false#json.h#1966 -> json_value_s#json.h#440, json_type_e#json.h#399
+json_value_is_null#json.h#1970 -> json_type_e#json.h#399, json_value_s#json.h#440
+json_hexadecimal_digit#json.h#652
+json_hexadecimal_value#json.h#667 -> json_hexadecimal_digit#json.h#652
+json_skip_whitespace#json.h#687 -> json_parse_state_s#json.h#636
+json_skip_c_style_comments#json.h#715 -> json_parse_state_s#json.h#636
+json_skip_all_skippables#json.h#755 -> json_skip_c_style_comments#json.h#715, json_parse_flags_e#json.h#370, json_parse_error_e#json.h#452, json_parse_state_s#json.h#636, json_skip_whitespace#json.h#687
+json_get_value_size#json.h#1225 -> json_parse_state_s#json.h#636, json_parse_flags_e#json.h#370, json_get_number_size#json.h#1092, json_value_s#json.h#440, json_value_ex_s#json.h#445, json_skip_all_skippables#json.h#755, json_parse_error_e#json.h#452, json_get_string_size#json.h#791, json_get_array_size#json.h#1040, json_get_object_size#json.h#940
+json_get_string_size#json.h#791 -> json_parse_flags_e#json.h#370, json_parse_state_s#json.h#636, json_parse_error_e#json.h#452, json_string_s#json.h#402, json_hexadecimal_value#json.h#667, json_string_ex_s#json.h#407
+is_valid_unquoted_key_char#json.h#901
+json_get_key_size#json.h#907 -> json_parse_flags_e#json.h#370, json_parse_state_s#json.h#636, json_get_string_size#json.h#791, is_valid_unquoted_key_char#json.h#901, json_string_ex_s#json.h#407, json_string_s#json.h#402
+json_get_object_size#json.h#940 -> json_get_key_size#json.h#907, json_parse_state_s#json.h#636, json_parse_flags_e#json.h#370, json_get_value_size#json.h#1225, json_object_s#json.h#425, json_object_element_s#json.h#419, json_parse_error_e#json.h#452, json_skip_all_skippables#json.h#755
+json_get_array_size#json.h#1040 -> json_parse_flags_e#json.h#370, json_skip_all_skippables#json.h#755, json_array_element_s#json.h#430, json_get_value_size#json.h#1225, json_parse_error_e#json.h#452, json_array_s#json.h#435, json_parse_state_s#json.h#636
+json_get_number_size#json.h#1092 -> json_parse_state_s#json.h#636, json_parse_flags_e#json.h#370, json_number_s#json.h#414, json_parse_error_e#json.h#452
+json_parse_value#json.h#1600 -> json_type_e#json.h#399, json_parse_array#json.h#1486, json_parse_string#json.h#1290, json_array_s#json.h#435, json_parse_object#json.h#1396, json_number_s#json.h#414, json_parse_flags_e#json.h#370, json_parse_number#json.h#1545, json_string_s#json.h#402, json_object_s#json.h#425, json_value_s#json.h#440, json_parse_state_s#json.h#636, json_skip_all_skippables#json.h#755
+json_parse_string#json.h#1290 -> json_hexadecimal_value#json.h#667, json_value_s#json.h#440, json_parse_state_s#json.h#636, json_string_s#json.h#402
+json_parse_key#json.h#1371 -> json_parse_flags_e#json.h#370, json_parse_string#json.h#1290, json_string_s#json.h#402, json_parse_state_s#json.h#636, is_valid_unquoted_key_char#json.h#901
+json_parse_object#json.h#1396 -> json_parse_value#json.h#1600, json_string_s#json.h#402, json_parse_state_s#json.h#636, json_value_s#json.h#440, json_object_element_s#json.h#419, json_skip_all_skippables#json.h#755, json_parse_flags_e#json.h#370, json_object_s#json.h#425, json_string_ex_s#json.h#407, json_value_ex_s#json.h#445, json_parse_key#json.h#1371
+json_parse_array#json.h#1486 -> json_skip_all_skippables#json.h#755, json_parse_flags_e#json.h#370, json_array_s#json.h#435, json_value_ex_s#json.h#445, json_array_element_s#json.h#430, json_parse_value#json.h#1600, json_parse_state_s#json.h#636, json_value_s#json.h#440
+json_parse_number#json.h#1545 -> json_parse_state_s#json.h#636, json_number_s#json.h#414, json_parse_flags_e#json.h#370, json_value_s#json.h#440
+json_parse_ex#json.h#1662 -> json_parse_state_s#json.h#636, json_get_value_size#json.h#1225, json_value_s#json.h#440, json_skip_all_skippables#json.h#755, json_parse_flags_e#json.h#370, json_parse_result_s#json.h#455, json_parse_value#json.h#1600, json_parse_error_e#json.h#452, json_value_ex_s#json.h#445
+json_extract_copy_value#json.h#1832 -> json_string_s#json.h#402, json_number_s#json.h#414, json_type_e#json.h#399, json_extract_state_s#json.h#1825, json_array_s#json.h#435, json_object_s#json.h#425, json_object_element_s#json.h#419, json_array_element_s#json.h#430, json_value_s#json.h#440
+json_write_minified_get_value_size#json.h#2108 -> json_write_get_string_size#json.h#2056, json_number_s#json.h#414, json_object_s#json.h#425, json_write_minified_get_array_size#json.h#2072, json_type_e#json.h#399, json_object_element_s#json.h#419, json_write_get_number_size#json.h#1978, json_string_s#json.h#402, json_array_element_s#json.h#430, json_write_minified_get_object_size#json.h#2088, json_value_s#json.h#440, json_array_s#json.h#435
+json_write_get_number_size#json.h#1978 -> json_number_s#json.h#414, json_value_s#json.h#440, json_object_element_s#json.h#419
+json_write_get_string_size#json.h#2056 -> json_object_element_s#json.h#419, json_value_s#json.h#440, json_string_s#json.h#402
+json_write_minified_get_array_size#json.h#2072 -> json_array_s#json.h#435, json_array_element_s#json.h#430, json_value_s#json.h#440, json_object_element_s#json.h#419, json_write_minified_get_value_size#json.h#2108
+json_write_minified_get_object_size#json.h#2088 -> json_write_get_string_size#json.h#2056, json_write_minified_get_value_size#json.h#2108, json_object_s#json.h#425, json_object_element_s#json.h#419, json_value_s#json.h#440
+json_write_minified_value#json.h#2319 -> json_object_element_s#json.h#419, json_value_s#json.h#440, json_string_s#json.h#402, json_write_minified_array#json.h#2278, json_array_s#json.h#435, json_type_e#json.h#399, json_number_s#json.h#414, json_object_s#json.h#425, json_write_minified_object#json.h#2296, json_write_number#json.h#2128, json_write_string#json.h#2242, json_array_element_s#json.h#430
+json_write_number#json.h#2128 -> json_number_s#json.h#414, json_object_element_s#json.h#419, json_value_s#json.h#440
+json_write_string#json.h#2242 -> json_value_s#json.h#440, json_object_element_s#json.h#419, json_string_s#json.h#402
+json_write_minified_array#json.h#2278 -> json_value_s#json.h#440, json_array_element_s#json.h#430, json_object_element_s#json.h#419, json_write_minified_value#json.h#2319, json_array_s#json.h#435
+json_write_minified_object#json.h#2296 -> json_object_s#json.h#425, json_value_s#json.h#440, json_object_element_s#json.h#419, json_write_string#json.h#2242, json_write_minified_value#json.h#2319
+json_write_pretty_get_value_size#json.h#2424 -> json_value_s#json.h#440, json_string_s#json.h#402, json_type_e#json.h#399, json_write_get_string_size#json.h#2056, json_write_pretty_get_array_size#json.h#2376, json_write_pretty_get_object_size#json.h#2398, json_array_s#json.h#435, json_write_get_number_size#json.h#1978, json_number_s#json.h#414, json_array_element_s#json.h#430, json_object_element_s#json.h#419, json_object_s#json.h#425
+json_write_pretty_get_array_size#json.h#2376 -> json_object_element_s#json.h#419, json_write_pretty_get_value_size#json.h#2424, json_array_element_s#json.h#430, json_array_s#json.h#435, json_value_s#json.h#440
+json_write_pretty_get_object_size#json.h#2398 -> json_write_get_string_size#json.h#2056, json_object_element_s#json.h#419, json_write_pretty_get_value_size#json.h#2424, json_object_s#json.h#425, json_value_s#json.h#440
+json_write_pretty_value#json.h#2533 -> json_object_s#json.h#425, json_array_element_s#json.h#430, json_type_e#json.h#399, json_value_s#json.h#440, json_write_number#json.h#2128, json_object_element_s#json.h#419, json_array_s#json.h#435, json_string_s#json.h#402, json_write_pretty_object#json.h#2485, json_write_string#json.h#2242, json_number_s#json.h#414, json_write_pretty_array#json.h#2444
+json_write_pretty_array#json.h#2444 -> json_array_s#json.h#435, json_write_pretty_value#json.h#2533, json_array_element_s#json.h#430, json_value_s#json.h#440, json_object_element_s#json.h#419
+json_write_pretty_object#json.h#2485 -> json_write_pretty_value#json.h#2533, json_object_s#json.h#425, json_object_element_s#json.h#419, json_value_s#json.h#440, json_write_string#json.h#2242
+main#test_json.c#2600 -> json_parse#json.h#1738, json_value_s#json.h#440
+
+
+
+SPLIT_TAG
+
+is_valid_unquoted_key_char#json.h#901
+json_hexadecimal_digit#json.h#652
+json_parse_error_e#json.h#452
+json_type_e#json.h#399
+json_parse_flags_e#json.h#370
+json_parse_state_s#json.h#636
+json_parse_result_s#json.h#455
+json_string_s#json.h#402
+json_number_s#json.h#414
+json_extract_state_s#json.h#1825
+json_extract_result_s#json.h#1742
+json_value_s#json.h#440
+json_hexadecimal_value#json.h#667
+json_skip_whitespace#json.h#687
+json_skip_c_style_comments#json.h#715
+json_string_ex_s#json.h#407
+json_get_number_size#json.h#1092
+json_array_element_s#json.h#430
+json_object_element_s#json.h#419
+json_value_ex_s#json.h#445
+json_value_as_string#json.h#1934
+json_value_as_number#json.h#1941
+json_value_is_true#json.h#1962
+json_value_is_false#json.h#1966
+json_value_is_null#json.h#1970
+json_parse_number#json.h#1545
+json_parse_string#json.h#1290
+json_skip_all_skippables#json.h#755
+json_get_string_size#json.h#791
+json_array_s#json.h#435
+json_object_s#json.h#425
+json_write_get_number_size#json.h#1978
+json_write_get_string_size#json.h#2056
+json_write_number#json.h#2128
+json_write_string#json.h#2242
+json_parse_key#json.h#1371
+json_get_key_size#json.h#907
+json_value_as_array#json.h#1955
+json_value_as_object#json.h#1948
+json_extract_copy_value#json.h#1832
+json_write_minified_get_value_size#json.h#2108 <-> json_write_minified_get_array_size#json.h#2072 <-> json_write_minified_get_object_size#json.h#2088
+json_write_pretty_get_value_size#json.h#2424 <-> json_write_pretty_get_array_size#json.h#2376 <-> json_write_pretty_get_object_size#json.h#2398
+json_write_minified_value#json.h#2319 <-> json_write_minified_array#json.h#2278 <-> json_write_minified_object#json.h#2296
+json_write_pretty_value#json.h#2533 <-> json_write_pretty_array#json.h#2444 <-> json_write_pretty_object#json.h#2485
+json_parse_value#json.h#1600 <-> json_parse_object#json.h#1396 <-> json_parse_array#json.h#1486
+json_get_value_size#json.h#1225 <-> json_get_object_size#json.h#940 <-> json_get_array_size#json.h#1040
+json_extract_value#json.h#1747 <-> json_extract_value_ex#json.h#1913
+json_write_minified#json.h#2345
+json_write_pretty#json.h#2559
+json_parse_ex#json.h#1662
+json_parse#json.h#1738
+main#test_json.c#2600

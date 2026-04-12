@@ -1,0 +1,14 @@
+[
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-o",
+            "all",
+            "avl.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/avl",
+        "file": "avl.c"
+    }
+]

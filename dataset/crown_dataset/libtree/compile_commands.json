@@ -1,0 +1,18 @@
+[
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-O2",
+            "-std=c99",
+            "-Wall",
+            "-Wextra",
+            "-Wshadow",
+            "-pedantic",
+            "-D_FILE_OFFSET_BITS=64",
+            "libtree.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libtree",
+        "file": "libtree.c"
+    }
+]

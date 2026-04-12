@@ -1,0 +1,208 @@
+libzahl
+├── allocator.c
+├── svf_analysis_output
+├── zabs.c
+├── zadd.c
+├── zand.c
+├── zbits.c
+├── zbset.c
+├── zbtest.c
+├── zcmp.c
+├── zcmpi.c
+├── zcmpmag.c
+├── zcmpu.c
+├── zdiv.c
+├── zdivmod.c
+├── zerror.c
+├── zfree.c
+├── zgcd.c
+├── zload.c
+├── zlsb.c
+├── zlsh.c
+├── zmod.c
+├── zmodmul.c
+├── zmodpow.c
+├── zmodpowu.c
+├── zmodsqr.c
+├── zmul.c
+├── zneg.c
+├── znot.c
+├── zor.c
+├── zperror.c
+├── zpow.c
+├── zpowu.c
+├── zptest.c
+├── zrand.c
+├── zrsh.c
+├── zsave.c
+├── zset.c
+├── zseti.c
+├── zsets.c
+├── zsetu.c
+├── zsetup.c
+├── zsplit.c
+├── zsqr.c
+├── zstr.c
+├── zstr_length.c
+├── zsub.c
+├── zswap.c
+├── ztrunc.c
+├── zunsetup.c
+└── zxor.c
+H_FILE_LIST
+internals.h
+zahl.h
+
+SPLIT_TAG
+
+z_t#zahl.h#218 -> zahl_char_t#zahl.h#216
+zprimality#zahl.h#225
+zranddev#zahl.h#227
+zranddist#zahl.h#229
+zerror#zahl.h#231
+zahl_char_t#zahl.h#216
+zinit#zahl.h#334 -> z_t#zahl.h#218
+zeven#zahl.h#336 -> z_t#zahl.h#218
+zodd#zahl.h#338 -> z_t#zahl.h#218
+zeven_nonzero#zahl.h#340 -> z_t#zahl.h#218
+zodd_nonzero#zahl.h#342 -> z_t#zahl.h#218
+zzero#zahl.h#344 -> z_t#zahl.h#218
+zsignum#zahl.h#346 -> z_t#zahl.h#218
+libzahl_realloc#allocator.c#1002 -> zfree#zfree.c#1002, libzahl_pool#zsetup.c#1014, libzahl_error#zsetup.c#1012, zahl_char_t#zahl.h#216, z_t#zahl.h#218, libzahl_pool_n#zsetup.c#1016, libzahl_jmp_buf#zsetup.c#1008
+zabs#zabs.c#1002 -> zzero#zahl.h#344, z_t#zahl.h#218, zset#zset.c#1002
+zadd#zadd.c#1051 -> zzero#zahl.h#344, z_t#zahl.h#218, zlsh#zlsh.c#1002, zadd_unsigned#zadd.c#1002, zsignum#zahl.h#346, zset#zset.c#1002, zsub_unsigned#zsub.c#1002
+zadd_unsigned#zadd.c#1002 -> zabs#zabs.c#1002, z_t#zahl.h#218, zahl_char_t#zahl.h#216, zzero#zahl.h#344, libzahl_realloc#allocator.c#1002
+zand#zand.c#1002 -> zsignum#zahl.h#346, z_t#zahl.h#218, libzahl_realloc#allocator.c#1002, zahl_char_t#zahl.h#216, zzero#zahl.h#344
+zbits#zbits.c#1002 -> z_t#zahl.h#218, zahl_char_t#zahl.h#216, zzero#zahl.h#344
+zbset#zbset.c#1002 -> zzero#zahl.h#344, z_t#zahl.h#218, zset#zset.c#1002, zahl_char_t#zahl.h#216, libzahl_realloc#allocator.c#1002
+zbtest#zbtest.c#1002 -> zzero#zahl.h#344, z_t#zahl.h#218
+zcmp#zcmp.c#1002 -> zsignum#zahl.h#346, zcmpmag#zcmpmag.c#1002, z_t#zahl.h#218
+zcmpi#zcmpi.c#1002 -> zsignum#zahl.h#346, zseti#zseti.c#1002, z_t#zahl.h#218, zcmp#zcmp.c#1002, zzero#zahl.h#344, libzahl_tmp_cmp#zsetup.c#1002
+zcmpmag#zcmpmag.c#1002 -> zzero#zahl.h#344, z_t#zahl.h#218
+zcmpu#zcmpu.c#1002 -> zsignum#zahl.h#346, zcmp#zcmp.c#1002, zsetu#zsetu.c#1002, z_t#zahl.h#218, libzahl_tmp_cmp#zsetup.c#1002
+zdiv#zdiv.c#1002 -> zdivmod#zdivmod.c#1002, z_t#zahl.h#218, libzahl_tmp_cmp#zsetup.c#1002
+zdivmod#zdivmod.c#1002 -> zset#zset.c#1002, zzero#zahl.h#344, libzahl_error#zsetup.c#1012, libzahl_tmp_cmp#zsetup.c#1002, zcmpmag#zcmpmag.c#1002, zbits#zbits.c#1002, zbset#zbset.c#1002, z_t#zahl.h#218, libzahl_jmp_buf#zsetup.c#1008, zsignum#zahl.h#346, zseti#zseti.c#1002, zlsh#zlsh.c#1002, libzahl_tmp_divmod_ds#zsetup.c#1006, zabs#zabs.c#1002, zrsh#zrsh.c#1002, zsub#zsub.c#1051, zswap#zswap.c#1002
+zerror#internals.h#1000 -> libzahl_error#zsetup.c#1012, z_t#zahl.h#218, zerror#zahl.h#231
+zfree#zfree.c#1002 -> zahl_char_t#zahl.h#216, libzahl_pool#zsetup.c#1014, z_t#zahl.h#218, libzahl_pool_alloc#zsetup.c#1018, libzahl_pool_n#zsetup.c#1016
+zgcd#zgcd.c#1002 -> zlsb#zlsb.c#1002, z_t#zahl.h#218, zcmpmag#zcmpmag.c#1002, zlsh#zlsh.c#1002, libzahl_tmp_cmp#zsetup.c#1002, zahl_char_t#zahl.h#216, zsignum#zahl.h#346, zset#zset.c#1002, zabs#zabs.c#1002, zcmp#zcmp.c#1002, zsub_unsigned#zsub.c#1002, zswap#zswap.c#1002, zzero#zahl.h#344, zrsh#zrsh.c#1002
+zload#zload.c#1002 -> libzahl_realloc#allocator.c#1002, zzero#zahl.h#344, zahl_char_t#zahl.h#216, z_t#zahl.h#218
+zlsb#zlsb.c#1002 -> z_t#zahl.h#218, zzero#zahl.h#344, zahl_char_t#zahl.h#216
+zlsh#zlsh.c#1002 -> zahl_char_t#zahl.h#216, zsignum#zahl.h#346, libzahl_realloc#allocator.c#1002, z_t#zahl.h#218, zset#zset.c#1002, zzero#zahl.h#344
+zmod#zmod.c#1002 -> libzahl_tmp_cmp#zsetup.c#1002, z_t#zahl.h#218, zdivmod#zdivmod.c#1002
+zmodmul#zmodmul.c#1002 -> zmod#zmod.c#1002, zset#zset.c#1002, z_t#zahl.h#218, libzahl_tmp_cmp#zsetup.c#1002, zmul#zmul.c#1002
+zmodpow#zmodpow.c#1002 -> zahl_char_t#zahl.h#216, zsignum#zahl.h#346, zmod#zmod.c#1002, zzero#zahl.h#344, libzahl_error#zsetup.c#1012, zsetu#zsetu.c#1002, libzahl_tmp_cmp#zsetup.c#1002, zbits#zbits.c#1002, zmodmul#zmodmul.c#1002, zmodsqr#zmodsqr.c#1002, z_t#zahl.h#218, libzahl_jmp_buf#zsetup.c#1008, zset#zset.c#1002
+zmodpowu#zmodpowu.c#1002 -> zmod#zmod.c#1002, zsetu#zsetu.c#1002, zmodmul#zmodmul.c#1002, zmodsqr#zmodsqr.c#1002, libzahl_jmp_buf#zsetup.c#1008, zset#zset.c#1002, z_t#zahl.h#218, zzero#zahl.h#344, libzahl_tmp_cmp#zsetup.c#1002, libzahl_error#zsetup.c#1012
+zmodsqr#zmodsqr.c#1002 -> zset#zset.c#1002, zmod#zmod.c#1002, zsqr#zsqr.c#1002, libzahl_tmp_cmp#zsetup.c#1002, z_t#zahl.h#218
+zmul#zmul.c#1002 -> libzahl_realloc#allocator.c#1002, zsignum#zahl.h#346, zinit#zahl.h#334, zbits#zbits.c#1002, zlsh#zlsh.c#1002, zsub#zsub.c#1051, zfree#zfree.c#1002, zadd#zadd.c#1051, zsplit#zsplit.c#1002, z_t#zahl.h#218
+zneg#zneg.c#1002 -> zset#zset.c#1002, z_t#zahl.h#218, zsignum#zahl.h#346
+znot#znot.c#1002 -> z_t#zahl.h#218, zset#zset.c#1002, zzero#zahl.h#344, zahl_char_t#zahl.h#216, zbits#zbits.c#1002, zsignum#zahl.h#346
+zor#zor.c#1002 -> libzahl_realloc#allocator.c#1002, zzero#zahl.h#344, z_t#zahl.h#218, zahl_char_t#zahl.h#216, zsignum#zahl.h#346, zset#zset.c#1002
+zperror#zperror.c#1314 -> libzahl_error#zsetup.c#1012
+zpow#zpow.c#1002 -> libzahl_error#zsetup.c#1012, zzero#zahl.h#344, libzahl_jmp_buf#zsetup.c#1008, zmul#zmul.c#1002, libzahl_tmp_cmp#zsetup.c#1002, zbits#zbits.c#1002, zahl_char_t#zahl.h#216, zsqr#zsqr.c#1002, z_t#zahl.h#218, zsignum#zahl.h#346, zset#zset.c#1002, zsetu#zsetu.c#1002
+zpowu#zpowu.c#1002 -> libzahl_error#zsetup.c#1012, zsqr#zsqr.c#1002, libzahl_jmp_buf#zsetup.c#1008, z_t#zahl.h#218, zzero#zahl.h#344, zset#zset.c#1002, libzahl_tmp_cmp#zsetup.c#1002, zmul#zmul.c#1002, zsetu#zsetu.c#1002
+zptest#internals.h#1000 -> z_t#zahl.h#218, libzahl_tmp_cmp#zsetup.c#1002, zset#zset.c#1002, zadd_unsigned#zadd.c#1002, zprimality#zahl.h#225, zrand#zrand.c#1304, zranddist#zahl.h#229, zcmpu#zcmpu.c#1002, zmod#zmod.c#1002, zranddev#zahl.h#227, zeven#zahl.h#336, zsub_unsigned#zsub.c#1002, libzahl_const_1e19#zsetup.c#1004, zcmp#zcmp.c#1002, zlsb#zlsb.c#1002, zrsh#zrsh.c#1002, zsqr#zsqr.c#1002, zmodpow#zmodpow.c#1002, zswap#zswap.c#1002
+zrand#zrand.c#1304 -> zrand_get_random_bits#zrand.c#1277, zranddist#zahl.h#229, zadd#zadd.c#1051, zsignum#zahl.h#346, libzahl_error#zsetup.c#1012, zrsh#zrsh.c#1002, zcmpmag#zcmpmag.c#1002, z_t#zahl.h#218, zzero#zahl.h#344, libzahl_jmp_buf#zsetup.c#1008, zbits#zbits.c#1002, zmul#zmul.c#1002, libzahl_const_1e19#zsetup.c#1004, zranddev#zahl.h#227
+zrand_get_random_bits#zrand.c#1277 -> z_t#zahl.h#218, libzahl_error#zsetup.c#1012, libzahl_jmp_buf#zsetup.c#1008, zahl_char_t#zahl.h#216, libzahl_realloc#allocator.c#1002
+zrsh#zrsh.c#1002 -> libzahl_realloc#allocator.c#1002, z_t#zahl.h#218, zsignum#zahl.h#346, zzero#zahl.h#344, zbits#zbits.c#1002, zset#zset.c#1002, zahl_char_t#zahl.h#216
+zsave#zsave.c#1002 -> zzero#zahl.h#344, z_t#zahl.h#218, zahl_char_t#zahl.h#216
+zset#zset.c#1002 -> zahl_char_t#zahl.h#216, zzero#zahl.h#344, z_t#zahl.h#218, libzahl_realloc#allocator.c#1002
+zseti#zseti.c#1002 -> zsetu#zsetu.c#1002, z_t#zahl.h#218
+zsets#zsets.c#1087 -> zset#zset.c#1002, libzahl_const_1e19#zsetup.c#1004, zadd#zadd.c#1051, zmul#zmul.c#1002, z_t#zahl.h#218, zsignum#zahl.h#346, libzahl_tmp_cmp#zsetup.c#1002, zahl_char_t#zahl.h#216
+zsetu#zsetu.c#1002 -> z_t#zahl.h#218, zahl_char_t#zahl.h#216, libzahl_realloc#allocator.c#1002, libzahl_const_1e19#zsetup.c#1004
+libzahl_tmp_cmp#zsetup.c#1002 -> z_t#zahl.h#218
+libzahl_const_1e19#zsetup.c#1004 -> z_t#zahl.h#218
+libzahl_tmp_divmod_ds#zsetup.c#1006 -> z_t#zahl.h#218
+libzahl_jmp_buf#zsetup.c#1008
+libzahl_set_up#zsetup.c#1010
+libzahl_error#zsetup.c#1012
+libzahl_pool#zsetup.c#1014 -> zahl_char_t#zahl.h#216
+libzahl_pool_n#zsetup.c#1016
+libzahl_pool_alloc#zsetup.c#1018
+zsetup#zsetup.c#1020 -> libzahl_tmp_cmp#zsetup.c#1002, zsetu#zsetu.c#1002, libzahl_pool_n#zsetup.c#1016, libzahl_jmp_buf#zsetup.c#1008, libzahl_pool_alloc#zsetup.c#1018, libzahl_tmp_divmod_ds#zsetup.c#1006, libzahl_const_1e19#zsetup.c#1004, libzahl_pool#zsetup.c#1014, libzahl_set_up#zsetup.c#1010, zinit#zahl.h#334
+zsplit#zsplit.c#1002 -> z_t#zahl.h#218, ztrunc#ztrunc.c#1002, zrsh#zrsh.c#1002, zzero#zahl.h#344
+zsqr#zsqr.c#1002 -> z_t#zahl.h#218, zadd#zadd.c#1051, zsplit#zsplit.c#1002, zbits#zbits.c#1002, zsignum#zahl.h#346, zzero#zahl.h#344, zlsh#zlsh.c#1002, zinit#zahl.h#334, zmul#zmul.c#1002, libzahl_realloc#allocator.c#1002, zfree#zfree.c#1002
+zstr#zstr.c#1314 -> zstr_length#zstr_length.c#1002, zabs#zabs.c#1002, libzahl_const_1e19#zsetup.c#1004, z_t#zahl.h#218, libzahl_error#zsetup.c#1012, libzahl_jmp_buf#zsetup.c#1008, zdivmod#zdivmod.c#1002, zzero#zahl.h#344, libzahl_tmp_cmp#zsetup.c#1002, zsignum#zahl.h#346
+zstr_length#zstr_length.c#1002 -> libzahl_tmp_cmp#zsetup.c#1002, zsetu#zsetu.c#1002, z_t#zahl.h#218, zdiv#zdiv.c#1002, zsignum#zahl.h#346, zsqr#zsqr.c#1002, zset#zset.c#1002, zzero#zahl.h#344, zcmpmag#zcmpmag.c#1002
+zsub#zsub.c#1051 -> zneg#zneg.c#1002, zsignum#zahl.h#346, zset#zset.c#1002, zzero#zahl.h#344, zadd_unsigned#zadd.c#1002, zsub_unsigned#zsub.c#1002, z_t#zahl.h#218
+zsub_unsigned#zsub.c#1002 -> zset#zset.c#1002, zabs#zabs.c#1002, zahl_char_t#zahl.h#216, z_t#zahl.h#218, zneg#zneg.c#1002, zzero#zahl.h#344, zcmpmag#zcmpmag.c#1002, libzahl_tmp_cmp#zsetup.c#1002
+zswap#zswap.c#1002 -> z_t#zahl.h#218
+ztrunc#ztrunc.c#1002 -> zahl_char_t#zahl.h#216, zzero#zahl.h#344, z_t#zahl.h#218, libzahl_realloc#allocator.c#1002
+zunsetup#zunsetup.c#1002 -> libzahl_pool_n#zsetup.c#1016, libzahl_tmp_cmp#zsetup.c#1002, z_t#zahl.h#218, libzahl_tmp_divmod_ds#zsetup.c#1006, libzahl_pool#zsetup.c#1014, libzahl_const_1e19#zsetup.c#1004, libzahl_set_up#zsetup.c#1010
+zxor#zxor.c#1002 -> libzahl_realloc#allocator.c#1002, zahl_char_t#zahl.h#216, z_t#zahl.h#218, zset#zset.c#1002, zsignum#zahl.h#346, zzero#zahl.h#344
+
+SPLIT_TAG
+
+libzahl_set_up#zsetup.c#1010
+libzahl_jmp_buf#zsetup.c#1008
+libzahl_error#zsetup.c#1012
+libzahl_pool_n#zsetup.c#1016
+libzahl_pool_alloc#zsetup.c#1018
+zerror#zahl.h#231
+zranddist#zahl.h#229
+zranddev#zahl.h#227
+zprimality#zahl.h#225
+zahl_char_t#zahl.h#216
+zperror#zperror.c#1314
+z_t#zahl.h#218
+libzahl_pool#zsetup.c#1014
+zinit#zahl.h#334
+zeven#zahl.h#336
+zodd#zahl.h#338
+zeven_nonzero#zahl.h#340
+zodd_nonzero#zahl.h#342
+zzero#zahl.h#344
+zsignum#zahl.h#346
+zerror#internals.h#1000
+libzahl_tmp_cmp#zsetup.c#1002
+libzahl_const_1e19#zsetup.c#1004
+libzahl_tmp_divmod_ds#zsetup.c#1006
+zswap#zswap.c#1002
+zfree#zfree.c#1002
+zbits#zbits.c#1002
+zbtest#zbtest.c#1002
+zcmpmag#zcmpmag.c#1002
+zlsb#zlsb.c#1002
+zsave#zsave.c#1002
+zunsetup#zunsetup.c#1002
+libzahl_realloc#allocator.c#1002
+zcmp#zcmp.c#1002
+zand#zand.c#1002
+zload#zload.c#1002
+zrand_get_random_bits#zrand.c#1277
+zset#zset.c#1002
+zsetu#zsetu.c#1002
+ztrunc#ztrunc.c#1002
+zabs#zabs.c#1002
+zbset#zbset.c#1002
+zlsh#zlsh.c#1002
+zneg#zneg.c#1002
+znot#znot.c#1002
+zor#zor.c#1002
+zrsh#zrsh.c#1002
+zxor#zxor.c#1002
+zcmpu#zcmpu.c#1002
+zseti#zseti.c#1002
+zsetup#zsetup.c#1020
+zadd_unsigned#zadd.c#1002
+zsub_unsigned#zsub.c#1002
+zsplit#zsplit.c#1002
+zcmpi#zcmpi.c#1002
+zadd#zadd.c#1051
+zgcd#zgcd.c#1002
+zsub#zsub.c#1051
+zdivmod#zdivmod.c#1002
+zmul#zmul.c#1002
+zdiv#zdiv.c#1002
+zmod#zmod.c#1002
+zrand#zrand.c#1304
+zsets#zsets.c#1087
+zsqr#zsqr.c#1002
+zmodmul#zmodmul.c#1002
+zmodsqr#zmodsqr.c#1002
+zpow#zpow.c#1002
+zpowu#zpowu.c#1002
+zstr_length#zstr_length.c#1002
+zmodpow#zmodpow.c#1002
+zmodpowu#zmodpowu.c#1002
+zstr#zstr.c#1314
+zptest#internals.h#1000

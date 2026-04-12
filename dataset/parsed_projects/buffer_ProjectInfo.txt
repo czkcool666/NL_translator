@@ -1,0 +1,58 @@
+buffer
+└── buffer.c
+H_FILE_LIST
+buffer.h
+
+SPLIT_TAG
+
+buffer_t#buffer.h#548
+buffer_new#buffer.c#598 -> buffer_new_with_size#buffer.c#602, buffer_t#buffer.h#548
+buffer_new_with_size#buffer.c#602 -> buffer_t#buffer.h#548
+buffer_new_with_string#buffer.c#610 -> buffer_t#buffer.h#548, buffer_new_with_string_length#buffer.c#614
+buffer_new_with_string_length#buffer.c#614 -> buffer_t#buffer.h#548
+buffer_new_with_copy#buffer.c#622 -> buffer_t#buffer.h#548, buffer_new_with_size#buffer.c#602
+buffer_size#buffer.c#648 -> buffer_t#buffer.h#548
+buffer_length#buffer.c#652 -> buffer_t#buffer.h#548
+buffer_free#buffer.c#643 -> buffer_t#buffer.h#548
+buffer_prepend#buffer.c#704 -> buffer_resize#buffer.c#656, buffer_t#buffer.h#548
+buffer_append#buffer.c#687 -> buffer_t#buffer.h#548, buffer_append_n#buffer.c#691
+buffer_appendf#buffer.c#665 -> buffer_resize#buffer.c#656, buffer_length#buffer.c#652, buffer_t#buffer.h#548
+buffer_append_n#buffer.c#691 -> buffer_resize#buffer.c#656, buffer_t#buffer.h#548
+buffer_equals#buffer.c#727 -> buffer_t#buffer.h#548
+buffer_indexof#buffer.c#731 -> buffer_t#buffer.h#548
+buffer_slice#buffer.c#716 -> buffer_t#buffer.h#548, buffer_new_with_size#buffer.c#602
+buffer_compact#buffer.c#631 -> buffer_t#buffer.h#548, buffer_length#buffer.c#652
+buffer_fill#buffer.c#757 -> buffer_t#buffer.h#548
+buffer_clear#buffer.c#761 -> buffer_fill#buffer.c#757, buffer_t#buffer.h#548
+buffer_trim_left#buffer.c#737 -> buffer_t#buffer.h#548
+buffer_trim_right#buffer.c#744 -> buffer_t#buffer.h#548, buffer_length#buffer.c#652
+buffer_trim#buffer.c#752 -> buffer_t#buffer.h#548, buffer_trim_right#buffer.c#744, buffer_trim_left#buffer.c#737
+buffer_print#buffer.c#765 -> buffer_t#buffer.h#548
+buffer_resize#buffer.c#656 -> buffer_t#buffer.h#548
+
+SPLIT_TAG
+
+buffer_t#buffer.h#548
+buffer_new_with_size#buffer.c#602
+buffer_new_with_string_length#buffer.c#614
+buffer_size#buffer.c#648
+buffer_length#buffer.c#652
+buffer_free#buffer.c#643
+buffer_equals#buffer.c#727
+buffer_indexof#buffer.c#731
+buffer_fill#buffer.c#757
+buffer_trim_left#buffer.c#737
+buffer_print#buffer.c#765
+buffer_resize#buffer.c#656
+buffer_new#buffer.c#598
+buffer_new_with_copy#buffer.c#622
+buffer_slice#buffer.c#716
+buffer_new_with_string#buffer.c#610
+buffer_compact#buffer.c#631
+buffer_trim_right#buffer.c#744
+buffer_clear#buffer.c#761
+buffer_prepend#buffer.c#704
+buffer_appendf#buffer.c#665
+buffer_append_n#buffer.c#691
+buffer_trim#buffer.c#752
+buffer_append#buffer.c#687

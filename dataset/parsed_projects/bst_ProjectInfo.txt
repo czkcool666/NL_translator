@@ -1,0 +1,25 @@
+bst
+├── bst.c [Contain *main* Function]
+└── svf_analysis_output
+H_FILE_LIST
+
+
+SPLIT_TAG
+
+node#bst.c#417
+newNode#bst.c#422 -> node#bst.c#417
+inorder#bst.c#430 -> node#bst.c#417
+insert#bst.c#438 -> node#bst.c#417, newNode#bst.c#422
+minValueNode#bst.c#445 -> node#bst.c#417
+deleteNode#bst.c#451 -> minValueNode#bst.c#445, node#bst.c#417
+main#bst.c#473 -> deleteNode#bst.c#451, node#bst.c#417, inorder#bst.c#430, insert#bst.c#438
+
+SPLIT_TAG
+
+node#bst.c#417
+newNode#bst.c#422
+inorder#bst.c#430
+minValueNode#bst.c#445
+insert#bst.c#438
+deleteNode#bst.c#451
+main#bst.c#473

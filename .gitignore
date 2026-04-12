@@ -1,0 +1,48 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Doxygen output (generated)
+doxygen_output/
+
+# SVF analysis output (generated)
+svf_analysis_output/
+
+# Expanded/processed project directories (generated)
+*_expanded/
+*_expanded_dealed/
+
+# Compiled C objects
+*.o
+*.out
+
+# LLVM IR files (generated)
+*.ll
+*.bc

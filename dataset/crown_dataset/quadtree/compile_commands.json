@@ -1,0 +1,82 @@
+[
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-O3",
+            "-std=c99",
+            "-Wall",
+            "-g",
+            "-pedantic",
+            "-o",
+            "test.o",
+            "test.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/quadtree",
+        "file": "test.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-O3",
+            "-std=c99",
+            "-Wall",
+            "-g",
+            "-pedantic",
+            "-o",
+            "src/node.o",
+            "src/node.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/quadtree",
+        "file": "src/node.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-O3",
+            "-std=c99",
+            "-Wall",
+            "-g",
+            "-pedantic",
+            "-o",
+            "src/point.o",
+            "src/point.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/quadtree",
+        "file": "src/point.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-O3",
+            "-std=c99",
+            "-Wall",
+            "-g",
+            "-pedantic",
+            "-o",
+            "src/quadtree.o",
+            "src/quadtree.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/quadtree",
+        "file": "src/quadtree.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-O3",
+            "-std=c99",
+            "-Wall",
+            "-g",
+            "-pedantic",
+            "-o",
+            "src/bounds.o",
+            "src/bounds.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/quadtree",
+        "file": "src/bounds.c"
+    }
+]

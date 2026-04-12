@@ -1,0 +1,41 @@
+rgba
+├── rgba.c
+└── svf_analysis_output
+H_FILE_LIST
+rgba.h
+
+SPLIT_TAG
+
+named_color#rgba.c#531
+rgba_t#rgba.h#519
+rgba_new#rgba.c#695 -> rgba_t#rgba.h#519
+rgba_from_string#rgba.c#787 -> rgba_from_name_string#rgba.c#778, rgba_from_hex_string#rgba.c#770, rgba_from_rgba_string#rgba.c#742, rgba_from_rgb_string#rgba.c#728
+rgba_to_string#rgba.c#704 -> rgba_t#rgba.h#519
+rgba_inspect#rgba.c#794
+h#rgba.c#686
+rgba_from_rgba#rgba.c#712
+rgba_from_rgb#rgba.c#716 -> h#rgba.c#686, rgba_from_rgba#rgba.c#712
+rgba_from_hex6_string#rgba.c#720 -> rgba_from_rgb#rgba.c#716, h#rgba.c#686
+rgba_from_hex3_string#rgba.c#724 -> rgba_from_rgb#rgba.c#716, h#rgba.c#686
+rgba_from_rgb_string#rgba.c#728 -> rgba_from_rgb#rgba.c#716
+rgba_from_rgba_string#rgba.c#742 -> rgba_from_rgba#rgba.c#712
+rgba_from_hex_string#rgba.c#770 -> rgba_from_hex6_string#rgba.c#720, rgba_from_hex3_string#rgba.c#724
+rgba_from_name_string#rgba.c#778 -> named_color#rgba.c#531
+
+SPLIT_TAG
+
+rgba_inspect#rgba.c#794
+rgba_from_rgba#rgba.c#712
+h#rgba.c#686
+rgba_t#rgba.h#519
+named_color#rgba.c#531
+rgba_from_rgba_string#rgba.c#742
+rgba_from_rgb#rgba.c#716
+rgba_new#rgba.c#695
+rgba_to_string#rgba.c#704
+rgba_from_name_string#rgba.c#778
+rgba_from_hex6_string#rgba.c#720
+rgba_from_hex3_string#rgba.c#724
+rgba_from_rgb_string#rgba.c#728
+rgba_from_hex_string#rgba.c#770
+rgba_from_string#rgba.c#787

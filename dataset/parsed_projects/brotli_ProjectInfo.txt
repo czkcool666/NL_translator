@@ -1,0 +1,1842 @@
+brotli
+├── backward_references.c
+├── backward_references_hq.c
+├── bit_cost.c
+├── bit_reader.c
+├── block_splitter.c
+├── brotli.c [Contain *main* Function]
+├── brotli_bit_stream.c
+├── cluster.c
+├── command.c
+├── compress_fragment.c
+├── compress_fragment_two_pass.c
+├── constants.c
+├── context.c
+├── decode.c
+├── dictionary.c
+├── dictionary_hash.c
+├── encode.c
+├── encoder_dict.c
+├── entropy_encode.c
+├── fast_log.c
+├── histogram.c
+├── huffman.c
+├── literal_cost.c
+├── memory.c
+├── metablock.c
+├── platform.c
+├── state.c
+├── static_dict.c
+├── transform.c
+└── utf8_util.c
+H_FILE_LIST
+compress_fragment_two_pass.h
+decode.h
+hash_longest_match64_inc.h
+cluster_inc.h
+constants.h
+params.h
+backward_references_inc.h
+bit_reader.h
+memory.h
+bit_cost.h
+hash.h
+fast_log.h
+metablock_inc.h
+block_splitter_inc.h
+block_splitter.h
+platform.h
+command.h
+encoder_dict.h
+context.h
+histogram_inc.h
+write_bits.h
+hash_longest_match_inc.h
+types.h
+hash_rolling_inc.h
+transform.h
+prefix.h
+backward_references_hq.h
+bit_cost_inc.h
+utf8_util.h
+state.h
+quality.h
+dictionary.h
+hash_to_binary_tree_inc.h
+entropy_encode.h
+hash_forgetful_chain_inc.h
+encode.h
+entropy_encode_static.h
+block_encoder_inc.h
+metablock.h
+hash_longest_match_quickly_inc.h
+static_dict_lut.h
+huffman.h
+cluster.h
+find_match_length.h
+static_dict.h
+ringbuffer.h
+hash_composite_inc.h
+
+SPLIT_TAG
+
+BackwardMatch#hash.h#2565
+BankH40#hash_forgetful_chain_inc.h#3661 -> SlotH40#hash_forgetful_chain_inc.h#3656
+BankH41#hash_forgetful_chain_inc.h#3849 -> SlotH41#hash_forgetful_chain_inc.h#3844
+BankH42#hash_forgetful_chain_inc.h#4037 -> SlotH42#hash_forgetful_chain_inc.h#4032
+BlockEncoder#brotli_bit_stream.c#3322 -> BlockSplitCode#brotli_bit_stream.c#2787
+BlockSplit#block_splitter.h#2422 -> BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422
+BlockSplitCode#brotli_bit_stream.c#2787 -> BlockTypeCodeCalculator#brotli_bit_stream.c#2748
+BlockSplitIterator#histogram.c#2553 -> BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422
+BlockSplitterCommand#metablock_inc.h#3030 -> HistogramCommand#histogram_inc.h#2475, BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422
+BlockSplitterDistance#metablock_inc.h#3154 -> BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422, HistogramDistance#histogram_inc.h#2513
+BlockSplitterLiteral#metablock_inc.h#2906 -> HistogramLiteral#histogram_inc.h#2437, BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422
+BlockTypeCodeCalculator#brotli_bit_stream.c#2748
+BrotliBitReader#bit_reader.h#425 -> BrotliGetAvailableBits#bit_reader.h#459
+BrotliBitReaderState#bit_reader.h#432
+BrotliDecoderStateStruct#state.h#1326 -> HuffmanTreeGroup#huffman.h#1253, HuffmanCode#huffman.h#1235, brotli_free_func#types.h#309, BrotliRunningMetablockHeaderState#state.h#1276, BrotliBitReader#bit_reader.h#425, BrotliRunningReadBlockLengthState#state.h#1294, brotli_alloc_func#types.h#307, BrotliRunningDecodeUint8State#state.h#1291, BrotliDictionary#dictionary.h#422, BrotliRunningState#state.h#1273, BrotliMetablockBodyArena#state.h#1321, BrotliMetablockHeaderArena#state.h#1297, BrotliRunningUncompressedState#state.h#1279, BrotliTransforms#transform.h#989
+BrotliDictionary#dictionary.h#422
+BrotliDistanceCodeLimit#constants.h#364
+BrotliDistanceParams#params.h#2150
+BrotliEncoderDictionary#encoder_dict.h#2129 -> DictWord#static_dict_lut.h#962, BrotliDictionary#dictionary.h#422
+BrotliEncoderParams#params.h#2158 -> BrotliEncoderMode#encode.h#931, BrotliEncoderDictionary#encoder_dict.h#2129, BrotliDistanceParams#params.h#2150, BrotliHasherParams#params.h#2142
+BrotliEncoderStateStruct#encode.c#5889 -> BrotliEncoderParams#params.h#2158, Command#command.h#2261, MemoryManager#memory.h#2345, BrotliEncoderStreamState#encode.c#5883, Hasher#hash.h#4874, RingBuffer#ringbuffer.h#5766
+BrotliHasherParams#params.h#2142
+BrotliMetablockBodyArena#state.h#1321
+BrotliMetablockHeaderArena#state.h#1297 -> BrotliRunningHuffmanState#state.h#1288, HuffmanCode#huffman.h#1235, BrotliRunningTreeGroupState#state.h#1282, BrotliRunningContextMapState#state.h#1285
+BrotliPrefixCodeRange#constants.h#408
+BrotliTransforms#transform.h#989
+CmdLutElement#prefix.h#1261
+Command#command.h#2261
+Context#brotli.c#1759
+ContextBlockSplitter#metablock.c#3278 -> BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422, HistogramLiteral#histogram_inc.h#2437
+DictWord#static_dict_lut.h#962
+H10#hash_to_binary_tree_inc.h#2600
+H2#hash_longest_match_quickly_inc.h#2799 -> HasherCommon#hash.h#2452
+H3#hash_longest_match_quickly_inc.h#2976 -> HasherCommon#hash.h#2452
+H35#hash_composite_inc.h#4676 -> H3#hash_longest_match_quickly_inc.h#2976, HasherCommon#hash.h#2452, BrotliEncoderParams#params.h#2158, HROLLING_FAST#hash_rolling_inc.h#4408
+H4#hash_longest_match_quickly_inc.h#3153 -> HasherCommon#hash.h#2452
+H40#hash_forgetful_chain_inc.h#3665 -> HasherCommon#hash.h#2452
+H41#hash_forgetful_chain_inc.h#3853 -> HasherCommon#hash.h#2452
+H42#hash_forgetful_chain_inc.h#4041 -> HasherCommon#hash.h#2452
+H5#hash_longest_match_inc.h#3330 -> HasherCommon#hash.h#2452
+H54#hash_longest_match_quickly_inc.h#4220 -> HasherCommon#hash.h#2452
+H55#hash_composite_inc.h#4746 -> BrotliEncoderParams#params.h#2158, H54#hash_longest_match_quickly_inc.h#4220, HasherCommon#hash.h#2452, HROLLING_FAST#hash_rolling_inc.h#4408
+H6#hash_longest_match64_inc.h#3493 -> HasherCommon#hash.h#2452
+H65#hash_composite_inc.h#4816 -> HROLLING#hash_rolling_inc.h#4546, HasherCommon#hash.h#2452, BrotliEncoderParams#params.h#2158, H6#hash_longest_match64_inc.h#3493
+Hasher#hash.h#4874 -> HasherCommon#hash.h#2452, H4#hash_longest_match_quickly_inc.h#3153, H35#hash_composite_inc.h#4676, H10#hash_to_binary_tree_inc.h#2600, H2#hash_longest_match_quickly_inc.h#2799, H55#hash_composite_inc.h#4746, H65#hash_composite_inc.h#4816, H54#hash_longest_match_quickly_inc.h#4220, H3#hash_longest_match_quickly_inc.h#2976, H42#hash_forgetful_chain_inc.h#4041, H41#hash_forgetful_chain_inc.h#3853, H40#hash_forgetful_chain_inc.h#3665, H6#hash_longest_match64_inc.h#3493, H5#hash_longest_match_inc.h#3330
+HasherCommon#hash.h#2452 -> BrotliHasherParams#params.h#2142
+HasherSearchResult#hash.h#2464
+HistogramCommand#histogram_inc.h#2475
+HistogramDistance#histogram_inc.h#2513
+HistogramLiteral#histogram_inc.h#2437
+HistogramPair#cluster.h#2589
+HROLLING#hash_rolling_inc.h#4546
+HROLLING_FAST#hash_rolling_inc.h#4408
+HuffmanCode#huffman.h#1235
+HuffmanTree#entropy_encode.h#2319
+HuffmanTreeGroup#huffman.h#1253 -> HuffmanCode#huffman.h#1235
+MemoryManager#memory.h#2345 -> brotli_free_func#types.h#309, brotli_alloc_func#types.h#307
+MetaBlockSplit#metablock.h#2611 -> HistogramDistance#histogram_inc.h#2513, HistogramCommand#histogram_inc.h#2475, HistogramLiteral#histogram_inc.h#2437, BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422
+PosData#backward_references_hq.c#5143
+RingBuffer#ringbuffer.h#5766
+SlotH40#hash_forgetful_chain_inc.h#3656
+SlotH41#hash_forgetful_chain_inc.h#3844
+SlotH42#hash_forgetful_chain_inc.h#4032
+StartPosQueue#backward_references_hq.c#5150 -> PosData#backward_references_hq.c#5143
+ZopfliCostModel#backward_references_hq.c#5002
+ZopfliNode#backward_references_hq.h#4943
+ContextType#context.h#415
+BrotliEncoderMode#encode.h#931
+BrotliEncoderOperation#encode.h#934
+BrotliEncoderParameter#encode.h#937
+brotli_alloc_func#types.h#307
+brotli_free_func#types.h#309
+BrotliEncoderState#encode.h#940 -> BrotliEncoderStateStruct#encode.c#5889
+ContextLut#context.h#420
+kDictNumBits#static_dict_lut.h#968
+kDictHashMul32#static_dict_lut.h#970
+kStaticDictionaryBuckets#static_dict_lut.h#972
+kStaticDictionaryWords#static_dict_lut.h#975 -> DictWord#static_dict_lut.h#962
+kInvalidMatch#static_dict.h#2448
+kCutoffTransformsCount#hash.h#2460
+kCutoffTransforms#hash.h#2462
+kHashMul32#hash.h#2471
+kHashMul64#hash.h#2473
+kHashMul64Long#hash.h#2475
+kRollingHashMul32HROLLING_FAST#hash_rolling_inc.h#4388
+kInvalidPosHROLLING_FAST#hash_rolling_inc.h#4390
+kRollingHashMul32HROLLING#hash_rolling_inc.h#4526
+kInvalidPosHROLLING#hash_rolling_inc.h#4528
+BrotliUnalignedRead16#platform.h#311
+BrotliUnalignedRead32#platform.h#315
+BrotliUnalignedRead64#platform.h#319
+BrotliUnalignedWrite64#platform.h#323
+BrotliRBit#platform.h#327
+brotli_min_double#platform.h#329 -> BrotliEncoderParams#params.h#2158
+brotli_min_size_t#platform.h#331
+BrotliSuppressUnusedFunctions#platform.h#337 -> BrotliUnalignedRead32#platform.h#315, BrotliDefaultFreeFunc#platform.c#887, BrotliDefaultAllocFunc#platform.c#882, brotli_min_double#platform.h#329, BrotliUnalignedRead16#platform.h#311, brotli_min_size_t#platform.h#331, BrotliUnalignedRead64#platform.h#319, BrotliRBit#platform.h#327, BrotliUnalignedWrite64#platform.h#323
+BrotliCalculateDistanceCodeLimit#constants.h#369 -> BrotliDistanceCodeLimit#constants.h#364
+Log2FloorNonZero#fast_log.h#918
+FastLog2#fast_log.h#924 -> kBrotliLog2Table#fast_log.c#862
+BrotliEncoderCompress#encode.h#950 -> BrotliEncoderMode#encode.h#931
+PrefixEncodeCopyDistance#prefix.h#2172 -> Log2FloorNonZero#fast_log.h#918, BrotliDistanceParams#params.h#2150
+GetInsertLengthCode#command.h#2198 -> Log2FloorNonZero#fast_log.h#918
+GetCopyLengthCode#command.h#2215 -> Log2FloorNonZero#fast_log.h#918
+CombineLengthCodes#command.h#2228
+GetLengthCode#command.h#2239 -> GetCopyLengthCode#command.h#2215, CombineLengthCodes#command.h#2228, GetInsertLengthCode#command.h#2198
+GetInsertBase#command.h#2245 -> kBrotliInsBase#command.c#2312
+GetInsertExtra#command.h#2249 -> kBrotliInsExtra#command.c#2315
+GetCopyBase#command.h#2253 -> kBrotliCopyBase#command.c#2318
+GetCopyExtra#command.h#2257 -> kBrotliCopyExtra#command.c#2321
+InitCommand#command.h#2269 -> HasherSearchResult#hash.h#2464, PrefixEncodeCopyDistance#prefix.h#2172, Command#command.h#2261, BrotliEncoderParams#params.h#2158, BrotliDistanceParams#params.h#2150, GetLengthCode#command.h#2239
+InitInsertCommand#command.h#2277 -> GetLengthCode#command.h#2239, Command#command.h#2261
+CommandRestoreDistanceCode#command.h#2285 -> BrotliDistanceParams#params.h#2150, Command#command.h#2261
+CommandDistanceContext#command.h#2300 -> Command#command.h#2261
+CommandCopyLen#command.h#2309 -> Command#command.h#2261
+CommandCopyLenCode#command.h#2313 -> Command#command.h#2261
+FindMatchLengthWithLimit#find_match_length.h#2319 -> BrotliUnalignedRead64#platform.h#319, BrotliEncoderDictionary#encoder_dict.h#2129, BrotliDictionary#dictionary.h#422
+MaxHashTableSize#quality.h#2359
+MaxZopfliLen#quality.h#2363 -> BrotliEncoderParams#params.h#2158
+MaxZopfliCandidates#quality.h#2367 -> BrotliEncoderParams#params.h#2158
+SanitizeParams#quality.h#2371 -> brotli_min_double#platform.h#329, BrotliEncoderParams#params.h#2158
+ComputeLgBlock#quality.h#2384 -> BrotliEncoderParams#params.h#2158, brotli_min_double#platform.h#329
+ComputeRbBits#quality.h#2401 -> brotli_min_double#platform.h#329, BrotliEncoderParams#params.h#2158
+MaxMetablockSize#quality.h#2405 -> BrotliEncoderParams#params.h#2158, ComputeRbBits#quality.h#2401, brotli_min_double#platform.h#329
+LiteralSpreeLengthForSparseSearch#quality.h#2410 -> BrotliEncoderParams#params.h#2158
+ChooseHasher#quality.h#2414 -> BrotliHasherParams#params.h#2142, BrotliEncoderParams#params.h#2158
+Hash14#hash.h#2477 -> BrotliUnalignedRead32#platform.h#315, kHashMul32#hash.h#2471
+PrepareDistanceCache#hash.h#2482
+BackwardReferenceScore#hash.h#2503 -> Log2FloorNonZero#fast_log.h#918
+BackwardReferenceScoreUsingLastDistance#hash.h#2507
+BackwardReferencePenaltyUsingLastDistance#hash.h#2511
+TestStaticDictionaryItem#hash.h#2515 -> BrotliEncoderDictionary#encoder_dict.h#2129, HasherSearchResult#hash.h#2464, BackwardReferenceScore#hash.h#2503, FindMatchLengthWithLimit#find_match_length.h#2319, BrotliDictionary#dictionary.h#422
+SearchInStaticDictionary#hash.h#2547 -> BrotliEncoderDictionary#encoder_dict.h#2129, TestStaticDictionaryItem#hash.h#2515, Hash14#hash.h#2477, HasherCommon#hash.h#2452, HasherSearchResult#hash.h#2464
+InitBackwardMatch#hash.h#2570 -> BackwardMatch#hash.h#2565
+InitDictionaryBackwardMatch#hash.h#2575 -> BackwardMatch#hash.h#2565
+BackwardMatchLength#hash.h#2580 -> BackwardMatch#hash.h#2565
+BackwardMatchLengthCode#hash.h#2584 -> BackwardMatchLength#hash.h#2580, BackwardMatch#hash.h#2565
+HashTypeLengthH10#hash_to_binary_tree_inc.h#2589
+StoreLookaheadH10#hash_to_binary_tree_inc.h#2591
+HashBytesH10#hash_to_binary_tree_inc.h#2595 -> BrotliUnalignedRead32#platform.h#315, kHashMul32#hash.h#2471
+InitializeH10#hash_to_binary_tree_inc.h#2607 -> BrotliEncoderParams#params.h#2158, H10#hash_to_binary_tree_inc.h#2600, Hasher#hash.h#4874, HasherCommon#hash.h#2452
+PrepareH10#hash_to_binary_tree_inc.h#2614 -> Hasher#hash.h#4874, H10#hash_to_binary_tree_inc.h#2600
+HashMemAllocInBytesH10#hash_to_binary_tree_inc.h#2626 -> BrotliEncoderParams#params.h#2158
+LeftChildIndexH10#hash_to_binary_tree_inc.h#2634 -> H10#hash_to_binary_tree_inc.h#2600
+RightChildIndexH10#hash_to_binary_tree_inc.h#2638 -> H10#hash_to_binary_tree_inc.h#2600
+StoreAndFindMatchesH10#hash_to_binary_tree_inc.h#2642 -> brotli_min_size_t#platform.h#331, BackwardMatch#hash.h#2565, FindMatchLengthWithLimit#find_match_length.h#2319, LeftChildIndexH10#hash_to_binary_tree_inc.h#2634, HashBytesH10#hash_to_binary_tree_inc.h#2595, H10#hash_to_binary_tree_inc.h#2600, InitBackwardMatch#hash.h#2570, RightChildIndexH10#hash_to_binary_tree_inc.h#2638
+FindAllMatchesH10#hash_to_binary_tree_inc.h#2705 -> StoreAndFindMatchesH10#hash_to_binary_tree_inc.h#2642, BrotliFindAllStaticDictionaryMatches#static_dict.c#1641, InitBackwardMatch#hash.h#2570, InitDictionaryBackwardMatch#hash.h#2575, FindMatchLengthWithLimit#find_match_length.h#2319, kInvalidMatch#static_dict.h#2448, BrotliEncoderParams#params.h#2158, H10#hash_to_binary_tree_inc.h#2600, BrotliEncoderDictionary#encoder_dict.h#2129, brotli_min_size_t#platform.h#331, BackwardMatch#hash.h#2565
+StoreH10#hash_to_binary_tree_inc.h#2757 -> StoreAndFindMatchesH10#hash_to_binary_tree_inc.h#2642, H10#hash_to_binary_tree_inc.h#2600
+StoreRangeH10#hash_to_binary_tree_inc.h#2762 -> StoreH10#hash_to_binary_tree_inc.h#2757, H10#hash_to_binary_tree_inc.h#2600
+StitchToPreviousBlockH10#hash_to_binary_tree_inc.h#2778 -> StoreAndFindMatchesH10#hash_to_binary_tree_inc.h#2642, HashTypeLengthH10#hash_to_binary_tree_inc.h#2589, brotli_min_size_t#platform.h#331, H10#hash_to_binary_tree_inc.h#2600, Hasher#hash.h#4874
+HashTypeLengthH2#hash_longest_match_quickly_inc.h#2790
+StoreLookaheadH2#hash_longest_match_quickly_inc.h#2792
+HashBytesH2#hash_longest_match_quickly_inc.h#2794 -> BrotliUnalignedRead64#platform.h#319, kHashMul64#hash.h#2473
+InitializeH2#hash_longest_match_quickly_inc.h#2804 -> BrotliEncoderParams#params.h#2158, HasherCommon#hash.h#2452, Hasher#hash.h#4874, H2#hash_longest_match_quickly_inc.h#2799
+PrepareH2#hash_longest_match_quickly_inc.h#2810 -> HashBytesH2#hash_longest_match_quickly_inc.h#2794, Hasher#hash.h#4874, H2#hash_longest_match_quickly_inc.h#2799
+HashMemAllocInBytesH2#hash_longest_match_quickly_inc.h#2831 -> BrotliEncoderParams#params.h#2158
+StoreH2#hash_longest_match_quickly_inc.h#2838 -> H2#hash_longest_match_quickly_inc.h#2799, HashBytesH2#hash_longest_match_quickly_inc.h#2794
+StoreRangeH2#hash_longest_match_quickly_inc.h#2848 -> H2#hash_longest_match_quickly_inc.h#2799, StoreH2#hash_longest_match_quickly_inc.h#2838
+StitchToPreviousBlockH2#hash_longest_match_quickly_inc.h#2855 -> StoreH2#hash_longest_match_quickly_inc.h#2838, Hasher#hash.h#4874, HashTypeLengthH2#hash_longest_match_quickly_inc.h#2790, H2#hash_longest_match_quickly_inc.h#2799
+PrepareDistanceCacheH2#hash_longest_match_quickly_inc.h#2863 -> H2#hash_longest_match_quickly_inc.h#2799
+FindLongestMatchH2#hash_longest_match_quickly_inc.h#2868 -> BrotliEncoderDictionary#encoder_dict.h#2129, BrotliDistanceParams#params.h#2150, BackwardReferenceScoreUsingLastDistance#hash.h#2507, FindMatchLengthWithLimit#find_match_length.h#2319, HashBytesH2#hash_longest_match_quickly_inc.h#2794, SearchInStaticDictionary#hash.h#2547, H2#hash_longest_match_quickly_inc.h#2799, BrotliEncoderParams#params.h#2158, HasherSearchResult#hash.h#2464, BackwardReferenceScore#hash.h#2503
+HashTypeLengthH3#hash_longest_match_quickly_inc.h#2967
+StoreLookaheadH3#hash_longest_match_quickly_inc.h#2969
+HashBytesH3#hash_longest_match_quickly_inc.h#2971 -> kHashMul64#hash.h#2473, BrotliUnalignedRead64#platform.h#319
+InitializeH3#hash_longest_match_quickly_inc.h#2981 -> H3#hash_longest_match_quickly_inc.h#2976, Hasher#hash.h#4874, BrotliEncoderParams#params.h#2158, HasherCommon#hash.h#2452
+PrepareH3#hash_longest_match_quickly_inc.h#2987 -> HashBytesH3#hash_longest_match_quickly_inc.h#2971, Hasher#hash.h#4874, H3#hash_longest_match_quickly_inc.h#2976
+HashMemAllocInBytesH3#hash_longest_match_quickly_inc.h#3008 -> BrotliEncoderParams#params.h#2158
+StoreH3#hash_longest_match_quickly_inc.h#3015 -> H3#hash_longest_match_quickly_inc.h#2976, HashBytesH3#hash_longest_match_quickly_inc.h#2971
+StoreRangeH3#hash_longest_match_quickly_inc.h#3025 -> StoreH3#hash_longest_match_quickly_inc.h#3015, H3#hash_longest_match_quickly_inc.h#2976
+StitchToPreviousBlockH3#hash_longest_match_quickly_inc.h#3032 -> Hasher#hash.h#4874, StoreH3#hash_longest_match_quickly_inc.h#3015, HashTypeLengthH3#hash_longest_match_quickly_inc.h#2967, H3#hash_longest_match_quickly_inc.h#2976
+PrepareDistanceCacheH3#hash_longest_match_quickly_inc.h#3040 -> H3#hash_longest_match_quickly_inc.h#2976
+FindLongestMatchH3#hash_longest_match_quickly_inc.h#3045 -> SearchInStaticDictionary#hash.h#2547, HasherSearchResult#hash.h#2464, HashBytesH3#hash_longest_match_quickly_inc.h#2971, H3#hash_longest_match_quickly_inc.h#2976, FindMatchLengthWithLimit#find_match_length.h#2319, BrotliEncoderDictionary#encoder_dict.h#2129, BrotliDistanceParams#params.h#2150, BrotliEncoderParams#params.h#2158, BackwardReferenceScore#hash.h#2503, BackwardReferenceScoreUsingLastDistance#hash.h#2507
+HashTypeLengthH4#hash_longest_match_quickly_inc.h#3144
+StoreLookaheadH4#hash_longest_match_quickly_inc.h#3146
+HashBytesH4#hash_longest_match_quickly_inc.h#3148 -> kHashMul64#hash.h#2473, BrotliUnalignedRead64#platform.h#319
+InitializeH4#hash_longest_match_quickly_inc.h#3158 -> H4#hash_longest_match_quickly_inc.h#3153, HasherCommon#hash.h#2452, BrotliEncoderParams#params.h#2158, Hasher#hash.h#4874
+PrepareH4#hash_longest_match_quickly_inc.h#3164 -> Hasher#hash.h#4874, H4#hash_longest_match_quickly_inc.h#3153, HashBytesH4#hash_longest_match_quickly_inc.h#3148
+HashMemAllocInBytesH4#hash_longest_match_quickly_inc.h#3185 -> BrotliEncoderParams#params.h#2158
+StoreH4#hash_longest_match_quickly_inc.h#3192 -> H4#hash_longest_match_quickly_inc.h#3153, HashBytesH4#hash_longest_match_quickly_inc.h#3148
+StoreRangeH4#hash_longest_match_quickly_inc.h#3202 -> StoreH4#hash_longest_match_quickly_inc.h#3192, H4#hash_longest_match_quickly_inc.h#3153
+StitchToPreviousBlockH4#hash_longest_match_quickly_inc.h#3209 -> Hasher#hash.h#4874, HashTypeLengthH4#hash_longest_match_quickly_inc.h#3144, StoreH4#hash_longest_match_quickly_inc.h#3192, H4#hash_longest_match_quickly_inc.h#3153
+PrepareDistanceCacheH4#hash_longest_match_quickly_inc.h#3217 -> H4#hash_longest_match_quickly_inc.h#3153
+FindLongestMatchH4#hash_longest_match_quickly_inc.h#3222 -> BackwardReferenceScore#hash.h#2503, H4#hash_longest_match_quickly_inc.h#3153, BackwardReferenceScoreUsingLastDistance#hash.h#2507, SearchInStaticDictionary#hash.h#2547, BrotliEncoderDictionary#encoder_dict.h#2129, BrotliEncoderParams#params.h#2158, HashBytesH4#hash_longest_match_quickly_inc.h#3148, FindMatchLengthWithLimit#find_match_length.h#2319, HasherSearchResult#hash.h#2464, BrotliDistanceParams#params.h#2150
+HashTypeLengthH5#hash_longest_match_inc.h#3321
+StoreLookaheadH5#hash_longest_match_inc.h#3323
+HashBytesH5#hash_longest_match_inc.h#3325 -> BrotliUnalignedRead32#platform.h#315, kHashMul32#hash.h#2471
+NumH5#hash_longest_match_inc.h#3342
+InitializeH5#hash_longest_match_inc.h#3346 -> BrotliEncoderParams#params.h#2158, Hasher#hash.h#4874, H5#hash_longest_match_inc.h#3330, HasherCommon#hash.h#2452, BrotliHasherParams#params.h#2142
+PrepareH5#hash_longest_match_inc.h#3359 -> H5#hash_longest_match_inc.h#3330, HashBytesH5#hash_longest_match_inc.h#3325, Hasher#hash.h#4874
+HashMemAllocInBytesH5#hash_longest_match_inc.h#3373 -> BrotliHasherParams#params.h#2142, BrotliEncoderParams#params.h#2158
+StoreH5#hash_longest_match_inc.h#3381 -> H5#hash_longest_match_inc.h#3330, HashBytesH5#hash_longest_match_inc.h#3325
+StoreRangeH5#hash_longest_match_inc.h#3389 -> H5#hash_longest_match_inc.h#3330, StoreH5#hash_longest_match_inc.h#3381
+StitchToPreviousBlockH5#hash_longest_match_inc.h#3396 -> H5#hash_longest_match_inc.h#3330, HashTypeLengthH5#hash_longest_match_inc.h#3321, Hasher#hash.h#4874, StoreH5#hash_longest_match_inc.h#3381
+PrepareDistanceCacheH5#hash_longest_match_inc.h#3404 -> H5#hash_longest_match_inc.h#3330, PrepareDistanceCache#hash.h#2482
+FindLongestMatchH5#hash_longest_match_inc.h#3408 -> BackwardReferencePenaltyUsingLastDistance#hash.h#2511, SearchInStaticDictionary#hash.h#2547, BackwardReferenceScore#hash.h#2503, BackwardReferenceScoreUsingLastDistance#hash.h#2507, H5#hash_longest_match_inc.h#3330, FindMatchLengthWithLimit#find_match_length.h#2319, HashBytesH5#hash_longest_match_inc.h#3325, BrotliDistanceParams#params.h#2150, HasherSearchResult#hash.h#2464, BrotliEncoderDictionary#encoder_dict.h#2129, BrotliEncoderParams#params.h#2158
+HashTypeLengthH6#hash_longest_match64_inc.h#3484
+StoreLookaheadH6#hash_longest_match64_inc.h#3486
+HashBytesH6#hash_longest_match64_inc.h#3488 -> BrotliUnalignedRead64#platform.h#319, kHashMul64Long#hash.h#2475
+InitializeH6#hash_longest_match64_inc.h#3506 -> HasherCommon#hash.h#2452, BrotliEncoderParams#params.h#2158, BrotliHasherParams#params.h#2142, H6#hash_longest_match64_inc.h#3493, Hasher#hash.h#4874
+PrepareH6#hash_longest_match64_inc.h#3520 -> HashBytesH6#hash_longest_match64_inc.h#3488, Hasher#hash.h#4874, H6#hash_longest_match64_inc.h#3493
+HashMemAllocInBytesH6#hash_longest_match64_inc.h#3534 -> BrotliEncoderParams#params.h#2158, BrotliHasherParams#params.h#2142
+StoreH6#hash_longest_match64_inc.h#3542 -> H6#hash_longest_match64_inc.h#3493, HashBytesH6#hash_longest_match64_inc.h#3488
+StoreRangeH6#hash_longest_match64_inc.h#3552 -> H6#hash_longest_match64_inc.h#3493, StoreH6#hash_longest_match64_inc.h#3542
+StitchToPreviousBlockH6#hash_longest_match64_inc.h#3559 -> H6#hash_longest_match64_inc.h#3493, HashTypeLengthH6#hash_longest_match64_inc.h#3484, Hasher#hash.h#4874, StoreH6#hash_longest_match64_inc.h#3542
+PrepareDistanceCacheH6#hash_longest_match64_inc.h#3567 -> PrepareDistanceCache#hash.h#2482, H6#hash_longest_match64_inc.h#3493
+FindLongestMatchH6#hash_longest_match64_inc.h#3571 -> HashBytesH6#hash_longest_match64_inc.h#3488, BrotliEncoderParams#params.h#2158, SearchInStaticDictionary#hash.h#2547, HasherSearchResult#hash.h#2464, BrotliEncoderDictionary#encoder_dict.h#2129, FindMatchLengthWithLimit#find_match_length.h#2319, BackwardReferencePenaltyUsingLastDistance#hash.h#2511, BackwardReferenceScore#hash.h#2503, BrotliDistanceParams#params.h#2150, BackwardReferenceScoreUsingLastDistance#hash.h#2507, H6#hash_longest_match64_inc.h#3493
+HashTypeLengthH40#hash_forgetful_chain_inc.h#3647
+StoreLookaheadH40#hash_forgetful_chain_inc.h#3649
+HashBytesH40#hash_forgetful_chain_inc.h#3651 -> kHashMul32#hash.h#2471, BrotliUnalignedRead32#platform.h#315
+AddrH40#hash_forgetful_chain_inc.h#3672
+HeadH40#hash_forgetful_chain_inc.h#3676 -> AddrH40#hash_forgetful_chain_inc.h#3672
+TinyHashH40#hash_forgetful_chain_inc.h#3680 -> HeadH40#hash_forgetful_chain_inc.h#3676
+BanksH40#hash_forgetful_chain_inc.h#3684 -> TinyHashH40#hash_forgetful_chain_inc.h#3680, BankH40#hash_forgetful_chain_inc.h#3661
+InitializeH40#hash_forgetful_chain_inc.h#3688 -> BrotliEncoderParams#params.h#2158, H40#hash_forgetful_chain_inc.h#3665, Hasher#hash.h#4874, HasherCommon#hash.h#2452
+PrepareH40#hash_forgetful_chain_inc.h#3694 -> TinyHashH40#hash_forgetful_chain_inc.h#3680, HeadH40#hash_forgetful_chain_inc.h#3676, HashBytesH40#hash_forgetful_chain_inc.h#3651, H40#hash_forgetful_chain_inc.h#3665, Hasher#hash.h#4874, AddrH40#hash_forgetful_chain_inc.h#3672
+HashMemAllocInBytesH40#hash_forgetful_chain_inc.h#3714 -> BankH40#hash_forgetful_chain_inc.h#3661, BrotliEncoderParams#params.h#2158
+StoreH40#hash_forgetful_chain_inc.h#3721 -> HashBytesH40#hash_forgetful_chain_inc.h#3651, H40#hash_forgetful_chain_inc.h#3665, TinyHashH40#hash_forgetful_chain_inc.h#3680, HeadH40#hash_forgetful_chain_inc.h#3676, BanksH40#hash_forgetful_chain_inc.h#3684, BankH40#hash_forgetful_chain_inc.h#3661, AddrH40#hash_forgetful_chain_inc.h#3672
+StoreRangeH40#hash_forgetful_chain_inc.h#3738 -> H40#hash_forgetful_chain_inc.h#3665, StoreH40#hash_forgetful_chain_inc.h#3721
+StitchToPreviousBlockH40#hash_forgetful_chain_inc.h#3745 -> StoreH40#hash_forgetful_chain_inc.h#3721, Hasher#hash.h#4874, H40#hash_forgetful_chain_inc.h#3665, HashTypeLengthH40#hash_forgetful_chain_inc.h#3647
+PrepareDistanceCacheH40#hash_forgetful_chain_inc.h#3753 -> H40#hash_forgetful_chain_inc.h#3665, PrepareDistanceCache#hash.h#2482
+FindLongestMatchH40#hash_forgetful_chain_inc.h#3758 -> FindMatchLengthWithLimit#find_match_length.h#2319, HashBytesH40#hash_forgetful_chain_inc.h#3651, HeadH40#hash_forgetful_chain_inc.h#3676, BrotliDistanceParams#params.h#2150, BrotliEncoderParams#params.h#2158, H40#hash_forgetful_chain_inc.h#3665, BackwardReferenceScoreUsingLastDistance#hash.h#2507, TinyHashH40#hash_forgetful_chain_inc.h#3680, HasherSearchResult#hash.h#2464, BanksH40#hash_forgetful_chain_inc.h#3684, BackwardReferenceScore#hash.h#2503, BankH40#hash_forgetful_chain_inc.h#3661, StoreH40#hash_forgetful_chain_inc.h#3721, BrotliEncoderDictionary#encoder_dict.h#2129, AddrH40#hash_forgetful_chain_inc.h#3672, BackwardReferencePenaltyUsingLastDistance#hash.h#2511, SearchInStaticDictionary#hash.h#2547
+HashTypeLengthH41#hash_forgetful_chain_inc.h#3835
+StoreLookaheadH41#hash_forgetful_chain_inc.h#3837
+HashBytesH41#hash_forgetful_chain_inc.h#3839 -> BrotliUnalignedRead32#platform.h#315, kHashMul32#hash.h#2471
+AddrH41#hash_forgetful_chain_inc.h#3860
+HeadH41#hash_forgetful_chain_inc.h#3864 -> AddrH41#hash_forgetful_chain_inc.h#3860
+TinyHashH41#hash_forgetful_chain_inc.h#3868 -> HeadH41#hash_forgetful_chain_inc.h#3864
+BanksH41#hash_forgetful_chain_inc.h#3872 -> BankH41#hash_forgetful_chain_inc.h#3849, TinyHashH41#hash_forgetful_chain_inc.h#3868
+InitializeH41#hash_forgetful_chain_inc.h#3876 -> BrotliEncoderParams#params.h#2158, HasherCommon#hash.h#2452, H41#hash_forgetful_chain_inc.h#3853, Hasher#hash.h#4874
+PrepareH41#hash_forgetful_chain_inc.h#3882 -> HashBytesH41#hash_forgetful_chain_inc.h#3839, H41#hash_forgetful_chain_inc.h#3853, HeadH41#hash_forgetful_chain_inc.h#3864, TinyHashH41#hash_forgetful_chain_inc.h#3868, Hasher#hash.h#4874, AddrH41#hash_forgetful_chain_inc.h#3860
+HashMemAllocInBytesH41#hash_forgetful_chain_inc.h#3902 -> BrotliEncoderParams#params.h#2158, BankH41#hash_forgetful_chain_inc.h#3849
+StoreH41#hash_forgetful_chain_inc.h#3909 -> HashBytesH41#hash_forgetful_chain_inc.h#3839, H41#hash_forgetful_chain_inc.h#3853, BanksH41#hash_forgetful_chain_inc.h#3872, AddrH41#hash_forgetful_chain_inc.h#3860, HeadH41#hash_forgetful_chain_inc.h#3864, BankH41#hash_forgetful_chain_inc.h#3849, TinyHashH41#hash_forgetful_chain_inc.h#3868
+StoreRangeH41#hash_forgetful_chain_inc.h#3926 -> H41#hash_forgetful_chain_inc.h#3853, StoreH41#hash_forgetful_chain_inc.h#3909
+StitchToPreviousBlockH41#hash_forgetful_chain_inc.h#3933 -> Hasher#hash.h#4874, StoreH41#hash_forgetful_chain_inc.h#3909, HashTypeLengthH41#hash_forgetful_chain_inc.h#3835, H41#hash_forgetful_chain_inc.h#3853
+PrepareDistanceCacheH41#hash_forgetful_chain_inc.h#3941 -> H41#hash_forgetful_chain_inc.h#3853, PrepareDistanceCache#hash.h#2482
+FindLongestMatchH41#hash_forgetful_chain_inc.h#3946 -> BackwardReferenceScoreUsingLastDistance#hash.h#2507, HasherSearchResult#hash.h#2464, BrotliEncoderDictionary#encoder_dict.h#2129, BanksH41#hash_forgetful_chain_inc.h#3872, H41#hash_forgetful_chain_inc.h#3853, AddrH41#hash_forgetful_chain_inc.h#3860, StoreH41#hash_forgetful_chain_inc.h#3909, BrotliEncoderParams#params.h#2158, SearchInStaticDictionary#hash.h#2547, BankH41#hash_forgetful_chain_inc.h#3849, HeadH41#hash_forgetful_chain_inc.h#3864, TinyHashH41#hash_forgetful_chain_inc.h#3868, FindMatchLengthWithLimit#find_match_length.h#2319, BackwardReferencePenaltyUsingLastDistance#hash.h#2511, HashBytesH41#hash_forgetful_chain_inc.h#3839, BackwardReferenceScore#hash.h#2503, BrotliDistanceParams#params.h#2150
+HashTypeLengthH42#hash_forgetful_chain_inc.h#4023
+StoreLookaheadH42#hash_forgetful_chain_inc.h#4025
+HashBytesH42#hash_forgetful_chain_inc.h#4027 -> BrotliUnalignedRead32#platform.h#315, kHashMul32#hash.h#2471
+AddrH42#hash_forgetful_chain_inc.h#4048
+HeadH42#hash_forgetful_chain_inc.h#4052 -> AddrH42#hash_forgetful_chain_inc.h#4048
+TinyHashH42#hash_forgetful_chain_inc.h#4056 -> HeadH42#hash_forgetful_chain_inc.h#4052
+BanksH42#hash_forgetful_chain_inc.h#4060 -> BankH42#hash_forgetful_chain_inc.h#4037, TinyHashH42#hash_forgetful_chain_inc.h#4056
+InitializeH42#hash_forgetful_chain_inc.h#4064 -> HasherCommon#hash.h#2452, BrotliEncoderParams#params.h#2158, H42#hash_forgetful_chain_inc.h#4041, Hasher#hash.h#4874
+PrepareH42#hash_forgetful_chain_inc.h#4070 -> TinyHashH42#hash_forgetful_chain_inc.h#4056, AddrH42#hash_forgetful_chain_inc.h#4048, HeadH42#hash_forgetful_chain_inc.h#4052, H42#hash_forgetful_chain_inc.h#4041, Hasher#hash.h#4874, HashBytesH42#hash_forgetful_chain_inc.h#4027
+HashMemAllocInBytesH42#hash_forgetful_chain_inc.h#4090 -> BrotliEncoderParams#params.h#2158, BankH42#hash_forgetful_chain_inc.h#4037
+StoreH42#hash_forgetful_chain_inc.h#4097 -> H42#hash_forgetful_chain_inc.h#4041, HashBytesH42#hash_forgetful_chain_inc.h#4027, AddrH42#hash_forgetful_chain_inc.h#4048, BankH42#hash_forgetful_chain_inc.h#4037, TinyHashH42#hash_forgetful_chain_inc.h#4056, HeadH42#hash_forgetful_chain_inc.h#4052, BanksH42#hash_forgetful_chain_inc.h#4060
+StoreRangeH42#hash_forgetful_chain_inc.h#4114 -> H42#hash_forgetful_chain_inc.h#4041, StoreH42#hash_forgetful_chain_inc.h#4097
+StitchToPreviousBlockH42#hash_forgetful_chain_inc.h#4121 -> HashTypeLengthH42#hash_forgetful_chain_inc.h#4023, StoreH42#hash_forgetful_chain_inc.h#4097, Hasher#hash.h#4874, H42#hash_forgetful_chain_inc.h#4041
+PrepareDistanceCacheH42#hash_forgetful_chain_inc.h#4129 -> H42#hash_forgetful_chain_inc.h#4041, PrepareDistanceCache#hash.h#2482
+FindLongestMatchH42#hash_forgetful_chain_inc.h#4134 -> AddrH42#hash_forgetful_chain_inc.h#4048, BackwardReferenceScore#hash.h#2503, HasherSearchResult#hash.h#2464, BackwardReferenceScoreUsingLastDistance#hash.h#2507, H42#hash_forgetful_chain_inc.h#4041, HashBytesH42#hash_forgetful_chain_inc.h#4027, BrotliEncoderDictionary#encoder_dict.h#2129, BackwardReferencePenaltyUsingLastDistance#hash.h#2511, TinyHashH42#hash_forgetful_chain_inc.h#4056, BrotliDistanceParams#params.h#2150, SearchInStaticDictionary#hash.h#2547, BrotliEncoderParams#params.h#2158, StoreH42#hash_forgetful_chain_inc.h#4097, HeadH42#hash_forgetful_chain_inc.h#4052, BanksH42#hash_forgetful_chain_inc.h#4060, BankH42#hash_forgetful_chain_inc.h#4037, FindMatchLengthWithLimit#find_match_length.h#2319
+HashTypeLengthH54#hash_longest_match_quickly_inc.h#4211
+StoreLookaheadH54#hash_longest_match_quickly_inc.h#4213
+HashBytesH54#hash_longest_match_quickly_inc.h#4215 -> BrotliUnalignedRead64#platform.h#319, kHashMul64#hash.h#2473
+InitializeH54#hash_longest_match_quickly_inc.h#4225 -> Hasher#hash.h#4874, BrotliEncoderParams#params.h#2158, H54#hash_longest_match_quickly_inc.h#4220, HasherCommon#hash.h#2452
+PrepareH54#hash_longest_match_quickly_inc.h#4231 -> HashBytesH54#hash_longest_match_quickly_inc.h#4215, Hasher#hash.h#4874, H54#hash_longest_match_quickly_inc.h#4220
+HashMemAllocInBytesH54#hash_longest_match_quickly_inc.h#4252 -> BrotliEncoderParams#params.h#2158
+StoreH54#hash_longest_match_quickly_inc.h#4259 -> H54#hash_longest_match_quickly_inc.h#4220, HashBytesH54#hash_longest_match_quickly_inc.h#4215
+StoreRangeH54#hash_longest_match_quickly_inc.h#4269 -> StoreH54#hash_longest_match_quickly_inc.h#4259, H54#hash_longest_match_quickly_inc.h#4220
+StitchToPreviousBlockH54#hash_longest_match_quickly_inc.h#4276 -> Hasher#hash.h#4874, HashTypeLengthH54#hash_longest_match_quickly_inc.h#4211, H54#hash_longest_match_quickly_inc.h#4220, StoreH54#hash_longest_match_quickly_inc.h#4259
+PrepareDistanceCacheH54#hash_longest_match_quickly_inc.h#4284 -> H54#hash_longest_match_quickly_inc.h#4220
+FindLongestMatchH54#hash_longest_match_quickly_inc.h#4289 -> HashBytesH54#hash_longest_match_quickly_inc.h#4215, BrotliDistanceParams#params.h#2150, BackwardReferenceScoreUsingLastDistance#hash.h#2507, H54#hash_longest_match_quickly_inc.h#4220, FindMatchLengthWithLimit#find_match_length.h#2319, BrotliEncoderParams#params.h#2158, SearchInStaticDictionary#hash.h#2547, HasherSearchResult#hash.h#2464, BackwardReferenceScore#hash.h#2503, BrotliEncoderDictionary#encoder_dict.h#2129
+HashTypeLengthHROLLING_FAST#hash_rolling_inc.h#4392
+StoreLookaheadHROLLING_FAST#hash_rolling_inc.h#4394
+HashByteHROLLING_FAST#hash_rolling_inc.h#4396
+HashRollingFunctionInitialHROLLING_FAST#hash_rolling_inc.h#4400 -> HashByteHROLLING_FAST#hash_rolling_inc.h#4396
+HashRollingFunctionHROLLING_FAST#hash_rolling_inc.h#4404 -> HashByteHROLLING_FAST#hash_rolling_inc.h#4396
+InitializeHROLLING_FAST#hash_rolling_inc.h#4417 -> kInvalidPosHROLLING_FAST#hash_rolling_inc.h#4390, HasherCommon#hash.h#2452, HROLLING_FAST#hash_rolling_inc.h#4408, BrotliEncoderParams#params.h#2158, kRollingHashMul32HROLLING_FAST#hash_rolling_inc.h#4388
+PrepareHROLLING_FAST#hash_rolling_inc.h#4433 -> HROLLING_FAST#hash_rolling_inc.h#4408, HashRollingFunctionInitialHROLLING_FAST#hash_rolling_inc.h#4400
+HashMemAllocInBytesHROLLING_FAST#hash_rolling_inc.h#4443 -> BrotliEncoderParams#params.h#2158
+StoreHROLLING_FAST#hash_rolling_inc.h#4450 -> HROLLING_FAST#hash_rolling_inc.h#4408
+StoreRangeHROLLING_FAST#hash_rolling_inc.h#4457 -> HROLLING_FAST#hash_rolling_inc.h#4408
+StitchToPreviousBlockHROLLING_FAST#hash_rolling_inc.h#4465 -> PrepareHROLLING_FAST#hash_rolling_inc.h#4433, HROLLING_FAST#hash_rolling_inc.h#4408
+PrepareDistanceCacheHROLLING_FAST#hash_rolling_inc.h#4482 -> HROLLING_FAST#hash_rolling_inc.h#4408
+FindLongestMatchHROLLING_FAST#hash_rolling_inc.h#4487 -> BackwardReferenceScore#hash.h#2503, FindMatchLengthWithLimit#find_match_length.h#2319, kInvalidPosHROLLING_FAST#hash_rolling_inc.h#4390, HashRollingFunctionHROLLING_FAST#hash_rolling_inc.h#4404, HasherSearchResult#hash.h#2464, BrotliEncoderDictionary#encoder_dict.h#2129, HROLLING_FAST#hash_rolling_inc.h#4408
+HashTypeLengthHROLLING#hash_rolling_inc.h#4530
+StoreLookaheadHROLLING#hash_rolling_inc.h#4532
+HashByteHROLLING#hash_rolling_inc.h#4534
+HashRollingFunctionInitialHROLLING#hash_rolling_inc.h#4538 -> HashByteHROLLING#hash_rolling_inc.h#4534
+HashRollingFunctionHROLLING#hash_rolling_inc.h#4542 -> HashByteHROLLING#hash_rolling_inc.h#4534
+InitializeHROLLING#hash_rolling_inc.h#4555 -> kRollingHashMul32HROLLING#hash_rolling_inc.h#4526, BrotliEncoderParams#params.h#2158, HasherCommon#hash.h#2452, kInvalidPosHROLLING#hash_rolling_inc.h#4528, HROLLING#hash_rolling_inc.h#4546
+PrepareHROLLING#hash_rolling_inc.h#4571 -> HROLLING#hash_rolling_inc.h#4546, HashRollingFunctionInitialHROLLING#hash_rolling_inc.h#4538
+HashMemAllocInBytesHROLLING#hash_rolling_inc.h#4581 -> BrotliEncoderParams#params.h#2158
+StoreHROLLING#hash_rolling_inc.h#4588 -> HROLLING#hash_rolling_inc.h#4546
+StoreRangeHROLLING#hash_rolling_inc.h#4595 -> HROLLING#hash_rolling_inc.h#4546
+StitchToPreviousBlockHROLLING#hash_rolling_inc.h#4603 -> HROLLING#hash_rolling_inc.h#4546, PrepareHROLLING#hash_rolling_inc.h#4571
+PrepareDistanceCacheHROLLING#hash_rolling_inc.h#4620 -> HROLLING#hash_rolling_inc.h#4546
+FindLongestMatchHROLLING#hash_rolling_inc.h#4625 -> HROLLING#hash_rolling_inc.h#4546, kInvalidPosHROLLING#hash_rolling_inc.h#4528, HashRollingFunctionHROLLING#hash_rolling_inc.h#4542, HasherSearchResult#hash.h#2464, BrotliEncoderDictionary#encoder_dict.h#2129, BackwardReferenceScore#hash.h#2503, FindMatchLengthWithLimit#find_match_length.h#2319
+HashTypeLengthH35#hash_composite_inc.h#4664 -> HashTypeLengthH3#hash_longest_match_quickly_inc.h#2967, HashTypeLengthHROLLING_FAST#hash_rolling_inc.h#4392
+StoreLookaheadH35#hash_composite_inc.h#4670 -> StoreLookaheadHROLLING_FAST#hash_rolling_inc.h#4394, StoreLookaheadH3#hash_longest_match_quickly_inc.h#2969
+InitializeH35#hash_composite_inc.h#4686 -> BrotliEncoderParams#params.h#2158, H35#hash_composite_inc.h#4676, Hasher#hash.h#4874, HasherCommon#hash.h#2452
+PrepareH35#hash_composite_inc.h#4694 -> HashMemAllocInBytesH3#hash_longest_match_quickly_inc.h#3008, PrepareHROLLING_FAST#hash_rolling_inc.h#4433, Hasher#hash.h#4874, PrepareH3#hash_longest_match_quickly_inc.h#2987, InitializeHROLLING_FAST#hash_rolling_inc.h#4417, H35#hash_composite_inc.h#4676, InitializeH3#hash_longest_match_quickly_inc.h#2981
+HashMemAllocInBytesH35#hash_composite_inc.h#4705 -> HashMemAllocInBytesHROLLING_FAST#hash_rolling_inc.h#4443, BrotliEncoderParams#params.h#2158, HashMemAllocInBytesH3#hash_longest_match_quickly_inc.h#3008
+StoreH35#hash_composite_inc.h#4709 -> StoreHROLLING_FAST#hash_rolling_inc.h#4450, StoreH3#hash_longest_match_quickly_inc.h#3015, H35#hash_composite_inc.h#4676
+StoreRangeH35#hash_composite_inc.h#4714 -> StoreRangeH3#hash_longest_match_quickly_inc.h#3025, H35#hash_composite_inc.h#4676, StoreRangeHROLLING_FAST#hash_rolling_inc.h#4457
+StitchToPreviousBlockH35#hash_composite_inc.h#4719 -> StitchToPreviousBlockH3#hash_longest_match_quickly_inc.h#3032, StitchToPreviousBlockHROLLING_FAST#hash_rolling_inc.h#4465, H35#hash_composite_inc.h#4676, Hasher#hash.h#4874
+PrepareDistanceCacheH35#hash_composite_inc.h#4724 -> H35#hash_composite_inc.h#4676, PrepareDistanceCacheHROLLING_FAST#hash_rolling_inc.h#4482, PrepareDistanceCacheH3#hash_longest_match_quickly_inc.h#3040
+FindLongestMatchH35#hash_composite_inc.h#4729 -> HasherSearchResult#hash.h#2464, FindLongestMatchHROLLING_FAST#hash_rolling_inc.h#4487, BrotliEncoderDictionary#encoder_dict.h#2129, H35#hash_composite_inc.h#4676, BrotliDistanceParams#params.h#2150, BrotliEncoderParams#params.h#2158, FindLongestMatchH3#hash_longest_match_quickly_inc.h#3045
+HashTypeLengthH55#hash_composite_inc.h#4734 -> HashTypeLengthHROLLING_FAST#hash_rolling_inc.h#4392, HashTypeLengthH54#hash_longest_match_quickly_inc.h#4211
+StoreLookaheadH55#hash_composite_inc.h#4740 -> StoreLookaheadHROLLING_FAST#hash_rolling_inc.h#4394, StoreLookaheadH54#hash_longest_match_quickly_inc.h#4213
+InitializeH55#hash_composite_inc.h#4756 -> HasherCommon#hash.h#2452, Hasher#hash.h#4874, H55#hash_composite_inc.h#4746, BrotliEncoderParams#params.h#2158
+PrepareH55#hash_composite_inc.h#4764 -> PrepareH54#hash_longest_match_quickly_inc.h#4231, InitializeH54#hash_longest_match_quickly_inc.h#4225, H55#hash_composite_inc.h#4746, HashMemAllocInBytesH54#hash_longest_match_quickly_inc.h#4252, PrepareHROLLING_FAST#hash_rolling_inc.h#4433, InitializeHROLLING_FAST#hash_rolling_inc.h#4417, Hasher#hash.h#4874
+HashMemAllocInBytesH55#hash_composite_inc.h#4775 -> BrotliEncoderParams#params.h#2158, HashMemAllocInBytesHROLLING_FAST#hash_rolling_inc.h#4443, HashMemAllocInBytesH54#hash_longest_match_quickly_inc.h#4252
+StoreH55#hash_composite_inc.h#4779 -> StoreHROLLING_FAST#hash_rolling_inc.h#4450, H55#hash_composite_inc.h#4746, StoreH54#hash_longest_match_quickly_inc.h#4259
+StoreRangeH55#hash_composite_inc.h#4784 -> H55#hash_composite_inc.h#4746, StoreRangeHROLLING_FAST#hash_rolling_inc.h#4457, StoreRangeH54#hash_longest_match_quickly_inc.h#4269
+StitchToPreviousBlockH55#hash_composite_inc.h#4789 -> Hasher#hash.h#4874, StitchToPreviousBlockH54#hash_longest_match_quickly_inc.h#4276, H55#hash_composite_inc.h#4746, StitchToPreviousBlockHROLLING_FAST#hash_rolling_inc.h#4465
+PrepareDistanceCacheH55#hash_composite_inc.h#4794 -> PrepareDistanceCacheH54#hash_longest_match_quickly_inc.h#4284, PrepareDistanceCacheHROLLING_FAST#hash_rolling_inc.h#4482, H55#hash_composite_inc.h#4746
+FindLongestMatchH55#hash_composite_inc.h#4799 -> BrotliEncoderParams#params.h#2158, FindLongestMatchHROLLING_FAST#hash_rolling_inc.h#4487, BrotliEncoderDictionary#encoder_dict.h#2129, BrotliDistanceParams#params.h#2150, FindLongestMatchH54#hash_longest_match_quickly_inc.h#4289, H55#hash_composite_inc.h#4746, HasherSearchResult#hash.h#2464
+HashTypeLengthH65#hash_composite_inc.h#4804 -> HashTypeLengthHROLLING#hash_rolling_inc.h#4530, HashTypeLengthH6#hash_longest_match64_inc.h#3484
+StoreLookaheadH65#hash_composite_inc.h#4810 -> StoreLookaheadH6#hash_longest_match64_inc.h#3486, StoreLookaheadHROLLING#hash_rolling_inc.h#4532
+InitializeH65#hash_composite_inc.h#4826 -> HasherCommon#hash.h#2452, H65#hash_composite_inc.h#4816, BrotliEncoderParams#params.h#2158, Hasher#hash.h#4874
+PrepareH65#hash_composite_inc.h#4834 -> PrepareHROLLING#hash_rolling_inc.h#4571, PrepareH6#hash_longest_match64_inc.h#3520, InitializeH6#hash_longest_match64_inc.h#3506, HashMemAllocInBytesH6#hash_longest_match64_inc.h#3534, Hasher#hash.h#4874, H65#hash_composite_inc.h#4816, InitializeHROLLING#hash_rolling_inc.h#4555
+HashMemAllocInBytesH65#hash_composite_inc.h#4845 -> HashMemAllocInBytesH6#hash_longest_match64_inc.h#3534, HashMemAllocInBytesHROLLING#hash_rolling_inc.h#4581, BrotliEncoderParams#params.h#2158
+StoreH65#hash_composite_inc.h#4849 -> StoreH6#hash_longest_match64_inc.h#3542, H65#hash_composite_inc.h#4816, StoreHROLLING#hash_rolling_inc.h#4588
+StoreRangeH65#hash_composite_inc.h#4854 -> StoreRangeHROLLING#hash_rolling_inc.h#4595, H65#hash_composite_inc.h#4816, StoreRangeH6#hash_longest_match64_inc.h#3552
+StitchToPreviousBlockH65#hash_composite_inc.h#4859 -> H65#hash_composite_inc.h#4816, Hasher#hash.h#4874, StitchToPreviousBlockH6#hash_longest_match64_inc.h#3559, StitchToPreviousBlockHROLLING#hash_rolling_inc.h#4603
+PrepareDistanceCacheH65#hash_composite_inc.h#4864 -> PrepareDistanceCacheH6#hash_longest_match64_inc.h#3567, H65#hash_composite_inc.h#4816, PrepareDistanceCacheHROLLING#hash_rolling_inc.h#4620
+FindLongestMatchH65#hash_composite_inc.h#4869 -> FindLongestMatchHROLLING#hash_rolling_inc.h#4625, FindLongestMatchH6#hash_longest_match64_inc.h#3571, HasherSearchResult#hash.h#2464, BrotliEncoderParams#params.h#2158, BrotliEncoderDictionary#encoder_dict.h#2129, BrotliDistanceParams#params.h#2150, H65#hash_composite_inc.h#4816
+HasherInit#hash.h#4881 -> HasherCommon#hash.h#2452, Hasher#hash.h#4874
+DestroyHasher#hash.h#4885 -> HasherCommon#hash.h#2452, MemoryManager#memory.h#2345, Hasher#hash.h#4874, BrotliFree#memory.c#914
+HasherReset#hash.h#4890 -> HasherCommon#hash.h#2452, Hasher#hash.h#4874
+HasherSize#hash.h#4894 -> HashMemAllocInBytesH42#hash_forgetful_chain_inc.h#4090, HashMemAllocInBytesH10#hash_to_binary_tree_inc.h#2626, HashMemAllocInBytesH40#hash_forgetful_chain_inc.h#3714, BrotliHasherParams#params.h#2142, HashMemAllocInBytesH35#hash_composite_inc.h#4705, BrotliEncoderParams#params.h#2158, HashMemAllocInBytesH5#hash_longest_match_inc.h#3373, HashMemAllocInBytesH2#hash_longest_match_quickly_inc.h#2831, HashMemAllocInBytesH65#hash_composite_inc.h#4845, HashMemAllocInBytesH54#hash_longest_match_quickly_inc.h#4252, HashMemAllocInBytesH55#hash_composite_inc.h#4775, HashMemAllocInBytesH41#hash_forgetful_chain_inc.h#3902, HashMemAllocInBytesH6#hash_longest_match64_inc.h#3534, HashMemAllocInBytesH4#hash_longest_match_quickly_inc.h#3185, HashMemAllocInBytesH3#hash_longest_match_quickly_inc.h#3008
+HasherSetup#hash.h#4902 -> PrepareH5#hash_longest_match_inc.h#3359, Hasher#hash.h#4874, InitializeH40#hash_forgetful_chain_inc.h#3688, InitializeH4#hash_longest_match_quickly_inc.h#3158, PrepareH3#hash_longest_match_quickly_inc.h#2987, ChooseHasher#quality.h#2414, InitializeH6#hash_longest_match64_inc.h#3506, HasherCommon#hash.h#2452, PrepareH10#hash_to_binary_tree_inc.h#2614, PrepareH6#hash_longest_match64_inc.h#3520, BrotliHasherParams#params.h#2142, MemoryManager#memory.h#2345, PrepareH55#hash_composite_inc.h#4764, PrepareH41#hash_forgetful_chain_inc.h#3882, InitializeH65#hash_composite_inc.h#4826, HasherSize#hash.h#4894, PrepareH2#hash_longest_match_quickly_inc.h#2810, PrepareH35#hash_composite_inc.h#4694, InitializeH2#hash_longest_match_quickly_inc.h#2804, InitializeH5#hash_longest_match_inc.h#3346, InitializeH41#hash_forgetful_chain_inc.h#3876, InitializeH55#hash_composite_inc.h#4756, BrotliEncoderParams#params.h#2158, PrepareH54#hash_longest_match_quickly_inc.h#4231, InitializeH35#hash_composite_inc.h#4686, BrotliAllocate#memory.c#908, InitializeH42#hash_forgetful_chain_inc.h#4064, InitializeH54#hash_longest_match_quickly_inc.h#4225, PrepareH4#hash_longest_match_quickly_inc.h#3164, HasherReset#hash.h#4890, InitializeH10#hash_to_binary_tree_inc.h#2607, PrepareH40#hash_forgetful_chain_inc.h#3694, PrepareH65#hash_composite_inc.h#4834, InitializeH3#hash_longest_match_quickly_inc.h#2981, PrepareH42#hash_forgetful_chain_inc.h#4070
+InitOrStitchToPreviousBlock#hash.h#4930 -> HasherSetup#hash.h#4902, StitchToPreviousBlockH54#hash_longest_match_quickly_inc.h#4276, StitchToPreviousBlockH4#hash_longest_match_quickly_inc.h#3209, StitchToPreviousBlockH55#hash_composite_inc.h#4789, StitchToPreviousBlockH40#hash_forgetful_chain_inc.h#3745, BrotliEncoderParams#params.h#2158, StitchToPreviousBlockH10#hash_to_binary_tree_inc.h#2778, StitchToPreviousBlockH3#hash_longest_match_quickly_inc.h#3032, HasherCommon#hash.h#2452, BrotliHasherParams#params.h#2142, Hasher#hash.h#4874, MemoryManager#memory.h#2345, StitchToPreviousBlockH35#hash_composite_inc.h#4719, StitchToPreviousBlockH41#hash_forgetful_chain_inc.h#3933, StitchToPreviousBlockH6#hash_longest_match64_inc.h#3559, StitchToPreviousBlockH2#hash_longest_match_quickly_inc.h#2855, StitchToPreviousBlockH42#hash_forgetful_chain_inc.h#4121, StitchToPreviousBlockH65#hash_composite_inc.h#4859, StitchToPreviousBlockH5#hash_longest_match_inc.h#3396
+BrotliCreateBackwardReferences#backward_references.c#6143 -> CreateBackwardReferencesNH65#backward_references_inc.h#6045, CreateBackwardReferencesNH2#backward_references_inc.h#4967, CreateBackwardReferencesNH42#backward_references_inc.h#5653, CreateBackwardReferencesNH4#backward_references_inc.h#5163, Hasher#hash.h#4874, ContextLut#context.h#420, Command#command.h#2261, CreateBackwardReferencesNH35#backward_references_inc.h#5849, CreateBackwardReferencesNH6#backward_references_inc.h#5359, BrotliEncoderStateStruct#encode.c#5889, CreateBackwardReferencesNH55#backward_references_inc.h#5947, CreateBackwardReferencesNH3#backward_references_inc.h#5065, CreateBackwardReferencesNH5#backward_references_inc.h#5261, CreateBackwardReferencesNH54#backward_references_inc.h#5751, CreateBackwardReferencesNH41#backward_references_inc.h#5555, BrotliHasherParams#params.h#2142, BrotliEncoderParams#params.h#2158, CreateBackwardReferencesNH40#backward_references_inc.h#5457
+ComputeDistanceCode#backward_references.c#4945 -> HasherSearchResult#hash.h#2464
+CreateBackwardReferencesNH2#backward_references_inc.h#4967 -> brotli_min_size_t#platform.h#331, ContextLut#context.h#420, ComputeDistanceCode#backward_references.c#4945, BrotliDistanceParams#params.h#2150, Command#command.h#2261, BrotliEncoderParams#params.h#2158, HashTypeLengthH2#hash_longest_match_quickly_inc.h#2790, PrepareDistanceCacheH2#hash_longest_match_quickly_inc.h#2863, Hasher#hash.h#4874, InitCommand#command.h#2269, StoreRangeH2#hash_longest_match_quickly_inc.h#2848, StoreLookaheadH2#hash_longest_match_quickly_inc.h#2792, FindLongestMatchH2#hash_longest_match_quickly_inc.h#2868, H2#hash_longest_match_quickly_inc.h#2799, HasherSearchResult#hash.h#2464, LiteralSpreeLengthForSparseSearch#quality.h#2410, StoreH2#hash_longest_match_quickly_inc.h#2838
+CreateBackwardReferencesNH3#backward_references_inc.h#5065 -> PrepareDistanceCacheH3#hash_longest_match_quickly_inc.h#3040, brotli_min_size_t#platform.h#331, Command#command.h#2261, StoreRangeH3#hash_longest_match_quickly_inc.h#3025, FindLongestMatchH3#hash_longest_match_quickly_inc.h#3045, Hasher#hash.h#4874, StoreLookaheadH3#hash_longest_match_quickly_inc.h#2969, HashTypeLengthH3#hash_longest_match_quickly_inc.h#2967, BrotliDistanceParams#params.h#2150, ComputeDistanceCode#backward_references.c#4945, LiteralSpreeLengthForSparseSearch#quality.h#2410, InitCommand#command.h#2269, H3#hash_longest_match_quickly_inc.h#2976, BrotliEncoderParams#params.h#2158, ContextLut#context.h#420, HasherSearchResult#hash.h#2464, StoreH3#hash_longest_match_quickly_inc.h#3015
+CreateBackwardReferencesNH4#backward_references_inc.h#5163 -> Hasher#hash.h#4874, StoreLookaheadH4#hash_longest_match_quickly_inc.h#3146, HashTypeLengthH4#hash_longest_match_quickly_inc.h#3144, LiteralSpreeLengthForSparseSearch#quality.h#2410, InitCommand#command.h#2269, Command#command.h#2261, PrepareDistanceCacheH4#hash_longest_match_quickly_inc.h#3217, BrotliEncoderParams#params.h#2158, ContextLut#context.h#420, H4#hash_longest_match_quickly_inc.h#3153, HasherSearchResult#hash.h#2464, brotli_min_size_t#platform.h#331, StoreRangeH4#hash_longest_match_quickly_inc.h#3202, ComputeDistanceCode#backward_references.c#4945, StoreH4#hash_longest_match_quickly_inc.h#3192, FindLongestMatchH4#hash_longest_match_quickly_inc.h#3222, BrotliDistanceParams#params.h#2150
+CreateBackwardReferencesNH5#backward_references_inc.h#5261 -> Command#command.h#2261, BrotliEncoderParams#params.h#2158, StoreLookaheadH5#hash_longest_match_inc.h#3323, brotli_min_size_t#platform.h#331, BrotliDistanceParams#params.h#2150, PrepareDistanceCacheH5#hash_longest_match_inc.h#3404, ContextLut#context.h#420, StoreRangeH5#hash_longest_match_inc.h#3389, LiteralSpreeLengthForSparseSearch#quality.h#2410, InitCommand#command.h#2269, H5#hash_longest_match_inc.h#3330, StoreH5#hash_longest_match_inc.h#3381, FindLongestMatchH5#hash_longest_match_inc.h#3408, Hasher#hash.h#4874, ComputeDistanceCode#backward_references.c#4945, HashTypeLengthH5#hash_longest_match_inc.h#3321, HasherSearchResult#hash.h#2464
+CreateBackwardReferencesNH6#backward_references_inc.h#5359 -> LiteralSpreeLengthForSparseSearch#quality.h#2410, InitCommand#command.h#2269, BrotliDistanceParams#params.h#2150, StoreH6#hash_longest_match64_inc.h#3542, ContextLut#context.h#420, BrotliEncoderParams#params.h#2158, H6#hash_longest_match64_inc.h#3493, StoreLookaheadH6#hash_longest_match64_inc.h#3486, FindLongestMatchH6#hash_longest_match64_inc.h#3571, brotli_min_size_t#platform.h#331, StoreRangeH6#hash_longest_match64_inc.h#3552, ComputeDistanceCode#backward_references.c#4945, HasherSearchResult#hash.h#2464, HashTypeLengthH6#hash_longest_match64_inc.h#3484, Hasher#hash.h#4874, Command#command.h#2261, PrepareDistanceCacheH6#hash_longest_match64_inc.h#3567
+CreateBackwardReferencesNH40#backward_references_inc.h#5457 -> BrotliEncoderParams#params.h#2158, LiteralSpreeLengthForSparseSearch#quality.h#2410, brotli_min_size_t#platform.h#331, PrepareDistanceCacheH40#hash_forgetful_chain_inc.h#3753, StoreLookaheadH40#hash_forgetful_chain_inc.h#3649, Command#command.h#2261, BrotliDistanceParams#params.h#2150, H40#hash_forgetful_chain_inc.h#3665, StoreH40#hash_forgetful_chain_inc.h#3721, Hasher#hash.h#4874, ContextLut#context.h#420, StoreRangeH40#hash_forgetful_chain_inc.h#3738, HasherSearchResult#hash.h#2464, FindLongestMatchH40#hash_forgetful_chain_inc.h#3758, ComputeDistanceCode#backward_references.c#4945, HashTypeLengthH40#hash_forgetful_chain_inc.h#3647, InitCommand#command.h#2269
+CreateBackwardReferencesNH41#backward_references_inc.h#5555 -> brotli_min_size_t#platform.h#331, InitCommand#command.h#2269, BrotliDistanceParams#params.h#2150, StoreLookaheadH41#hash_forgetful_chain_inc.h#3837, Hasher#hash.h#4874, StoreH41#hash_forgetful_chain_inc.h#3909, HashTypeLengthH41#hash_forgetful_chain_inc.h#3835, ComputeDistanceCode#backward_references.c#4945, Command#command.h#2261, FindLongestMatchH41#hash_forgetful_chain_inc.h#3946, ContextLut#context.h#420, HasherSearchResult#hash.h#2464, StoreRangeH41#hash_forgetful_chain_inc.h#3926, H41#hash_forgetful_chain_inc.h#3853, BrotliEncoderParams#params.h#2158, PrepareDistanceCacheH41#hash_forgetful_chain_inc.h#3941, LiteralSpreeLengthForSparseSearch#quality.h#2410
+CreateBackwardReferencesNH42#backward_references_inc.h#5653 -> ContextLut#context.h#420, FindLongestMatchH42#hash_forgetful_chain_inc.h#4134, StoreRangeH42#hash_forgetful_chain_inc.h#4114, PrepareDistanceCacheH42#hash_forgetful_chain_inc.h#4129, InitCommand#command.h#2269, brotli_min_size_t#platform.h#331, LiteralSpreeLengthForSparseSearch#quality.h#2410, StoreLookaheadH42#hash_forgetful_chain_inc.h#4025, H42#hash_forgetful_chain_inc.h#4041, ComputeDistanceCode#backward_references.c#4945, StoreH42#hash_forgetful_chain_inc.h#4097, Command#command.h#2261, BrotliDistanceParams#params.h#2150, HasherSearchResult#hash.h#2464, HashTypeLengthH42#hash_forgetful_chain_inc.h#4023, BrotliEncoderParams#params.h#2158, Hasher#hash.h#4874
+CreateBackwardReferencesNH54#backward_references_inc.h#5751 -> FindLongestMatchH54#hash_longest_match_quickly_inc.h#4289, ContextLut#context.h#420, H54#hash_longest_match_quickly_inc.h#4220, brotli_min_size_t#platform.h#331, PrepareDistanceCacheH54#hash_longest_match_quickly_inc.h#4284, Command#command.h#2261, ComputeDistanceCode#backward_references.c#4945, BrotliEncoderParams#params.h#2158, LiteralSpreeLengthForSparseSearch#quality.h#2410, HasherSearchResult#hash.h#2464, StoreRangeH54#hash_longest_match_quickly_inc.h#4269, InitCommand#command.h#2269, HashTypeLengthH54#hash_longest_match_quickly_inc.h#4211, BrotliDistanceParams#params.h#2150, StoreH54#hash_longest_match_quickly_inc.h#4259, Hasher#hash.h#4874, StoreLookaheadH54#hash_longest_match_quickly_inc.h#4213
+CreateBackwardReferencesNH35#backward_references_inc.h#5849 -> ContextLut#context.h#420, StoreLookaheadH35#hash_composite_inc.h#4670, HashTypeLengthH35#hash_composite_inc.h#4664, InitCommand#command.h#2269, PrepareDistanceCacheH35#hash_composite_inc.h#4724, StoreH35#hash_composite_inc.h#4709, Hasher#hash.h#4874, ComputeDistanceCode#backward_references.c#4945, Command#command.h#2261, LiteralSpreeLengthForSparseSearch#quality.h#2410, BrotliDistanceParams#params.h#2150, H35#hash_composite_inc.h#4676, BrotliEncoderParams#params.h#2158, StoreRangeH35#hash_composite_inc.h#4714, HasherSearchResult#hash.h#2464, FindLongestMatchH35#hash_composite_inc.h#4729, brotli_min_size_t#platform.h#331
+CreateBackwardReferencesNH55#backward_references_inc.h#5947 -> InitCommand#command.h#2269, StoreRangeH55#hash_composite_inc.h#4784, BrotliEncoderParams#params.h#2158, HasherSearchResult#hash.h#2464, ComputeDistanceCode#backward_references.c#4945, brotli_min_size_t#platform.h#331, LiteralSpreeLengthForSparseSearch#quality.h#2410, StoreH55#hash_composite_inc.h#4779, FindLongestMatchH55#hash_composite_inc.h#4799, Command#command.h#2261, ContextLut#context.h#420, BrotliDistanceParams#params.h#2150, H55#hash_composite_inc.h#4746, PrepareDistanceCacheH55#hash_composite_inc.h#4794, HashTypeLengthH55#hash_composite_inc.h#4734, StoreLookaheadH55#hash_composite_inc.h#4740, Hasher#hash.h#4874
+CreateBackwardReferencesNH65#backward_references_inc.h#6045 -> BrotliDistanceParams#params.h#2150, ContextLut#context.h#420, H65#hash_composite_inc.h#4816, BrotliEncoderParams#params.h#2158, StoreH65#hash_composite_inc.h#4849, StoreLookaheadH65#hash_composite_inc.h#4810, StoreRangeH65#hash_composite_inc.h#4854, brotli_min_size_t#platform.h#331, Hasher#hash.h#4874, FindLongestMatchH65#hash_composite_inc.h#4869, LiteralSpreeLengthForSparseSearch#quality.h#2410, HasherSearchResult#hash.h#2464, InitCommand#command.h#2269, PrepareDistanceCacheH65#hash_composite_inc.h#4864, ComputeDistanceCode#backward_references.c#4945, HashTypeLengthH65#hash_composite_inc.h#4804, Command#command.h#2261
+BrotliDistanceCodeLimit#constants.h#367 -> BrotliDistanceCodeLimit#constants.h#364
+BrotliDictionary#dictionary.h#427 -> BrotliDictionary#dictionary.h#422
+DictWord#static_dict_lut.h#966 -> DictWord#static_dict_lut.h#962
+BrotliEncoderDictionary#encoder_dict.h#2138 -> BrotliEncoderDictionary#encoder_dict.h#2129
+BrotliHasherParams#params.h#2148 -> BrotliHasherParams#params.h#2142
+BrotliDistanceParams#params.h#2156 -> BrotliDistanceParams#params.h#2150
+BrotliEncoderParams#params.h#2170 -> BrotliEncoderParams#params.h#2158
+Command#command.h#2267 -> Command#command.h#2261
+MemoryManager#memory.h#2349 -> MemoryManager#memory.h#2345
+HasherSearchResult#hash.h#2469 -> HasherSearchResult#hash.h#2464
+BackwardMatch#hash.h#2568 -> BackwardMatch#hash.h#2565
+H10#hash_to_binary_tree_inc.h#2605 -> H10#hash_to_binary_tree_inc.h#2600
+H2#hash_longest_match_quickly_inc.h#2802 -> H2#hash_longest_match_quickly_inc.h#2799
+H3#hash_longest_match_quickly_inc.h#2979 -> H3#hash_longest_match_quickly_inc.h#2976
+H4#hash_longest_match_quickly_inc.h#3156 -> H4#hash_longest_match_quickly_inc.h#3153
+H5#hash_longest_match_inc.h#3340 -> H5#hash_longest_match_inc.h#3330
+H6#hash_longest_match64_inc.h#3504 -> H6#hash_longest_match64_inc.h#3493
+SlotH40#hash_forgetful_chain_inc.h#3659 -> SlotH40#hash_forgetful_chain_inc.h#3656
+BankH40#hash_forgetful_chain_inc.h#3663 -> BankH40#hash_forgetful_chain_inc.h#3661
+H40#hash_forgetful_chain_inc.h#3670 -> H40#hash_forgetful_chain_inc.h#3665
+SlotH41#hash_forgetful_chain_inc.h#3847 -> SlotH41#hash_forgetful_chain_inc.h#3844
+BankH41#hash_forgetful_chain_inc.h#3851 -> BankH41#hash_forgetful_chain_inc.h#3849
+H41#hash_forgetful_chain_inc.h#3858 -> H41#hash_forgetful_chain_inc.h#3853
+SlotH42#hash_forgetful_chain_inc.h#4035 -> SlotH42#hash_forgetful_chain_inc.h#4032
+BankH42#hash_forgetful_chain_inc.h#4039 -> BankH42#hash_forgetful_chain_inc.h#4037
+H42#hash_forgetful_chain_inc.h#4046 -> H42#hash_forgetful_chain_inc.h#4041
+H54#hash_longest_match_quickly_inc.h#4223 -> H54#hash_longest_match_quickly_inc.h#4220
+HROLLING_FAST#hash_rolling_inc.h#4415 -> HROLLING_FAST#hash_rolling_inc.h#4408
+HROLLING#hash_rolling_inc.h#4553 -> HROLLING#hash_rolling_inc.h#4546
+H35#hash_composite_inc.h#4684 -> H35#hash_composite_inc.h#4676
+H55#hash_composite_inc.h#4754 -> H55#hash_composite_inc.h#4746
+H65#hash_composite_inc.h#4824 -> H65#hash_composite_inc.h#4816
+kInfinity#backward_references_hq.c#4962
+kDistanceCacheIndex#backward_references_hq.c#4964
+kDistanceCacheOffset#backward_references_hq.c#4967
+BrotliCreateZopfliBackwardReferences#backward_references_hq.c#5471 -> ZopfliNode#backward_references_hq.h#4943, Hasher#hash.h#4874, Command#command.h#2261, BrotliAllocate#memory.c#908, BrotliZopfliComputeShortestPath#backward_references_hq.c#5422, BrotliEncoderParams#params.h#2158, MemoryManager#memory.h#2345, BrotliEncoderStateStruct#encode.c#5889, BrotliZopfliCreateCommands#backward_references_hq.c#5354, ContextLut#context.h#420, BrotliFree#memory.c#914, BrotliInitZopfliNodes#backward_references_hq.c#4970
+BrotliCreateHqZopfliBackwardReferences#backward_references_hq.c#5481 -> ZopfliNode#backward_references_hq.h#4943, ZopfliCostModelSetFromLiteralCosts#backward_references_hq.c#5096, ContextLut#context.h#420, BrotliZopfliCreateCommands#backward_references_hq.c#5354, BrotliInitZopfliNodes#backward_references_hq.c#4970, ZopfliIterate#backward_references_hq.c#5391, StoreRangeH10#hash_to_binary_tree_inc.h#2762, Command#command.h#2261, FindAllMatchesH10#hash_to_binary_tree_inc.h#2705, StoreLookaheadH10#hash_to_binary_tree_inc.h#2591, ZopfliCostModel#backward_references_hq.c#5002, InitZopfliCostModel#backward_references_hq.c#5011, BackwardMatchLength#hash.h#2580, brotli_min_size_t#platform.h#331, HashTypeLengthH10#hash_to_binary_tree_inc.h#2589, BackwardMatch#hash.h#2565, ZopfliCostModelSetFromCommands#backward_references_hq.c#5051, BrotliEncoderStateStruct#encode.c#5889, Hasher#hash.h#4874, BrotliEncoderParams#params.h#2158, MemoryManager#memory.h#2345, CleanupZopfliCostModel#backward_references_hq.c#5019, BrotliFree#memory.c#914, BrotliAllocate#memory.c#908
+BrotliInitZopfliNodes#backward_references_hq.c#4970 -> kInfinity#backward_references_hq.c#4962, ZopfliNode#backward_references_hq.h#4943
+BrotliZopfliComputeShortestPath#backward_references_hq.c#5422 -> HashTypeLengthH10#hash_to_binary_tree_inc.h#2589, BackwardMatch#hash.h#2565, brotli_min_size_t#platform.h#331, FindAllMatchesH10#hash_to_binary_tree_inc.h#2705, Hasher#hash.h#4874, StoreLookaheadH10#hash_to_binary_tree_inc.h#2591, InitStartPosQueue#backward_references_hq.c#5155, InitZopfliCostModel#backward_references_hq.c#5011, BackwardMatchLength#hash.h#2580, ZopfliNode#backward_references_hq.h#4943, StoreRangeH10#hash_to_binary_tree_inc.h#2762, BrotliEncoderParams#params.h#2158, StartPosQueue#backward_references_hq.c#5150, ZopfliCostModel#backward_references_hq.c#5002, MemoryManager#memory.h#2345, CleanupZopfliCostModel#backward_references_hq.c#5019, UpdateNodes#backward_references_hq.c#5238, EvaluateNode#backward_references_hq.c#5225, ZopfliCostModelSetFromLiteralCosts#backward_references_hq.c#5096, ContextLut#context.h#420, ComputeShortestPathFromNodes#backward_references_hq.c#5340, MaxZopfliLen#quality.h#2363
+BrotliZopfliCreateCommands#backward_references_hq.c#5354 -> ZopfliNodeCopyLength#backward_references_hq.c#4980, ZopfliNodeLengthCode#backward_references_hq.c#4984, ZopfliNodeCopyDistance#backward_references_hq.c#4989, InitCommand#command.h#2269, ZopfliNode#backward_references_hq.h#4943, ZopfliNodeDistanceCode#backward_references_hq.c#4993, BrotliEncoderParams#params.h#2158, brotli_min_size_t#platform.h#331, Command#command.h#2261
+ZopfliNodeCopyLength#backward_references_hq.c#4980 -> ZopfliNode#backward_references_hq.h#4943
+ZopfliNodeLengthCode#backward_references_hq.c#4984 -> ZopfliNode#backward_references_hq.h#4943, ZopfliNodeCopyLength#backward_references_hq.c#4980
+ZopfliNodeCopyDistance#backward_references_hq.c#4989 -> ZopfliNode#backward_references_hq.h#4943
+ZopfliNodeDistanceCode#backward_references_hq.c#4993 -> ZopfliNodeCopyDistance#backward_references_hq.c#4989, ZopfliNode#backward_references_hq.h#4943
+ZopfliNodeCommandLength#backward_references_hq.c#4998 -> ZopfliNode#backward_references_hq.h#4943, ZopfliNodeCopyLength#backward_references_hq.c#4980
+InitZopfliCostModel#backward_references_hq.c#5011 -> BrotliEncoderParams#params.h#2158, MemoryManager#memory.h#2345, BrotliAllocate#memory.c#908, ZopfliCostModel#backward_references_hq.c#5002, BrotliDistanceParams#params.h#2150
+CleanupZopfliCostModel#backward_references_hq.c#5019 -> ZopfliCostModel#backward_references_hq.c#5002, MemoryManager#memory.h#2345, BrotliFree#memory.c#914
+SetCost#backward_references_hq.c#5024 -> FastLog2#fast_log.h#924
+ZopfliCostModelSetFromCommands#backward_references_hq.c#5051 -> ZopfliCostModel#backward_references_hq.c#5002, SetCost#backward_references_hq.c#5024, brotli_min_double#platform.h#329, CommandCopyLen#command.h#2309, kInfinity#backward_references_hq.c#4962, Command#command.h#2261
+ZopfliCostModelSetFromLiteralCosts#backward_references_hq.c#5096 -> ZopfliCostModel#backward_references_hq.c#5002, FastLog2#fast_log.h#924, BrotliEstimateBitCostsForLiterals#literal_cost.c#958
+ZopfliCostModelGetCommandCost#backward_references_hq.c#5119 -> ZopfliCostModel#backward_references_hq.c#5002
+ZopfliCostModelGetDistanceCost#backward_references_hq.c#5123 -> ZopfliCostModel#backward_references_hq.c#5002
+ZopfliCostModelGetLiteralCosts#backward_references_hq.c#5127 -> PosData#backward_references_hq.c#5143, ZopfliCostModel#backward_references_hq.c#5002
+ZopfliCostModelGetMinCostCmd#backward_references_hq.c#5131 -> ZopfliCostModel#backward_references_hq.c#5002
+UpdateZopfliNode#backward_references_hq.c#5135 -> ZopfliNode#backward_references_hq.h#4943
+InitStartPosQueue#backward_references_hq.c#5155 -> StartPosQueue#backward_references_hq.c#5150
+StartPosQueueSize#backward_references_hq.c#5159 -> brotli_min_size_t#platform.h#331, StartPosQueue#backward_references_hq.c#5150
+StartPosQueuePush#backward_references_hq.c#5163 -> StartPosQueueSize#backward_references_hq.c#5159, PosData#backward_references_hq.c#5143, StartPosQueue#backward_references_hq.c#5150
+StartPosQueueAt#backward_references_hq.c#5177 -> StartPosQueue#backward_references_hq.c#5150, PosData#backward_references_hq.c#5143
+ComputeMinimumCopyLength#backward_references_hq.c#5181 -> ZopfliNode#backward_references_hq.h#4943
+ComputeDistanceShortcut#backward_references_hq.c#5197 -> ZopfliNodeCopyDistance#backward_references_hq.c#4989, ZopfliNodeDistanceCode#backward_references_hq.c#4993, ZopfliNodeCopyLength#backward_references_hq.c#4980, ZopfliNode#backward_references_hq.h#4943
+ComputeDistanceCache#backward_references_hq.c#5210 -> ZopfliNodeCopyLength#backward_references_hq.c#4980, PosData#backward_references_hq.c#5143, ZopfliNode#backward_references_hq.h#4943, ZopfliNodeCopyDistance#backward_references_hq.c#4989
+EvaluateNode#backward_references_hq.c#5225 -> PosData#backward_references_hq.c#5143, ZopfliNode#backward_references_hq.h#4943, ComputeDistanceCache#backward_references_hq.c#5210, ZopfliCostModelGetLiteralCosts#backward_references_hq.c#5127, ZopfliCostModel#backward_references_hq.c#5002, ComputeDistanceShortcut#backward_references_hq.c#5197, StartPosQueue#backward_references_hq.c#5150, StartPosQueuePush#backward_references_hq.c#5163
+UpdateNodes#backward_references_hq.c#5238 -> StartPosQueue#backward_references_hq.c#5150, GetCopyExtra#command.h#2257, CombineLengthCodes#command.h#2228, UpdateZopfliNode#backward_references_hq.c#5135, MaxZopfliLen#quality.h#2363, BackwardMatchLength#hash.h#2580, PrefixEncodeCopyDistance#prefix.h#2172, EvaluateNode#backward_references_hq.c#5225, GetInsertLengthCode#command.h#2198, ZopfliCostModelGetMinCostCmd#backward_references_hq.c#5131, kDistanceCacheOffset#backward_references_hq.c#4967, ZopfliCostModelGetDistanceCost#backward_references_hq.c#5123, GetInsertExtra#command.h#2249, FindMatchLengthWithLimit#find_match_length.h#2319, ComputeMinimumCopyLength#backward_references_hq.c#5181, ZopfliCostModelGetLiteralCosts#backward_references_hq.c#5127, MaxZopfliCandidates#quality.h#2367, ZopfliCostModel#backward_references_hq.c#5002, ZopfliCostModelGetCommandCost#backward_references_hq.c#5119, brotli_min_size_t#platform.h#331, BackwardMatchLengthCode#hash.h#2584, StartPosQueueAt#backward_references_hq.c#5177, PosData#backward_references_hq.c#5143, ZopfliNode#backward_references_hq.h#4943, StartPosQueueSize#backward_references_hq.c#5159, BrotliDistanceParams#params.h#2150, BackwardMatch#hash.h#2565, kDistanceCacheIndex#backward_references_hq.c#4964, BrotliEncoderParams#params.h#2158, GetCopyLengthCode#command.h#2215
+ComputeShortestPathFromNodes#backward_references_hq.c#5340 -> ZopfliNode#backward_references_hq.h#4943, ZopfliNodeCommandLength#backward_references_hq.c#4998
+ZopfliIterate#backward_references_hq.c#5391 -> MaxZopfliLen#quality.h#2363, BackwardMatch#hash.h#2565, EvaluateNode#backward_references_hq.c#5225, brotli_min_size_t#platform.h#331, UpdateNodes#backward_references_hq.c#5238, StartPosQueue#backward_references_hq.c#5150, ZopfliCostModel#backward_references_hq.c#5002, InitStartPosQueue#backward_references_hq.c#5155, ComputeShortestPathFromNodes#backward_references_hq.c#5340, BackwardMatchLength#hash.h#2580, ZopfliNode#backward_references_hq.h#4943, BrotliEncoderParams#params.h#2158
+HistogramClearLiteral#histogram_inc.h#2443 -> HistogramLiteral#histogram_inc.h#2437
+ClearHistogramsLiteral#histogram_inc.h#2449 -> HistogramClearLiteral#histogram_inc.h#2443, HistogramLiteral#histogram_inc.h#2437
+HistogramAddLiteral#histogram_inc.h#2454 -> HistogramLiteral#histogram_inc.h#2437
+HistogramAddVectorLiteral#histogram_inc.h#2459 -> HistogramLiteral#histogram_inc.h#2437
+HistogramAddHistogramLiteral#histogram_inc.h#2465 -> HistogramLiteral#histogram_inc.h#2437
+HistogramDataSizeLiteral#histogram_inc.h#2473
+HistogramClearCommand#histogram_inc.h#2481 -> HistogramCommand#histogram_inc.h#2475
+ClearHistogramsCommand#histogram_inc.h#2487 -> HistogramCommand#histogram_inc.h#2475, HistogramClearCommand#histogram_inc.h#2481
+HistogramAddCommand#histogram_inc.h#2492 -> HistogramCommand#histogram_inc.h#2475
+HistogramAddVectorCommand#histogram_inc.h#2497 -> HistogramCommand#histogram_inc.h#2475
+HistogramAddHistogramCommand#histogram_inc.h#2503 -> HistogramCommand#histogram_inc.h#2475
+HistogramDataSizeCommand#histogram_inc.h#2511
+HistogramClearDistance#histogram_inc.h#2519 -> HistogramDistance#histogram_inc.h#2513
+ClearHistogramsDistance#histogram_inc.h#2525 -> HistogramClearDistance#histogram_inc.h#2519, HistogramDistance#histogram_inc.h#2513
+HistogramAddDistance#histogram_inc.h#2530 -> HistogramDistance#histogram_inc.h#2513
+HistogramAddVectorDistance#histogram_inc.h#2535 -> HistogramDistance#histogram_inc.h#2513
+HistogramAddHistogramDistance#histogram_inc.h#2541 -> HistogramDistance#histogram_inc.h#2513
+HistogramDataSizeDistance#histogram_inc.h#2549
+ShannonEntropy#bit_cost.h#2553 -> FastLog2#fast_log.h#924
+BitsEntropy#bit_cost.h#2574 -> ShannonEntropy#bit_cost.h#2553
+BrotliPopulationCostLiteral#bit_cost_inc.h#2589 -> HistogramDataSizeLiteral#histogram_inc.h#2473, FastLog2#fast_log.h#924, brotli_min_size_t#platform.h#331, HistogramLiteral#histogram_inc.h#2437, BitsEntropy#bit_cost.h#2574
+BrotliPopulationCostCommand#bit_cost_inc.h#2686 -> HistogramCommand#histogram_inc.h#2475, brotli_min_size_t#platform.h#331, HistogramDataSizeCommand#histogram_inc.h#2511, FastLog2#fast_log.h#924, BitsEntropy#bit_cost.h#2574
+BrotliPopulationCostDistance#bit_cost_inc.h#2783 -> brotli_min_size_t#platform.h#331, HistogramDataSizeDistance#histogram_inc.h#2549, BitsEntropy#bit_cost.h#2574, HistogramDistance#histogram_inc.h#2513, FastLog2#fast_log.h#924
+kBrotliBitMask#bit_reader.c#647
+BitMask#bit_reader.h#417 -> kBrotliBitMask#bit_reader.c#647
+BrotliInitBitReader#bit_reader.c#649 -> BrotliBitReader#bit_reader.h#425, BrotliDecoderStateStruct#state.h#1326
+BrotliWarmupBitReader#bit_reader.c#654 -> BrotliGetAvailableBits#bit_reader.h#459, BrotliPullByte#bit_reader.h#505, BrotliDecoderStateStruct#state.h#1326, BrotliBitReader#bit_reader.h#425
+BrotliSafeReadBits32Slow#bit_reader.c#672 -> BrotliBitReader#bit_reader.h#425, BrotliSafeReadBits#bit_reader.h#600, BrotliBitReaderSaveState#bit_reader.h#445, BrotliBitReaderState#bit_reader.h#432, BrotliBitReaderRestoreState#bit_reader.h#452
+BrotliBitReaderSaveState#bit_reader.h#445 -> BrotliBitReaderState#bit_reader.h#432, BrotliBitReader#bit_reader.h#425
+BrotliBitReaderRestoreState#bit_reader.h#452 -> BrotliBitReaderState#bit_reader.h#432, BrotliBitReader#bit_reader.h#425
+BrotliGetAvailableBits#bit_reader.h#459 -> BrotliBitReader#bit_reader.h#425
+BrotliGetRemainingBytes#bit_reader.h#463 -> BrotliBitReader#bit_reader.h#425, BrotliGetAvailableBits#bit_reader.h#459
+BrotliCheckInputAmount#bit_reader.h#469 -> BrotliBitReader#bit_reader.h#425
+BrotliFillBitWindow#bit_reader.h#473 -> BrotliBitReader#bit_reader.h#425, BrotliUnalignedRead32#platform.h#315, BrotliUnalignedRead64#platform.h#319
+BrotliFillBitWindow16#bit_reader.h#501 -> BrotliFillBitWindow#bit_reader.h#473, BrotliBitReader#bit_reader.h#425
+BrotliPullByte#bit_reader.h#505 -> BrotliBitReader#bit_reader.h#425
+BrotliGetBitsUnmasked#bit_reader.h#517 -> BrotliBitReader#bit_reader.h#425
+BrotliGet16BitsUnmasked#bit_reader.h#521 -> BrotliGetBitsUnmasked#bit_reader.h#517, BrotliFillBitWindow#bit_reader.h#473, BrotliBitReader#bit_reader.h#425
+BrotliGetBits#bit_reader.h#526 -> BitMask#bit_reader.h#417, BrotliFillBitWindow#bit_reader.h#473, BrotliBitReader#bit_reader.h#425, BrotliGetBitsUnmasked#bit_reader.h#517
+BrotliSafeGetBits#bit_reader.h#531 -> BrotliGetBitsUnmasked#bit_reader.h#517, BrotliPullByte#bit_reader.h#505, BrotliBitReader#bit_reader.h#425, BitMask#bit_reader.h#417, BrotliGetAvailableBits#bit_reader.h#459
+BrotliDropBits#bit_reader.h#541 -> BrotliBitReader#bit_reader.h#425
+BrotliBitReaderUnload#bit_reader.h#545 -> BrotliGetAvailableBits#bit_reader.h#459, BrotliBitReader#bit_reader.h#425
+BrotliTakeBits#bit_reader.h#558 -> BrotliDropBits#bit_reader.h#541, BrotliGetBitsUnmasked#bit_reader.h#517, BrotliBitReader#bit_reader.h#425, BitMask#bit_reader.h#417
+BrotliReadBits24#bit_reader.h#564 -> BrotliBitReader#bit_reader.h#425, BrotliFillBitWindow#bit_reader.h#473, BrotliTakeBits#bit_reader.h#558
+BrotliReadBits32#bit_reader.h#582 -> BrotliTakeBits#bit_reader.h#558, BrotliBitReader#bit_reader.h#425, BrotliFillBitWindow#bit_reader.h#473
+BrotliSafeReadBits#bit_reader.h#600 -> BrotliTakeBits#bit_reader.h#558, BrotliGetAvailableBits#bit_reader.h#459, BrotliPullByte#bit_reader.h#505, BrotliBitReader#bit_reader.h#425
+BrotliSafeReadBits32#bit_reader.h#611 -> BrotliSafeReadBits32Slow#bit_reader.c#672, BrotliBitReader#bit_reader.h#425, BrotliGetAvailableBits#bit_reader.h#459, BrotliPullByte#bit_reader.h#505, BrotliTakeBits#bit_reader.h#558
+BrotliJumpToByteBoundary#bit_reader.h#626 -> BrotliTakeBits#bit_reader.h#558, BrotliBitReader#bit_reader.h#425, BrotliGetAvailableBits#bit_reader.h#459
+BrotliCopyBytes#bit_reader.h#635 -> BrotliGetAvailableBits#bit_reader.h#459, BrotliGetBitsUnmasked#bit_reader.h#517, BrotliBitReader#bit_reader.h#425, BrotliDropBits#bit_reader.h#541
+HistogramLiteral#histogram_inc.h#2441 -> HistogramLiteral#histogram_inc.h#2437
+HistogramCommand#histogram_inc.h#2479 -> HistogramCommand#histogram_inc.h#2475
+HistogramDistance#histogram_inc.h#2517 -> HistogramDistance#histogram_inc.h#2513
+kMaxLiteralHistograms#block_splitter.c#2632
+kMaxCommandHistograms#block_splitter.c#2634
+kLiteralBlockSwitchCost#block_splitter.c#2636
+kCommandBlockSwitchCost#block_splitter.c#2638
+kDistanceBlockSwitchCost#block_splitter.c#2640
+kLiteralStrideLength#block_splitter.c#2642
+kCommandStrideLength#block_splitter.c#2644
+kSymbolsPerLiteralHistogram#block_splitter.c#2646
+kSymbolsPerCommandHistogram#block_splitter.c#2648
+kSymbolsPerDistanceHistogram#block_splitter.c#2650
+kMinLengthForBlockSplitting#block_splitter.c#2652
+kIterMulForRefining#block_splitter.c#2654
+kMinItersForRefining#block_splitter.c#2656
+BrotliInitBlockSplit#block_splitter.c#3714 -> MetaBlockSplit#metablock.h#2611, BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422
+BrotliDestroyBlockSplit#block_splitter.c#3723 -> MetaBlockSplit#metablock.h#2611, MemoryManager#memory.h#2345, BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422, BrotliFree#memory.c#914
+BrotliSplitBlock#block_splitter.c#3728 -> Command#command.h#2261, kCommandBlockSwitchCost#block_splitter.c#2638, kDistanceBlockSwitchCost#block_splitter.c#2640, kLiteralStrideLength#block_splitter.c#2642, CommandCopyLen#command.h#2309, CountLiterals#block_splitter.c#2658, kMaxCommandHistograms#block_splitter.c#2634, kLiteralBlockSwitchCost#block_splitter.c#2636, SplitByteVectorLiteral#block_splitter_inc.h#2983, BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422, kSymbolsPerDistanceHistogram#block_splitter.c#2650, BrotliEncoderParams#params.h#2158, kSymbolsPerLiteralHistogram#block_splitter.c#2646, kSymbolsPerCommandHistogram#block_splitter.c#2648, BrotliAllocate#memory.c#908, kCommandStrideLength#block_splitter.c#2644, MetaBlockSplit#metablock.h#2611, CopyLiteralsToByteArray#block_splitter.c#2667, SplitByteVectorCommand#block_splitter_inc.h#3322, kMaxLiteralHistograms#block_splitter.c#2632, SplitByteVectorDistance#block_splitter_inc.h#3661, MemoryManager#memory.h#2345, BrotliFree#memory.c#914
+CountLiterals#block_splitter.c#2658 -> Command#command.h#2261
+CopyLiteralsToByteArray#block_splitter.c#2667 -> Command#command.h#2261, CommandCopyLen#command.h#2309
+MyRand#block_splitter.c#2688
+BitCost#block_splitter.c#2693 -> FastLog2#fast_log.h#924
+InitialEntropyCodesLiteral#block_splitter_inc.h#2697 -> MyRand#block_splitter.c#2688, HistogramLiteral#histogram_inc.h#2437, HistogramAddVectorLiteral#histogram_inc.h#2459, ClearHistogramsLiteral#histogram_inc.h#2449
+RandomSampleLiteral#block_splitter_inc.h#2714 -> MyRand#block_splitter.c#2688, HistogramLiteral#histogram_inc.h#2437, HistogramAddVectorLiteral#histogram_inc.h#2459
+RefineEntropyCodesLiteral#block_splitter_inc.h#2724 -> kMinItersForRefining#block_splitter.c#2656, HistogramAddHistogramLiteral#histogram_inc.h#2465, kIterMulForRefining#block_splitter.c#2654, HistogramClearLiteral#histogram_inc.h#2443, HistogramLiteral#histogram_inc.h#2437, RandomSampleLiteral#block_splitter_inc.h#2714
+FindBlocksLiteral#block_splitter_inc.h#2737 -> HistogramDataSizeLiteral#histogram_inc.h#2473, BitCost#block_splitter.c#2693, FastLog2#fast_log.h#924, HistogramLiteral#histogram_inc.h#2437
+RemapBlockIdsLiteral#block_splitter_inc.h#2810
+BuildBlockHistogramsLiteral#block_splitter_inc.h#2831 -> ClearHistogramsLiteral#histogram_inc.h#2449, HistogramAddLiteral#histogram_inc.h#2454, HistogramLiteral#histogram_inc.h#2437
+ClusterBlocksLiteral#block_splitter_inc.h#2839 -> BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422, BrotliFree#memory.c#914, BrotliHistogramBitCostDistanceLiteral#cluster_inc.h#2648, HistogramPair#cluster.h#2589, BrotliAllocate#memory.c#908, HistogramAddLiteral#histogram_inc.h#2454, HistogramLiteral#histogram_inc.h#2437, MemoryManager#memory.h#2345, HistogramClearLiteral#histogram_inc.h#2443, BrotliPopulationCostLiteral#bit_cost_inc.h#2589, brotli_min_size_t#platform.h#331, HistogramLiteral#histogram_inc.h#2441, BrotliHistogramCombineLiteral#cluster_inc.h#2646
+SplitByteVectorLiteral#block_splitter_inc.h#2983 -> kSymbolsPerLiteralHistogram#block_splitter.c#2646, BuildBlockHistogramsLiteral#block_splitter_inc.h#2831, kMinLengthForBlockSplitting#block_splitter.c#2652, kLiteralStrideLength#block_splitter.c#2642, RemapBlockIdsLiteral#block_splitter_inc.h#2810, kLiteralBlockSwitchCost#block_splitter.c#2636, ClusterBlocksLiteral#block_splitter_inc.h#2839, BrotliFree#memory.c#914, MemoryManager#memory.h#2345, RefineEntropyCodesLiteral#block_splitter_inc.h#2724, HistogramLiteral#histogram_inc.h#2437, FindBlocksLiteral#block_splitter_inc.h#2737, InitialEntropyCodesLiteral#block_splitter_inc.h#2697, HistogramDataSizeLiteral#histogram_inc.h#2473, BrotliAllocate#memory.c#908, kMaxLiteralHistograms#block_splitter.c#2632, BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422, BrotliEncoderParams#params.h#2158
+InitialEntropyCodesCommand#block_splitter_inc.h#3036 -> MyRand#block_splitter.c#2688, HistogramCommand#histogram_inc.h#2475, HistogramAddVectorCommand#histogram_inc.h#2497, ClearHistogramsCommand#histogram_inc.h#2487
+RandomSampleCommand#block_splitter_inc.h#3053 -> HistogramCommand#histogram_inc.h#2475, MyRand#block_splitter.c#2688, HistogramAddVectorCommand#histogram_inc.h#2497
+RefineEntropyCodesCommand#block_splitter_inc.h#3063 -> HistogramClearCommand#histogram_inc.h#2481, HistogramAddHistogramCommand#histogram_inc.h#2503, kIterMulForRefining#block_splitter.c#2654, HistogramCommand#histogram_inc.h#2475, RandomSampleCommand#block_splitter_inc.h#3053, kMinItersForRefining#block_splitter.c#2656
+FindBlocksCommand#block_splitter_inc.h#3076 -> BitCost#block_splitter.c#2693, HistogramCommand#histogram_inc.h#2475, HistogramDataSizeCommand#histogram_inc.h#2511, FastLog2#fast_log.h#924
+RemapBlockIdsCommand#block_splitter_inc.h#3149
+BuildBlockHistogramsCommand#block_splitter_inc.h#3170 -> ClearHistogramsCommand#histogram_inc.h#2487, HistogramCommand#histogram_inc.h#2475, HistogramAddCommand#histogram_inc.h#2492
+ClusterBlocksCommand#block_splitter_inc.h#3178 -> BrotliHistogramCombineCommand#cluster_inc.h#2658, HistogramAddCommand#histogram_inc.h#2492, BrotliPopulationCostCommand#bit_cost_inc.h#2686, BrotliHistogramBitCostDistanceCommand#cluster_inc.h#2660, MemoryManager#memory.h#2345, BrotliFree#memory.c#914, HistogramCommand#histogram_inc.h#2475, brotli_min_size_t#platform.h#331, HistogramClearCommand#histogram_inc.h#2481, HistogramPair#cluster.h#2589, BrotliAllocate#memory.c#908, HistogramCommand#histogram_inc.h#2479, BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422
+SplitByteVectorCommand#block_splitter_inc.h#3322 -> BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422, BuildBlockHistogramsCommand#block_splitter_inc.h#3170, ClusterBlocksCommand#block_splitter_inc.h#3178, RefineEntropyCodesCommand#block_splitter_inc.h#3063, kMaxCommandHistograms#block_splitter.c#2634, kCommandStrideLength#block_splitter.c#2644, RemapBlockIdsCommand#block_splitter_inc.h#3149, InitialEntropyCodesCommand#block_splitter_inc.h#3036, FindBlocksCommand#block_splitter_inc.h#3076, HistogramCommand#histogram_inc.h#2475, kMinLengthForBlockSplitting#block_splitter.c#2652, HistogramDataSizeCommand#histogram_inc.h#2511, BrotliEncoderParams#params.h#2158, MemoryManager#memory.h#2345, kSymbolsPerCommandHistogram#block_splitter.c#2648, BrotliFree#memory.c#914, BrotliAllocate#memory.c#908, kCommandBlockSwitchCost#block_splitter.c#2638
+InitialEntropyCodesDistance#block_splitter_inc.h#3375 -> HistogramDistance#histogram_inc.h#2513, HistogramAddVectorDistance#histogram_inc.h#2535, ClearHistogramsDistance#histogram_inc.h#2525, MyRand#block_splitter.c#2688
+RandomSampleDistance#block_splitter_inc.h#3392 -> HistogramDistance#histogram_inc.h#2513, HistogramAddVectorDistance#histogram_inc.h#2535, MyRand#block_splitter.c#2688
+RefineEntropyCodesDistance#block_splitter_inc.h#3402 -> HistogramDistance#histogram_inc.h#2513, kMinItersForRefining#block_splitter.c#2656, HistogramAddHistogramDistance#histogram_inc.h#2541, RandomSampleDistance#block_splitter_inc.h#3392, kIterMulForRefining#block_splitter.c#2654, HistogramClearDistance#histogram_inc.h#2519
+FindBlocksDistance#block_splitter_inc.h#3415 -> HistogramDistance#histogram_inc.h#2513, HistogramDataSizeDistance#histogram_inc.h#2549, BitCost#block_splitter.c#2693, FastLog2#fast_log.h#924
+RemapBlockIdsDistance#block_splitter_inc.h#3488
+BuildBlockHistogramsDistance#block_splitter_inc.h#3509 -> HistogramAddDistance#histogram_inc.h#2530, ClearHistogramsDistance#histogram_inc.h#2525, HistogramDistance#histogram_inc.h#2513
+ClusterBlocksDistance#block_splitter_inc.h#3517 -> brotli_min_size_t#platform.h#331, HistogramClearDistance#histogram_inc.h#2519, HistogramAddDistance#histogram_inc.h#2530, BrotliHistogramCombineDistance#cluster_inc.h#2670, BrotliPopulationCostDistance#bit_cost_inc.h#2783, BrotliFree#memory.c#914, MemoryManager#memory.h#2345, HistogramPair#cluster.h#2589, BrotliAllocate#memory.c#908, BrotliHistogramBitCostDistanceDistance#cluster_inc.h#2672, BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422, HistogramDistance#histogram_inc.h#2517, HistogramDistance#histogram_inc.h#2513
+SplitByteVectorDistance#block_splitter_inc.h#3661 -> kDistanceBlockSwitchCost#block_splitter.c#2640, BuildBlockHistogramsDistance#block_splitter_inc.h#3509, kMinLengthForBlockSplitting#block_splitter.c#2652, FindBlocksDistance#block_splitter_inc.h#3415, kCommandStrideLength#block_splitter.c#2644, RemapBlockIdsDistance#block_splitter_inc.h#3488, InitialEntropyCodesDistance#block_splitter_inc.h#3375, BrotliFree#memory.c#914, HistogramDataSizeDistance#histogram_inc.h#2549, kMaxCommandHistograms#block_splitter.c#2634, RefineEntropyCodesDistance#block_splitter_inc.h#3402, kSymbolsPerDistanceHistogram#block_splitter.c#2650, BrotliEncoderParams#params.h#2158, HistogramDistance#histogram_inc.h#2513, MemoryManager#memory.h#2345, BrotliAllocate#memory.c#908, ClusterBlocksDistance#block_splitter_inc.h#3517, BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422
+BrotliDecoderResult#decode.h#1450
+BrotliDecoderErrorCode#decode.h#1453
+BrotliDecoderParameter#decode.h#1456
+Command#brotli.c#1756
+BrotliDecoderState#decode.h#1448 -> BrotliDecoderStateStruct#state.h#1326
+kFileBufferSize#brotli.c#2344
+BrotliDecoderDecompress#decode.h#1465 -> BrotliDecoderResult#decode.h#1450
+ParseInt#brotli.c#1797 -> Context#brotli.c#1759
+FileName#brotli.c#1814 -> Context#brotli.c#1759
+ParseAlias#brotli.c#1822 -> Command#brotli.c#1756, FileName#brotli.c#1814, Command#command.h#2261
+ParseParams#brotli.c#1833 -> Command#brotli.c#1756, ParseAlias#brotli.c#1822, Command#command.h#2261, ParseInt#brotli.c#1797, Context#brotli.c#1759
+PrintVersion#brotli.c#2148
+PrintHelp#brotli.c#2155 -> FileName#brotli.c#1814
+PrintablePath#brotli.c#2168 -> Context#brotli.c#1759
+OpenInputFile#brotli.c#2172 -> PrintablePath#brotli.c#2168, Context#brotli.c#1759
+OpenOutputFile#brotli.c#2186 -> PrintablePath#brotli.c#2168, Context#brotli.c#1759
+FileSize#brotli.c#2206
+CopyStat#brotli.c#2223 -> PrintablePath#brotli.c#2168, Context#brotli.c#1759
+NextFile#brotli.c#2250 -> FileName#brotli.c#1814, Context#brotli.c#1759, FileSize#brotli.c#2206, PrintablePath#brotli.c#2168
+OpenFiles#brotli.c#2304 -> OpenOutputFile#brotli.c#2186, Context#brotli.c#1759, OpenInputFile#brotli.c#2172
+CloseFiles#brotli.c#2312 -> PrintablePath#brotli.c#2168, CopyStat#brotli.c#2223, Context#brotli.c#1759
+InitializeBuffers#brotli.c#2346 -> Context#brotli.c#1759, kFileBufferSize#brotli.c#2344
+HasMoreInput#brotli.c#2355 -> Context#brotli.c#1759
+ProvideInput#brotli.c#2359 -> kFileBufferSize#brotli.c#2344, Context#brotli.c#1759, PrintablePath#brotli.c#2168
+WriteOutput#brotli.c#2370 -> PrintablePath#brotli.c#2168, Context#brotli.c#1759
+ProvideOutput#brotli.c#2383 -> kFileBufferSize#brotli.c#2344, Context#brotli.c#1759, WriteOutput#brotli.c#2370
+FlushOutput#brotli.c#2390 -> Context#brotli.c#1759, WriteOutput#brotli.c#2370
+PrintBytes#brotli.c#2396 -> Context#brotli.c#1759
+PrintFileProcessingProgress#brotli.c#2408 -> Context#brotli.c#1759, PrintBytes#brotli.c#2396, PrintablePath#brotli.c#2168
+DecompressFile#brotli.c#2415 -> BrotliDecoderDecompressStream#decode.c#2929, HasMoreInput#brotli.c#2355, BrotliDecoderState#decode.h#1448, Context#brotli.c#1759, FlushOutput#brotli.c#2390, BrotliDecoderStateStruct#state.h#1326, ProvideInput#brotli.c#2359, PrintablePath#brotli.c#2168, ProvideOutput#brotli.c#2383, PrintFileProcessingProgress#brotli.c#2408, InitializeBuffers#brotli.c#2346, BrotliDecoderResult#decode.h#1450
+DecompressFiles#brotli.c#2448 -> BrotliDecoderCreateInstance#decode.c#1435, DecompressFile#brotli.c#2415, BrotliDecoderStateStruct#state.h#1326, NextFile#brotli.c#2250, OpenFiles#brotli.c#2304, CloseFiles#brotli.c#2312, Context#brotli.c#1759, BrotliDecoderSetParameter#decode.c#1424, BrotliDecoderDestroyInstance#decode.c#1458, BrotliDecoderParameter#decode.h#1456
+CompressFile#brotli.c#2470 -> Context#brotli.c#1759, BrotliEncoderOperation#encode.h#934, FlushOutput#brotli.c#2390, HasMoreInput#brotli.c#2355, BrotliEncoderStateStruct#encode.c#5889, BrotliEncoderState#encode.h#940, BrotliEncoderCompressStream#encode.c#7083, ProvideInput#brotli.c#2359, InitializeBuffers#brotli.c#2346, PrintablePath#brotli.c#2168, ProvideOutput#brotli.c#2383, PrintFileProcessingProgress#brotli.c#2408, BrotliEncoderIsFinished#encode.c#7147
+CompressFiles#brotli.c#2497 -> BrotliEncoderParameter#encode.h#937, CompressFile#brotli.c#2470, BrotliEncoderCreateInstance#encode.c#6373, Context#brotli.c#1759, BrotliEncoderDestroyInstance#encode.c#6403, BrotliEncoderSetParameter#encode.c#5948, BrotliEncoderStateStruct#encode.c#5889, OpenFiles#brotli.c#2304, CloseFiles#brotli.c#2312, NextFile#brotli.c#2250
+main#brotli.c#2539 -> DecompressFiles#brotli.c#2448, Command#brotli.c#1756, Command#command.h#2261, ParseParams#brotli.c#1833, PrintVersion#brotli.c#2148, Context#brotli.c#1759, FileName#brotli.c#1814, CompressFiles#brotli.c#2497, kFileBufferSize#brotli.c#2344, PrintHelp#brotli.c#2155
+HuffmanTreeComparator#entropy_encode.h#2343 -> HuffmanTree#entropy_encode.h#2319
+kCodeLengthDepth#entropy_encode_static.h#2693
+kStaticCommandCodeDepth#entropy_encode_static.h#2696
+kStaticDistanceCodeDepth#entropy_encode_static.h#2699
+kCodeLengthBits#entropy_encode_static.h#2702
+kZeroRepsBits#entropy_encode_static.h#2709
+kZeroRepsDepth#entropy_encode_static.h#2712
+kNonZeroRepsBits#entropy_encode_static.h#2715
+kNonZeroRepsDepth#entropy_encode_static.h#2718
+kStaticCommandCodeBits#entropy_encode_static.h#2721
+kStaticDistanceCodeBits#entropy_encode_static.h#2729
+InitHuffmanTree#entropy_encode.h#2325 -> HuffmanTree#entropy_encode.h#2319
+SortHuffmanTreeItems#entropy_encode.h#2345 -> HuffmanTreeComparator#entropy_encode.h#2343, HuffmanTree#entropy_encode.h#2319, kBrotliShellGaps#entropy_encode.c#473, SortHuffmanTree#brotli_bit_stream.c#2983
+InitMetaBlockSplit#metablock.h#2627 -> MetaBlockSplit#metablock.h#2611, BrotliInitBlockSplit#block_splitter.c#3714
+DestroyMetaBlockSplit#metablock.h#2643 -> BrotliFree#memory.c#914, MetaBlockSplit#metablock.h#2611, MemoryManager#memory.h#2345, BrotliDestroyBlockSplit#block_splitter.c#3723
+BrotliStoreHuffmanTree#brotli_bit_stream.c#2909 -> BrotliConvertBitDepthsToSymbols#entropy_encode.c#829, BrotliStoreHuffmanTreeOfHuffmanTreeToBitMask#brotli_bit_stream.c#2833, BrotliStoreHuffmanTreeToBitMask#brotli_bit_stream.c#2865, HuffmanTree#entropy_encode.h#2319, BrotliWriteHuffmanTree#entropy_encode.c#780, BrotliCreateHuffmanTree#entropy_encode.c#505
+BrotliBuildAndStoreHuffmanTreeFast#brotli_bit_stream.c#2987 -> HuffmanTree#entropy_encode.h#2319, HistogramLiteral#histogram_inc.h#2437, HistogramCommand#histogram_inc.h#2475, SortHuffmanTree#brotli_bit_stream.c#2983, kNonZeroRepsDepth#entropy_encode_static.h#2718, kCodeLengthDepth#entropy_encode_static.h#2693, SortHuffmanTreeItems#entropy_encode.h#2345, MemoryManager#memory.h#2345, kZeroRepsDepth#entropy_encode_static.h#2712, BrotliConvertBitDepthsToSymbols#entropy_encode.c#829, BrotliWriteBits#write_bits.h#2674, kCodeLengthBits#entropy_encode_static.h#2702, StoreStaticCodeLengthCode#entropy_encode_static.h#2705, kZeroRepsBits#entropy_encode_static.h#2709, kNonZeroRepsBits#entropy_encode_static.h#2715, BrotliFree#memory.c#914, HistogramDistance#histogram_inc.h#2513, InitHuffmanTree#entropy_encode.h#2325, BrotliAllocate#memory.c#908, BrotliSetDepth#entropy_encode.c#475
+BrotliStoreMetaBlock#brotli_bit_stream.c#3439 -> MetaBlockSplit#metablock.h#2611, ContextLut#context.h#420, CommandDistanceContext#command.h#2300, BrotliEncoderParams#params.h#2158, InitBlockEncoder#brotli_bit_stream.c#3336, StoreCommandExtra#brotli_bit_stream.c#2776, BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422, HuffmanTree#entropy_encode.h#2319, JumpToByteBoundary#brotli_bit_stream.c#3434, BuildAndStoreEntropyCodesLiteral#block_encoder_inc.h#3392, BlockEncoder#brotli_bit_stream.c#3322, BuildAndStoreEntropyCodesCommand#block_encoder_inc.h#3406, ContextType#context.h#415, _kBrotliContextLookupTable#context.c#204, StoreSymbolWithContext#brotli_bit_stream.c#3375, BrotliFree#memory.c#914, CommandCopyLen#command.h#2309, BuildAndStoreBlockSwitchEntropyCodes#brotli_bit_stream.c#3355, StoreTrivialContextMap#brotli_bit_stream.c#3293, Command#command.h#2261, CleanupBlockEncoder#brotli_bit_stream.c#3350, StoreSymbol#brotli_bit_stream.c#3359, StoreCompressedMetaBlockHeader#brotli_bit_stream.c#2806, EncodeContextMap#brotli_bit_stream.c#3218, BrotliDistanceParams#params.h#2150, BuildAndStoreEntropyCodesDistance#block_encoder_inc.h#3420, BrotliWriteBits#write_bits.h#2674, MemoryManager#memory.h#2345, BrotliAllocate#memory.c#908
+BrotliStoreMetaBlockTrivial#brotli_bit_stream.c#3575 -> HistogramDistance#histogram_inc.h#2513, BuildHistograms#brotli_bit_stream.c#3532, BuildAndStoreHuffmanTree#brotli_bit_stream.c#2944, HistogramClearLiteral#histogram_inc.h#2443, HistogramClearDistance#histogram_inc.h#2519, Command#command.h#2261, StoreCompressedMetaBlockHeader#brotli_bit_stream.c#2806, BrotliEncoderParams#params.h#2158, HistogramCommand#histogram_inc.h#2475, BrotliFree#memory.c#914, BrotliAllocate#memory.c#908, StoreDataWithHuffmanCodes#brotli_bit_stream.c#3550, MemoryManager#memory.h#2345, JumpToByteBoundary#brotli_bit_stream.c#3434, BrotliWriteBits#write_bits.h#2674, HistogramClearCommand#histogram_inc.h#2481, HistogramLiteral#histogram_inc.h#2437, HuffmanTree#entropy_encode.h#2319, BrotliDistanceParams#params.h#2150
+BrotliStoreMetaBlockFast#brotli_bit_stream.c#3605 -> BrotliBuildAndStoreHuffmanTreeFast#brotli_bit_stream.c#2987, StoreDataWithHuffmanCodes#brotli_bit_stream.c#3550, HistogramClearDistance#histogram_inc.h#2519, BrotliDistanceParams#params.h#2150, kStaticDistanceCodeBits#entropy_encode_static.h#2729, HistogramDistance#histogram_inc.h#2513, kStaticCommandCodeBits#entropy_encode_static.h#2721, StoreStaticDistanceHuffmanTree#entropy_encode_static.h#2732, StoreStaticCommandHuffmanTree#entropy_encode_static.h#2724, HistogramCommand#histogram_inc.h#2475, MemoryManager#memory.h#2345, BrotliWriteBits#write_bits.h#2674, Log2FloorNonZero#fast_log.h#918, HistogramClearCommand#histogram_inc.h#2481, kStaticDistanceCodeDepth#entropy_encode_static.h#2699, CommandCopyLen#command.h#2309, StoreCompressedMetaBlockHeader#brotli_bit_stream.c#2806, BrotliEncoderParams#params.h#2158, JumpToByteBoundary#brotli_bit_stream.c#3434, Command#command.h#2261, BuildHistograms#brotli_bit_stream.c#3532, HistogramClearLiteral#histogram_inc.h#2443, HistogramLiteral#histogram_inc.h#2437, kStaticCommandCodeDepth#entropy_encode_static.h#2696
+BrotliStoreUncompressedMetaBlock#brotli_bit_stream.c#3659 -> BrotliStoreUncompressedMetaBlockHeader#brotli_bit_stream.c#2822, BrotliWriteBits#write_bits.h#2674, JumpToByteBoundary#brotli_bit_stream.c#3434, BrotliWriteBitsPrepareStorage#write_bits.h#2687
+BrotliWriteBits#write_bits.h#2674 -> GetCopyExtra#command.h#2257, kCodeLengthBits#entropy_encode_static.h#2702, kNonZeroRepsDepth#entropy_encode_static.h#2718, BrotliUnalignedWrite64#platform.h#323, kCodeLengthDepth#entropy_encode_static.h#2693, BrotliDistanceParams#params.h#2150, kZeroRepsDepth#entropy_encode_static.h#2712, BlockSplitCode#brotli_bit_stream.c#2787, kZeroRepsBits#entropy_encode_static.h#2709, kNonZeroRepsBits#entropy_encode_static.h#2715
+BrotliWriteBitsPrepareStorage#write_bits.h#2687
+StoreStaticCodeLengthCode#entropy_encode_static.h#2705 -> BrotliWriteBits#write_bits.h#2674
+StoreStaticCommandHuffmanTree#entropy_encode_static.h#2724 -> BrotliWriteBits#write_bits.h#2674
+StoreStaticDistanceHuffmanTree#entropy_encode_static.h#2732 -> BrotliWriteBits#write_bits.h#2674
+BlockLengthPrefixCode#brotli_bit_stream.c#2736 -> BrotliPrefixCodeRange#constants.h#408, _kBrotliPrefixCodeRanges#constants.c#415
+GetBlockLengthPrefixCode#brotli_bit_stream.c#2742 -> _kBrotliPrefixCodeRanges#constants.c#415, BlockLengthPrefixCode#brotli_bit_stream.c#2736, BrotliPrefixCodeRange#constants.h#408
+InitBlockTypeCodeCalculator#brotli_bit_stream.c#2753 -> BlockTypeCodeCalculator#brotli_bit_stream.c#2748
+NextBlockTypeCode#brotli_bit_stream.c#2758 -> BlockTypeCodeCalculator#brotli_bit_stream.c#2748, BlockSplitCode#brotli_bit_stream.c#2787
+BrotliEncodeMlen#brotli_bit_stream.c#2765 -> Log2FloorNonZero#fast_log.h#918
+StoreCommandExtra#brotli_bit_stream.c#2776 -> GetInsertBase#command.h#2245, Command#command.h#2261, BrotliWriteBits#write_bits.h#2674, GetCopyLengthCode#command.h#2215, CommandCopyLenCode#command.h#2313, GetCopyExtra#command.h#2257, GetCopyBase#command.h#2253, GetInsertExtra#command.h#2249, GetInsertLengthCode#command.h#2198
+StoreVarLenUint8#brotli_bit_stream.c#2795 -> BrotliWriteBits#write_bits.h#2674, Log2FloorNonZero#fast_log.h#918
+StoreCompressedMetaBlockHeader#brotli_bit_stream.c#2806 -> BrotliWriteBits#write_bits.h#2674, BrotliEncodeMlen#brotli_bit_stream.c#2765
+BrotliStoreUncompressedMetaBlockHeader#brotli_bit_stream.c#2822 -> BrotliEncodeMlen#brotli_bit_stream.c#2765, BrotliWriteBits#write_bits.h#2674
+BrotliStoreHuffmanTreeOfHuffmanTreeToBitMask#brotli_bit_stream.c#2833 -> BrotliWriteBits#write_bits.h#2674
+BrotliStoreHuffmanTreeToBitMask#brotli_bit_stream.c#2865 -> BrotliWriteBits#write_bits.h#2674
+StoreSimpleHuffmanTree#brotli_bit_stream.c#2879 -> BrotliWriteBits#write_bits.h#2674
+BuildAndStoreHuffmanTree#brotli_bit_stream.c#2944 -> BlockSplitCode#brotli_bit_stream.c#2787, StoreSimpleHuffmanTree#brotli_bit_stream.c#2879, HistogramDistance#histogram_inc.h#2513, BrotliStoreHuffmanTree#brotli_bit_stream.c#2909, HuffmanTree#entropy_encode.h#2319, BrotliCreateHuffmanTree#entropy_encode.c#505, BrotliConvertBitDepthsToSymbols#entropy_encode.c#829, HistogramLiteral#histogram_inc.h#2437, BrotliWriteBits#write_bits.h#2674, HistogramCommand#histogram_inc.h#2475
+SortHuffmanTree#brotli_bit_stream.c#2983 -> HuffmanTree#entropy_encode.h#2319
+IndexOf#brotli_bit_stream.c#3128
+MoveToFront#brotli_bit_stream.c#3136
+MoveToFrontTransform#brotli_bit_stream.c#3145 -> MoveToFront#brotli_bit_stream.c#3136, IndexOf#brotli_bit_stream.c#3128
+RunLengthCodeZeros#brotli_bit_stream.c#3171 -> brotli_min_size_t#platform.h#331, Log2FloorNonZero#fast_log.h#918
+EncodeContextMap#brotli_bit_stream.c#3218 -> MetaBlockSplit#metablock.h#2611, RunLengthCodeZeros#brotli_bit_stream.c#3171, MoveToFrontTransform#brotli_bit_stream.c#3145, BrotliFree#memory.c#914, StoreVarLenUint8#brotli_bit_stream.c#2795, MemoryManager#memory.h#2345, BrotliAllocate#memory.c#908, BuildAndStoreHuffmanTree#brotli_bit_stream.c#2944, HuffmanTree#entropy_encode.h#2319, BrotliWriteBits#write_bits.h#2674
+StoreBlockSwitch#brotli_bit_stream.c#3259 -> BlockSplitCode#brotli_bit_stream.c#2787, NextBlockTypeCode#brotli_bit_stream.c#2758, BrotliWriteBits#write_bits.h#2674, GetBlockLengthPrefixCode#brotli_bit_stream.c#2742
+BuildAndStoreBlockSplitCode#brotli_bit_stream.c#3272 -> BlockLengthPrefixCode#brotli_bit_stream.c#2736, BuildAndStoreHuffmanTree#brotli_bit_stream.c#2944, HuffmanTree#entropy_encode.h#2319, NextBlockTypeCode#brotli_bit_stream.c#2758, BlockSplitCode#brotli_bit_stream.c#2787, StoreVarLenUint8#brotli_bit_stream.c#2795, StoreBlockSwitch#brotli_bit_stream.c#3259, InitBlockTypeCodeCalculator#brotli_bit_stream.c#2753, BlockTypeCodeCalculator#brotli_bit_stream.c#2748
+StoreTrivialContextMap#brotli_bit_stream.c#3293 -> BuildAndStoreHuffmanTree#brotli_bit_stream.c#2944, MetaBlockSplit#metablock.h#2611, StoreVarLenUint8#brotli_bit_stream.c#2795, BrotliWriteBits#write_bits.h#2674, HuffmanTree#entropy_encode.h#2319
+InitBlockEncoder#brotli_bit_stream.c#3336 -> BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422, InitBlockTypeCodeCalculator#brotli_bit_stream.c#2753, BlockEncoder#brotli_bit_stream.c#3322, MetaBlockSplit#metablock.h#2611
+CleanupBlockEncoder#brotli_bit_stream.c#3350 -> BlockEncoder#brotli_bit_stream.c#3322, BrotliFree#memory.c#914, MemoryManager#memory.h#2345
+BuildAndStoreBlockSwitchEntropyCodes#brotli_bit_stream.c#3355 -> BuildAndStoreBlockSplitCode#brotli_bit_stream.c#3272, BlockEncoder#brotli_bit_stream.c#3322, HuffmanTree#entropy_encode.h#2319
+StoreSymbol#brotli_bit_stream.c#3359 -> BlockEncoder#brotli_bit_stream.c#3322, BrotliWriteBits#write_bits.h#2674, StoreBlockSwitch#brotli_bit_stream.c#3259
+StoreSymbolWithContext#brotli_bit_stream.c#3375 -> BrotliWriteBits#write_bits.h#2674, MetaBlockSplit#metablock.h#2611, StoreBlockSwitch#brotli_bit_stream.c#3259, BlockEncoder#brotli_bit_stream.c#3322
+BuildAndStoreEntropyCodesLiteral#block_encoder_inc.h#3392 -> HuffmanTree#entropy_encode.h#2319, BrotliAllocate#memory.c#908, BuildAndStoreHuffmanTree#brotli_bit_stream.c#2944, HistogramLiteral#histogram_inc.h#2437, BlockEncoder#brotli_bit_stream.c#3322, MetaBlockSplit#metablock.h#2611, MemoryManager#memory.h#2345
+BuildAndStoreEntropyCodesCommand#block_encoder_inc.h#3406 -> HistogramCommand#histogram_inc.h#2475, BrotliAllocate#memory.c#908, BuildAndStoreHuffmanTree#brotli_bit_stream.c#2944, HuffmanTree#entropy_encode.h#2319, MetaBlockSplit#metablock.h#2611, MemoryManager#memory.h#2345, BlockEncoder#brotli_bit_stream.c#3322
+BuildAndStoreEntropyCodesDistance#block_encoder_inc.h#3420 -> HuffmanTree#entropy_encode.h#2319, BlockEncoder#brotli_bit_stream.c#3322, MetaBlockSplit#metablock.h#2611, BrotliAllocate#memory.c#908, MemoryManager#memory.h#2345, HistogramDistance#histogram_inc.h#2513, BuildAndStoreHuffmanTree#brotli_bit_stream.c#2944
+JumpToByteBoundary#brotli_bit_stream.c#3434
+BuildHistograms#brotli_bit_stream.c#3532 -> HistogramCommand#histogram_inc.h#2475, CommandCopyLen#command.h#2309, HistogramLiteral#histogram_inc.h#2437, HistogramAddCommand#histogram_inc.h#2492, HistogramDistance#histogram_inc.h#2513, HistogramAddLiteral#histogram_inc.h#2454, Command#command.h#2261, HistogramAddDistance#histogram_inc.h#2530
+StoreDataWithHuffmanCodes#brotli_bit_stream.c#3550 -> Command#command.h#2261, BrotliWriteBits#write_bits.h#2674, kStaticDistanceCodeBits#entropy_encode_static.h#2729, StoreCommandExtra#brotli_bit_stream.c#2776, CommandCopyLen#command.h#2309, kStaticDistanceCodeDepth#entropy_encode_static.h#2699, kStaticCommandCodeDepth#entropy_encode_static.h#2696, kStaticCommandCodeBits#entropy_encode_static.h#2721
+HistogramPair#cluster.h#2558 -> HistogramPair#cluster.h#2589
+BrotliCompareAndPushToQueueLiteral#cluster_inc.h#2644 -> ClusterCostDiff#cluster.c#2639, HistogramLiteral#histogram_inc.h#2437, HistogramAddHistogramLiteral#histogram_inc.h#2465, HistogramPairIsLess#cluster.c#2632, brotli_min_double#platform.h#329, HistogramPair#cluster.h#2589, BrotliPopulationCostLiteral#bit_cost_inc.h#2589
+BrotliHistogramCombineLiteral#cluster_inc.h#2646 -> HistogramLiteral#histogram_inc.h#2437, HistogramPair#cluster.h#2589, HistogramAddHistogramLiteral#histogram_inc.h#2465, HistogramPairIsLess#cluster.c#2632, BrotliCompareAndPushToQueueLiteral#cluster_inc.h#2644
+BrotliHistogramBitCostDistanceLiteral#cluster_inc.h#2648 -> HistogramLiteral#histogram_inc.h#2437, BrotliPopulationCostLiteral#bit_cost_inc.h#2589, HistogramAddHistogramLiteral#histogram_inc.h#2465
+BrotliHistogramRemapLiteral#cluster_inc.h#2650 -> HistogramLiteral#histogram_inc.h#2437, HistogramClearLiteral#histogram_inc.h#2443, BrotliHistogramBitCostDistanceLiteral#cluster_inc.h#2648, HistogramAddHistogramLiteral#histogram_inc.h#2465
+BrotliHistogramReindexLiteral#cluster_inc.h#2652 -> BrotliAllocate#memory.c#908, BrotliFree#memory.c#914, HistogramLiteral#histogram_inc.h#2437, MemoryManager#memory.h#2345
+BrotliClusterHistogramsLiteral#cluster_inc.h#2654 -> brotli_min_size_t#platform.h#331, MetaBlockSplit#metablock.h#2611, BrotliHistogramRemapLiteral#cluster_inc.h#2650, HistogramPair#cluster.h#2589, HistogramLiteral#histogram_inc.h#2437, BrotliHistogramReindexLiteral#cluster_inc.h#2652, BrotliPopulationCostLiteral#bit_cost_inc.h#2589, BrotliHistogramCombineLiteral#cluster_inc.h#2646, MemoryManager#memory.h#2345, BrotliFree#memory.c#914, BrotliAllocate#memory.c#908
+BrotliCompareAndPushToQueueCommand#cluster_inc.h#2656 -> ClusterCostDiff#cluster.c#2639, brotli_min_double#platform.h#329, BrotliPopulationCostCommand#bit_cost_inc.h#2686, HistogramAddHistogramCommand#histogram_inc.h#2503, HistogramCommand#histogram_inc.h#2475, HistogramPair#cluster.h#2589, HistogramPairIsLess#cluster.c#2632
+BrotliHistogramCombineCommand#cluster_inc.h#2658 -> HistogramCommand#histogram_inc.h#2475, HistogramPairIsLess#cluster.c#2632, BrotliCompareAndPushToQueueCommand#cluster_inc.h#2656, HistogramAddHistogramCommand#histogram_inc.h#2503, HistogramPair#cluster.h#2589
+BrotliHistogramBitCostDistanceCommand#cluster_inc.h#2660 -> HistogramAddHistogramCommand#histogram_inc.h#2503, HistogramCommand#histogram_inc.h#2475, BrotliPopulationCostCommand#bit_cost_inc.h#2686
+BrotliHistogramRemapCommand#cluster_inc.h#2662 -> HistogramAddHistogramCommand#histogram_inc.h#2503, HistogramCommand#histogram_inc.h#2475, HistogramClearCommand#histogram_inc.h#2481, BrotliHistogramBitCostDistanceCommand#cluster_inc.h#2660
+BrotliHistogramReindexCommand#cluster_inc.h#2664 -> MemoryManager#memory.h#2345, BrotliFree#memory.c#914, BrotliAllocate#memory.c#908, HistogramCommand#histogram_inc.h#2475
+BrotliClusterHistogramsCommand#cluster_inc.h#2666 -> BrotliHistogramCombineCommand#cluster_inc.h#2658, HistogramCommand#histogram_inc.h#2475, BrotliFree#memory.c#914, BrotliHistogramRemapCommand#cluster_inc.h#2662, brotli_min_size_t#platform.h#331, BrotliPopulationCostCommand#bit_cost_inc.h#2686, BrotliHistogramReindexCommand#cluster_inc.h#2664, MemoryManager#memory.h#2345, BrotliAllocate#memory.c#908, HistogramPair#cluster.h#2589
+BrotliCompareAndPushToQueueDistance#cluster_inc.h#2668 -> brotli_min_double#platform.h#329, HistogramPairIsLess#cluster.c#2632, HistogramAddHistogramDistance#histogram_inc.h#2541, BrotliPopulationCostDistance#bit_cost_inc.h#2783, ClusterCostDiff#cluster.c#2639, HistogramPair#cluster.h#2589, HistogramDistance#histogram_inc.h#2513
+BrotliHistogramCombineDistance#cluster_inc.h#2670 -> BrotliCompareAndPushToQueueDistance#cluster_inc.h#2668, HistogramAddHistogramDistance#histogram_inc.h#2541, HistogramPairIsLess#cluster.c#2632, HistogramPair#cluster.h#2589, HistogramDistance#histogram_inc.h#2513
+BrotliHistogramBitCostDistanceDistance#cluster_inc.h#2672 -> BrotliPopulationCostDistance#bit_cost_inc.h#2783, HistogramAddHistogramDistance#histogram_inc.h#2541, HistogramDistance#histogram_inc.h#2513
+BrotliHistogramRemapDistance#cluster_inc.h#2674 -> HistogramAddHistogramDistance#histogram_inc.h#2541, HistogramClearDistance#histogram_inc.h#2519, BrotliHistogramBitCostDistanceDistance#cluster_inc.h#2672, HistogramDistance#histogram_inc.h#2513
+BrotliHistogramReindexDistance#cluster_inc.h#2676 -> BrotliFree#memory.c#914, MemoryManager#memory.h#2345, HistogramDistance#histogram_inc.h#2513, BrotliAllocate#memory.c#908
+BrotliClusterHistogramsDistance#cluster_inc.h#2678 -> BrotliAllocate#memory.c#908, HistogramPair#cluster.h#2589, MetaBlockSplit#metablock.h#2611, BrotliHistogramRemapDistance#cluster_inc.h#2674, BrotliHistogramReindexDistance#cluster_inc.h#2676, BrotliFree#memory.c#914, MemoryManager#memory.h#2345, HistogramDistance#histogram_inc.h#2513, brotli_min_size_t#platform.h#331, BrotliHistogramCombineDistance#cluster_inc.h#2670, BrotliPopulationCostDistance#bit_cost_inc.h#2783
+HistogramPairIsLess#cluster.c#2632 -> HistogramPair#cluster.h#2589
+ClusterCostDiff#cluster.c#2639 -> FastLog2#fast_log.h#924, HistogramPair#cluster.h#2589
+kBrotliInsBase#command.c#2312
+kBrotliInsExtra#command.c#2315
+kBrotliCopyBase#command.c#2318
+kBrotliCopyExtra#command.c#2321
+HuffmanTree#entropy_encode.h#2339 -> HuffmanTree#entropy_encode.h#2319
+MetaBlockSplit#metablock.h#2627 -> MetaBlockSplit#metablock.h#2611
+kCmdHistoSeed#compress_fragment.c#3010
+BrotliCompressFragmentFast#compress_fragment.c#3196 -> MemoryManager#memory.h#2345, BrotliWriteBits#write_bits.h#2674, Log2FloorNonZero#fast_log.h#918, BrotliCompressFragmentFastImpl9#compress_fragment.c#3194, EmitUncompressedMetaBlock#compress_fragment.c#3000, BrotliEncoderStateStruct#encode.c#5889
+Hash#compress_fragment.c#2723 -> BrotliUnalignedRead64#platform.h#319, kHashMul32#hash.h#2471
+HashBytesAtOffset#compress_fragment.c#2728 -> kHashMul32#hash.h#2471
+IsMatch#compress_fragment.c#2737 -> BrotliUnalignedRead32#platform.h#315
+BuildAndStoreLiteralPrefixCode#compress_fragment.c#2741 -> brotli_min_size_t#platform.h#331, MemoryManager#memory.h#2345, BrotliBuildAndStoreHuffmanTreeFast#brotli_bit_stream.c#2987
+BuildAndStoreCommandPrefixCode#compress_fragment.c#2778 -> BrotliCreateHuffmanTree#entropy_encode.c#505, HuffmanTree#entropy_encode.h#2319, BrotliConvertBitDepthsToSymbols#entropy_encode.c#829, BrotliStoreHuffmanTree#brotli_bit_stream.c#2909
+EmitInsertLen#compress_fragment.c#2816 -> Log2FloorNonZero#fast_log.h#918, BrotliWriteBits#write_bits.h#2674
+EmitLongInsertLen#compress_fragment.c#2843 -> BrotliWriteBits#write_bits.h#2674
+EmitCopyLen#compress_fragment.c#2855 -> Log2FloorNonZero#fast_log.h#918, BrotliWriteBits#write_bits.h#2674
+EmitCopyLenLastDistance#compress_fragment.c#2881 -> BrotliWriteBits#write_bits.h#2674, Log2FloorNonZero#fast_log.h#918
+EmitDistance#compress_fragment.c#2919 -> Log2FloorNonZero#fast_log.h#918, BrotliWriteBits#write_bits.h#2674
+EmitLiterals#compress_fragment.c#2930 -> BrotliWriteBits#write_bits.h#2674
+BrotliStoreMetaBlockHeader#compress_fragment.c#2938 -> BrotliWriteBits#write_bits.h#2674
+UpdateBits#compress_fragment.c#2951 -> brotli_min_size_t#platform.h#331
+RewindBitPosition#compress_fragment.c#2967
+ShouldMergeBlock#compress_fragment.c#2974 -> FastLog2#fast_log.h#924
+ShouldUseUncompressedMode#compress_fragment.c#2991
+EmitUncompressedMetaBlock#compress_fragment.c#3000 -> BrotliStoreMetaBlockHeader#compress_fragment.c#2938, RewindBitPosition#compress_fragment.c#2967
+BrotliCompressFragmentFastImpl#compress_fragment.c#3013 -> BuildAndStoreLiteralPrefixCode#compress_fragment.c#2741, HashBytesAtOffset#compress_fragment.c#2728, FindMatchLengthWithLimit#find_match_length.h#2319, IsMatch#compress_fragment.c#2737, brotli_min_size_t#platform.h#331, BrotliUnalignedRead64#platform.h#319, ShouldMergeBlock#compress_fragment.c#2974, EmitInsertLen#compress_fragment.c#2816, BrotliStoreMetaBlockHeader#compress_fragment.c#2938, EmitCopyLenLastDistance#compress_fragment.c#2881, kCmdHistoSeed#compress_fragment.c#3010, EmitUncompressedMetaBlock#compress_fragment.c#3000, EmitLiterals#compress_fragment.c#2930, EmitDistance#compress_fragment.c#2919, EmitCopyLen#compress_fragment.c#2855, ShouldUseUncompressedMode#compress_fragment.c#2991, EmitLongInsertLen#compress_fragment.c#2843, MemoryManager#memory.h#2345, Hash#compress_fragment.c#2723, UpdateBits#compress_fragment.c#2951, BuildAndStoreCommandPrefixCode#compress_fragment.c#2778, BrotliWriteBits#write_bits.h#2674
+BrotliCompressFragmentFastImpl9#compress_fragment.c#3194 -> BrotliCompressFragmentFastImpl#compress_fragment.c#3013, MemoryManager#memory.h#2345
+kCompressFragmentTwoPassBlockSize#compress_fragment_two_pass.h#378
+BrotliCompressFragmentTwoPass#compress_fragment_two_pass.c#3185 -> Log2FloorNonZero#fast_log.h#918, BrotliEncoderStateStruct#encode.c#5889, EmitUncompressedMetaBlock#compress_fragment_two_pass.c#3151, BrotliCompressFragmentTwoPassImpl8#compress_fragment_two_pass.c#3183, MemoryManager#memory.h#2345, BrotliWriteBits#write_bits.h#2674, RewindBitPosition#compress_fragment.c#2967
+Hash#compress_fragment_two_pass.c#2761 -> BrotliUnalignedRead64#platform.h#319, kHashMul32#hash.h#2471
+HashBytesAtOffset#compress_fragment_two_pass.c#2766 -> kHashMul32#hash.h#2471
+IsMatch#compress_fragment_two_pass.c#2774 -> BrotliUnalignedRead32#platform.h#315
+BuildAndStoreCommandPrefixCode#compress_fragment_two_pass.c#2782 -> BrotliStoreHuffmanTree#brotli_bit_stream.c#2909, HuffmanTree#entropy_encode.h#2319, BrotliConvertBitDepthsToSymbols#entropy_encode.c#829, BrotliCreateHuffmanTree#entropy_encode.c#505
+EmitInsertLen#compress_fragment_two_pass.c#2820 -> Log2FloorNonZero#fast_log.h#918
+EmitCopyLen#compress_fragment_two_pass.c#2849 -> Log2FloorNonZero#fast_log.h#918
+EmitCopyLenLastDistance#compress_fragment_two_pass.c#2872 -> Log2FloorNonZero#fast_log.h#918
+EmitDistance#compress_fragment_two_pass.c#2910 -> Log2FloorNonZero#fast_log.h#918
+CreateCommands#compress_fragment_two_pass.c#2934 -> BrotliUnalignedRead64#platform.h#319, FindMatchLengthWithLimit#find_match_length.h#2319, EmitInsertLen#compress_fragment_two_pass.c#2820, IsMatch#compress_fragment_two_pass.c#2774, Hash#compress_fragment_two_pass.c#2761, EmitCopyLenLastDistance#compress_fragment_two_pass.c#2872, HashBytesAtOffset#compress_fragment_two_pass.c#2766, brotli_min_size_t#platform.h#331, EmitCopyLen#compress_fragment_two_pass.c#2849, EmitDistance#compress_fragment_two_pass.c#2910
+StoreCommands#compress_fragment_two_pass.c#3083 -> BrotliBuildAndStoreHuffmanTreeFast#brotli_bit_stream.c#2987, BrotliWriteBits#write_bits.h#2674, MemoryManager#memory.h#2345, BuildAndStoreCommandPrefixCode#compress_fragment_two_pass.c#2782
+ShouldCompress#compress_fragment_two_pass.c#3129 -> BitsEntropy#bit_cost.h#2574
+EmitUncompressedMetaBlock#compress_fragment_two_pass.c#3151 -> BrotliStoreMetaBlockHeader#compress_fragment.c#2938
+BrotliCompressFragmentTwoPassImpl#compress_fragment_two_pass.c#3159 -> ShouldCompress#compress_fragment_two_pass.c#3129, brotli_min_size_t#platform.h#331, BrotliStoreMetaBlockHeader#compress_fragment.c#2938, BrotliWriteBits#write_bits.h#2674, kCompressFragmentTwoPassBlockSize#compress_fragment_two_pass.h#378, CreateCommands#compress_fragment_two_pass.c#2934, EmitUncompressedMetaBlock#compress_fragment_two_pass.c#3151, StoreCommands#compress_fragment_two_pass.c#3083, MemoryManager#memory.h#2345
+BrotliCompressFragmentTwoPassImpl8#compress_fragment_two_pass.c#3183 -> BrotliCompressFragmentTwoPassImpl#compress_fragment_two_pass.c#3159, MemoryManager#memory.h#2345
+_kBrotliPrefixCodeRanges#constants.c#415 -> BrotliPrefixCodeRange#constants.h#408
+_kBrotliContextLookupTable#context.c#204
+BrotliWordTransformType#transform.h#986
+BrotliRunningState#state.h#1273
+BrotliRunningMetablockHeaderState#state.h#1276
+BrotliRunningUncompressedState#state.h#1279
+BrotliRunningTreeGroupState#state.h#1282
+BrotliRunningContextMapState#state.h#1285
+BrotliRunningHuffmanState#state.h#1288
+BrotliRunningDecodeUint8State#state.h#1291
+BrotliRunningReadBlockLengthState#state.h#1294
+BrotliDecoderStateInternal#state.h#1401 -> BrotliDecoderStateStruct#state.h#1326
+kCmdLut#prefix.h#1270 -> CmdLutElement#prefix.h#1261
+kRingBufferWriteAheadSlack#decode.c#1413
+kCodeLengthCodeOrder#decode.c#1415
+kCodeLengthPrefixLength#decode.c#1418
+kCodeLengthPrefixValue#decode.c#1421
+BrotliDecoderSetParameter#decode.c#1424 -> BrotliDecoderState#decode.h#1448, BrotliDecoderStateStruct#state.h#1326, BrotliRunningState#state.h#1273, BrotliDecoderParameter#decode.h#1456
+BrotliDecoderCreateInstance#decode.c#1435 -> BrotliDecoderStateStruct#state.h#1326, brotli_alloc_func#types.h#307, brotli_free_func#types.h#309, BrotliDecoderState#decode.h#1448, BrotliDecoderStateInit#state.c#1359
+BrotliDecoderDestroyInstance#decode.c#1458 -> BrotliDecoderState#decode.h#1448, BrotliDecoderStateCleanup#state.c#1458, BrotliDecoderStateStruct#state.h#1326, brotli_free_func#types.h#309
+BrotliDecoderDecompressStream#decode.c#2929 -> SaveErrorCode#decode.c#1469, SafeReadBlockLength#decode.c#2050, BrotliJumpToByteBoundary#bit_reader.h#626, BrotliMetablockHeaderArena#state.h#1297, BrotliEnsureRingBuffer#decode.c#2395, DecodeVarLenUint8#decode.c#1520, BrotliDecoderHuffmanTreeGroupInit#state.c#1464, BrotliDecoderResult#decode.h#1450, Context#brotli.c#1759, WrapRingBuffer#decode.c#2388, BrotliDecoderStateMetablockBegin#state.c#1419, DecodeWindowBits#decode.c#1479, BrotliDecoderStateStruct#state.h#1326, HuffmanTreeGroupDecode#decode.c#2103, SafeProcessCommands#decode.c#2905, BrotliBitReaderUnload#bit_reader.h#545, DecodeContextMap#decode.c#2122, BitMask#bit_reader.h#417, ReadHuffmanCode#decode.c#1952, WriteRingBuffer#decode.c#2348, BrotliSafeReadBits#bit_reader.h#600, BrotliDecoderErrorCode#decode.h#1453, BrotliRunningTreeGroupState#state.h#1282, BrotliDistanceCodeLimit#constants.h#364, HuffmanTreeGroup#huffman.h#1253, PrepareLiteralDecoding#decode.c#2280, BrotliCalculateRingBufferSize#decode.c#2459, CalculateDistanceLut#decode.c#2542, BrotliRunningHuffmanState#state.h#1288, BrotliDecoderState#decode.h#1448, CopyUncompressedBlockToOutput#decode.c#2417, BrotliBitReader#bit_reader.h#425, HuffmanCode#huffman.h#1235, DecodeMetaBlockLength#decode.c#1551, BrotliRunningContextMapState#state.h#1285, BrotliWarmupBitReader#bit_reader.c#654, BrotliDecoderStateCleanupAfterMetablock#state.c#1449, ReadContextModes#decode.c#2485, BrotliCalculateDistanceCodeLimit#constants.h#369, DetectTrivialLiteralBlockTypes#decode.c#2263, ProcessCommands#decode.c#2901, BrotliRunningState#state.h#1273
+BrotliDecoderHasMoreOutput#decode.c#3274 -> UnwrittenBytes#decode.c#2342, BrotliDecoderStateStruct#state.h#1326, BrotliDecoderState#decode.h#1448
+BrotliDecoderTakeOutput#decode.c#3281 -> WriteRingBuffer#decode.c#2348, WrapRingBuffer#decode.c#2388, BrotliDecoderState#decode.h#1448, BrotliDecoderStateStruct#state.h#1326, SaveErrorCode#decode.c#1469, BrotliDecoderErrorCode#decode.h#1453
+BrotliDecoderIsUsed#decode.c#3302 -> BrotliDecoderStateStruct#state.h#1326, BrotliRunningState#state.h#1273, BrotliDecoderState#decode.h#1448, BrotliGetAvailableBits#bit_reader.h#459
+BrotliDecoderIsFinished#decode.c#3306 -> BrotliDecoderHasMoreOutput#decode.c#3274, BrotliDecoderState#decode.h#1448, BrotliDecoderStateStruct#state.h#1326, BrotliRunningState#state.h#1273
+BrotliDecoderGetErrorCode#decode.c#3310 -> BrotliDecoderState#decode.h#1448, BrotliDecoderStateStruct#state.h#1326, BrotliDecoderErrorCode#decode.h#1453
+BrotliDecoderErrorString#decode.c#3314 -> BrotliDecoderErrorCode#decode.h#1453
+BrotliDecoderVersion#decode.c#3321
+ConstructHuffmanCode#huffman.h#1240 -> HuffmanCode#huffman.h#1235
+SaveErrorCode#decode.c#1469 -> BrotliDecoderErrorCode#decode.h#1453, BrotliDecoderResult#decode.h#1450, BrotliDecoderStateInternal#state.h#1401, BrotliDecoderStateStruct#state.h#1326
+DecodeWindowBits#decode.c#1479 -> BrotliDecoderStateStruct#state.h#1326, BrotliBitReader#bit_reader.h#425, BrotliDecoderStateInternal#state.h#1401, BrotliTakeBits#bit_reader.h#558, BrotliDecoderErrorCode#decode.h#1453
+memmove16#decode.c#1514 -> BrotliDecoderStateStruct#state.h#1326
+DecodeVarLenUint8#decode.c#1520 -> BrotliDecoderStateInternal#state.h#1401, BrotliSafeReadBits#bit_reader.h#600, BrotliDecoderErrorCode#decode.h#1453, BrotliDecoderStateStruct#state.h#1326, BrotliBitReader#bit_reader.h#425, BrotliRunningDecodeUint8State#state.h#1291
+DecodeMetaBlockLength#decode.c#1551 -> BrotliDecoderStateStruct#state.h#1326, BrotliRunningMetablockHeaderState#state.h#1276, BrotliSafeReadBits#bit_reader.h#600, BrotliBitReader#bit_reader.h#425, BrotliDecoderStateInternal#state.h#1401, BrotliDecoderErrorCode#decode.h#1453
+DecodeSymbol#decode.c#1643 -> HuffmanCode#huffman.h#1235, BrotliGet16BitsUnmasked#bit_reader.h#521, BitMask#bit_reader.h#417, BrotliBitReader#bit_reader.h#425, BrotliDecoderStateStruct#state.h#1326, BrotliDropBits#bit_reader.h#541
+ReadSymbol#decode.c#1655 -> BrotliGet16BitsUnmasked#bit_reader.h#521, DecodeSymbol#decode.c#1643, BrotliBitReader#bit_reader.h#425, BrotliDecoderStateStruct#state.h#1326, HuffmanCode#huffman.h#1235
+SafeDecodeSymbol#decode.c#1659 -> HuffmanCode#huffman.h#1235, BrotliDropBits#bit_reader.h#541, BitMask#bit_reader.h#417, BrotliGetAvailableBits#bit_reader.h#459, BrotliGetBitsUnmasked#bit_reader.h#517, BrotliDecoderStateStruct#state.h#1326, BrotliBitReader#bit_reader.h#425
+SafeReadSymbol#decode.c#1695 -> BrotliMetablockHeaderArena#state.h#1297, BrotliSafeGetBits#bit_reader.h#531, BrotliDecoderStateStruct#state.h#1326, BrotliBitReader#bit_reader.h#425, SafeDecodeSymbol#decode.c#1659, DecodeSymbol#decode.c#1643, HuffmanCode#huffman.h#1235
+PreloadSymbol#decode.c#1704 -> BrotliGetBits#bit_reader.h#526, HuffmanCode#huffman.h#1235, BrotliBitReader#bit_reader.h#425, BrotliDecoderStateStruct#state.h#1326
+ReadPreloadedSymbol#decode.c#1714 -> BrotliDropBits#bit_reader.h#541, HuffmanCode#huffman.h#1235, BitMask#bit_reader.h#417, BrotliDecoderStateStruct#state.h#1326, PreloadSymbol#decode.c#1704, BrotliBitReader#bit_reader.h#425, BrotliGet16BitsUnmasked#bit_reader.h#521
+Log2Floor#decode.c#1732
+ReadSimpleHuffmanSymbols#decode.c#1741 -> BrotliDecoderStateStruct#state.h#1326, BrotliBitReader#bit_reader.h#425, Log2Floor#decode.c#1732, BrotliMetablockHeaderArena#state.h#1297, BrotliRunningHuffmanState#state.h#1288, BrotliDecoderStateInternal#state.h#1401, BrotliDecoderErrorCode#decode.h#1453, BrotliSafeReadBits#bit_reader.h#600
+ProcessSingleCodeLength#decode.c#1772 -> BrotliMetablockHeaderArena#state.h#1297
+ProcessRepeatedCodeLength#decode.c#1785 -> BrotliMetablockHeaderArena#state.h#1297
+ReadSymbolCodeLengths#decode.c#1826 -> BrotliDecoderStateStruct#state.h#1326, BrotliWarmupBitReader#bit_reader.c#654, BrotliGetBitsUnmasked#bit_reader.h#517, HuffmanCode#huffman.h#1235, BrotliFillBitWindow16#bit_reader.h#501, BrotliBitReader#bit_reader.h#425, BrotliMetablockHeaderArena#state.h#1297, ProcessSingleCodeLength#decode.c#1772, BrotliDecoderStateInternal#state.h#1401, BitMask#bit_reader.h#417, ProcessRepeatedCodeLength#decode.c#1785, BrotliCheckInputAmount#bit_reader.h#469, BrotliDropBits#bit_reader.h#541, BrotliDecoderErrorCode#decode.h#1453
+SafeReadSymbolCodeLengths#decode.c#1869 -> BrotliDecoderStateStruct#state.h#1326, BrotliPullByte#bit_reader.h#505, BrotliGetAvailableBits#bit_reader.h#459, BrotliDecoderErrorCode#decode.h#1453, BrotliGetBitsUnmasked#bit_reader.h#517, ProcessRepeatedCodeLength#decode.c#1785, BrotliBitReader#bit_reader.h#425, BitMask#bit_reader.h#417, HuffmanCode#huffman.h#1235, BrotliDropBits#bit_reader.h#541, BrotliMetablockHeaderArena#state.h#1297, ProcessSingleCodeLength#decode.c#1772, BrotliDecoderStateInternal#state.h#1401
+ReadCodeLengthCodeLengths#decode.c#1908 -> BrotliGetBitsUnmasked#bit_reader.h#517, BrotliSafeGetBits#bit_reader.h#531, BrotliDropBits#bit_reader.h#541, BrotliGetAvailableBits#bit_reader.h#459, kCodeLengthPrefixLength#decode.c#1418, BrotliRunningHuffmanState#state.h#1288, BrotliMetablockHeaderArena#state.h#1297, BrotliDecoderStateStruct#state.h#1326, BrotliBitReader#bit_reader.h#425, BrotliDecoderErrorCode#decode.h#1453, kCodeLengthPrefixValue#decode.c#1421, kCodeLengthCodeOrder#decode.c#1415, BrotliDecoderStateInternal#state.h#1401
+ReadHuffmanCode#decode.c#1952 -> ReadSimpleHuffmanSymbols#decode.c#1741, BrotliBitReader#bit_reader.h#425, BrotliBuildSimpleHuffmanTable#huffman.c#584, BrotliBuildCodeLengthsHuffmanTable#huffman.c#466, BrotliDecoderErrorCode#decode.h#1453, SafeReadSymbolCodeLengths#decode.c#1869, BrotliBuildHuffmanTable#huffman.c#510, HuffmanTreeGroup#huffman.h#1253, HuffmanCode#huffman.h#1235, BrotliMetablockHeaderArena#state.h#1297, BrotliDecoderStateInternal#state.h#1401, ReadSymbolCodeLengths#decode.c#1826, BrotliSafeReadBits#bit_reader.h#600, BrotliDecoderStateStruct#state.h#1326, ReadCodeLengthCodeLengths#decode.c#1908, BrotliRunningHuffmanState#state.h#1288
+ReadBlockLength#decode.c#2042 -> BrotliBitReader#bit_reader.h#425, ReadSymbol#decode.c#1655, BrotliDecoderStateStruct#state.h#1326, _kBrotliPrefixCodeRanges#constants.c#415, BrotliPrefixCodeRange#constants.h#408, BrotliReadBits24#bit_reader.h#564, HuffmanCode#huffman.h#1235
+SafeReadBlockLength#decode.c#2050 -> BrotliRunningReadBlockLengthState#state.h#1294, BrotliSafeReadBits#bit_reader.h#600, BrotliBitReader#bit_reader.h#425, HuffmanCode#huffman.h#1235, _kBrotliPrefixCodeRanges#constants.c#415, BrotliDecoderStateInternal#state.h#1401, BrotliDecoderStateStruct#state.h#1326, SafeReadSymbol#decode.c#1695, BrotliPrefixCodeRange#constants.h#408
+InverseMoveToFrontTransform#decode.c#2074 -> BrotliDecoderStateStruct#state.h#1326, BrotliDecoderStateInternal#state.h#1401
+HuffmanTreeGroupDecode#decode.c#2103 -> BrotliRunningTreeGroupState#state.h#1282, HuffmanTreeGroup#huffman.h#1253, BrotliMetablockHeaderArena#state.h#1297, BrotliDecoderStateInternal#state.h#1401, BrotliDecoderStateStruct#state.h#1326, ReadHuffmanCode#decode.c#1952, BrotliDecoderErrorCode#decode.h#1453
+DecodeContextMap#decode.c#2122 -> BrotliSafeReadBits#bit_reader.h#600, BrotliDropBits#bit_reader.h#541, SafeReadSymbol#decode.c#1695, DecodeVarLenUint8#decode.c#1520, BrotliMetablockHeaderArena#state.h#1297, InverseMoveToFrontTransform#decode.c#2074, BrotliDecoderStateStruct#state.h#1326, BrotliSafeGetBits#bit_reader.h#531, BrotliRunningContextMapState#state.h#1285, BrotliDecoderStateInternal#state.h#1401, ReadHuffmanCode#decode.c#1952, BrotliBitReader#bit_reader.h#425, BrotliDecoderErrorCode#decode.h#1453
+DecodeBlockTypeAndLength#decode.c#2225 -> ReadSymbol#decode.c#1655, ReadBlockLength#decode.c#2042, SafeReadSymbol#decode.c#1695, SafeReadBlockLength#decode.c#2050, BrotliBitReaderRestoreState#bit_reader.h#452, HuffmanCode#huffman.h#1235, BrotliBitReaderState#bit_reader.h#432, BrotliDecoderStateInternal#state.h#1401, BrotliBitReaderSaveState#bit_reader.h#445, BrotliRunningReadBlockLengthState#state.h#1294, BrotliDecoderStateStruct#state.h#1326, BrotliBitReader#bit_reader.h#425
+DetectTrivialLiteralBlockTypes#decode.c#2263 -> BrotliDecoderStateInternal#state.h#1401, BrotliDecoderStateStruct#state.h#1326
+PrepareLiteralDecoding#decode.c#2280 -> HuffmanTreeGroup#huffman.h#1253, _kBrotliContextLookupTable#context.c#204, BrotliDecoderStateStruct#state.h#1326, BrotliDecoderStateInternal#state.h#1401
+DecodeLiteralBlockSwitchInternal#decode.c#2293 -> BrotliDecoderStateStruct#state.h#1326, DecodeBlockTypeAndLength#decode.c#2225, BrotliDecoderStateInternal#state.h#1401, PrepareLiteralDecoding#decode.c#2280
+DecodeLiteralBlockSwitch#decode.c#2301 -> BrotliDecoderStateInternal#state.h#1401, DecodeLiteralBlockSwitchInternal#decode.c#2293, BrotliDecoderStateStruct#state.h#1326
+SafeDecodeLiteralBlockSwitch#decode.c#2305 -> BrotliDecoderStateStruct#state.h#1326, BrotliDecoderStateInternal#state.h#1401, DecodeLiteralBlockSwitchInternal#decode.c#2293
+DecodeCommandBlockSwitchInternal#decode.c#2309 -> DecodeBlockTypeAndLength#decode.c#2225, HuffmanTreeGroup#huffman.h#1253, BrotliDecoderStateStruct#state.h#1326, BrotliDecoderStateInternal#state.h#1401
+DecodeCommandBlockSwitch#decode.c#2317 -> BrotliDecoderStateStruct#state.h#1326, DecodeCommandBlockSwitchInternal#decode.c#2309, BrotliDecoderStateInternal#state.h#1401
+SafeDecodeCommandBlockSwitch#decode.c#2321 -> DecodeCommandBlockSwitchInternal#decode.c#2309, BrotliDecoderStateStruct#state.h#1326, BrotliDecoderStateInternal#state.h#1401
+DecodeDistanceBlockSwitchInternal#decode.c#2325 -> DecodeBlockTypeAndLength#decode.c#2225, BrotliDecoderStateStruct#state.h#1326, BrotliDecoderStateInternal#state.h#1401
+DecodeDistanceBlockSwitch#decode.c#2334 -> BrotliDecoderStateInternal#state.h#1401, BrotliDecoderStateStruct#state.h#1326, DecodeDistanceBlockSwitchInternal#decode.c#2325
+SafeDecodeDistanceBlockSwitch#decode.c#2338 -> BrotliDecoderStateInternal#state.h#1401, BrotliDecoderStateStruct#state.h#1326, DecodeDistanceBlockSwitchInternal#decode.c#2325
+UnwrittenBytes#decode.c#2342 -> BrotliDecoderStateStruct#state.h#1326, BrotliDecoderStateInternal#state.h#1401
+WriteRingBuffer#decode.c#2348 -> UnwrittenBytes#decode.c#2342, BrotliDecoderStateStruct#state.h#1326, BrotliDecoderStateInternal#state.h#1401, BrotliDecoderErrorCode#decode.h#1453
+WrapRingBuffer#decode.c#2388 -> BrotliDecoderStateInternal#state.h#1401, BrotliDecoderStateStruct#state.h#1326
+BrotliEnsureRingBuffer#decode.c#2395 -> BrotliDecoderStateStruct#state.h#1326, kRingBufferWriteAheadSlack#decode.c#1413, BrotliDecoderStateInternal#state.h#1401
+CopyUncompressedBlockToOutput#decode.c#2417 -> BrotliDecoderErrorCode#decode.h#1453, BrotliDecoderStateStruct#state.h#1326, BrotliGetRemainingBytes#bit_reader.h#463, BrotliCopyBytes#bit_reader.h#635, WriteRingBuffer#decode.c#2348, BrotliEnsureRingBuffer#decode.c#2395, BrotliDecoderStateInternal#state.h#1401, BrotliRunningUncompressedState#state.h#1279
+BrotliCalculateRingBufferSize#decode.c#2459 -> BrotliDecoderStateStruct#state.h#1326, BrotliDecoderStateInternal#state.h#1401
+ReadContextModes#decode.c#2485 -> BrotliDecoderStateStruct#state.h#1326, BrotliBitReader#bit_reader.h#425, BrotliSafeReadBits#bit_reader.h#600, BrotliDecoderStateInternal#state.h#1401, BrotliDecoderErrorCode#decode.h#1453
+TakeDistanceFromRingBuffer#decode.c#2501 -> BrotliDecoderStateStruct#state.h#1326, BrotliDecoderStateInternal#state.h#1401
+SafeReadBits#decode.c#2524 -> BrotliBitReader#bit_reader.h#425, BrotliDecoderStateStruct#state.h#1326, BrotliSafeReadBits#bit_reader.h#600, CmdLutElement#prefix.h#1261
+SafeReadBits32#decode.c#2533 -> BrotliDecoderStateStruct#state.h#1326, BrotliSafeReadBits32#bit_reader.h#611, BrotliBitReader#bit_reader.h#425, BrotliMetablockBodyArena#state.h#1321
+CalculateDistanceLut#decode.c#2542 -> BrotliDecoderStateStruct#state.h#1326, HuffmanTreeGroup#huffman.h#1253, BrotliMetablockBodyArena#state.h#1321, BrotliDecoderStateInternal#state.h#1401
+ReadDistanceInternal#decode.c#2569 -> BrotliBitReader#bit_reader.h#425, SafeReadBits32#decode.c#2533, BrotliBitReaderSaveState#bit_reader.h#445, BrotliDecoderStateStruct#state.h#1326, HuffmanTreeGroup#huffman.h#1253, HuffmanCode#huffman.h#1235, SafeReadSymbol#decode.c#1695, BrotliMetablockBodyArena#state.h#1321, BrotliDecoderStateInternal#state.h#1401, TakeDistanceFromRingBuffer#decode.c#2501, BrotliBitReaderRestoreState#bit_reader.h#452, BrotliBitReaderState#bit_reader.h#432, ReadSymbol#decode.c#1655, BrotliReadBits32#bit_reader.h#582
+ReadDistance#decode.c#2603 -> BrotliDecoderStateInternal#state.h#1401, BrotliDecoderStateStruct#state.h#1326, ReadDistanceInternal#decode.c#2569, BrotliBitReader#bit_reader.h#425
+SafeReadDistance#decode.c#2607 -> BrotliDecoderStateStruct#state.h#1326, ReadDistanceInternal#decode.c#2569, BrotliBitReader#bit_reader.h#425, BrotliDecoderStateInternal#state.h#1401
+ReadCommandInternal#decode.c#2611 -> kCmdLut#prefix.h#1270, BrotliBitReaderSaveState#bit_reader.h#445, CmdLutElement#prefix.h#1261, BrotliDecoderStateStruct#state.h#1326, BrotliBitReader#bit_reader.h#425, SafeReadBits#decode.c#2524, BrotliDecoderStateInternal#state.h#1401, ReadSymbol#decode.c#1655, SafeReadSymbol#decode.c#1695, BrotliReadBits24#bit_reader.h#564, BrotliBitReaderRestoreState#bit_reader.h#452, BrotliBitReaderState#bit_reader.h#432
+ReadCommand#decode.c#2647 -> BrotliBitReader#bit_reader.h#425, ReadCommandInternal#decode.c#2611, BrotliDecoderStateStruct#state.h#1326, BrotliDecoderStateInternal#state.h#1401
+SafeReadCommand#decode.c#2651 -> BrotliDecoderStateStruct#state.h#1326, BrotliBitReader#bit_reader.h#425, BrotliDecoderStateInternal#state.h#1401, ReadCommandInternal#decode.c#2611
+CheckInputAmount#decode.c#2655 -> BrotliBitReader#bit_reader.h#425, BrotliCheckInputAmount#bit_reader.h#469, BrotliDecoderStateStruct#state.h#1326
+ProcessCommandsInternal#decode.c#2662 -> BitMask#bit_reader.h#417, ReadDistance#decode.c#2603, BrotliWarmupBitReader#bit_reader.c#654, BrotliDecoderErrorCode#decode.h#1453, SafeDecodeCommandBlockSwitch#decode.c#2321, DecodeLiteralBlockSwitch#decode.c#2301, ReadSymbol#decode.c#1655, ReadPreloadedSymbol#decode.c#1714, HuffmanTreeGroup#huffman.h#1253, SafeDecodeDistanceBlockSwitch#decode.c#2338, PreloadSymbol#decode.c#1704, BrotliDecoderStateInternal#state.h#1401, ReadCommand#decode.c#2647, memmove16#decode.c#1514, DecodeCommandBlockSwitch#decode.c#2317, CheckInputAmount#decode.c#2655, BrotliTransforms#transform.h#989, SafeReadCommand#decode.c#2651, BrotliRunningState#state.h#1273, SafeReadSymbol#decode.c#1695, SafeDecodeLiteralBlockSwitch#decode.c#2305, BrotliTransformDictionaryWord#transform.c#278, SafeReadDistance#decode.c#2607, BrotliDictionary#dictionary.h#422, HuffmanCode#huffman.h#1235, BrotliDecoderStateStruct#state.h#1326, BrotliBitReader#bit_reader.h#425, DecodeDistanceBlockSwitch#decode.c#2334
+ProcessCommands#decode.c#2901 -> BrotliDecoderStateStruct#state.h#1326, BrotliDecoderErrorCode#decode.h#1453, BrotliDecoderStateInternal#state.h#1401, ProcessCommandsInternal#decode.c#2662
+SafeProcessCommands#decode.c#2905 -> ProcessCommandsInternal#decode.c#2662, BrotliDecoderStateStruct#state.h#1326, BrotliDecoderStateInternal#state.h#1401, BrotliDecoderErrorCode#decode.h#1453
+BrotliDecoderDecompress#decode.c#2909 -> BrotliDecoderStateCleanup#state.c#1458, BrotliDecoderResult#decode.h#1450, BrotliDecoderStateInit#state.c#1359, BrotliDecoderStateStruct#state.h#1326, BrotliDecoderDecompressStream#decode.c#2929, BrotliDecoderDecompress#decode.h#1465
+kBrotliDictionaryData#dictionary.c#375
+kBrotliDictionary#dictionary.c#379 -> kBrotliDictionaryData#dictionary.c#375, BrotliDictionary#dictionary.h#422
+BrotliGetDictionary#dictionary.c#384 -> BrotliDictionary#dictionary.h#422, kBrotliDictionary#dictionary.c#379
+BrotliSetDictionaryData#dictionary.c#388
+kStaticDictionaryHashWords#dictionary_hash.c#368
+kStaticDictionaryHashLengths#dictionary_hash.c#371
+BrotliEncoderStreamState#encode.c#5883
+BrotliEncoderFlintState#encode.c#5886
+ZopfliNode#backward_references_hq.h#5464 -> ZopfliNode#backward_references_hq.h#4943
+kMinUTF8Ratio#utf8_util.h#5860
+BrotliEncoderSetParameter#encode.c#5948 -> BrotliEncoderParams#params.h#2158, BrotliEncoderStateStruct#encode.c#5889, BrotliEncoderState#encode.h#940, BrotliEncoderMode#encode.h#931, Context#brotli.c#1759, BrotliEncoderParameter#encode.h#937, BrotliDistanceParams#params.h#2150
+BrotliEncoderCreateInstance#encode.c#6373 -> brotli_free_func#types.h#309, BrotliEncoderInitState#encode.c#6339, BrotliEncoderStateStruct#encode.c#5889, BrotliEncoderState#encode.h#940, brotli_alloc_func#types.h#307, BrotliInitMemoryManager#memory.c#896
+BrotliEncoderDestroyInstance#encode.c#6403 -> BrotliEncoderState#encode.h#940, brotli_free_func#types.h#309, BrotliEncoderStateStruct#encode.c#5889, BrotliEncoderCleanupState#encode.c#6388, MemoryManager#memory.h#2345
+BrotliEncoderMaxCompressedSize#encode.c#6775
+BrotliEncoderCompressStream#encode.c#7083 -> EncodeData#encode.c#6456, ProcessMetadata#encode.c#7015, InjectFlushOrPushOutput#encode.c#6890, CheckFlushComplete#encode.c#6909, EnsureInitialized#encode.c#6285, BrotliEncoderCompressStreamFast#encode.c#6916, Context#brotli.c#1759, BrotliEncoderOperation#encode.h#934, CopyInputToRingBuffer#encode.c#6415, RemainingInputBlockSize#encode.c#5941, BrotliEncoderStateStruct#encode.c#5889, BrotliEncoderFlintState#encode.c#5886, UpdateSizeHint#encode.c#7068, BrotliEncoderStreamState#encode.c#5883, brotli_min_size_t#platform.h#331, BrotliEncoderState#encode.h#940, BrotliEncoderParams#params.h#2158
+BrotliEncoderIsFinished#encode.c#7147 -> BrotliEncoderState#encode.h#940, BrotliEncoderHasMoreOutput#encode.c#7151, BrotliEncoderStreamState#encode.c#5883, BrotliEncoderStateStruct#encode.c#5889
+BrotliEncoderHasMoreOutput#encode.c#7151 -> BrotliEncoderStateStruct#encode.c#5889, BrotliEncoderState#encode.h#940
+BrotliEncoderTakeOutput#encode.c#7155 -> CheckFlushComplete#encode.c#6909, brotli_min_size_t#platform.h#331, BrotliEncoderState#encode.h#940, BrotliEncoderStateStruct#encode.c#5889
+BrotliEncoderVersion#encode.c#7174
+RingBufferInit#ringbuffer.h#5777 -> BrotliEncoderStateStruct#encode.c#5889, RingBuffer#ringbuffer.h#5766
+RingBufferSetup#ringbuffer.h#5784 -> ComputeRbBits#quality.h#2401, BrotliEncoderParams#params.h#2158, RingBuffer#ringbuffer.h#5766, BrotliEncoderStateStruct#encode.c#5889
+RingBufferFree#ringbuffer.h#5793 -> BrotliFree#memory.c#914, RingBuffer#ringbuffer.h#5766, BrotliEncoderStateStruct#encode.c#5889, MemoryManager#memory.h#2345
+RingBufferInitBuffer#ringbuffer.h#5797 -> RingBuffer#ringbuffer.h#5766, BrotliFree#memory.c#914, MemoryManager#memory.h#2345, BrotliAllocate#memory.c#908
+RingBufferWriteTail#ringbuffer.h#5815 -> brotli_min_size_t#platform.h#331, RingBuffer#ringbuffer.h#5766
+RingBufferWrite#ringbuffer.h#5823 -> RingBufferWriteTail#ringbuffer.h#5815, MemoryManager#memory.h#2345, RingBuffer#ringbuffer.h#5766, brotli_min_size_t#platform.h#331, RingBufferInitBuffer#ringbuffer.h#5797
+InputBlockSize#encode.c#5933 -> BrotliEncoderStateStruct#encode.c#5889, BrotliEncoderParams#params.h#2158, BrotliEncoderState#encode.h#940
+UnprocessedInputSize#encode.c#5937 -> BrotliEncoderState#encode.h#940, BrotliEncoderStateStruct#encode.c#5889
+RemainingInputBlockSize#encode.c#5941 -> BrotliEncoderStateStruct#encode.c#5889, BrotliEncoderState#encode.h#940, InputBlockSize#encode.c#5933, UnprocessedInputSize#encode.c#5937
+WrapPosition#encode.c#5977 -> BrotliEncoderStateStruct#encode.c#5889
+GetBrotliStorage#encode.c#5986 -> BrotliFree#memory.c#914, BrotliEncoderState#encode.h#940, MemoryManager#memory.h#2345, BrotliAllocate#memory.c#908, BrotliEncoderStateStruct#encode.c#5889
+HashTableSize#encode.c#5997
+GetHashTable#encode.c#6005 -> BrotliFree#memory.c#914, BrotliAllocate#memory.c#908, BrotliEncoderParams#params.h#2158, HashTableSize#encode.c#5997, BrotliEncoderState#encode.h#940, MemoryManager#memory.h#2345, BrotliEncoderStateStruct#encode.c#5889, MaxHashTableSize#quality.h#2359
+EncodeWindowBits#encode.c#6032 -> BrotliEncoderParams#params.h#2158, BrotliEncoderStateStruct#encode.c#5889
+InitCommandPrefixCodes#encode.c#6053 -> BrotliEncoderStateStruct#encode.c#5889
+ChooseContextMap#encode.c#6067 -> ShannonEntropy#bit_cost.h#2553
+ShouldUseComplexStaticContextMap#encode.c#6108 -> ContextType#context.h#415, ShannonEntropy#bit_cost.h#2553, ContextLut#context.h#420, _kBrotliContextLookupTable#context.c#204
+DecideOverLiteralContextModeling#encode.c#6156 -> ChooseContextMap#encode.c#6067, BrotliEncoderParams#params.h#2158, ShouldUseComplexStaticContextMap#encode.c#6108
+ShouldCompress#encode.c#6178 -> BitsEntropy#bit_cost.h#2574
+ChooseContextMode#encode.c#6201 -> ContextType#context.h#415, kMinUTF8Ratio#utf8_util.h#5860, BrotliEncoderStateStruct#encode.c#5889, BrotliIsMostlyUTF8#utf8_util.c#397, BrotliEncoderParams#params.h#2158, WrapPosition#encode.c#5977
+WriteMetaBlockInternal#encode.c#6208 -> BrotliEncoderStateStruct#encode.c#5889, ShouldCompress#encode.c#6178, BrotliStoreMetaBlockFast#brotli_bit_stream.c#3605, MetaBlockSplit#metablock.h#2611, BrotliBuildMetaBlock#metablock.c#2806, WrapPosition#encode.c#5977, ContextLut#context.h#420, _kBrotliContextLookupTable#context.c#204, ContextType#context.h#415, BrotliEncoderParams#params.h#2158, InitMetaBlockSplit#metablock.h#2627, BrotliBuildMetaBlockGreedy#metablock.c#3510, BrotliDistanceParams#params.h#2150, BrotliOptimizeHistograms#metablock.c#3518, DecideOverLiteralContextModeling#encode.c#6156, BrotliWriteBits#write_bits.h#2674, BrotliStoreMetaBlockTrivial#brotli_bit_stream.c#3575, BrotliStoreUncompressedMetaBlock#brotli_bit_stream.c#3659, DestroyMetaBlockSplit#metablock.h#2643, MemoryManager#memory.h#2345, Command#command.h#2261, BrotliStoreMetaBlock#brotli_bit_stream.c#3439
+ChooseDistanceParams#encode.c#6264 -> BrotliInitDistanceParams#metablock.c#2741, BrotliDistanceParams#params.h#2150, BrotliEncoderStateStruct#encode.c#5889, BrotliEncoderMode#encode.h#931, BrotliEncoderParams#params.h#2158
+EnsureInitialized#encode.c#6285 -> InitCommandPrefixCodes#encode.c#6053, BrotliEncoderStateStruct#encode.c#5889, BrotliEncoderState#encode.h#940, brotli_min_double#platform.h#329, BrotliEncoderFlintState#encode.c#5886, EncodeWindowBits#encode.c#6032, BrotliEncoderParams#params.h#2158, SanitizeParams#quality.h#2371, brotli_min_size_t#platform.h#331, ComputeLgBlock#quality.h#2384, RingBufferSetup#ringbuffer.h#5784, ChooseDistanceParams#encode.c#6264
+BrotliEncoderInitParams#encode.c#6322 -> BrotliEncoderParams#params.h#2158, BrotliEncoderMode#encode.h#931, BrotliInitEncoderDictionary#encoder_dict.c#4806, BrotliDistanceParams#params.h#2150, BrotliEncoderStateStruct#encode.c#5889
+BrotliEncoderInitState#encode.c#6339 -> BrotliEncoderState#encode.h#940, BrotliEncoderInitParams#encode.c#6322, RingBufferInit#ringbuffer.h#5777, HasherInit#hash.h#4881, BrotliEncoderStateStruct#encode.c#5889, BrotliEncoderStreamState#encode.c#5883
+BrotliEncoderCleanupState#encode.c#6388 -> BrotliEncoderState#encode.h#940, MemoryManager#memory.h#2345, BrotliEncoderStateStruct#encode.c#5889, BrotliWipeOutMemoryManager#memory.c#918, DestroyHasher#hash.h#4885, BrotliFree#memory.c#914, RingBufferFree#ringbuffer.h#5793
+CopyInputToRingBuffer#encode.c#6415 -> MemoryManager#memory.h#2345, RingBufferWrite#ringbuffer.h#5823, RingBuffer#ringbuffer.h#5766, BrotliEncoderStateStruct#encode.c#5889, BrotliEncoderState#encode.h#940
+UpdateLastProcessedPos#encode.c#6426 -> BrotliEncoderStateStruct#encode.c#5889, BrotliEncoderState#encode.h#940, WrapPosition#encode.c#5977
+ExtendLastCommand#encode.c#6433 -> BrotliEncoderParams#params.h#2158, RingBuffer#ringbuffer.h#5766, CommandRestoreDistanceCode#command.h#2285, Command#command.h#2261, GetLengthCode#command.h#2239, BrotliEncoderStateStruct#encode.c#5889, BrotliEncoderState#encode.h#940
+EncodeData#encode.c#6456 -> BrotliAllocate#memory.c#908, InitOrStitchToPreviousBlock#hash.h#4930, ContextType#context.h#415, HasherReset#hash.h#4890, InitInsertCommand#command.h#2277, MaxMetablockSize#quality.h#2405, BrotliEncoderParams#params.h#2158, BrotliFree#memory.c#914, GetHashTable#encode.c#6005, kCompressFragmentTwoPassBlockSize#compress_fragment_two_pass.h#378, BrotliCompressFragmentTwoPass#compress_fragment_two_pass.c#3185, Command#command.h#2261, UpdateLastProcessedPos#encode.c#6426, BrotliCreateBackwardReferences#backward_references.c#6143, RingBuffer#ringbuffer.h#5766, WrapPosition#encode.c#5977, GetBrotliStorage#encode.c#5986, MemoryManager#memory.h#2345, UnprocessedInputSize#encode.c#5937, WriteMetaBlockInternal#encode.c#6208, BrotliCreateZopfliBackwardReferences#backward_references_hq.c#5471, ChooseContextMode#encode.c#6201, ExtendLastCommand#encode.c#6433, BrotliEncoderStateStruct#encode.c#5889, BrotliCreateHqZopfliBackwardReferences#backward_references_hq.c#5481, BrotliCompressFragmentFast#compress_fragment.c#3196, BrotliEncoderState#encode.h#940, InputBlockSize#encode.c#5933, _kBrotliContextLookupTable#context.c#204, ContextLut#context.h#420
+WriteMetadataHeader#encode.c#6598 -> BrotliEncoderStateStruct#encode.c#5889, BrotliWriteBits#write_bits.h#2674, BrotliEncoderState#encode.h#940, Log2FloorNonZero#fast_log.h#918
+BrotliCompressBufferQuality10#encode.c#6619 -> InitInsertCommand#command.h#2277, MetaBlockSplit#metablock.h#2611, HasherInit#hash.h#4881, BrotliDistanceParams#params.h#2150, DestroyHasher#hash.h#4885, BrotliOptimizeHistograms#metablock.c#3518, ComputeLgBlock#quality.h#2384, ContextLut#context.h#420, BrotliZopfliComputeShortestPath#backward_references_hq.c#5422, ChooseDistanceParams#encode.c#6264, StitchToPreviousBlockH10#hash_to_binary_tree_inc.h#2778, BrotliFree#memory.c#914, BrotliAllocate#memory.c#908, DestroyMetaBlockSplit#metablock.h#2643, BrotliInitZopfliNodes#backward_references_hq.c#4970, ShouldCompress#encode.c#6178, ChooseContextMode#encode.c#6201, Hasher#hash.h#4874, BrotliZopfliCreateCommands#backward_references_hq.c#5354, BrotliWriteBits#write_bits.h#2674, InitMetaBlockSplit#metablock.h#2627, brotli_min_double#platform.h#329, ContextType#context.h#415, BrotliStoreMetaBlock#brotli_bit_stream.c#3439, EncodeWindowBits#encode.c#6032, ZopfliNode#backward_references_hq.h#4943, BrotliStoreUncompressedMetaBlock#brotli_bit_stream.c#3659, BrotliWipeOutMemoryManager#memory.c#918, BrotliEncoderParams#params.h#2158, Command#command.h#2261, MemoryManager#memory.h#2345, InitOrStitchToPreviousBlock#hash.h#4930, _kBrotliContextLookupTable#context.c#204, BrotliBuildMetaBlock#metablock.c#2806, SanitizeParams#quality.h#2371, BrotliEncoderInitParams#encode.c#6322, BrotliInitMemoryManager#memory.c#896, brotli_min_size_t#platform.h#331
+MakeUncompressedStream#encode.c#6783
+BrotliEncoderCompress#encode.c#6813 -> brotli_min_double#platform.h#329, BrotliEncoderCreateInstance#encode.c#6373, BrotliEncoderParameter#encode.h#937, BrotliEncoderMode#encode.h#931, BrotliEncoderCompressStream#encode.c#7083, BrotliEncoderIsFinished#encode.c#7147, BrotliEncoderOperation#encode.h#934, BrotliEncoderSetParameter#encode.c#5948, BrotliEncoderStateStruct#encode.c#5889, BrotliEncoderCompress#encode.h#950, MakeUncompressedStream#encode.c#6783, BrotliEncoderDestroyInstance#encode.c#6403, BrotliCompressBufferQuality10#encode.c#6619, BrotliEncoderMaxCompressedSize#encode.c#6775
+InjectBytePaddingBlock#encode.c#6870 -> BrotliEncoderStateStruct#encode.c#5889, BrotliEncoderState#encode.h#940
+InjectFlushOrPushOutput#encode.c#6890 -> BrotliEncoderStreamState#encode.c#5883, brotli_min_size_t#platform.h#331, InjectBytePaddingBlock#encode.c#6870, BrotliEncoderStateStruct#encode.c#5889, BrotliEncoderState#encode.h#940
+CheckFlushComplete#encode.c#6909 -> BrotliEncoderStreamState#encode.c#5883, BrotliEncoderState#encode.h#940, BrotliEncoderStateStruct#encode.c#5889
+BrotliEncoderCompressStreamFast#encode.c#6916 -> BrotliEncoderStateStruct#encode.c#5889, CheckFlushComplete#encode.c#6909, BrotliEncoderParams#params.h#2158, BrotliEncoderState#encode.h#940, MemoryManager#memory.h#2345, brotli_min_size_t#platform.h#331, BrotliEncoderStreamState#encode.c#5883, GetBrotliStorage#encode.c#5986, BrotliFree#memory.c#914, BrotliAllocate#memory.c#908, InjectFlushOrPushOutput#encode.c#6890, BrotliCompressFragmentFast#compress_fragment.c#3196, BrotliCompressFragmentTwoPass#compress_fragment_two_pass.c#3185, BrotliEncoderOperation#encode.h#934, kCompressFragmentTwoPassBlockSize#compress_fragment_two_pass.h#378, GetHashTable#encode.c#6005
+ProcessMetadata#encode.c#7015 -> EncodeData#encode.c#6456, WriteMetadataHeader#encode.c#6598, BrotliEncoderState#encode.h#940, InjectFlushOrPushOutput#encode.c#6890, BrotliEncoderStateStruct#encode.c#5889, brotli_min_size_t#platform.h#331, BrotliEncoderStreamState#encode.c#5883
+UpdateSizeHint#encode.c#7068 -> BrotliEncoderStateStruct#encode.c#5889, BrotliEncoderParams#params.h#2158, BrotliEncoderState#encode.h#940, UnprocessedInputSize#encode.c#5937
+BrotliTransforms#transform.h#1566 -> BrotliTransforms#transform.h#989
+BrotliInitEncoderDictionary#encoder_dict.c#4806 -> BrotliGetTransforms#transform.c#226, BrotliGetDictionary#dictionary.c#384, kStaticDictionaryWords#static_dict_lut.h#975, BrotliTransforms#transform.h#989, BrotliEncoderParams#params.h#2158, kStaticDictionaryHashLengths#dictionary_hash.c#371, kCutoffTransforms#hash.h#2462, kCutoffTransformsCount#hash.h#2460, kStaticDictionaryHashWords#dictionary_hash.c#368, kStaticDictionaryBuckets#static_dict_lut.h#972, BrotliEncoderDictionary#encoder_dict.h#2129
+kBrotliShellGaps#entropy_encode.c#473
+BrotliSetDepth#entropy_encode.c#475 -> HuffmanTree#entropy_encode.h#2319
+BrotliCreateHuffmanTree#entropy_encode.c#505 -> SortHuffmanTree#entropy_encode.c#498, BrotliSetDepth#entropy_encode.c#475, brotli_min_size_t#platform.h#331, HuffmanTree#entropy_encode.h#2319, SortHuffmanTreeItems#entropy_encode.h#2345, InitHuffmanTree#entropy_encode.h#2325
+BrotliOptimizeHuffmanCountsForRle#entropy_encode.c#642 -> HistogramCommand#histogram_inc.h#2475, HistogramDistance#histogram_inc.h#2513, HistogramLiteral#histogram_inc.h#2437, MetaBlockSplit#metablock.h#2611
+BrotliWriteHuffmanTree#entropy_encode.c#780 -> BrotliWriteHuffmanTreeRepetitionsZeros#entropy_encode.c#610, DecideOverRleUse#entropy_encode.c#753, BrotliWriteHuffmanTreeRepetitions#entropy_encode.c#571
+BrotliConvertBitDepthsToSymbols#entropy_encode.c#829 -> BrotliReverseBits#entropy_encode.c#815
+SortHuffmanTree#entropy_encode.c#498 -> HuffmanTree#entropy_encode.h#2319
+Reverse#entropy_encode.c#560
+BrotliWriteHuffmanTreeRepetitions#entropy_encode.c#571 -> Reverse#entropy_encode.c#560
+BrotliWriteHuffmanTreeRepetitionsZeros#entropy_encode.c#610 -> Reverse#entropy_encode.c#560
+DecideOverRleUse#entropy_encode.c#753
+BrotliReverseBits#entropy_encode.c#815
+kBrotliLog2Table#fast_log.c#862
+BrotliBuildHistogramsWithContext#histogram.c#2576 -> _kBrotliContextLookupTable#context.c#204, ContextType#context.h#415, HistogramCommand#histogram_inc.h#2475, HistogramLiteral#histogram_inc.h#2437, HistogramAddCommand#histogram_inc.h#2492, HistogramAddLiteral#histogram_inc.h#2454, ContextLut#context.h#420, BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422, Command#command.h#2261, HistogramDistance#histogram_inc.h#2513, BlockSplitIteratorNext#histogram.c#2567, MetaBlockSplit#metablock.h#2611, HistogramAddDistance#histogram_inc.h#2530, CommandDistanceContext#command.h#2300, InitBlockSplitIterator#histogram.c#2560, BlockSplitIterator#histogram.c#2553, CommandCopyLen#command.h#2309
+InitBlockSplitIterator#histogram.c#2560 -> BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422, BlockSplitIterator#histogram.c#2553
+BlockSplitIteratorNext#histogram.c#2567 -> BlockSplitIterator#histogram.c#2553
+kReverseBits#huffman.c#441
+BrotliBuildCodeLengthsHuffmanTable#huffman.c#466 -> HuffmanCode#huffman.h#1235, ConstructHuffmanCode#huffman.h#1240, ReplicateValue#huffman.c#448, BrotliMetablockHeaderArena#state.h#1297, BrotliReverseBits#huffman.c#444
+BrotliBuildHuffmanTable#huffman.c#510 -> HuffmanCode#huffman.h#1235, ConstructHuffmanCode#huffman.h#1240, BrotliReverseBits#huffman.c#444, NextTableBitSize#huffman.c#455, ReplicateValue#huffman.c#448, BrotliMetablockHeaderArena#state.h#1297
+BrotliBuildSimpleHuffmanTable#huffman.c#584 -> HuffmanCode#huffman.h#1235, ConstructHuffmanCode#huffman.h#1240, BrotliMetablockHeaderArena#state.h#1297
+BrotliReverseBits#huffman.c#444 -> kReverseBits#huffman.c#441
+ReplicateValue#huffman.c#448 -> HuffmanCode#huffman.h#1235, BrotliReverseBits#huffman.c#444
+NextTableBitSize#huffman.c#455
+BrotliEstimateBitCostsForLiterals#literal_cost.c#958 -> brotli_min_size_t#platform.h#331, BrotliIsMostlyUTF8#utf8_util.c#397, FastLog2#fast_log.h#924, EstimateBitCostsForLiteralsUTF8#literal_cost.c#901, kMinUTF8Ratio#utf8_util.h#5860
+UTF8Position#literal_cost.c#868 -> brotli_min_size_t#platform.h#331
+DecideMultiByteStatsLevel#literal_cost.c#882 -> UTF8Position#literal_cost.c#868
+EstimateBitCostsForLiteralsUTF8#literal_cost.c#901 -> DecideMultiByteStatsLevel#literal_cost.c#882, brotli_min_size_t#platform.h#331, FastLog2#fast_log.h#924, UTF8Position#literal_cost.c#868
+BrotliInitMemoryManager#memory.c#896 -> BrotliDefaultFreeFunc#platform.c#887, BrotliDefaultAllocFunc#platform.c#882, brotli_alloc_func#types.h#307, brotli_free_func#types.h#309, MemoryManager#memory.h#2345, BrotliEncoderStateStruct#encode.c#5889
+BrotliAllocate#memory.c#908 -> BrotliDistanceParams#params.h#2150, Command#command.h#2261, HistogramDistance#histogram_inc.h#2513, brotli_min_size_t#platform.h#331, BackwardMatch#hash.h#2565, HuffmanTree#entropy_encode.h#2319, kCompressFragmentTwoPassBlockSize#compress_fragment_two_pass.h#378, HistogramDistance#histogram_inc.h#2517, HistogramLiteral#histogram_inc.h#2441, ZopfliNode#backward_references_hq.h#4943, HistogramPair#cluster.h#2589, MemoryManager#memory.h#2345, HistogramCommand#histogram_inc.h#2479, BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422, MetaBlockSplit#metablock.h#2611, HistogramCommand#histogram_inc.h#2475, HistogramLiteral#histogram_inc.h#2437, ContextType#context.h#415
+BrotliFree#memory.c#914 -> Hasher#hash.h#4874, RingBuffer#ringbuffer.h#5766, HasherCommon#hash.h#2452, MetaBlockSplit#metablock.h#2611, BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422, MemoryManager#memory.h#2345, BrotliEncoderStateStruct#encode.c#5889
+BrotliWipeOutMemoryManager#memory.c#918 -> MemoryManager#memory.h#2345
+BrotliBuildMetaBlock#metablock.c#2806 -> ContextType#context.h#415, BrotliSplitBlock#block_splitter.c#3728, BrotliInitDistanceParams#metablock.c#2741, Command#command.h#2261, HistogramCommand#histogram_inc.h#2475, BrotliAllocate#memory.c#908, ClearHistogramsDistance#histogram_inc.h#2525, BrotliDistanceParams#params.h#2150, BrotliBuildHistogramsWithContext#histogram.c#2576, BrotliFree#memory.c#914, MetaBlockSplit#metablock.h#2611, BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422, ComputeDistanceCost#metablock.c#2775, BrotliEncoderParams#params.h#2158, HistogramDistance#histogram_inc.h#2513, BrotliClusterHistogramsLiteral#cluster_inc.h#2654, ClearHistogramsLiteral#histogram_inc.h#2449, RecomputeDistancePrefixes#metablock.c#2762, BrotliClusterHistogramsDistance#cluster_inc.h#2678, HistogramLiteral#histogram_inc.h#2437, ClearHistogramsCommand#histogram_inc.h#2487, MemoryManager#memory.h#2345
+BrotliBuildMetaBlockGreedy#metablock.c#3510 -> MetaBlockSplit#metablock.h#2611, Command#command.h#2261, BrotliBuildMetaBlockGreedyInternal#metablock.c#3449, ContextLut#context.h#420, MemoryManager#memory.h#2345
+BrotliOptimizeHistograms#metablock.c#3518 -> HistogramLiteral#histogram_inc.h#2437, BrotliEncoderParams#params.h#2158, MetaBlockSplit#metablock.h#2611, HistogramCommand#histogram_inc.h#2475, BrotliDistanceParams#params.h#2150, HistogramDistance#histogram_inc.h#2513, BrotliOptimizeHuffmanCountsForRle#entropy_encode.c#642
+BrotliInitDistanceParams#metablock.c#2741 -> BrotliDistanceCodeLimit#constants.h#364, BrotliDistanceParams#params.h#2150, BrotliCalculateDistanceCodeLimit#constants.h#369, BrotliEncoderParams#params.h#2158
+RecomputeDistancePrefixes#metablock.c#2762 -> CommandCopyLen#command.h#2309, PrefixEncodeCopyDistance#prefix.h#2172, BrotliDistanceParams#params.h#2150, CommandRestoreDistanceCode#command.h#2285, Command#command.h#2261, BrotliEncoderParams#params.h#2158
+ComputeDistanceCost#metablock.c#2775 -> CommandRestoreDistanceCode#command.h#2285, HistogramClearDistance#histogram_inc.h#2519, HistogramDistance#histogram_inc.h#2513, CommandCopyLen#command.h#2309, PrefixEncodeCopyDistance#prefix.h#2172, BrotliPopulationCostDistance#bit_cost_inc.h#2783, HistogramAddDistance#histogram_inc.h#2530, BrotliDistanceParams#params.h#2150, Command#command.h#2261, BrotliEncoderParams#params.h#2158
+InitBlockSplitterLiteral#metablock_inc.h#2922 -> BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422, MetaBlockSplit#metablock.h#2611, BrotliFree#memory.c#914, HistogramClearLiteral#histogram_inc.h#2443, MemoryManager#memory.h#2345, HistogramLiteral#histogram_inc.h#2437, BrotliAllocate#memory.c#908, brotli_min_size_t#platform.h#331, BlockSplitterLiteral#metablock_inc.h#2906, HistogramLiteral#histogram_inc.h#2441
+BlockSplitterFinishBlockLiteral#metablock_inc.h#2948 -> BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422, HistogramLiteral#histogram_inc.h#2437, HistogramClearLiteral#histogram_inc.h#2443, HistogramAddHistogramLiteral#histogram_inc.h#2465, BlockSplitterLiteral#metablock_inc.h#2906, BitsEntropy#bit_cost.h#2574, brotli_min_size_t#platform.h#331
+BlockSplitterAddSymbolLiteral#metablock_inc.h#3022 -> HistogramAddLiteral#histogram_inc.h#2454, BlockSplitterLiteral#metablock_inc.h#2906, BlockSplitterFinishBlockLiteral#metablock_inc.h#2948
+InitBlockSplitterCommand#metablock_inc.h#3046 -> MemoryManager#memory.h#2345, BrotliAllocate#memory.c#908, brotli_min_size_t#platform.h#331, HistogramCommand#histogram_inc.h#2475, HistogramCommand#histogram_inc.h#2479, BlockSplitterCommand#metablock_inc.h#3030, BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422, BrotliFree#memory.c#914, MetaBlockSplit#metablock.h#2611, HistogramClearCommand#histogram_inc.h#2481
+BlockSplitterFinishBlockCommand#metablock_inc.h#3072 -> brotli_min_size_t#platform.h#331, BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422, HistogramCommand#histogram_inc.h#2475, HistogramAddHistogramCommand#histogram_inc.h#2503, BlockSplitterCommand#metablock_inc.h#3030, BitsEntropy#bit_cost.h#2574, HistogramClearCommand#histogram_inc.h#2481
+BlockSplitterAddSymbolCommand#metablock_inc.h#3146 -> HistogramAddCommand#histogram_inc.h#2492, BlockSplitterCommand#metablock_inc.h#3030, Command#command.h#2261, BlockSplitterFinishBlockCommand#metablock_inc.h#3072
+InitBlockSplitterDistance#metablock_inc.h#3170 -> brotli_min_size_t#platform.h#331, HistogramDistance#histogram_inc.h#2517, MetaBlockSplit#metablock.h#2611, HistogramDistance#histogram_inc.h#2513, HistogramClearDistance#histogram_inc.h#2519, BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422, BlockSplitterDistance#metablock_inc.h#3154, BrotliFree#memory.c#914, BrotliAllocate#memory.c#908, MemoryManager#memory.h#2345
+BlockSplitterFinishBlockDistance#metablock_inc.h#3196 -> HistogramClearDistance#histogram_inc.h#2519, BitsEntropy#bit_cost.h#2574, BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422, HistogramDistance#histogram_inc.h#2513, brotli_min_size_t#platform.h#331, BlockSplitterDistance#metablock_inc.h#3154, HistogramAddHistogramDistance#histogram_inc.h#2541
+BlockSplitterAddSymbolDistance#metablock_inc.h#3270 -> Command#command.h#2261, BlockSplitterDistance#metablock_inc.h#3154, BlockSplitterFinishBlockDistance#metablock_inc.h#3196, HistogramAddDistance#histogram_inc.h#2530
+InitContextBlockSplitter#metablock.c#3296 -> brotli_min_size_t#platform.h#331, BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422, MemoryManager#memory.h#2345, BrotliAllocate#memory.c#908, ClearHistogramsLiteral#histogram_inc.h#2449, MetaBlockSplit#metablock.h#2611, HistogramLiteral#histogram_inc.h#2437, ContextBlockSplitter#metablock.c#3278, HistogramLiteral#histogram_inc.h#2441, BrotliFree#memory.c#914
+ContextBlockSplitterFinishBlock#metablock.c#3327 -> HistogramClearLiteral#histogram_inc.h#2443, ClearHistogramsLiteral#histogram_inc.h#2449, HistogramAddHistogramLiteral#histogram_inc.h#2465, BitsEntropy#bit_cost.h#2574, MemoryManager#memory.h#2345, BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422, ContextBlockSplitter#metablock.c#3278, HistogramLiteral#histogram_inc.h#2437, BrotliFree#memory.c#914, BrotliAllocate#memory.c#908
+ContextBlockSplitterAddSymbol#metablock.c#3425 -> MemoryManager#memory.h#2345, ContextBlockSplitterFinishBlock#metablock.c#3327, ContextBlockSplitter#metablock.c#3278, HistogramAddLiteral#histogram_inc.h#2454
+MapStaticContexts#metablock.c#3434 -> BlockSplit#block_splitter.h#2422, BlockSplit#block_splitter.h#2422, MemoryManager#memory.h#2345, BrotliAllocate#memory.c#908, MetaBlockSplit#metablock.h#2611
+BrotliBuildMetaBlockGreedyInternal#metablock.c#3449 -> ContextBlockSplitter#metablock.c#3278, InitBlockSplitterDistance#metablock_inc.h#3170, BlockSplitterAddSymbolLiteral#metablock_inc.h#3022, MetaBlockSplit#metablock.h#2611, MemoryManager#memory.h#2345, ContextBlockSplitterFinishBlock#metablock.c#3327, InitBlockSplitterCommand#metablock_inc.h#3046, InitBlockSplitterLiteral#metablock_inc.h#2922, InitContextBlockSplitter#metablock.c#3296, BlockSplitterAddSymbolCommand#metablock_inc.h#3146, BlockSplitterDistance#metablock_inc.h#3154, BlockSplitterAddSymbolDistance#metablock_inc.h#3270, BlockSplitterFinishBlockCommand#metablock_inc.h#3072, ContextLut#context.h#420, MapStaticContexts#metablock.c#3434, BlockSplitterLiteral#metablock_inc.h#2906, BlockSplitterFinishBlockLiteral#metablock_inc.h#2948, BlockSplitterFinishBlockDistance#metablock_inc.h#3196, ContextBlockSplitterAddSymbol#metablock.c#3425, CommandCopyLen#command.h#2309, BlockSplitterCommand#metablock_inc.h#3030, Command#command.h#2261
+BrotliDefaultAllocFunc#platform.c#882
+BrotliDefaultFreeFunc#platform.c#887
+BrotliMetablockHeaderArena#state.h#747 -> BrotliMetablockHeaderArena#state.h#1297
+BrotliMetablockBodyArena#state.h#752 -> BrotliMetablockBodyArena#state.h#1321
+BrotliDecoderStateInit#state.c#1359 -> BrotliGetTransforms#transform.c#226, BrotliRunningState#state.h#1273, BrotliGetDictionary#dictionary.c#384, BrotliInitBitReader#bit_reader.c#649, brotli_alloc_func#types.h#307, BrotliRunningUncompressedState#state.h#1279, BrotliDefaultAllocFunc#platform.c#882, brotli_free_func#types.h#309, BrotliRunningDecodeUint8State#state.h#1291, BrotliDecoderStateStruct#state.h#1326, BrotliDefaultFreeFunc#platform.c#887, BrotliRunningMetablockHeaderState#state.h#1276, HuffmanTreeGroup#huffman.h#1253, BrotliRunningReadBlockLengthState#state.h#1294, BrotliDecoderStateInternal#state.h#1401
+BrotliDecoderStateCleanup#state.c#1458 -> BrotliDecoderStateInternal#state.h#1401, BrotliDecoderStateStruct#state.h#1326, BrotliDecoderStateCleanupAfterMetablock#state.c#1449
+BrotliDecoderStateMetablockBegin#state.c#1419 -> BrotliDecoderStateInternal#state.h#1401, BrotliDecoderStateStruct#state.h#1326, HuffmanTreeGroup#huffman.h#1253
+BrotliDecoderStateCleanupAfterMetablock#state.c#1449 -> HuffmanTreeGroup#huffman.h#1253, BrotliDecoderStateInternal#state.h#1401, BrotliDecoderStateStruct#state.h#1326
+BrotliDecoderHuffmanTreeGroupInit#state.c#1464 -> BrotliDecoderStateStruct#state.h#1326, HuffmanTreeGroup#huffman.h#1253, BrotliDecoderStateInternal#state.h#1401, HuffmanCode#huffman.h#1235
+BrotliFindAllStaticDictionaryMatches#static_dict.c#1641 -> Hash#static_dict.c#1602, BrotliWordTransformType#transform.h#986, DictWord#static_dict_lut.h#962, brotli_min_size_t#platform.h#331, AddMatch#static_dict.c#1607, BrotliEncoderDictionary#encoder_dict.h#2129, DictMatchLength#static_dict.c#1612, BrotliDictionary#dictionary.h#422, IsMatch#static_dict.c#1617
+Hash#static_dict.c#1602 -> BrotliUnalignedRead32#platform.h#315, kDictHashMul32#static_dict_lut.h#970, kDictNumBits#static_dict_lut.h#968
+AddMatch#static_dict.c#1607 -> brotli_min_size_t#platform.h#331
+DictMatchLength#static_dict.c#1612 -> FindMatchLengthWithLimit#find_match_length.h#2319, brotli_min_size_t#platform.h#331, BrotliEncoderDictionary#encoder_dict.h#2129, BrotliDictionary#dictionary.h#422
+IsMatch#static_dict.c#1617 -> DictWord#static_dict_lut.h#962, BrotliDictionary#dictionary.h#422, FindMatchLengthWithLimit#find_match_length.h#2319, BrotliEncoderDictionary#encoder_dict.h#2129
+kPrefixSuffix#transform.c#214
+kPrefixSuffixMap#transform.c#216
+kTransformsData#transform.c#219 -> BrotliWordTransformType#transform.h#986
+kBrotliTransforms#transform.c#222 -> BrotliTransforms#transform.h#989, kPrefixSuffix#transform.c#214, kTransformsData#transform.c#219, kPrefixSuffixMap#transform.c#216
+BrotliGetTransforms#transform.c#226 -> kBrotliTransforms#transform.c#222, BrotliTransforms#transform.h#989
+BrotliTransformDictionaryWord#transform.c#278 -> BrotliTransforms#transform.h#989, ToUpperCase#transform.c#230, BrotliWordTransformType#transform.h#986, BrotliDecoderStateStruct#state.h#1326, Shift#transform.c#245
+ToUpperCase#transform.c#230
+Shift#transform.c#245
+BrotliIsMostlyUTF8#utf8_util.c#397 -> kMinUTF8Ratio#utf8_util.h#5860, BrotliParseAsUTF8#utf8_util.c#368
+BrotliParseAsUTF8#utf8_util.c#368
+
+SPLIT_TAG
+
+MakeUncompressedStream#encode.c#6783
+BrotliEncoderVersion#encode.c#7174
+BrotliEncoderMaxCompressedSize#encode.c#6775
+BrotliSetDictionaryData#dictionary.c#388
+BrotliDecoderVersion#decode.c#3321
+kStaticDictionaryHashWords#dictionary_hash.c#368
+kStaticDictionaryHashLengths#dictionary_hash.c#371
+BrotliEncoderFlintState#encode.c#5886
+ShouldUseUncompressedMode#compress_fragment.c#2991
+kCmdHistoSeed#compress_fragment.c#3010
+IndexOf#brotli_bit_stream.c#3128
+MoveToFront#brotli_bit_stream.c#3136
+BrotliWriteBitsPrepareStorage#write_bits.h#2687
+JumpToByteBoundary#brotli_bit_stream.c#3434
+kStaticCommandCodeBits#entropy_encode_static.h#2721
+kStaticCommandCodeDepth#entropy_encode_static.h#2696
+kStaticDistanceCodeDepth#entropy_encode_static.h#2699
+kStaticDistanceCodeBits#entropy_encode_static.h#2729
+RewindBitPosition#compress_fragment.c#2967
+DecideOverRleUse#entropy_encode.c#753
+Reverse#entropy_encode.c#560
+BrotliReverseBits#entropy_encode.c#815
+kBrotliShellGaps#entropy_encode.c#473
+kNonZeroRepsBits#entropy_encode_static.h#2715
+kZeroRepsBits#entropy_encode_static.h#2709
+kZeroRepsDepth#entropy_encode_static.h#2712
+kCodeLengthDepth#entropy_encode_static.h#2693
+kNonZeroRepsDepth#entropy_encode_static.h#2718
+kCodeLengthBits#entropy_encode_static.h#2702
+HashTableSize#encode.c#5997
+kBrotliDictionaryData#dictionary.c#375
+kPrefixSuffixMap#transform.c#216
+kPrefixSuffix#transform.c#214
+Shift#transform.c#245
+ToUpperCase#transform.c#230
+_kBrotliContextLookupTable#context.c#204
+kCodeLengthCodeOrder#decode.c#1415
+kCodeLengthPrefixValue#decode.c#1421
+kCodeLengthPrefixLength#decode.c#1418
+NextTableBitSize#huffman.c#455
+kReverseBits#huffman.c#441
+Log2Floor#decode.c#1732
+kRingBufferWriteAheadSlack#decode.c#1413
+FileSize#brotli.c#2206
+PrintVersion#brotli.c#2148
+kFileBufferSize#brotli.c#2344
+Command#brotli.c#1756
+BrotliDecoderParameter#decode.h#1456
+BrotliDecoderErrorCode#decode.h#1453
+BrotliDecoderResult#decode.h#1450
+RemapBlockIdsDistance#block_splitter_inc.h#3488
+RemapBlockIdsCommand#block_splitter_inc.h#3149
+MyRand#block_splitter.c#2688
+RemapBlockIdsLiteral#block_splitter_inc.h#2810
+kMinItersForRefining#block_splitter.c#2656
+kIterMulForRefining#block_splitter.c#2654
+kMinLengthForBlockSplitting#block_splitter.c#2652
+kSymbolsPerDistanceHistogram#block_splitter.c#2650
+kSymbolsPerCommandHistogram#block_splitter.c#2648
+kSymbolsPerLiteralHistogram#block_splitter.c#2646
+kCommandStrideLength#block_splitter.c#2644
+kLiteralStrideLength#block_splitter.c#2642
+kDistanceBlockSwitchCost#block_splitter.c#2640
+kCommandBlockSwitchCost#block_splitter.c#2638
+kLiteralBlockSwitchCost#block_splitter.c#2636
+kMaxCommandHistograms#block_splitter.c#2634
+kMaxLiteralHistograms#block_splitter.c#2632
+kBrotliBitMask#bit_reader.c#647
+HistogramDataSizeDistance#histogram_inc.h#2549
+HistogramDataSizeCommand#histogram_inc.h#2511
+HistogramDataSizeLiteral#histogram_inc.h#2473
+BrotliParseAsUTF8#utf8_util.c#368
+kMinUTF8Ratio#utf8_util.h#5860
+kDistanceCacheOffset#backward_references_hq.c#4967
+kDistanceCacheIndex#backward_references_hq.c#4964
+kInfinity#backward_references_hq.c#4962
+kCompressFragmentTwoPassBlockSize#compress_fragment_two_pass.h#378
+HashByteHROLLING#hash_rolling_inc.h#4534
+StoreLookaheadHROLLING#hash_rolling_inc.h#4532
+HashTypeLengthHROLLING#hash_rolling_inc.h#4530
+HashByteHROLLING_FAST#hash_rolling_inc.h#4396
+StoreLookaheadHROLLING_FAST#hash_rolling_inc.h#4394
+HashTypeLengthHROLLING_FAST#hash_rolling_inc.h#4392
+StoreLookaheadH54#hash_longest_match_quickly_inc.h#4213
+HashTypeLengthH54#hash_longest_match_quickly_inc.h#4211
+AddrH42#hash_forgetful_chain_inc.h#4048
+StoreLookaheadH42#hash_forgetful_chain_inc.h#4025
+HashTypeLengthH42#hash_forgetful_chain_inc.h#4023
+AddrH41#hash_forgetful_chain_inc.h#3860
+StoreLookaheadH41#hash_forgetful_chain_inc.h#3837
+HashTypeLengthH41#hash_forgetful_chain_inc.h#3835
+AddrH40#hash_forgetful_chain_inc.h#3672
+StoreLookaheadH40#hash_forgetful_chain_inc.h#3649
+HashTypeLengthH40#hash_forgetful_chain_inc.h#3647
+StoreLookaheadH6#hash_longest_match64_inc.h#3486
+HashTypeLengthH6#hash_longest_match64_inc.h#3484
+NumH5#hash_longest_match_inc.h#3342
+StoreLookaheadH5#hash_longest_match_inc.h#3323
+HashTypeLengthH5#hash_longest_match_inc.h#3321
+StoreLookaheadH4#hash_longest_match_quickly_inc.h#3146
+HashTypeLengthH4#hash_longest_match_quickly_inc.h#3144
+StoreLookaheadH3#hash_longest_match_quickly_inc.h#2969
+HashTypeLengthH3#hash_longest_match_quickly_inc.h#2967
+StoreLookaheadH2#hash_longest_match_quickly_inc.h#2792
+HashTypeLengthH2#hash_longest_match_quickly_inc.h#2790
+BrotliWordTransformType#transform.h#986
+StoreLookaheadH10#hash_to_binary_tree_inc.h#2591
+HashTypeLengthH10#hash_to_binary_tree_inc.h#2589
+BackwardReferencePenaltyUsingLastDistance#hash.h#2511
+BackwardReferenceScoreUsingLastDistance#hash.h#2507
+PrepareDistanceCache#hash.h#2482
+MaxHashTableSize#quality.h#2359
+kBrotliCopyExtra#command.c#2321
+kBrotliCopyBase#command.c#2318
+kBrotliInsExtra#command.c#2315
+kBrotliInsBase#command.c#2312
+CombineLengthCodes#command.h#2228
+kBrotliLog2Table#fast_log.c#862
+Log2FloorNonZero#fast_log.h#918
+BrotliDefaultAllocFunc#platform.c#882
+BrotliDefaultFreeFunc#platform.c#887
+brotli_min_size_t#platform.h#331
+BrotliRBit#platform.h#327
+BrotliUnalignedWrite64#platform.h#323
+BrotliUnalignedRead64#platform.h#319
+BrotliUnalignedRead32#platform.h#315
+BrotliUnalignedRead16#platform.h#311
+kInvalidPosHROLLING#hash_rolling_inc.h#4528
+kRollingHashMul32HROLLING#hash_rolling_inc.h#4526
+kInvalidPosHROLLING_FAST#hash_rolling_inc.h#4390
+kRollingHashMul32HROLLING_FAST#hash_rolling_inc.h#4388
+kHashMul64Long#hash.h#2475
+kHashMul64#hash.h#2473
+kHashMul32#hash.h#2471
+kCutoffTransforms#hash.h#2462
+kCutoffTransformsCount#hash.h#2460
+kInvalidMatch#static_dict.h#2448
+kStaticDictionaryBuckets#static_dict_lut.h#972
+kDictHashMul32#static_dict_lut.h#970
+kDictNumBits#static_dict_lut.h#968
+ContextLut#context.h#420
+BrotliEncoderParameter#encode.h#937
+BrotliEncoderOperation#encode.h#934
+ContextType#context.h#415
+ZopfliNode#backward_references_hq.h#4943
+ZopfliCostModel#backward_references_hq.c#5002
+PosData#backward_references_hq.c#5143
+HuffmanTree#entropy_encode.h#2319
+HistogramPair#cluster.h#2589
+HasherSearchResult#hash.h#2464
+Context#brotli.c#1759
+CmdLutElement#prefix.h#1261
+BrotliPrefixCodeRange#constants.h#408
+RingBuffer#ringbuffer.h#5766
+HROLLING#hash_rolling_inc.h#4546
+H10#hash_to_binary_tree_inc.h#2600
+HROLLING_FAST#hash_rolling_inc.h#4408
+BrotliEncoderStreamState#encode.c#5883
+Command#command.h#2261
+BrotliHasherParams#params.h#2142
+BrotliEncoderMode#encode.h#931
+DictWord#static_dict_lut.h#962
+BrotliDistanceParams#params.h#2150
+BrotliDistanceCodeLimit#constants.h#364
+BrotliTransforms#transform.h#989
+BrotliRunningUncompressedState#state.h#1279
+BrotliRunningContextMapState#state.h#1285
+BrotliRunningTreeGroupState#state.h#1282
+BrotliRunningHuffmanState#state.h#1288
+BrotliMetablockBodyArena#state.h#1321
+BrotliRunningState#state.h#1273
+BrotliDictionary#dictionary.h#422
+BrotliRunningDecodeUint8State#state.h#1291
+brotli_alloc_func#types.h#307
+BrotliRunningReadBlockLengthState#state.h#1294
+BrotliRunningMetablockHeaderState#state.h#1276
+brotli_free_func#types.h#309
+HuffmanCode#huffman.h#1235
+BrotliBitReaderState#bit_reader.h#432
+BrotliBitReader#bit_reader.h#425 <-> BrotliGetAvailableBits#bit_reader.h#459
+HistogramLiteral#histogram_inc.h#2437
+HistogramDistance#histogram_inc.h#2513
+HistogramCommand#histogram_inc.h#2475
+BlockSplit#block_splitter.h#2422
+BlockTypeCodeCalculator#brotli_bit_stream.c#2748
+SlotH42#hash_forgetful_chain_inc.h#4032
+SlotH41#hash_forgetful_chain_inc.h#3844
+SlotH40#hash_forgetful_chain_inc.h#3656
+BackwardMatch#hash.h#2565
+MoveToFrontTransform#brotli_bit_stream.c#3145
+BrotliWriteHuffmanTreeRepetitions#entropy_encode.c#571
+BrotliWriteHuffmanTreeRepetitionsZeros#entropy_encode.c#610
+BrotliConvertBitDepthsToSymbols#entropy_encode.c#829
+BrotliReverseBits#huffman.c#444
+BrotliDecoderErrorString#decode.c#3314
+BrotliDecoderDecompress#decode.h#1465
+BitMask#bit_reader.h#417
+BrotliIsMostlyUTF8#utf8_util.c#397
+HashRollingFunctionInitialHROLLING#hash_rolling_inc.h#4538
+HashRollingFunctionHROLLING#hash_rolling_inc.h#4542
+HashRollingFunctionInitialHROLLING_FAST#hash_rolling_inc.h#4400
+HashRollingFunctionHROLLING_FAST#hash_rolling_inc.h#4404
+StoreLookaheadH55#hash_composite_inc.h#4740
+HashTypeLengthH55#hash_composite_inc.h#4734
+HeadH42#hash_forgetful_chain_inc.h#4052
+HeadH41#hash_forgetful_chain_inc.h#3864
+HeadH40#hash_forgetful_chain_inc.h#3676
+StoreLookaheadH65#hash_composite_inc.h#4810
+HashTypeLengthH65#hash_composite_inc.h#4804
+StoreLookaheadH35#hash_composite_inc.h#4670
+HashTypeLengthH35#hash_composite_inc.h#4664
+kTransformsData#transform.c#219
+GetCopyExtra#command.h#2257
+GetCopyBase#command.h#2253
+GetInsertExtra#command.h#2249
+GetInsertBase#command.h#2245
+FastLog2#fast_log.h#924
+GetInsertLengthCode#command.h#2198
+GetCopyLengthCode#command.h#2215
+BackwardReferenceScore#hash.h#2503
+BrotliEncodeMlen#brotli_bit_stream.c#2765
+EmitInsertLen#compress_fragment_two_pass.c#2820
+EmitCopyLen#compress_fragment_two_pass.c#2849
+EmitCopyLenLastDistance#compress_fragment_two_pass.c#2872
+EmitDistance#compress_fragment_two_pass.c#2910
+RunLengthCodeZeros#brotli_bit_stream.c#3171
+UpdateBits#compress_fragment.c#2951
+UTF8Position#literal_cost.c#868
+AddMatch#static_dict.c#1607
+IsMatch#compress_fragment.c#2737
+IsMatch#compress_fragment_two_pass.c#2774
+HashBytesH6#hash_longest_match64_inc.h#3488
+HashBytesH2#hash_longest_match_quickly_inc.h#2794
+HashBytesH3#hash_longest_match_quickly_inc.h#2971
+HashBytesH4#hash_longest_match_quickly_inc.h#3148
+HashBytesH54#hash_longest_match_quickly_inc.h#4215
+Hash14#hash.h#2477
+HashBytesH10#hash_to_binary_tree_inc.h#2595
+HashBytesH5#hash_longest_match_inc.h#3325
+HashBytesH40#hash_forgetful_chain_inc.h#3651
+HashBytesH41#hash_forgetful_chain_inc.h#3839
+HashBytesH42#hash_forgetful_chain_inc.h#4027
+Hash#compress_fragment.c#2723
+HashBytesAtOffset#compress_fragment.c#2728
+Hash#compress_fragment_two_pass.c#2761
+HashBytesAtOffset#compress_fragment_two_pass.c#2766
+Hash#static_dict.c#1602
+BrotliInitZopfliNodes#backward_references_hq.c#4970
+ZopfliNodeCopyLength#backward_references_hq.c#4980
+ZopfliNodeCopyDistance#backward_references_hq.c#4989
+UpdateZopfliNode#backward_references_hq.c#5135
+ComputeMinimumCopyLength#backward_references_hq.c#5181
+ZopfliNode#backward_references_hq.h#5464
+ZopfliCostModelGetCommandCost#backward_references_hq.c#5119
+ZopfliCostModelGetDistanceCost#backward_references_hq.c#5123
+ZopfliCostModelGetMinCostCmd#backward_references_hq.c#5131
+StartPosQueue#backward_references_hq.c#5150
+ZopfliCostModelGetLiteralCosts#backward_references_hq.c#5127
+HuffmanTreeComparator#entropy_encode.h#2343
+InitHuffmanTree#entropy_encode.h#2325
+SortHuffmanTree#brotli_bit_stream.c#2983
+HuffmanTree#entropy_encode.h#2339
+BrotliSetDepth#entropy_encode.c#475
+SortHuffmanTree#entropy_encode.c#498
+HistogramPair#cluster.h#2558
+HistogramPairIsLess#cluster.c#2632
+ComputeDistanceCode#backward_references.c#4945
+HasherSearchResult#hash.h#2469
+ParseInt#brotli.c#1797
+FileName#brotli.c#1814
+PrintablePath#brotli.c#2168
+InitializeBuffers#brotli.c#2346
+HasMoreInput#brotli.c#2355
+PrintBytes#brotli.c#2396
+kCmdLut#prefix.h#1270
+_kBrotliPrefixCodeRanges#constants.c#415
+RingBufferWriteTail#ringbuffer.h#5815
+StoreHROLLING#hash_rolling_inc.h#4588
+StoreRangeHROLLING#hash_rolling_inc.h#4595
+PrepareDistanceCacheHROLLING#hash_rolling_inc.h#4620
+HROLLING#hash_rolling_inc.h#4553
+LeftChildIndexH10#hash_to_binary_tree_inc.h#2634
+RightChildIndexH10#hash_to_binary_tree_inc.h#2638
+H10#hash_to_binary_tree_inc.h#2605
+StoreHROLLING_FAST#hash_rolling_inc.h#4450
+StoreRangeHROLLING_FAST#hash_rolling_inc.h#4457
+PrepareDistanceCacheHROLLING_FAST#hash_rolling_inc.h#4482
+HROLLING_FAST#hash_rolling_inc.h#4415
+CommandDistanceContext#command.h#2300
+CommandCopyLen#command.h#2309
+CommandCopyLenCode#command.h#2313
+Command#command.h#2267
+CountLiterals#block_splitter.c#2658
+HasherCommon#hash.h#2452
+BrotliHasherParams#params.h#2148
+BrotliEncoderCompress#encode.h#950
+kStaticDictionaryWords#static_dict_lut.h#975
+DictWord#static_dict_lut.h#966
+PrefixEncodeCopyDistance#prefix.h#2172
+CommandRestoreDistanceCode#command.h#2285
+BrotliDistanceParams#params.h#2156
+BrotliCalculateDistanceCodeLimit#constants.h#369
+BrotliDistanceCodeLimit#constants.h#367
+BrotliTransforms#transform.h#1566
+BrotliMetablockBodyArena#state.h#752
+BrotliEncoderDictionary#encoder_dict.h#2129
+BrotliDictionary#dictionary.h#427
+kBrotliDictionary#dictionary.c#379
+MemoryManager#memory.h#2345
+BrotliMetablockHeaderArena#state.h#1297
+HuffmanTreeGroup#huffman.h#1253
+ConstructHuffmanCode#huffman.h#1240
+BrotliBitReaderSaveState#bit_reader.h#445
+BrotliBitReaderRestoreState#bit_reader.h#452
+BrotliGetRemainingBytes#bit_reader.h#463
+BrotliCheckInputAmount#bit_reader.h#469
+BrotliFillBitWindow#bit_reader.h#473
+BrotliPullByte#bit_reader.h#505
+BrotliGetBitsUnmasked#bit_reader.h#517
+BrotliDropBits#bit_reader.h#541
+BrotliBitReaderUnload#bit_reader.h#545
+HistogramClearLiteral#histogram_inc.h#2443
+HistogramAddLiteral#histogram_inc.h#2454
+HistogramAddVectorLiteral#histogram_inc.h#2459
+HistogramAddHistogramLiteral#histogram_inc.h#2465
+HistogramLiteral#histogram_inc.h#2441
+HistogramClearDistance#histogram_inc.h#2519
+HistogramAddDistance#histogram_inc.h#2530
+HistogramAddVectorDistance#histogram_inc.h#2535
+HistogramAddHistogramDistance#histogram_inc.h#2541
+HistogramDistance#histogram_inc.h#2517
+HistogramClearCommand#histogram_inc.h#2481
+HistogramAddCommand#histogram_inc.h#2492
+HistogramAddVectorCommand#histogram_inc.h#2497
+HistogramAddHistogramCommand#histogram_inc.h#2503
+HistogramCommand#histogram_inc.h#2479
+BlockSplitIterator#histogram.c#2553
+BlockSplitterCommand#metablock_inc.h#3030
+BlockSplitterDistance#metablock_inc.h#3154
+BlockSplitterLiteral#metablock_inc.h#2906
+ContextBlockSplitter#metablock.c#3278
+MetaBlockSplit#metablock.h#2611
+BlockSplitCode#brotli_bit_stream.c#2787
+InitBlockTypeCodeCalculator#brotli_bit_stream.c#2753
+BankH42#hash_forgetful_chain_inc.h#4037
+SlotH42#hash_forgetful_chain_inc.h#4035
+BankH41#hash_forgetful_chain_inc.h#3849
+SlotH41#hash_forgetful_chain_inc.h#3847
+BankH40#hash_forgetful_chain_inc.h#3661
+SlotH40#hash_forgetful_chain_inc.h#3659
+InitBackwardMatch#hash.h#2570
+InitDictionaryBackwardMatch#hash.h#2575
+BackwardMatchLength#hash.h#2580
+BackwardMatch#hash.h#2568
+BrotliWriteHuffmanTree#entropy_encode.c#780
+ReplicateValue#huffman.c#448
+PrepareHROLLING#hash_rolling_inc.h#4571
+PrepareHROLLING_FAST#hash_rolling_inc.h#4433
+TinyHashH42#hash_forgetful_chain_inc.h#4056
+TinyHashH41#hash_forgetful_chain_inc.h#3868
+TinyHashH40#hash_forgetful_chain_inc.h#3680
+kBrotliTransforms#transform.c#222
+SetCost#backward_references_hq.c#5024
+ShannonEntropy#bit_cost.h#2553
+BitCost#block_splitter.c#2693
+ClusterCostDiff#cluster.c#2639
+ShouldMergeBlock#compress_fragment.c#2974
+GetLengthCode#command.h#2239
+DecideMultiByteStatsLevel#literal_cost.c#882
+ZopfliNodeLengthCode#backward_references_hq.c#4984
+ZopfliNodeCommandLength#backward_references_hq.c#4998
+ZopfliNodeDistanceCode#backward_references_hq.c#4993
+ComputeDistanceCache#backward_references_hq.c#5210
+InitStartPosQueue#backward_references_hq.c#5155
+StartPosQueueSize#backward_references_hq.c#5159
+StartPosQueueAt#backward_references_hq.c#5177
+SortHuffmanTreeItems#entropy_encode.h#2345
+ParseAlias#brotli.c#1822
+PrintHelp#brotli.c#2155
+OpenInputFile#brotli.c#2172
+OpenOutputFile#brotli.c#2186
+CopyStat#brotli.c#2223
+NextFile#brotli.c#2250
+ProvideInput#brotli.c#2359
+WriteOutput#brotli.c#2370
+PrintFileProcessingProgress#brotli.c#2408
+BlockLengthPrefixCode#brotli_bit_stream.c#2736
+CopyLiteralsToByteArray#block_splitter.c#2667
+H2#hash_longest_match_quickly_inc.h#2799
+H3#hash_longest_match_quickly_inc.h#2976
+H4#hash_longest_match_quickly_inc.h#3153
+H40#hash_forgetful_chain_inc.h#3665
+H41#hash_forgetful_chain_inc.h#3853
+H42#hash_forgetful_chain_inc.h#4041
+H5#hash_longest_match_inc.h#3330
+H54#hash_longest_match_quickly_inc.h#4220
+H6#hash_longest_match64_inc.h#3493
+BrotliEncoderParams#params.h#2158
+FindMatchLengthWithLimit#find_match_length.h#2319
+BrotliEncoderDictionary#encoder_dict.h#2138
+BrotliGetDictionary#dictionary.c#384
+MemoryManager#memory.h#2349
+BrotliWipeOutMemoryManager#memory.c#918
+ProcessSingleCodeLength#decode.c#1772
+ProcessRepeatedCodeLength#decode.c#1785
+BrotliMetablockHeaderArena#state.h#747
+BrotliDecoderStateStruct#state.h#1326
+BrotliBuildSimpleHuffmanTable#huffman.c#584
+BrotliFillBitWindow16#bit_reader.h#501
+BrotliGet16BitsUnmasked#bit_reader.h#521
+BrotliGetBits#bit_reader.h#526
+BrotliSafeGetBits#bit_reader.h#531
+BrotliTakeBits#bit_reader.h#558
+BrotliCopyBytes#bit_reader.h#635
+ClearHistogramsLiteral#histogram_inc.h#2449
+RandomSampleLiteral#block_splitter_inc.h#2714
+ClearHistogramsDistance#histogram_inc.h#2525
+RandomSampleDistance#block_splitter_inc.h#3392
+ClearHistogramsCommand#histogram_inc.h#2487
+BuildHistograms#brotli_bit_stream.c#3532
+RandomSampleCommand#block_splitter_inc.h#3053
+InitBlockSplitIterator#histogram.c#2560
+BlockSplitIteratorNext#histogram.c#2567
+BrotliInitBlockSplit#block_splitter.c#3714
+MetaBlockSplit#metablock.h#2627
+BrotliOptimizeHuffmanCountsForRle#entropy_encode.c#642
+BrotliAllocate#memory.c#908
+BlockEncoder#brotli_bit_stream.c#3322
+BrotliWriteBits#write_bits.h#2674
+NextBlockTypeCode#brotli_bit_stream.c#2758
+BankH42#hash_forgetful_chain_inc.h#4039
+BankH41#hash_forgetful_chain_inc.h#3851
+BankH40#hash_forgetful_chain_inc.h#3663
+BackwardMatchLengthCode#hash.h#2584
+BrotliBuildCodeLengthsHuffmanTable#huffman.c#466
+BrotliBuildHuffmanTable#huffman.c#510
+StitchToPreviousBlockHROLLING#hash_rolling_inc.h#4603
+StitchToPreviousBlockHROLLING_FAST#hash_rolling_inc.h#4465
+BanksH42#hash_forgetful_chain_inc.h#4060
+BanksH41#hash_forgetful_chain_inc.h#3872
+BanksH40#hash_forgetful_chain_inc.h#3684
+BrotliGetTransforms#transform.c#226
+BitsEntropy#bit_cost.h#2574
+ChooseContextMap#encode.c#6067
+ShouldUseComplexStaticContextMap#encode.c#6108
+FindBlocksLiteral#block_splitter_inc.h#2737
+FindBlocksCommand#block_splitter_inc.h#3076
+FindBlocksDistance#block_splitter_inc.h#3415
+InitInsertCommand#command.h#2277
+EstimateBitCostsForLiteralsUTF8#literal_cost.c#901
+ComputeShortestPathFromNodes#backward_references_hq.c#5340
+ComputeDistanceShortcut#backward_references_hq.c#5197
+StartPosQueuePush#backward_references_hq.c#5163
+BrotliCreateHuffmanTree#entropy_encode.c#505
+ParseParams#brotli.c#1833
+OpenFiles#brotli.c#2304
+CloseFiles#brotli.c#2312
+ProvideOutput#brotli.c#2383
+FlushOutput#brotli.c#2390
+GetBlockLengthPrefixCode#brotli_bit_stream.c#2742
+StoreH2#hash_longest_match_quickly_inc.h#2838
+PrepareDistanceCacheH2#hash_longest_match_quickly_inc.h#2863
+H2#hash_longest_match_quickly_inc.h#2802
+StoreH3#hash_longest_match_quickly_inc.h#3015
+PrepareDistanceCacheH3#hash_longest_match_quickly_inc.h#3040
+H3#hash_longest_match_quickly_inc.h#2979
+StoreH4#hash_longest_match_quickly_inc.h#3192
+PrepareDistanceCacheH4#hash_longest_match_quickly_inc.h#3217
+H4#hash_longest_match_quickly_inc.h#3156
+PrepareDistanceCacheH40#hash_forgetful_chain_inc.h#3753
+H40#hash_forgetful_chain_inc.h#3670
+PrepareDistanceCacheH41#hash_forgetful_chain_inc.h#3941
+H41#hash_forgetful_chain_inc.h#3858
+PrepareDistanceCacheH42#hash_forgetful_chain_inc.h#4129
+H42#hash_forgetful_chain_inc.h#4046
+StoreH5#hash_longest_match_inc.h#3381
+PrepareDistanceCacheH5#hash_longest_match_inc.h#3404
+H5#hash_longest_match_inc.h#3340
+StoreH54#hash_longest_match_quickly_inc.h#4259
+PrepareDistanceCacheH54#hash_longest_match_quickly_inc.h#4284
+H54#hash_longest_match_quickly_inc.h#4223
+StoreH6#hash_longest_match64_inc.h#3542
+PrepareDistanceCacheH6#hash_longest_match64_inc.h#3567
+H6#hash_longest_match64_inc.h#3504
+H35#hash_composite_inc.h#4676
+H55#hash_composite_inc.h#4746
+H65#hash_composite_inc.h#4816
+brotli_min_double#platform.h#329
+InitCommand#command.h#2269
+MaxZopfliLen#quality.h#2363
+MaxZopfliCandidates#quality.h#2367
+LiteralSpreeLengthForSparseSearch#quality.h#2410
+ChooseHasher#quality.h#2414
+HashMemAllocInBytesH10#hash_to_binary_tree_inc.h#2626
+HashMemAllocInBytesH2#hash_longest_match_quickly_inc.h#2831
+HashMemAllocInBytesH3#hash_longest_match_quickly_inc.h#3008
+HashMemAllocInBytesH4#hash_longest_match_quickly_inc.h#3185
+HashMemAllocInBytesH5#hash_longest_match_inc.h#3373
+HashMemAllocInBytesH6#hash_longest_match64_inc.h#3534
+HashMemAllocInBytesH40#hash_forgetful_chain_inc.h#3714
+HashMemAllocInBytesH41#hash_forgetful_chain_inc.h#3902
+HashMemAllocInBytesH42#hash_forgetful_chain_inc.h#4090
+HashMemAllocInBytesH54#hash_longest_match_quickly_inc.h#4252
+InitializeHROLLING_FAST#hash_rolling_inc.h#4417
+HashMemAllocInBytesHROLLING_FAST#hash_rolling_inc.h#4443
+InitializeHROLLING#hash_rolling_inc.h#4555
+HashMemAllocInBytesHROLLING#hash_rolling_inc.h#4581
+BrotliEncoderParams#params.h#2170
+BrotliInitDistanceParams#metablock.c#2741
+RecomputeDistancePrefixes#metablock.c#2762
+TestStaticDictionaryItem#hash.h#2515
+StoreAndFindMatchesH10#hash_to_binary_tree_inc.h#2642
+FindLongestMatchHROLLING_FAST#hash_rolling_inc.h#4487
+FindLongestMatchHROLLING#hash_rolling_inc.h#4625
+CreateCommands#compress_fragment_two_pass.c#2934
+DictMatchLength#static_dict.c#1612
+IsMatch#static_dict.c#1617
+BrotliInitBitReader#bit_reader.c#649
+BrotliWarmupBitReader#bit_reader.c#654
+BrotliDecoderState#decode.h#1448
+BrotliDecoderStateInternal#state.h#1401
+memmove16#decode.c#1514
+SafeDecodeSymbol#decode.c#1659
+CheckInputAmount#decode.c#2655
+BrotliTransformDictionaryWord#transform.c#278
+DecodeSymbol#decode.c#1643
+PreloadSymbol#decode.c#1704
+BrotliReadBits24#bit_reader.h#564
+BrotliReadBits32#bit_reader.h#582
+BrotliSafeReadBits#bit_reader.h#600
+BrotliJumpToByteBoundary#bit_reader.h#626
+InitialEntropyCodesLiteral#block_splitter_inc.h#2697
+BuildBlockHistogramsLiteral#block_splitter_inc.h#2831
+RefineEntropyCodesLiteral#block_splitter_inc.h#2724
+InitialEntropyCodesDistance#block_splitter_inc.h#3375
+BuildBlockHistogramsDistance#block_splitter_inc.h#3509
+RefineEntropyCodesDistance#block_splitter_inc.h#3402
+InitialEntropyCodesCommand#block_splitter_inc.h#3036
+BuildBlockHistogramsCommand#block_splitter_inc.h#3170
+RefineEntropyCodesCommand#block_splitter_inc.h#3063
+BrotliBuildHistogramsWithContext#histogram.c#2576
+InitMetaBlockSplit#metablock.h#2627
+BrotliOptimizeHistograms#metablock.c#3518
+InitZopfliCostModel#backward_references_hq.c#5011
+MapStaticContexts#metablock.c#3434
+InitBlockEncoder#brotli_bit_stream.c#3336
+StoreStaticCodeLengthCode#entropy_encode_static.h#2705
+StoreStaticCommandHuffmanTree#entropy_encode_static.h#2724
+StoreStaticDistanceHuffmanTree#entropy_encode_static.h#2732
+StoreCommandExtra#brotli_bit_stream.c#2776
+StoreVarLenUint8#brotli_bit_stream.c#2795
+StoreCompressedMetaBlockHeader#brotli_bit_stream.c#2806
+BrotliStoreUncompressedMetaBlockHeader#brotli_bit_stream.c#2822
+BrotliStoreHuffmanTreeOfHuffmanTreeToBitMask#brotli_bit_stream.c#2833
+BrotliStoreHuffmanTreeToBitMask#brotli_bit_stream.c#2865
+StoreSimpleHuffmanTree#brotli_bit_stream.c#2879
+EmitInsertLen#compress_fragment.c#2816
+EmitLongInsertLen#compress_fragment.c#2843
+EmitCopyLen#compress_fragment.c#2855
+EmitCopyLenLastDistance#compress_fragment.c#2881
+EmitDistance#compress_fragment.c#2919
+EmitLiterals#compress_fragment.c#2930
+BrotliStoreMetaBlockHeader#compress_fragment.c#2938
+StoreH42#hash_forgetful_chain_inc.h#4097
+StoreH41#hash_forgetful_chain_inc.h#3909
+StoreH40#hash_forgetful_chain_inc.h#3721
+BrotliInitEncoderDictionary#encoder_dict.c#4806
+BrotliPopulationCostLiteral#bit_cost_inc.h#2589
+BrotliPopulationCostCommand#bit_cost_inc.h#2686
+BrotliPopulationCostDistance#bit_cost_inc.h#2783
+ShouldCompress#compress_fragment_two_pass.c#3129
+ShouldCompress#encode.c#6178
+BlockSplitterFinishBlockLiteral#metablock_inc.h#2948
+BlockSplitterFinishBlockCommand#metablock_inc.h#3072
+BlockSplitterFinishBlockDistance#metablock_inc.h#3196
+DecideOverLiteralContextModeling#encode.c#6156
+BrotliEstimateBitCostsForLiterals#literal_cost.c#958
+EvaluateNode#backward_references_hq.c#5225
+StoreBlockSwitch#brotli_bit_stream.c#3259
+StoreRangeH2#hash_longest_match_quickly_inc.h#2848
+StoreRangeH3#hash_longest_match_quickly_inc.h#3025
+StoreRangeH4#hash_longest_match_quickly_inc.h#3202
+StoreRangeH5#hash_longest_match_inc.h#3389
+StoreRangeH54#hash_longest_match_quickly_inc.h#4269
+StoreRangeH6#hash_longest_match64_inc.h#3552
+StoreH35#hash_composite_inc.h#4709
+PrepareDistanceCacheH35#hash_composite_inc.h#4724
+H35#hash_composite_inc.h#4684
+StoreH55#hash_composite_inc.h#4779
+PrepareDistanceCacheH55#hash_composite_inc.h#4794
+H55#hash_composite_inc.h#4754
+Hasher#hash.h#4874
+StoreH65#hash_composite_inc.h#4849
+PrepareDistanceCacheH65#hash_composite_inc.h#4864
+H65#hash_composite_inc.h#4824
+BrotliSuppressUnusedFunctions#platform.h#337
+SanitizeParams#quality.h#2371
+ComputeLgBlock#quality.h#2384
+ComputeRbBits#quality.h#2401
+ZopfliCostModelSetFromCommands#backward_references_hq.c#5051
+BrotliZopfliCreateCommands#backward_references_hq.c#5354
+HashMemAllocInBytesH35#hash_composite_inc.h#4705
+HashMemAllocInBytesH55#hash_composite_inc.h#4775
+HashMemAllocInBytesH65#hash_composite_inc.h#4845
+SearchInStaticDictionary#hash.h#2547
+StoreH10#hash_to_binary_tree_inc.h#2757
+BrotliFindAllStaticDictionaryMatches#static_dict.c#1641
+BrotliDecoderSetParameter#decode.c#1424
+BrotliDecoderIsUsed#decode.c#3302
+BrotliDecoderGetErrorCode#decode.c#3310
+SaveErrorCode#decode.c#1469
+DecodeWindowBits#decode.c#1479
+ReadSymbolCodeLengths#decode.c#1826
+SafeReadSymbolCodeLengths#decode.c#1869
+ReadCodeLengthCodeLengths#decode.c#1908
+InverseMoveToFrontTransform#decode.c#2074
+DetectTrivialLiteralBlockTypes#decode.c#2263
+PrepareLiteralDecoding#decode.c#2280
+UnwrittenBytes#decode.c#2342
+WrapRingBuffer#decode.c#2388
+BrotliEnsureRingBuffer#decode.c#2395
+BrotliCalculateRingBufferSize#decode.c#2459
+TakeDistanceFromRingBuffer#decode.c#2501
+CalculateDistanceLut#decode.c#2542
+BrotliDecoderStateInit#state.c#1359
+BrotliDecoderStateMetablockBegin#state.c#1419
+BrotliDecoderStateCleanupAfterMetablock#state.c#1449
+BrotliDecoderHuffmanTreeGroupInit#state.c#1464
+ReadSymbol#decode.c#1655
+SafeReadSymbol#decode.c#1695
+ReadPreloadedSymbol#decode.c#1714
+BrotliSafeReadBits32Slow#bit_reader.c#672
+DecodeVarLenUint8#decode.c#1520
+DecodeMetaBlockLength#decode.c#1551
+ReadSimpleHuffmanSymbols#decode.c#1741
+ReadContextModes#decode.c#2485
+SafeReadBits#decode.c#2524
+StoreDataWithHuffmanCodes#brotli_bit_stream.c#3550
+BrotliStoreUncompressedMetaBlock#brotli_bit_stream.c#3659
+BrotliStoreHuffmanTree#brotli_bit_stream.c#2909
+EmitUncompressedMetaBlock#compress_fragment.c#3000
+EmitUncompressedMetaBlock#compress_fragment_two_pass.c#3151
+StoreRangeH42#hash_forgetful_chain_inc.h#4114
+StoreRangeH41#hash_forgetful_chain_inc.h#3926
+StoreRangeH40#hash_forgetful_chain_inc.h#3738
+BrotliCompareAndPushToQueueLiteral#cluster_inc.h#2644
+BrotliHistogramBitCostDistanceLiteral#cluster_inc.h#2648
+BrotliCompareAndPushToQueueCommand#cluster_inc.h#2656
+BrotliHistogramBitCostDistanceCommand#cluster_inc.h#2660
+BrotliCompareAndPushToQueueDistance#cluster_inc.h#2668
+BrotliHistogramBitCostDistanceDistance#cluster_inc.h#2672
+ComputeDistanceCost#metablock.c#2775
+BlockSplitterAddSymbolLiteral#metablock_inc.h#3022
+BlockSplitterAddSymbolCommand#metablock_inc.h#3146
+BlockSplitterAddSymbolDistance#metablock_inc.h#3270
+ZopfliCostModelSetFromLiteralCosts#backward_references_hq.c#5096
+UpdateNodes#backward_references_hq.c#5238
+StoreSymbol#brotli_bit_stream.c#3359
+StoreSymbolWithContext#brotli_bit_stream.c#3375
+StoreRangeH35#hash_composite_inc.h#4714
+StoreRangeH55#hash_composite_inc.h#4784
+StoreRangeH65#hash_composite_inc.h#4854
+BrotliEncoderStateStruct#encode.c#5889
+InitializeH10#hash_to_binary_tree_inc.h#2607
+PrepareH10#hash_to_binary_tree_inc.h#2614
+StitchToPreviousBlockH10#hash_to_binary_tree_inc.h#2778
+InitializeH2#hash_longest_match_quickly_inc.h#2804
+PrepareH2#hash_longest_match_quickly_inc.h#2810
+StitchToPreviousBlockH2#hash_longest_match_quickly_inc.h#2855
+InitializeH3#hash_longest_match_quickly_inc.h#2981
+PrepareH3#hash_longest_match_quickly_inc.h#2987
+StitchToPreviousBlockH3#hash_longest_match_quickly_inc.h#3032
+InitializeH4#hash_longest_match_quickly_inc.h#3158
+PrepareH4#hash_longest_match_quickly_inc.h#3164
+StitchToPreviousBlockH4#hash_longest_match_quickly_inc.h#3209
+InitializeH5#hash_longest_match_inc.h#3346
+PrepareH5#hash_longest_match_inc.h#3359
+StitchToPreviousBlockH5#hash_longest_match_inc.h#3396
+InitializeH6#hash_longest_match64_inc.h#3506
+PrepareH6#hash_longest_match64_inc.h#3520
+StitchToPreviousBlockH6#hash_longest_match64_inc.h#3559
+InitializeH40#hash_forgetful_chain_inc.h#3688
+PrepareH40#hash_forgetful_chain_inc.h#3694
+StitchToPreviousBlockH40#hash_forgetful_chain_inc.h#3745
+InitializeH41#hash_forgetful_chain_inc.h#3876
+PrepareH41#hash_forgetful_chain_inc.h#3882
+StitchToPreviousBlockH41#hash_forgetful_chain_inc.h#3933
+InitializeH42#hash_forgetful_chain_inc.h#4064
+PrepareH42#hash_forgetful_chain_inc.h#4070
+StitchToPreviousBlockH42#hash_forgetful_chain_inc.h#4121
+InitializeH54#hash_longest_match_quickly_inc.h#4225
+PrepareH54#hash_longest_match_quickly_inc.h#4231
+StitchToPreviousBlockH54#hash_longest_match_quickly_inc.h#4276
+InitializeH35#hash_composite_inc.h#4686
+InitializeH55#hash_composite_inc.h#4756
+InitializeH65#hash_composite_inc.h#4826
+HasherInit#hash.h#4881
+HasherReset#hash.h#4890
+MaxMetablockSize#quality.h#2405
+HasherSize#hash.h#4894
+FindLongestMatchH2#hash_longest_match_quickly_inc.h#2868
+FindLongestMatchH3#hash_longest_match_quickly_inc.h#3045
+FindLongestMatchH4#hash_longest_match_quickly_inc.h#3222
+FindLongestMatchH5#hash_longest_match_inc.h#3408
+FindLongestMatchH6#hash_longest_match64_inc.h#3571
+FindLongestMatchH40#hash_forgetful_chain_inc.h#3758
+FindLongestMatchH41#hash_forgetful_chain_inc.h#3946
+FindLongestMatchH42#hash_forgetful_chain_inc.h#4134
+FindLongestMatchH54#hash_longest_match_quickly_inc.h#4289
+StoreRangeH10#hash_to_binary_tree_inc.h#2762
+FindAllMatchesH10#hash_to_binary_tree_inc.h#2705
+BrotliDecoderHasMoreOutput#decode.c#3274
+WriteRingBuffer#decode.c#2348
+BrotliDecoderCreateInstance#decode.c#1435
+BrotliDecoderStateCleanup#state.c#1458
+ReadBlockLength#decode.c#2042
+SafeReadBlockLength#decode.c#2050
+BrotliSafeReadBits32#bit_reader.h#611
+ReadHuffmanCode#decode.c#1952
+ReadCommandInternal#decode.c#2611
+BuildAndStoreHuffmanTree#brotli_bit_stream.c#2944
+BuildAndStoreCommandPrefixCode#compress_fragment.c#2778
+BuildAndStoreCommandPrefixCode#compress_fragment_two_pass.c#2782
+BrotliHistogramCombineLiteral#cluster_inc.h#2646
+BrotliHistogramRemapLiteral#cluster_inc.h#2650
+BrotliHistogramCombineCommand#cluster_inc.h#2658
+BrotliHistogramRemapCommand#cluster_inc.h#2662
+BrotliHistogramCombineDistance#cluster_inc.h#2670
+BrotliHistogramRemapDistance#cluster_inc.h#2674
+ZopfliIterate#backward_references_hq.c#5391
+BrotliEncoderState#encode.h#940
+RingBufferInit#ringbuffer.h#5777
+RingBufferSetup#ringbuffer.h#5784
+WrapPosition#encode.c#5977
+EncodeWindowBits#encode.c#6032
+InitCommandPrefixCodes#encode.c#6053
+ChooseDistanceParams#encode.c#6264
+BrotliEncoderInitParams#encode.c#6322
+BrotliInitMemoryManager#memory.c#896
+BrotliFree#memory.c#914
+PrepareH35#hash_composite_inc.h#4694
+StitchToPreviousBlockH35#hash_composite_inc.h#4719
+PrepareH65#hash_composite_inc.h#4834
+StitchToPreviousBlockH65#hash_composite_inc.h#4859
+PrepareH55#hash_composite_inc.h#4764
+StitchToPreviousBlockH55#hash_composite_inc.h#4789
+CreateBackwardReferencesNH2#backward_references_inc.h#4967
+FindLongestMatchH35#hash_composite_inc.h#4729
+CreateBackwardReferencesNH3#backward_references_inc.h#5065
+CreateBackwardReferencesNH4#backward_references_inc.h#5163
+CreateBackwardReferencesNH5#backward_references_inc.h#5261
+FindLongestMatchH65#hash_composite_inc.h#4869
+CreateBackwardReferencesNH6#backward_references_inc.h#5359
+CreateBackwardReferencesNH40#backward_references_inc.h#5457
+CreateBackwardReferencesNH41#backward_references_inc.h#5555
+CreateBackwardReferencesNH42#backward_references_inc.h#5653
+FindLongestMatchH55#hash_composite_inc.h#4799
+CreateBackwardReferencesNH54#backward_references_inc.h#5751
+BrotliDecoderIsFinished#decode.c#3306
+BrotliDecoderTakeOutput#decode.c#3281
+CopyUncompressedBlockToOutput#decode.c#2417
+BrotliDecoderDestroyInstance#decode.c#1458
+DecodeBlockTypeAndLength#decode.c#2225
+SafeReadBits32#decode.c#2533
+HuffmanTreeGroupDecode#decode.c#2103
+DecodeContextMap#decode.c#2122
+ReadCommand#decode.c#2647
+SafeReadCommand#decode.c#2651
+BuildAndStoreBlockSplitCode#brotli_bit_stream.c#3272
+StoreTrivialContextMap#brotli_bit_stream.c#3293
+BuildAndStoreEntropyCodesLiteral#block_encoder_inc.h#3392
+BuildAndStoreEntropyCodesCommand#block_encoder_inc.h#3406
+BuildAndStoreEntropyCodesDistance#block_encoder_inc.h#3420
+BrotliEncoderSetParameter#encode.c#5948
+BrotliEncoderHasMoreOutput#encode.c#7151
+InputBlockSize#encode.c#5933
+UnprocessedInputSize#encode.c#5937
+ExtendLastCommand#encode.c#6433
+WriteMetadataHeader#encode.c#6598
+InjectBytePaddingBlock#encode.c#6870
+CheckFlushComplete#encode.c#6909
+ChooseContextMode#encode.c#6201
+UpdateLastProcessedPos#encode.c#6426
+EnsureInitialized#encode.c#6285
+BrotliEncoderInitState#encode.c#6339
+DestroyHasher#hash.h#4885
+CleanupZopfliCostModel#backward_references_hq.c#5019
+BrotliDestroyBlockSplit#block_splitter.c#3723
+ClusterBlocksLiteral#block_splitter_inc.h#2839
+ClusterBlocksCommand#block_splitter_inc.h#3178
+ClusterBlocksDistance#block_splitter_inc.h#3517
+BrotliBuildAndStoreHuffmanTreeFast#brotli_bit_stream.c#2987
+BrotliStoreMetaBlockTrivial#brotli_bit_stream.c#3575
+EncodeContextMap#brotli_bit_stream.c#3218
+CleanupBlockEncoder#brotli_bit_stream.c#3350
+BrotliHistogramReindexLiteral#cluster_inc.h#2652
+BrotliHistogramReindexCommand#cluster_inc.h#2664
+BrotliHistogramReindexDistance#cluster_inc.h#2676
+RingBufferFree#ringbuffer.h#5793
+RingBufferInitBuffer#ringbuffer.h#5797
+GetBrotliStorage#encode.c#5986
+GetHashTable#encode.c#6005
+InitBlockSplitterLiteral#metablock_inc.h#2922
+InitBlockSplitterCommand#metablock_inc.h#3046
+InitBlockSplitterDistance#metablock_inc.h#3170
+InitContextBlockSplitter#metablock.c#3296
+ContextBlockSplitterFinishBlock#metablock.c#3327
+HasherSetup#hash.h#4902
+CreateBackwardReferencesNH35#backward_references_inc.h#5849
+CreateBackwardReferencesNH65#backward_references_inc.h#6045
+CreateBackwardReferencesNH55#backward_references_inc.h#5947
+DecodeLiteralBlockSwitchInternal#decode.c#2293
+DecodeCommandBlockSwitchInternal#decode.c#2309
+DecodeDistanceBlockSwitchInternal#decode.c#2325
+ReadDistanceInternal#decode.c#2569
+BuildAndStoreBlockSwitchEntropyCodes#brotli_bit_stream.c#3355
+BrotliEncoderIsFinished#encode.c#7147
+RemainingInputBlockSize#encode.c#5941
+UpdateSizeHint#encode.c#7068
+InjectFlushOrPushOutput#encode.c#6890
+BrotliEncoderTakeOutput#encode.c#7155
+BrotliEncoderCreateInstance#encode.c#6373
+BrotliCreateHqZopfliBackwardReferences#backward_references_hq.c#5481
+BrotliZopfliComputeShortestPath#backward_references_hq.c#5422
+DestroyMetaBlockSplit#metablock.h#2643
+SplitByteVectorLiteral#block_splitter_inc.h#2983
+SplitByteVectorCommand#block_splitter_inc.h#3322
+SplitByteVectorDistance#block_splitter_inc.h#3661
+BrotliStoreMetaBlockFast#brotli_bit_stream.c#3605
+BuildAndStoreLiteralPrefixCode#compress_fragment.c#2741
+StoreCommands#compress_fragment_two_pass.c#3083
+BrotliClusterHistogramsLiteral#cluster_inc.h#2654
+BrotliClusterHistogramsCommand#cluster_inc.h#2666
+BrotliClusterHistogramsDistance#cluster_inc.h#2678
+BrotliEncoderCleanupState#encode.c#6388
+RingBufferWrite#ringbuffer.h#5823
+ContextBlockSplitterAddSymbol#metablock.c#3425
+InitOrStitchToPreviousBlock#hash.h#4930
+BrotliCreateBackwardReferences#backward_references.c#6143
+DecodeLiteralBlockSwitch#decode.c#2301
+SafeDecodeLiteralBlockSwitch#decode.c#2305
+DecodeCommandBlockSwitch#decode.c#2317
+SafeDecodeCommandBlockSwitch#decode.c#2321
+DecodeDistanceBlockSwitch#decode.c#2334
+SafeDecodeDistanceBlockSwitch#decode.c#2338
+ReadDistance#decode.c#2603
+SafeReadDistance#decode.c#2607
+BrotliStoreMetaBlock#brotli_bit_stream.c#3439
+BrotliCreateZopfliBackwardReferences#backward_references_hq.c#5471
+BrotliSplitBlock#block_splitter.c#3728
+BrotliCompressFragmentFastImpl#compress_fragment.c#3013
+BrotliCompressFragmentTwoPassImpl#compress_fragment_two_pass.c#3159
+BrotliEncoderDestroyInstance#encode.c#6403
+CopyInputToRingBuffer#encode.c#6415
+BrotliBuildMetaBlockGreedyInternal#metablock.c#3449
+ProcessCommandsInternal#decode.c#2662
+BrotliBuildMetaBlock#metablock.c#2806
+BrotliCompressFragmentFastImpl9#compress_fragment.c#3194
+BrotliCompressFragmentTwoPassImpl8#compress_fragment_two_pass.c#3183
+BrotliBuildMetaBlockGreedy#metablock.c#3510
+ProcessCommands#decode.c#2901
+SafeProcessCommands#decode.c#2905
+BrotliCompressBufferQuality10#encode.c#6619
+BrotliCompressFragmentFast#compress_fragment.c#3196
+BrotliCompressFragmentTwoPass#compress_fragment_two_pass.c#3185
+WriteMetaBlockInternal#encode.c#6208
+BrotliDecoderDecompressStream#decode.c#2929
+BrotliEncoderCompressStreamFast#encode.c#6916
+EncodeData#encode.c#6456
+DecompressFile#brotli.c#2415
+BrotliDecoderDecompress#decode.c#2909
+ProcessMetadata#encode.c#7015
+DecompressFiles#brotli.c#2448
+BrotliEncoderCompressStream#encode.c#7083
+CompressFile#brotli.c#2470
+BrotliEncoderCompress#encode.c#6813
+CompressFiles#brotli.c#2497
+main#brotli.c#2539

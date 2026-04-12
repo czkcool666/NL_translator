@@ -1,0 +1,66 @@
+robotfindskitten
+├── robotfindskitten.c [Contain *main* Function]
+└── svf_analysis_output
+H_FILE_LIST
+draw.h
+messages.h
+
+SPLIT_TAG
+
+screen_object#robotfindskitten.c#2671
+ver#robotfindskitten.c#2
+messages#messages.h#2668
+robot#robotfindskitten.c#2703 -> screen_object#robotfindskitten.c#2671
+kitten#robotfindskitten.c#2705 -> screen_object#robotfindskitten.c#2671
+num_bogus#robotfindskitten.c#2707
+bogus#robotfindskitten.c#2709 -> messages#messages.h#2668, screen_object#robotfindskitten.c#2671
+bogus_messages#robotfindskitten.c#2711 -> messages#messages.h#2668
+used_messages#robotfindskitten.c#2713 -> messages#messages.h#2668
+screen#robotfindskitten.c#2715
+initialize_ncurses#robotfindskitten.c#2896 -> finish#robotfindskitten.c#2820
+initialize_arrays#robotfindskitten.c#2871 -> messages#messages.h#2668, screen_object#robotfindskitten.c#2671, used_messages#robotfindskitten.c#2713, bogus#robotfindskitten.c#2709, screen#robotfindskitten.c#2715, bogus_messages#robotfindskitten.c#2711
+initialize_robot#robotfindskitten.c#2917 -> robot#robotfindskitten.c#2703, screen_object#robotfindskitten.c#2671, screen#robotfindskitten.c#2715
+initialize_kitten#robotfindskitten.c#2926 -> screen#robotfindskitten.c#2715, validchar#robotfindskitten.c#2826, kitten#robotfindskitten.c#2705, screen_object#robotfindskitten.c#2671
+initialize_bogus#robotfindskitten.c#2939 -> bogus#robotfindskitten.c#2709, bogus_messages#robotfindskitten.c#2711, used_messages#robotfindskitten.c#2713, screen#robotfindskitten.c#2715, messages#messages.h#2668, validchar#robotfindskitten.c#2826, screen_object#robotfindskitten.c#2671, num_bogus#robotfindskitten.c#2707
+initialize_screen#robotfindskitten.c#2960 -> kitten#robotfindskitten.c#2705, draw#draw.h#2736, bogus#robotfindskitten.c#2709, ver#robotfindskitten.c#2, robot#robotfindskitten.c#2703, num_bogus#robotfindskitten.c#2707
+instructions#robotfindskitten.c#2853 -> draw_in_place#draw.h#2738, robot#robotfindskitten.c#2703, ver#robotfindskitten.c#2
+finish#robotfindskitten.c#2820
+play_game#robotfindskitten.c#2748 -> process_input#robotfindskitten.c#2771, draw#draw.h#2736, message#draw.h#2740, screen#robotfindskitten.c#2715, finish#robotfindskitten.c#2820, robot#robotfindskitten.c#2703, screen_object#robotfindskitten.c#2671
+process_input#robotfindskitten.c#2771 -> screen_object#robotfindskitten.c#2671, robot#robotfindskitten.c#2703, screen#robotfindskitten.c#2715, play_animation#robotfindskitten.c#2833, bogus_messages#robotfindskitten.c#2711, message#draw.h#2740, messages#messages.h#2668
+validchar#robotfindskitten.c#2826 -> screen_object#robotfindskitten.c#2671, kitten#robotfindskitten.c#2705, bogus#robotfindskitten.c#2709
+play_animation#robotfindskitten.c#2833 -> kitten#robotfindskitten.c#2705, draw_in_place#draw.h#2738, finish#robotfindskitten.c#2820, robot#robotfindskitten.c#2703
+full_draw#draw.h#2717 -> screen_object#robotfindskitten.c#2671
+draw#draw.h#2736 -> screen_object#robotfindskitten.c#2671, full_draw#draw.h#2717, robot#robotfindskitten.c#2703, bogus#robotfindskitten.c#2709, kitten#robotfindskitten.c#2705
+draw_in_place#draw.h#2738 -> robot#robotfindskitten.c#2703, screen_object#robotfindskitten.c#2671, kitten#robotfindskitten.c#2705, full_draw#draw.h#2717
+message#draw.h#2740 -> bogus_messages#robotfindskitten.c#2711, screen#robotfindskitten.c#2715, robot#robotfindskitten.c#2703, messages#messages.h#2668, screen_object#robotfindskitten.c#2671
+main#robotfindskitten.c#2974 -> num_bogus#robotfindskitten.c#2707, messages#messages.h#2668, initialize_robot#robotfindskitten.c#2917, initialize_ncurses#robotfindskitten.c#2896, initialize_kitten#robotfindskitten.c#2926, instructions#robotfindskitten.c#2853, initialize_screen#robotfindskitten.c#2960, play_game#robotfindskitten.c#2748, initialize_bogus#robotfindskitten.c#2939, initialize_arrays#robotfindskitten.c#2871
+
+SPLIT_TAG
+
+finish#robotfindskitten.c#2820
+screen#robotfindskitten.c#2715
+num_bogus#robotfindskitten.c#2707
+messages#messages.h#2668
+ver#robotfindskitten.c#2
+screen_object#robotfindskitten.c#2671
+initialize_ncurses#robotfindskitten.c#2896
+bogus_messages#robotfindskitten.c#2711
+used_messages#robotfindskitten.c#2713
+robot#robotfindskitten.c#2703
+kitten#robotfindskitten.c#2705
+bogus#robotfindskitten.c#2709
+full_draw#draw.h#2717
+initialize_robot#robotfindskitten.c#2917
+message#draw.h#2740
+initialize_arrays#robotfindskitten.c#2871
+validchar#robotfindskitten.c#2826
+draw#draw.h#2736
+draw_in_place#draw.h#2738
+initialize_kitten#robotfindskitten.c#2926
+initialize_bogus#robotfindskitten.c#2939
+initialize_screen#robotfindskitten.c#2960
+instructions#robotfindskitten.c#2853
+play_animation#robotfindskitten.c#2833
+process_input#robotfindskitten.c#2771
+play_game#robotfindskitten.c#2748
+main#robotfindskitten.c#2974

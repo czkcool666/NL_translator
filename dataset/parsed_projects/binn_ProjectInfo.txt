@@ -1,0 +1,593 @@
+binn
+├── binn.c
+└── svf_analysis_output
+H_FILE_LIST
+binn.h
+
+SPLIT_TAG
+
+binn_iter_struct#binn.h#1359
+binn_struct#binn.h#1059 -> BOOL#binn.h#1051, uint64#binn.h#1055, binn_mem_free#binn.h#1057, int64#binn.h#1053
+BOOL#binn.h#1051
+int64#binn.h#1053
+uint64#binn.h#1055
+binn_mem_free#binn.h#1057
+u16#binn.c#1815
+u32#binn.c#1817
+u64#binn.c#1819
+malloc_fn#binn.c#1809
+realloc_fn#binn.c#1811 -> binn_struct#binn.h#1059
+free_fn#binn.c#1813 -> binn_struct#binn.h#1059
+local_value#binn.c#2708 -> binn_struct#binn.h#1059
+binn_version#binn.c#1848
+binn_set_alloc_functions#binn.c#1852 -> realloc_fn#binn.c#1811, malloc_fn#binn.c#1809, free_fn#binn.c#1813
+binn_create_type#binn.c#1883
+binn_get_type_info#binn.c#1895 -> BOOL#binn.h#1051
+binn_get_write_storage#binn.c#2975 -> binn_get_type_info#binn.c#1895
+binn_get_read_storage#binn.c#2985 -> binn_get_type_info#binn.c#1895, binn_struct#binn.h#1059
+binn_is_container#binn.c#3858 -> BOOL#binn.h#1051, binn_struct#binn.h#1059
+binn_new#binn.c#1954 -> free_fn#binn.c#1813, binn_create#binn.c#1921, binn_struct#binn.h#1059, binn_malloc#binn.c#1864
+binn_list#binn.c#1977 -> binn_struct#binn.h#1059, binn_new#binn.c#1954
+binn_map#binn.c#1981 -> binn_new#binn.c#1954, binn_struct#binn.h#1059
+binn_object#binn.c#1985 -> binn_new#binn.c#1954, binn_struct#binn.h#1059
+binn_create#binn.c#1921 -> binn_struct#binn.h#1059, BOOL#binn.h#1051, binn_malloc#binn.c#1864
+binn_create_list#binn.c#1965 -> BOOL#binn.h#1051, binn_struct#binn.h#1059, binn_create#binn.c#1921
+binn_create_map#binn.c#1969 -> binn_create#binn.c#1921, BOOL#binn.h#1051, binn_struct#binn.h#1059
+binn_create_object#binn.c#1973 -> binn_struct#binn.h#1059, binn_create#binn.c#1921, BOOL#binn.h#1051
+binn_copy#binn.c#1989 -> binn_new#binn.c#1954, binn_struct#binn.h#1059, binn_ptr#binn.c#2549, IsValidBinnHeader#binn.c#2485
+binn_list_add_new#binn.c#3184 -> free_fn#binn.c#1813, BOOL#binn.h#1051, binn_list_add_value#binn.h#1459, binn_struct#binn.h#1059
+binn_map_set_new#binn.c#3191 -> free_fn#binn.c#1813, binn_struct#binn.h#1059, BOOL#binn.h#1051, binn_map_set_value#binn.h#1531
+binn_object_set_new#binn.c#3198 -> binn_object_set_value#binn.h#1603, binn_struct#binn.h#1059, BOOL#binn.h#1051, free_fn#binn.c#1813
+binn_list_add#binn.c#3160 -> GetWriteConvertedData#binn.c#2994, binn_struct#binn.h#1059, binn_ptr#binn.c#2549, binn_list_add_raw#binn.c#2202, binn_size#binn.c#2562, BOOL#binn.h#1051
+binn_map_set#binn.c#3165 -> BOOL#binn.h#1051, binn_map_set_raw#binn.c#2234, binn_struct#binn.h#1059, binn_size#binn.c#2562, binn_ptr#binn.c#2549, GetWriteConvertedData#binn.c#2994
+binn_object_set#binn.c#3170 -> binn_struct#binn.h#1059, BOOL#binn.h#1051, binn_size#binn.c#2562, GetWriteConvertedData#binn.c#2994, binn_ptr#binn.c#2549, binn_object_set_raw#binn.c#2209
+binn_free#binn.c#2454 -> free_fn#binn.c#1813, binn_struct#binn.h#1059
+binn_release#binn.c#2468 -> binn_ptr#binn.c#2549, binn_struct#binn.h#1059, free_fn#binn.c#1813
+binn_value#binn.c#3609 -> binn_struct#binn.h#1059, free_fn#binn.c#1813, binn_alloc_item#binn.c#3598, binn_mem_free#binn.h#1057, binn_get_type_info#binn.c#1895, copy_raw_value#binn.c#3048, binn_memdup#binn.c#1869
+binn_int8#binn.h#1147 -> binn_value#binn.c#3609, binn_struct#binn.h#1059
+binn_int16#binn.h#1151 -> binn_value#binn.c#3609, binn_struct#binn.h#1059
+binn_int32#binn.h#1155 -> binn_struct#binn.h#1059, binn_value#binn.c#3609
+binn_int64#binn.h#1159 -> binn_struct#binn.h#1059, int64#binn.h#1053, binn_value#binn.c#3609
+binn_uint8#binn.h#1163 -> binn_struct#binn.h#1059, binn_value#binn.c#3609
+binn_uint16#binn.h#1167 -> binn_struct#binn.h#1059, binn_value#binn.c#3609
+binn_uint32#binn.h#1171 -> binn_value#binn.c#3609, binn_struct#binn.h#1059
+binn_uint64#binn.h#1175 -> uint64#binn.h#1055, binn_value#binn.c#3609, binn_struct#binn.h#1059
+binn_float#binn.h#1179 -> binn_value#binn.c#3609, binn_struct#binn.h#1059
+binn_double#binn.h#1183 -> binn_struct#binn.h#1059, binn_value#binn.c#3609
+binn_bool#binn.h#1187 -> binn_value#binn.c#3609, BOOL#binn.h#1051, binn_struct#binn.h#1059
+binn_null#binn.h#1191 -> binn_struct#binn.h#1059, binn_value#binn.c#3609
+binn_string#binn.h#1195 -> binn_mem_free#binn.h#1057, binn_struct#binn.h#1059, binn_value#binn.c#3609
+binn_blob#binn.h#1199 -> binn_value#binn.c#3609, binn_struct#binn.h#1059, binn_mem_free#binn.h#1057
+binn_ptr#binn.c#2549 -> binn_save_header#binn.c#2421, binn_get_ptr_type#binn.c#2026, binn_struct#binn.h#1059
+binn_size#binn.c#2562 -> binn_get_ptr_type#binn.c#2026, binn_save_header#binn.c#2421, binn_struct#binn.h#1059, binn_buf_size#binn.c#2543
+binn_type#binn.c#2575 -> binn_get_ptr_type#binn.c#2026, binn_buf_type#binn.c#2531, binn_struct#binn.h#1059
+binn_count#binn.c#2585 -> binn_buf_count#binn.c#2537, binn_struct#binn.h#1059, binn_get_ptr_type#binn.c#2026
+binn_is_valid#binn.c#2639 -> binn_struct#binn.h#1059, BOOL#binn.h#1051, binn_is_valid_ex#binn.c#2595
+binn_is_valid_ex#binn.c#2595 -> binn_ptr#binn.c#2549, AdvanceDataPos#binn.c#2066, IsValidBinnHeader#binn.c#2485, read_map_id#binn.c#2114, BOOL#binn.h#1051
+binn_is_struct#binn.c#2034 -> BOOL#binn.h#1051
+binn_load#binn.c#2006 -> binn_is_valid#binn.c#2639, BOOL#binn.h#1051, binn_struct#binn.h#1059
+binn_open#binn.c#2015 -> binn_struct#binn.h#1059, binn_malloc#binn.c#1864, free_fn#binn.c#1813, binn_load#binn.c#2006
+binn_list_int8#binn.c#3298 -> binn_list_get#binn.c#3262
+binn_list_int16#binn.c#3304 -> binn_list_get#binn.c#3262
+binn_list_int32#binn.c#3310 -> binn_list_get#binn.c#3262
+binn_list_int64#binn.c#3316 -> binn_list_get#binn.c#3262, int64#binn.h#1053
+binn_list_uint8#binn.c#3322 -> binn_list_get#binn.c#3262
+binn_list_uint16#binn.c#3328 -> binn_list_get#binn.c#3262
+binn_list_uint32#binn.c#3334 -> binn_list_get#binn.c#3262
+binn_list_uint64#binn.c#3340 -> binn_list_get#binn.c#3262, uint64#binn.h#1055
+binn_list_float#binn.c#3346 -> binn_list_get#binn.c#3262
+binn_list_double#binn.c#3352 -> binn_list_get#binn.c#3262
+binn_list_bool#binn.c#3358 -> binn_list_get#binn.c#3262, BOOL#binn.h#1051
+binn_list_null#binn.c#3364 -> BOOL#binn.h#1051, binn_list_get#binn.c#3262
+binn_list_str#binn.c#3368 -> binn_list_get#binn.c#3262
+binn_list_blob#binn.c#3374 -> binn_list_get#binn.c#3262
+binn_list_list#binn.c#3380 -> binn_list_get#binn.c#3262
+binn_list_map#binn.c#3386 -> binn_list_get#binn.c#3262
+binn_list_object#binn.c#3392 -> binn_list_get#binn.c#3262
+binn_map_int8#binn.c#3398 -> binn_map_get#binn.c#3274
+binn_map_int16#binn.c#3404 -> binn_map_get#binn.c#3274
+binn_map_int32#binn.c#3410 -> binn_map_get#binn.c#3274
+binn_map_int64#binn.c#3416 -> binn_map_get#binn.c#3274, int64#binn.h#1053
+binn_map_uint8#binn.c#3422 -> binn_map_get#binn.c#3274
+binn_map_uint16#binn.c#3428 -> binn_map_get#binn.c#3274
+binn_map_uint32#binn.c#3434 -> binn_map_get#binn.c#3274
+binn_map_uint64#binn.c#3440 -> binn_map_get#binn.c#3274, uint64#binn.h#1055
+binn_map_float#binn.c#3446 -> binn_map_get#binn.c#3274
+binn_map_double#binn.c#3452 -> binn_map_get#binn.c#3274
+binn_map_bool#binn.c#3458 -> binn_map_get#binn.c#3274, BOOL#binn.h#1051
+binn_map_null#binn.c#3464 -> BOOL#binn.h#1051, binn_map_get#binn.c#3274
+binn_map_str#binn.c#3468 -> binn_map_get#binn.c#3274
+binn_map_blob#binn.c#3474 -> binn_map_get#binn.c#3274
+binn_map_list#binn.c#3480 -> binn_map_get#binn.c#3274
+binn_map_map#binn.c#3486 -> binn_map_get#binn.c#3274
+binn_map_object#binn.c#3492 -> binn_map_get#binn.c#3274
+binn_object_int8#binn.c#3498 -> binn_object_get#binn.c#3286
+binn_object_int16#binn.c#3504 -> binn_object_get#binn.c#3286
+binn_object_int32#binn.c#3510 -> binn_object_get#binn.c#3286
+binn_object_int64#binn.c#3516 -> binn_object_get#binn.c#3286, int64#binn.h#1053
+binn_object_uint8#binn.c#3522 -> binn_object_get#binn.c#3286
+binn_object_uint16#binn.c#3528 -> binn_object_get#binn.c#3286
+binn_object_uint32#binn.c#3534 -> binn_object_get#binn.c#3286
+binn_object_uint64#binn.c#3540 -> uint64#binn.h#1055, binn_object_get#binn.c#3286
+binn_object_float#binn.c#3546 -> binn_object_get#binn.c#3286
+binn_object_double#binn.c#3552 -> binn_object_get#binn.c#3286
+binn_object_bool#binn.c#3558 -> BOOL#binn.h#1051, binn_object_get#binn.c#3286
+binn_object_null#binn.c#3564 -> BOOL#binn.h#1051, binn_object_get#binn.c#3286
+binn_object_str#binn.c#3568 -> binn_object_get#binn.c#3286
+binn_object_blob#binn.c#3574 -> binn_object_get#binn.c#3286
+binn_object_list#binn.c#3580 -> binn_object_get#binn.c#3286
+binn_object_map#binn.c#3586 -> binn_object_get#binn.c#3286
+binn_object_object#binn.c#3592 -> binn_object_get#binn.c#3286
+binn_list_value#binn.c#3205 -> binn_struct#binn.h#1059, binn_list_get_value#binn.c#2746, binn_malloc#binn.c#1864, free_fn#binn.c#1813
+binn_map_value#binn.c#3216 -> binn_map_get_value#binn.c#2732, binn_malloc#binn.c#1864, binn_struct#binn.h#1059, free_fn#binn.c#1813
+binn_object_value#binn.c#3227 -> binn_struct#binn.h#1059, binn_malloc#binn.c#1864, free_fn#binn.c#1813, binn_object_get_value#binn.c#2718
+binn_list_get_value#binn.c#2746 -> BOOL#binn.h#1051, binn_ptr#binn.c#2549, GetValue#binn.c#2646, binn_struct#binn.h#1059, AdvanceDataPos#binn.c#2066, IsValidBinnHeader#binn.c#2485
+binn_map_get_value#binn.c#2732 -> binn_ptr#binn.c#2549, binn_struct#binn.h#1059, SearchForID#binn.c#2155, BOOL#binn.h#1051, GetValue#binn.c#2646, IsValidBinnHeader#binn.c#2485
+binn_object_get_value#binn.c#2718 -> IsValidBinnHeader#binn.c#2485, BOOL#binn.h#1051, binn_ptr#binn.c#2549, GetValue#binn.c#2646, SearchForKey#binn.c#2171, binn_struct#binn.h#1059
+binn_list_get#binn.c#3262 -> binn_list_get_value#binn.c#2746, BOOL#binn.h#1051, binn_struct#binn.h#1059, zero_value#binn.c#3133, binn_get_read_storage#binn.c#2985, copy_value#binn.c#3149
+binn_map_get#binn.c#3274 -> binn_get_read_storage#binn.c#2985, binn_struct#binn.h#1059, zero_value#binn.c#3133, binn_map_get_value#binn.c#2732, BOOL#binn.h#1051, copy_value#binn.c#3149
+binn_object_get#binn.c#3286 -> zero_value#binn.c#3133, copy_value#binn.c#3149, binn_object_get_value#binn.c#2718, binn_get_read_storage#binn.c#2985, BOOL#binn.h#1051, binn_struct#binn.h#1059
+binn_list_read#binn.c#3238 -> binn_struct#binn.h#1059, binn_list_get_value#binn.c#2746, store_value#binn.c#2710
+binn_map_read#binn.c#3246 -> binn_struct#binn.h#1059, binn_map_get_value#binn.c#2732, store_value#binn.c#2710
+binn_object_read#binn.c#3254 -> store_value#binn.c#2710, binn_object_get_value#binn.c#2718, binn_struct#binn.h#1059
+binn_map_get_pair#binn.c#2809 -> binn_struct#binn.h#1059, BOOL#binn.h#1051, binn_read_pair#binn.c#2767
+binn_object_get_pair#binn.c#2813 -> binn_read_pair#binn.c#2767, binn_struct#binn.h#1059, BOOL#binn.h#1051
+binn_map_pair#binn.c#2817 -> binn_read_pair#binn.c#2767, binn_malloc#binn.c#1864, binn_struct#binn.h#1059, free_fn#binn.c#1813
+binn_object_pair#binn.c#2828 -> binn_read_pair#binn.c#2767, free_fn#binn.c#1813, binn_struct#binn.h#1059, binn_malloc#binn.c#1864
+binn_map_read_pair#binn.c#2839 -> binn_struct#binn.h#1059, binn_map_get_pair#binn.c#2809, store_value#binn.c#2710
+binn_object_read_pair#binn.c#2847 -> store_value#binn.c#2710, binn_object_get_pair#binn.c#2813, binn_struct#binn.h#1059
+binn_iter_init#binn.c#2855 -> BOOL#binn.h#1051, binn_ptr#binn.c#2549, binn_iter_struct#binn.h#1359, IsValidBinnHeader#binn.c#2485
+binn_list_next_value#binn.c#2918 -> binn_struct#binn.h#1059, binn_malloc#binn.c#1864, binn_list_next#binn.c#2870, free_fn#binn.c#1813, binn_iter_struct#binn.h#1359
+binn_map_next_value#binn.c#2929 -> free_fn#binn.c#1813, binn_map_next#binn.c#2910, binn_iter_struct#binn.h#1359, binn_malloc#binn.c#1864, binn_struct#binn.h#1059
+binn_object_next_value#binn.c#2940 -> binn_iter_struct#binn.h#1359, binn_struct#binn.h#1059, binn_object_next#binn.c#2914, free_fn#binn.c#1813, binn_malloc#binn.c#1864
+binn_list_next#binn.c#2870 -> AdvanceDataPos#binn.c#2066, GetValue#binn.c#2646, binn_iter_struct#binn.h#1359, binn_struct#binn.h#1059, BOOL#binn.h#1051
+binn_map_next#binn.c#2910 -> binn_iter_struct#binn.h#1359, binn_struct#binn.h#1059, binn_read_next_pair#binn.c#2881, BOOL#binn.h#1051
+binn_object_next#binn.c#2914 -> binn_read_next_pair#binn.c#2881, binn_iter_struct#binn.h#1359, binn_struct#binn.h#1059, BOOL#binn.h#1051
+binn_list_read_next#binn.c#2951 -> binn_struct#binn.h#1059, binn_list_next#binn.c#2870, binn_iter_struct#binn.h#1359, store_value#binn.c#2710
+binn_map_read_next#binn.c#2959 -> binn_iter_struct#binn.h#1359, store_value#binn.c#2710, binn_map_next#binn.c#2910, binn_struct#binn.h#1059
+binn_object_read_next#binn.c#2967 -> store_value#binn.c#2710, binn_iter_struct#binn.h#1359, binn_object_next#binn.c#2914, binn_struct#binn.h#1059
+binn_set_string#binn.c#3639 -> binn_memdup#binn.c#1869, binn_struct#binn.h#1059, free_fn#binn.c#1813, binn_mem_free#binn.h#1057, BOOL#binn.h#1051
+binn_set_blob#binn.c#3653 -> BOOL#binn.h#1051, binn_struct#binn.h#1059, binn_memdup#binn.c#1869, free_fn#binn.c#1813, binn_mem_free#binn.h#1057
+binn_list_add_int8#binn.h#1391 -> BOOL#binn.h#1051, binn_list_add#binn.c#3160, binn_struct#binn.h#1059
+binn_list_add_int16#binn.h#1395 -> binn_list_add#binn.c#3160, BOOL#binn.h#1051, binn_struct#binn.h#1059
+binn_list_add_int32#binn.h#1399 -> binn_list_add#binn.c#3160, BOOL#binn.h#1051, binn_struct#binn.h#1059
+binn_list_add_int64#binn.h#1403 -> binn_list_add#binn.c#3160, binn_struct#binn.h#1059, BOOL#binn.h#1051, int64#binn.h#1053
+binn_list_add_uint8#binn.h#1407 -> binn_struct#binn.h#1059, BOOL#binn.h#1051, binn_list_add#binn.c#3160
+binn_list_add_uint16#binn.h#1411 -> BOOL#binn.h#1051, binn_list_add#binn.c#3160, binn_struct#binn.h#1059
+binn_list_add_uint32#binn.h#1415 -> binn_list_add#binn.c#3160, binn_struct#binn.h#1059, BOOL#binn.h#1051
+binn_list_add_uint64#binn.h#1419 -> binn_struct#binn.h#1059, binn_list_add#binn.c#3160, uint64#binn.h#1055, BOOL#binn.h#1051
+binn_list_add_float#binn.h#1423 -> binn_list_add#binn.c#3160, BOOL#binn.h#1051, binn_struct#binn.h#1059
+binn_list_add_double#binn.h#1427 -> binn_struct#binn.h#1059, BOOL#binn.h#1051, binn_list_add#binn.c#3160
+binn_list_add_bool#binn.h#1431 -> BOOL#binn.h#1051, binn_list_add#binn.c#3160, binn_struct#binn.h#1059
+binn_list_add_null#binn.h#1435 -> binn_list_add#binn.c#3160, binn_struct#binn.h#1059, BOOL#binn.h#1051
+binn_list_add_str#binn.h#1439 -> binn_struct#binn.h#1059, binn_list_add#binn.c#3160, BOOL#binn.h#1051
+binn_list_add_blob#binn.h#1443 -> binn_struct#binn.h#1059, binn_list_add#binn.c#3160, BOOL#binn.h#1051
+binn_list_add_list#binn.h#1447 -> BOOL#binn.h#1051, binn_ptr#binn.c#2549, binn_struct#binn.h#1059, binn_size#binn.c#2562, binn_list_add#binn.c#3160
+binn_list_add_map#binn.h#1451 -> binn_list_add#binn.c#3160, binn_ptr#binn.c#2549, binn_struct#binn.h#1059, binn_size#binn.c#2562, BOOL#binn.h#1051
+binn_list_add_object#binn.h#1455 -> binn_list_add#binn.c#3160, binn_struct#binn.h#1059, binn_ptr#binn.c#2549, BOOL#binn.h#1051, binn_size#binn.c#2562
+binn_list_add_value#binn.h#1459 -> binn_list_add#binn.c#3160, binn_ptr#binn.c#2549, binn_struct#binn.h#1059, BOOL#binn.h#1051, binn_size#binn.c#2562
+binn_map_set_int8#binn.h#1463 -> BOOL#binn.h#1051, binn_struct#binn.h#1059, binn_map_set#binn.c#3165
+binn_map_set_int16#binn.h#1467 -> binn_map_set#binn.c#3165, binn_struct#binn.h#1059, BOOL#binn.h#1051
+binn_map_set_int32#binn.h#1471 -> binn_struct#binn.h#1059, binn_map_set#binn.c#3165, BOOL#binn.h#1051
+binn_map_set_int64#binn.h#1475 -> binn_map_set#binn.c#3165, int64#binn.h#1053, BOOL#binn.h#1051, binn_struct#binn.h#1059
+binn_map_set_uint8#binn.h#1479 -> binn_map_set#binn.c#3165, binn_struct#binn.h#1059, BOOL#binn.h#1051
+binn_map_set_uint16#binn.h#1483 -> BOOL#binn.h#1051, binn_struct#binn.h#1059, binn_map_set#binn.c#3165
+binn_map_set_uint32#binn.h#1487 -> BOOL#binn.h#1051, binn_struct#binn.h#1059, binn_map_set#binn.c#3165
+binn_map_set_uint64#binn.h#1491 -> BOOL#binn.h#1051, uint64#binn.h#1055, binn_struct#binn.h#1059, binn_map_set#binn.c#3165
+binn_map_set_float#binn.h#1495 -> BOOL#binn.h#1051, binn_map_set#binn.c#3165, binn_struct#binn.h#1059
+binn_map_set_double#binn.h#1499 -> BOOL#binn.h#1051, binn_map_set#binn.c#3165, binn_struct#binn.h#1059
+binn_map_set_bool#binn.h#1503 -> BOOL#binn.h#1051, binn_struct#binn.h#1059, binn_map_set#binn.c#3165
+binn_map_set_null#binn.h#1507 -> binn_map_set#binn.c#3165, binn_struct#binn.h#1059, BOOL#binn.h#1051
+binn_map_set_str#binn.h#1511 -> binn_struct#binn.h#1059, BOOL#binn.h#1051, binn_map_set#binn.c#3165
+binn_map_set_blob#binn.h#1515 -> BOOL#binn.h#1051, binn_map_set#binn.c#3165, binn_struct#binn.h#1059
+binn_map_set_list#binn.h#1519 -> BOOL#binn.h#1051, binn_map_set#binn.c#3165, binn_ptr#binn.c#2549, binn_struct#binn.h#1059, binn_size#binn.c#2562
+binn_map_set_map#binn.h#1523 -> binn_struct#binn.h#1059, binn_map_set#binn.c#3165, binn_size#binn.c#2562, binn_ptr#binn.c#2549, BOOL#binn.h#1051
+binn_map_set_object#binn.h#1527 -> binn_map_set#binn.c#3165, binn_struct#binn.h#1059, binn_size#binn.c#2562, BOOL#binn.h#1051, binn_ptr#binn.c#2549
+binn_map_set_value#binn.h#1531 -> binn_struct#binn.h#1059, binn_ptr#binn.c#2549, binn_size#binn.c#2562, binn_map_set#binn.c#3165, BOOL#binn.h#1051
+binn_object_set_int8#binn.h#1535 -> binn_struct#binn.h#1059, BOOL#binn.h#1051, binn_object_set#binn.c#3170
+binn_object_set_int16#binn.h#1539 -> binn_object_set#binn.c#3170, BOOL#binn.h#1051, binn_struct#binn.h#1059
+binn_object_set_int32#binn.h#1543 -> BOOL#binn.h#1051, binn_struct#binn.h#1059, binn_object_set#binn.c#3170
+binn_object_set_int64#binn.h#1547 -> binn_object_set#binn.c#3170, binn_struct#binn.h#1059, BOOL#binn.h#1051, int64#binn.h#1053
+binn_object_set_uint8#binn.h#1551 -> BOOL#binn.h#1051, binn_object_set#binn.c#3170, binn_struct#binn.h#1059
+binn_object_set_uint16#binn.h#1555 -> binn_struct#binn.h#1059, binn_object_set#binn.c#3170, BOOL#binn.h#1051
+binn_object_set_uint32#binn.h#1559 -> BOOL#binn.h#1051, binn_struct#binn.h#1059, binn_object_set#binn.c#3170
+binn_object_set_uint64#binn.h#1563 -> BOOL#binn.h#1051, uint64#binn.h#1055, binn_struct#binn.h#1059, binn_object_set#binn.c#3170
+binn_object_set_float#binn.h#1567 -> binn_object_set#binn.c#3170, binn_struct#binn.h#1059, BOOL#binn.h#1051
+binn_object_set_double#binn.h#1571 -> binn_struct#binn.h#1059, BOOL#binn.h#1051, binn_object_set#binn.c#3170
+binn_object_set_bool#binn.h#1575 -> binn_struct#binn.h#1059, BOOL#binn.h#1051, binn_object_set#binn.c#3170
+binn_object_set_null#binn.h#1579 -> BOOL#binn.h#1051, binn_object_set#binn.c#3170, binn_struct#binn.h#1059
+binn_object_set_str#binn.h#1583 -> binn_object_set#binn.c#3170, BOOL#binn.h#1051, binn_struct#binn.h#1059
+binn_object_set_blob#binn.h#1587 -> binn_object_set#binn.c#3170, binn_struct#binn.h#1059, BOOL#binn.h#1051
+binn_object_set_list#binn.h#1591 -> binn_ptr#binn.c#2549, binn_object_set#binn.c#3170, binn_struct#binn.h#1059, binn_size#binn.c#2562, BOOL#binn.h#1051
+binn_object_set_map#binn.h#1595 -> binn_struct#binn.h#1059, BOOL#binn.h#1051, binn_ptr#binn.c#2549, binn_object_set#binn.c#3170, binn_size#binn.c#2562
+binn_object_set_object#binn.h#1599 -> binn_object_set#binn.c#3170, binn_struct#binn.h#1059, binn_size#binn.c#2562, binn_ptr#binn.c#2549, BOOL#binn.h#1051
+binn_object_set_value#binn.h#1603 -> binn_size#binn.c#2562, binn_object_set#binn.c#3170, binn_struct#binn.h#1059, BOOL#binn.h#1051, binn_ptr#binn.c#2549
+binn_list_get_int8#binn.h#1607 -> BOOL#binn.h#1051, binn_list_get#binn.c#3262
+binn_list_get_int16#binn.h#1611 -> BOOL#binn.h#1051, binn_list_get#binn.c#3262
+binn_list_get_int32#binn.h#1615 -> binn_list_get#binn.c#3262, BOOL#binn.h#1051
+binn_list_get_int64#binn.h#1619 -> binn_list_get#binn.c#3262, int64#binn.h#1053, BOOL#binn.h#1051
+binn_list_get_uint8#binn.h#1623 -> BOOL#binn.h#1051, binn_list_get#binn.c#3262
+binn_list_get_uint16#binn.h#1627 -> BOOL#binn.h#1051, binn_list_get#binn.c#3262
+binn_list_get_uint32#binn.h#1631 -> binn_list_get#binn.c#3262, BOOL#binn.h#1051
+binn_list_get_uint64#binn.h#1635 -> BOOL#binn.h#1051, binn_list_get#binn.c#3262, uint64#binn.h#1055
+binn_list_get_float#binn.h#1639 -> BOOL#binn.h#1051, binn_list_get#binn.c#3262
+binn_list_get_double#binn.h#1643 -> binn_list_get#binn.c#3262, BOOL#binn.h#1051
+binn_list_get_bool#binn.h#1647 -> binn_list_get#binn.c#3262, BOOL#binn.h#1051
+binn_list_get_str#binn.h#1651 -> BOOL#binn.h#1051, binn_list_get#binn.c#3262
+binn_list_get_blob#binn.h#1655 -> BOOL#binn.h#1051, binn_list_get#binn.c#3262
+binn_list_get_list#binn.h#1659 -> binn_list_get#binn.c#3262, BOOL#binn.h#1051
+binn_list_get_map#binn.h#1663 -> binn_list_get#binn.c#3262, BOOL#binn.h#1051
+binn_list_get_object#binn.h#1667 -> binn_list_get#binn.c#3262, BOOL#binn.h#1051
+binn_map_get_int8#binn.h#1671 -> binn_map_get#binn.c#3274, BOOL#binn.h#1051
+binn_map_get_int16#binn.h#1675 -> binn_map_get#binn.c#3274, BOOL#binn.h#1051
+binn_map_get_int32#binn.h#1679 -> BOOL#binn.h#1051, binn_map_get#binn.c#3274
+binn_map_get_int64#binn.h#1683 -> binn_map_get#binn.c#3274, int64#binn.h#1053, BOOL#binn.h#1051
+binn_map_get_uint8#binn.h#1687 -> BOOL#binn.h#1051, binn_map_get#binn.c#3274
+binn_map_get_uint16#binn.h#1691 -> BOOL#binn.h#1051, binn_map_get#binn.c#3274
+binn_map_get_uint32#binn.h#1695 -> BOOL#binn.h#1051, binn_map_get#binn.c#3274
+binn_map_get_uint64#binn.h#1699 -> binn_map_get#binn.c#3274, uint64#binn.h#1055, BOOL#binn.h#1051
+binn_map_get_float#binn.h#1703 -> BOOL#binn.h#1051, binn_map_get#binn.c#3274
+binn_map_get_double#binn.h#1707 -> BOOL#binn.h#1051, binn_map_get#binn.c#3274
+binn_map_get_bool#binn.h#1711 -> BOOL#binn.h#1051, binn_map_get#binn.c#3274
+binn_map_get_str#binn.h#1715 -> BOOL#binn.h#1051, binn_map_get#binn.c#3274
+binn_map_get_blob#binn.h#1719 -> BOOL#binn.h#1051, binn_map_get#binn.c#3274
+binn_map_get_list#binn.h#1723 -> BOOL#binn.h#1051, binn_map_get#binn.c#3274
+binn_map_get_map#binn.h#1727 -> binn_map_get#binn.c#3274, BOOL#binn.h#1051
+binn_map_get_object#binn.h#1731 -> BOOL#binn.h#1051, binn_map_get#binn.c#3274
+binn_object_get_int8#binn.h#1735 -> binn_object_get#binn.c#3286, BOOL#binn.h#1051
+binn_object_get_int16#binn.h#1739 -> BOOL#binn.h#1051, binn_object_get#binn.c#3286
+binn_object_get_int32#binn.h#1743 -> BOOL#binn.h#1051, binn_object_get#binn.c#3286
+binn_object_get_int64#binn.h#1747 -> binn_object_get#binn.c#3286, BOOL#binn.h#1051, int64#binn.h#1053
+binn_object_get_uint8#binn.h#1751 -> binn_object_get#binn.c#3286, BOOL#binn.h#1051
+binn_object_get_uint16#binn.h#1755 -> BOOL#binn.h#1051, binn_object_get#binn.c#3286
+binn_object_get_uint32#binn.h#1759 -> BOOL#binn.h#1051, binn_object_get#binn.c#3286
+binn_object_get_uint64#binn.h#1763 -> binn_object_get#binn.c#3286, uint64#binn.h#1055, BOOL#binn.h#1051
+binn_object_get_float#binn.h#1767 -> BOOL#binn.h#1051, binn_object_get#binn.c#3286
+binn_object_get_double#binn.h#1771 -> BOOL#binn.h#1051, binn_object_get#binn.c#3286
+binn_object_get_bool#binn.h#1775 -> binn_object_get#binn.c#3286, BOOL#binn.h#1051
+binn_object_get_str#binn.h#1779 -> BOOL#binn.h#1051, binn_object_get#binn.c#3286
+binn_object_get_blob#binn.h#1783 -> BOOL#binn.h#1051, binn_object_get#binn.c#3286
+binn_object_get_list#binn.h#1787 -> BOOL#binn.h#1051, binn_object_get#binn.c#3286
+binn_object_get_map#binn.h#1791 -> binn_object_get#binn.c#3286, BOOL#binn.h#1051
+binn_object_get_object#binn.h#1795 -> BOOL#binn.h#1051, binn_object_get#binn.c#3286
+binn_get_int32#binn.c#3741 -> is_integer#binn.c#3683, is_float#binn.c#3697, type_family#binn.c#3026, binn_struct#binn.h#1059, BOOL#binn.h#1051, copy_int_value#binn.c#3066
+binn_get_int64#binn.c#3764 -> atoi64#binn.c#3668, copy_int_value#binn.c#3066, binn_struct#binn.h#1059, type_family#binn.c#3026, int64#binn.h#1053, is_float#binn.c#3697, BOOL#binn.h#1051, is_integer#binn.c#3683
+binn_get_double#binn.c#3787 -> type_family#binn.c#3026, int64#binn.h#1053, copy_int_value#binn.c#3066, binn_struct#binn.h#1059, is_float#binn.c#3697, BOOL#binn.h#1051, is_integer#binn.c#3683, atoi64#binn.c#3668
+binn_get_bool#binn.c#3811 -> copy_int_value#binn.c#3066, BOOL#binn.h#1051, int64#binn.h#1053, binn_struct#binn.h#1059, type_family#binn.c#3026, is_bool_str#binn.c#3715
+binn_get_str#binn.c#3832 -> int64#binn.h#1053, type_family#binn.c#3026, copy_int_value#binn.c#3066, binn_struct#binn.h#1059
+copy_be16#binn.c#1821 -> binn_struct#binn.h#1059, u16#binn.c#1815
+copy_be32#binn.c#1828 -> binn_struct#binn.h#1059, u32#binn.c#1817
+copy_be64#binn.c#1837 -> binn_struct#binn.h#1059, u64#binn.c#1819
+IsValidBinnHeader#binn.c#2485 -> binn_struct#binn.h#1059, BOOL#binn.h#1051, u32#binn.c#1817, copy_be32#binn.c#1828
+check_alloc_functions#binn.c#1858 -> malloc_fn#binn.c#1809, realloc_fn#binn.c#1811, free_fn#binn.c#1813
+binn_malloc#binn.c#1864 -> binn_struct#binn.h#1059, check_alloc_functions#binn.c#1858, malloc_fn#binn.c#1809
+binn_memdup#binn.c#1869 -> binn_malloc#binn.c#1864, binn_struct#binn.h#1059
+strlen2#binn.c#1878
+binn_get_ptr_type#binn.c#2026
+CalcAllocation#binn.c#2043 -> binn_struct#binn.h#1059
+CheckAllocation#binn.c#2052 -> BOOL#binn.h#1051, CalcAllocation#binn.c#2043, realloc_fn#binn.c#1811, binn_struct#binn.h#1059
+AdvanceDataPos#binn.c#2066 -> binn_iter_struct#binn.h#1359, u32#binn.c#1817, copy_be32#binn.c#1828
+read_map_id#binn.c#2114 -> u32#binn.c#1817, binn_iter_struct#binn.h#1359, copy_be32#binn.c#1828
+SearchForID#binn.c#2155 -> AdvanceDataPos#binn.c#2066, binn_struct#binn.h#1059, read_map_id#binn.c#2114
+SearchForKey#binn.c#2171 -> binn_struct#binn.h#1059, AdvanceDataPos#binn.c#2066
+AddValue#binn.c#2326 -> u16#binn.c#1815, binn_get_type_info#binn.c#1895, copy_be16#binn.c#1821, strlen2#binn.c#1878, type_family#binn.c#3026, BOOL#binn.h#1051, binn_struct#binn.h#1059, copy_be64#binn.c#1837, CheckAllocation#binn.c#2052, u32#binn.c#1817, copy_be32#binn.c#1828, compress_int#binn.c#2274, u64#binn.c#1819
+binn_list_add_raw#binn.c#2202 -> BOOL#binn.h#1051, binn_struct#binn.h#1059, AddValue#binn.c#2326
+binn_object_set_raw#binn.c#2209 -> AddValue#binn.c#2326, CheckAllocation#binn.c#2052, SearchForKey#binn.c#2171, binn_struct#binn.h#1059, BOOL#binn.h#1051
+binn_map_set_raw#binn.c#2234 -> binn_struct#binn.h#1059, CheckAllocation#binn.c#2052, AddValue#binn.c#2326, u32#binn.c#1817, copy_be32#binn.c#1828, SearchForID#binn.c#2155, BOOL#binn.h#1051
+compress_int#binn.c#2274 -> int64#binn.h#1053, uint64#binn.h#1055, binn_get_write_storage#binn.c#2975
+type_family#binn.c#3026 -> binn_struct#binn.h#1059
+binn_save_header#binn.c#2421 -> BOOL#binn.h#1051, copy_be32#binn.c#1828, u32#binn.c#1817, binn_struct#binn.h#1059
+binn_buf_type#binn.c#2531 -> IsValidBinnHeader#binn.c#2485
+binn_buf_count#binn.c#2537 -> IsValidBinnHeader#binn.c#2485
+binn_buf_size#binn.c#2543 -> IsValidBinnHeader#binn.c#2485
+GetValue#binn.c#2646 -> u16#binn.c#1815, copy_be64#binn.c#1837, copy_be16#binn.c#1821, IsValidBinnHeader#binn.c#2485, binn_struct#binn.h#1059, u64#binn.c#1819, BOOL#binn.h#1051, copy_be32#binn.c#1828, u32#binn.c#1817
+store_value#binn.c#2710 -> binn_get_read_storage#binn.c#2985, binn_struct#binn.h#1059, local_value#binn.c#2708
+binn_read_pair#binn.c#2767 -> binn_struct#binn.h#1059, IsValidBinnHeader#binn.c#2485, BOOL#binn.h#1051, read_map_id#binn.c#2114, AdvanceDataPos#binn.c#2066, binn_ptr#binn.c#2549, GetValue#binn.c#2646
+binn_read_next_pair#binn.c#2881 -> read_map_id#binn.c#2114, GetValue#binn.c#2646, BOOL#binn.h#1051, binn_struct#binn.h#1059, binn_iter_struct#binn.h#1359, AdvanceDataPos#binn.c#2066
+GetWriteConvertedData#binn.c#2994 -> BOOL#binn.h#1051
+int_type#binn.c#3040
+copy_raw_value#binn.c#3048 -> BOOL#binn.h#1051, binn_struct#binn.h#1059, uint64#binn.h#1055
+copy_int_value#binn.c#3066 -> BOOL#binn.h#1051, binn_struct#binn.h#1059, int_type#binn.c#3040, int64#binn.h#1053, uint64#binn.h#1055
+copy_float_value#binn.c#3122 -> BOOL#binn.h#1051
+zero_value#binn.c#3133 -> uint64#binn.h#1055, binn_get_read_storage#binn.c#2985
+copy_value#binn.c#3149 -> copy_raw_value#binn.c#3048, copy_float_value#binn.c#3122, binn_struct#binn.h#1059, copy_int_value#binn.c#3066, BOOL#binn.h#1051, type_family#binn.c#3026
+binn_add_value#binn.c#3175 -> binn_struct#binn.h#1059, BOOL#binn.h#1051, binn_type#binn.c#2575, binn_list_add#binn.c#3160, binn_map_set#binn.c#3165, binn_object_set#binn.c#3170
+binn_alloc_item#binn.c#3598 -> binn_malloc#binn.c#1864, binn_struct#binn.h#1059
+atoi64#binn.c#3668 -> binn_struct#binn.h#1059, int64#binn.h#1053
+is_integer#binn.c#3683 -> BOOL#binn.h#1051, binn_struct#binn.h#1059
+is_float#binn.c#3697 -> BOOL#binn.h#1051, binn_struct#binn.h#1059
+is_bool_str#binn.c#3715 -> atoi64#binn.c#3668, is_float#binn.c#3697, BOOL#binn.h#1051, int64#binn.h#1053, is_integer#binn.c#3683, binn_struct#binn.h#1059
+
+SPLIT_TAG
+
+int_type#binn.c#3040
+strlen2#binn.c#1878
+binn_get_ptr_type#binn.c#2026
+binn_create_type#binn.c#1883
+binn_version#binn.c#1848
+malloc_fn#binn.c#1809
+u64#binn.c#1819
+u32#binn.c#1817
+u16#binn.c#1815
+int64#binn.h#1053
+binn_mem_free#binn.h#1057
+uint64#binn.h#1055
+BOOL#binn.h#1051
+binn_iter_struct#binn.h#1359
+binn_struct#binn.h#1059
+binn_get_type_info#binn.c#1895
+binn_is_struct#binn.c#2034
+GetWriteConvertedData#binn.c#2994
+copy_float_value#binn.c#3122
+realloc_fn#binn.c#1811
+free_fn#binn.c#1813
+local_value#binn.c#2708
+binn_is_container#binn.c#3858
+copy_be16#binn.c#1821
+copy_be32#binn.c#1828
+copy_be64#binn.c#1837
+CalcAllocation#binn.c#2043
+type_family#binn.c#3026
+copy_raw_value#binn.c#3048
+copy_int_value#binn.c#3066
+atoi64#binn.c#3668
+is_integer#binn.c#3683
+is_float#binn.c#3697
+binn_get_write_storage#binn.c#2975
+binn_get_read_storage#binn.c#2985
+binn_set_alloc_functions#binn.c#1852
+binn_free#binn.c#2454
+check_alloc_functions#binn.c#1858
+IsValidBinnHeader#binn.c#2485
+AdvanceDataPos#binn.c#2066
+read_map_id#binn.c#2114
+binn_save_header#binn.c#2421
+CheckAllocation#binn.c#2052
+binn_get_str#binn.c#3832
+copy_value#binn.c#3149
+binn_get_int32#binn.c#3741
+binn_get_int64#binn.c#3764
+binn_get_double#binn.c#3787
+is_bool_str#binn.c#3715
+compress_int#binn.c#2274
+store_value#binn.c#2710
+zero_value#binn.c#3133
+binn_malloc#binn.c#1864
+binn_buf_type#binn.c#2531
+binn_buf_count#binn.c#2537
+binn_buf_size#binn.c#2543
+GetValue#binn.c#2646
+SearchForKey#binn.c#2171
+SearchForID#binn.c#2155
+binn_ptr#binn.c#2549
+binn_get_bool#binn.c#3811
+AddValue#binn.c#2326
+binn_create#binn.c#1921
+binn_memdup#binn.c#1869
+binn_alloc_item#binn.c#3598
+binn_type#binn.c#2575
+binn_count#binn.c#2585
+binn_size#binn.c#2562
+binn_list_next#binn.c#2870
+binn_read_next_pair#binn.c#2881
+binn_release#binn.c#2468
+binn_is_valid_ex#binn.c#2595
+binn_list_get_value#binn.c#2746
+binn_map_get_value#binn.c#2732
+binn_object_get_value#binn.c#2718
+binn_iter_init#binn.c#2855
+binn_read_pair#binn.c#2767
+binn_list_add_raw#binn.c#2202
+binn_object_set_raw#binn.c#2209
+binn_map_set_raw#binn.c#2234
+binn_new#binn.c#1954
+binn_create_list#binn.c#1965
+binn_create_map#binn.c#1969
+binn_create_object#binn.c#1973
+binn_set_string#binn.c#3639
+binn_set_blob#binn.c#3653
+binn_value#binn.c#3609
+binn_list_next_value#binn.c#2918
+binn_list_read_next#binn.c#2951
+binn_map_next#binn.c#2910
+binn_object_next#binn.c#2914
+binn_is_valid#binn.c#2639
+binn_list_value#binn.c#3205
+binn_list_get#binn.c#3262
+binn_list_read#binn.c#3238
+binn_map_value#binn.c#3216
+binn_map_get#binn.c#3274
+binn_map_read#binn.c#3246
+binn_object_value#binn.c#3227
+binn_object_get#binn.c#3286
+binn_object_read#binn.c#3254
+binn_map_get_pair#binn.c#2809
+binn_object_get_pair#binn.c#2813
+binn_map_pair#binn.c#2817
+binn_object_pair#binn.c#2828
+binn_list_add#binn.c#3160
+binn_object_set#binn.c#3170
+binn_map_set#binn.c#3165
+binn_list#binn.c#1977
+binn_map#binn.c#1981
+binn_object#binn.c#1985
+binn_copy#binn.c#1989
+binn_int8#binn.h#1147
+binn_int16#binn.h#1151
+binn_int32#binn.h#1155
+binn_int64#binn.h#1159
+binn_uint8#binn.h#1163
+binn_uint16#binn.h#1167
+binn_uint32#binn.h#1171
+binn_uint64#binn.h#1175
+binn_float#binn.h#1179
+binn_double#binn.h#1183
+binn_bool#binn.h#1187
+binn_null#binn.h#1191
+binn_string#binn.h#1195
+binn_blob#binn.h#1199
+binn_map_next_value#binn.c#2929
+binn_map_read_next#binn.c#2959
+binn_object_next_value#binn.c#2940
+binn_object_read_next#binn.c#2967
+binn_load#binn.c#2006
+binn_list_int8#binn.c#3298
+binn_list_int16#binn.c#3304
+binn_list_int32#binn.c#3310
+binn_list_int64#binn.c#3316
+binn_list_uint8#binn.c#3322
+binn_list_uint16#binn.c#3328
+binn_list_uint32#binn.c#3334
+binn_list_uint64#binn.c#3340
+binn_list_float#binn.c#3346
+binn_list_double#binn.c#3352
+binn_list_bool#binn.c#3358
+binn_list_null#binn.c#3364
+binn_list_str#binn.c#3368
+binn_list_blob#binn.c#3374
+binn_list_list#binn.c#3380
+binn_list_map#binn.c#3386
+binn_list_object#binn.c#3392
+binn_list_get_int8#binn.h#1607
+binn_list_get_int16#binn.h#1611
+binn_list_get_int32#binn.h#1615
+binn_list_get_int64#binn.h#1619
+binn_list_get_uint8#binn.h#1623
+binn_list_get_uint16#binn.h#1627
+binn_list_get_uint32#binn.h#1631
+binn_list_get_uint64#binn.h#1635
+binn_list_get_float#binn.h#1639
+binn_list_get_double#binn.h#1643
+binn_list_get_bool#binn.h#1647
+binn_list_get_str#binn.h#1651
+binn_list_get_blob#binn.h#1655
+binn_list_get_list#binn.h#1659
+binn_list_get_map#binn.h#1663
+binn_list_get_object#binn.h#1667
+binn_map_int8#binn.c#3398
+binn_map_int16#binn.c#3404
+binn_map_int32#binn.c#3410
+binn_map_int64#binn.c#3416
+binn_map_uint8#binn.c#3422
+binn_map_uint16#binn.c#3428
+binn_map_uint32#binn.c#3434
+binn_map_uint64#binn.c#3440
+binn_map_float#binn.c#3446
+binn_map_double#binn.c#3452
+binn_map_bool#binn.c#3458
+binn_map_null#binn.c#3464
+binn_map_str#binn.c#3468
+binn_map_blob#binn.c#3474
+binn_map_list#binn.c#3480
+binn_map_map#binn.c#3486
+binn_map_object#binn.c#3492
+binn_map_get_int8#binn.h#1671
+binn_map_get_int16#binn.h#1675
+binn_map_get_int32#binn.h#1679
+binn_map_get_int64#binn.h#1683
+binn_map_get_uint8#binn.h#1687
+binn_map_get_uint16#binn.h#1691
+binn_map_get_uint32#binn.h#1695
+binn_map_get_uint64#binn.h#1699
+binn_map_get_float#binn.h#1703
+binn_map_get_double#binn.h#1707
+binn_map_get_bool#binn.h#1711
+binn_map_get_str#binn.h#1715
+binn_map_get_blob#binn.h#1719
+binn_map_get_list#binn.h#1723
+binn_map_get_map#binn.h#1727
+binn_map_get_object#binn.h#1731
+binn_object_int8#binn.c#3498
+binn_object_int16#binn.c#3504
+binn_object_int32#binn.c#3510
+binn_object_int64#binn.c#3516
+binn_object_uint8#binn.c#3522
+binn_object_uint16#binn.c#3528
+binn_object_uint32#binn.c#3534
+binn_object_uint64#binn.c#3540
+binn_object_float#binn.c#3546
+binn_object_double#binn.c#3552
+binn_object_bool#binn.c#3558
+binn_object_null#binn.c#3564
+binn_object_str#binn.c#3568
+binn_object_blob#binn.c#3574
+binn_object_list#binn.c#3580
+binn_object_map#binn.c#3586
+binn_object_object#binn.c#3592
+binn_object_get_int8#binn.h#1735
+binn_object_get_int16#binn.h#1739
+binn_object_get_int32#binn.h#1743
+binn_object_get_int64#binn.h#1747
+binn_object_get_uint8#binn.h#1751
+binn_object_get_uint16#binn.h#1755
+binn_object_get_uint32#binn.h#1759
+binn_object_get_uint64#binn.h#1763
+binn_object_get_float#binn.h#1767
+binn_object_get_double#binn.h#1771
+binn_object_get_bool#binn.h#1775
+binn_object_get_str#binn.h#1779
+binn_object_get_blob#binn.h#1783
+binn_object_get_list#binn.h#1787
+binn_object_get_map#binn.h#1791
+binn_object_get_object#binn.h#1795
+binn_map_read_pair#binn.c#2839
+binn_object_read_pair#binn.c#2847
+binn_list_add_int8#binn.h#1391
+binn_list_add_int16#binn.h#1395
+binn_list_add_int32#binn.h#1399
+binn_list_add_int64#binn.h#1403
+binn_list_add_uint8#binn.h#1407
+binn_list_add_uint16#binn.h#1411
+binn_list_add_uint32#binn.h#1415
+binn_list_add_uint64#binn.h#1419
+binn_list_add_float#binn.h#1423
+binn_list_add_double#binn.h#1427
+binn_list_add_bool#binn.h#1431
+binn_list_add_null#binn.h#1435
+binn_list_add_str#binn.h#1439
+binn_list_add_blob#binn.h#1443
+binn_list_add_list#binn.h#1447
+binn_list_add_map#binn.h#1451
+binn_list_add_object#binn.h#1455
+binn_list_add_value#binn.h#1459
+binn_object_set_int8#binn.h#1535
+binn_object_set_int16#binn.h#1539
+binn_object_set_int32#binn.h#1543
+binn_object_set_int64#binn.h#1547
+binn_object_set_uint8#binn.h#1551
+binn_object_set_uint16#binn.h#1555
+binn_object_set_uint32#binn.h#1559
+binn_object_set_uint64#binn.h#1563
+binn_object_set_float#binn.h#1567
+binn_object_set_double#binn.h#1571
+binn_object_set_bool#binn.h#1575
+binn_object_set_null#binn.h#1579
+binn_object_set_str#binn.h#1583
+binn_object_set_blob#binn.h#1587
+binn_object_set_list#binn.h#1591
+binn_object_set_map#binn.h#1595
+binn_object_set_object#binn.h#1599
+binn_object_set_value#binn.h#1603
+binn_map_set_int8#binn.h#1463
+binn_map_set_int16#binn.h#1467
+binn_map_set_int32#binn.h#1471
+binn_map_set_int64#binn.h#1475
+binn_map_set_uint8#binn.h#1479
+binn_map_set_uint16#binn.h#1483
+binn_map_set_uint32#binn.h#1487
+binn_map_set_uint64#binn.h#1491
+binn_map_set_float#binn.h#1495
+binn_map_set_double#binn.h#1499
+binn_map_set_bool#binn.h#1503
+binn_map_set_null#binn.h#1507
+binn_map_set_str#binn.h#1511
+binn_map_set_blob#binn.h#1515
+binn_map_set_list#binn.h#1519
+binn_map_set_map#binn.h#1523
+binn_map_set_object#binn.h#1527
+binn_map_set_value#binn.h#1531
+binn_add_value#binn.c#3175
+binn_open#binn.c#2015
+binn_list_add_new#binn.c#3184
+binn_object_set_new#binn.c#3198
+binn_map_set_new#binn.c#3191

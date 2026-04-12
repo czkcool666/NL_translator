@@ -1,0 +1,13 @@
+[
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-Wall",
+            "-fPIC",
+            "src/binn.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/binn",
+        "file": "src/binn.c"
+    }
+]

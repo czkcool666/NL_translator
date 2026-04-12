@@ -1,0 +1,863 @@
+[
+  {
+    "source": "bounds_8c_1ae9a9883e25f6dfafbab766c31294e1a6",
+    "target": "bounds_8c_1afb8699abb1f51d920a176e695ff3be8a#node_8c_1afb8699abb1f51d920a176e695ff3be8a#point_8c_1afb8699abb1f51d920a176e695ff3be8a#quadtree_8c_1afb8699abb1f51d920a176e695ff3be8a",
+    "source_unique_name": "quadtree_bounds_free#bounds.c#724",
+    "target_unique_name": "free#stdlib.h#75",
+    "type": "reference"
+  },
+  {
+    "source": "node_8c_1aa2910508a6be85940b1d7e76c5638682",
+    "target": "bounds_8c_1a0c7ae9009dd427eadb8fa0b364612cc2",
+    "source_unique_name": "quadtree_node_with_bounds#node.c#745",
+    "target_unique_name": "quadtree_bounds_new#bounds.c#730",
+    "type": "reference"
+  },
+  {
+    "source": "node_8c_1ae88dcd2e96b5a4d587a47f16c61c8495",
+    "target": "structquadtree__node#structquadtree__node_1ab23ce57f7ef4db4eb1fe5ba484a45c4f#structquadtree__node_1a57d66e44f8f9246c0b3f35730af2f8bc#structquadtree__node_1abd00b882c603db8d6e48fca7f0e6186e#structquadtree__node_1a66340656ad93b471f701c06e0578f6ba#structquadtree__node_1a6f0b4794dd7fd62f88d051162ec188a8#structquadtree__node_1a61493774cf03609737d80d3250d3dedf#structquadtree__node_1a3461fe68735d17de2f17c9fe0f7bb7ea#bounds_8c_1aab762981a154817ec4cadd2de7356060#node_8c_1aab762981a154817ec4cadd2de7356060#point_8c_1aab762981a154817ec4cadd2de7356060#quadtree_8c_1aab762981a154817ec4cadd2de7356060",
+    "source_unique_name": "quadtree_node_reset#node.c#727",
+    "target_unique_name": "quadtree_node#quadtree.h#665",
+    "type": "reference"
+  },
+  {
+    "source": "point_8c_1ad77a1b3345d140a805d2a68095dac46c",
+    "target": "structquadtree__point#structquadtree__point_1af0167017887a5b57cbb235ff3567f407#structquadtree__point_1aca24ed40546776057b91bba8ede5b331#bounds_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#node_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#point_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#quadtree_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34",
+    "source_unique_name": "quadtree_point_free#point.c#723",
+    "target_unique_name": "quadtree_point#quadtree.h#653",
+    "type": "reference"
+  },
+  {
+    "source": "node_8c_1ae88dcd2e96b5a4d587a47f16c61c8495",
+    "target": "point_8c_1ad77a1b3345d140a805d2a68095dac46c",
+    "source_unique_name": "quadtree_node_reset#node.c#727",
+    "target_unique_name": "quadtree_point_free#point.c#723",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1afd4bf2faec43342e7ad3d2ab37bac1fe#node_8c_1afd4bf2faec43342e7ad3d2ab37bac1fe#point_8c_1afd4bf2faec43342e7ad3d2ab37bac1fe#quadtree_8c_1afd4bf2faec43342e7ad3d2ab37bac1fe",
+    "target": "bounds_8c_1a35e28bfcc8d641e0eebd66f4dc559a3f#node_8c_1a35e28bfcc8d641e0eebd66f4dc559a3f#point_8c_1a35e28bfcc8d641e0eebd66f4dc559a3f#quadtree_8c_1a35e28bfcc8d641e0eebd66f4dc559a3f",
+    "source_unique_name": "qsort#stdlib.h#110",
+    "target_unique_name": "__compar_fn_t#stdlib.h#89",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1a0c7ae9009dd427eadb8fa0b364612cc2",
+    "target": "bounds_8c_1ae91b3dc6530d8a443eb7f01137f5aeff#node_8c_1ae91b3dc6530d8a443eb7f01137f5aeff#point_8c_1ae91b3dc6530d8a443eb7f01137f5aeff#quadtree_8c_1ae91b3dc6530d8a443eb7f01137f5aeff",
+    "source_unique_name": "quadtree_bounds_new#bounds.c#730",
+    "target_unique_name": "malloc#stdlib.h#69",
+    "type": "reference"
+  },
+  {
+    "source": "node_8c_1ae88dcd2e96b5a4d587a47f16c61c8495",
+    "target": "quadtree_8c_1a9f8bd91eeec7312420776fd5a3cacf9d",
+    "source_unique_name": "quadtree_node_reset#node.c#727",
+    "target_unique_name": "elision_#quadtree.c#727",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a6c1f6b4af2919972dfb9a8515eb2e0d0",
+    "target": "quadtree_8c_1a9f8bd91eeec7312420776fd5a3cacf9d",
+    "source_unique_name": "quadtree_free#quadtree.c#827",
+    "target_unique_name": "elision_#quadtree.c#727",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1afd4bf2faec43342e7ad3d2ab37bac1fe#node_8c_1afd4bf2faec43342e7ad3d2ab37bac1fe#point_8c_1afd4bf2faec43342e7ad3d2ab37bac1fe#quadtree_8c_1afd4bf2faec43342e7ad3d2ab37bac1fe",
+    "target": "bounds_8c_1a222d67ef9d7959e65735150c95b7eee3#node_8c_1a222d67ef9d7959e65735150c95b7eee3#point_8c_1a222d67ef9d7959e65735150c95b7eee3#quadtree_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "qsort#stdlib.h#110",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a1cd44fe805fa1c8c73fbe0d842e856fe",
+    "target": "structquadtree__point#structquadtree__point_1af0167017887a5b57cbb235ff3567f407#structquadtree__point_1aca24ed40546776057b91bba8ede5b331#bounds_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#node_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#point_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#quadtree_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34",
+    "source_unique_name": "find_#quadtree.c#769",
+    "target_unique_name": "quadtree_point#quadtree.h#653",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a1cd44fe805fa1c8c73fbe0d842e856fe",
+    "target": "structquadtree__node#structquadtree__node_1ab23ce57f7ef4db4eb1fe5ba484a45c4f#structquadtree__node_1a57d66e44f8f9246c0b3f35730af2f8bc#structquadtree__node_1abd00b882c603db8d6e48fca7f0e6186e#structquadtree__node_1a66340656ad93b471f701c06e0578f6ba#structquadtree__node_1a6f0b4794dd7fd62f88d051162ec188a8#structquadtree__node_1a61493774cf03609737d80d3250d3dedf#structquadtree__node_1a3461fe68735d17de2f17c9fe0f7bb7ea#bounds_8c_1aab762981a154817ec4cadd2de7356060#node_8c_1aab762981a154817ec4cadd2de7356060#point_8c_1aab762981a154817ec4cadd2de7356060#quadtree_8c_1aab762981a154817ec4cadd2de7356060",
+    "source_unique_name": "find_#quadtree.c#769",
+    "target_unique_name": "quadtree_node#quadtree.h#665",
+    "type": "reference"
+  },
+  {
+    "source": "structquadtree__node#structquadtree__node_1ab23ce57f7ef4db4eb1fe5ba484a45c4f#structquadtree__node_1a57d66e44f8f9246c0b3f35730af2f8bc#structquadtree__node_1abd00b882c603db8d6e48fca7f0e6186e#structquadtree__node_1a66340656ad93b471f701c06e0578f6ba#structquadtree__node_1a6f0b4794dd7fd62f88d051162ec188a8#structquadtree__node_1a61493774cf03609737d80d3250d3dedf#structquadtree__node_1a3461fe68735d17de2f17c9fe0f7bb7ea#bounds_8c_1aab762981a154817ec4cadd2de7356060#node_8c_1aab762981a154817ec4cadd2de7356060#point_8c_1aab762981a154817ec4cadd2de7356060#quadtree_8c_1aab762981a154817ec4cadd2de7356060",
+    "target": "structquadtree__bounds#structquadtree__bounds_1ae3d519a129c9957c06b85ae02b031808#structquadtree__bounds_1a8ad0d161cd767af1112fb3c5e1e2a3b8#structquadtree__bounds_1a1b725d2fbbfafd6eddc361d47e78e956#structquadtree__bounds_1a413afaed70b9ad4ce479e8c62d964b32#bounds_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e#node_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e#point_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e#quadtree_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e",
+    "source_unique_name": "quadtree_node#quadtree.h#665",
+    "target_unique_name": "quadtree_bounds#quadtree.h#658",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a0299deb49d8368d3a8c7969538c4854b",
+    "target": "structquadtree__point#structquadtree__point_1af0167017887a5b57cbb235ff3567f407#structquadtree__point_1aca24ed40546776057b91bba8ede5b331#bounds_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#node_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#point_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#quadtree_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34",
+    "source_unique_name": "insert_#quadtree.c#781",
+    "target_unique_name": "quadtree_point#quadtree.h#653",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a1cd44fe805fa1c8c73fbe0d842e856fe",
+    "target": "quadtree_8c_1a2b153d445d2176b8eda255b49bf9906a",
+    "source_unique_name": "find_#quadtree.c#769",
+    "target_unique_name": "get_quadrant_#quadtree.c#737",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1ad00c3842848f51c72fe564027619c57e#node_8c_1ad00c3842848f51c72fe564027619c57e#point_8c_1ad00c3842848f51c72fe564027619c57e#quadtree_8c_1ad00c3842848f51c72fe564027619c57e",
+    "target": "bounds_8c_1a006ca3e0399afef64f06dd6aad559c9a#node_8c_1a006ca3e0399afef64f06dd6aad559c9a#point_8c_1a006ca3e0399afef64f06dd6aad559c9a#quadtree_8c_1a006ca3e0399afef64f06dd6aad559c9a",
+    "source_unique_name": "atol#stdlib.h#57",
+    "target_unique_name": "strtol#stdlib.h#45",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1a8dfcdf0f629261c1e7e032535fd5d21a#node_8c_1a8dfcdf0f629261c1e7e032535fd5d21a#point_8c_1a8dfcdf0f629261c1e7e032535fd5d21a#quadtree_8c_1a8dfcdf0f629261c1e7e032535fd5d21a",
+    "target": "bounds_8c_1a25875528640a3eee1a026956baa82249#node_8c_1a25875528640a3eee1a026956baa82249#point_8c_1a25875528640a3eee1a026956baa82249#quadtree_8c_1a25875528640a3eee1a026956baa82249",
+    "source_unique_name": "__uint_least8_t#types.h#164",
+    "target_unique_name": "__uint8_t#types.h#148",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1a1dcbc7b06e2d1540b8a1e022445fecb7#node_8c_1a1dcbc7b06e2d1540b8a1e022445fecb7#point_8c_1a1dcbc7b06e2d1540b8a1e022445fecb7#quadtree_8c_1a1dcbc7b06e2d1540b8a1e022445fecb7",
+    "target": "structldiv__t#structldiv__t_1ac56cf5939abb521a3a0c48f422b72271#structldiv__t_1a66737a893b8872671393a49aaf568cb1",
+    "source_unique_name": "ldiv#stdlib.h#120",
+    "target_unique_name": "ldiv_t#stdlib.h#19",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a0299deb49d8368d3a8c7969538c4854b",
+    "target": "quadtree_8c_1a5c2c2b365960d4abcb7dcb22ff4b70ce",
+    "source_unique_name": "insert_#quadtree.c#781",
+    "target_unique_name": "split_node_#quadtree.c#745",
+    "type": "reference"
+  },
+  {
+    "source": "node_8c_1ab2e25bf3eba2ba4c2d3676945002dac7",
+    "target": "bounds_8c_1afb8699abb1f51d920a176e695ff3be8a#node_8c_1afb8699abb1f51d920a176e695ff3be8a#point_8c_1afb8699abb1f51d920a176e695ff3be8a#quadtree_8c_1afb8699abb1f51d920a176e695ff3be8a",
+    "source_unique_name": "quadtree_node_free#node.c#754",
+    "target_unique_name": "free#stdlib.h#75",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a126c8a92ce697c94afd0fbe6ce4fa37a",
+    "target": "quadtree_8c_1a4f4e8a96acd2edb7a655941ab5c57c33",
+    "source_unique_name": "quadtree_insert#quadtree.c#814",
+    "target_unique_name": "node_contains_#quadtree.c#723",
+    "type": "reference"
+  },
+  {
+    "source": "point_8c_1ad77a1b3345d140a805d2a68095dac46c",
+    "target": "structquadtree__node#structquadtree__node_1ab23ce57f7ef4db4eb1fe5ba484a45c4f#structquadtree__node_1a57d66e44f8f9246c0b3f35730af2f8bc#structquadtree__node_1abd00b882c603db8d6e48fca7f0e6186e#structquadtree__node_1a66340656ad93b471f701c06e0578f6ba#structquadtree__node_1a6f0b4794dd7fd62f88d051162ec188a8#structquadtree__node_1a61493774cf03609737d80d3250d3dedf#structquadtree__node_1a3461fe68735d17de2f17c9fe0f7bb7ea#bounds_8c_1aab762981a154817ec4cadd2de7356060#node_8c_1aab762981a154817ec4cadd2de7356060#point_8c_1aab762981a154817ec4cadd2de7356060#quadtree_8c_1aab762981a154817ec4cadd2de7356060",
+    "source_unique_name": "quadtree_point_free#point.c#723",
+    "target_unique_name": "quadtree_node#quadtree.h#665",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a6c1f6b4af2919972dfb9a8515eb2e0d0",
+    "target": "node_8c_1ab2e25bf3eba2ba4c2d3676945002dac7",
+    "source_unique_name": "quadtree_free#quadtree.c#827",
+    "target_unique_name": "quadtree_node_free#node.c#754",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a6c1f6b4af2919972dfb9a8515eb2e0d0",
+    "target": "structquadtree#structquadtree_1af80699effb203a449f4f9dceb77ab572#structquadtree_1a746154f5ba5ba621c7e91c22f21ed5e3#structquadtree_1a326d4354127d6173e569ba870e27017a#bounds_8c_1a509f78812355123992b74533d8d048ef#node_8c_1a509f78812355123992b74533d8d048ef#point_8c_1a509f78812355123992b74533d8d048ef#quadtree_8c_1a509f78812355123992b74533d8d048ef",
+    "source_unique_name": "quadtree_free#quadtree.c#827",
+    "target_unique_name": "quadtree#quadtree.h#675",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a4f4e8a96acd2edb7a655941ab5c57c33",
+    "target": "structquadtree__node#structquadtree__node_1ab23ce57f7ef4db4eb1fe5ba484a45c4f#structquadtree__node_1a57d66e44f8f9246c0b3f35730af2f8bc#structquadtree__node_1abd00b882c603db8d6e48fca7f0e6186e#structquadtree__node_1a66340656ad93b471f701c06e0578f6ba#structquadtree__node_1a6f0b4794dd7fd62f88d051162ec188a8#structquadtree__node_1a61493774cf03609737d80d3250d3dedf#structquadtree__node_1a3461fe68735d17de2f17c9fe0f7bb7ea#bounds_8c_1aab762981a154817ec4cadd2de7356060#node_8c_1aab762981a154817ec4cadd2de7356060#point_8c_1aab762981a154817ec4cadd2de7356060#quadtree_8c_1aab762981a154817ec4cadd2de7356060",
+    "source_unique_name": "node_contains_#quadtree.c#723",
+    "target_unique_name": "quadtree_node#quadtree.h#665",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a54cb355deec1ffdea735dec865ee5ade",
+    "target": "quadtree_8c_1a9f8bd91eeec7312420776fd5a3cacf9d",
+    "source_unique_name": "reset_node_#quadtree.c#729",
+    "target_unique_name": "elision_#quadtree.c#727",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1a2c81f61ee897bc5a1f5491f3e2bf711b#node_8c_1a2c81f61ee897bc5a1f5491f3e2bf711b#point_8c_1a2c81f61ee897bc5a1f5491f3e2bf711b#quadtree_8c_1a2c81f61ee897bc5a1f5491f3e2bf711b",
+    "target": "bounds_8c_1a006ca3e0399afef64f06dd6aad559c9a#node_8c_1a006ca3e0399afef64f06dd6aad559c9a#point_8c_1a006ca3e0399afef64f06dd6aad559c9a#quadtree_8c_1a006ca3e0399afef64f06dd6aad559c9a",
+    "source_unique_name": "atoi#stdlib.h#53",
+    "target_unique_name": "strtol#stdlib.h#45",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1a962256f0ccb26adfecb13c6170ee4b72#node_8c_1a962256f0ccb26adfecb13c6170ee4b72#point_8c_1a962256f0ccb26adfecb13c6170ee4b72#quadtree_8c_1a962256f0ccb26adfecb13c6170ee4b72",
+    "target": "bounds_8c_1ad354a21de2c1a620441cb09b93f96031#node_8c_1ad354a21de2c1a620441cb09b93f96031#point_8c_1ad354a21de2c1a620441cb09b93f96031#quadtree_8c_1ad354a21de2c1a620441cb09b93f96031",
+    "source_unique_name": "__int_least8_t#types.h#162",
+    "target_unique_name": "__int8_t#types.h#146",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a0299deb49d8368d3a8c7969538c4854b",
+    "target": "structquadtree__node#structquadtree__node_1ab23ce57f7ef4db4eb1fe5ba484a45c4f#structquadtree__node_1a57d66e44f8f9246c0b3f35730af2f8bc#structquadtree__node_1abd00b882c603db8d6e48fca7f0e6186e#structquadtree__node_1a66340656ad93b471f701c06e0578f6ba#structquadtree__node_1a6f0b4794dd7fd62f88d051162ec188a8#structquadtree__node_1a61493774cf03609737d80d3250d3dedf#structquadtree__node_1a3461fe68735d17de2f17c9fe0f7bb7ea#bounds_8c_1aab762981a154817ec4cadd2de7356060#node_8c_1aab762981a154817ec4cadd2de7356060#point_8c_1aab762981a154817ec4cadd2de7356060#quadtree_8c_1aab762981a154817ec4cadd2de7356060",
+    "source_unique_name": "insert_#quadtree.c#781",
+    "target_unique_name": "quadtree_node#quadtree.h#665",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1a944b71e747174d578ffd3ed0a0cfba8e#node_8c_1a944b71e747174d578ffd3ed0a0cfba8e#point_8c_1a944b71e747174d578ffd3ed0a0cfba8e#quadtree_8c_1a944b71e747174d578ffd3ed0a0cfba8e",
+    "target": "bounds_8c_1a222d67ef9d7959e65735150c95b7eee3#node_8c_1a222d67ef9d7959e65735150c95b7eee3#point_8c_1a222d67ef9d7959e65735150c95b7eee3#quadtree_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "mbstowcs#stdlib.h#130",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a0ead11ed787ed48610fe81ff9b57cb74",
+    "target": "structquadtree__point#structquadtree__point_1af0167017887a5b57cbb235ff3567f407#structquadtree__point_1aca24ed40546776057b91bba8ede5b331#bounds_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#node_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#point_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#quadtree_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34",
+    "source_unique_name": "quadtree_search#quadtree.c#823",
+    "target_unique_name": "quadtree_point#quadtree.h#653",
+    "type": "reference"
+  },
+  {
+    "source": "node_8c_1ab2e25bf3eba2ba4c2d3676945002dac7",
+    "target": "structquadtree__node#structquadtree__node_1ab23ce57f7ef4db4eb1fe5ba484a45c4f#structquadtree__node_1a57d66e44f8f9246c0b3f35730af2f8bc#structquadtree__node_1abd00b882c603db8d6e48fca7f0e6186e#structquadtree__node_1a66340656ad93b471f701c06e0578f6ba#structquadtree__node_1a6f0b4794dd7fd62f88d051162ec188a8#structquadtree__node_1a61493774cf03609737d80d3250d3dedf#structquadtree__node_1a3461fe68735d17de2f17c9fe0f7bb7ea#bounds_8c_1aab762981a154817ec4cadd2de7356060#node_8c_1aab762981a154817ec4cadd2de7356060#point_8c_1aab762981a154817ec4cadd2de7356060#quadtree_8c_1aab762981a154817ec4cadd2de7356060",
+    "source_unique_name": "quadtree_node_free#node.c#754",
+    "target_unique_name": "quadtree_node#quadtree.h#665",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1a43f6ed0954420f75d09c06224a53c228#node_8c_1a43f6ed0954420f75d09c06224a53c228#point_8c_1a43f6ed0954420f75d09c06224a53c228#quadtree_8c_1a43f6ed0954420f75d09c06224a53c228",
+    "target": "bounds_8c_1a222d67ef9d7959e65735150c95b7eee3#node_8c_1a222d67ef9d7959e65735150c95b7eee3#point_8c_1a222d67ef9d7959e65735150c95b7eee3#quadtree_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "mbtowc#stdlib.h#126",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "structquadtree__bounds#structquadtree__bounds_1ae3d519a129c9957c06b85ae02b031808#structquadtree__bounds_1a8ad0d161cd767af1112fb3c5e1e2a3b8#structquadtree__bounds_1a1b725d2fbbfafd6eddc361d47e78e956#structquadtree__bounds_1a413afaed70b9ad4ce479e8c62d964b32#bounds_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e#node_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e#point_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e#quadtree_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e",
+    "target": "structquadtree__point#structquadtree__point_1af0167017887a5b57cbb235ff3567f407#structquadtree__point_1aca24ed40546776057b91bba8ede5b331#bounds_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#node_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#point_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#quadtree_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34",
+    "source_unique_name": "quadtree_bounds#quadtree.h#658",
+    "target_unique_name": "quadtree_point#quadtree.h#653",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1ae8844e43debcaecd2c2144156923b673",
+    "target": "structquadtree__point#structquadtree__point_1af0167017887a5b57cbb235ff3567f407#structquadtree__point_1aca24ed40546776057b91bba8ede5b331#bounds_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#node_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#point_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#quadtree_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34",
+    "source_unique_name": "quadtree_bounds_extend#bounds.c#715",
+    "target_unique_name": "quadtree_point#quadtree.h#653",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1ae8844e43debcaecd2c2144156923b673",
+    "target": "structquadtree__node#structquadtree__node_1ab23ce57f7ef4db4eb1fe5ba484a45c4f#structquadtree__node_1a57d66e44f8f9246c0b3f35730af2f8bc#structquadtree__node_1abd00b882c603db8d6e48fca7f0e6186e#structquadtree__node_1a66340656ad93b471f701c06e0578f6ba#structquadtree__node_1a6f0b4794dd7fd62f88d051162ec188a8#structquadtree__node_1a61493774cf03609737d80d3250d3dedf#structquadtree__node_1a3461fe68735d17de2f17c9fe0f7bb7ea#bounds_8c_1aab762981a154817ec4cadd2de7356060#node_8c_1aab762981a154817ec4cadd2de7356060#point_8c_1aab762981a154817ec4cadd2de7356060#quadtree_8c_1aab762981a154817ec4cadd2de7356060",
+    "source_unique_name": "quadtree_bounds_extend#bounds.c#715",
+    "target_unique_name": "quadtree_node#quadtree.h#665",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1ae8844e43debcaecd2c2144156923b673",
+    "target": "bounds_8c_1afd8ab12e9d230e8213ac0c8b77c306d9#bounds_8c_1a148b3934c30eee8ad46fb0c6b15ec2d0#node_8c_1afd8ab12e9d230e8213ac0c8b77c306d9#node_8c_1a148b3934c30eee8ad46fb0c6b15ec2d0#point_8c_1afd8ab12e9d230e8213ac0c8b77c306d9#point_8c_1a148b3934c30eee8ad46fb0c6b15ec2d0#quadtree_8c_1afd8ab12e9d230e8213ac0c8b77c306d9#quadtree_8c_1a148b3934c30eee8ad46fb0c6b15ec2d0",
+    "source_unique_name": "quadtree_bounds_extend#bounds.c#715",
+    "target_unique_name": "fmax#mathcalls.h#388",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a54cb355deec1ffdea735dec865ee5ade",
+    "target": "structquadtree#structquadtree_1af80699effb203a449f4f9dceb77ab572#structquadtree_1a746154f5ba5ba621c7e91c22f21ed5e3#structquadtree_1a326d4354127d6173e569ba870e27017a#bounds_8c_1a509f78812355123992b74533d8d048ef#node_8c_1a509f78812355123992b74533d8d048ef#point_8c_1a509f78812355123992b74533d8d048ef#quadtree_8c_1a509f78812355123992b74533d8d048ef",
+    "source_unique_name": "reset_node_#quadtree.c#729",
+    "target_unique_name": "quadtree#quadtree.h#675",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a54cb355deec1ffdea735dec865ee5ade",
+    "target": "structquadtree__node#structquadtree__node_1ab23ce57f7ef4db4eb1fe5ba484a45c4f#structquadtree__node_1a57d66e44f8f9246c0b3f35730af2f8bc#structquadtree__node_1abd00b882c603db8d6e48fca7f0e6186e#structquadtree__node_1a66340656ad93b471f701c06e0578f6ba#structquadtree__node_1a6f0b4794dd7fd62f88d051162ec188a8#structquadtree__node_1a61493774cf03609737d80d3250d3dedf#structquadtree__node_1a3461fe68735d17de2f17c9fe0f7bb7ea#bounds_8c_1aab762981a154817ec4cadd2de7356060#node_8c_1aab762981a154817ec4cadd2de7356060#point_8c_1aab762981a154817ec4cadd2de7356060#quadtree_8c_1aab762981a154817ec4cadd2de7356060",
+    "source_unique_name": "reset_node_#quadtree.c#729",
+    "target_unique_name": "quadtree_node#quadtree.h#665",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a02ffd0e3366374b1a2a34b5d801d98e4",
+    "target": "node_8c_1aa2910508a6be85940b1d7e76c5638682",
+    "source_unique_name": "quadtree_new#quadtree.c#804",
+    "target_unique_name": "quadtree_node_with_bounds#node.c#745",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1ae9a9883e25f6dfafbab766c31294e1a6",
+    "target": "structquadtree__bounds#structquadtree__bounds_1ae3d519a129c9957c06b85ae02b031808#structquadtree__bounds_1a8ad0d161cd767af1112fb3c5e1e2a3b8#structquadtree__bounds_1a1b725d2fbbfafd6eddc361d47e78e956#structquadtree__bounds_1a413afaed70b9ad4ce479e8c62d964b32#bounds_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e#node_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e#point_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e#quadtree_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e",
+    "source_unique_name": "quadtree_bounds_free#bounds.c#724",
+    "target_unique_name": "quadtree_bounds#quadtree.h#658",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1a944b71e747174d578ffd3ed0a0cfba8e#node_8c_1a944b71e747174d578ffd3ed0a0cfba8e#point_8c_1a944b71e747174d578ffd3ed0a0cfba8e#quadtree_8c_1a944b71e747174d578ffd3ed0a0cfba8e",
+    "target": "bounds_8c_1a9c277a3fd853029cc853c877bcd32e8e#node_8c_1a9c277a3fd853029cc853c877bcd32e8e#point_8c_1a9c277a3fd853029cc853c877bcd32e8e#quadtree_8c_1a9c277a3fd853029cc853c877bcd32e8e",
+    "source_unique_name": "mbstowcs#stdlib.h#130",
+    "target_unique_name": "wchar_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "node_8c_1a1e81b03582a8be91089d1c3a2bf3c4d9",
+    "target": "structquadtree__node#structquadtree__node_1ab23ce57f7ef4db4eb1fe5ba484a45c4f#structquadtree__node_1a57d66e44f8f9246c0b3f35730af2f8bc#structquadtree__node_1abd00b882c603db8d6e48fca7f0e6186e#structquadtree__node_1a66340656ad93b471f701c06e0578f6ba#structquadtree__node_1a6f0b4794dd7fd62f88d051162ec188a8#structquadtree__node_1a61493774cf03609737d80d3250d3dedf#structquadtree__node_1a3461fe68735d17de2f17c9fe0f7bb7ea#bounds_8c_1aab762981a154817ec4cadd2de7356060#node_8c_1aab762981a154817ec4cadd2de7356060#point_8c_1aab762981a154817ec4cadd2de7356060#quadtree_8c_1aab762981a154817ec4cadd2de7356060",
+    "source_unique_name": "quadtree_node_new#node.c#732",
+    "target_unique_name": "quadtree_node#quadtree.h#665",
+    "type": "reference"
+  },
+  {
+    "source": "node_8c_1a0f3c8308ddad80691960aaac9aeae426",
+    "target": "structquadtree__node#structquadtree__node_1ab23ce57f7ef4db4eb1fe5ba484a45c4f#structquadtree__node_1a57d66e44f8f9246c0b3f35730af2f8bc#structquadtree__node_1abd00b882c603db8d6e48fca7f0e6186e#structquadtree__node_1a66340656ad93b471f701c06e0578f6ba#structquadtree__node_1a6f0b4794dd7fd62f88d051162ec188a8#structquadtree__node_1a61493774cf03609737d80d3250d3dedf#structquadtree__node_1a3461fe68735d17de2f17c9fe0f7bb7ea#bounds_8c_1aab762981a154817ec4cadd2de7356060#node_8c_1aab762981a154817ec4cadd2de7356060#point_8c_1aab762981a154817ec4cadd2de7356060#quadtree_8c_1aab762981a154817ec4cadd2de7356060",
+    "source_unique_name": "quadtree_node_ispointer#node.c#715",
+    "target_unique_name": "quadtree_node#quadtree.h#665",
+    "type": "reference"
+  },
+  {
+    "source": "node_8c_1a0f3c8308ddad80691960aaac9aeae426",
+    "target": "node_8c_1af3d4e7eb815a49c0b608a66b0ccb94ac",
+    "source_unique_name": "quadtree_node_ispointer#node.c#715",
+    "target_unique_name": "quadtree_node_isleaf#node.c#723",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a0299deb49d8368d3a8c7969538c4854b",
+    "target": "structquadtree#structquadtree_1af80699effb203a449f4f9dceb77ab572#structquadtree_1a746154f5ba5ba621c7e91c22f21ed5e3#structquadtree_1a326d4354127d6173e569ba870e27017a#bounds_8c_1a509f78812355123992b74533d8d048ef#node_8c_1a509f78812355123992b74533d8d048ef#point_8c_1a509f78812355123992b74533d8d048ef#quadtree_8c_1a509f78812355123992b74533d8d048ef",
+    "source_unique_name": "insert_#quadtree.c#781",
+    "target_unique_name": "quadtree#quadtree.h#675",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a0ead11ed787ed48610fe81ff9b57cb74",
+    "target": "quadtree_8c_1a1cd44fe805fa1c8c73fbe0d842e856fe",
+    "source_unique_name": "quadtree_search#quadtree.c#823",
+    "target_unique_name": "find_#quadtree.c#769",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a4f4e8a96acd2edb7a655941ab5c57c33",
+    "target": "structquadtree__point#structquadtree__point_1af0167017887a5b57cbb235ff3567f407#structquadtree__point_1aca24ed40546776057b91bba8ede5b331#bounds_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#node_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#point_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#quadtree_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34",
+    "source_unique_name": "node_contains_#quadtree.c#723",
+    "target_unique_name": "quadtree_point#quadtree.h#653",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a0299deb49d8368d3a8c7969538c4854b",
+    "target": "quadtree_8c_1a54cb355deec1ffdea735dec865ee5ade",
+    "source_unique_name": "insert_#quadtree.c#781",
+    "target_unique_name": "reset_node_#quadtree.c#729",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1a196a42e0974275e188e1976d1fd2981e#node_8c_1a196a42e0974275e188e1976d1fd2981e#point_8c_1a196a42e0974275e188e1976d1fd2981e#quadtree_8c_1a196a42e0974275e188e1976d1fd2981e",
+    "target": "bounds_8c_1a91332b87f3597b3ecb7ad353bcda944c#node_8c_1a91332b87f3597b3ecb7ad353bcda944c#point_8c_1a91332b87f3597b3ecb7ad353bcda944c#quadtree_8c_1a91332b87f3597b3ecb7ad353bcda944c",
+    "source_unique_name": "__int_least16_t#types.h#166",
+    "target_unique_name": "__int16_t#types.h#150",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a1cd44fe805fa1c8c73fbe0d842e856fe",
+    "target": "node_8c_1af3d4e7eb815a49c0b608a66b0ccb94ac",
+    "source_unique_name": "find_#quadtree.c#769",
+    "target_unique_name": "quadtree_node_isleaf#node.c#723",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a5c2c2b365960d4abcb7dcb22ff4b70ce",
+    "target": "structquadtree__node#structquadtree__node_1ab23ce57f7ef4db4eb1fe5ba484a45c4f#structquadtree__node_1a57d66e44f8f9246c0b3f35730af2f8bc#structquadtree__node_1abd00b882c603db8d6e48fca7f0e6186e#structquadtree__node_1a66340656ad93b471f701c06e0578f6ba#structquadtree__node_1a6f0b4794dd7fd62f88d051162ec188a8#structquadtree__node_1a61493774cf03609737d80d3250d3dedf#structquadtree__node_1a3461fe68735d17de2f17c9fe0f7bb7ea#bounds_8c_1aab762981a154817ec4cadd2de7356060#node_8c_1aab762981a154817ec4cadd2de7356060#point_8c_1aab762981a154817ec4cadd2de7356060#quadtree_8c_1aab762981a154817ec4cadd2de7356060",
+    "source_unique_name": "split_node_#quadtree.c#745",
+    "target_unique_name": "quadtree_node#quadtree.h#665",
+    "type": "reference"
+  },
+  {
+    "source": "point_8c_1ad77a1b3345d140a805d2a68095dac46c",
+    "target": "bounds_8c_1afb8699abb1f51d920a176e695ff3be8a#node_8c_1afb8699abb1f51d920a176e695ff3be8a#point_8c_1afb8699abb1f51d920a176e695ff3be8a#quadtree_8c_1afb8699abb1f51d920a176e695ff3be8a",
+    "source_unique_name": "quadtree_point_free#point.c#723",
+    "target_unique_name": "free#stdlib.h#75",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1ae8844e43debcaecd2c2144156923b673",
+    "target": "bounds_8c_1a577eee92b9969942de4d8d134d37c7b8#bounds_8c_1ae389f0315e9b555df5a57c53d2778d9f#node_8c_1a577eee92b9969942de4d8d134d37c7b8#node_8c_1ae389f0315e9b555df5a57c53d2778d9f#point_8c_1a577eee92b9969942de4d8d134d37c7b8#point_8c_1ae389f0315e9b555df5a57c53d2778d9f#quadtree_8c_1a577eee92b9969942de4d8d134d37c7b8#quadtree_8c_1ae389f0315e9b555df5a57c53d2778d9f",
+    "source_unique_name": "quadtree_bounds_extend#bounds.c#715",
+    "target_unique_name": "fmin#mathcalls.h#390",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1a9accd4525ec4c3f0484c87302ff56035#node_8c_1a33debf6d647ea353b11a1ac95ae55f6b#point_8c_1a33debf6d647ea353b11a1ac95ae55f6b#quadtree_8c_1a33debf6d647ea353b11a1ac95ae55f6b",
+    "target": "bounds_8c_1a35e28bfcc8d641e0eebd66f4dc559a3f#node_8c_1a35e28bfcc8d641e0eebd66f4dc559a3f#point_8c_1a35e28bfcc8d641e0eebd66f4dc559a3f#quadtree_8c_1a35e28bfcc8d641e0eebd66f4dc559a3f",
+    "source_unique_name": "bsearch#stdlib-bsearch.h#93",
+    "target_unique_name": "__compar_fn_t#stdlib.h#89",
+    "type": "reference"
+  },
+  {
+    "source": "node_8c_1ac62967f35e92fae5281291bfbfd075dc",
+    "target": "node_8c_1af3d4e7eb815a49c0b608a66b0ccb94ac",
+    "source_unique_name": "quadtree_node_isempty#node.c#719",
+    "target_unique_name": "quadtree_node_isleaf#node.c#723",
+    "type": "reference"
+  },
+  {
+    "source": "node_8c_1ae88dcd2e96b5a4d587a47f16c61c8495",
+    "target": "structquadtree#structquadtree_1af80699effb203a449f4f9dceb77ab572#structquadtree_1a746154f5ba5ba621c7e91c22f21ed5e3#structquadtree_1a326d4354127d6173e569ba870e27017a#bounds_8c_1a509f78812355123992b74533d8d048ef#node_8c_1a509f78812355123992b74533d8d048ef#point_8c_1a509f78812355123992b74533d8d048ef#quadtree_8c_1a509f78812355123992b74533d8d048ef",
+    "source_unique_name": "quadtree_node_reset#node.c#727",
+    "target_unique_name": "quadtree#quadtree.h#675",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1a96d63a56835c80ae953c50eaac0b8483#node_8c_1a96d63a56835c80ae953c50eaac0b8483#point_8c_1a96d63a56835c80ae953c50eaac0b8483#quadtree_8c_1a96d63a56835c80ae953c50eaac0b8483",
+    "target": "bounds_8c_1a9c277a3fd853029cc853c877bcd32e8e#node_8c_1a9c277a3fd853029cc853c877bcd32e8e#point_8c_1a9c277a3fd853029cc853c877bcd32e8e#quadtree_8c_1a9c277a3fd853029cc853c877bcd32e8e",
+    "source_unique_name": "wcstombs#stdlib.h#132",
+    "target_unique_name": "wchar_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1a689c9d3c4c04463aa31d329937789d06#node_8c_1a689c9d3c4c04463aa31d329937789d06#point_8c_1a689c9d3c4c04463aa31d329937789d06#quadtree_8c_1a689c9d3c4c04463aa31d329937789d06",
+    "target": "bounds_8c_1a1dbcf91de5f95e76944a6e02009ca400#node_8c_1a1dbcf91de5f95e76944a6e02009ca400#point_8c_1a1dbcf91de5f95e76944a6e02009ca400#quadtree_8c_1a1dbcf91de5f95e76944a6e02009ca400",
+    "source_unique_name": "atof#stdlib-float.h#134",
+    "target_unique_name": "strtod#stdlib.h#39",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a4f4e8a96acd2edb7a655941ab5c57c33",
+    "target": "structquadtree#structquadtree_1af80699effb203a449f4f9dceb77ab572#structquadtree_1a746154f5ba5ba621c7e91c22f21ed5e3#structquadtree_1a326d4354127d6173e569ba870e27017a#bounds_8c_1a509f78812355123992b74533d8d048ef#node_8c_1a509f78812355123992b74533d8d048ef#point_8c_1a509f78812355123992b74533d8d048ef#quadtree_8c_1a509f78812355123992b74533d8d048ef",
+    "source_unique_name": "node_contains_#quadtree.c#723",
+    "target_unique_name": "quadtree#quadtree.h#675",
+    "type": "reference"
+  },
+  {
+    "source": "structquadtree#structquadtree_1af80699effb203a449f4f9dceb77ab572#structquadtree_1a746154f5ba5ba621c7e91c22f21ed5e3#structquadtree_1a326d4354127d6173e569ba870e27017a#bounds_8c_1a509f78812355123992b74533d8d048ef#node_8c_1a509f78812355123992b74533d8d048ef#point_8c_1a509f78812355123992b74533d8d048ef#quadtree_8c_1a509f78812355123992b74533d8d048ef",
+    "target": "structquadtree__node#structquadtree__node_1ab23ce57f7ef4db4eb1fe5ba484a45c4f#structquadtree__node_1a57d66e44f8f9246c0b3f35730af2f8bc#structquadtree__node_1abd00b882c603db8d6e48fca7f0e6186e#structquadtree__node_1a66340656ad93b471f701c06e0578f6ba#structquadtree__node_1a6f0b4794dd7fd62f88d051162ec188a8#structquadtree__node_1a61493774cf03609737d80d3250d3dedf#structquadtree__node_1a3461fe68735d17de2f17c9fe0f7bb7ea#bounds_8c_1aab762981a154817ec4cadd2de7356060#node_8c_1aab762981a154817ec4cadd2de7356060#point_8c_1aab762981a154817ec4cadd2de7356060#quadtree_8c_1aab762981a154817ec4cadd2de7356060",
+    "source_unique_name": "quadtree#quadtree.h#675",
+    "target_unique_name": "quadtree_node#quadtree.h#665",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a2b153d445d2176b8eda255b49bf9906a",
+    "target": "quadtree_8c_1a4f4e8a96acd2edb7a655941ab5c57c33",
+    "source_unique_name": "get_quadrant_#quadtree.c#737",
+    "target_unique_name": "node_contains_#quadtree.c#723",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1a052e725c916c5f7c8f176b23c7cd632a#node_8c_1a052e725c916c5f7c8f176b23c7cd632a#point_8c_1a052e725c916c5f7c8f176b23c7cd632a#quadtree_8c_1a052e725c916c5f7c8f176b23c7cd632a",
+    "target": "bounds_8c_1a222d67ef9d7959e65735150c95b7eee3#node_8c_1a222d67ef9d7959e65735150c95b7eee3#point_8c_1a222d67ef9d7959e65735150c95b7eee3#quadtree_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "mblen#stdlib.h#124",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a2b153d445d2176b8eda255b49bf9906a",
+    "target": "structquadtree__point#structquadtree__point_1af0167017887a5b57cbb235ff3567f407#structquadtree__point_1aca24ed40546776057b91bba8ede5b331#bounds_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#node_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#point_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#quadtree_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34",
+    "source_unique_name": "get_quadrant_#quadtree.c#737",
+    "target_unique_name": "quadtree_point#quadtree.h#653",
+    "type": "reference"
+  },
+  {
+    "source": "node_8c_1aa2910508a6be85940b1d7e76c5638682",
+    "target": "bounds_8c_1ae8844e43debcaecd2c2144156923b673",
+    "source_unique_name": "quadtree_node_with_bounds#node.c#745",
+    "target_unique_name": "quadtree_bounds_extend#bounds.c#715",
+    "type": "reference"
+  },
+  {
+    "source": "point_8c_1ad77a1b3345d140a805d2a68095dac46c",
+    "target": "structquadtree__bounds#structquadtree__bounds_1ae3d519a129c9957c06b85ae02b031808#structquadtree__bounds_1a8ad0d161cd767af1112fb3c5e1e2a3b8#structquadtree__bounds_1a1b725d2fbbfafd6eddc361d47e78e956#structquadtree__bounds_1a413afaed70b9ad4ce479e8c62d964b32#bounds_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e#node_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e#point_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e#quadtree_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e",
+    "source_unique_name": "quadtree_point_free#point.c#723",
+    "target_unique_name": "quadtree_bounds#quadtree.h#658",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a02ffd0e3366374b1a2a34b5d801d98e4",
+    "target": "structquadtree#structquadtree_1af80699effb203a449f4f9dceb77ab572#structquadtree_1a746154f5ba5ba621c7e91c22f21ed5e3#structquadtree_1a326d4354127d6173e569ba870e27017a#bounds_8c_1a509f78812355123992b74533d8d048ef#node_8c_1a509f78812355123992b74533d8d048ef#point_8c_1a509f78812355123992b74533d8d048ef#quadtree_8c_1a509f78812355123992b74533d8d048ef",
+    "source_unique_name": "quadtree_new#quadtree.c#804",
+    "target_unique_name": "quadtree#quadtree.h#675",
+    "type": "reference"
+  },
+  {
+    "source": "node_8c_1aa2910508a6be85940b1d7e76c5638682",
+    "target": "node_8c_1a1e81b03582a8be91089d1c3a2bf3c4d9",
+    "source_unique_name": "quadtree_node_with_bounds#node.c#745",
+    "target_unique_name": "quadtree_node_new#node.c#732",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a54cb355deec1ffdea735dec865ee5ade",
+    "target": "node_8c_1ae88dcd2e96b5a4d587a47f16c61c8495",
+    "source_unique_name": "reset_node_#quadtree.c#729",
+    "target_unique_name": "quadtree_node_reset#node.c#727",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a0299deb49d8368d3a8c7969538c4854b",
+    "target": "quadtree_8c_1a2b153d445d2176b8eda255b49bf9906a",
+    "source_unique_name": "insert_#quadtree.c#781",
+    "target_unique_name": "get_quadrant_#quadtree.c#737",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1a18de3043b15b8aa305d9b5b2a682bb40#node_8c_1a18de3043b15b8aa305d9b5b2a682bb40#point_8c_1a18de3043b15b8aa305d9b5b2a682bb40#quadtree_8c_1a18de3043b15b8aa305d9b5b2a682bb40",
+    "target": "bounds_8c_1aeb10a021f8f3b5aaae942fe6b104abb2#node_8c_1aeb10a021f8f3b5aaae942fe6b104abb2#point_8c_1aeb10a021f8f3b5aaae942fe6b104abb2#quadtree_8c_1aeb10a021f8f3b5aaae942fe6b104abb2",
+    "source_unique_name": "__int_least64_t#types.h#174",
+    "target_unique_name": "__int64_t#types.h#158",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1aadd2e1a74f39deac5ca4747995d7b866#node_8c_1aadd2e1a74f39deac5ca4747995d7b866#point_8c_1aadd2e1a74f39deac5ca4747995d7b866#quadtree_8c_1aadd2e1a74f39deac5ca4747995d7b866",
+    "target": "bounds_8c_1a222d67ef9d7959e65735150c95b7eee3#node_8c_1a222d67ef9d7959e65735150c95b7eee3#point_8c_1a222d67ef9d7959e65735150c95b7eee3#quadtree_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "calloc#stdlib.h#71",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "node_8c_1ab2e25bf3eba2ba4c2d3676945002dac7",
+    "target": "node_8c_1ae88dcd2e96b5a4d587a47f16c61c8495",
+    "source_unique_name": "quadtree_node_free#node.c#754",
+    "target_unique_name": "quadtree_node_reset#node.c#727",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a126c8a92ce697c94afd0fbe6ce4fa37a",
+    "target": "quadtree_8c_1a0299deb49d8368d3a8c7969538c4854b",
+    "source_unique_name": "quadtree_insert#quadtree.c#814",
+    "target_unique_name": "insert_#quadtree.c#781",
+    "type": "reference"
+  },
+  {
+    "source": "point_8c_1a628c89674f05d7ef38bdd96518bb0f62",
+    "target": "bounds_8c_1ae91b3dc6530d8a443eb7f01137f5aeff#node_8c_1ae91b3dc6530d8a443eb7f01137f5aeff#point_8c_1ae91b3dc6530d8a443eb7f01137f5aeff#quadtree_8c_1ae91b3dc6530d8a443eb7f01137f5aeff",
+    "source_unique_name": "quadtree_point_new#point.c#715",
+    "target_unique_name": "malloc#stdlib.h#69",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1a43f6ed0954420f75d09c06224a53c228#node_8c_1a43f6ed0954420f75d09c06224a53c228#point_8c_1a43f6ed0954420f75d09c06224a53c228#quadtree_8c_1a43f6ed0954420f75d09c06224a53c228",
+    "target": "bounds_8c_1a9c277a3fd853029cc853c877bcd32e8e#node_8c_1a9c277a3fd853029cc853c877bcd32e8e#point_8c_1a9c277a3fd853029cc853c877bcd32e8e#quadtree_8c_1a9c277a3fd853029cc853c877bcd32e8e",
+    "source_unique_name": "mbtowc#stdlib.h#126",
+    "target_unique_name": "wchar_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1ae9a9883e25f6dfafbab766c31294e1a6",
+    "target": "structquadtree__node#structquadtree__node_1ab23ce57f7ef4db4eb1fe5ba484a45c4f#structquadtree__node_1a57d66e44f8f9246c0b3f35730af2f8bc#structquadtree__node_1abd00b882c603db8d6e48fca7f0e6186e#structquadtree__node_1a66340656ad93b471f701c06e0578f6ba#structquadtree__node_1a6f0b4794dd7fd62f88d051162ec188a8#structquadtree__node_1a61493774cf03609737d80d3250d3dedf#structquadtree__node_1a3461fe68735d17de2f17c9fe0f7bb7ea#bounds_8c_1aab762981a154817ec4cadd2de7356060#node_8c_1aab762981a154817ec4cadd2de7356060#point_8c_1aab762981a154817ec4cadd2de7356060#quadtree_8c_1aab762981a154817ec4cadd2de7356060",
+    "source_unique_name": "quadtree_bounds_free#bounds.c#724",
+    "target_unique_name": "quadtree_node#quadtree.h#665",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a6c1f6b4af2919972dfb9a8515eb2e0d0",
+    "target": "bounds_8c_1afb8699abb1f51d920a176e695ff3be8a#node_8c_1afb8699abb1f51d920a176e695ff3be8a#point_8c_1afb8699abb1f51d920a176e695ff3be8a#quadtree_8c_1afb8699abb1f51d920a176e695ff3be8a",
+    "source_unique_name": "quadtree_free#quadtree.c#827",
+    "target_unique_name": "free#stdlib.h#75",
+    "type": "reference"
+  },
+  {
+    "source": "node_8c_1af3d4e7eb815a49c0b608a66b0ccb94ac",
+    "target": "structquadtree__node#structquadtree__node_1ab23ce57f7ef4db4eb1fe5ba484a45c4f#structquadtree__node_1a57d66e44f8f9246c0b3f35730af2f8bc#structquadtree__node_1abd00b882c603db8d6e48fca7f0e6186e#structquadtree__node_1a66340656ad93b471f701c06e0578f6ba#structquadtree__node_1a6f0b4794dd7fd62f88d051162ec188a8#structquadtree__node_1a61493774cf03609737d80d3250d3dedf#structquadtree__node_1a3461fe68735d17de2f17c9fe0f7bb7ea#bounds_8c_1aab762981a154817ec4cadd2de7356060#node_8c_1aab762981a154817ec4cadd2de7356060#point_8c_1aab762981a154817ec4cadd2de7356060#quadtree_8c_1aab762981a154817ec4cadd2de7356060",
+    "source_unique_name": "quadtree_node_isleaf#node.c#723",
+    "target_unique_name": "quadtree_node#quadtree.h#665",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1a80a3b5e487d44b9dbf24d778b3f2c3a3#node_8c_1a80a3b5e487d44b9dbf24d778b3f2c3a3#point_8c_1a80a3b5e487d44b9dbf24d778b3f2c3a3#quadtree_8c_1a80a3b5e487d44b9dbf24d778b3f2c3a3",
+    "target": "bounds_8c_1a222d67ef9d7959e65735150c95b7eee3#node_8c_1a222d67ef9d7959e65735150c95b7eee3#point_8c_1a222d67ef9d7959e65735150c95b7eee3#quadtree_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "realloc#stdlib.h#73",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "point_8c_1a628c89674f05d7ef38bdd96518bb0f62",
+    "target": "structquadtree__point#structquadtree__point_1af0167017887a5b57cbb235ff3567f407#structquadtree__point_1aca24ed40546776057b91bba8ede5b331#bounds_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#node_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#point_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#quadtree_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34",
+    "source_unique_name": "quadtree_point_new#point.c#715",
+    "target_unique_name": "quadtree_point#quadtree.h#653",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1a8c4b70b5451d9f70268f9215b0f1477a#node_8c_1a8c4b70b5451d9f70268f9215b0f1477a#point_8c_1a8c4b70b5451d9f70268f9215b0f1477a#quadtree_8c_1a8c4b70b5451d9f70268f9215b0f1477a",
+    "target": "bounds_8c_1ada0d1deb69253bd55d01fa22cce9f19d#node_8c_1ada0d1deb69253bd55d01fa22cce9f19d#point_8c_1ada0d1deb69253bd55d01fa22cce9f19d#quadtree_8c_1ada0d1deb69253bd55d01fa22cce9f19d",
+    "source_unique_name": "__uint_least64_t#types.h#176",
+    "target_unique_name": "__uint64_t#types.h#160",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a126c8a92ce697c94afd0fbe6ce4fa37a",
+    "target": "structquadtree__point#structquadtree__point_1af0167017887a5b57cbb235ff3567f407#structquadtree__point_1aca24ed40546776057b91bba8ede5b331#bounds_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#node_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#point_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#quadtree_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34",
+    "source_unique_name": "quadtree_insert#quadtree.c#814",
+    "target_unique_name": "quadtree_point#quadtree.h#653",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1ae9a9883e25f6dfafbab766c31294e1a6",
+    "target": "point_8c_1ad77a1b3345d140a805d2a68095dac46c",
+    "source_unique_name": "quadtree_bounds_free#bounds.c#724",
+    "target_unique_name": "quadtree_point_free#point.c#723",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1a13c06cb9050d1bccdf42e891814fb17a#node_8c_1a13c06cb9050d1bccdf42e891814fb17a#point_8c_1a13c06cb9050d1bccdf42e891814fb17a#quadtree_8c_1a13c06cb9050d1bccdf42e891814fb17a",
+    "target": "bounds_8c_1aca82290b875f93eb9451679fc04b0c9d#node_8c_1aca82290b875f93eb9451679fc04b0c9d#point_8c_1aca82290b875f93eb9451679fc04b0c9d#quadtree_8c_1aca82290b875f93eb9451679fc04b0c9d",
+    "source_unique_name": "__loff_t#types.h#252",
+    "target_unique_name": "__off64_t#types.h#202",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a2b153d445d2176b8eda255b49bf9906a",
+    "target": "structquadtree__node#structquadtree__node_1ab23ce57f7ef4db4eb1fe5ba484a45c4f#structquadtree__node_1a57d66e44f8f9246c0b3f35730af2f8bc#structquadtree__node_1abd00b882c603db8d6e48fca7f0e6186e#structquadtree__node_1a66340656ad93b471f701c06e0578f6ba#structquadtree__node_1a6f0b4794dd7fd62f88d051162ec188a8#structquadtree__node_1a61493774cf03609737d80d3250d3dedf#structquadtree__node_1a3461fe68735d17de2f17c9fe0f7bb7ea#bounds_8c_1aab762981a154817ec4cadd2de7356060#node_8c_1aab762981a154817ec4cadd2de7356060#point_8c_1aab762981a154817ec4cadd2de7356060#quadtree_8c_1aab762981a154817ec4cadd2de7356060",
+    "source_unique_name": "get_quadrant_#quadtree.c#737",
+    "target_unique_name": "quadtree_node#quadtree.h#665",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1a67f3288c3cd64de8d38ebc03618720ce#node_8c_1a67f3288c3cd64de8d38ebc03618720ce#point_8c_1a67f3288c3cd64de8d38ebc03618720ce#quadtree_8c_1a67f3288c3cd64de8d38ebc03618720ce",
+    "target": "bounds_8c_1ad81dd3c6092f614cc96a1bb25914e653#node_8c_1ad81dd3c6092f614cc96a1bb25914e653#point_8c_1ad81dd3c6092f614cc96a1bb25914e653#quadtree_8c_1ad81dd3c6092f614cc96a1bb25914e653",
+    "source_unique_name": "__int_least32_t#types.h#170",
+    "target_unique_name": "__int32_t#types.h#154",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1aa95a56cf5cf0dfa3fbc7e7efa6dc9831#node_8c_1aa95a56cf5cf0dfa3fbc7e7efa6dc9831#point_8c_1aa95a56cf5cf0dfa3fbc7e7efa6dc9831#quadtree_8c_1aa95a56cf5cf0dfa3fbc7e7efa6dc9831",
+    "target": "bounds_8c_1a9c277a3fd853029cc853c877bcd32e8e#node_8c_1a9c277a3fd853029cc853c877bcd32e8e#point_8c_1a9c277a3fd853029cc853c877bcd32e8e#quadtree_8c_1a9c277a3fd853029cc853c877bcd32e8e",
+    "source_unique_name": "wctomb#stdlib.h#128",
+    "target_unique_name": "wchar_t#stddef.h#4",
+    "type": "reference"
+  },
+  {
+    "source": "node_8c_1ab2e25bf3eba2ba4c2d3676945002dac7",
+    "target": "structquadtree#structquadtree_1af80699effb203a449f4f9dceb77ab572#structquadtree_1a746154f5ba5ba621c7e91c22f21ed5e3#structquadtree_1a326d4354127d6173e569ba870e27017a#bounds_8c_1a509f78812355123992b74533d8d048ef#node_8c_1a509f78812355123992b74533d8d048ef#point_8c_1a509f78812355123992b74533d8d048ef#quadtree_8c_1a509f78812355123992b74533d8d048ef",
+    "source_unique_name": "quadtree_node_free#node.c#754",
+    "target_unique_name": "quadtree#quadtree.h#675",
+    "type": "reference"
+  },
+  {
+    "source": "structquadtree__node#structquadtree__node_1ab23ce57f7ef4db4eb1fe5ba484a45c4f#structquadtree__node_1a57d66e44f8f9246c0b3f35730af2f8bc#structquadtree__node_1abd00b882c603db8d6e48fca7f0e6186e#structquadtree__node_1a66340656ad93b471f701c06e0578f6ba#structquadtree__node_1a6f0b4794dd7fd62f88d051162ec188a8#structquadtree__node_1a61493774cf03609737d80d3250d3dedf#structquadtree__node_1a3461fe68735d17de2f17c9fe0f7bb7ea#bounds_8c_1aab762981a154817ec4cadd2de7356060#node_8c_1aab762981a154817ec4cadd2de7356060#point_8c_1aab762981a154817ec4cadd2de7356060#quadtree_8c_1aab762981a154817ec4cadd2de7356060",
+    "target": "structquadtree__point#structquadtree__point_1af0167017887a5b57cbb235ff3567f407#structquadtree__point_1aca24ed40546776057b91bba8ede5b331#bounds_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#node_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#point_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#quadtree_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34",
+    "source_unique_name": "quadtree_node#quadtree.h#665",
+    "target_unique_name": "quadtree_point#quadtree.h#653",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a126c8a92ce697c94afd0fbe6ce4fa37a",
+    "target": "point_8c_1a628c89674f05d7ef38bdd96518bb0f62",
+    "source_unique_name": "quadtree_insert#quadtree.c#814",
+    "target_unique_name": "quadtree_point_new#point.c#715",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1a216ba12163dfecf647733f723fa2b3ad#node_8c_1a216ba12163dfecf647733f723fa2b3ad#point_8c_1a216ba12163dfecf647733f723fa2b3ad#quadtree_8c_1a216ba12163dfecf647733f723fa2b3ad",
+    "target": "structlldiv__t#structlldiv__t_1aa2c189bf2a4ebe0f680463e4ce32b72f#structlldiv__t_1adc99c61028a27673c373ab2815f90a79",
+    "source_unique_name": "lldiv#stdlib.h#122",
+    "target_unique_name": "lldiv_t#stdlib.h#24",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a0299deb49d8368d3a8c7969538c4854b",
+    "target": "node_8c_1af3d4e7eb815a49c0b608a66b0ccb94ac",
+    "source_unique_name": "insert_#quadtree.c#781",
+    "target_unique_name": "quadtree_node_isleaf#node.c#723",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1aa4b73cb5a560f91f5edf797e13d18ae4#node_8c_1aa4b73cb5a560f91f5edf797e13d18ae4#point_8c_1aa4b73cb5a560f91f5edf797e13d18ae4#quadtree_8c_1aa4b73cb5a560f91f5edf797e13d18ae4",
+    "target": "bounds_8c_1a99c54aaa744e6860c3dd5bf8107c7be7#node_8c_1a99c54aaa744e6860c3dd5bf8107c7be7#point_8c_1a99c54aaa744e6860c3dd5bf8107c7be7#quadtree_8c_1a99c54aaa744e6860c3dd5bf8107c7be7",
+    "source_unique_name": "atoll#stdlib.h#61",
+    "target_unique_name": "strtoll#stdlib.h#49",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a1cd44fe805fa1c8c73fbe0d842e856fe",
+    "target": "structquadtree#structquadtree_1af80699effb203a449f4f9dceb77ab572#structquadtree_1a746154f5ba5ba621c7e91c22f21ed5e3#structquadtree_1a326d4354127d6173e569ba870e27017a#bounds_8c_1a509f78812355123992b74533d8d048ef#node_8c_1a509f78812355123992b74533d8d048ef#point_8c_1a509f78812355123992b74533d8d048ef#quadtree_8c_1a509f78812355123992b74533d8d048ef",
+    "source_unique_name": "find_#quadtree.c#769",
+    "target_unique_name": "quadtree#quadtree.h#675",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a5c2c2b365960d4abcb7dcb22ff4b70ce",
+    "target": "structquadtree__bounds#structquadtree__bounds_1ae3d519a129c9957c06b85ae02b031808#structquadtree__bounds_1a8ad0d161cd767af1112fb3c5e1e2a3b8#structquadtree__bounds_1a1b725d2fbbfafd6eddc361d47e78e956#structquadtree__bounds_1a413afaed70b9ad4ce479e8c62d964b32#bounds_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e#node_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e#point_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e#quadtree_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e",
+    "source_unique_name": "split_node_#quadtree.c#745",
+    "target_unique_name": "quadtree_bounds#quadtree.h#658",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1a0c7ae9009dd427eadb8fa0b364612cc2",
+    "target": "structquadtree__bounds#structquadtree__bounds_1ae3d519a129c9957c06b85ae02b031808#structquadtree__bounds_1a8ad0d161cd767af1112fb3c5e1e2a3b8#structquadtree__bounds_1a1b725d2fbbfafd6eddc361d47e78e956#structquadtree__bounds_1a413afaed70b9ad4ce479e8c62d964b32#bounds_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e#node_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e#point_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e#quadtree_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e",
+    "source_unique_name": "quadtree_bounds_new#bounds.c#730",
+    "target_unique_name": "quadtree_bounds#quadtree.h#658",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a0ead11ed787ed48610fe81ff9b57cb74",
+    "target": "structquadtree#structquadtree_1af80699effb203a449f4f9dceb77ab572#structquadtree_1a746154f5ba5ba621c7e91c22f21ed5e3#structquadtree_1a326d4354127d6173e569ba870e27017a#bounds_8c_1a509f78812355123992b74533d8d048ef#node_8c_1a509f78812355123992b74533d8d048ef#point_8c_1a509f78812355123992b74533d8d048ef#quadtree_8c_1a509f78812355123992b74533d8d048ef",
+    "source_unique_name": "quadtree_search#quadtree.c#823",
+    "target_unique_name": "quadtree#quadtree.h#675",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a5c2c2b365960d4abcb7dcb22ff4b70ce",
+    "target": "node_8c_1aa2910508a6be85940b1d7e76c5638682",
+    "source_unique_name": "split_node_#quadtree.c#745",
+    "target_unique_name": "quadtree_node_with_bounds#node.c#745",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1ab7d5961034ac12b88541de598ba984d7#node_8c_1ab7d5961034ac12b88541de598ba984d7#point_8c_1ab7d5961034ac12b88541de598ba984d7#quadtree_8c_1ab7d5961034ac12b88541de598ba984d7",
+    "target": "bounds_8c_1ae191cf54b09af0e7f674cb7c599167e9#node_8c_1ae191cf54b09af0e7f674cb7c599167e9#point_8c_1ae191cf54b09af0e7f674cb7c599167e9#quadtree_8c_1ae191cf54b09af0e7f674cb7c599167e9",
+    "source_unique_name": "__uint_least16_t#types.h#168",
+    "target_unique_name": "__uint16_t#types.h#152",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1a96d63a56835c80ae953c50eaac0b8483#node_8c_1a96d63a56835c80ae953c50eaac0b8483#point_8c_1a96d63a56835c80ae953c50eaac0b8483#quadtree_8c_1a96d63a56835c80ae953c50eaac0b8483",
+    "target": "bounds_8c_1a222d67ef9d7959e65735150c95b7eee3#node_8c_1a222d67ef9d7959e65735150c95b7eee3#point_8c_1a222d67ef9d7959e65735150c95b7eee3#quadtree_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "wcstombs#stdlib.h#132",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "node_8c_1ac62967f35e92fae5281291bfbfd075dc",
+    "target": "structquadtree__node#structquadtree__node_1ab23ce57f7ef4db4eb1fe5ba484a45c4f#structquadtree__node_1a57d66e44f8f9246c0b3f35730af2f8bc#structquadtree__node_1abd00b882c603db8d6e48fca7f0e6186e#structquadtree__node_1a66340656ad93b471f701c06e0578f6ba#structquadtree__node_1a6f0b4794dd7fd62f88d051162ec188a8#structquadtree__node_1a61493774cf03609737d80d3250d3dedf#structquadtree__node_1a3461fe68735d17de2f17c9fe0f7bb7ea#bounds_8c_1aab762981a154817ec4cadd2de7356060#node_8c_1aab762981a154817ec4cadd2de7356060#point_8c_1aab762981a154817ec4cadd2de7356060#quadtree_8c_1aab762981a154817ec4cadd2de7356060",
+    "source_unique_name": "quadtree_node_isempty#node.c#719",
+    "target_unique_name": "quadtree_node#quadtree.h#665",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a02ffd0e3366374b1a2a34b5d801d98e4",
+    "target": "bounds_8c_1ae91b3dc6530d8a443eb7f01137f5aeff#node_8c_1ae91b3dc6530d8a443eb7f01137f5aeff#point_8c_1ae91b3dc6530d8a443eb7f01137f5aeff#quadtree_8c_1ae91b3dc6530d8a443eb7f01137f5aeff",
+    "source_unique_name": "quadtree_new#quadtree.c#804",
+    "target_unique_name": "malloc#stdlib.h#69",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1a1fe45496d82bd1392bbce69da26b893b#node_8c_1a1fe45496d82bd1392bbce69da26b893b#point_8c_1a1fe45496d82bd1392bbce69da26b893b#quadtree_8c_1a1fe45496d82bd1392bbce69da26b893b",
+    "target": "structdiv__t#structdiv__t_1a0b9dda2884048daa68ca4aaa12b17b9a#structdiv__t_1ac64389de252de53eda8b4f8dbb7c623f",
+    "source_unique_name": "div#stdlib.h#118",
+    "target_unique_name": "div_t#stdlib.h#14",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a126c8a92ce697c94afd0fbe6ce4fa37a",
+    "target": "structquadtree#structquadtree_1af80699effb203a449f4f9dceb77ab572#structquadtree_1a746154f5ba5ba621c7e91c22f21ed5e3#structquadtree_1a326d4354127d6173e569ba870e27017a#bounds_8c_1a509f78812355123992b74533d8d048ef#node_8c_1a509f78812355123992b74533d8d048ef#point_8c_1a509f78812355123992b74533d8d048ef#quadtree_8c_1a509f78812355123992b74533d8d048ef",
+    "source_unique_name": "quadtree_insert#quadtree.c#814",
+    "target_unique_name": "quadtree#quadtree.h#675",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1ae91b3dc6530d8a443eb7f01137f5aeff#node_8c_1ae91b3dc6530d8a443eb7f01137f5aeff#point_8c_1ae91b3dc6530d8a443eb7f01137f5aeff#quadtree_8c_1ae91b3dc6530d8a443eb7f01137f5aeff",
+    "target": "bounds_8c_1a222d67ef9d7959e65735150c95b7eee3#node_8c_1a222d67ef9d7959e65735150c95b7eee3#point_8c_1a222d67ef9d7959e65735150c95b7eee3#quadtree_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "malloc#stdlib.h#69",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a0299deb49d8368d3a8c7969538c4854b",
+    "target": "node_8c_1a0f3c8308ddad80691960aaac9aeae426",
+    "source_unique_name": "insert_#quadtree.c#781",
+    "target_unique_name": "quadtree_node_ispointer#node.c#715",
+    "type": "reference"
+  },
+  {
+    "source": "node_8c_1ab2e25bf3eba2ba4c2d3676945002dac7",
+    "target": "quadtree_8c_1a9f8bd91eeec7312420776fd5a3cacf9d",
+    "source_unique_name": "quadtree_node_free#node.c#754",
+    "target_unique_name": "elision_#quadtree.c#727",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1a0c7ae9009dd427eadb8fa0b364612cc2",
+    "target": "point_8c_1a628c89674f05d7ef38bdd96518bb0f62",
+    "source_unique_name": "quadtree_bounds_new#bounds.c#730",
+    "target_unique_name": "quadtree_point_new#point.c#715",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a4f4e8a96acd2edb7a655941ab5c57c33",
+    "target": "structquadtree__bounds#structquadtree__bounds_1ae3d519a129c9957c06b85ae02b031808#structquadtree__bounds_1a8ad0d161cd767af1112fb3c5e1e2a3b8#structquadtree__bounds_1a1b725d2fbbfafd6eddc361d47e78e956#structquadtree__bounds_1a413afaed70b9ad4ce479e8c62d964b32#bounds_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e#node_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e#point_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e#quadtree_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e",
+    "source_unique_name": "node_contains_#quadtree.c#723",
+    "target_unique_name": "quadtree_bounds#quadtree.h#658",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1ae8844e43debcaecd2c2144156923b673",
+    "target": "structquadtree__bounds#structquadtree__bounds_1ae3d519a129c9957c06b85ae02b031808#structquadtree__bounds_1a8ad0d161cd767af1112fb3c5e1e2a3b8#structquadtree__bounds_1a1b725d2fbbfafd6eddc361d47e78e956#structquadtree__bounds_1a413afaed70b9ad4ce479e8c62d964b32#bounds_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e#node_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e#point_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e#quadtree_8c_1a4174e7fc4ec0d3e5f4a9dbd484a6372e",
+    "source_unique_name": "quadtree_bounds_extend#bounds.c#715",
+    "target_unique_name": "quadtree_bounds#quadtree.h#658",
+    "type": "reference"
+  },
+  {
+    "source": "node_8c_1ab2e25bf3eba2ba4c2d3676945002dac7",
+    "target": "bounds_8c_1ae9a9883e25f6dfafbab766c31294e1a6",
+    "source_unique_name": "quadtree_node_free#node.c#754",
+    "target_unique_name": "quadtree_bounds_free#bounds.c#724",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a5c2c2b365960d4abcb7dcb22ff4b70ce",
+    "target": "structquadtree#structquadtree_1af80699effb203a449f4f9dceb77ab572#structquadtree_1a746154f5ba5ba621c7e91c22f21ed5e3#structquadtree_1a326d4354127d6173e569ba870e27017a#bounds_8c_1a509f78812355123992b74533d8d048ef#node_8c_1a509f78812355123992b74533d8d048ef#point_8c_1a509f78812355123992b74533d8d048ef#quadtree_8c_1a509f78812355123992b74533d8d048ef",
+    "source_unique_name": "split_node_#quadtree.c#745",
+    "target_unique_name": "quadtree#quadtree.h#675",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a5c2c2b365960d4abcb7dcb22ff4b70ce",
+    "target": "structquadtree__point#structquadtree__point_1af0167017887a5b57cbb235ff3567f407#structquadtree__point_1aca24ed40546776057b91bba8ede5b331#bounds_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#node_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#point_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34#quadtree_8c_1a5b8ef7fae6c81b809fa9cdcc33ab5d34",
+    "source_unique_name": "split_node_#quadtree.c#745",
+    "target_unique_name": "quadtree_point#quadtree.h#653",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a5c2c2b365960d4abcb7dcb22ff4b70ce",
+    "target": "quadtree_8c_1a0299deb49d8368d3a8c7969538c4854b",
+    "source_unique_name": "split_node_#quadtree.c#745",
+    "target_unique_name": "insert_#quadtree.c#781",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1a9accd4525ec4c3f0484c87302ff56035#node_8c_1a33debf6d647ea353b11a1ac95ae55f6b#point_8c_1a33debf6d647ea353b11a1ac95ae55f6b#quadtree_8c_1a33debf6d647ea353b11a1ac95ae55f6b",
+    "target": "bounds_8c_1a222d67ef9d7959e65735150c95b7eee3#node_8c_1a222d67ef9d7959e65735150c95b7eee3#point_8c_1a222d67ef9d7959e65735150c95b7eee3#quadtree_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "bsearch#stdlib-bsearch.h#93",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "node_8c_1aa2910508a6be85940b1d7e76c5638682",
+    "target": "structquadtree__node#structquadtree__node_1ab23ce57f7ef4db4eb1fe5ba484a45c4f#structquadtree__node_1a57d66e44f8f9246c0b3f35730af2f8bc#structquadtree__node_1abd00b882c603db8d6e48fca7f0e6186e#structquadtree__node_1a66340656ad93b471f701c06e0578f6ba#structquadtree__node_1a6f0b4794dd7fd62f88d051162ec188a8#structquadtree__node_1a61493774cf03609737d80d3250d3dedf#structquadtree__node_1a3461fe68735d17de2f17c9fe0f7bb7ea#bounds_8c_1aab762981a154817ec4cadd2de7356060#node_8c_1aab762981a154817ec4cadd2de7356060#point_8c_1aab762981a154817ec4cadd2de7356060#quadtree_8c_1aab762981a154817ec4cadd2de7356060",
+    "source_unique_name": "quadtree_node_with_bounds#node.c#745",
+    "target_unique_name": "quadtree_node#quadtree.h#665",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1ae8844e43debcaecd2c2144156923b673",
+    "target": "bounds_8c_1a0838a00d86d5e920c80aa7c7532a5559#bounds_8c_1a55a65683db808f55ef626a663fffa927#node_8c_1a0838a00d86d5e920c80aa7c7532a5559#node_8c_1a55a65683db808f55ef626a663fffa927#point_8c_1a0838a00d86d5e920c80aa7c7532a5559#point_8c_1a55a65683db808f55ef626a663fffa927#quadtree_8c_1a0838a00d86d5e920c80aa7c7532a5559#quadtree_8c_1a55a65683db808f55ef626a663fffa927",
+    "source_unique_name": "quadtree_bounds_extend#bounds.c#715",
+    "target_unique_name": "fabs#mathcalls.h#338",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1a0d86e7cff98afe51af86ef1fe7e3e74c#node_8c_1a0d86e7cff98afe51af86ef1fe7e3e74c#point_8c_1a0d86e7cff98afe51af86ef1fe7e3e74c#quadtree_8c_1a0d86e7cff98afe51af86ef1fe7e3e74c",
+    "target": "bounds_8c_1acaa96aed3d7fddac490800f166c2af02#node_8c_1acaa96aed3d7fddac490800f166c2af02#point_8c_1acaa96aed3d7fddac490800f166c2af02#quadtree_8c_1acaa96aed3d7fddac490800f166c2af02",
+    "source_unique_name": "__uint_least32_t#types.h#172",
+    "target_unique_name": "__uint32_t#types.h#156",
+    "type": "reference"
+  },
+  {
+    "source": "bounds_8c_1acd4a13e01187e4e81211cf55743ba4f5#node_8c_1acd4a13e01187e4e81211cf55743ba4f5#point_8c_1acd4a13e01187e4e81211cf55743ba4f5#quadtree_8c_1acd4a13e01187e4e81211cf55743ba4f5",
+    "target": "bounds_8c_1a222d67ef9d7959e65735150c95b7eee3#node_8c_1a222d67ef9d7959e65735150c95b7eee3#point_8c_1a222d67ef9d7959e65735150c95b7eee3#quadtree_8c_1a222d67ef9d7959e65735150c95b7eee3",
+    "source_unique_name": "__ctype_get_mb_cur_max#stdlib.h#29",
+    "target_unique_name": "size_t#stddef.h#2",
+    "type": "reference"
+  },
+  {
+    "source": "node_8c_1a1e81b03582a8be91089d1c3a2bf3c4d9",
+    "target": "bounds_8c_1ae91b3dc6530d8a443eb7f01137f5aeff#node_8c_1ae91b3dc6530d8a443eb7f01137f5aeff#point_8c_1ae91b3dc6530d8a443eb7f01137f5aeff#quadtree_8c_1ae91b3dc6530d8a443eb7f01137f5aeff",
+    "source_unique_name": "quadtree_node_new#node.c#732",
+    "target_unique_name": "malloc#stdlib.h#69",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a0299deb49d8368d3a8c7969538c4854b",
+    "target": "node_8c_1ac62967f35e92fae5281291bfbfd075dc",
+    "source_unique_name": "insert_#quadtree.c#781",
+    "target_unique_name": "quadtree_node_isempty#node.c#719",
+    "type": "reference"
+  },
+  {
+    "source": "quadtree_8c_1a59a81b64463dc32188815affb08c083b",
+    "target": "structquadtree__node#structquadtree__node_1ab23ce57f7ef4db4eb1fe5ba484a45c4f#structquadtree__node_1a57d66e44f8f9246c0b3f35730af2f8bc#structquadtree__node_1abd00b882c603db8d6e48fca7f0e6186e#structquadtree__node_1a66340656ad93b471f701c06e0578f6ba#structquadtree__node_1a6f0b4794dd7fd62f88d051162ec188a8#structquadtree__node_1a61493774cf03609737d80d3250d3dedf#structquadtree__node_1a3461fe68735d17de2f17c9fe0f7bb7ea#bounds_8c_1aab762981a154817ec4cadd2de7356060#node_8c_1aab762981a154817ec4cadd2de7356060#point_8c_1aab762981a154817ec4cadd2de7356060#quadtree_8c_1aab762981a154817ec4cadd2de7356060",
+    "source_unique_name": "quadtree_walk#quadtree.c#836",
+    "target_unique_name": "quadtree_node#quadtree.h#665",
+    "type": "reference"
+  }
+]

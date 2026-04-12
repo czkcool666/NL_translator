@@ -1,0 +1,96 @@
+libtree
+├── libtree.c [Contain *main* Function]
+└── svf_analysis_output
+H_FILE_LIST
+
+
+SPLIT_TAG
+
+compat_t#libtree.c#904
+dyn_32_t#libtree.c#899
+dyn_64_t#libtree.c#894
+found_t#libtree.c#913 -> how_t#libtree.c#910
+header_32_t#libtree.c#856
+header_64_t#libtree.c#840
+libtree_state_t#libtree.c#935 -> string_table_t#libtree.c#918, visited_file_array_t#libtree.c#929
+prog_32_t#libtree.c#883
+prog_64_t#libtree.c#872
+small_vec_u64_t#libtree.c#954
+string_table_t#libtree.c#918
+visited_file_array_t#libtree.c#929 -> visited_file_t#libtree.c#924
+visited_file_t#libtree.c#924
+how_t#libtree.c#910
+exclude_list#libtree.c#838
+utoa#libtree.c#961 -> found_t#libtree.c#913
+small_vec_u64_init#libtree.c#976 -> small_vec_u64_t#libtree.c#954
+small_vec_u64_append#libtree.c#981 -> string_table_t#libtree.c#918, libtree_state_t#libtree.c#935, dyn_32_t#libtree.c#899, small_vec_u64_t#libtree.c#954
+small_vec_u64_free#libtree.c#1000 -> small_vec_u64_t#libtree.c#954
+host_is_little_endian#libtree.c#1006
+is_ascending_order#libtree.c#1012 -> small_vec_u64_t#libtree.c#954
+string_table_maybe_grow#libtree.c#1017 -> string_table_t#libtree.c#918
+string_table_store#libtree.c#1027 -> libtree_state_t#libtree.c#935, string_table_maybe_grow#libtree.c#1017, string_table_t#libtree.c#918
+string_table_copy_from_file#libtree.c#1034 -> libtree_state_t#libtree.c#935, string_table_t#libtree.c#918, string_table_maybe_grow#libtree.c#1017
+is_in_exclude_list#libtree.c#1044 -> exclude_list#libtree.c#838, small_vec_u64_t#libtree.c#954, string_table_t#libtree.c#918, libtree_state_t#libtree.c#935
+tree_preamble#libtree.c#1060 -> libtree_state_t#libtree.c#935
+recurse#libtree.c#1368 -> visited_files_contains#libtree.c#1349, prog_32_t#libtree.c#883, header_32_t#libtree.c#856, libtree_state_t#libtree.c#935, dyn_32_t#libtree.c#899, is_in_exclude_list#libtree.c#1044, found_t#libtree.c#913, small_vec_u64_init#libtree.c#976, print_error#libtree.c#1275, dyn_64_t#libtree.c#894, how_t#libtree.c#910, string_table_t#libtree.c#918, check_search_paths#libtree.c#1119, small_vec_u64_t#libtree.c#954, header_64_t#libtree.c#840, is_ascending_order#libtree.c#1012, apply_exclude_list#libtree.c#1068, string_table_copy_from_file#libtree.c#1034, small_vec_u64_append#libtree.c#981, compat_t#libtree.c#904, check_absolute_paths#libtree.c#1081, visited_files_append#libtree.c#1357, prog_64_t#libtree.c#872, host_is_little_endian#libtree.c#1006, print_line#libtree.c#1230, small_vec_u64_free#libtree.c#1000, interpolate_variables#libtree.c#1151
+apply_exclude_list#libtree.c#1068 -> libtree_state_t#libtree.c#935, string_table_t#libtree.c#918, small_vec_u64_t#libtree.c#954, is_in_exclude_list#libtree.c#1044
+check_absolute_paths#libtree.c#1081 -> string_table_t#libtree.c#918, libtree_state_t#libtree.c#935, how_t#libtree.c#910, found_t#libtree.c#913, recurse#libtree.c#1368, small_vec_u64_t#libtree.c#954, tree_preamble#libtree.c#1060, compat_t#libtree.c#904
+check_search_paths#libtree.c#1119 -> compat_t#libtree.c#904, libtree_state_t#libtree.c#935, found_t#libtree.c#913, small_vec_u64_t#libtree.c#954, how_t#libtree.c#910, string_table_t#libtree.c#918, recurse#libtree.c#1368
+interpolate_variables#libtree.c#1151 -> libtree_state_t#libtree.c#935, string_table_maybe_grow#libtree.c#1017, string_table_t#libtree.c#918
+print_colon_delimited_paths#libtree.c#1209 -> string_table_t#libtree.c#918, libtree_state_t#libtree.c#935
+print_line#libtree.c#1230 -> utoa#libtree.c#961, found_t#libtree.c#913, how_t#libtree.c#910, tree_preamble#libtree.c#1060, libtree_state_t#libtree.c#935
+print_error#libtree.c#1275 -> print_colon_delimited_paths#libtree.c#1209, tree_preamble#libtree.c#1060, small_vec_u64_t#libtree.c#954, libtree_state_t#libtree.c#935, string_table_t#libtree.c#918, utoa#libtree.c#961
+visited_files_contains#libtree.c#1349 -> visited_file_t#libtree.c#924, visited_file_array_t#libtree.c#929, libtree_state_t#libtree.c#935
+visited_files_append#libtree.c#1357 -> libtree_state_t#libtree.c#935, visited_file_t#libtree.c#924, visited_file_array_t#libtree.c#929
+parse_ld_config_file#libtree.c#1709 -> string_table_store#libtree.c#1027, ld_conf_globbing#libtree.c#1693, libtree_state_t#libtree.c#935, string_table_t#libtree.c#918
+ld_conf_globbing#libtree.c#1693 -> parse_ld_config_file#libtree.c#1709, string_table_t#libtree.c#918
+parse_ld_so_conf#libtree.c#1757 -> string_table_t#libtree.c#918, string_table_store#libtree.c#1027, parse_ld_config_file#libtree.c#1709, libtree_state_t#libtree.c#935
+parse_ld_library_path#libtree.c#1768 -> libtree_state_t#libtree.c#935, string_table_t#libtree.c#918, string_table_store#libtree.c#1027
+set_default_paths#libtree.c#1778 -> libtree_state_t#libtree.c#935, string_table_t#libtree.c#918, string_table_store#libtree.c#1027
+libtree_state_init#libtree.c#1783 -> libtree_state_t#libtree.c#935, visited_file_array_t#libtree.c#929, visited_file_t#libtree.c#924, string_table_t#libtree.c#918
+libtree_state_free#libtree.c#1792 -> visited_file_array_t#libtree.c#929, libtree_state_t#libtree.c#935, string_table_t#libtree.c#918
+print_tree#libtree.c#1797 -> found_t#libtree.c#913, libtree_state_free#libtree.c#1792, how_t#libtree.c#910, parse_ld_library_path#libtree.c#1768, recurse#libtree.c#1368, parse_ld_so_conf#libtree.c#1757, set_default_paths#libtree.c#1778, libtree_state_init#libtree.c#1783, libtree_state_t#libtree.c#935, compat_t#libtree.c#904
+
+SPLIT_TAG
+
+host_is_little_endian#libtree.c#1006
+exclude_list#libtree.c#838
+small_vec_u64_t#libtree.c#954
+prog_64_t#libtree.c#872
+prog_32_t#libtree.c#883
+visited_file_t#libtree.c#924
+string_table_t#libtree.c#918
+header_64_t#libtree.c#840
+header_32_t#libtree.c#856
+how_t#libtree.c#910
+dyn_64_t#libtree.c#894
+dyn_32_t#libtree.c#899
+compat_t#libtree.c#904
+small_vec_u64_init#libtree.c#976
+small_vec_u64_free#libtree.c#1000
+is_ascending_order#libtree.c#1012
+visited_file_array_t#libtree.c#929
+string_table_maybe_grow#libtree.c#1017
+found_t#libtree.c#913
+libtree_state_t#libtree.c#935
+utoa#libtree.c#961
+small_vec_u64_append#libtree.c#981
+string_table_store#libtree.c#1027
+string_table_copy_from_file#libtree.c#1034
+is_in_exclude_list#libtree.c#1044
+tree_preamble#libtree.c#1060
+interpolate_variables#libtree.c#1151
+print_colon_delimited_paths#libtree.c#1209
+visited_files_contains#libtree.c#1349
+visited_files_append#libtree.c#1357
+libtree_state_init#libtree.c#1783
+libtree_state_free#libtree.c#1792
+parse_ld_config_file#libtree.c#1709 <-> ld_conf_globbing#libtree.c#1693
+parse_ld_library_path#libtree.c#1768
+set_default_paths#libtree.c#1778
+apply_exclude_list#libtree.c#1068
+print_line#libtree.c#1230
+print_error#libtree.c#1275
+parse_ld_so_conf#libtree.c#1757
+recurse#libtree.c#1368 <-> check_absolute_paths#libtree.c#1081 <-> check_search_paths#libtree.c#1119
+print_tree#libtree.c#1797

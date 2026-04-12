@@ -1,0 +1,69 @@
+quadtree
+├── bounds.c
+├── node.c
+├── point.c
+├── quadtree.c
+└── svf_analysis_output
+H_FILE_LIST
+quadtree.h
+
+SPLIT_TAG
+
+quadtree#quadtree.h#675 -> quadtree_node#quadtree.h#665
+quadtree_bounds#quadtree.h#658 -> quadtree_point#quadtree.h#653
+quadtree_node#quadtree.h#665 -> quadtree_bounds#quadtree.h#658, quadtree_point#quadtree.h#653
+quadtree_point#quadtree.h#653
+quadtree_bounds_new#bounds.c#730 -> quadtree_bounds#quadtree.h#658, quadtree_point_new#point.c#715
+quadtree_bounds_extend#bounds.c#715 -> quadtree_point#quadtree.h#653, quadtree_node#quadtree.h#665, quadtree_bounds#quadtree.h#658
+quadtree_bounds_free#bounds.c#724 -> quadtree_bounds#quadtree.h#658, quadtree_node#quadtree.h#665, quadtree_point_free#point.c#723
+quadtree_node_new#node.c#732 -> quadtree_node#quadtree.h#665
+quadtree_node_free#node.c#754 -> quadtree_node#quadtree.h#665, quadtree_node_reset#node.c#727, quadtree#quadtree.h#675, elision_#quadtree.c#727, quadtree_bounds_free#bounds.c#724
+quadtree_node_ispointer#node.c#715 -> quadtree_node#quadtree.h#665, quadtree_node_isleaf#node.c#723
+quadtree_node_isempty#node.c#719 -> quadtree_node_isleaf#node.c#723, quadtree_node#quadtree.h#665
+quadtree_node_isleaf#node.c#723 -> quadtree_node#quadtree.h#665
+quadtree_node_reset#node.c#727 -> quadtree_node#quadtree.h#665, quadtree_point_free#point.c#723, elision_#quadtree.c#727, quadtree#quadtree.h#675
+quadtree_node_with_bounds#node.c#745 -> quadtree_bounds_new#bounds.c#730, quadtree_bounds_extend#bounds.c#715, quadtree_node_new#node.c#732, quadtree_node#quadtree.h#665
+quadtree_point_new#point.c#715 -> quadtree_point#quadtree.h#653
+quadtree_point_free#point.c#723 -> quadtree_point#quadtree.h#653, quadtree_node#quadtree.h#665, quadtree_bounds#quadtree.h#658
+quadtree_new#quadtree.c#804 -> quadtree_node_with_bounds#node.c#745, quadtree#quadtree.h#675
+quadtree_free#quadtree.c#827 -> elision_#quadtree.c#727, quadtree_node_free#node.c#754, quadtree#quadtree.h#675
+quadtree_search#quadtree.c#823 -> quadtree_point#quadtree.h#653, find_#quadtree.c#769, quadtree#quadtree.h#675
+quadtree_insert#quadtree.c#814 -> node_contains_#quadtree.c#723, insert_#quadtree.c#781, quadtree_point#quadtree.h#653, quadtree_point_new#point.c#715, quadtree#quadtree.h#675
+quadtree_walk#quadtree.c#836 -> quadtree_node#quadtree.h#665
+split_node_#quadtree.c#745 -> quadtree_node#quadtree.h#665, quadtree_bounds#quadtree.h#658, quadtree_node_with_bounds#node.c#745, quadtree#quadtree.h#675, quadtree_point#quadtree.h#653, insert_#quadtree.c#781
+insert_#quadtree.c#781 -> quadtree_point#quadtree.h#653, split_node_#quadtree.c#745, quadtree_node#quadtree.h#665, quadtree#quadtree.h#675, reset_node_#quadtree.c#729, get_quadrant_#quadtree.c#737, quadtree_node_isleaf#node.c#723, quadtree_node_ispointer#node.c#715, quadtree_node_isempty#node.c#719
+node_contains_#quadtree.c#723 -> quadtree_node#quadtree.h#665, quadtree_point#quadtree.h#653, quadtree#quadtree.h#675, quadtree_bounds#quadtree.h#658
+get_quadrant_#quadtree.c#737 -> node_contains_#quadtree.c#723, quadtree_point#quadtree.h#653, quadtree_node#quadtree.h#665
+elision_#quadtree.c#727
+reset_node_#quadtree.c#729 -> elision_#quadtree.c#727, quadtree#quadtree.h#675, quadtree_node#quadtree.h#665, quadtree_node_reset#node.c#727
+find_#quadtree.c#769 -> quadtree_point#quadtree.h#653, quadtree_node#quadtree.h#665, get_quadrant_#quadtree.c#737, quadtree_node_isleaf#node.c#723, quadtree#quadtree.h#675
+
+SPLIT_TAG
+
+elision_#quadtree.c#727
+quadtree_point#quadtree.h#653
+quadtree_bounds#quadtree.h#658
+quadtree_point_new#point.c#715
+quadtree_node#quadtree.h#665
+quadtree_bounds_new#bounds.c#730
+quadtree#quadtree.h#675
+quadtree_bounds_extend#bounds.c#715
+quadtree_node_new#node.c#732
+quadtree_node_isleaf#node.c#723
+quadtree_point_free#point.c#723
+quadtree_walk#quadtree.c#836
+node_contains_#quadtree.c#723
+quadtree_node_with_bounds#node.c#745
+quadtree_node_ispointer#node.c#715
+quadtree_node_isempty#node.c#719
+quadtree_bounds_free#bounds.c#724
+quadtree_node_reset#node.c#727
+get_quadrant_#quadtree.c#737
+quadtree_new#quadtree.c#804
+quadtree_node_free#node.c#754
+reset_node_#quadtree.c#729
+find_#quadtree.c#769
+quadtree_free#quadtree.c#827
+insert_#quadtree.c#781 <-> split_node_#quadtree.c#745
+quadtree_search#quadtree.c#823
+quadtree_insert#quadtree.c#814

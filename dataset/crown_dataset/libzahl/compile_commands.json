@@ -1,0 +1,884 @@
+[
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zmodmul.o",
+            "src/zmodmul.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zmodmul.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zload.o",
+            "src/zload.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zload.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zmodpowu.o",
+            "src/zmodpowu.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zmodpowu.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zdivmod.o",
+            "src/zdivmod.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zdivmod.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zsub.o",
+            "src/zsub.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zsub.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zsetu.o",
+            "src/zsetu.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zsetu.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zfree.o",
+            "src/zfree.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zfree.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zset.o",
+            "src/zset.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zset.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zxor.o",
+            "src/zxor.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zxor.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zcmp.o",
+            "src/zcmp.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zcmp.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zsplit.o",
+            "src/zsplit.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zsplit.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zmodsqr.o",
+            "src/zmodsqr.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zmodsqr.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zadd.o",
+            "src/zadd.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zadd.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "ztrunc.o",
+            "src/ztrunc.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/ztrunc.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zpowu.o",
+            "src/zpowu.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zpowu.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zsave.o",
+            "src/zsave.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zsave.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zabs.o",
+            "src/zabs.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zabs.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zcmpmag.o",
+            "src/zcmpmag.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zcmpmag.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zmul.o",
+            "src/zmul.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zmul.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zand.o",
+            "src/zand.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zand.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "allocator.o",
+            "src/allocator.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/allocator.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zswap.o",
+            "src/zswap.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zswap.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zmod.o",
+            "src/zmod.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zmod.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zsetup.o",
+            "src/zsetup.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zsetup.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zbits.o",
+            "src/zbits.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zbits.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zlsh.o",
+            "src/zlsh.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zlsh.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "znot.o",
+            "src/znot.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/znot.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zseti.o",
+            "src/zseti.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zseti.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zlsb.o",
+            "src/zlsb.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zlsb.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zperror.o",
+            "src/zperror.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zperror.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zbtest.o",
+            "src/zbtest.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zbtest.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zrand.o",
+            "src/zrand.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zrand.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zbset.o",
+            "src/zbset.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zbset.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zstr_length.o",
+            "src/zstr_length.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zstr_length.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zpow.o",
+            "src/zpow.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zpow.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zerror.o",
+            "src/zerror.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zerror.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zmodpow.o",
+            "src/zmodpow.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zmodpow.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zrsh.o",
+            "src/zrsh.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zrsh.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zgcd.o",
+            "src/zgcd.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zgcd.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zcmpi.o",
+            "src/zcmpi.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zcmpi.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zcmpu.o",
+            "src/zcmpu.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zcmpu.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zptest.o",
+            "src/zptest.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zptest.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zsqr.o",
+            "src/zsqr.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zsqr.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zunsetup.o",
+            "src/zunsetup.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zunsetup.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zstr.o",
+            "src/zstr.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zstr.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zsets.o",
+            "src/zsets.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zsets.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zor.o",
+            "src/zor.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zor.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zneg.o",
+            "src/zneg.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zneg.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-std=c99",
+            "-O3",
+            "-Wall",
+            "-pedantic",
+            "-D_DEFAULT_SOURCE",
+            "-D_BSD_SOURCE",
+            "-D_XOPEN_SOURCE=700",
+            "-o",
+            "zdiv.o",
+            "src/zdiv.c"
+        ],
+        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/libzahl",
+        "file": "src/zdiv.c"
+    }
+]

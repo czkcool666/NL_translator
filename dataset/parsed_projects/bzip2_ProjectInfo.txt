@@ -1,0 +1,348 @@
+bzip2
+├── blocksort.c
+├── bzip2.c
+├── bzip2recover.c
+├── bzlib.c
+├── compress.c
+├── crctable.c
+├── decompress.c
+├── huffman.c
+├── randtable.c
+└── svf_analysis_output
+H_FILE_LIST
+bzlib.h
+bzlib_private.h
+
+SPLIT_TAG
+
+BitStream#bzip2recover.c#1131 -> Char#bzlib_private.h#1231, Int32#bzlib_private.h#1237
+bz_stream#bzlib.h#1165 -> UInt16#bzlib_private.h#1243, DState#bzlib_private.h#1303, UInt32#bzlib_private.h#1239, UChar#bzlib_private.h#1235, EState#bzlib_private.h#1251, Int32#bzlib_private.h#1237
+bzFile#bzlib.c#1911 -> bz_stream#bzlib.h#1165, Int32#bzlib_private.h#1237, Char#bzlib_private.h#1231, Bool#bzlib_private.h#1233
+DState#bzlib_private.h#1303 -> Int32#bzlib_private.h#1237, Bool#bzlib_private.h#1233, UInt16#bzlib_private.h#1243, UChar#bzlib_private.h#1235, bz_stream#bzlib.h#1165, UInt32#bzlib_private.h#1239
+EState#bzlib_private.h#1251 -> Int32#bzlib_private.h#1237, UInt16#bzlib_private.h#1243, bz_stream#bzlib.h#1165, UInt32#bzlib_private.h#1239, UChar#bzlib_private.h#1235, Bool#bzlib_private.h#1233
+UInt64#bzip2.c#2471 -> UChar#bzlib_private.h#1235
+zzzz#bzip2.c#3281 -> Char#bzlib_private.h#1231
+BZFILE#bzlib.h#1193
+Char#bzlib_private.h#1231
+Bool#bzlib_private.h#1233
+UChar#bzlib_private.h#1235
+Int32#bzlib_private.h#1237
+UInt32#bzlib_private.h#1239
+Int16#bzlib_private.h#1241
+UInt16#bzlib_private.h#1243
+incs#blocksort.c#1627 -> Int32#bzlib_private.h#1237
+BZ2_blockSort#blocksort.c#1897 -> UChar#bzlib_private.h#1235, BZ2_bz__AssertH__fail#bzlib.c#1376, EState#bzlib_private.h#1251, UInt16#bzlib_private.h#1243, UInt32#bzlib_private.h#1239, mainSort#blocksort.c#1755, fallbackSort#blocksort.c#1459, Int32#bzlib_private.h#1237
+fallbackSimpleSort#blocksort.c#1376 -> UInt32#bzlib_private.h#1239, Int32#bzlib_private.h#1237
+fallbackQSort3#blocksort.c#1396 -> Int32#bzlib_private.h#1237, UInt32#bzlib_private.h#1239, fallbackSimpleSort#blocksort.c#1376, BZ2_bz__AssertH__fail#bzlib.c#1376
+fallbackSort#blocksort.c#1459 -> EState#bzlib_private.h#1251, Int32#bzlib_private.h#1237, UInt32#bzlib_private.h#1239, UChar#bzlib_private.h#1235, fallbackQSort3#blocksort.c#1396, BZ2_bz__AssertH__fail#bzlib.c#1376
+mainGtU#blocksort.c#1535 -> UInt16#bzlib_private.h#1243, UInt32#bzlib_private.h#1239, Bool#bzlib_private.h#1233, UChar#bzlib_private.h#1235, Int32#bzlib_private.h#1237
+mainSimpleSort#blocksort.c#1629 -> UInt16#bzlib_private.h#1243, Bool#bzlib_private.h#1233, incs#blocksort.c#1627, UChar#bzlib_private.h#1235, mainGtU#blocksort.c#1535, Int32#bzlib_private.h#1237, UInt32#bzlib_private.h#1239
+mmed3#blocksort.c#1676 -> UChar#bzlib_private.h#1235
+mainQSort3#blocksort.c#1686 -> UInt32#bzlib_private.h#1239, mainSimpleSort#blocksort.c#1629, mmed3#blocksort.c#1676, BZ2_bz__AssertH__fail#bzlib.c#1376, Int32#bzlib_private.h#1237, Bool#bzlib_private.h#1233, UChar#bzlib_private.h#1235, UInt16#bzlib_private.h#1243
+mainSort#blocksort.c#1755 -> UChar#bzlib_private.h#1235, Bool#bzlib_private.h#1233, mainQSort3#blocksort.c#1686, BZ2_bz__AssertH__fail#bzlib.c#1376, UInt16#bzlib_private.h#1243, UInt32#bzlib_private.h#1239, Int32#bzlib_private.h#1237
+IntNative#bzip2.c#2419
+verbosity#bzip2.c#2421 -> Int32#bzlib_private.h#1237
+keepInputFiles#bzip2.c#2423 -> Bool#bzlib_private.h#1233
+forceOverwrite#bzip2.c#2425 -> Bool#bzlib_private.h#1233
+numFileNames#bzip2.c#2427 -> Int32#bzlib_private.h#1237
+exitValue#bzip2.c#2429 -> Int32#bzlib_private.h#1237
+opMode#bzip2.c#2431 -> Int32#bzlib_private.h#1237
+srcMode#bzip2.c#2433 -> Int32#bzlib_private.h#1237
+longestFileName#bzip2.c#2435 -> Int32#bzlib_private.h#1237
+inName#bzip2.c#2437 -> Char#bzlib_private.h#1231
+outName#bzip2.c#2439 -> Char#bzlib_private.h#1231
+tmpName#bzip2.c#2441 -> Char#bzlib_private.h#1231
+progName#bzip2.c#2443 -> Char#bzlib_private.h#1231
+progNameReally#bzip2.c#2445 -> Char#bzlib_private.h#1231
+outputHandleJustInCase#bzip2.c#2447
+workFactor#bzip2.c#2449 -> Int32#bzlib_private.h#1237
+fileMetaInfo#bzip2.c#2886 -> Int32#bzlib_private.h#1237, inName#bzip2.c#2437, IntNative#bzip2.c#2419, Char#bzlib_private.h#1231
+zSuffix#bzip2.c#2922 -> Char#bzlib_private.h#1231
+unzSuffix#bzip2.c#2924 -> Char#bzlib_private.h#1231
+panic#bzip2.c#2778 -> cleanUpAndFail#bzip2.c#2754, showFileNames#bzip2.c#2750, progName#bzip2.c#2443, Char#bzlib_private.h#1231
+ioError#bzip2.c#2801 -> progName#bzip2.c#2443, cleanUpAndFail#bzip2.c#2754, showFileNames#bzip2.c#2750
+outOfMemory#bzip2.c#2832 -> showFileNames#bzip2.c#2750, progName#bzip2.c#2443, cleanUpAndFail#bzip2.c#2754
+configError#bzip2.c#2838 -> exitValue#bzip2.c#2429, setExit#bzip2.c#2742
+crcError#bzip2.c#2784 -> progName#bzip2.c#2443, cleanUpAndFail#bzip2.c#2754, cadvise#bzip2.c#2746, showFileNames#bzip2.c#2750
+cleanUpAndFail#bzip2.c#2754 -> setExit#bzip2.c#2742, outName#bzip2.c#2439, forceOverwrite#bzip2.c#2425, opMode#bzip2.c#2431, numFileNames#bzip2.c#2427, inName#bzip2.c#2437, IntNative#bzip2.c#2419, Int32#bzlib_private.h#1237, keepInputFiles#bzip2.c#2423, progName#bzip2.c#2443, outputHandleJustInCase#bzip2.c#2447, srcMode#bzip2.c#2433, exitValue#bzip2.c#2429
+compressedStreamEOF#bzip2.c#2791 -> progName#bzip2.c#2443, forceOverwrite#bzip2.c#2425, cleanUpAndFail#bzip2.c#2754, showFileNames#bzip2.c#2750, cadvise#bzip2.c#2746
+copyFileName#bzip2.c#2850 -> setExit#bzip2.c#2742, outName#bzip2.c#2439, inName#bzip2.c#2437, exitValue#bzip2.c#2429, Char#bzlib_private.h#1231
+myMalloc#bzip2.c#3287 -> Int32#bzlib_private.h#1237, zzzz#bzip2.c#3281, outOfMemory#bzip2.c#2832
+applySavedFileAttrToOutputFile#bzip2.c#2911 -> ioError#bzip2.c#2801, fileMetaInfo#bzip2.c#2886, IntNative#bzip2.c#2419
+uInt64_from_UInt32s#bzip2.c#2474 -> UInt64#bzip2.c#2471, UInt32#bzlib_private.h#1239, UChar#bzlib_private.h#1235
+uInt64_to_double#bzip2.c#2485 -> Int32#bzlib_private.h#1237, UInt64#bzip2.c#2471
+uInt64_isZero#bzip2.c#2496 -> UInt64#bzip2.c#2471, Bool#bzlib_private.h#1233, Int32#bzlib_private.h#1237
+uInt64_qrm10#bzip2.c#2502 -> UInt64#bzip2.c#2471, UInt32#bzlib_private.h#1239, Int32#bzlib_private.h#1237
+uInt64_toAscii#bzip2.c#2514 -> UInt64#bzip2.c#2471, uInt64_isZero#bzip2.c#2496, Int32#bzlib_private.h#1237, UChar#bzlib_private.h#1235, uInt64_qrm10#bzip2.c#2502
+myfeof#bzip2.c#2528 -> Int32#bzlib_private.h#1237, Bool#bzlib_private.h#1233
+compressStream#bzip2.c#2535 -> ioError#bzip2.c#2801, BZ2_bzWriteOpen#bzlib.c#1929, panic#bzip2.c#2778, myfeof#bzip2.c#2528, numFileNames#bzip2.c#2427, uInt64_from_UInt32s#bzip2.c#2474, BZFILE#bzlib.h#1193, uInt64_to_double#bzip2.c#2485, outputHandleJustInCase#bzip2.c#2447, UChar#bzlib_private.h#1235, uInt64_toAscii#bzip2.c#2514, Bool#bzlib_private.h#1233, Int32#bzlib_private.h#1237, BZ2_bzWrite#bzlib.c#1953, workFactor#bzip2.c#2449, UInt32#bzlib_private.h#1239, Char#bzlib_private.h#1231, verbosity#bzip2.c#2421, configError#bzip2.c#2838, UInt64#bzip2.c#2471, BZ2_bzWriteClose64#bzlib.c#1981, outOfMemory#bzip2.c#2832, applySavedFileAttrToOutputFile#bzip2.c#2911
+uncompressStream#bzip2.c#2600 -> BZ2_bzReadClose#bzlib.c#2047, forceOverwrite#bzip2.c#2425, keepInputFiles#bzip2.c#2423, Bool#bzlib_private.h#1233, BZ2_bzRead#bzlib.c#2056, compressedStreamEOF#bzip2.c#2791, crcError#bzip2.c#2784, BZFILE#bzlib.h#1193, BZ2_bzReadOpen#bzlib.c#2018, progName#bzip2.c#2443, BZ2_bzReadGetUnused#bzlib.c#2084, outOfMemory#bzip2.c#2832, applySavedFileAttrToOutputFile#bzip2.c#2911, verbosity#bzip2.c#2421, myfeof#bzip2.c#2528, inName#bzip2.c#2437, outputHandleJustInCase#bzip2.c#2447, configError#bzip2.c#2838, panic#bzip2.c#2778, Int32#bzlib_private.h#1237, ioError#bzip2.c#2801, UChar#bzlib_private.h#1235
+testStream#bzip2.c#2684 -> keepInputFiles#bzip2.c#2423, BZ2_bzReadOpen#bzlib.c#2018, verbosity#bzip2.c#2421, BZ2_bzRead#bzlib.c#2056, panic#bzip2.c#2778, forceOverwrite#bzip2.c#2425, progName#bzip2.c#2443, inName#bzip2.c#2437, outOfMemory#bzip2.c#2832, BZ2_bzReadClose#bzlib.c#2047, myfeof#bzip2.c#2528, Int32#bzlib_private.h#1237, ioError#bzip2.c#2801, Bool#bzlib_private.h#1233, configError#bzip2.c#2838, UChar#bzlib_private.h#1235, BZ2_bzReadGetUnused#bzlib.c#2084, BZFILE#bzlib.h#1193
+setExit#bzip2.c#2742 -> Int32#bzlib_private.h#1237, exitValue#bzip2.c#2429
+cadvise#bzip2.c#2746 -> forceOverwrite#bzip2.c#2425
+showFileNames#bzip2.c#2750 -> outName#bzip2.c#2439, inName#bzip2.c#2437, forceOverwrite#bzip2.c#2425
+mySignalCatcher#bzip2.c#2808 -> cleanUpAndFail#bzip2.c#2754, progName#bzip2.c#2443, IntNative#bzip2.c#2419
+mySIGSEGVorSIGBUScatcher#bzip2.c#2813 -> exitValue#bzip2.c#2429, outName#bzip2.c#2439, progName#bzip2.c#2443, opMode#bzip2.c#2431, inName#bzip2.c#2437, IntNative#bzip2.c#2419, setExit#bzip2.c#2742
+pad#bzip2.c#2844 -> Int32#bzlib_private.h#1237, longestFileName#bzip2.c#2435, inName#bzip2.c#2437, Char#bzlib_private.h#1231
+fileExists#bzip2.c#2860 -> Bool#bzlib_private.h#1233, outName#bzip2.c#2439, inName#bzip2.c#2437, Char#bzlib_private.h#1231
+fopen_output_safely#bzip2.c#2867 -> IntNative#bzip2.c#2419, Char#bzlib_private.h#1231, outName#bzip2.c#2439
+notAStandardFile#bzip2.c#2877 -> IntNative#bzip2.c#2419, Bool#bzlib_private.h#1233, Char#bzlib_private.h#1231, inName#bzip2.c#2437
+saveInputFileMetaInfo#bzip2.c#2896 -> ioError#bzip2.c#2801, fileMetaInfo#bzip2.c#2886, IntNative#bzip2.c#2419, Char#bzlib_private.h#1231, inName#bzip2.c#2437
+applySavedTimeInfoToOutputFile#bzip2.c#2902 -> Char#bzlib_private.h#1231, outName#bzip2.c#2439, IntNative#bzip2.c#2419, ioError#bzip2.c#2801, fileMetaInfo#bzip2.c#2886
+containsDubiousChars#bzip2.c#2918 -> inName#bzip2.c#2437, Bool#bzlib_private.h#1233, Char#bzlib_private.h#1231
+hasSuffix#bzip2.c#2926 -> inName#bzip2.c#2437, zSuffix#bzip2.c#2922, Int32#bzlib_private.h#1237, Char#bzlib_private.h#1231, Bool#bzlib_private.h#1233
+mapSuffix#bzip2.c#2934 -> zSuffix#bzip2.c#2922, unzSuffix#bzip2.c#2924, outName#bzip2.c#2439, Char#bzlib_private.h#1231, Bool#bzlib_private.h#1233, hasSuffix#bzip2.c#2926
+compress#bzip2.c#2941 -> Char#bzlib_private.h#1231, ioError#bzip2.c#2801, fopen_output_safely#bzip2.c#2867, progName#bzip2.c#2443, verbosity#bzip2.c#2421, Int32#bzlib_private.h#1237, outName#bzip2.c#2439, containsDubiousChars#bzip2.c#2918, pad#bzip2.c#2844, zSuffix#bzip2.c#2922, saveInputFileMetaInfo#bzip2.c#2896, forceOverwrite#bzip2.c#2425, hasSuffix#bzip2.c#2926, outputHandleJustInCase#bzip2.c#2447, Bool#bzlib_private.h#1233, copyFileName#bzip2.c#2850, srcMode#bzip2.c#2433, fileMetaInfo#bzip2.c#2886, setExit#bzip2.c#2742, keepInputFiles#bzip2.c#2423, compressStream#bzip2.c#2535, IntNative#bzip2.c#2419, notAStandardFile#bzip2.c#2877, inName#bzip2.c#2437, panic#bzip2.c#2778, applySavedTimeInfoToOutputFile#bzip2.c#2902, fileExists#bzip2.c#2860
+uncompress#bzip2.c#3070 -> ioError#bzip2.c#2801, pad#bzip2.c#2844, containsDubiousChars#bzip2.c#2918, IntNative#bzip2.c#2419, inName#bzip2.c#2437, srcMode#bzip2.c#2433, progName#bzip2.c#2443, Int32#bzlib_private.h#1237, fileExists#bzip2.c#2860, saveInputFileMetaInfo#bzip2.c#2896, fopen_output_safely#bzip2.c#2867, forceOverwrite#bzip2.c#2425, unzSuffix#bzip2.c#2924, notAStandardFile#bzip2.c#2877, outputHandleJustInCase#bzip2.c#2447, mapSuffix#bzip2.c#2934, setExit#bzip2.c#2742, keepInputFiles#bzip2.c#2423, uncompressStream#bzip2.c#2600, verbosity#bzip2.c#2421, Bool#bzlib_private.h#1233, panic#bzip2.c#2778, fileMetaInfo#bzip2.c#2886, applySavedTimeInfoToOutputFile#bzip2.c#2902, Char#bzlib_private.h#1231, outName#bzip2.c#2439, zSuffix#bzip2.c#2922, copyFileName#bzip2.c#2850
+testf#bzip2.c#3209 -> fileExists#bzip2.c#2860, progName#bzip2.c#2443, Char#bzlib_private.h#1231, verbosity#bzip2.c#2421, pad#bzip2.c#2844, setExit#bzip2.c#2742, outName#bzip2.c#2439, inName#bzip2.c#2437, panic#bzip2.c#2778, copyFileName#bzip2.c#2850, testStream#bzip2.c#2684, keepInputFiles#bzip2.c#2423, forceOverwrite#bzip2.c#2425, srcMode#bzip2.c#2433, outputHandleJustInCase#bzip2.c#2447, Bool#bzlib_private.h#1233, containsDubiousChars#bzip2.c#2918
+license#bzip2.c#3269 -> BZ2_bzlibVersion#bzlib.c#2150
+usage#bzip2.c#3273 -> BZ2_bzlibVersion#bzlib.c#2150, Char#bzlib_private.h#1231
+redundant#bzip2.c#3277 -> Char#bzlib_private.h#1231, progName#bzip2.c#2443
+mkCell#bzip2.c#3294 -> zzzz#bzip2.c#3281, myMalloc#bzip2.c#3287
+snocString#bzip2.c#3302 -> zzzz#bzip2.c#3281, myMalloc#bzip2.c#3287, mkCell#bzip2.c#3294, tmpName#bzip2.c#2441, Char#bzlib_private.h#1231
+addFlagsFromEnvVar#bzip2.c#3316 -> snocString#bzip2.c#3302, Int32#bzlib_private.h#1237, tmpName#bzip2.c#2441, Char#bzlib_private.h#1231, zzzz#bzip2.c#3281, Bool#bzlib_private.h#1233
+MaybeUInt64#bzip2recover.c#1082
+inFileName#bzip2recover.c#1094 -> Char#bzlib_private.h#1231
+outFileName#bzip2recover.c#1096 -> Char#bzlib_private.h#1231
+progName#bzip2recover.c#1098 -> Char#bzlib_private.h#1231
+bytesOut#bzip2recover.c#1100 -> MaybeUInt64#bzip2recover.c#1082
+bytesIn#bzip2recover.c#1102 -> MaybeUInt64#bzip2recover.c#1082
+bStart#bzip2recover.c#1224 -> MaybeUInt64#bzip2recover.c#1082
+bEnd#bzip2recover.c#1226 -> MaybeUInt64#bzip2recover.c#1082
+rbStart#bzip2recover.c#1228 -> MaybeUInt64#bzip2recover.c#1082
+rbEnd#bzip2recover.c#1230 -> MaybeUInt64#bzip2recover.c#1082
+readError#bzip2recover.c#1104 -> inFileName#bzip2recover.c#1094, progName#bzip2recover.c#1098
+writeError#bzip2recover.c#1111 -> inFileName#bzip2recover.c#1094, progName#bzip2recover.c#1098
+mallocFail#bzip2recover.c#1118 -> progName#bzip2recover.c#1098, Int32#bzlib_private.h#1237, BitStream#bzip2recover.c#1131
+tooManyBlocks#bzip2recover.c#1124 -> Int32#bzlib_private.h#1237, progName#bzip2recover.c#1098, inFileName#bzip2recover.c#1094
+bsOpenReadStream#bzip2recover.c#1139 -> mallocFail#bzip2recover.c#1118, BitStream#bzip2recover.c#1131
+bsOpenWriteStream#bzip2recover.c#1149 -> mallocFail#bzip2recover.c#1118, BitStream#bzip2recover.c#1131
+bsPutBit#bzip2recover.c#1159 -> Int32#bzlib_private.h#1237, writeError#bzip2recover.c#1111, UChar#bzlib_private.h#1235, UInt32#bzlib_private.h#1239, BitStream#bzip2recover.c#1131, bytesOut#bzip2recover.c#1100
+bsGetBit#bzip2recover.c#1172 -> readError#bzip2recover.c#1104, Int32#bzlib_private.h#1237, BitStream#bzip2recover.c#1131
+bsClose#bzip2recover.c#1188 -> UChar#bzlib_private.h#1235, BitStream#bzip2recover.c#1131, readError#bzip2recover.c#1104, writeError#bzip2recover.c#1111, bytesOut#bzip2recover.c#1100, Int32#bzlib_private.h#1237
+bsPutUChar#bzip2recover.c#1208 -> Int32#bzlib_private.h#1237, BitStream#bzip2recover.c#1131, UInt32#bzlib_private.h#1239, bsPutBit#bzip2recover.c#1159, UChar#bzlib_private.h#1235
+bsPutUInt32#bzip2recover.c#1213 -> Int32#bzlib_private.h#1237, BitStream#bzip2recover.c#1131, UInt32#bzlib_private.h#1239, bsPutBit#bzip2recover.c#1159
+endsInBz2#bzip2recover.c#1218 -> Char#bzlib_private.h#1231, Int32#bzlib_private.h#1237, Bool#bzlib_private.h#1233
+bzerrorstrings#bzlib.c#2256
+BZ2_bzCompressInit#bzlib.c#1419 -> workFactor#bzip2.c#2449, bz_stream#bzlib.h#1165, default_bzfree#bzlib.c#1396, default_bzalloc#bzlib.c#1391, UInt16#bzlib_private.h#1243, numFileNames#bzip2.c#2427, UChar#bzlib_private.h#1235, bzFile#bzlib.c#1911, Int32#bzlib_private.h#1237, bz_config_ok#bzlib.c#1384, UInt32#bzlib_private.h#1239, verbosity#bzip2.c#2421, EState#bzlib_private.h#1251, prepare_new_block#bzlib.c#1400, init_RL#bzlib.c#1410
+BZ2_bzCompress#bzlib.c#1577 -> bzFile#bzlib.c#1911, bz_stream#bzlib.h#1165, isempty_RL#bzlib.c#1415, handle_compress#bzlib.c#1545, Bool#bzlib_private.h#1233, EState#bzlib_private.h#1251
+BZ2_bzCompressEnd#bzlib.c#1618 -> bz_stream#bzlib.h#1165, EState#bzlib_private.h#1251
+BZ2_bzDecompressInit#bzlib.c#1632 -> default_bzfree#bzlib.c#1396, default_bzalloc#bzlib.c#1391, bz_stream#bzlib.h#1165, bzFile#bzlib.c#1911, verbosity#bzip2.c#2421, bz_config_ok#bzlib.c#1384, DState#bzlib_private.h#1303, Bool#bzlib_private.h#1233
+BZ2_bzDecompress#bzlib.c#1859 -> Int32#bzlib_private.h#1237, unRLE_obuf_to_output_FAST#bzlib.c#1661, Bool#bzlib_private.h#1233, unRLE_obuf_to_output_SMALL#bzlib.c#1785, BZ2_decompress#decompress.c#1385, DState#bzlib_private.h#1303, bzFile#bzlib.c#1911, bz_stream#bzlib.h#1165, BZ2_bz__AssertH__fail#bzlib.c#1376
+BZ2_bzDecompressEnd#bzlib.c#1897 -> DState#bzlib_private.h#1303, bz_stream#bzlib.h#1165, bzFile#bzlib.c#1911
+BZ2_bzReadOpen#bzlib.c#2018 -> BZFILE#bzlib.h#1193, bz_stream#bzlib.h#1165, keepInputFiles#bzip2.c#2423, BZ2_bzDecompressInit#bzlib.c#1632, UChar#bzlib_private.h#1235, bzFile#bzlib.c#1911, Bool#bzlib_private.h#1233, verbosity#bzip2.c#2421
+BZ2_bzReadClose#bzlib.c#2047 -> BZ2_bzDecompressEnd#bzlib.c#1897, BZFILE#bzlib.h#1193, bzFile#bzlib.c#1911
+BZ2_bzReadGetUnused#bzlib.c#2084 -> bz_stream#bzlib.h#1165, BZFILE#bzlib.h#1193, bzFile#bzlib.c#1911
+BZ2_bzRead#bzlib.c#2056 -> BZFILE#bzlib.h#1193, Int32#bzlib_private.h#1237, myfeof#bzip2.c#2528, Bool#bzlib_private.h#1233, UChar#bzlib_private.h#1235, BZ2_bzDecompress#bzlib.c#1859, bz_stream#bzlib.h#1165, bzFile#bzlib.c#1911
+BZ2_bzWriteOpen#bzlib.c#1929 -> Bool#bzlib_private.h#1233, workFactor#bzip2.c#2449, BZ2_bzCompressInit#bzlib.c#1419, bz_stream#bzlib.h#1165, BZFILE#bzlib.h#1193, numFileNames#bzip2.c#2427, Int32#bzlib_private.h#1237, bzFile#bzlib.c#1911, verbosity#bzip2.c#2421
+BZ2_bzWrite#bzlib.c#1953 -> UChar#bzlib_private.h#1235, Int32#bzlib_private.h#1237, bz_stream#bzlib.h#1165, BZ2_bzCompress#bzlib.c#1577, Bool#bzlib_private.h#1233, bzFile#bzlib.c#1911, BZFILE#bzlib.h#1193
+BZ2_bzWriteClose#bzlib.c#1977 -> BZ2_bzWriteClose64#bzlib.c#1981, BZFILE#bzlib.h#1193
+BZ2_bzWriteClose64#bzlib.c#1981 -> Bool#bzlib_private.h#1233, BZFILE#bzlib.h#1193, bzFile#bzlib.c#1911, BZ2_bzCompressEnd#bzlib.c#1618, BZ2_bzCompress#bzlib.c#1577, UChar#bzlib_private.h#1235, bz_stream#bzlib.h#1165, Int32#bzlib_private.h#1237
+BZ2_bzBuffToBuffCompress#bzlib.c#2094 -> numFileNames#bzip2.c#2427, BZ2_bzCompressInit#bzlib.c#1419, BZ2_bzCompress#bzlib.c#1577, bz_stream#bzlib.h#1165, verbosity#bzip2.c#2421, workFactor#bzip2.c#2449, BZ2_bzCompressEnd#bzlib.c#1618
+BZ2_bzBuffToBuffDecompress#bzlib.c#2120 -> bz_stream#bzlib.h#1165, BZ2_bzDecompressInit#bzlib.c#1632, BZ2_bzDecompressEnd#bzlib.c#1897, verbosity#bzip2.c#2421, BZ2_bzDecompress#bzlib.c#1859
+BZ2_bzlibVersion#bzlib.c#2150
+BZ2_bzopen#bzlib.c#2205 -> BZFILE#bzlib.h#1193, bzopen_or_bzdopen#bzlib.c#2154
+BZ2_bzdopen#bzlib.c#2209 -> bzopen_or_bzdopen#bzlib.c#2154, BZFILE#bzlib.h#1193
+BZ2_bzread#bzlib.c#2213 -> BZ2_bzRead#bzlib.c#2056, bzFile#bzlib.c#1911, BZFILE#bzlib.h#1193
+BZ2_bzwrite#bzlib.c#2224 -> BZFILE#bzlib.h#1193, BZ2_bzWrite#bzlib.c#1953
+BZ2_bzflush#bzlib.c#2234 -> BZFILE#bzlib.h#1193
+BZ2_bzclose#bzlib.c#2238 -> bzFile#bzlib.c#1911, BZFILE#bzlib.h#1193, BZ2_bzReadClose#bzlib.c#2047, BZ2_bzWriteClose#bzlib.c#1977
+BZ2_bzerror#bzlib.c#2259 -> bzFile#bzlib.c#1911, bzerrorstrings#bzlib.c#2256, BZFILE#bzlib.h#1193
+BZ2_bz__AssertH__fail#bzlib.c#1376 -> BZ2_bzlibVersion#bzlib.c#2150
+BZ2_indexIntoF#bzlib.c#1773 -> Int32#bzlib_private.h#1237, DState#bzlib_private.h#1303
+bz_config_ok#bzlib.c#1384
+default_bzalloc#bzlib.c#1391 -> Int32#bzlib_private.h#1237
+default_bzfree#bzlib.c#1396
+prepare_new_block#bzlib.c#1400 -> EState#bzlib_private.h#1251, Int32#bzlib_private.h#1237, Bool#bzlib_private.h#1233
+init_RL#bzlib.c#1410 -> EState#bzlib_private.h#1251
+isempty_RL#bzlib.c#1415 -> Bool#bzlib_private.h#1233, EState#bzlib_private.h#1251
+add_pair_to_block#bzlib.c#1466 -> BZ2_crc32Table#crctable.c#1376, UChar#bzlib_private.h#1235, Int32#bzlib_private.h#1237, EState#bzlib_private.h#1251, Bool#bzlib_private.h#1233
+flush_RL#bzlib.c#1494 -> add_pair_to_block#bzlib.c#1466, EState#bzlib_private.h#1251, init_RL#bzlib.c#1410
+copy_input_until_stop#bzlib.c#1499 -> bz_stream#bzlib.h#1165, Bool#bzlib_private.h#1233, EState#bzlib_private.h#1251, UChar#bzlib_private.h#1235, UInt32#bzlib_private.h#1239, add_pair_to_block#bzlib.c#1466, BZ2_crc32Table#crctable.c#1376
+copy_output_until_stop#bzlib.c#1529 -> bz_stream#bzlib.h#1165, EState#bzlib_private.h#1251, Bool#bzlib_private.h#1233
+handle_compress#bzlib.c#1545 -> Bool#bzlib_private.h#1233, flush_RL#bzlib.c#1494, prepare_new_block#bzlib.c#1400, EState#bzlib_private.h#1251, copy_output_until_stop#bzlib.c#1529, isempty_RL#bzlib.c#1415, bz_stream#bzlib.h#1165, copy_input_until_stop#bzlib.c#1499, BZ2_compressBlock#compress.c#1697
+unRLE_obuf_to_output_FAST#bzlib.c#1661 -> BZ2_rNums#randtable.c#1376, DState#bzlib_private.h#1303, UChar#bzlib_private.h#1235, Int32#bzlib_private.h#1237, BZ2_crc32Table#crctable.c#1376, UInt32#bzlib_private.h#1239, bz_stream#bzlib.h#1165, Bool#bzlib_private.h#1233
+unRLE_obuf_to_output_SMALL#bzlib.c#1785 -> UChar#bzlib_private.h#1235, BZ2_rNums#randtable.c#1376, Bool#bzlib_private.h#1233, Int32#bzlib_private.h#1237, BZ2_crc32Table#crctable.c#1376, UInt32#bzlib_private.h#1239, DState#bzlib_private.h#1303, BZ2_indexIntoF#bzlib.c#1773, bz_stream#bzlib.h#1165
+bzopen_or_bzdopen#bzlib.c#2154 -> BZFILE#bzlib.h#1193, workFactor#bzip2.c#2449, verbosity#bzip2.c#2421, keepInputFiles#bzip2.c#2423, BZ2_bzReadOpen#bzlib.c#2018, BZ2_bzWriteOpen#bzlib.c#1929, numFileNames#bzip2.c#2427
+BZ2_compressBlock#compress.c#1697 -> bsFinishWrite#compress.c#1381, bsPutUInt32#compress.c#1396, Bool#bzlib_private.h#1233, generateMTFValues#compress.c#1416, bsPutUChar#compress.c#1403, BZ2_bsInitWrite#compress.c#1376, EState#bzlib_private.h#1251, BZ2_blockSort#blocksort.c#1897, sendMTFValues#compress.c#1495, UChar#bzlib_private.h#1235, bsW#compress.c#1390
+BZ2_bsInitWrite#compress.c#1376 -> EState#bzlib_private.h#1251
+bsFinishWrite#compress.c#1381 -> UChar#bzlib_private.h#1235, EState#bzlib_private.h#1251
+bsW#compress.c#1390 -> UChar#bzlib_private.h#1235, Int32#bzlib_private.h#1237, UInt32#bzlib_private.h#1239, EState#bzlib_private.h#1251
+bsPutUInt32#compress.c#1396 -> EState#bzlib_private.h#1251, bsW#compress.c#1390, UInt32#bzlib_private.h#1239
+bsPutUChar#compress.c#1403 -> UInt32#bzlib_private.h#1239, bsW#compress.c#1390, UChar#bzlib_private.h#1235, EState#bzlib_private.h#1251
+makeMaps_e#compress.c#1407 -> EState#bzlib_private.h#1251, Int32#bzlib_private.h#1237
+generateMTFValues#compress.c#1416 -> EState#bzlib_private.h#1251, UInt16#bzlib_private.h#1243, UChar#bzlib_private.h#1235, Int32#bzlib_private.h#1237, makeMaps_e#compress.c#1407, Bool#bzlib_private.h#1233, UInt32#bzlib_private.h#1239
+sendMTFValues#compress.c#1495 -> bsW#compress.c#1390, UInt16#bzlib_private.h#1243, UInt32#bzlib_private.h#1239, Int32#bzlib_private.h#1237, EState#bzlib_private.h#1251, Bool#bzlib_private.h#1233, BZ2_bz__AssertH__fail#bzlib.c#1376, UChar#bzlib_private.h#1235
+BZ2_crc32Table#crctable.c#1376 -> EState#bzlib_private.h#1251, UInt32#bzlib_private.h#1239, DState#bzlib_private.h#1303
+BZ2_decompress#decompress.c#1385 -> UInt16#bzlib_private.h#1243, BZ2_rNums#randtable.c#1376, BZ2_hbCreateDecodeTables#huffman.c#1434, DState#bzlib_private.h#1303, makeMaps_d#decompress.c#1376, bz_stream#bzlib.h#1165, BZ2_bz__AssertH__fail#bzlib.c#1376, Int32#bzlib_private.h#1237, UInt32#bzlib_private.h#1239, UChar#bzlib_private.h#1235, BZ2_indexIntoF#bzlib.c#1773, Bool#bzlib_private.h#1233
+makeMaps_d#decompress.c#1376 -> Int32#bzlib_private.h#1237, DState#bzlib_private.h#1303
+BZ2_hbAssignCodes#huffman.c#1425 -> Int32#bzlib_private.h#1237, UChar#bzlib_private.h#1235
+BZ2_hbMakeCodeLengths#huffman.c#1376 -> UChar#bzlib_private.h#1235, Bool#bzlib_private.h#1233, Int32#bzlib_private.h#1237, BZ2_bz__AssertH__fail#bzlib.c#1376
+BZ2_hbCreateDecodeTables#huffman.c#1434 -> DState#bzlib_private.h#1303, Int32#bzlib_private.h#1237, UChar#bzlib_private.h#1235
+BZ2_rNums#randtable.c#1376 -> Int32#bzlib_private.h#1237
+
+SPLIT_TAG
+
+bzerrorstrings#bzlib.c#2256
+MaybeUInt64#bzip2recover.c#1082
+bz_config_ok#bzlib.c#1384
+default_bzfree#bzlib.c#1396
+outputHandleJustInCase#bzip2.c#2447
+IntNative#bzip2.c#2419
+BZ2_bzlibVersion#bzlib.c#2150
+Int16#bzlib_private.h#1241
+BZFILE#bzlib.h#1193
+UInt32#bzlib_private.h#1239
+UChar#bzlib_private.h#1235
+Bool#bzlib_private.h#1233
+UInt16#bzlib_private.h#1243
+Int32#bzlib_private.h#1237
+Char#bzlib_private.h#1231
+bytesOut#bzip2recover.c#1100
+bytesIn#bzip2recover.c#1102
+bStart#bzip2recover.c#1224
+bEnd#bzip2recover.c#1226
+rbStart#bzip2recover.c#1228
+rbEnd#bzip2recover.c#1230
+license#bzip2.c#3269
+BZ2_bz__AssertH__fail#bzlib.c#1376
+BZ2_bzflush#bzlib.c#2234
+UInt64#bzip2.c#2471
+mmed3#blocksort.c#1676
+keepInputFiles#bzip2.c#2423
+forceOverwrite#bzip2.c#2425
+bz_stream#bzlib.h#1165 <-> DState#bzlib_private.h#1303 <-> EState#bzlib_private.h#1251
+incs#blocksort.c#1627
+fallbackSimpleSort#blocksort.c#1376
+mainGtU#blocksort.c#1535
+verbosity#bzip2.c#2421
+numFileNames#bzip2.c#2427
+exitValue#bzip2.c#2429
+opMode#bzip2.c#2431
+srcMode#bzip2.c#2433
+longestFileName#bzip2.c#2435
+workFactor#bzip2.c#2449
+myfeof#bzip2.c#2528
+default_bzalloc#bzlib.c#1391
+BZ2_hbAssignCodes#huffman.c#1425
+BZ2_rNums#randtable.c#1376
+BitStream#bzip2recover.c#1131
+zzzz#bzip2.c#3281
+inName#bzip2.c#2437
+outName#bzip2.c#2439
+tmpName#bzip2.c#2441
+progName#bzip2.c#2443
+progNameReally#bzip2.c#2445
+zSuffix#bzip2.c#2922
+unzSuffix#bzip2.c#2924
+usage#bzip2.c#3273
+inFileName#bzip2recover.c#1094
+outFileName#bzip2recover.c#1096
+progName#bzip2recover.c#1098
+endsInBz2#bzip2recover.c#1218
+BZ2_hbMakeCodeLengths#huffman.c#1376
+uInt64_from_UInt32s#bzip2.c#2474
+uInt64_to_double#bzip2.c#2485
+uInt64_isZero#bzip2.c#2496
+uInt64_qrm10#bzip2.c#2502
+cadvise#bzip2.c#2746
+bzFile#bzlib.c#1911
+BZ2_bzCompressEnd#bzlib.c#1618
+BZ2_indexIntoF#bzlib.c#1773
+prepare_new_block#bzlib.c#1400
+init_RL#bzlib.c#1410
+isempty_RL#bzlib.c#1415
+copy_output_until_stop#bzlib.c#1529
+BZ2_bsInitWrite#compress.c#1376
+bsFinishWrite#compress.c#1381
+bsW#compress.c#1390
+makeMaps_e#compress.c#1407
+BZ2_crc32Table#crctable.c#1376
+makeMaps_d#decompress.c#1376
+BZ2_hbCreateDecodeTables#huffman.c#1434
+fallbackQSort3#blocksort.c#1396
+mainSimpleSort#blocksort.c#1629
+setExit#bzip2.c#2742
+fileMetaInfo#bzip2.c#2886
+pad#bzip2.c#2844
+notAStandardFile#bzip2.c#2877
+containsDubiousChars#bzip2.c#2918
+showFileNames#bzip2.c#2750
+fileExists#bzip2.c#2860
+fopen_output_safely#bzip2.c#2867
+redundant#bzip2.c#3277
+hasSuffix#bzip2.c#2926
+readError#bzip2recover.c#1104
+writeError#bzip2recover.c#1111
+mallocFail#bzip2recover.c#1118
+tooManyBlocks#bzip2recover.c#1124
+uInt64_toAscii#bzip2.c#2514
+BZ2_bzDecompressInit#bzlib.c#1632
+BZ2_bzDecompressEnd#bzlib.c#1897
+BZ2_bzReadGetUnused#bzlib.c#2084
+BZ2_bzerror#bzlib.c#2259
+BZ2_bzCompressInit#bzlib.c#1419
+bsPutUInt32#compress.c#1396
+bsPutUChar#compress.c#1403
+sendMTFValues#compress.c#1495
+generateMTFValues#compress.c#1416
+add_pair_to_block#bzlib.c#1466
+unRLE_obuf_to_output_FAST#bzlib.c#1661
+unRLE_obuf_to_output_SMALL#bzlib.c#1785
+BZ2_decompress#decompress.c#1385
+fallbackSort#blocksort.c#1459
+mainQSort3#blocksort.c#1686
+configError#bzip2.c#2838
+cleanUpAndFail#bzip2.c#2754
+copyFileName#bzip2.c#2850
+mySIGSEGVorSIGBUScatcher#bzip2.c#2813
+mapSuffix#bzip2.c#2934
+bsGetBit#bzip2recover.c#1172
+bsPutBit#bzip2recover.c#1159
+bsClose#bzip2recover.c#1188
+bsOpenReadStream#bzip2recover.c#1139
+bsOpenWriteStream#bzip2recover.c#1149
+BZ2_bzReadOpen#bzlib.c#2018
+BZ2_bzReadClose#bzlib.c#2047
+BZ2_bzWriteOpen#bzlib.c#1929
+flush_RL#bzlib.c#1494
+copy_input_until_stop#bzlib.c#1499
+BZ2_bzDecompress#bzlib.c#1859
+mainSort#blocksort.c#1755
+panic#bzip2.c#2778
+ioError#bzip2.c#2801
+outOfMemory#bzip2.c#2832
+crcError#bzip2.c#2784
+compressedStreamEOF#bzip2.c#2791
+mySignalCatcher#bzip2.c#2808
+bsPutUChar#bzip2recover.c#1208
+bsPutUInt32#bzip2recover.c#1213
+bzopen_or_bzdopen#bzlib.c#2154
+BZ2_bzRead#bzlib.c#2056
+BZ2_bzBuffToBuffDecompress#bzlib.c#2120
+BZ2_blockSort#blocksort.c#1897
+applySavedFileAttrToOutputFile#bzip2.c#2911
+saveInputFileMetaInfo#bzip2.c#2896
+applySavedTimeInfoToOutputFile#bzip2.c#2902
+myMalloc#bzip2.c#3287
+BZ2_bzopen#bzlib.c#2205
+BZ2_bzdopen#bzlib.c#2209
+testStream#bzip2.c#2684
+BZ2_bzread#bzlib.c#2213
+BZ2_compressBlock#compress.c#1697
+uncompressStream#bzip2.c#2600
+mkCell#bzip2.c#3294
+testf#bzip2.c#3209
+handle_compress#bzlib.c#1545
+uncompress#bzip2.c#3070
+snocString#bzip2.c#3302
+BZ2_bzCompress#bzlib.c#1577
+addFlagsFromEnvVar#bzip2.c#3316
+BZ2_bzWrite#bzlib.c#1953
+BZ2_bzWriteClose64#bzlib.c#1981
+BZ2_bzBuffToBuffCompress#bzlib.c#2094
+BZ2_bzwrite#bzlib.c#2224
+compressStream#bzip2.c#2535
+BZ2_bzWriteClose#bzlib.c#1977
+compress#bzip2.c#2941
+BZ2_bzclose#bzlib.c#2238
