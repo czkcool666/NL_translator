@@ -28,12 +28,37 @@ class Translator:
         """
         trans the given source project tree to the target project tree, and mkdir this target project tree in `trans_projects`.
         """
-        t_prompt = self.promptSelect.pj_tree_trans(c_pj_tree, self.project_name)
-        response = self.generator.get_response(t_prompt)
-        self._log_prompt_response("Project Tree Translation", t_prompt, response)
-        
-        rust_pj_tree_str, file_map_str= self._extract_pj_tree_map(response)
-        return rust_pj_tree_str, file_map_str
+        base_prompt = self.promptSelect.pj_tree_trans(c_pj_tree, self.project_name)
+        last_error = None
+        for attempt in range(3):
+            if attempt == 0:
+                t_prompt = base_prompt
+                prompt_type = "Project Tree Translation"
+            else:
+                t_prompt = (
+                    base_prompt
+                    + "\n\nYour previous response could not be parsed. "
+                    + "Return ONLY these two fenced code blocks, with no headings, prose, or explanation:\n"
+                    + "```project_tree\n"
+                    + f"{self.project_name}\n"
+                    + "├── Cargo.toml\n"
+                    + "├── src\n"
+                    + "    ├── demo.rs\n"
+                    + "```\n"
+                    + "```file_map\n"
+                    + f"{self.project_name}/src/demo.c -> {self.project_name}/src/demo.rs\n"
+                    + "```\n"
+                )
+                prompt_type = f"Project Tree Translation Retry {attempt}"
+
+            response = self.generator.get_response(t_prompt)
+            self._log_prompt_response(prompt_type, t_prompt, response)
+            try:
+                return self._extract_pj_tree_map(response)
+            except AssertionError as e:
+                last_error = e
+
+        raise last_error
     
     def _free_judge(self, source_c_code, called_code_context, pointToInfo):
         """
@@ -117,10 +142,31 @@ pub fn binn_count(ptr: Option<&u32>) -> i32 {
         #                                                  for meta in rust_depend_metas])
         
         if typedef_var_TAG:
-            typedef_var_prompt = self.promptSelect.typdef_var_replace(source_c_code.strip())
-            typedef_var_response = self.generator.get_response(typedef_var_prompt)
-            source_c_code = self._extract_free_judge(typedef_var_response, free_Tag=False)
-            assert source_c_code != "", "Failed to extract source code from response"
+            original_source_c_code = source_c_code.strip()
+            typedef_var_prompt = self.promptSelect.typdef_var_replace(original_source_c_code)
+            extracted_source_c_code = ""
+            for attempt in range(3):
+                current_prompt = typedef_var_prompt
+                if attempt > 0:
+                    current_prompt = (
+                        typedef_var_prompt
+                        + "\n\nYour previous response could not be parsed. "
+                        + "Return ONLY the transformed C code wrapped exactly like this:\n"
+                        + "<source_c_code>\n...\n</source_c_code>"
+                    )
+                typedef_var_response = self.generator.get_response(current_prompt)
+                extracted_source_c_code = self._extract_free_judge(typedef_var_response, free_Tag=False)
+                if extracted_source_c_code:
+                    break
+
+            if extracted_source_c_code:
+                source_c_code = extracted_source_c_code
+            else:
+                import logging
+                logging.getLogger(__name__).warning(
+                    f"Failed to extract typedef/global preprocessing response for {code_unique_names}; using original source C code"
+                )
+                source_c_code = original_source_c_code
         
         rust_depend_context_code =  "\n==========\n".join([meta['trans_rust_code_context'].strip() for meta in rust_depend_metas if meta['trans_rust_code_context'].strip()])
         t_prompt = self.promptSelect.SA_code_trans(source_c_code.strip(), rust_depend_context_code.strip(), SA_result)
@@ -227,8 +273,8 @@ pub fn binn_count(ptr: Option<&u32>) -> i32 {
     
     
     def _extract_pj_tree_map(self, response):
-        pj_tree_pattern = r'```project_tree\n(.*?)\n```'
-        file_map_pattern = r'```file_map\n(.*?)\n```'
+        pj_tree_pattern = r'```\s*project_tree\s*\n(.*?)\n```'
+        file_map_pattern = r'```\s*file_map\s*\n(.*?)\n```'
         pj_tree_match = re.search(pj_tree_pattern, response, re.DOTALL)
         file_map_match = re.search(file_map_pattern, response, re.DOTALL)
         

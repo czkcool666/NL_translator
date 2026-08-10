@@ -8,13 +8,12 @@ import logging
 from tqdm import tqdm
 from tree_sitter import Language, Parser
 import glob
+from utils.tree_sitter_loader import find_parser_library
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # ====  initial treesitter parser ==== #
-PARSER_LOCATION = "../Code_Package/dependencyLib/c_parser.so"
-if not os.path.exists(PARSER_LOCATION):
-    raise FileNotFoundError(f"Parser file not found at: {PARSER_LOCATION}")
+PARSER_LOCATION = find_parser_library(None, "c_parser.so", "c_parser_new.so")
 LANGUAGE = Language(PARSER_LOCATION, "c")
 parser = Parser()
 parser.set_language(LANGUAGE)
@@ -28,10 +27,42 @@ def parse_compile_command(entry):
         command_parts = shlex.split(entry['command'])
     else:
         raise ValueError("Invalid compile_commands.json format: missing 'command' or 'arguments'")
-    
-    compiler_args = [part for part in command_parts if part not in ['-c', '-o'] 
-                    and not part.endswith('.o') 
-                    and not part.endswith('.c')]
+
+    source_file = entry.get('file', '')
+    source_names = {
+        source_file,
+        os.path.basename(source_file),
+        os.path.abspath(os.path.join(entry.get('directory', ''), source_file)) if source_file else '',
+    }
+
+    compiler_args = []
+    skip_next = False
+    output_or_dependency_flags = {'-o', '-MF', '-MT', '-MQ'}
+    passthrough_value_flags = {
+        '-I', '-D', '-U', '-include', '-isystem', '-iquote', '-idirafter',
+        '-imacros', '-isysroot', '-target', '-std', '-x',
+    }
+
+    for index, part in enumerate(command_parts):
+        if skip_next:
+            skip_next = False
+            continue
+        if part in output_or_dependency_flags:
+            skip_next = True
+            continue
+        if part == '-c':
+            continue
+        if part in source_names:
+            continue
+        if part in passthrough_value_flags and index + 1 < len(command_parts):
+            compiler_args.extend([part, command_parts[index + 1]])
+            skip_next = True
+            continue
+        if index > 0 and not part.startswith('-'):
+            # Bear can capture simple Make targets such as `all` as an output
+            # operand. They are not valid preprocessor inputs or flags.
+            continue
+        compiler_args.append(part)
     return compiler_args
 
 
@@ -73,7 +104,8 @@ def create_compile_commands(project_path:Path):
 
 def expand_macros(project_path:Path, output_dir:Path):
 
-    output_dir.mkdir(exist_ok=True)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    output_dir = output_dir.resolve()
     
     compile_commands_path = project_path / 'compile_commands.json'
     if not compile_commands_path.exists():
@@ -95,10 +127,11 @@ def expand_macros(project_path:Path, output_dir:Path):
         
         try:
             compiler_args = parse_compile_command(entry)
-            output_file = output_dir / (Path(file_path).name)
+            output_file = output_dir / Path(file_path).name
             preprocessor_cmd = ["clang", '-E', file_path] + compiler_args[1:] + ['-o', str(output_file)]
 
-            subprocess.run(preprocessor_cmd, cwd=directory, check=True)
+            cwd = directory if os.path.isdir(directory) else str(project_path)
+            subprocess.run(preprocessor_cmd, cwd=cwd, check=True)
         except (ValueError, subprocess.CalledProcessError) as e:
             print(f"Warning: Failed to process {file_path}: {str(e)}")
             continue

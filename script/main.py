@@ -14,6 +14,13 @@ import time
 import re
 import copy
 import traceback
+try:
+    import tomllib
+except ModuleNotFoundError:
+    try:
+        import tomli as tomllib
+    except ModuleNotFoundError:
+        tomllib = None
 import KG_construction as kg_construction
 import handcraftPrompt
 from generator import Generator
@@ -40,6 +47,7 @@ class Main:
         self.translator = Translator(args, self.generator)
 
     def translation_setup(self):
+        os.makedirs(self.args.trans_project_path, exist_ok=True)
         if "LLM_only" in self.args.translate_mode:
             trans_metadata_path = os.path.join(self.args.trans_project_path, self.args.source_project_name + "_LLM_only_trans_metadata.jsonl")
         elif "Trans_PA" in self.args.translate_mode:
@@ -60,9 +68,14 @@ class Main:
         
 
         self.rust_project_path = os.path.join(self.args.trans_project_path, self.args.source_project_name)
-        if not os.path.exists(self.rust_project_path):
+        if not os.path.exists(self.rust_project_path) or not os.path.exists(trans_metadata_path):
             rust_pj_tree_str, file_map_str = self.translator._pj_tree_trans(c_project_tree)
-            new_rust_pj_tree_str = self.create_project_structure(rust_pj_tree_str, self.args.trans_project_path)
+            if not os.path.exists(self.rust_project_path):
+                new_rust_pj_tree_str = self.create_project_structure(rust_pj_tree_str, self.args.trans_project_path)
+            else:
+                pathList = [self.args.source_project_name]
+                self.obtain_project_tree(pathList, self.rust_project_path)
+                new_rust_pj_tree_str = "\n".join(pathList)
             print(new_rust_pj_tree_str)
             
 
@@ -79,11 +92,75 @@ class Main:
                 for item in file_map_list:
                     json.dump(item, f, ensure_ascii=False)
                     f.write('\n')
+        self.ensure_valid_cargo_toml()
         verf_Result = self.rust_compile_verfication()
         if verf_Result != "Success":
             logger.error(f"Rust pro verification failed: {verf_Result}")
             exit(1)
         return trans_metadata_path, entities_path, relationships_path, c_topo_sort_str
+
+    def ensure_valid_cargo_toml(self):
+        os.makedirs(self.rust_project_path, exist_ok=True)
+        cargo_toml_path = os.path.join(self.rust_project_path, 'Cargo.toml')
+        should_write = not os.path.exists(cargo_toml_path)
+        if not should_write and tomllib is not None:
+            try:
+                with open(cargo_toml_path, 'rb') as f:
+                    tomllib.load(f)
+            except Exception:
+                should_write = True
+        if should_write:
+            with open(cargo_toml_path, 'w') as f:
+                f.write(f'''[package]
+name = "{self.args.source_project_name}"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+''')
+        self.normalize_rust_project_skeleton(self.rust_project_path)
+
+    def normalize_rust_project_skeleton(self, project_path):
+        src_dir = os.path.join(project_path, 'src')
+        if not os.path.isdir(src_dir):
+            return
+
+        main_rs_path = os.path.join(src_dir, 'main.rs')
+        if os.path.exists(main_rs_path):
+            with open(main_rs_path, 'r', encoding='utf-8') as f:
+                main_content = f.read()
+            if not main_content.strip():
+                with open(main_rs_path, 'w', encoding='utf-8') as f:
+                    f.write('fn main() {}\n')
+
+        common_dir = os.path.join(src_dir, 'common')
+        if os.path.isdir(common_dir):
+            common_rs_files = [
+                f.replace('.rs', '')
+                for f in os.listdir(common_dir)
+                if f.endswith('.rs') and f != 'mod.rs'
+            ]
+            mod_rs_path = os.path.join(common_dir, 'mod.rs')
+            with open(mod_rs_path, 'w', encoding='utf-8') as f:
+                for common_rs in common_rs_files:
+                    f.write(f"pub mod {common_rs};\n")
+
+        src_lib_path = os.path.join(src_dir, 'lib.rs')
+        src_rs_files = [
+            f.replace('.rs', '')
+            for f in os.listdir(src_dir)
+            if f.endswith('.rs') and f not in {'lib.rs', 'main.rs'}
+        ]
+        with open(src_lib_path, 'w', encoding='utf-8') as f:
+            for src_rs in src_rs_files:
+                f.write(f"pub mod {src_rs};\n")
+            if os.path.isdir(common_dir):
+                f.write("pub mod common;\n")
+            for src_rs in src_rs_files:
+                f.write(f"pub use crate::{src_rs}::*;\n")
+            if os.path.isdir(common_dir):
+                for common_rs in common_rs_files:
+                    f.write(f"pub use crate::common::{common_rs}::*;\n")
 
         
     def trans_LLM_only(self):  
@@ -647,6 +724,10 @@ class Main:
                     logger.info("SVF analysis script executed successfully!")
                 else:
                     logger.error(f"{cpp_path} executed failed")
+                    if result.stdout:
+                        logger.error(f"SVF stdout:\n{result.stdout}")
+                    if result.stderr:
+                        logger.error(f"SVF stderr:\n{result.stderr}")
                     raise Exception(f"SVF analysis script executed failed, return code: {result.returncode}")
         
         except Exception as e:
@@ -716,12 +797,13 @@ class Main:
                     Mut_Own_result, field_path_result = "", ""
                     if field['is_pointer'] and field['ownership'] == "Owning":
                         Mut_Own_result = f"{struct_name}_{specific_name} is Nullable, and {field['ownership']} pointer"
-                        field_usage_paths = struct_info['usage_paths'][field_name]
-                        field_path_result = self.struct_path_result(field_usage_paths, c_path)
+                        field_usage_paths = (struct_info.get('usage_paths') or {}).get(field_name)
+                        if field_usage_paths:
+                            field_path_result = self.struct_path_result(field_usage_paths, c_path)
                     elif field['is_pointer'] and field['ownership'] == "Borrowed": # Remind the model to express the lifetime of this struct member
                         Mut_Own_result = f"{struct_name}_{specific_name} is Nullable, Borrowed and {field['mutability']} pointer, declared as Option<&T> or Option<&mut T>; **Requires Lifetime Annotation**"
-                        if struct_info['usage_paths'] is not None and field_name in struct_info['usage_paths']:
-                            field_usage_paths = struct_info['usage_paths'][field_name]
+                        field_usage_paths = (struct_info.get('usage_paths') or {}).get(field_name)
+                        if field_usage_paths:
                             field_path_result = self.struct_path_result(field_usage_paths, c_path)
                         
                     struct_sa_result = struct_sa_result + "\n\n" + Mut_Own_result + "\n" + field_path_result
@@ -957,13 +1039,17 @@ class Main:
         }
     
     def struct_path_result(self,field_usage_paths, c_path):
+        if not field_usage_paths:
+            return ""
         
         # Select the longest path from all paths, as the return path
         all_path_list = []
         for item_dict in field_usage_paths:
             paths_list = item_dict['paths']
             all_path_list.extend(paths_list)
-        longest_path = max(paths_list, key=len)[::-1]
+        if not all_path_list:
+            return ""
+        longest_path = max(all_path_list, key=len)[::-1]
         
         path_parts = []
         for nodeInfo in longest_path:
@@ -1283,13 +1369,19 @@ class Main:
                     
 
             fixed_rust_defi_name = [name for name in fixed_rust_defi_name if name not in nested_names]
-            replace_metas = [meta for meta in trans_metadata if 'rust_definition_name' in meta and any(name in meta['rust_definition_name'] for name in fixed_rust_defi_name)]
+            candidate_names = fixed_rust_defi_name
+            replace_metas = self._select_replace_metas(candidate_names, trans_metadata, verf_Result)
             if len(replace_metas) == 0:
-                impl_for_stmt = [defi_name.split(" for ")[-1].split("<")[0].strip() for defi_name in fixed_rust_defi_name if " for " in defi_name]
-                if len(impl_for_stmt)!=0: 
-                    replace_metas = [meta for meta in trans_metadata if 'rust_definition_name' in meta and any(name in meta['rust_definition_name'] for name in impl_for_stmt)]
-                    
-            assert len(replace_metas) == 1, f"replace_metas: {replace_metas}"
+                impl_for_stmt = [defi_name.split(" for ")[-1].split("<")[0].strip() for defi_name in candidate_names if " for " in defi_name]
+                if len(impl_for_stmt) != 0:
+                    candidate_names = impl_for_stmt
+                    replace_metas = self._select_replace_metas(candidate_names, trans_metadata, verf_Result)
+
+            if len(replace_metas) == 0:
+                raise AssertionError(f"replace_metas: {replace_metas}")
+            if len(replace_metas) > 1:
+                matched_sources = [meta.get('source_c_code_id') for meta in replace_metas]
+                logger.warning(f"Multiple metadata entries match {candidate_names}; selecting first best-scored candidate from {matched_sources}")
             replace_meta = replace_metas[0]
             to_be_replace_code_path = replace_meta['trans_rust_path']
             rust_file_path = os.path.join(self.rust_project_path, to_be_replace_code_path)
@@ -1345,7 +1437,41 @@ class Main:
           
                 
         return trans_metadata
- 
+
+    def _select_replace_metas(self, target_names, trans_metadata, verf_Result):
+        error_path = None
+        if isinstance(verf_Result, dict):
+            loca_info = verf_Result.get("loca_info") or []
+            if loca_info:
+                error_path = loca_info[0].get("file_path")
+        primary_item = verf_Result.get("primary_item", "") if isinstance(verf_Result, dict) else ""
+
+        candidates = []
+        for index, meta in enumerate(trans_metadata):
+            rust_definition_names = meta.get('rust_definition_name')
+            if not rust_definition_names:
+                continue
+            if isinstance(rust_definition_names, str):
+                rust_definition_names = [rust_definition_names]
+
+            overlap = len(set(target_names) & set(rust_definition_names))
+            if overlap == 0:
+                continue
+
+            same_path = error_path is not None and meta.get('trans_rust_path') == error_path
+            contains_primary = bool(primary_item and primary_item.strip() in meta.get('trans_rust_code', ''))
+            candidates.append((overlap, same_path, contains_primary, index, meta))
+
+        if not candidates:
+            return []
+
+        candidates.sort(key=lambda item: (item[0], item[1], item[2], item[3]), reverse=True)
+        best_score = candidates[0][:3]
+        return [
+            meta
+            for overlap, same_path, contains_primary, _, meta in candidates
+            if (overlap, same_path, contains_primary) == best_score
+        ]
 
 
     def _replace_rust_code_in_file(self, old_code, new_code, file_path):
@@ -1576,22 +1702,50 @@ class Main:
         return '\n'.join(annotated_lines)
     
     def create_project_structure(self, tree_str, base_path):
-        lines = tree_str.strip().split('\n')
+        lines = [
+            line.rstrip()
+            for line in tree_str.strip().split('\n')
+            if line.strip()
+            and not line.strip().startswith('```')
+            and not line.strip().startswith('#')
+        ]
         if not lines:
             return
         
         project_name = self.args.source_project_name
         project_path = os.path.join(base_path, project_name)
 
+        def ensure_cargo_toml():
+            cargo_toml_path = os.path.join(project_path, 'Cargo.toml')
+            should_write = not os.path.exists(cargo_toml_path)
+            if not should_write and tomllib is not None:
+                try:
+                    with open(cargo_toml_path, 'rb') as f:
+                        tomllib.load(f)
+                except Exception:
+                    should_write = True
+            if should_write:
+                with open(cargo_toml_path, 'w') as f:
+                    f.write(f'''[package]
+name = "{project_name}"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+''')
+
         if os.path.exists(project_path):
             logger.info(f"Project directory already exists: {project_path}")
+            ensure_cargo_toml()
+            self.normalize_rust_project_skeleton(project_path)
             return project_path
     
         os.makedirs(project_path, exist_ok=True)
+        ensure_cargo_toml()
         
         current_path = project_path
         path_stack = []
-        indent_stack = [0] 
+        indent_stack = [-1] 
         
         for i in range(1, len(lines)):
             line = lines[i]
@@ -1608,12 +1762,14 @@ class Main:
             
             # Extract the actual name (remove tree symbols)
             name = line.strip().lstrip('├└│─ ')
+            if name == project_name:
+                continue
             
             # Determine if this is a file or directory
             is_file = '.' in name and not name.endswith('/')
             
             # Adjust the path stack based on indentation
-            while indent <= indent_stack[-1]:
+            while path_stack and indent <= indent_stack[-1]:
                 path_stack.pop()
                 indent_stack.pop()
             
@@ -1652,35 +1808,7 @@ edition = "2021"
                 path_stack.append(full_path)
                 indent_stack.append(indent)
 
-        # Add common directory and files
-        common_dir = os.path.join(project_path, 'src/common')
-        os.makedirs(common_dir, exist_ok=True)
-        common_rs_files = [f.replace('.rs', '') for f in os.listdir(common_dir) if f.endswith('.rs')]
-        
-        # Create common/mod.rs
-        mod_rs_path = os.path.join(common_dir, 'mod.rs')
-        with open(mod_rs_path, 'w') as f:
-            for common_rs in common_rs_files:
-                f.write(f"pub mod {common_rs};\n")
-             
-        # Add check and creation of src/lib.rs if it doesn't exist
-        src_lib_path = os.path.join(project_path, 'src', 'lib.rs')
-        if not os.path.exists(src_lib_path):
-            os.makedirs(os.path.dirname(src_lib_path), exist_ok=True)
-        src_dir = os.path.join(project_path, 'src')
-        src_rs_files = [f.replace('.rs', '') for f in os.listdir(src_dir) if f.endswith('.rs')]
-        
-        
-        with open(src_lib_path, 'w') as f:
-            for src_rs in src_rs_files:
-                f.write(f"pub mod {src_rs};\n")
-            f.write("pub mod common;\n")
-            
-            # Re-export commonly used types and functions
-            for src_rs in src_rs_files:
-                f.write(f"pub use crate::{src_rs}::*;\n")
-            for common_rs in common_rs_files:
-                f.write(f"pub use crate::common::{common_rs}::*;\n")
+        self.normalize_rust_project_skeleton(project_path)
                 
  
         
@@ -1726,6 +1854,12 @@ if __name__ == '__main__':
     # Basic settings
     parser.add_argument('--model_name', type=str, default="gpt-4o-2024-11-20")
     parser.add_argument('--model_path', type=str, default="", help="model path")
+    parser.add_argument('--max_new_tokens', type=int, default=5214, help="maximum number of tokens generated per LLM call")
+    parser.add_argument('--temperature', type=float, default=0.1, help="LLM sampling temperature")
+    parser.add_argument('--device_map', type=str, default="auto", help="device placement for local HuggingFace models")
+    parser.add_argument('--local_dtype', type=str, default="auto", choices=["auto", "float16", "bfloat16", "float32"], help="torch dtype for local HuggingFace models")
+    parser.add_argument('--trust_remote_code', action="store_true", help="allow custom HuggingFace model code for local models")
+    parser.add_argument('--require_cuda', action="store_true", help="fail fast if the local model is not loaded on CUDA")
     
     # File path settings
     parser.add_argument("--root_dir", default="../Code_Package", type=str, help="the root path of the project")
@@ -1753,8 +1887,11 @@ if __name__ == '__main__':
     project_name_list = [os.path.join("crown_dataset", project_name) for project_name in project_names]
 
 
-    project_list = ['crown_dataset/avl','crown_dataset/buffer','crown_dataset/genann','crown_dataset/quadtree', 'crown_dataset/rgba',
-                    'crown_dataset/urlparser','crown_dataset/ht','crown_dataset/bst','crown_dataset/json_h','crown_dataset/libtree']
+    # project_list = ['crown_dataset/avl','crown_dataset/buffer','crown_dataset/genann','crown_dataset/quadtree', 'crown_dataset/rgba',
+    #                 'crown_dataset/urlparser','crown_dataset/ht','crown_dataset/bst','crown_dataset/json_h','crown_dataset/libtree']
+
+    project_list = ['crown_dataset/json_h']
+
     for project_name in project_list:
         print("Deal: ", project_name)
         args.source_project_path = os.path.join(args.root_dir, "dataset", project_name)

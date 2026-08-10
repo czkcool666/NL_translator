@@ -9,13 +9,10 @@ Your task is to translate the given C project tree into a Rust project tree and 
 {c_pj_tree}
 
 ## Instructions
-1. Translate the C project tree into the Rust project tree (`xx.h` file translate into `common/xx_mod.rs` file), and return the completed Rust Project Tree in the following format:
+1. Translate the C project tree into the Rust project tree (`xx.h` file translate into `common/xx_mod.rs` file), and return ONLY the following two fenced code blocks. Do not include headings, prose, markdown titles, or explanation.
+
 ```project_tree
-{project_name}
-├── Cargo.toml
-├── src
-    ├── demo.rs
-```
+...
 Do not generate `main.rs` file!
 
 2. Create a mapping between the C project files and their corresponding Rust files, and provide the file mapping in the following format:

@@ -8,6 +8,7 @@ import glob
 from pathlib import Path
 import subprocess
 import logging
+from utils.tree_sitter_loader import find_parser_library
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -20,9 +21,7 @@ class HeaderExtractor:
     def start_parser(self, source_project_path:str, output_project_path:str):
         
         # ====  initial treesitter parser ==== #
-        PARSER_LOCATION = "../Code_Package/dependencyLib/c_parser.so"
-        if not os.path.exists(PARSER_LOCATION):
-            raise FileNotFoundError(f"Parser file not found at: {PARSER_LOCATION}")
+        PARSER_LOCATION = find_parser_library(None, "c_parser.so", "c_parser_new.so")
         LANGUAGE = Language(PARSER_LOCATION, "c")
         self.parser = Parser()
         self.parser.set_language(LANGUAGE)

@@ -48,18 +48,31 @@ def extract_header_info(expanded_dir:str)->str:
 # Using the doxygen to generate call graph of the C proejct
 def extract_doxygen_info(expanded_processed_dir:str, parsed_project_path:str)->tuple[str, str]:
     project_name = os.path.basename(expanded_processed_dir)
+    os.makedirs(parsed_project_path, exist_ok=True)
     entities_path = os.path.join(parsed_project_path, f"{project_name}_entities.json")
     relationships_path = os.path.join(parsed_project_path, f"{project_name}_relationships.json")
     if os.path.exists(entities_path) and os.path.exists(relationships_path):
         logger.info(f"extract_doxygen_info directory already exists: {entities_path} and {relationships_path}")
         return entities_path, relationships_path
     
-    xml_dir = doxygen_extractor.setup_doxygen(expanded_processed_dir, project_name)
+    xml_dir = os.path.join(expanded_processed_dir, 'doxygen_output', 'xml')
+    if os.path.exists(os.path.join(xml_dir, 'index.xml')):
+        logger.info(f"Reusing existing Doxygen XML directory: {xml_dir}")
+    else:
+        xml_dir = doxygen_extractor.setup_doxygen(expanded_processed_dir, project_name)
+
     doxygen_parser = doxygen_extractor.DoxygenXmlParser(xml_dir, entities_path=entities_path, relationships_path=relationships_path, project_dir=expanded_processed_dir)
-    # Extract `entity` from the index.
-    doxygen_parser._extract_entities_from_index()
-    # Extract `relationship` from the xml
-    doxygen_parser._extract_relationships_from_xml()
+    if os.path.exists(entities_path):
+        logger.info(f"Reusing existing entities file: {entities_path}")
+    else:
+        # Extract `entity` from the index.
+        doxygen_parser._extract_entities_from_index()
+
+    if os.path.exists(relationships_path):
+        logger.info(f"Reusing existing relationships file: {relationships_path}")
+    else:
+        # Extract `relationship` from the xml. This step has its own partial checkpoint.
+        doxygen_parser._extract_relationships_from_xml()
     return entities_path, relationships_path
 
 
@@ -287,6 +300,10 @@ def start_cons(args):
     
     # Step2: doxygen generate Info
     entities_path, relationships_path = extract_doxygen_info(str(expanded_dealed_dir), parsed_project_path)
+    projectInfo_path = os.path.join(parsed_project_path, f"{project_name}_ProjectInfo.txt")
+    if os.path.exists(projectInfo_path):
+        logger.info(f"Reusing existing project info file: {projectInfo_path}")
+        return entities_path, relationships_path, projectInfo_path
     
     # # obtain the translation info
     # ## obtain the project tree
@@ -308,7 +325,6 @@ def start_cons(args):
     ## topological_sort_call_graph
     call_graph = extract_call_graph(entities_path, relationships_path)
     topo_order = topological_sort_call_graph(call_graph)
-    projectInfo_path = os.path.join(parsed_project_path, f"{project_name}_ProjectInfo.txt")
     if not os.path.exists(projectInfo_path): write_projectInfo(pathList, call_graph, topo_order, projectInfo_path)
     ## write the project tree and topo_order to the ProjectInfo.txt
     # write_projectInfo(pathList, call_graph, topo_order, projectInfo_path)

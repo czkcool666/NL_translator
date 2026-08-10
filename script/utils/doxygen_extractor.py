@@ -389,67 +389,127 @@ class DoxygenXmlParser:
     
     def _extract_relationships_from_xml(self):
         relationships = []
+        partial_relationships_path = f"{self.relationships_path}.partial.jsonl"
+        completed_entity_indices = set()
+
+        if os.path.exists(partial_relationships_path):
+            logger.info(f"Resuming relationships from checkpoint: {partial_relationships_path}")
+            with open(partial_relationships_path, 'r', encoding='utf-8') as f:
+                for line in f:
+                    try:
+                        checkpoint_entry = json.loads(line)
+                    except json.JSONDecodeError:
+                        continue
+                    entity_index = checkpoint_entry.get('entity_index')
+                    if entity_index is None:
+                        continue
+                    completed_entity_indices.add(entity_index)
+                    relationships.extend(checkpoint_entry.get('relationships', []))
+
         with open(self.entities_path, 'r', encoding='utf-8') as f:
             Entity_list = json.load(f)
         
-        entity_one_id = [entity.get('id') for entity in Entity_list if '#' not in entity.get('id')]
-        all_entity_group_id = [entity.get('id') for entity in Entity_list if "#" in entity.get('id')]
+        entity_one_id = {entity.get('id') for entity in Entity_list if '#' not in entity.get('id')}
+        id_to_unique_name = {}
+        ref_to_group_ids = defaultdict(list)
+        xml_roots = {}
 
-        for entity in tqdm(Entity_list, desc="Processing Relationships"):            
-            entity_id = entity.get('id') # concat by `#`
-            
-                        
-            entity_source_file = entity.get('source_file')
-            xml_path = entity.get('xml_path')
-            entity_line_begin = entity.get('line_begin')
-            entity_line_end = entity.get('line_end')
-            
-            xml_file_path = os.path.join(self.xml_dir, f"{xml_path}.xml")
-            
-            if entity.get('type') in ['struct', 'union']:
-                tree = ET.parse(xml_file_path)
-                root = tree.getroot()
-                includes = root.find('.//includes')
-                if includes is not None and includes.get('refid'):
-                    xml_path = includes.get('refid')
-                    xml_file_path = os.path.join(self.xml_dir, f"{xml_path}.xml")
-            
-            tree = ET.parse(xml_file_path)
-            root = tree.getroot()
-            refs_codelines_list = self._extract_refs_from_codelines(root, entity_line_begin, entity_line_end)
-            if entity.get('type') in ['variable']:
-                refs_memberdef_list = []
-            else:
-                refs_memberdef_list = self._extract_refs_from_memberdef(root, entity_id, xml_path)
+        for entity in Entity_list:
+            entity_id = entity.get('id')
+            id_to_unique_name.setdefault(entity_id, entity.get('unique_name'))
+            if entity_id and "#" in entity_id:
+                for ref_id in entity_id.split('#'):
+                    ref_to_group_ids[ref_id].append(entity_id)
+
+        def get_xml_root(xml_path):
+            if not xml_path:
+                return None
+            if xml_path not in xml_roots:
+                xml_file_path = os.path.join(self.xml_dir, f"{xml_path}.xml")
+                xml_roots[xml_path] = ET.parse(xml_file_path).getroot()
+            return xml_roots[xml_path]
+
+        remaining_entity_indices = [
+            entity_index for entity_index in range(len(Entity_list))
+            if entity_index not in completed_entity_indices
+        ]
+
+        with open(partial_relationships_path, 'a', encoding='utf-8') as checkpoint_file:
+            for entity_index in tqdm(
+                remaining_entity_indices,
+                total=len(Entity_list),
+                initial=len(completed_entity_indices),
+                desc="Processing Relationships"
+            ):
+                entity = Entity_list[entity_index]
+                entity_relationships = []
                 
-            refs_list = list(set(refs_codelines_list + refs_memberdef_list))
-            
-            call_refs_list = [ref for ref in refs_list if ref not in entity_id.split('#')]
-            # Build `reference` relation. `reference` means A use|call B
-            for ref in call_refs_list:
-                if ref in entity_one_id:
-                    relationships.append({
-                        'source': entity_id,
-                        'target': ref,
-                        'source_unique_name': entity.get('unique_name'),
-                        'target_unique_name': [entity.get('unique_name') for entity in Entity_list if entity.get('id') == ref][0], ##debug:只提取了第一个unique name
-                        'type': 'reference'
-                    })
+                entity_id = entity.get('id') # concat by `#`
+                source_entity_ids = entity_id.split('#')
+                
+                            
+                entity_source_file = entity.get('source_file')
+                xml_path = entity.get('xml_path')
+                entity_line_begin = entity.get('line_begin')
+                entity_line_end = entity.get('line_end')
+                
+                if entity.get('type') in ['struct', 'union']:
+                    root = get_xml_root(xml_path)
+                    if root is None:
+                        checkpoint_entry = {'entity_index': entity_index, 'relationships': []}
+                        checkpoint_file.write(json.dumps(checkpoint_entry, ensure_ascii=False) + '\n')
+                        checkpoint_file.flush()
+                        continue
+                    includes = root.find('.//includes')
+                    if includes is not None and includes.get('refid'):
+                        xml_path = includes.get('refid')
+                
+                root = get_xml_root(xml_path)
+                if root is None:
+                    checkpoint_entry = {'entity_index': entity_index, 'relationships': []}
+                    checkpoint_file.write(json.dumps(checkpoint_entry, ensure_ascii=False) + '\n')
+                    checkpoint_file.flush()
+                    continue
+                refs_codelines_list = self._extract_refs_from_codelines(root, entity_line_begin, entity_line_end)
+                if entity.get('type') in ['variable']:
+                    refs_memberdef_list = []
                 else:
-                    matching_groups = [entity_group for entity_group in all_entity_group_id if ref in entity_group.split('#')]
-                    for entity_group in matching_groups:
-                        relationships.append({
+                    refs_memberdef_list = self._extract_refs_from_memberdef(root, entity_id, xml_path, get_xml_root)
+                    
+                refs_list = list(set(refs_codelines_list + refs_memberdef_list))
+                
+                call_refs_list = [ref for ref in refs_list if ref not in source_entity_ids]
+                # Build `reference` relation. `reference` means A use|call B
+                for ref in call_refs_list:
+                    if ref in entity_one_id:
+                        entity_relationships.append({
                             'source': entity_id,
-                            'target': entity_group, # ref is the sub_id of entity_group
+                            'target': ref,
                             'source_unique_name': entity.get('unique_name'),
-                            'target_unique_name': [entity.get('unique_name') for entity in Entity_list if entity.get('id') == entity_group][0],
+                            'target_unique_name': id_to_unique_name[ref],
                             'type': 'reference'
                         })
+                    else:
+                        matching_groups = ref_to_group_ids.get(ref, [])
+                        for entity_group in matching_groups:
+                            entity_relationships.append({
+                                'source': entity_id,
+                                'target': entity_group, # ref is the sub_id of entity_group
+                                'source_unique_name': entity.get('unique_name'),
+                                'target_unique_name': id_to_unique_name[entity_group],
+                                'type': 'reference'
+                            })
+                relationships.extend(entity_relationships)
+                checkpoint_entry = {'entity_index': entity_index, 'relationships': entity_relationships}
+                checkpoint_file.write(json.dumps(checkpoint_entry, ensure_ascii=False) + '\n')
+                checkpoint_file.flush()
         
         unique_relationships = [dict(t) for t in {tuple(d.items()) for d in relationships}]
         # After processing all compounds, save entities to JSON file
         with open(self.relationships_path, 'w', encoding='utf-8') as f:
             json.dump(unique_relationships, f, indent=2, ensure_ascii=False)            
+        if os.path.exists(partial_relationships_path):
+            os.remove(partial_relationships_path)
         logger.info(f"Successfully parsed index.xml. Found {len(relationships)} relationships, saved to {os.path.basename(self.relationships_path)}")
           
 
@@ -480,7 +540,7 @@ class DoxygenXmlParser:
         
         return list(set(refs))  # Remove duplicates
 
-    def _extract_refs_from_memberdef(self, root, entity_ids, xml_path):
+    def _extract_refs_from_memberdef(self, root, entity_ids, xml_path, get_xml_root=None):
         refs = []
         for entity_id in entity_ids.split('#'):
             memberdef = root.find(f".//memberdef[@id='{entity_id}']")
@@ -505,10 +565,10 @@ class DoxygenXmlParser:
                     refid = ref.get('refid')
                     if not refid: continue
                     if refs_xml_path is not None and refs_xml_path != xml_path and not refid.startswith("struct") and not refid.startswith("union"):
-                        refs_file_xml_path = os.path.join(self.xml_dir, f"{refs_xml_path}.xml")
                         ref_name = ref.text
-                        tree = ET.parse(refs_file_xml_path)
-                        refs_root = tree.getroot()
+                        refs_root = get_xml_root(refs_xml_path) if get_xml_root else ET.parse(os.path.join(self.xml_dir, f"{refs_xml_path}.xml")).getroot()
+                        if refs_root is None:
+                            continue
                         refs += self._extract_refs_from_references(refs_root, ref_name)
                     else:
                         refs.append(refid)
@@ -517,11 +577,20 @@ class DoxygenXmlParser:
                     refby_xml_path = ref.get('compoundref')
                     startline = ref.get('startline')
                     endline = ref.get('endline')
-                    refby_file_xml_path = os.path.join(self.xml_dir, f"{refby_xml_path}.xml")
+                    if not refby_xml_path or not startline or not endline:
+                        continue
+                    try:
+                        startline_int = int(startline)
+                        endline_int = int(endline)
+                    except ValueError:
+                        continue
                     entity_ids_p = "_"+entity_ids.split("_")[-1]
-                    tree = ET.parse(refby_file_xml_path)
-                    refby_root = tree.getroot()
-                    refs += self._extract_refs_from_referencedby(refby_root, entity_ids_p, int(startline), int(endline))   #function error
+                    refby_root = get_xml_root(refby_xml_path) if get_xml_root else ET.parse(os.path.join(self.xml_dir, f"{refby_xml_path}.xml")).getroot()
+                    if refby_root is None:
+                        continue
+                    refs_from_referencedby = self._extract_refs_from_referencedby(refby_root, entity_ids_p, startline_int, endline_int)   #function error
+                    if refs_from_referencedby:
+                        refs += refs_from_referencedby
         
         return list(set(refs))
 
