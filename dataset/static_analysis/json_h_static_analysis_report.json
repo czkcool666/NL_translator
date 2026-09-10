@@ -1,0 +1,822 @@
+{
+  "project_name": "json_h",
+  "source_project_path": "../dataset/crown_dataset/json_h",
+  "project_tree": "json_h\n├── svf_analysis_output\n└── test_json.c [Contain *main* Function]\nH_FILE_LIST\njson.h",
+  "call_graph": "json_array_element_s#json.h#430 -> json_value_s#json.h#440\njson_array_s#json.h#435 -> json_array_element_s#json.h#430\njson_extract_result_s#json.h#1742\njson_extract_state_s#json.h#1825\njson_number_s#json.h#414\njson_object_element_s#json.h#419 -> json_string_s#json.h#402, json_value_s#json.h#440\njson_object_s#json.h#425 -> json_object_element_s#json.h#419\njson_parse_result_s#json.h#455\njson_parse_state_s#json.h#636\njson_string_ex_s#json.h#407 -> json_string_s#json.h#402\njson_string_s#json.h#402\njson_value_ex_s#json.h#445 -> json_value_s#json.h#440\njson_value_s#json.h#440\njson_parse_flags_e#json.h#370\njson_type_e#json.h#399\njson_parse_error_e#json.h#452\njson_parse#json.h#1738 -> json_value_s#json.h#440, json_parse_flags_e#json.h#370, json_parse_ex#json.h#1662\njson_extract_value#json.h#1747 -> json_value_s#json.h#440, json_array_s#json.h#435, json_extract_value_ex#json.h#1913, json_number_s#json.h#414, json_type_e#json.h#399, json_string_s#json.h#402, json_object_s#json.h#425, json_object_element_s#json.h#419, json_array_element_s#json.h#430, json_extract_result_s#json.h#1742\njson_extract_value_ex#json.h#1913 -> json_extract_result_s#json.h#1742, json_extract_state_s#json.h#1825, json_extract_value#json.h#1747, json_extract_copy_value#json.h#1832, json_value_s#json.h#440\njson_write_minified#json.h#2345 -> json_write_minified_get_value_size#json.h#2108, json_write_minified_value#json.h#2319, json_object_element_s#json.h#419, json_value_s#json.h#440\njson_write_pretty#json.h#2559 -> json_object_element_s#json.h#419, json_write_pretty_get_value_size#json.h#2424, json_value_s#json.h#440, json_write_pretty_value#json.h#2533\njson_value_as_string#json.h#1934 -> json_type_e#json.h#399, json_string_s#json.h#402, json_value_s#json.h#440\njson_value_as_number#json.h#1941 -> json_type_e#json.h#399, json_value_s#json.h#440, json_number_s#json.h#414\njson_value_as_object#json.h#1948 -> json_type_e#json.h#399, json_value_s#json.h#440, json_object_s#json.h#425\njson_value_as_array#json.h#1955 -> json_array_s#json.h#435, json_value_s#json.h#440, json_type_e#json.h#399\njson_value_is_true#json.h#1962 -> json_value_s#json.h#440, json_type_e#json.h#399\njson_value_is_false#json.h#1966 -> json_value_s#json.h#440, json_type_e#json.h#399\njson_value_is_null#json.h#1970 -> json_type_e#json.h#399, json_value_s#json.h#440\njson_hexadecimal_digit#json.h#652\njson_hexadecimal_value#json.h#667 -> json_hexadecimal_digit#json.h#652\njson_skip_whitespace#json.h#687 -> json_parse_state_s#json.h#636\njson_skip_c_style_comments#json.h#715 -> json_parse_state_s#json.h#636\njson_skip_all_skippables#json.h#755 -> json_skip_c_style_comments#json.h#715, json_parse_flags_e#json.h#370, json_parse_error_e#json.h#452, json_parse_state_s#json.h#636, json_skip_whitespace#json.h#687\njson_get_value_size#json.h#1225 -> json_parse_state_s#json.h#636, json_parse_flags_e#json.h#370, json_get_number_size#json.h#1092, json_value_s#json.h#440, json_value_ex_s#json.h#445, json_skip_all_skippables#json.h#755, json_parse_error_e#json.h#452, json_get_string_size#json.h#791, json_get_array_size#json.h#1040, json_get_object_size#json.h#940\njson_get_string_size#json.h#791 -> json_parse_flags_e#json.h#370, json_parse_state_s#json.h#636, json_parse_error_e#json.h#452, json_string_s#json.h#402, json_hexadecimal_value#json.h#667, json_string_ex_s#json.h#407\nis_valid_unquoted_key_char#json.h#901\njson_get_key_size#json.h#907 -> json_parse_flags_e#json.h#370, json_parse_state_s#json.h#636, json_get_string_size#json.h#791, is_valid_unquoted_key_char#json.h#901, json_string_ex_s#json.h#407, json_string_s#json.h#402\njson_get_object_size#json.h#940 -> json_get_key_size#json.h#907, json_parse_state_s#json.h#636, json_parse_flags_e#json.h#370, json_get_value_size#json.h#1225, json_object_s#json.h#425, json_object_element_s#json.h#419, json_parse_error_e#json.h#452, json_skip_all_skippables#json.h#755\njson_get_array_size#json.h#1040 -> json_parse_flags_e#json.h#370, json_skip_all_skippables#json.h#755, json_array_element_s#json.h#430, json_get_value_size#json.h#1225, json_parse_error_e#json.h#452, json_array_s#json.h#435, json_parse_state_s#json.h#636\njson_get_number_size#json.h#1092 -> json_parse_state_s#json.h#636, json_parse_flags_e#json.h#370, json_number_s#json.h#414, json_parse_error_e#json.h#452\njson_parse_value#json.h#1600 -> json_type_e#json.h#399, json_parse_array#json.h#1486, json_parse_string#json.h#1290, json_array_s#json.h#435, json_parse_object#json.h#1396, json_number_s#json.h#414, json_parse_flags_e#json.h#370, json_parse_number#json.h#1545, json_string_s#json.h#402, json_object_s#json.h#425, json_value_s#json.h#440, json_parse_state_s#json.h#636, json_skip_all_skippables#json.h#755\njson_parse_string#json.h#1290 -> json_hexadecimal_value#json.h#667, json_value_s#json.h#440, json_parse_state_s#json.h#636, json_string_s#json.h#402\njson_parse_key#json.h#1371 -> json_parse_flags_e#json.h#370, json_parse_string#json.h#1290, json_string_s#json.h#402, json_parse_state_s#json.h#636, is_valid_unquoted_key_char#json.h#901\njson_parse_object#json.h#1396 -> json_parse_value#json.h#1600, json_string_s#json.h#402, json_parse_state_s#json.h#636, json_value_s#json.h#440, json_object_element_s#json.h#419, json_skip_all_skippables#json.h#755, json_parse_flags_e#json.h#370, json_object_s#json.h#425, json_string_ex_s#json.h#407, json_value_ex_s#json.h#445, json_parse_key#json.h#1371\njson_parse_array#json.h#1486 -> json_skip_all_skippables#json.h#755, json_parse_flags_e#json.h#370, json_array_s#json.h#435, json_value_ex_s#json.h#445, json_array_element_s#json.h#430, json_parse_value#json.h#1600, json_parse_state_s#json.h#636, json_value_s#json.h#440\njson_parse_number#json.h#1545 -> json_parse_state_s#json.h#636, json_number_s#json.h#414, json_parse_flags_e#json.h#370, json_value_s#json.h#440\njson_parse_ex#json.h#1662 -> json_parse_state_s#json.h#636, json_get_value_size#json.h#1225, json_value_s#json.h#440, json_skip_all_skippables#json.h#755, json_parse_flags_e#json.h#370, json_parse_result_s#json.h#455, json_parse_value#json.h#1600, json_parse_error_e#json.h#452, json_value_ex_s#json.h#445\njson_extract_copy_value#json.h#1832 -> json_string_s#json.h#402, json_number_s#json.h#414, json_type_e#json.h#399, json_extract_state_s#json.h#1825, json_array_s#json.h#435, json_object_s#json.h#425, json_object_element_s#json.h#419, json_array_element_s#json.h#430, json_value_s#json.h#440\njson_write_minified_get_value_size#json.h#2108 -> json_write_get_string_size#json.h#2056, json_number_s#json.h#414, json_object_s#json.h#425, json_write_minified_get_array_size#json.h#2072, json_type_e#json.h#399, json_object_element_s#json.h#419, json_write_get_number_size#json.h#1978, json_string_s#json.h#402, json_array_element_s#json.h#430, json_write_minified_get_object_size#json.h#2088, json_value_s#json.h#440, json_array_s#json.h#435\njson_write_get_number_size#json.h#1978 -> json_number_s#json.h#414, json_value_s#json.h#440, json_object_element_s#json.h#419\njson_write_get_string_size#json.h#2056 -> json_object_element_s#json.h#419, json_value_s#json.h#440, json_string_s#json.h#402\njson_write_minified_get_array_size#json.h#2072 -> json_array_s#json.h#435, json_array_element_s#json.h#430, json_value_s#json.h#440, json_object_element_s#json.h#419, json_write_minified_get_value_size#json.h#2108\njson_write_minified_get_object_size#json.h#2088 -> json_write_get_string_size#json.h#2056, json_write_minified_get_value_size#json.h#2108, json_object_s#json.h#425, json_object_element_s#json.h#419, json_value_s#json.h#440\njson_write_minified_value#json.h#2319 -> json_object_element_s#json.h#419, json_value_s#json.h#440, json_string_s#json.h#402, json_write_minified_array#json.h#2278, json_array_s#json.h#435, json_type_e#json.h#399, json_number_s#json.h#414, json_object_s#json.h#425, json_write_minified_object#json.h#2296, json_write_number#json.h#2128, json_write_string#json.h#2242, json_array_element_s#json.h#430\njson_write_number#json.h#2128 -> json_number_s#json.h#414, json_object_element_s#json.h#419, json_value_s#json.h#440\njson_write_string#json.h#2242 -> json_value_s#json.h#440, json_object_element_s#json.h#419, json_string_s#json.h#402\njson_write_minified_array#json.h#2278 -> json_value_s#json.h#440, json_array_element_s#json.h#430, json_object_element_s#json.h#419, json_write_minified_value#json.h#2319, json_array_s#json.h#435\njson_write_minified_object#json.h#2296 -> json_object_s#json.h#425, json_value_s#json.h#440, json_object_element_s#json.h#419, json_write_string#json.h#2242, json_write_minified_value#json.h#2319\njson_write_pretty_get_value_size#json.h#2424 -> json_value_s#json.h#440, json_string_s#json.h#402, json_type_e#json.h#399, json_write_get_string_size#json.h#2056, json_write_pretty_get_array_size#json.h#2376, json_write_pretty_get_object_size#json.h#2398, json_array_s#json.h#435, json_write_get_number_size#json.h#1978, json_number_s#json.h#414, json_array_element_s#json.h#430, json_object_element_s#json.h#419, json_object_s#json.h#425\njson_write_pretty_get_array_size#json.h#2376 -> json_object_element_s#json.h#419, json_write_pretty_get_value_size#json.h#2424, json_array_element_s#json.h#430, json_array_s#json.h#435, json_value_s#json.h#440\njson_write_pretty_get_object_size#json.h#2398 -> json_write_get_string_size#json.h#2056, json_object_element_s#json.h#419, json_write_pretty_get_value_size#json.h#2424, json_object_s#json.h#425, json_value_s#json.h#440\njson_write_pretty_value#json.h#2533 -> json_object_s#json.h#425, json_array_element_s#json.h#430, json_type_e#json.h#399, json_value_s#json.h#440, json_write_number#json.h#2128, json_object_element_s#json.h#419, json_array_s#json.h#435, json_string_s#json.h#402, json_write_pretty_object#json.h#2485, json_write_string#json.h#2242, json_number_s#json.h#414, json_write_pretty_array#json.h#2444\njson_write_pretty_array#json.h#2444 -> json_array_s#json.h#435, json_write_pretty_value#json.h#2533, json_array_element_s#json.h#430, json_value_s#json.h#440, json_object_element_s#json.h#419\njson_write_pretty_object#json.h#2485 -> json_write_pretty_value#json.h#2533, json_object_s#json.h#425, json_object_element_s#json.h#419, json_value_s#json.h#440, json_write_string#json.h#2242\nmain#test_json.c#2600 -> json_parse#json.h#1738, json_value_s#json.h#440\n\n",
+  "sorted_dependencies": [
+    "is_valid_unquoted_key_char#json.h#901",
+    "json_hexadecimal_digit#json.h#652",
+    "json_parse_error_e#json.h#452",
+    "json_type_e#json.h#399",
+    "json_parse_flags_e#json.h#370",
+    "json_parse_state_s#json.h#636",
+    "json_parse_result_s#json.h#455",
+    "json_string_s#json.h#402",
+    "json_number_s#json.h#414",
+    "json_extract_state_s#json.h#1825",
+    "json_extract_result_s#json.h#1742",
+    "json_value_s#json.h#440",
+    "json_hexadecimal_value#json.h#667",
+    "json_skip_whitespace#json.h#687",
+    "json_skip_c_style_comments#json.h#715",
+    "json_string_ex_s#json.h#407",
+    "json_get_number_size#json.h#1092",
+    "json_array_element_s#json.h#430",
+    "json_object_element_s#json.h#419",
+    "json_value_ex_s#json.h#445",
+    "json_value_as_string#json.h#1934",
+    "json_value_as_number#json.h#1941",
+    "json_value_is_true#json.h#1962",
+    "json_value_is_false#json.h#1966",
+    "json_value_is_null#json.h#1970",
+    "json_parse_number#json.h#1545",
+    "json_parse_string#json.h#1290",
+    "json_skip_all_skippables#json.h#755",
+    "json_get_string_size#json.h#791",
+    "json_array_s#json.h#435",
+    "json_object_s#json.h#425",
+    "json_write_get_number_size#json.h#1978",
+    "json_write_get_string_size#json.h#2056",
+    "json_write_number#json.h#2128",
+    "json_write_string#json.h#2242",
+    "json_parse_key#json.h#1371",
+    "json_get_key_size#json.h#907",
+    "json_value_as_array#json.h#1955",
+    "json_value_as_object#json.h#1948",
+    "json_extract_copy_value#json.h#1832",
+    [
+      "json_write_minified_get_value_size#json.h#2108",
+      "json_write_minified_get_array_size#json.h#2072",
+      "json_write_minified_get_object_size#json.h#2088"
+    ],
+    [
+      "json_write_pretty_get_value_size#json.h#2424",
+      "json_write_pretty_get_array_size#json.h#2376",
+      "json_write_pretty_get_object_size#json.h#2398"
+    ],
+    [
+      "json_write_minified_value#json.h#2319",
+      "json_write_minified_array#json.h#2278",
+      "json_write_minified_object#json.h#2296"
+    ],
+    [
+      "json_write_pretty_value#json.h#2533",
+      "json_write_pretty_array#json.h#2444",
+      "json_write_pretty_object#json.h#2485"
+    ],
+    [
+      "json_parse_value#json.h#1600",
+      "json_parse_object#json.h#1396",
+      "json_parse_array#json.h#1486"
+    ],
+    [
+      "json_get_value_size#json.h#1225",
+      "json_get_object_size#json.h#940",
+      "json_get_array_size#json.h#1040"
+    ],
+    [
+      "json_extract_value#json.h#1747",
+      "json_extract_value_ex#json.h#1913"
+    ],
+    "json_write_minified#json.h#2345",
+    "json_write_pretty#json.h#2559",
+    "json_parse_ex#json.h#1662",
+    "json_parse#json.h#1738",
+    "main#test_json.c#2600"
+  ],
+  "static_analysis": [
+    {
+      "source_c_code_id": [
+        "is_valid_unquoted_key_char#json.h#901"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "json_hexadecimal_digit#json.h#652"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "json_parse_error_e#json.h#452"
+      ],
+      "source_code_type": "enum",
+      "source_file": "test_json.c",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "json_type_e#json.h#399"
+      ],
+      "source_code_type": "enum",
+      "source_file": "test_json.c",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "json_parse_flags_e#json.h#370"
+      ],
+      "source_code_type": "enum",
+      "source_file": "test_json.c",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "json_parse_state_s#json.h#636"
+      ],
+      "source_code_type": "struct",
+      "source_file": "test_json.c",
+      "dependencies": [],
+      "static_analysis": "====`json_parse_state_s` Requirements====\nstruct.json_parse_state_s_src is Nullable, Borrowed and Mutable pointer, declared as Option<&T> or Option<&mut T>; **Requires Lifetime Annotation**\n\n\n\n\n\n\n\n\n\n\n\nstruct.json_parse_state_s_data is Nullable, Borrowed and Mutable pointer, declared as Option<&T> or Option<&mut T>; **Requires Lifetime Annotation**\nUsagePath: state->data += bytes_written;-->void json_parse_string(struct json_parse_state_s *state, struct json_string_s *string) {-->json_parse_string(state, string);-->void json_parse_key(struct json_parse_state_s *state, struct json_string_s *string) {\n\nstruct.json_parse_state_s_dom is Nullable, and Owning pointer\nUsagePath: state->dom += sizeof(struct json_object_element_s);-->void json_parse_object(struct json_parse_state_s *state, int is_global_object, struct json_object_s *object) {-->json_parse_object(state, 1, (struct json_object_s *)value->payload);-->void json_parse_value(struct json_parse_state_s *state, int is_global_object, struct json_value_s *value) {"
+    },
+    {
+      "source_c_code_id": [
+        "json_parse_result_s#json.h#455"
+      ],
+      "source_code_type": "struct",
+      "source_file": "test_json.c",
+      "dependencies": [],
+      "static_analysis": "====`json_parse_result_s` Requirements====\n"
+    },
+    {
+      "source_c_code_id": [
+        "json_string_s#json.h#402"
+      ],
+      "source_code_type": "struct",
+      "source_file": "test_json.c",
+      "dependencies": [],
+      "static_analysis": "====`json_string_s` Requirements====\nstruct.json_string_s_string is Nullable, and Owning pointer\nUsagePath: string->string = state->data;-->void json_parse_key(struct json_parse_state_s *state, struct json_string_s *string) {-->(void)json_parse_key(state, string);-->void json_parse_object(struct json_parse_state_s *state, int is_global_object, struct json_object_s *object) {"
+    },
+    {
+      "source_c_code_id": [
+        "json_number_s#json.h#414"
+      ],
+      "source_code_type": "struct",
+      "source_file": "test_json.c",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "json_extract_state_s#json.h#1825"
+      ],
+      "source_code_type": "struct",
+      "source_file": "test_json.c",
+      "dependencies": [],
+      "static_analysis": "====`json_extract_state_s` Requirements====\nstruct.json_extract_state_s_dom is Nullable, and Owning pointer\nUsagePath: state.dom = (char *)allocation;-->void *allocation;-->allocation = malloc(total_size);\n\nstruct.json_extract_state_s_data is Nullable, Borrowed and Immutable pointer, declared as Option<&T> or Option<&mut T>; **Requires Lifetime Annotation**\nUsagePath: state.data = state.dom + result.dom_size;-->struct json_extract_state_s state;"
+    },
+    {
+      "source_c_code_id": [
+        "json_extract_result_s#json.h#1742"
+      ],
+      "source_code_type": "struct",
+      "source_file": "test_json.c",
+      "dependencies": [],
+      "static_analysis": "====`json_extract_result_s` Requirements====\n"
+    },
+    {
+      "source_c_code_id": [
+        "json_value_s#json.h#440"
+      ],
+      "source_code_type": "struct",
+      "source_file": "test_json.c",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "json_hexadecimal_value#json.h#667"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_hexadecimal_digit#json.h#652"
+      ],
+      "static_analysis": "====`json_hexadecimal_value` Parameter Requirements====\nc is Nullable, Borrowed and Immutable pointer.\n`c` pointTo: i8*\n----\nresult is Nullable, Borrowed and Mutable pointer.\n`result` pointTo: i64*"
+    },
+    {
+      "source_c_code_id": [
+        "json_skip_whitespace#json.h#687"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_parse_state_s#json.h#636"
+      ],
+      "static_analysis": "====`json_skip_whitespace` Parameter Requirements====\nstate is Nullable, Borrowed and Mutable pointer.\n`state` pointTo: json_parse_state_s*"
+    },
+    {
+      "source_c_code_id": [
+        "json_skip_c_style_comments#json.h#715"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_parse_state_s#json.h#636"
+      ],
+      "static_analysis": "====`json_skip_c_style_comments` Parameter Requirements====\nstate is Nullable, Borrowed and Mutable pointer.\n`state` pointTo: json_parse_state_s*"
+    },
+    {
+      "source_c_code_id": [
+        "json_string_ex_s#json.h#407"
+      ],
+      "source_code_type": "struct",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_string_s#json.h#402"
+      ],
+      "static_analysis": "====`json_string_ex_s` Requirements====\n"
+    },
+    {
+      "source_c_code_id": [
+        "json_get_number_size#json.h#1092"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_number_s#json.h#414",
+        "json_parse_error_e#json.h#452",
+        "json_parse_flags_e#json.h#370",
+        "json_parse_state_s#json.h#636"
+      ],
+      "static_analysis": "====`json_get_number_size` Parameter Requirements====\nstate is Nullable, Borrowed and Mutable pointer.\n`state` pointTo: json_parse_state_s*"
+    },
+    {
+      "source_c_code_id": [
+        "json_array_element_s#json.h#430"
+      ],
+      "source_code_type": "struct",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_value_s#json.h#440"
+      ],
+      "static_analysis": "====`json_array_element_s` Requirements====\nstruct.json_array_element_s_value is Nullable, and Owning pointer\nUsagePath: element->value = value;-->struct json_value_s *value = 0;-->value = &(value_ex->value);-->struct json_value_ex_s *value_ex = (struct json_value_ex_s *)state->dom;-->void json_parse_array(struct json_parse_state_s *state, struct json_array_s *array) {-->json_parse_array(state, (struct json_array_s *)value->payload);-->void json_parse_value(struct json_parse_state_s *state, int is_global_object, struct json_value_s *value) {-->json_parse_value(state, 0, value);-->void json_parse_object(struct json_parse_state_s *state, int is_global_object, struct json_object_s *object) {\n\nstruct.json_array_element_s_next is Nullable, and Owning pointer\nUsagePath: previous->next = element;-->struct json_array_element_s *element = 0;-->element = (struct json_array_element_s *)state->dom;-->void json_parse_array(struct json_parse_state_s *state, struct json_array_s *array) {-->json_parse_array(state, (struct json_array_s *)value->payload);-->void json_parse_value(struct json_parse_state_s *state, int is_global_object, struct json_value_s *value) {-->json_parse_value(state, 0, value);-->void json_parse_object(struct json_parse_state_s *state, int is_global_object, struct json_object_s *object) {"
+    },
+    {
+      "source_c_code_id": [
+        "json_object_element_s#json.h#419"
+      ],
+      "source_code_type": "struct",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_string_s#json.h#402",
+        "json_value_s#json.h#440"
+      ],
+      "static_analysis": "====`json_object_element_s` Requirements====\nstruct.json_object_element_s_name is Nullable, and Owning pointer\nUsagePath: element->name = string;-->struct json_string_s *string = 0;-->string = &(string_ex->string);-->struct json_string_ex_s *string_ex = (struct json_string_ex_s *)state->dom;-->void json_parse_object(struct json_parse_state_s *state, int is_global_object, struct json_object_s *object) {\n\nstruct.json_object_element_s_value is Nullable, and Owning pointer\nUsagePath: element->value = value;-->struct json_value_s *value = 0;-->value = &(value_ex->value);-->struct json_value_ex_s *value_ex = (struct json_value_ex_s *)state->dom;-->void json_parse_object(struct json_parse_state_s *state, int is_global_object, struct json_object_s *object) {\n\nstruct.json_object_element_s_next is Nullable, and Owning pointer\nUsagePath: previous->next = element;-->struct json_object_element_s *element = 0;-->element = (struct json_object_element_s *)state->dom;-->void json_parse_object(struct json_parse_state_s *state, int is_global_object, struct json_object_s *object) {"
+    },
+    {
+      "source_c_code_id": [
+        "json_value_ex_s#json.h#445"
+      ],
+      "source_code_type": "struct",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_value_s#json.h#440"
+      ],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "json_value_as_string#json.h#1934"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_string_s#json.h#402",
+        "json_type_e#json.h#399",
+        "json_value_s#json.h#440"
+      ],
+      "static_analysis": "====`json_value_as_string` Parameter Requirements====\nvalue is Nullable, Borrowed and Immutable pointer.\n\n====`json_value_as_string` Return Requirements====\n`json_value_as_string` Return is Nullable, Borrowed and Immutable pointer; **Requires Lifetime Annotation as Return depends on `struct.json_string_s*`**."
+    },
+    {
+      "source_c_code_id": [
+        "json_value_as_number#json.h#1941"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_number_s#json.h#414",
+        "json_type_e#json.h#399",
+        "json_value_s#json.h#440"
+      ],
+      "static_analysis": "====`json_value_as_number` Parameter Requirements====\nvalue is Nullable, Borrowed and Immutable pointer.\n\n====`json_value_as_number` Return Requirements====\n`json_value_as_number` Return is Nullable, Borrowed and Immutable pointer; **Requires Lifetime Annotation as Return depends on `struct.json_string_s*`**."
+    },
+    {
+      "source_c_code_id": [
+        "json_value_is_true#json.h#1962"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_type_e#json.h#399",
+        "json_value_s#json.h#440"
+      ],
+      "static_analysis": "====`json_value_is_true` Parameter Requirements====\nvalue is Nullable, Borrowed and Immutable pointer."
+    },
+    {
+      "source_c_code_id": [
+        "json_value_is_false#json.h#1966"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_type_e#json.h#399",
+        "json_value_s#json.h#440"
+      ],
+      "static_analysis": "====`json_value_is_false` Parameter Requirements====\nvalue is Nullable, Borrowed and Immutable pointer."
+    },
+    {
+      "source_c_code_id": [
+        "json_value_is_null#json.h#1970"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_type_e#json.h#399",
+        "json_value_s#json.h#440"
+      ],
+      "static_analysis": "====`json_value_is_null` Parameter Requirements====\nvalue is Nullable, Borrowed and Immutable pointer."
+    },
+    {
+      "source_c_code_id": [
+        "json_parse_number#json.h#1545"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_number_s#json.h#414",
+        "json_parse_flags_e#json.h#370",
+        "json_parse_state_s#json.h#636",
+        "json_value_s#json.h#440"
+      ],
+      "static_analysis": "====`json_parse_number` Parameter Requirements====\nstate is Nullable, Borrowed and Mutable pointer.\n`state` pointTo: json_parse_state_s*\n----\nnumber is Nullable, Borrowed and Mutable pointer.\n`number` pointTo: json_string_s*"
+    },
+    {
+      "source_c_code_id": [
+        "json_parse_string#json.h#1290"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_hexadecimal_value#json.h#667",
+        "json_parse_state_s#json.h#636",
+        "json_string_s#json.h#402",
+        "json_value_s#json.h#440"
+      ],
+      "static_analysis": "====`json_parse_string` Parameter Requirements====\nstate is Nullable, Borrowed and Mutable pointer.\n`state` pointTo: json_parse_state_s*\n----\nstring is Nullable, Borrowed and Mutable pointer.\n`string` pointTo: json_string_s*"
+    },
+    {
+      "source_c_code_id": [
+        "json_skip_all_skippables#json.h#755"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_parse_error_e#json.h#452",
+        "json_parse_flags_e#json.h#370",
+        "json_parse_state_s#json.h#636",
+        "json_skip_c_style_comments#json.h#715",
+        "json_skip_whitespace#json.h#687"
+      ],
+      "static_analysis": "====`json_skip_all_skippables` Parameter Requirements====\nstate is Nullable, Borrowed and Mutable pointer.\n`state` pointTo: json_parse_state_s*"
+    },
+    {
+      "source_c_code_id": [
+        "json_get_string_size#json.h#791"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_hexadecimal_value#json.h#667",
+        "json_parse_error_e#json.h#452",
+        "json_parse_flags_e#json.h#370",
+        "json_parse_state_s#json.h#636",
+        "json_string_ex_s#json.h#407",
+        "json_string_s#json.h#402"
+      ],
+      "static_analysis": "====`json_get_string_size` Parameter Requirements====\nstate is Nullable, Borrowed and Mutable pointer.\n`state` pointTo: json_parse_state_s*"
+    },
+    {
+      "source_c_code_id": [
+        "json_array_s#json.h#435"
+      ],
+      "source_code_type": "struct",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_array_element_s#json.h#430"
+      ],
+      "static_analysis": "====`json_array_s` Requirements====\nstruct.json_array_s_start is Nullable, and Owning pointer\nUsagePath: array->start = element;-->struct json_array_element_s *element = 0;-->element = (struct json_array_element_s *)state->dom;-->void json_parse_array(struct json_parse_state_s *state, struct json_array_s *array) {-->json_parse_array(state, (struct json_array_s *)value->payload);-->void json_parse_value(struct json_parse_state_s *state, int is_global_object, struct json_value_s *value) {-->json_parse_value(state, 0, value);-->void json_parse_object(struct json_parse_state_s *state, int is_global_object, struct json_object_s *object) {"
+    },
+    {
+      "source_c_code_id": [
+        "json_object_s#json.h#425"
+      ],
+      "source_code_type": "struct",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_object_element_s#json.h#419"
+      ],
+      "static_analysis": "====`json_object_s` Requirements====\nstruct.json_object_s_start is Nullable, and Owning pointer\nUsagePath: object->start = element;-->struct json_object_element_s *element = 0;-->element = (struct json_object_element_s *)state->dom;-->void json_parse_object(struct json_parse_state_s *state, int is_global_object, struct json_object_s *object) {"
+    },
+    {
+      "source_c_code_id": [
+        "json_write_get_number_size#json.h#1978"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_number_s#json.h#414",
+        "json_object_element_s#json.h#419",
+        "json_value_s#json.h#440"
+      ],
+      "static_analysis": "====`json_write_get_number_size` Parameter Requirements====\nnumber is Nullable, Borrowed and Immutable pointer.\n`number` pointTo: json_string_s*\n----\nsize is Nullable, Borrowed and Mutable pointer.\n`size` pointTo: i64*"
+    },
+    {
+      "source_c_code_id": [
+        "json_write_get_string_size#json.h#2056"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_object_element_s#json.h#419",
+        "json_string_s#json.h#402",
+        "json_value_s#json.h#440"
+      ],
+      "static_analysis": "====`json_write_get_string_size` Parameter Requirements====\nstring is Nullable, Borrowed and Immutable pointer.\n`string` pointTo: json_object_element_s\n`string` pointTo: json_string_s*\n----\nsize is Nullable, Borrowed and Mutable pointer.\n`size` pointTo: i64*"
+    },
+    {
+      "source_c_code_id": [
+        "json_write_number#json.h#2128"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_number_s#json.h#414",
+        "json_object_element_s#json.h#419",
+        "json_value_s#json.h#440"
+      ],
+      "static_analysis": "====`json_write_number` Parameter Requirements====\nnumber is Nullable, Borrowed and Immutable pointer.\n`number` pointTo: json_string_s*\n----\ndata is Nullable, Borrowed and Mutable pointer.\n`data` pointTo: i8*\n\n====`json_write_number` Return Requirements====\n`json_write_number` Return is Nullable, Borrowed and Mutable pointer; **Requires Lifetime Annotation as Return depends on `struct.json_string_s*, data**."
+    },
+    {
+      "source_c_code_id": [
+        "json_write_string#json.h#2242"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_object_element_s#json.h#419",
+        "json_string_s#json.h#402",
+        "json_value_s#json.h#440"
+      ],
+      "static_analysis": "====`json_write_string` Parameter Requirements====\nstring is Nullable, Borrowed and Immutable pointer.\n`string` pointTo: json_object_element_s\n`string` pointTo: json_string_s*\n----\ndata is Nullable, Borrowed and Mutable pointer.\n`data` pointTo: i8*\n\n====`json_write_string` Return Requirements====\n`json_write_string` Return is Nullable, Borrowed and Mutable pointer; **Requires Lifetime Annotation as Return depends on `struct.json_string_s*, data**."
+    },
+    {
+      "source_c_code_id": [
+        "json_parse_key#json.h#1371"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "is_valid_unquoted_key_char#json.h#901",
+        "json_parse_flags_e#json.h#370",
+        "json_parse_state_s#json.h#636",
+        "json_parse_string#json.h#1290",
+        "json_string_s#json.h#402"
+      ],
+      "static_analysis": "====`json_parse_key` Parameter Requirements====\nstate is Nullable, Borrowed and Mutable pointer.\n`state` pointTo: json_parse_state_s*\n----\nstring is Nullable, Borrowed and Mutable pointer.\n`string` pointTo: json_string_s"
+    },
+    {
+      "source_c_code_id": [
+        "json_get_key_size#json.h#907"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "is_valid_unquoted_key_char#json.h#901",
+        "json_get_string_size#json.h#791",
+        "json_parse_flags_e#json.h#370",
+        "json_parse_state_s#json.h#636",
+        "json_string_ex_s#json.h#407",
+        "json_string_s#json.h#402"
+      ],
+      "static_analysis": "====`json_get_key_size` Parameter Requirements====\nstate is Nullable, Borrowed and Mutable pointer.\n`state` pointTo: json_parse_state_s*"
+    },
+    {
+      "source_c_code_id": [
+        "json_value_as_array#json.h#1955"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_array_s#json.h#435",
+        "json_type_e#json.h#399",
+        "json_value_s#json.h#440"
+      ],
+      "static_analysis": "====`json_value_as_array` Parameter Requirements====\nvalue is Nullable, Borrowed and Immutable pointer.\n\n====`json_value_as_array` Return Requirements====\n`json_value_as_array` Return is Nullable, Borrowed and Immutable pointer; **Requires Lifetime Annotation as Return depends on `struct.json_string_s*`**."
+    },
+    {
+      "source_c_code_id": [
+        "json_value_as_object#json.h#1948"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_object_s#json.h#425",
+        "json_type_e#json.h#399",
+        "json_value_s#json.h#440"
+      ],
+      "static_analysis": "====`json_value_as_object` Parameter Requirements====\nvalue is Nullable, Borrowed and Immutable pointer.\n\n====`json_value_as_object` Return Requirements====\n`json_value_as_object` Return is Nullable, Borrowed and Immutable pointer; **Requires Lifetime Annotation as Return depends on `struct.json_string_s*`**."
+    },
+    {
+      "source_c_code_id": [
+        "json_extract_copy_value#json.h#1832"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_array_element_s#json.h#430",
+        "json_array_s#json.h#435",
+        "json_extract_state_s#json.h#1825",
+        "json_number_s#json.h#414",
+        "json_object_element_s#json.h#419",
+        "json_object_s#json.h#425",
+        "json_string_s#json.h#402",
+        "json_type_e#json.h#399",
+        "json_value_s#json.h#440"
+      ],
+      "static_analysis": "====`json_extract_copy_value` Parameter Requirements====\nstate is Nullable, Borrowed and Mutable pointer.\n`state` pointTo: json_extract_state_s*\n----\nvalue is Nullable, Borrowed and Immutable pointer.\n`value` pointTo: json_string_s*"
+    },
+    {
+      "source_c_code_id": [
+        "json_write_minified_get_value_size#json.h#2108",
+        "json_write_minified_get_array_size#json.h#2072",
+        "json_write_minified_get_object_size#json.h#2088"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_array_element_s#json.h#430",
+        "json_array_s#json.h#435",
+        "json_number_s#json.h#414",
+        "json_object_element_s#json.h#419",
+        "json_object_s#json.h#425",
+        "json_string_s#json.h#402",
+        "json_type_e#json.h#399",
+        "json_value_s#json.h#440",
+        "json_write_get_number_size#json.h#1978",
+        "json_write_get_string_size#json.h#2056",
+        "json_write_minified_get_array_size#json.h#2072",
+        "json_write_minified_get_object_size#json.h#2088",
+        "json_write_minified_get_value_size#json.h#2108"
+      ],
+      "static_analysis": "====`json_write_minified_get_value_size` Parameter Requirements====\nvalue is Nullable, Borrowed and Immutable pointer.\n`value` pointTo: json_object_element_s\n`value` pointTo: json_array_element_s\n`value` pointTo: json_string_s*\n----\nsize is Nullable, Borrowed and Mutable pointer.\n`size` pointTo: i64*\n\n====`json_write_minified_get_array_size` Parameter Requirements====\narray is Nullable, Borrowed and Immutable pointer.\n`array` pointTo: json_string_s*\n----\nsize is Nullable, Borrowed and Mutable pointer.\n`size` pointTo: i64*\n\n====`json_write_minified_get_object_size` Parameter Requirements====\nobject is Nullable, Borrowed and Immutable pointer.\n`object` pointTo: json_string_s*\n----\nsize is Nullable, Borrowed and Mutable pointer.\n`size` pointTo: i64*"
+    },
+    {
+      "source_c_code_id": [
+        "json_write_pretty_get_value_size#json.h#2424",
+        "json_write_pretty_get_array_size#json.h#2376",
+        "json_write_pretty_get_object_size#json.h#2398"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_array_element_s#json.h#430",
+        "json_array_s#json.h#435",
+        "json_number_s#json.h#414",
+        "json_object_element_s#json.h#419",
+        "json_object_s#json.h#425",
+        "json_string_s#json.h#402",
+        "json_type_e#json.h#399",
+        "json_value_s#json.h#440",
+        "json_write_get_number_size#json.h#1978",
+        "json_write_get_string_size#json.h#2056",
+        "json_write_pretty_get_array_size#json.h#2376",
+        "json_write_pretty_get_object_size#json.h#2398",
+        "json_write_pretty_get_value_size#json.h#2424"
+      ],
+      "static_analysis": "====`json_write_pretty_get_value_size` Parameter Requirements====\nvalue is Nullable, Borrowed and Immutable pointer.\n`value` pointTo: json_object_element_s\n`value` pointTo: json_array_element_s\n`value` pointTo: json_string_s*\n----\nsize is Nullable, Borrowed and Mutable pointer.\n`size` pointTo: i64*\n\n====`json_write_pretty_get_array_size` Parameter Requirements====\narray is Nullable, Borrowed and Immutable pointer.\n`array` pointTo: json_string_s*\n----\nsize is Nullable, Borrowed and Mutable pointer.\n`size` pointTo: i64*\n\n====`json_write_pretty_get_object_size` Parameter Requirements====\nobject is Nullable, Borrowed and Immutable pointer.\n`object` pointTo: json_string_s*\n----\nsize is Nullable, Borrowed and Mutable pointer.\n`size` pointTo: i64*"
+    },
+    {
+      "source_c_code_id": [
+        "json_write_minified_value#json.h#2319",
+        "json_write_minified_array#json.h#2278",
+        "json_write_minified_object#json.h#2296"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_array_element_s#json.h#430",
+        "json_array_s#json.h#435",
+        "json_number_s#json.h#414",
+        "json_object_element_s#json.h#419",
+        "json_object_s#json.h#425",
+        "json_string_s#json.h#402",
+        "json_type_e#json.h#399",
+        "json_value_s#json.h#440",
+        "json_write_minified_array#json.h#2278",
+        "json_write_minified_object#json.h#2296",
+        "json_write_minified_value#json.h#2319",
+        "json_write_number#json.h#2128",
+        "json_write_string#json.h#2242"
+      ],
+      "static_analysis": "====`json_write_minified_value` Parameter Requirements====\nvalue is Nullable, Borrowed and Immutable pointer.\n`value` pointTo: json_object_element_s\n`value` pointTo: json_array_element_s\n`value` pointTo: json_string_s*\n----\ndata is Nullable, Borrowed and Mutable pointer.\n`data` pointTo: i8*\n\n====`json_write_minified_array` Parameter Requirements====\narray is Nullable, Borrowed and Immutable pointer.\n`array` pointTo: json_string_s*\n----\ndata is Nullable, Borrowed and Mutable pointer.\n`data` pointTo: i8*\n\n====`json_write_minified_object` Parameter Requirements====\nobject is Nullable, Borrowed and Immutable pointer.\n`object` pointTo: json_string_s*\n----\ndata is Nullable, Borrowed and Mutable pointer.\n`data` pointTo: i8*"
+    },
+    {
+      "source_c_code_id": [
+        "json_write_pretty_value#json.h#2533",
+        "json_write_pretty_array#json.h#2444",
+        "json_write_pretty_object#json.h#2485"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_array_element_s#json.h#430",
+        "json_array_s#json.h#435",
+        "json_number_s#json.h#414",
+        "json_object_element_s#json.h#419",
+        "json_object_s#json.h#425",
+        "json_string_s#json.h#402",
+        "json_type_e#json.h#399",
+        "json_value_s#json.h#440",
+        "json_write_number#json.h#2128",
+        "json_write_pretty_array#json.h#2444",
+        "json_write_pretty_object#json.h#2485",
+        "json_write_pretty_value#json.h#2533",
+        "json_write_string#json.h#2242"
+      ],
+      "static_analysis": "====`json_write_pretty_value` Parameter Aliasing==== [MORE ATTENTION!!]\n`indent` and `data` can point to the Same Object, where `indent` requires immutable access and `data` requires mutable access. This will cause borrowing rule conflicts.\nRefactor parameters based on actual usage:\n - `indent` accessed fields: none identified\n - `data` accessed fields: none identified\n\n----\n\n`newline` and `data` can point to the Same Object, where `newline` requires immutable access and `data` requires mutable access. This will cause borrowing rule conflicts.\nRefactor parameters based on actual usage:\n - `newline` accessed fields: none identified\n - `data` accessed fields: none identified\n\n====`json_write_pretty_value` Parameter Requirements====\nvalue is Nullable, Borrowed and Immutable pointer.\n`value` pointTo: json_object_element_s\n`value` pointTo: json_array_element_s\n`value` pointTo: json_string_s*\n----\nindent is Nullable, Borrowed and Immutable pointer.\n`indent` pointTo: i8*\n----\nnewline is Nullable, Borrowed and Immutable pointer.\n`newline` pointTo: i8*\n----\ndata is Nullable, Borrowed and Mutable pointer.\n`data` pointTo: i8*\n\n====`json_write_pretty_array` Parameter Aliasing==== [MORE ATTENTION!!]\n`indent` and `data` can point to the Same Object, where `indent` requires immutable access and `data` requires mutable access. This will cause borrowing rule conflicts.\nRefactor parameters based on actual usage:\n - `indent` accessed fields: none identified\n - `data` accessed fields: none identified\n\n----\n\n`newline` and `data` can point to the Same Object, where `newline` requires immutable access and `data` requires mutable access. This will cause borrowing rule conflicts.\nRefactor parameters based on actual usage:\n - `newline` accessed fields: none identified\n - `data` accessed fields: none identified\n\n====`json_write_pretty_array` Parameter Requirements====\narray is Nullable, Borrowed and Immutable pointer.\n`array` pointTo: json_string_s*\n----\nindent is Nullable, Borrowed and Immutable pointer.\n`indent` pointTo: i8*\n----\nnewline is Nullable, Borrowed and Immutable pointer.\n`newline` pointTo: i8*\n----\ndata is Nullable, Borrowed and Mutable pointer.\n`data` pointTo: i8*\n\n====`json_write_pretty_object` Parameter Aliasing==== [MORE ATTENTION!!]\n`indent` and `data` can point to the Same Object, where `indent` requires immutable access and `data` requires mutable access. This will cause borrowing rule conflicts.\nRefactor parameters based on actual usage:\n - `indent` accessed fields: none identified\n - `data` accessed fields: none identified\n\n----\n\n`newline` and `data` can point to the Same Object, where `newline` requires immutable access and `data` requires mutable access. This will cause borrowing rule conflicts.\nRefactor parameters based on actual usage:\n - `newline` accessed fields: none identified\n - `data` accessed fields: none identified\n\n====`json_write_pretty_object` Parameter Requirements====\nobject is Nullable, Borrowed and Immutable pointer.\n`object` pointTo: json_string_s*\n----\nindent is Nullable, Borrowed and Immutable pointer.\n`indent` pointTo: i8*\n----\nnewline is Nullable, Borrowed and Immutable pointer.\n`newline` pointTo: i8*\n----\ndata is Nullable, Borrowed and Mutable pointer.\n`data` pointTo: i8*"
+    },
+    {
+      "source_c_code_id": [
+        "json_parse_value#json.h#1600",
+        "json_parse_object#json.h#1396",
+        "json_parse_array#json.h#1486"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_array_element_s#json.h#430",
+        "json_array_s#json.h#435",
+        "json_number_s#json.h#414",
+        "json_object_element_s#json.h#419",
+        "json_object_s#json.h#425",
+        "json_parse_array#json.h#1486",
+        "json_parse_flags_e#json.h#370",
+        "json_parse_key#json.h#1371",
+        "json_parse_number#json.h#1545",
+        "json_parse_object#json.h#1396",
+        "json_parse_state_s#json.h#636",
+        "json_parse_string#json.h#1290",
+        "json_parse_value#json.h#1600",
+        "json_skip_all_skippables#json.h#755",
+        "json_string_ex_s#json.h#407",
+        "json_string_s#json.h#402",
+        "json_type_e#json.h#399",
+        "json_value_ex_s#json.h#445",
+        "json_value_s#json.h#440"
+      ],
+      "static_analysis": "====`json_parse_value` Parameter Requirements====\nstate is Nullable, Borrowed and Mutable pointer.\n`state` pointTo: json_parse_state_s*\n----\nvalue is Nullable, Borrowed and Mutable pointer.\n`value` pointTo: json_string_s\n\n====`json_parse_object` Parameter Requirements====\nstate is Nullable, Borrowed and Mutable pointer.\n`state` pointTo: json_parse_state_s*\n----\nobject is Nullable, Borrowed and Mutable pointer.\n`object` pointTo: json_string_s*\n\n====`json_parse_array` Parameter Requirements====\nstate is Nullable, Borrowed and Mutable pointer.\n`state` pointTo: json_parse_state_s*\n----\narray is Nullable, Borrowed and Mutable pointer.\n`array` pointTo: json_string_s*"
+    },
+    {
+      "source_c_code_id": [
+        "json_get_value_size#json.h#1225",
+        "json_get_object_size#json.h#940",
+        "json_get_array_size#json.h#1040"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_array_element_s#json.h#430",
+        "json_array_s#json.h#435",
+        "json_get_array_size#json.h#1040",
+        "json_get_key_size#json.h#907",
+        "json_get_number_size#json.h#1092",
+        "json_get_object_size#json.h#940",
+        "json_get_string_size#json.h#791",
+        "json_get_value_size#json.h#1225",
+        "json_object_element_s#json.h#419",
+        "json_object_s#json.h#425",
+        "json_parse_error_e#json.h#452",
+        "json_parse_flags_e#json.h#370",
+        "json_parse_state_s#json.h#636",
+        "json_skip_all_skippables#json.h#755",
+        "json_value_ex_s#json.h#445",
+        "json_value_s#json.h#440"
+      ],
+      "static_analysis": "====`json_get_value_size` Parameter Requirements====\nstate is Nullable, Borrowed and Mutable pointer.\n`state` pointTo: json_parse_state_s*\n\n====`json_get_object_size` Parameter Requirements====\nstate is Nullable, Borrowed and Mutable pointer.\n`state` pointTo: json_parse_state_s*\n\n====`json_get_array_size` Parameter Requirements====\nstate is Nullable, Borrowed and Mutable pointer.\n`state` pointTo: json_parse_state_s*"
+    },
+    {
+      "source_c_code_id": [
+        "json_extract_value#json.h#1747",
+        "json_extract_value_ex#json.h#1913"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_array_element_s#json.h#430",
+        "json_array_s#json.h#435",
+        "json_extract_copy_value#json.h#1832",
+        "json_extract_result_s#json.h#1742",
+        "json_extract_state_s#json.h#1825",
+        "json_extract_value#json.h#1747",
+        "json_extract_value_ex#json.h#1913",
+        "json_number_s#json.h#414",
+        "json_object_element_s#json.h#419",
+        "json_object_s#json.h#425",
+        "json_string_s#json.h#402",
+        "json_type_e#json.h#399",
+        "json_value_s#json.h#440"
+      ],
+      "static_analysis": "====`json_extract_value` Parameter Requirements====\nvalue is Nullable, Borrowed and Immutable pointer.\n\n====`json_extract_value_ex` Parameter Requirements====\nvalue is Nullable, Borrowed and Immutable pointer.\n`value` pointTo: json_string_s*\n----\nalloc_func_ptr is Nullable, Borrowed and Immutable pointer.\n----\nuser_data is Nullable, Borrowed and Immutable pointer.\n\n====`json_extract_value_ex` Return Requirements====\n`json_extract_value_ex` Return is Nullable, and Owning pointer"
+    },
+    {
+      "source_c_code_id": [
+        "json_write_minified#json.h#2345"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_object_element_s#json.h#419",
+        "json_value_s#json.h#440",
+        "json_write_minified_get_value_size#json.h#2108",
+        "json_write_minified_value#json.h#2319"
+      ],
+      "static_analysis": "====`json_write_minified` Parameter Requirements====\nvalue is Nullable, Borrowed and Immutable pointer.\n----\nout_size is Nullable, Borrowed and Mutable pointer.\n\n====`json_write_minified` Return Requirements====\n`json_write_minified` Return is Nullable, and Owning pointer"
+    },
+    {
+      "source_c_code_id": [
+        "json_write_pretty#json.h#2559"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_object_element_s#json.h#419",
+        "json_value_s#json.h#440",
+        "json_write_pretty_get_value_size#json.h#2424",
+        "json_write_pretty_value#json.h#2533"
+      ],
+      "static_analysis": "====`json_write_pretty` Parameter Requirements====\nvalue is Nullable, Borrowed and Immutable pointer.\n----\nindent is Nullable, Borrowed and Immutable pointer.\n----\nnewline is Nullable, Borrowed and Immutable pointer.\n----\nout_size is Nullable, Borrowed and Mutable pointer.\n\n====`json_write_pretty` Return Requirements====\n`json_write_pretty` Return is Nullable, and Owning pointer"
+    },
+    {
+      "source_c_code_id": [
+        "json_parse_ex#json.h#1662"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_get_value_size#json.h#1225",
+        "json_parse_error_e#json.h#452",
+        "json_parse_flags_e#json.h#370",
+        "json_parse_result_s#json.h#455",
+        "json_parse_state_s#json.h#636",
+        "json_parse_value#json.h#1600",
+        "json_skip_all_skippables#json.h#755",
+        "json_value_ex_s#json.h#445",
+        "json_value_s#json.h#440"
+      ],
+      "static_analysis": "====`json_parse_ex` Parameter Requirements====\nsrc is Nullable, and Owning pointer\n`src` pointTo: i8*\n----\nalloc_func_ptr is Nullable, Borrowed and Immutable pointer.\n----\nuser_data is Nullable, Borrowed and Immutable pointer.\n----\nresult is Nullable, Borrowed and Mutable pointer.\n\n====`json_parse_ex` Return Requirements====\n`json_parse_ex` Return is Nullable, and Owning pointer"
+    },
+    {
+      "source_c_code_id": [
+        "json_parse#json.h#1738"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_parse_ex#json.h#1662",
+        "json_parse_flags_e#json.h#370",
+        "json_value_s#json.h#440"
+      ],
+      "static_analysis": "====`json_parse` Parameter Requirements====\nsrc is Nullable, Borrowed and Immutable pointer.\n`src` pointTo: i8*"
+    },
+    {
+      "source_c_code_id": [
+        "main#test_json.c#2600"
+      ],
+      "source_code_type": "function",
+      "source_file": "test_json.c",
+      "dependencies": [
+        "json_parse#json.h#1738",
+        "json_value_s#json.h#440"
+      ],
+      "static_analysis": ""
+    }
+  ],
+  "artifacts": {
+    "entities": "../dataset/parsed_projects/json_h_expanded_dealed_entities.json",
+    "relationships": "../dataset/parsed_projects/json_h_expanded_dealed_relationships.json",
+    "project_info": "../dataset/parsed_projects/json_h_ProjectInfo.txt",
+    "function_static_analysis": "../dataset/crown_dataset/json_h_expanded_dealed/svf_analysis_output/func_analysis_report.json",
+    "struct_static_analysis": "../dataset/crown_dataset/json_h_expanded_dealed/svf_analysis_output/struct_analysis_report.json"
+  }
+}

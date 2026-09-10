@@ -1,0 +1,969 @@
+{
+  "project_name": "avl",
+  "source_project_path": "/home/zekun/PtrTrans-C2Rust/dataset/crown_dataset/avl",
+  "project_tree": "avl\n└── avl.c\nH_FILE_LIST\n__fpos_t.h\n__FILE.h\ntypes.h\nFILE.h",
+  "call_graph": "__fsid_t#types.h#76\n_G_fpos_t#__fpos_t.h#142 -> __off_t#types.h#70\nNode#avl.c#419\n__u_char#types.h#8\n__u_short#types.h#10\n__u_int#types.h#12\n__u_long#types.h#14\n__int8_t#types.h#16\n__uint8_t#types.h#18\n__int16_t#types.h#20\n__uint16_t#types.h#22\n__int32_t#types.h#24\n__uint32_t#types.h#26\n__int64_t#types.h#28\n__uint64_t#types.h#30\n__int_least8_t#types.h#32 -> __int8_t#types.h#16\n__uint_least8_t#types.h#34 -> __uint8_t#types.h#18\n__int_least16_t#types.h#36 -> __int16_t#types.h#20\n__uint_least16_t#types.h#38 -> __uint16_t#types.h#22\n__int_least32_t#types.h#40 -> __int32_t#types.h#24\n__uint_least32_t#types.h#42 -> __uint32_t#types.h#26\n__int_least64_t#types.h#44 -> __int64_t#types.h#28\n__uint_least64_t#types.h#46 -> __uint64_t#types.h#30\n__quad_t#types.h#48\n__u_quad_t#types.h#50\n__intmax_t#types.h#52\n__uintmax_t#types.h#54\n__dev_t#types.h#56\n__uid_t#types.h#58\n__gid_t#types.h#60\n__ino_t#types.h#62\n__ino64_t#types.h#64\n__mode_t#types.h#66\n__nlink_t#types.h#68\n__off_t#types.h#70\n__off64_t#types.h#72\n__pid_t#types.h#74\n__clock_t#types.h#78\n__rlim_t#types.h#80\n__rlim64_t#types.h#82\n__id_t#types.h#84\n__time_t#types.h#86\n__useconds_t#types.h#88\n__suseconds_t#types.h#90\n__suseconds64_t#types.h#92\n__daddr_t#types.h#94\n__key_t#types.h#96\n__clockid_t#types.h#98\n__timer_t#types.h#100\n__blksize_t#types.h#102\n__blkcnt_t#types.h#104\n__blkcnt64_t#types.h#106\n__fsblkcnt_t#types.h#108\n__fsblkcnt64_t#types.h#110\n__fsfilcnt_t#types.h#112\n__fsfilcnt64_t#types.h#114\n__fsword_t#types.h#116\n__ssize_t#types.h#118\n__syscall_slong_t#types.h#120\n__syscall_ulong_t#types.h#122\n__loff_t#types.h#124 -> __off64_t#types.h#72\n__caddr_t#types.h#126\n__intptr_t#types.h#128\n__socklen_t#types.h#130\n__sig_atomic_t#types.h#132\n__FILE#__FILE.h#154\nFILE#FILE.h#158\nmax#avl.c#433\nheight#avl.c#428 -> Node#avl.c#419\nnewNode#avl.c#437 -> Node#avl.c#419\nrightRotate#avl.c#446 -> max#avl.c#433, height#avl.c#428, Node#avl.c#419\nleftRotate#avl.c#456 -> Node#avl.c#419, height#avl.c#428, max#avl.c#433\ngetBalance#avl.c#466 -> Node#avl.c#419, height#avl.c#428\ninsert#avl.c#471 -> rightRotate#avl.c#446, Node#avl.c#419, getBalance#avl.c#466, max#avl.c#433, leftRotate#avl.c#456, newNode#avl.c#437, height#avl.c#428\nminValueNode#avl.c#491 -> Node#avl.c#419\ndeleteNode#avl.c#497 -> max#avl.c#433, Node#avl.c#419, minValueNode#avl.c#491, getBalance#avl.c#466, leftRotate#avl.c#456, rightRotate#avl.c#446, height#avl.c#428\npreOrder#avl.c#533 -> Node#avl.c#419",
+  "sorted_dependencies": [
+    "max#avl.c#433",
+    "FILE#FILE.h#158",
+    "__FILE#__FILE.h#154",
+    "__sig_atomic_t#types.h#132",
+    "__socklen_t#types.h#130",
+    "__intptr_t#types.h#128",
+    "__caddr_t#types.h#126",
+    "__syscall_ulong_t#types.h#122",
+    "__syscall_slong_t#types.h#120",
+    "__ssize_t#types.h#118",
+    "__fsword_t#types.h#116",
+    "__fsfilcnt64_t#types.h#114",
+    "__fsfilcnt_t#types.h#112",
+    "__fsblkcnt64_t#types.h#110",
+    "__fsblkcnt_t#types.h#108",
+    "__blkcnt64_t#types.h#106",
+    "__blkcnt_t#types.h#104",
+    "__blksize_t#types.h#102",
+    "__timer_t#types.h#100",
+    "__clockid_t#types.h#98",
+    "__key_t#types.h#96",
+    "__daddr_t#types.h#94",
+    "__suseconds64_t#types.h#92",
+    "__suseconds_t#types.h#90",
+    "__useconds_t#types.h#88",
+    "__time_t#types.h#86",
+    "__id_t#types.h#84",
+    "__rlim64_t#types.h#82",
+    "__rlim_t#types.h#80",
+    "__clock_t#types.h#78",
+    "__pid_t#types.h#74",
+    "__off64_t#types.h#72",
+    "__nlink_t#types.h#68",
+    "__mode_t#types.h#66",
+    "__ino64_t#types.h#64",
+    "__ino_t#types.h#62",
+    "__gid_t#types.h#60",
+    "__uid_t#types.h#58",
+    "__dev_t#types.h#56",
+    "__uintmax_t#types.h#54",
+    "__intmax_t#types.h#52",
+    "__u_quad_t#types.h#50",
+    "__quad_t#types.h#48",
+    "__uint64_t#types.h#30",
+    "__int64_t#types.h#28",
+    "__uint32_t#types.h#26",
+    "__int32_t#types.h#24",
+    "__uint16_t#types.h#22",
+    "__int16_t#types.h#20",
+    "__uint8_t#types.h#18",
+    "__int8_t#types.h#16",
+    "__u_long#types.h#14",
+    "__u_int#types.h#12",
+    "__u_short#types.h#10",
+    "__u_char#types.h#8",
+    "Node#avl.c#419",
+    "__off_t#types.h#70",
+    "__fsid_t#types.h#76",
+    "__loff_t#types.h#124",
+    "__uint_least64_t#types.h#46",
+    "__int_least64_t#types.h#44",
+    "__uint_least32_t#types.h#42",
+    "__int_least32_t#types.h#40",
+    "__uint_least16_t#types.h#38",
+    "__int_least16_t#types.h#36",
+    "__uint_least8_t#types.h#34",
+    "__int_least8_t#types.h#32",
+    "height#avl.c#428",
+    "newNode#avl.c#437",
+    "minValueNode#avl.c#491",
+    "preOrder#avl.c#533",
+    "_G_fpos_t#__fpos_t.h#142",
+    "rightRotate#avl.c#446",
+    "leftRotate#avl.c#456",
+    "getBalance#avl.c#466",
+    "insert#avl.c#471",
+    "deleteNode#avl.c#497"
+  ],
+  "static_analysis": [
+    {
+      "source_c_code_id": [
+        "max#avl.c#433"
+      ],
+      "source_code_type": "function",
+      "source_file": "avl.c",
+      "source_code": "int max(int a, int b) {\n    return (a > b)? a : b;\n}",
+      "dependencies": [],
+      "static_analysis": "",
+      "function_signatures": [
+        "int max(int a, int b)"
+      ],
+      "brief_summary": "This function compares two integer values and returns the larger of the two. It takes two integer parameters and evaluates which one is greater using a conditional expression. The function returns an integer value that represents the maximum of the two input values.",
+      "brief_summary_status": "ok"
+    },
+    {
+      "source_c_code_id": [
+        "FILE#FILE.h#158"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef struct _IO_FILE FILE;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__FILE#__FILE.h#154"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef struct _IO_FILE __FILE;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__sig_atomic_t#types.h#132"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef int __sig_atomic_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__socklen_t#types.h#130"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef unsigned int __socklen_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__intptr_t#types.h#128"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef long int __intptr_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__caddr_t#types.h#126"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef char *__caddr_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__syscall_ulong_t#types.h#122"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef unsigned long int __syscall_ulong_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__syscall_slong_t#types.h#120"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef long int __syscall_slong_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__ssize_t#types.h#118"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef long int __ssize_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__fsword_t#types.h#116"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef long int __fsword_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__fsfilcnt64_t#types.h#114"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef unsigned long int __fsfilcnt64_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__fsfilcnt_t#types.h#112"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef unsigned long int __fsfilcnt_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__fsblkcnt64_t#types.h#110"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef unsigned long int __fsblkcnt64_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__fsblkcnt_t#types.h#108"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef unsigned long int __fsblkcnt_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__blkcnt64_t#types.h#106"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef long int __blkcnt64_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__blkcnt_t#types.h#104"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef long int __blkcnt_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__blksize_t#types.h#102"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef long int __blksize_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__timer_t#types.h#100"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef void * __timer_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__clockid_t#types.h#98"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef int __clockid_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__key_t#types.h#96"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef int __key_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__daddr_t#types.h#94"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef int __daddr_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__suseconds64_t#types.h#92"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef long int __suseconds64_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__suseconds_t#types.h#90"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef long int __suseconds_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__useconds_t#types.h#88"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef unsigned int __useconds_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__time_t#types.h#86"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef long int __time_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__id_t#types.h#84"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef unsigned int __id_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__rlim64_t#types.h#82"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef unsigned long int __rlim64_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__rlim_t#types.h#80"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef unsigned long int __rlim_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__clock_t#types.h#78"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef long int __clock_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__pid_t#types.h#74"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef int __pid_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__off64_t#types.h#72"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef long int __off64_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__nlink_t#types.h#68"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef unsigned long int __nlink_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__mode_t#types.h#66"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef unsigned int __mode_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__ino64_t#types.h#64"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef unsigned long int __ino64_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__ino_t#types.h#62"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef unsigned long int __ino_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__gid_t#types.h#60"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef unsigned int __gid_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__uid_t#types.h#58"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef unsigned int __uid_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__dev_t#types.h#56"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef unsigned long int __dev_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__uintmax_t#types.h#54"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef unsigned long int __uintmax_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__intmax_t#types.h#52"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef long int __intmax_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__u_quad_t#types.h#50"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef unsigned long int __u_quad_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__quad_t#types.h#48"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef long int __quad_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__uint64_t#types.h#30"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef unsigned long int __uint64_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__int64_t#types.h#28"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef signed long int __int64_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__uint32_t#types.h#26"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef unsigned int __uint32_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__int32_t#types.h#24"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef signed int __int32_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__uint16_t#types.h#22"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef unsigned short int __uint16_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__int16_t#types.h#20"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef signed short int __int16_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__uint8_t#types.h#18"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef unsigned char __uint8_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__int8_t#types.h#16"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef signed char __int8_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__u_long#types.h#14"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef unsigned long int __u_long;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__u_int#types.h#12"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef unsigned int __u_int;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__u_short#types.h#10"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef unsigned short int __u_short;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__u_char#types.h#8"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef unsigned char __u_char;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "Node#avl.c#419"
+      ],
+      "source_code_type": "struct",
+      "source_file": "avl.c",
+      "source_code": "struct Node {\n    int key;\n    struct Node *left;\n    struct Node *right;\n    int height;\n};",
+      "dependencies": [],
+      "static_analysis": "====`Node` Requirements====\nstruct.Node_left is Nullable, and Owning pointer\nUsagePath: node->left = ((void*)0);\n\nstruct.Node_right is Nullable, and Owning pointer\nUsagePath: node->right = ((void*)0);"
+    },
+    {
+      "source_c_code_id": [
+        "__off_t#types.h#70"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef long int __off_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__fsid_t#types.h#76"
+      ],
+      "source_code_type": "struct",
+      "source_file": "avl.c",
+      "source_code": "typedef struct { int __val[2]; } __fsid_t;",
+      "dependencies": [],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__loff_t#types.h#124"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef __off64_t __loff_t;",
+      "dependencies": [
+        "__off64_t#types.h#72"
+      ],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__uint_least64_t#types.h#46"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef __uint64_t __uint_least64_t;",
+      "dependencies": [
+        "__uint64_t#types.h#30"
+      ],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__int_least64_t#types.h#44"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef __int64_t __int_least64_t;",
+      "dependencies": [
+        "__int64_t#types.h#28"
+      ],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__uint_least32_t#types.h#42"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef __uint32_t __uint_least32_t;",
+      "dependencies": [
+        "__uint32_t#types.h#26"
+      ],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__int_least32_t#types.h#40"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef __int32_t __int_least32_t;",
+      "dependencies": [
+        "__int32_t#types.h#24"
+      ],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__uint_least16_t#types.h#38"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef __uint16_t __uint_least16_t;",
+      "dependencies": [
+        "__uint16_t#types.h#22"
+      ],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__int_least16_t#types.h#36"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef __int16_t __int_least16_t;",
+      "dependencies": [
+        "__int16_t#types.h#20"
+      ],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__uint_least8_t#types.h#34"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef __uint8_t __uint_least8_t;",
+      "dependencies": [
+        "__uint8_t#types.h#18"
+      ],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "__int_least8_t#types.h#32"
+      ],
+      "source_code_type": "typedef",
+      "source_file": "avl.c",
+      "source_code": "typedef __int8_t __int_least8_t;",
+      "dependencies": [
+        "__int8_t#types.h#16"
+      ],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "height#avl.c#428"
+      ],
+      "source_code_type": "function",
+      "source_file": "avl.c",
+      "source_code": "int height(struct Node *N) {\n    if (N == ((void*)0)) return 0;\n    return N->height;\n}",
+      "dependencies": [
+        "Node#avl.c#419"
+      ],
+      "static_analysis": "====`height` Parameter Requirements====\nN is Nullable, Borrowed and Immutable pointer.\n`N` pointTo: Node*",
+      "function_signatures": [
+        "int height(struct Node *N)"
+      ],
+      "brief_summary": "This function calculates and returns the height of a given node in a binary tree. It first checks if the node is null (empty), returning 0 if so, otherwise it returns the stored height value of the node. The function is typically used in balanced binary search trees like AVL trees to maintain balance properties.",
+      "brief_summary_status": "ok"
+    },
+    {
+      "source_c_code_id": [
+        "newNode#avl.c#437"
+      ],
+      "source_code_type": "function",
+      "source_file": "avl.c",
+      "source_code": "struct Node* newNode(int key) {\n    struct Node* node = (struct Node*) malloc(sizeof(struct Node));\n    node->key = key;\n    node->left = ((void*)0);\n    node->right = ((void*)0);\n    node->height = 1;\n    return(node);\n}",
+      "dependencies": [
+        "Node#avl.c#419"
+      ],
+      "static_analysis": "====`newNode` Return Requirements====\n`newNode` Return is Nullable, and Owning pointer",
+      "function_signatures": [
+        "struct Node* newNode(int key)"
+      ],
+      "brief_summary": "This function creates and initializes a new binary tree node with the specified key value. It allocates memory for the node structure and sets its left and right child pointers to null while initializing the height to 1. The function returns a pointer to the newly created and configured node.",
+      "brief_summary_status": "ok"
+    },
+    {
+      "source_c_code_id": [
+        "minValueNode#avl.c#491"
+      ],
+      "source_code_type": "function",
+      "source_file": "avl.c",
+      "source_code": "struct Node * minValueNode(struct Node* node) {\n    struct Node* current = node;\n    while (current->left != ((void*)0)) current = current->left;\n    return current;\n}",
+      "dependencies": [
+        "Node#avl.c#419"
+      ],
+      "static_analysis": "====`minValueNode` Parameter Requirements====\nnode is Nullable, Borrowed and Immutable pointer.\n`node` pointTo: Node\n\n====`minValueNode` Return Requirements====\n`minValueNode` Return is Nullable, Borrowed and Immutable pointer; **Requires Lifetime Annotation as Return depends on `struct.Node*`**.",
+      "function_signatures": [
+        "struct Node * minValueNode(struct Node* node)"
+      ],
+      "brief_summary": "This function finds and returns the node with the minimum value in a binary search tree. It traverses leftward from the given node until it reaches the leftmost node, which contains the smallest value. The function returns a pointer to this minimum value node.",
+      "brief_summary_status": "ok"
+    },
+    {
+      "source_c_code_id": [
+        "preOrder#avl.c#533"
+      ],
+      "source_code_type": "function",
+      "source_file": "avl.c",
+      "source_code": "void preOrder(struct Node *root) {\n    if(root != ((void*)0)) {\n        printf(\"%d \", root->key);\n        preOrder(root->left);\n        preOrder(root->right);\n    }\n}",
+      "dependencies": [
+        "Node#avl.c#419"
+      ],
+      "static_analysis": "====`preOrder` Parameter Requirements====\nroot is Nullable, Borrowed and Immutable pointer.\n`root` pointTo: Node",
+      "function_signatures": [
+        "void preOrder(struct Node *root)"
+      ],
+      "brief_summary": "This function performs a pre-order traversal of a binary tree, visiting nodes in the order: root, left subtree, then right subtree. It prints the key values of all nodes in the tree. The function is void and does not return any value.",
+      "brief_summary_status": "ok"
+    },
+    {
+      "source_c_code_id": [
+        "_G_fpos_t#__fpos_t.h#142"
+      ],
+      "source_code_type": "struct",
+      "source_file": "avl.c",
+      "source_code": "typedef struct _G_fpos_t {\n  __off_t __pos;\n  __mbstate_t __state;\n} __fpos_t;",
+      "dependencies": [
+        "__off_t#types.h#70"
+      ],
+      "static_analysis": ""
+    },
+    {
+      "source_c_code_id": [
+        "rightRotate#avl.c#446"
+      ],
+      "source_code_type": "function",
+      "source_file": "avl.c",
+      "source_code": "struct Node *rightRotate(struct Node *y) {\n    struct Node *x = y->left;\n    struct Node *T2 = x->right;\n    y->left = T2;\n    y->height = max(height(y->left), height(y->right))+1;\n    x->right = y;\n    x->height = max(height(x->left), height(x->right))+1;\n    return x;\n}",
+      "dependencies": [
+        "Node#avl.c#419",
+        "height#avl.c#428",
+        "max#avl.c#433"
+      ],
+      "static_analysis": "====`rightRotate` Parameter Requirements====\ny is Nullable, and Owning pointer\n`y` pointTo: Node\n\n====`rightRotate` Return Requirements====\n`rightRotate` Return is Nullable, Borrowed and Mutable pointer; **Requires Lifetime Annotation as Return depends on `struct.Node*`**.",
+      "function_signatures": [
+        "struct Node *rightRotate(struct Node *y)"
+      ],
+      "brief_summary": "This function performs a right rotation on an AVL tree node to maintain balance after an insertion or deletion. It takes a node 'y' that is unbalanced to the left and rotates it right to restore the AVL property. The function returns the new root of the rotated subtree.",
+      "brief_summary_status": "ok"
+    },
+    {
+      "source_c_code_id": [
+        "leftRotate#avl.c#456"
+      ],
+      "source_code_type": "function",
+      "source_file": "avl.c",
+      "source_code": "struct Node *leftRotate(struct Node *x) {\n    struct Node *y = x->right;\n    struct Node *T2 = y->left;\n    x->right = T2;\n    x->height = max(height(x->left), height(x->right))+1;\n    y->left = x;\n    y->height = max(height(y->left), height(y->right))+1;\n    return y;\n}",
+      "dependencies": [
+        "Node#avl.c#419",
+        "height#avl.c#428",
+        "max#avl.c#433"
+      ],
+      "static_analysis": "====`leftRotate` Parameter Requirements====\nx is Nullable, and Owning pointer\n`x` pointTo: Node\n\n====`leftRotate` Return Requirements====\n`leftRotate` Return is Nullable, Borrowed and Mutable pointer; **Requires Lifetime Annotation as Return depends on `struct.Node*`**.",
+      "function_signatures": [
+        "struct Node *leftRotate(struct Node *x)"
+      ],
+      "brief_summary": "This function performs a left rotation on an AVL tree node to maintain balance after insertions or deletions. It takes a node x and rotates it left so that its right child becomes the new root of the subtree. The function returns the new root node of the rotated subtree.",
+      "brief_summary_status": "ok"
+    },
+    {
+      "source_c_code_id": [
+        "getBalance#avl.c#466"
+      ],
+      "source_code_type": "function",
+      "source_file": "avl.c",
+      "source_code": "int getBalance(struct Node *N) {\n    if (N == ((void*)0)) return 0;\n    return height(N->left) - height(N->right);\n}",
+      "dependencies": [
+        "Node#avl.c#419",
+        "height#avl.c#428"
+      ],
+      "static_analysis": "====`getBalance` Parameter Requirements====\nN is Nullable, Borrowed and Immutable pointer.\n`N` pointTo: Node",
+      "function_signatures": [
+        "int getBalance(struct Node *N)"
+      ],
+      "brief_summary": "This function calculates the balance factor of a node in an AVL tree by subtracting the height of the right subtree from the height of the left subtree. The balance factor indicates how balanced the node's subtrees are, which is essential for maintaining AVL tree properties. It returns an integer value representing this balance factor, where positive values indicate left-heavy subtrees, negative values indicate right-heavy subtrees, and zero indicates perfectly balanced subtrees.",
+      "brief_summary_status": "ok"
+    },
+    {
+      "source_c_code_id": [
+        "insert#avl.c#471"
+      ],
+      "source_code_type": "function",
+      "source_file": "avl.c",
+      "source_code": "struct Node* insert(struct Node* node, int key) {\n    if (node == ((void*)0)) return(newNode(key));\n    if (key < node->key) node->left = insert(node->left, key);\n    else if (key > node->key) node->right = insert(node->right, key);\n    else return node;\n    node->height = 1 + max(height(node->left), height(node->right));\n    int balance = getBalance(node);\n    if (balance > 1 && key < node->left->key) return rightRotate(node);\n    if (balance < -1 && key > node->right->key) return leftRotate(node);\n    if (balance > 1 && key > node->left->key) {\n        node->left = leftRotate(node->left);\n        return rightRotate(node);\n    }\n    if (balance < -1 && key < node->right->key) {\n        node->right = rightRotate(node->right);\n        return leftRotate(node);\n    }\n    return node;\n}",
+      "dependencies": [
+        "Node#avl.c#419",
+        "getBalance#avl.c#466",
+        "height#avl.c#428",
+        "leftRotate#avl.c#456",
+        "max#avl.c#433",
+        "newNode#avl.c#437",
+        "rightRotate#avl.c#446"
+      ],
+      "static_analysis": "====`insert` Parameter Requirements====\nnode is Nullable, and Owning pointer\n`node` pointTo: Node",
+      "function_signatures": [
+        "struct Node* insert(struct Node* node, int key)"
+      ],
+      "brief_summary": "This function inserts a new key into an AVL tree while maintaining the tree's balance property. It recursively finds the correct position for the new key and performs rotations when necessary to ensure the tree remains balanced. The function returns the root of the modified AVL tree after insertion.",
+      "brief_summary_status": "ok"
+    },
+    {
+      "source_c_code_id": [
+        "deleteNode#avl.c#497"
+      ],
+      "source_code_type": "function",
+      "source_file": "avl.c",
+      "source_code": "struct Node* deleteNode(struct Node* root, int key) {\n    if (root == ((void*)0)) return root;\n    if ( key < root->key ) root->left = deleteNode(root->left, key);\n    else if( key > root->key ) root->right = deleteNode(root->right, key);\n    else {\n        if( (root->left == ((void*)0)) || (root->right == ((void*)0)) ) {\n            struct Node *temp = root->left ? root->left : root->right;\n            if (temp == ((void*)0)) {\n                temp = root;\n                root = ((void*)0);\n            }\n            else *root = *temp;\n            free(temp);\n        }\n        else {\n            struct Node* temp = minValueNode(root->right);\n            root->key = temp->key;\n            root->right = deleteNode(root->right, temp->key);\n        }\n    }\n    if (root == ((void*)0)) return root;\n    root->height = 1 + max(height(root->left), height(root->right));\n    int balance = getBalance(root);\n    if (balance > 1 && getBalance(root->left) >= 0) return rightRotate(root);\n    if (balance > 1 && getBalance(root->left) < 0) {\n        root->left = leftRotate(root->left);\n        return rightRotate(root);\n    }\n    if (balance < -1 && getBalance(root->right) <= 0) return leftRotate(root);\n    if (balance < -1 && getBalance(root->right) > 0) {\n        root->right = rightRotate(root->right);\n        return leftRotate(root);\n    }\n    return root;\n}",
+      "dependencies": [
+        "Node#avl.c#419",
+        "getBalance#avl.c#466",
+        "height#avl.c#428",
+        "leftRotate#avl.c#456",
+        "max#avl.c#433",
+        "minValueNode#avl.c#491",
+        "rightRotate#avl.c#446"
+      ],
+      "static_analysis": "====`deleteNode` Parameter Requirements====\nroot is Nullable, and Owning pointer\n`root` pointTo: Node",
+      "function_signatures": [
+        "struct Node* deleteNode(struct Node* root, int key)"
+      ],
+      "brief_summary": "This function deletes a node with the specified key from a balanced binary search tree while maintaining the tree's balance properties. It handles three cases: deleting a leaf node, deleting a node with one child, and deleting a node with two children by replacing it with its in-order successor. The function returns the new root of the modified tree after deletion and rebalancing operations.",
+      "brief_summary_status": "ok"
+    }
+  ],
+  "artifacts": {
+    "entities": "/home/zekun/PtrTrans-C2Rust/dataset/parsed_projects/avl_expanded_dealed_entities.json",
+    "relationships": "/home/zekun/PtrTrans-C2Rust/dataset/parsed_projects/avl_expanded_dealed_relationships.json",
+    "project_info": "/home/zekun/PtrTrans-C2Rust/dataset/parsed_projects/avl_ProjectInfo.txt",
+    "function_static_analysis": "/home/zekun/PtrTrans-C2Rust/dataset/crown_dataset/avl_expanded_dealed/svf_analysis_output/func_analysis_report.json",
+    "struct_static_analysis": "/home/zekun/PtrTrans-C2Rust/dataset/crown_dataset/avl_expanded_dealed/svf_analysis_output/struct_analysis_report.json"
+  }
+}

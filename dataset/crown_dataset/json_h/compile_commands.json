@@ -1,16 +1,16 @@
 [
-    {
-        "arguments": [
-            "gcc",
-            "-c",
-            "-std=c99",
-            "-Wall",
-            "-Wextra",
-            "-o",
-            "test_json",
-            "test_json.c"
-        ],
-        "directory": "/home/yzq/CodeTrans_c2Rust/dataset/original_projects/crown_dataset/json_h",
-        "file": "test_json.c"
-    }
+  {
+    "file": "test_json.c",
+    "arguments": [
+      "/usr/bin/gcc",
+      "-std=c99",
+      "-Wall",
+      "-Wextra",
+      "-o",
+      "test_json",
+      "test_json.c"
+    ],
+    "directory": "/home/zekun/PtrTrans-C2Rust/dataset/crown_dataset/json_h",
+    "output": "test_json"
+  }
 ]

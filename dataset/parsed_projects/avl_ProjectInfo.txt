@@ -1,35 +1,33 @@
 avl
-├── avl.c [Contain *main* Function]
+├── avl.c
 └── svf_analysis_output
 H_FILE_LIST
 
 
 SPLIT_TAG
 
-Node#avl.c#417
-max#avl.c#431 -> Node#avl.c#417, height#avl.c#426
-height#avl.c#426 -> Node#avl.c#417
-newNode#avl.c#435 -> Node#avl.c#417
-rightRotate#avl.c#444 -> height#avl.c#426, Node#avl.c#417, max#avl.c#431
-leftRotate#avl.c#454 -> Node#avl.c#417, height#avl.c#426, max#avl.c#431
-getBalance#avl.c#464 -> Node#avl.c#417, height#avl.c#426
-insert#avl.c#469 -> height#avl.c#426, getBalance#avl.c#464, max#avl.c#431, Node#avl.c#417, rightRotate#avl.c#444, leftRotate#avl.c#454, newNode#avl.c#435
-minValueNode#avl.c#489 -> Node#avl.c#417
-deleteNode#avl.c#495 -> height#avl.c#426, leftRotate#avl.c#454, getBalance#avl.c#464, rightRotate#avl.c#444, minValueNode#avl.c#489, max#avl.c#431, Node#avl.c#417
-preOrder#avl.c#531 -> Node#avl.c#417
-main#avl.c#539 -> deleteNode#avl.c#495, preOrder#avl.c#531, insert#avl.c#469, Node#avl.c#417
+Node#avl.c#419
+max#avl.c#433
+height#avl.c#428 -> Node#avl.c#419
+newNode#avl.c#437 -> Node#avl.c#419
+rightRotate#avl.c#446 -> height#avl.c#428, max#avl.c#433, Node#avl.c#419
+leftRotate#avl.c#456 -> Node#avl.c#419, height#avl.c#428, max#avl.c#433
+getBalance#avl.c#466 -> Node#avl.c#419, height#avl.c#428
+insert#avl.c#471 -> getBalance#avl.c#466, max#avl.c#433, rightRotate#avl.c#446, height#avl.c#428, leftRotate#avl.c#456, Node#avl.c#419, newNode#avl.c#437
+minValueNode#avl.c#491 -> Node#avl.c#419
+deleteNode#avl.c#497 -> leftRotate#avl.c#456, Node#avl.c#419, minValueNode#avl.c#491, rightRotate#avl.c#446, getBalance#avl.c#466, height#avl.c#428, max#avl.c#433
+preOrder#avl.c#533 -> Node#avl.c#419
 
 SPLIT_TAG
 
-Node#avl.c#417
-height#avl.c#426
-newNode#avl.c#435
-minValueNode#avl.c#489
-preOrder#avl.c#531
-max#avl.c#431
-getBalance#avl.c#464
-rightRotate#avl.c#444
-leftRotate#avl.c#454
-insert#avl.c#469
-deleteNode#avl.c#495
-main#avl.c#539
+max#avl.c#433
+Node#avl.c#419
+height#avl.c#428
+newNode#avl.c#437
+minValueNode#avl.c#491
+preOrder#avl.c#533
+rightRotate#avl.c#446
+leftRotate#avl.c#456
+getBalance#avl.c#466
+insert#avl.c#471
+deleteNode#avl.c#497
